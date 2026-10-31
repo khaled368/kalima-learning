@@ -1,0 +1,1104 @@
+{
+  "ich": {
+    "examples": [
+      {
+        "de": "Ich wohne in Berlin.",
+        "ar": "أنا أسكن في برلين.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "du": {
+    "examples": [
+      {
+        "de": "Du sprichst sehr gut Deutsch.",
+        "ar": "أنت تتحدث الألمانية جيدًا جدًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "er": {
+    "examples": [
+      {
+        "de": "Er liest ein Buch.",
+        "ar": "هو يقرأ كتابًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "sie": {
+    "examples": [
+      {
+        "de": "Sie trinkt einen Kaffee.",
+        "ar": "هي تشرب قهوة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "es": {
+    "examples": [
+      {
+        "de": "Es regnet heute.",
+        "ar": "إنها تمطر اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "wir": {
+    "examples": [
+      {
+        "de": "Wir lernen jeden Tag Deutsch.",
+        "ar": "نحن نتعلّم الألمانية كل يوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "ihr": {
+    "examples": [
+      {
+        "de": "Ihr seid heute sehr pünktlich.",
+        "ar": "أنتم ملتزمون بالموعد اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "ihn": {
+    "examples": [
+      {
+        "de": "Ich sehe ihn jeden Morgen.",
+        "ar": "أراه كل صباح.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "ihm": {
+    "examples": [
+      {
+        "de": "Ich helfe ihm bei der Arbeit.",
+        "ar": "أساعده في العمل.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "pronoun",
+    "article": ""
+  },
+  "mal": {
+    "examples": [
+      {
+        "de": "Komm mal bitte hierher.",
+        "ar": "تعال إلى هنا من فضلك.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "adverb",
+    "article": "",
+    "ipa": "",
+    "forms": [],
+    "germanDefinition": ""
+  },
+  "ein": {
+    "examples": [
+      {
+        "de": "Das ist ein guter Plan.",
+        "ar": "هذه خطة جيدة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "other",
+    "article": ""
+  },
+  "eine": {
+    "examples": [
+      {
+        "de": "Sie hat eine neue Tasche.",
+        "ar": "لديها حقيبة جديدة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "other",
+    "article": ""
+  },
+  "der": {
+    "examples": [
+      {
+        "de": "Der Bus kommt gleich.",
+        "ar": "ستصل الحافلة حالًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "other",
+    "article": ""
+  },
+  "die": {
+    "examples": [
+      {
+        "de": "Die Tür ist offen.",
+        "ar": "الباب مفتوح.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "other",
+    "article": ""
+  },
+  "das": {
+    "examples": [
+      {
+        "de": "Das Fenster ist groß.",
+        "ar": "النافذة كبيرة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "other",
+    "article": ""
+  },
+  "sein": {
+    "examples": [
+      {
+        "de": "Ich möchte heute zu Hause sein.",
+        "ar": "أودّ أن أكون في المنزل اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "ist",
+      "past": "war",
+      "perfect": "ist gewesen"
+    }
+  },
+  "haben": {
+    "examples": [
+      {
+        "de": "Wir haben heute viel Zeit.",
+        "ar": "لدينا وقت كثير اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "hat",
+      "past": "hatte",
+      "perfect": "hat gehabt"
+    }
+  },
+  "werden": {
+    "examples": [
+      {
+        "de": "Es wird morgen kälter.",
+        "ar": "سيصبح الجو أبرد غدًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "wird",
+      "past": "wurde",
+      "perfect": "ist geworden"
+    }
+  },
+  "wollen": {
+    "examples": [
+      {
+        "de": "Wir wollen zusammen Deutsch lernen.",
+        "ar": "نريد أن نتعلّم الألمانية معًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "will",
+      "past": "wollte",
+      "perfect": "hat gewollt"
+    }
+  },
+  "geben": {
+    "examples": [
+      {
+        "de": "Kannst du mir bitte das Buch geben?",
+        "ar": "هل يمكنك أن تعطيني الكتاب من فضلك؟",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "gibt",
+      "past": "gab",
+      "perfect": "hat gegeben"
+    }
+  },
+  "bringen": {
+    "examples": [
+      {
+        "de": "Ich bringe dir ein Glas Wasser.",
+        "ar": "سأحضر لك كوبًا من الماء.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "bringt",
+      "past": "brachte",
+      "perfect": "hat gebracht"
+    }
+  },
+  "bekommen": {
+    "examples": [
+      {
+        "de": "Ich bekomme morgen einen Brief.",
+        "ar": "سأتلقّى رسالة غدًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "bekommt",
+      "past": "bekam",
+      "perfect": "hat bekommen"
+    }
+  },
+  "arm": {
+    "examples": [
+      {
+        "de": "Mein linker Arm tut weh.",
+        "ar": "ذراعي اليسرى تؤلمني.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ]
+  },
+  "leben": {
+    "examples": [
+      {
+        "de": "Das Leben in dieser Stadt ist angenehm.",
+        "ar": "الحياة في هذه المدينة مريحة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "lebt",
+      "past": "lebte",
+      "perfect": "hat gelebt"
+    }
+  },
+  "bank": {
+    "examples": [
+      {
+        "de": "Ich sitze auf einer Bank im Park.",
+        "ar": "أجلس على مقعد في الحديقة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ]
+  },
+  "schloss": {
+    "examples": [
+      {
+        "de": "Das alte Schloss liegt auf einem Hügel.",
+        "ar": "يقع القصر القديم على تلّ.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ]
+  },
+  "licht": {
+    "examples": [
+      {
+        "de": "Mach bitte das Licht an.",
+        "ar": "أشعل الضوء من فضلك.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ]
+  },
+  "leicht": {
+    "examples": [
+      {
+        "de": "Diese Tasche ist leicht.",
+        "ar": "هذه الحقيبة خفيفة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "adjective",
+    "article": "",
+    "comparative": "leichter",
+    "superlative": "am leichtesten",
+    "declensionStem": "leicht"
+  },
+  "schwer": {
+    "examples": [
+      {
+        "de": "Diese Aufgabe ist schwer.",
+        "ar": "هذه المهمة صعبة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "adjective",
+    "article": "",
+    "comparative": "schwerer",
+    "superlative": "am schwersten",
+    "declensionStem": "schwer"
+  },
+  "lernen": {
+    "examples": [
+      {
+        "de": "Ich lerne jeden Abend zehn neue Wörter.",
+        "ar": "أتعلّم عشر كلمات جديدة كل مساء.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "lernt",
+      "past": "lernte",
+      "perfect": "hat gelernt"
+    }
+  },
+  "gehen": {
+    "examples": [
+      {
+        "de": "Wir gehen heute zu Fuß zur Schule.",
+        "ar": "نذهب إلى المدرسة سيرًا على الأقدام اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "geht",
+      "past": "ging",
+      "perfect": "ist gegangen"
+    }
+  },
+  "kommen": {
+    "examples": [
+      {
+        "de": "Meine Freunde kommen morgen zu Besuch.",
+        "ar": "سيأتي أصدقائي للزيارة غدًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "kommt",
+      "past": "kam",
+      "perfect": "ist gekommen"
+    }
+  },
+  "sehen": {
+    "examples": [
+      {
+        "de": "Ich sehe einen Vogel im Baum.",
+        "ar": "أرى طائرًا على الشجرة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "sieht",
+      "past": "sah",
+      "perfect": "hat gesehen"
+    }
+  },
+  "lesen": {
+    "examples": [
+      {
+        "de": "Sie liest jeden Abend ein Buch.",
+        "ar": "تقرأ كتابًا كل مساء.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "liest",
+      "past": "las",
+      "perfect": "hat gelesen"
+    }
+  },
+  "sprechen": {
+    "examples": [
+      {
+        "de": "Wir sprechen zu Hause Arabisch.",
+        "ar": "نتحدث العربية في المنزل.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "spricht",
+      "past": "sprach",
+      "perfect": "hat gesprochen"
+    }
+  },
+  "nehmen": {
+    "examples": [
+      {
+        "de": "Ich nehme heute den Zug.",
+        "ar": "سأستقل القطار اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "nimmt",
+      "past": "nahm",
+      "perfect": "hat genommen"
+    }
+  },
+  "finden": {
+    "examples": [
+      {
+        "de": "Ich finde meinen Schlüssel nicht.",
+        "ar": "لا أجد مفتاحي.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "findet",
+      "past": "fand",
+      "perfect": "hat gefunden"
+    }
+  },
+  "kennen": {
+    "examples": [
+      {
+        "de": "Kennst du dieses Wort?",
+        "ar": "هل تعرف هذه الكلمة؟",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "kennt",
+      "past": "kannte",
+      "perfect": "hat gekannt"
+    }
+  },
+  "wissen": {
+    "examples": [
+      {
+        "de": "Ich weiß die Antwort.",
+        "ar": "أعرف الإجابة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "weiß",
+      "past": "wusste",
+      "perfect": "hat gewusst"
+    }
+  },
+  "machen": {
+    "examples": [
+      {
+        "de": "Was machst du am Wochenende?",
+        "ar": "ماذا تفعل في عطلة نهاية الأسبوع؟",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "macht",
+      "past": "machte",
+      "perfect": "hat gemacht"
+    }
+  },
+  "sagen": {
+    "examples": [
+      {
+        "de": "Kannst du das bitte noch einmal sagen?",
+        "ar": "هل يمكنك أن تقول ذلك مرة أخرى من فضلك؟",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "sagt",
+      "past": "sagte",
+      "perfect": "hat gesagt"
+    }
+  },
+  "schreiben": {
+    "examples": [
+      {
+        "de": "Er schreibt eine Nachricht an seine Schwester.",
+        "ar": "يكتب رسالة إلى أخته.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "schreibt",
+      "past": "schrieb",
+      "perfect": "hat geschrieben"
+    }
+  },
+  "verstehen": {
+    "examples": [
+      {
+        "de": "Ich verstehe deine Frage.",
+        "ar": "أفهم سؤالك.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "versteht",
+      "past": "verstand",
+      "perfect": "hat verstanden"
+    }
+  },
+  "arbeiten": {
+    "examples": [
+      {
+        "de": "Meine Schwester arbeitet in einem Krankenhaus.",
+        "ar": "تعمل أختي في مستشفى.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "arbeitet",
+      "past": "arbeitete",
+      "perfect": "hat gearbeitet"
+    }
+  },
+  "helfen": {
+    "examples": [
+      {
+        "de": "Kannst du mir bitte helfen?",
+        "ar": "هل يمكنك مساعدتي من فضلك؟",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "hilft",
+      "past": "half",
+      "perfect": "hat geholfen"
+    }
+  },
+  "bleiben": {
+    "examples": [
+      {
+        "de": "Wir bleiben heute zu Hause.",
+        "ar": "سنبقى في المنزل اليوم.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "bleibt",
+      "past": "blieb",
+      "perfect": "ist geblieben"
+    }
+  },
+  "fahren": {
+    "examples": [
+      {
+        "de": "Morgen fahren wir nach Hamburg.",
+        "ar": "سنسافر إلى هامبورغ غدًا.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "fährt",
+      "past": "fuhr",
+      "perfect": "ist gefahren"
+    }
+  },
+  "schlafen": {
+    "examples": [
+      {
+        "de": "Das Kind schläft schon.",
+        "ar": "الطفل نائم بالفعل.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "schläft",
+      "past": "schlief",
+      "perfect": "hat geschlafen"
+    }
+  },
+  "sitzen": {
+    "examples": [
+      {
+        "de": "Die Kinder sitzen am Tisch.",
+        "ar": "يجلس الأطفال إلى الطاولة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "sitzt",
+      "past": "saß",
+      "perfect": "hat gesessen"
+    }
+  },
+  "liegen": {
+    "examples": [
+      {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "ar": "الكتاب موضوع على الطاولة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "liegt",
+      "past": "lag",
+      "perfect": "hat gelegen"
+    }
+  },
+  "stehen": {
+    "examples": [
+      {
+        "de": "Die Flasche steht im Kühlschrank.",
+        "ar": "الزجاجة في الثلاجة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "steht",
+      "past": "stand",
+      "perfect": "hat gestanden"
+    }
+  },
+  "beginnen": {
+    "examples": [
+      {
+        "de": "Der Unterricht beginnt um acht Uhr.",
+        "ar": "يبدأ الدرس في الساعة الثامنة.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "beginnt",
+      "past": "begann",
+      "perfect": "hat begonnen"
+    }
+  },
+  "kaufen": {
+    "examples": [
+      {
+        "de": "Ich kaufe frisches Obst auf dem Markt.",
+        "ar": "أشتري فاكهة طازجة من السوق.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ],
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "kauft",
+      "past": "kaufte",
+      "perfect": "hat gekauft"
+    }
+  },
+  "können": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "kann",
+      "past": "konnte",
+      "perfect": "hat gekonnt"
+    }
+  },
+  "müssen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "muss",
+      "past": "musste",
+      "perfect": "hat gemusst"
+    }
+  },
+  "sollen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "soll",
+      "past": "sollte",
+      "perfect": "hat gesollt"
+    }
+  },
+  "dürfen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "darf",
+      "past": "durfte",
+      "perfect": "hat gedurft"
+    }
+  },
+  "mögen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "mag",
+      "past": "mochte",
+      "perfect": "hat gemocht"
+    }
+  },
+  "laufen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "läuft",
+      "past": "lief",
+      "perfect": "ist gelaufen"
+    }
+  },
+  "fliegen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "fliegt",
+      "past": "flog",
+      "perfect": "ist geflogen"
+    }
+  },
+  "essen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "isst",
+      "past": "aß",
+      "perfect": "hat gegessen"
+    }
+  },
+  "trinken": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "trinkt",
+      "past": "trank",
+      "perfect": "hat getrunken"
+    }
+  },
+  "denken": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "denkt",
+      "past": "dachte",
+      "perfect": "hat gedacht"
+    }
+  },
+  "erhalten": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "erhält",
+      "past": "erhielt",
+      "perfect": "hat erhalten"
+    }
+  },
+  "treffen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "trifft",
+      "past": "traf",
+      "perfect": "hat getroffen"
+    }
+  },
+  "tragen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "trägt",
+      "past": "trug",
+      "perfect": "hat getragen"
+    }
+  },
+  "halten": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "hält",
+      "past": "hielt",
+      "perfect": "hat gehalten"
+    }
+  },
+  "rufen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "ruft",
+      "past": "rief",
+      "perfect": "hat gerufen"
+    }
+  },
+  "bezahlen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "bezahlt",
+      "past": "bezahlte",
+      "perfect": "hat bezahlt"
+    }
+  },
+  "verkaufen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "verkauft",
+      "past": "verkaufte",
+      "perfect": "hat verkauft"
+    }
+  },
+  "besuchen": {
+    "pos": "verb",
+    "article": "",
+    "verbForms": {
+      "present": "besucht",
+      "past": "besuchte",
+      "perfect": "hat besucht"
+    }
+  },
+  "gut": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "besser",
+    "superlative": "am besten",
+    "declensionStem": "gut"
+  },
+  "schlecht": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "schlechter",
+    "superlative": "am schlechtesten",
+    "declensionStem": "schlecht"
+  },
+  "gross": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "größer",
+    "superlative": "am größten",
+    "declensionStem": "groß"
+  },
+  "klein": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "kleiner",
+    "superlative": "am kleinsten",
+    "declensionStem": "klein"
+  },
+  "alt": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "älter",
+    "superlative": "am ältesten",
+    "declensionStem": "alt"
+  },
+  "jung": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "jünger",
+    "superlative": "am jüngsten",
+    "declensionStem": "jung"
+  },
+  "neu": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "neuer",
+    "superlative": "am neuesten",
+    "declensionStem": "neu"
+  },
+  "schön": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "schöner",
+    "superlative": "am schönsten",
+    "declensionStem": "schön"
+  },
+  "lang": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "länger",
+    "superlative": "am längsten",
+    "declensionStem": "lang"
+  },
+  "kurz": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "kürzer",
+    "superlative": "am kürzesten",
+    "declensionStem": "kurz"
+  },
+  "hell": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "heller",
+    "superlative": "am hellsten",
+    "declensionStem": "hell"
+  },
+  "dunkel": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "dunkler",
+    "superlative": "am dunkelsten",
+    "declensionStem": "dunkl"
+  },
+  "stark": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "stärker",
+    "superlative": "am stärksten",
+    "declensionStem": "stark"
+  },
+  "schwach": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "schwächer",
+    "superlative": "am schwächsten",
+    "declensionStem": "schwach"
+  },
+  "hoch": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "höher",
+    "superlative": "am höchsten",
+    "declensionStem": "hoh"
+  },
+  "nah": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "näher",
+    "superlative": "am nächsten",
+    "declensionStem": "nah"
+  },
+  "warm": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "wärmer",
+    "superlative": "am wärmsten",
+    "declensionStem": "warm"
+  },
+  "kalt": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "kälter",
+    "superlative": "am kältesten",
+    "declensionStem": "kalt"
+  },
+  "schnell": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "schneller",
+    "superlative": "am schnellsten",
+    "declensionStem": "schnell"
+  },
+  "langsam": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "langsamer",
+    "superlative": "am langsamsten",
+    "declensionStem": "langsam"
+  },
+  "teuer": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "teurer",
+    "superlative": "am teuersten",
+    "declensionStem": "teur"
+  },
+  "billig": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "billiger",
+    "superlative": "am billigsten",
+    "declensionStem": "billig"
+  },
+  "stolz": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "stolzer",
+    "superlative": "am stolzesten",
+    "declensionStem": "stolz"
+  },
+  "gesund": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "gesünder",
+    "superlative": "am gesündesten",
+    "declensionStem": "gesund"
+  },
+  "rot": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "röter",
+    "superlative": "am rötesten",
+    "declensionStem": "rot"
+  },
+  "breit": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "breiter",
+    "superlative": "am breitesten",
+    "declensionStem": "breit"
+  },
+  "glatt": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "glatter",
+    "superlative": "am glattesten",
+    "declensionStem": "glatt"
+  },
+  "hart": {
+    "pos": "adjective",
+    "article": "",
+    "comparative": "härter",
+    "superlative": "am härtesten",
+    "declensionStem": "hart"
+  }
+}

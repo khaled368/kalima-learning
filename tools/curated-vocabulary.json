@@ -1,0 +1,1706 @@
+[
+  {
+    "id": 0,
+    "level": "A1",
+    "article": "der",
+    "german": "Apfel",
+    "arabic": "تفاحة",
+    "emoji": "🍎",
+    "category": "الطعام",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ich esse jeden Morgen einen Apfel.",
+        "ar": "آكل تفاحة كل صباح."
+      }
+    ],
+    "plural": "Äpfel",
+    "translationKind": "curated"
+  },
+  {
+    "id": 1,
+    "level": "A1",
+    "article": "das",
+    "german": "Brot",
+    "arabic": "خبز",
+    "emoji": "🥖",
+    "category": "الطعام",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Das Brot ist noch warm.",
+        "ar": "الخبز ما زال دافئًا."
+      }
+    ],
+    "plural": "Brote",
+    "translationKind": "curated"
+  },
+  {
+    "id": 2,
+    "level": "A1",
+    "article": "das",
+    "german": "Wasser",
+    "arabic": "ماء",
+    "emoji": "💧",
+    "category": "الطعام",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Kann ich bitte ein Glas Wasser haben?",
+        "ar": "هل يمكنني الحصول على كوب ماء من فضلك؟"
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 3,
+    "level": "A1",
+    "article": "die",
+    "german": "Katze",
+    "arabic": "قطة",
+    "emoji": "🐈",
+    "category": "الحيوانات",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Katze schläft auf dem Sofa.",
+        "ar": "القطة نائمة على الأريكة."
+      }
+    ],
+    "plural": "Katzen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 4,
+    "level": "A1",
+    "article": "das",
+    "german": "Haus",
+    "arabic": "منزل",
+    "emoji": "🏡",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Unser Haus liegt neben einem Park.",
+        "ar": "يقع منزلنا بجوار حديقة."
+      }
+    ],
+    "plural": "Häuser",
+    "translationKind": "curated"
+  },
+  {
+    "id": 5,
+    "level": "A1",
+    "article": "die",
+    "german": "Sonne",
+    "arabic": "شمس",
+    "emoji": "☀️",
+    "category": "الطبيعة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Heute scheint die Sonne.",
+        "ar": "اليوم تشرق الشمس."
+      }
+    ],
+    "plural": "Sonnen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 6,
+    "level": "A1",
+    "article": "der",
+    "german": "Kaffee",
+    "arabic": "قهوة",
+    "emoji": "☕",
+    "category": "الطعام",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ich trinke meinen Kaffee ohne Zucker.",
+        "ar": "أشرب قهوتي دون سكر."
+      }
+    ],
+    "plural": "Kaffees",
+    "translationKind": "curated"
+  },
+  {
+    "id": 7,
+    "level": "A1",
+    "article": "der",
+    "german": "Hund",
+    "arabic": "كلب",
+    "emoji": "🐕",
+    "category": "الحيوانات",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der Hund wartet vor der Tür.",
+        "ar": "الكلب ينتظر أمام الباب."
+      }
+    ],
+    "plural": "Hunde",
+    "translationKind": "curated"
+  },
+  {
+    "id": 8,
+    "level": "A1",
+    "article": "das",
+    "german": "Buch",
+    "arabic": "كتاب",
+    "emoji": "📗",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Dieses Buch ist sehr interessant.",
+        "ar": "هذا الكتاب ممتع جدًا."
+      }
+    ],
+    "plural": "Bücher",
+    "translationKind": "curated"
+  },
+  {
+    "id": 9,
+    "level": "A1",
+    "article": "der",
+    "german": "Baum",
+    "arabic": "شجرة",
+    "emoji": "🌳",
+    "category": "الطبيعة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Im Garten steht ein alter Baum.",
+        "ar": "توجد شجرة قديمة في الحديقة."
+      }
+    ],
+    "plural": "Bäume",
+    "translationKind": "curated"
+  },
+  {
+    "id": 10,
+    "level": "A1",
+    "article": "der",
+    "german": "Zug",
+    "arabic": "قطار",
+    "emoji": "🚆",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der Zug nach Berlin fährt um acht Uhr ab.",
+        "ar": "يغادر القطار المتجه إلى برلين في الساعة الثامنة."
+      }
+    ],
+    "plural": "Züge",
+    "translationKind": "curated"
+  },
+  {
+    "id": 11,
+    "level": "A1",
+    "article": "der",
+    "german": "Flughafen",
+    "arabic": "مطار",
+    "emoji": "🛫",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Wir fahren morgen zum Flughafen.",
+        "ar": "سنذهب غدًا إلى المطار."
+      }
+    ],
+    "plural": "Flughäfen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 12,
+    "level": "A1",
+    "article": "die",
+    "german": "Milch",
+    "arabic": "حليب",
+    "emoji": "🥛",
+    "category": "الطعام",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Für den Kuchen brauchen wir Milch.",
+        "ar": "نحتاج إلى الحليب لإعداد الكعكة."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 13,
+    "level": "A1",
+    "article": "die",
+    "german": "Blume",
+    "arabic": "زهرة",
+    "emoji": "🌷",
+    "category": "الطبيعة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Diese Blume braucht viel Licht.",
+        "ar": "تحتاج هذه الزهرة إلى كثير من الضوء."
+      }
+    ],
+    "plural": "Blumen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 14,
+    "level": "A1",
+    "article": "der",
+    "german": "Tisch",
+    "arabic": "طاولة",
+    "emoji": "🪑",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Schlüssel liegen auf dem Tisch.",
+        "ar": "المفاتيح موجودة على الطاولة."
+      }
+    ],
+    "plural": "Tische",
+    "translationKind": "curated"
+  },
+  {
+    "id": 15,
+    "level": "A1",
+    "article": "die",
+    "german": "Fahrkarte",
+    "arabic": "تذكرة سفر",
+    "emoji": "🎫",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Wo kann ich eine Fahrkarte kaufen?",
+        "ar": "أين يمكنني شراء تذكرة سفر؟"
+      }
+    ],
+    "plural": "Fahrkarten",
+    "translationKind": "curated"
+  },
+  {
+    "id": 16,
+    "level": "A1",
+    "article": "der",
+    "german": "Vogel",
+    "arabic": "طائر",
+    "emoji": "🐦",
+    "category": "الحيوانات",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ein Vogel sitzt auf dem Dach.",
+        "ar": "يقف طائر على السطح."
+      }
+    ],
+    "plural": "Vögel",
+    "translationKind": "curated"
+  },
+  {
+    "id": 17,
+    "level": "A1",
+    "article": "die",
+    "german": "Tür",
+    "arabic": "باب",
+    "emoji": "🚪",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Bitte mach die Tür zu.",
+        "ar": "أغلق الباب من فضلك."
+      }
+    ],
+    "plural": "Türen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 18,
+    "level": "A2",
+    "article": "der",
+    "german": "Termin",
+    "arabic": "موعد",
+    "emoji": "📅",
+    "category": "الحياة اليومية",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ich habe morgen einen Termin beim Arzt.",
+        "ar": "لدي موعد عند الطبيب غدًا."
+      }
+    ],
+    "plural": "Termine",
+    "translationKind": "curated"
+  },
+  {
+    "id": 19,
+    "level": "A2",
+    "article": "die",
+    "german": "Rechnung",
+    "arabic": "فاتورة",
+    "emoji": "🧾",
+    "category": "الحياة اليومية",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Können Sie mir bitte die Rechnung bringen?",
+        "ar": "هل يمكنك إحضار الفاتورة لي من فضلك؟"
+      }
+    ],
+    "plural": "Rechnungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 20,
+    "level": "A2",
+    "article": "der",
+    "german": "Beruf",
+    "arabic": "مهنة",
+    "emoji": "💼",
+    "category": "العمل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Welchen Beruf möchten Sie später ausüben?",
+        "ar": "ما المهنة التي ترغب في ممارستها مستقبلًا؟"
+      }
+    ],
+    "plural": "Berufe",
+    "translationKind": "curated"
+  },
+  {
+    "id": 21,
+    "level": "A2",
+    "article": "der",
+    "german": "Kollege",
+    "arabic": "زميل في العمل",
+    "emoji": "🤝",
+    "category": "العمل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Mein Kollege hilft mir bei der Arbeit.",
+        "ar": "يساعدني زميلي في العمل."
+      }
+    ],
+    "plural": "Kollegen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 22,
+    "level": "A2",
+    "article": "die",
+    "german": "Wohnung",
+    "arabic": "شقة",
+    "emoji": "🏠",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Wir suchen eine größere Wohnung.",
+        "ar": "نبحث عن شقة أكبر."
+      }
+    ],
+    "plural": "Wohnungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 23,
+    "level": "A2",
+    "article": "die",
+    "german": "Miete",
+    "arabic": "إيجار",
+    "emoji": "🔑",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Miete ist in dieser Stadt sehr hoch.",
+        "ar": "الإيجار مرتفع جدًا في هذه المدينة."
+      }
+    ],
+    "plural": "Mieten",
+    "translationKind": "curated"
+  },
+  {
+    "id": 24,
+    "level": "A2",
+    "article": "der",
+    "german": "Schlüssel",
+    "arabic": "مفتاح",
+    "emoji": "🗝️",
+    "category": "المنزل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ich habe meinen Schlüssel zu Hause vergessen.",
+        "ar": "نسيت مفتاحي في المنزل."
+      }
+    ],
+    "plural": "Schlüssel",
+    "translationKind": "curated"
+  },
+  {
+    "id": 25,
+    "level": "A2",
+    "article": "das",
+    "german": "Krankenhaus",
+    "arabic": "مستشفى",
+    "emoji": "🏥",
+    "category": "الصحة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Sie arbeitet als Ärztin im Krankenhaus.",
+        "ar": "تعمل طبيبة في المستشفى."
+      }
+    ],
+    "plural": "Krankenhäuser",
+    "translationKind": "curated"
+  },
+  {
+    "id": 26,
+    "level": "A2",
+    "article": "die",
+    "german": "Gesundheit",
+    "arabic": "صحة",
+    "emoji": "💚",
+    "category": "الصحة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Regelmäßige Bewegung ist gut für die Gesundheit.",
+        "ar": "الحركة المنتظمة مفيدة للصحة."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 27,
+    "level": "A2",
+    "article": "die",
+    "german": "Apotheke",
+    "arabic": "صيدلية",
+    "emoji": "💊",
+    "category": "الصحة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Apotheke an der Ecke hat noch geöffnet.",
+        "ar": "الصيدلية عند الزاوية ما زالت مفتوحة."
+      }
+    ],
+    "plural": "Apotheken",
+    "translationKind": "curated"
+  },
+  {
+    "id": 28,
+    "level": "A2",
+    "article": "der",
+    "german": "Urlaub",
+    "arabic": "إجازة",
+    "emoji": "🏖️",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Im Sommer machen wir zwei Wochen Urlaub.",
+        "ar": "نقضي إجازة لمدة أسبوعين في الصيف."
+      }
+    ],
+    "plural": "Urlaube",
+    "translationKind": "curated"
+  },
+  {
+    "id": 29,
+    "level": "A2",
+    "article": "die",
+    "german": "Haltestelle",
+    "arabic": "موقف مواصلات",
+    "emoji": "🚏",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "An der nächsten Haltestelle müssen wir aussteigen.",
+        "ar": "علينا النزول في الموقف التالي."
+      }
+    ],
+    "plural": "Haltestellen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 30,
+    "level": "A2",
+    "article": "die",
+    "german": "Verspätung",
+    "arabic": "تأخّر",
+    "emoji": "⏱️",
+    "category": "السفر",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der Bus hat zehn Minuten Verspätung.",
+        "ar": "الحافلة متأخرة عشر دقائق."
+      }
+    ],
+    "plural": "Verspätungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 31,
+    "level": "A2",
+    "article": "",
+    "german": "vereinbaren",
+    "arabic": "يحدّد بالاتفاق",
+    "emoji": "📆",
+    "category": "الحياة اليومية",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Wir vereinbaren einen Termin für nächste Woche.",
+        "ar": "نحدد بالاتفاق موعدًا للأسبوع المقبل."
+      }
+    ],
+    "verbForms": {
+      "present": "er vereinbart",
+      "past": "er vereinbarte",
+      "perfect": "er hat vereinbart"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 32,
+    "level": "A2",
+    "article": "",
+    "german": "einkaufen",
+    "arabic": "يتسوّق",
+    "emoji": "🛒",
+    "category": "الحياة اليومية",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Am Samstag kaufe ich auf dem Markt ein.",
+        "ar": "أتسوق في السوق يوم السبت."
+      }
+    ],
+    "verbForms": {
+      "present": "er kauft ein",
+      "past": "er kaufte ein",
+      "perfect": "er hat eingekauft"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 33,
+    "level": "A2",
+    "article": "",
+    "german": "pünktlich",
+    "arabic": "ملتزم بالموعد",
+    "emoji": "🕘",
+    "category": "العمل",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Der Zug ist heute pünktlich.",
+        "ar": "القطار ملتزم بالموعد اليوم."
+      }
+    ],
+    "comparative": "pünktlicher",
+    "superlative": "am pünktlichsten",
+    "declensionStem": "pünktlich",
+    "translationKind": "curated"
+  },
+  {
+    "id": 34,
+    "level": "A2",
+    "article": "",
+    "german": "freundlich",
+    "arabic": "ودود",
+    "emoji": "😊",
+    "category": "الحياة اليومية",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Die Verkäuferin war sehr freundlich.",
+        "ar": "كانت البائعة ودودة جدًا."
+      }
+    ],
+    "comparative": "freundlicher",
+    "superlative": "am freundlichsten",
+    "declensionStem": "freundlich",
+    "translationKind": "curated"
+  },
+  {
+    "id": 35,
+    "level": "A2",
+    "article": "",
+    "german": "unterwegs",
+    "arabic": "في الطريق",
+    "emoji": "🧭",
+    "category": "السفر",
+    "pos": "adverb",
+    "examples": [
+      {
+        "de": "Ich bin gerade unterwegs und rufe später an.",
+        "ar": "أنا في الطريق الآن وسأتصل لاحقًا."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 36,
+    "level": "B1",
+    "article": "die",
+    "german": "Erfahrung",
+    "arabic": "خبرة أو تجربة",
+    "emoji": "🧠",
+    "category": "العمل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Sie hat viel Erfahrung im Umgang mit Kindern.",
+        "ar": "لديها خبرة كبيرة في التعامل مع الأطفال."
+      }
+    ],
+    "plural": "Erfahrungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 37,
+    "level": "B1",
+    "article": "die",
+    "german": "Ausbildung",
+    "arabic": "تأهيل مهني",
+    "emoji": "🛠️",
+    "category": "التعليم",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Nach der Schule beginnt er eine Ausbildung zum Koch.",
+        "ar": "يبدأ بعد المدرسة تدريبًا مهنيًا ليصبح طاهيًا."
+      }
+    ],
+    "plural": "Ausbildungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 38,
+    "level": "B1",
+    "article": "die",
+    "german": "Verantwortung",
+    "arabic": "مسؤولية",
+    "emoji": "🤲",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Wir tragen gemeinsam die Verantwortung für das Projekt.",
+        "ar": "نتحمل معًا مسؤولية المشروع."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 39,
+    "level": "B1",
+    "article": "die",
+    "german": "Entscheidung",
+    "arabic": "قرار",
+    "emoji": "🔀",
+    "category": "الحياة اليومية",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Diese Entscheidung ist mir nicht leichtgefallen.",
+        "ar": "لم يكن اتخاذ هذا القرار سهلًا عليّ."
+      }
+    ],
+    "plural": "Entscheidungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 40,
+    "level": "B1",
+    "article": "die",
+    "german": "Bewerbung",
+    "arabic": "طلب توظيف",
+    "emoji": "📄",
+    "category": "العمل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ich habe meine Bewerbung gestern abgeschickt.",
+        "ar": "أرسلت طلب التوظيف أمس."
+      }
+    ],
+    "plural": "Bewerbungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 41,
+    "level": "B1",
+    "article": "der",
+    "german": "Vorteil",
+    "arabic": "ميزة",
+    "emoji": "➕",
+    "category": "الأفكار والآراء",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Ein Vorteil dieser Wohnung ist die ruhige Lage.",
+        "ar": "من مزايا هذه الشقة موقعها الهادئ."
+      }
+    ],
+    "plural": "Vorteile",
+    "translationKind": "curated"
+  },
+  {
+    "id": 42,
+    "level": "B1",
+    "article": "der",
+    "german": "Nachteil",
+    "arabic": "عيب أو جانب سلبي",
+    "emoji": "➖",
+    "category": "الأفكار والآراء",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der einzige Nachteil ist der lange Arbeitsweg.",
+        "ar": "العيب الوحيد هو طول الطريق إلى العمل."
+      }
+    ],
+    "plural": "Nachteile",
+    "translationKind": "curated"
+  },
+  {
+    "id": 43,
+    "level": "B1",
+    "article": "die",
+    "german": "Umwelt",
+    "arabic": "البيئة",
+    "emoji": "🌍",
+    "category": "البيئة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Wir sollten die Umwelt besser schützen.",
+        "ar": "ينبغي أن نحمي البيئة بشكل أفضل."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 44,
+    "level": "B1",
+    "article": "die",
+    "german": "Verschmutzung",
+    "arabic": "تلوّث",
+    "emoji": "🏭",
+    "category": "البيئة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Verschmutzung des Flusses gefährdet viele Tiere.",
+        "ar": "يهدد تلوث النهر كثيرًا من الحيوانات."
+      }
+    ],
+    "plural": "Verschmutzungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 45,
+    "level": "B1",
+    "article": "die",
+    "german": "Gemeinschaft",
+    "arabic": "جماعة أو مجتمع مترابط",
+    "emoji": "👥",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "In unserer Gemeinschaft hilft jeder dem anderen.",
+        "ar": "يساعد كل فرد الآخر في جماعتنا."
+      }
+    ],
+    "plural": "Gemeinschaften",
+    "translationKind": "curated"
+  },
+  {
+    "id": 46,
+    "level": "B1",
+    "article": "die",
+    "german": "Beziehung",
+    "arabic": "علاقة",
+    "emoji": "🔗",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Sie hat eine enge Beziehung zu ihrer Schwester.",
+        "ar": "تربطها بأختها علاقة وثيقة."
+      }
+    ],
+    "plural": "Beziehungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 47,
+    "level": "B1",
+    "article": "",
+    "german": "sich bewerben",
+    "arabic": "يتقدّم لوظيفة",
+    "emoji": "📨",
+    "category": "العمل",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Ich bewerbe mich um eine Stelle als Verkäufer.",
+        "ar": "أتقدم لوظيفة بائع."
+      }
+    ],
+    "verbForms": {
+      "present": "er bewirbt sich",
+      "past": "er bewarb sich",
+      "perfect": "er hat sich beworben"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 48,
+    "level": "B1",
+    "article": "",
+    "german": "teilnehmen",
+    "arabic": "يشارك",
+    "emoji": "🙋",
+    "category": "التعليم",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Möchtest du an unserem Sprachkurs teilnehmen?",
+        "ar": "هل ترغب في المشاركة في دورة اللغة لدينا؟"
+      }
+    ],
+    "verbForms": {
+      "present": "er nimmt teil",
+      "past": "er nahm teil",
+      "perfect": "er hat teilgenommen"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 49,
+    "level": "B1",
+    "article": "",
+    "german": "vermeiden",
+    "arabic": "يتجنّب",
+    "emoji": "🚧",
+    "category": "الحياة اليومية",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Ich versuche, unnötigen Müll zu vermeiden.",
+        "ar": "أحاول تجنب النفايات غير الضرورية."
+      }
+    ],
+    "verbForms": {
+      "present": "er vermeidet",
+      "past": "er vermied",
+      "perfect": "er hat vermieden"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 50,
+    "level": "B1",
+    "article": "",
+    "german": "zuverlässig",
+    "arabic": "موثوق",
+    "emoji": "✅",
+    "category": "العمل",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Auf sie kann man sich verlassen, sie ist sehr zuverlässig.",
+        "ar": "يمكن الاعتماد عليها، فهي موثوقة جدًا."
+      }
+    ],
+    "comparative": "zuverlässiger",
+    "superlative": "am zuverlässigsten",
+    "declensionStem": "zuverlässig",
+    "translationKind": "curated"
+  },
+  {
+    "id": 51,
+    "level": "B1",
+    "article": "",
+    "german": "selbstständig",
+    "arabic": "مستقل ويعتمد على نفسه",
+    "emoji": "🧑‍💼",
+    "category": "العمل",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Die Kinder sollen lernen, selbstständig zu arbeiten.",
+        "ar": "ينبغي أن يتعلم الأطفال العمل باستقلالية."
+      }
+    ],
+    "comparative": "selbstständiger",
+    "superlative": "am selbstständigsten",
+    "declensionStem": "selbstständig",
+    "translationKind": "curated"
+  },
+  {
+    "id": 52,
+    "level": "B1",
+    "article": "die",
+    "german": "Herausforderung",
+    "arabic": "تحدٍّ",
+    "emoji": "⛰️",
+    "category": "الحياة اليومية",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Eine neue Sprache zu lernen ist eine spannende Herausforderung.",
+        "ar": "تعلم لغة جديدة تحدٍّ مثير للاهتمام."
+      }
+    ],
+    "plural": "Herausforderungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 53,
+    "level": "B1",
+    "article": "die",
+    "german": "Weiterbildung",
+    "arabic": "تعليم مستمر وتطوير مهني",
+    "emoji": "📚",
+    "category": "التعليم",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Firma unterstützt die Weiterbildung ihrer Mitarbeiter.",
+        "ar": "تدعم الشركة التطوير المهني لموظفيها."
+      }
+    ],
+    "plural": "Weiterbildungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 54,
+    "level": "B2",
+    "article": "die",
+    "german": "Voraussetzung",
+    "arabic": "شرط مسبق",
+    "emoji": "📋",
+    "category": "العمل والدراسة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Gute Deutschkenntnisse sind eine Voraussetzung für diese Stelle.",
+        "ar": "إجادة اللغة الألمانية شرط مسبق لهذه الوظيفة."
+      }
+    ],
+    "plural": "Voraussetzungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 55,
+    "level": "B2",
+    "article": "die",
+    "german": "Nachhaltigkeit",
+    "arabic": "استدامة",
+    "emoji": "♻️",
+    "category": "البيئة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Bei der Produktion achten wir auf Nachhaltigkeit.",
+        "ar": "نراعي الاستدامة في عملية الإنتاج."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 56,
+    "level": "B2",
+    "article": "der",
+    "german": "Zusammenhang",
+    "arabic": "ترابط أو سياق",
+    "emoji": "🧩",
+    "category": "الأفكار والآراء",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Es gibt einen Zusammenhang zwischen Schlaf und Konzentration.",
+        "ar": "هناك ارتباط بين النوم والتركيز."
+      }
+    ],
+    "plural": "Zusammenhänge",
+    "translationKind": "curated"
+  },
+  {
+    "id": 57,
+    "level": "B2",
+    "article": "die",
+    "german": "Auswirkung",
+    "arabic": "أثر أو تأثير",
+    "emoji": "🌊",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die neue Regelung hat positive Auswirkungen auf den Verkehr.",
+        "ar": "للنظام الجديد آثار إيجابية على حركة المرور."
+      }
+    ],
+    "plural": "Auswirkungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 58,
+    "level": "B2",
+    "article": "die",
+    "german": "Maßnahme",
+    "arabic": "إجراء",
+    "emoji": "📝",
+    "category": "العمل والدراسة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Stadt plant Maßnahmen gegen den Lärm.",
+        "ar": "تخطط المدينة لاتخاذ إجراءات ضد الضوضاء."
+      }
+    ],
+    "plural": "Maßnahmen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 59,
+    "level": "B2",
+    "article": "der",
+    "german": "Widerspruch",
+    "arabic": "تناقض أو اعتراض",
+    "emoji": "↔️",
+    "category": "الأفكار والآراء",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Zwischen seinen Worten und seinem Handeln besteht ein Widerspruch.",
+        "ar": "هناك تناقض بين أقواله وأفعاله."
+      }
+    ],
+    "plural": "Widersprüche",
+    "translationKind": "curated"
+  },
+  {
+    "id": 60,
+    "level": "B2",
+    "article": "die",
+    "german": "Gleichberechtigung",
+    "arabic": "مساواة في الحقوق",
+    "emoji": "⚖️",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der Verein setzt sich für die Gleichberechtigung von Frauen und Männern ein.",
+        "ar": "تدافع الجمعية عن المساواة في الحقوق بين النساء والرجال."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 61,
+    "level": "B2",
+    "article": "die",
+    "german": "Erkenntnis",
+    "arabic": "إدراك أو معرفة مكتسبة",
+    "emoji": "💡",
+    "category": "الأفكار والآراء",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Studie liefert neue Erkenntnisse über das Lernen.",
+        "ar": "تقدم الدراسة معارف جديدة عن التعلم."
+      }
+    ],
+    "plural": "Erkenntnisse",
+    "translationKind": "curated"
+  },
+  {
+    "id": 62,
+    "level": "B2",
+    "article": "die",
+    "german": "Auseinandersetzung",
+    "arabic": "نقاش حاد أو مواجهة",
+    "emoji": "💬",
+    "category": "المجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Nach einer langen Auseinandersetzung fanden beide Seiten eine Lösung.",
+        "ar": "بعد نقاش حاد وطويل، توصل الطرفان إلى حل."
+      }
+    ],
+    "plural": "Auseinandersetzungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 63,
+    "level": "B2",
+    "article": "",
+    "german": "berücksichtigen",
+    "arabic": "يأخذ في الحسبان",
+    "emoji": "🔎",
+    "category": "العمل والدراسة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Bei der Planung müssen wir die Kosten berücksichtigen.",
+        "ar": "علينا أخذ التكاليف في الحسبان عند التخطيط."
+      }
+    ],
+    "verbForms": {
+      "present": "er berücksichtigt",
+      "past": "er berücksichtigte",
+      "perfect": "er hat berücksichtigt"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 64,
+    "level": "B2",
+    "article": "",
+    "german": "gewährleisten",
+    "arabic": "يضمن",
+    "emoji": "🛡️",
+    "category": "العمل والدراسة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Regelmäßige Kontrollen gewährleisten die Sicherheit der Anlage.",
+        "ar": "تضمن الفحوص المنتظمة سلامة المنشأة."
+      }
+    ],
+    "verbForms": {
+      "present": "er gewährleistet",
+      "past": "er gewährleistete",
+      "perfect": "er hat gewährleistet"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 65,
+    "level": "B2",
+    "article": "",
+    "german": "beeinträchtigen",
+    "arabic": "يؤثّر سلبًا في",
+    "emoji": "📉",
+    "category": "البيئة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Starker Lärm kann die Konzentration beeinträchtigen.",
+        "ar": "قد تؤثر الضوضاء الشديدة سلبًا في التركيز."
+      }
+    ],
+    "verbForms": {
+      "present": "er beeinträchtigt",
+      "past": "er beeinträchtigte",
+      "perfect": "er hat beeinträchtigt"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 66,
+    "level": "B2",
+    "article": "",
+    "german": "nachweisen",
+    "arabic": "يثبت بالأدلّة",
+    "emoji": "🔬",
+    "category": "العمل والدراسة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Sie konnte ihre Berufserfahrung mit Zeugnissen nachweisen.",
+        "ar": "تمكنت من إثبات خبرتها المهنية بالشهادات."
+      }
+    ],
+    "verbForms": {
+      "present": "er weist nach",
+      "past": "er wies nach",
+      "perfect": "er hat nachgewiesen"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 67,
+    "level": "B2",
+    "article": "",
+    "german": "bewältigen",
+    "arabic": "يتغلّب على صعوبة",
+    "emoji": "🧗",
+    "category": "العمل والدراسة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Gemeinsam können wir diese schwierige Aufgabe bewältigen.",
+        "ar": "يمكننا معًا إنجاز هذه المهمة الصعبة."
+      }
+    ],
+    "verbForms": {
+      "present": "er bewältigt",
+      "past": "er bewältigte",
+      "perfect": "er hat bewältigt"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 68,
+    "level": "B2",
+    "article": "",
+    "german": "ausschlaggebend",
+    "arabic": "حاسم",
+    "emoji": "🎯",
+    "category": "الأفكار والآراء",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Seine Erfahrung war für die Entscheidung ausschlaggebend.",
+        "ar": "كانت خبرته حاسمة في اتخاذ القرار."
+      }
+    ],
+    "declensionStem": "ausschlaggebend",
+    "translationKind": "curated"
+  },
+  {
+    "id": 69,
+    "level": "B2",
+    "article": "",
+    "german": "nachvollziehbar",
+    "arabic": "مفهوم ويمكن تتبّع منطقه",
+    "emoji": "🧭",
+    "category": "الأفكار والآراء",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Ihre Erklärung ist klar und nachvollziehbar.",
+        "ar": "شرحها واضح ويمكن فهم منطقه."
+      }
+    ],
+    "comparative": "nachvollziehbarer",
+    "superlative": "am nachvollziehbarsten",
+    "declensionStem": "nachvollziehbar",
+    "translationKind": "curated"
+  },
+  {
+    "id": 70,
+    "level": "B2",
+    "article": "",
+    "german": "vielfältig",
+    "arabic": "متنوّع",
+    "emoji": "🎨",
+    "category": "المجتمع",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Die Stadt bietet vielfältige Möglichkeiten zur Freizeitgestaltung.",
+        "ar": "تقدم المدينة فرصًا متنوعة لقضاء وقت الفراغ."
+      }
+    ],
+    "comparative": "vielfältiger",
+    "superlative": "am vielfältigsten",
+    "declensionStem": "vielfältig",
+    "translationKind": "curated"
+  },
+  {
+    "id": 71,
+    "level": "B2",
+    "article": "",
+    "german": "unabhängig",
+    "arabic": "مستقل وغير تابع",
+    "emoji": "🕊️",
+    "category": "المجتمع",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Die Untersuchung wurde von einem unabhängigen Institut durchgeführt.",
+        "ar": "أجرت الدراسة مؤسسة مستقلة."
+      }
+    ],
+    "comparative": "unabhängiger",
+    "superlative": "am unabhängigsten",
+    "declensionStem": "unabhängig",
+    "translationKind": "curated"
+  },
+  {
+    "id": 72,
+    "level": "C1",
+    "article": "die",
+    "german": "Verhältnismäßigkeit",
+    "arabic": "تناسب الإجراء مع الغرض",
+    "emoji": "⚖️",
+    "category": "القانون والمجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Das Gericht prüft die Verhältnismäßigkeit der Maßnahme.",
+        "ar": "تفحص المحكمة مدى تناسب الإجراء مع الغرض منه."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 73,
+    "level": "C1",
+    "article": "die",
+    "german": "Unzulänglichkeit",
+    "arabic": "قصور أو عدم كفاية",
+    "emoji": "🧩",
+    "category": "الفكر والتحليل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Der Bericht weist auf die Unzulänglichkeit der bisherigen Maßnahmen hin.",
+        "ar": "يشير التقرير إلى قصور الإجراءات المتخذة حتى الآن."
+      }
+    ],
+    "plural": "Unzulänglichkeiten",
+    "translationKind": "curated"
+  },
+  {
+    "id": 74,
+    "level": "C1",
+    "article": "die",
+    "german": "Tragweite",
+    "arabic": "مدى الأثر أو العواقب",
+    "emoji": "🌐",
+    "category": "الفكر والتحليل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die volle Tragweite dieser Entscheidung wurde erst später deutlich.",
+        "ar": "لم يتضح المدى الكامل لعواقب هذا القرار إلا لاحقًا."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 75,
+    "level": "C1",
+    "article": "der",
+    "german": "Ermessensspielraum",
+    "arabic": "هامش السلطة التقديرية",
+    "emoji": "📏",
+    "category": "القانون والمجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Bei der Vergabe der Mittel hat die Behörde einen gewissen Ermessensspielraum.",
+        "ar": "تتمتع الجهة الإدارية بهامش معين من السلطة التقديرية عند تخصيص الأموال."
+      }
+    ],
+    "plural": "Ermessensspielräume",
+    "translationKind": "curated"
+  },
+  {
+    "id": 76,
+    "level": "C1",
+    "article": "die",
+    "german": "Wechselwirkung",
+    "arabic": "تأثير متبادل",
+    "emoji": "🔄",
+    "category": "البحث والمعرفة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Die Forscher untersuchen die Wechselwirkung zwischen Klima und Vegetation.",
+        "ar": "يدرس الباحثون التأثير المتبادل بين المناخ والغطاء النباتي."
+      }
+    ],
+    "plural": "Wechselwirkungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 77,
+    "level": "C1",
+    "article": "die",
+    "german": "Schlussfolgerung",
+    "arabic": "استنتاج",
+    "emoji": "💡",
+    "category": "البحث والمعرفة",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Aus diesen Daten lässt sich keine eindeutige Schlussfolgerung ziehen.",
+        "ar": "لا يمكن استخلاص استنتاج واضح من هذه البيانات."
+      }
+    ],
+    "plural": "Schlussfolgerungen",
+    "translationKind": "curated"
+  },
+  {
+    "id": 78,
+    "level": "C1",
+    "article": "der",
+    "german": "Sachverhalt",
+    "arabic": "وقائع المسألة",
+    "emoji": "📑",
+    "category": "القانون والمجتمع",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Zunächst müssen wir den Sachverhalt genau klären.",
+        "ar": "علينا أولًا توضيح وقائع المسألة بدقة."
+      }
+    ],
+    "plural": "Sachverhalte",
+    "translationKind": "curated"
+  },
+  {
+    "id": 79,
+    "level": "C1",
+    "article": "die",
+    "german": "Voreingenommenheit",
+    "arabic": "تحيّز مسبق",
+    "emoji": "🔍",
+    "category": "الفكر والتحليل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Eine faire Beurteilung setzt voraus, dass wir unsere Voreingenommenheit erkennen.",
+        "ar": "يقتضي التقييم المنصف أن ندرك تحيزنا المسبق."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 80,
+    "level": "C1",
+    "article": "die",
+    "german": "Zwangsläufigkeit",
+    "arabic": "حتمية",
+    "emoji": "⏳",
+    "category": "الفكر والتحليل",
+    "pos": "noun",
+    "examples": [
+      {
+        "de": "Aus den Zahlen allein ergibt sich keine Zwangsläufigkeit dieser Entwicklung.",
+        "ar": "لا تثبت الأرقام وحدها حتمية هذا التطور."
+      }
+    ],
+    "translationKind": "curated"
+  },
+  {
+    "id": 81,
+    "level": "C1",
+    "article": "",
+    "german": "relativieren",
+    "arabic": "يضع في سياق نسبي",
+    "emoji": "🔀",
+    "category": "الفكر والتحليل",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Die neuen Ergebnisse relativieren die Bedeutung der früheren Studie.",
+        "ar": "تضع النتائج الجديدة أهمية الدراسة السابقة في سياق نسبي."
+      }
+    ],
+    "verbForms": {
+      "present": "er relativiert",
+      "past": "er relativierte",
+      "perfect": "er hat relativiert"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 82,
+    "level": "C1",
+    "article": "",
+    "german": "differenzieren",
+    "arabic": "يميّز بين الفروق الدقيقة",
+    "emoji": "🔬",
+    "category": "البحث والمعرفة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Wir müssen zwischen persönlichen Meinungen und überprüfbaren Fakten differenzieren.",
+        "ar": "علينا التمييز بين الآراء الشخصية والحقائق القابلة للتحقق."
+      }
+    ],
+    "verbForms": {
+      "present": "er differenziert",
+      "past": "er differenzierte",
+      "perfect": "er hat differenziert"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 83,
+    "level": "C1",
+    "article": "",
+    "german": "veranschaulichen",
+    "arabic": "يوضّح بمثال أو صورة",
+    "emoji": "🖼️",
+    "category": "البحث والمعرفة",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Die Grafik veranschaulicht die Entwicklung der letzten Jahre.",
+        "ar": "يوضح الرسم البياني تطور السنوات الأخيرة."
+      }
+    ],
+    "verbForms": {
+      "present": "er veranschaulicht",
+      "past": "er veranschaulichte",
+      "perfect": "er hat veranschaulicht"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 84,
+    "level": "C1",
+    "article": "",
+    "german": "hinterfragen",
+    "arabic": "يُخضع للفحص النقدي",
+    "emoji": "❔",
+    "category": "الفكر والتحليل",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Es ist wichtig, scheinbar selbstverständliche Annahmen kritisch zu hinterfragen.",
+        "ar": "من المهم إخضاع الافتراضات التي تبدو بديهية للفحص النقدي."
+      }
+    ],
+    "verbForms": {
+      "present": "er hinterfragt",
+      "past": "er hinterfragte",
+      "perfect": "er hat hinterfragt"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 85,
+    "level": "C1",
+    "article": "",
+    "german": "einräumen",
+    "arabic": "يقرّ أو يعترف بحجّة",
+    "emoji": "🤝",
+    "category": "النقاش والحجج",
+    "pos": "verb",
+    "examples": [
+      {
+        "de": "Er räumte ein, dass seine erste Einschätzung falsch gewesen war.",
+        "ar": "أقرّ بأن تقديره الأول كان خاطئًا."
+      }
+    ],
+    "verbForms": {
+      "present": "er räumt ein",
+      "past": "er räumte ein",
+      "perfect": "er hat eingeräumt"
+    },
+    "translationKind": "curated"
+  },
+  {
+    "id": 86,
+    "level": "C1",
+    "article": "",
+    "german": "unumgänglich",
+    "arabic": "لا يمكن تجنّبه",
+    "emoji": "🚦",
+    "category": "النقاش والحجج",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Angesichts der Schäden ist eine umfassende Sanierung unumgänglich.",
+        "ar": "في ضوء الأضرار، لا يمكن تجنب إجراء ترميم شامل."
+      }
+    ],
+    "declensionStem": "unumgänglich",
+    "translationKind": "curated"
+  },
+  {
+    "id": 87,
+    "level": "C1",
+    "article": "",
+    "german": "stichhaltig",
+    "arabic": "قويّ الحجة ومقنع",
+    "emoji": "📌",
+    "category": "النقاش والحجج",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Für diese Behauptung fehlen stichhaltige Beweise.",
+        "ar": "لا توجد أدلة قوية ومقنعة على هذا الادعاء."
+      }
+    ],
+    "comparative": "stichhaltiger",
+    "superlative": "am stichhaltigsten",
+    "declensionStem": "stichhaltig",
+    "translationKind": "curated"
+  },
+  {
+    "id": 88,
+    "level": "C1",
+    "article": "",
+    "german": "ambivalent",
+    "arabic": "متضارب المشاعر أو المواقف",
+    "emoji": "🎭",
+    "category": "الفكر والتحليل",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Viele Menschen haben ein ambivalentes Verhältnis zu sozialen Medien.",
+        "ar": "لدى كثير من الناس مواقف متضاربة تجاه وسائل التواصل الاجتماعي."
+      }
+    ],
+    "declensionStem": "ambivalent",
+    "translationKind": "curated"
+  },
+  {
+    "id": 89,
+    "level": "C1",
+    "article": "",
+    "german": "aufschlussreich",
+    "arabic": "كاشف ويقدّم معلومات قيّمة",
+    "emoji": "🔦",
+    "category": "البحث والمعرفة",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Das Gespräch mit der Expertin war äußerst aufschlussreich.",
+        "ar": "كان الحديث مع الخبيرة غنيًا جدًا بالمعلومات القيّمة."
+      }
+    ],
+    "comparative": "aufschlussreicher",
+    "superlative": "am aufschlussreichsten",
+    "declensionStem": "aufschlussreich",
+    "translationKind": "curated"
+  },
+  {
+    "id": "A1:hart",
+    "level": "A1",
+    "german": "hart",
+    "article": "",
+    "arabic": "صلب؛ قاسٍ؛ صعب",
+    "pos": "adjective",
+    "examples": [
+      {
+        "de": "Ich esse hartes Brot.",
+        "ar": "أنا آكل خبزًا صلبًا."
+      }
+    ],
+    "comparative": "härter",
+    "superlative": "am härtesten",
+    "declensionStem": "hart",
+    "translationKind": "curated"
+  }
+]

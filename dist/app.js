@@ -66,9 +66,10 @@ async function selectLevel(code) {
  try { await loadLevel(code);if(request!==loadRequest)return;renderCards(); }
  catch(error){if(request!==loadRequest)return;$('#cards').innerHTML='<div class="empty">تعذّر تحميل الكلمات. <button class="secondary" id="retry-level">حاول مرة أخرى</button></div>';$('#retry-level').onclick=()=>selectLevel(code);status(error.message);}
 }
+function normalizeSearch(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ß/g,'ss'); }
 function matchingWords() {
- const query=$('#search').value.trim().toLocaleLowerCase(),pos=$('#pos-filter').value;
- return (cache.get(activeLevel)||[]).filter(word=>(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||`${word.article||''} ${word.german} ${word.arabic}`.toLocaleLowerCase().includes(query)));
+ const query=normalizeSearch($('#search').value.trim()),pos=$('#pos-filter').value;
+ return (cache.get(activeLevel)||[]).filter(word=>(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
 }
 function card(word) {
  const full=`${word.article?word.article+' ':''}${word.german}`;
@@ -104,13 +105,13 @@ function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-
 function openWord(word) {
  currentWord=word;wordTab='meaning';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
-function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar">${esc(example.ar)}</p>`:''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button></article>`;}
+function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar">${esc(example.ar)}</p>`:''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source?`<p class="source-note">${example.generated?'مثال تعليمي مولَّد في المصدر · ':''}${example.sourceUrl?`<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>`:esc(example.source)}${example.license?' · '+esc(example.license):''}</p>`:''}</article>`;}
 function renderWord() {
  const word=currentWord;
  document.querySelectorAll('[data-word-tab]').forEach(b=>{const active=b.dataset.wordTab===wordTab;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});$('#word-content').setAttribute('aria-labelledby',`${wordTab}-tab`);
  const examples=word.examples||[];
  if(wordTab==='meaning') {
-  $('#word-content').innerHTML=`<section class="meaning-block"><div class="word-pos"><span>${POS[word.pos]||POS.other}</span><span>${word.level}</span></div><div class="word-main"><h2 lang="de" dir="ltr">${word.article?`<span class="article">${esc(word.article)}</span> `:''}${esc(word.german)}</h2><button class="icon-button" data-pronounce aria-label="نطق الكلمة">♬</button></div>${word.ipa?`<p class="pronunciation" lang="de" dir="ltr">${esc(word.ipa)}</p>`:''}<p class="definition">${esc(word.arabic)}</p>${degreeHtml(word)}${word.plural?`<p class="pronunciation">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section><section><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة في المصدر الحالي.</p>'}</section>${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
+  $('#word-content').innerHTML=`<section class="meaning-block"><div class="word-pos"><span>${POS[word.pos]||POS.other}</span><span>${word.level}</span></div><div class="word-main"><h2 lang="de" dir="ltr">${word.article?`<span class="article">${esc(word.article)}</span> `:''}${esc(word.german)}</h2><button class="icon-button" data-pronounce aria-label="نطق الكلمة">♬</button></div>${word.ipa?`<p class="pronunciation" lang="de" dir="ltr">${esc(word.ipa)}</p>`:''}<p class="definition">${esc(word.arabic)}</p>${word.translationKind==='pivot'?'<p class="source-note">معنى عربي تقريبي عبر قاموس وسيط؛ قد يتغيّر مع السياق.</p>':''}${word.germanDefinition?`<p class="german-definition" lang="de" dir="ltr">${esc(word.germanDefinition)}</p>`:''}${degreeHtml(word)}${word.plural?`<p class="pronunciation">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section><section><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة في المصدر الحالي.</p>'}</section>${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
  }else if(wordTab==='examples') {
   $('#word-content').innerHTML=`<div class="section-heading"><h2>أمثلة على <b lang="de">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length?examples.map(exampleHtml).join(''):'<div class="empty">لا تتوفر أمثلة في المصدر الحالي لهذه الكلمة.</div>'}`;
  }else $('#word-content').innerHTML=grammarHtml(word);
@@ -135,7 +136,7 @@ function adjectiveTables(word) {
 function grammarHtml(word) {
  let html=`<section class="grammar-section"><h2>تصريفات <b lang="de">${esc(word.german)}</b></h2>${degreeHtml(word)}`;
  if(word.pos==='noun')html+=`<div class="example-card"><p>أداة الاسم: <b lang="de">${esc(word.article||'—')}</b></p>${word.plural?`<p>الجمع: <b lang="de">${esc(word.plural)}</b></p>`:''}</div>`;
- if(word.verbForms)html+=`<div class="grammar-grid">${Object.entries(word.verbForms).map(([key,value])=>`<div class="grammar-block"><h4>${({present:'المضارع',past:'الماضي البسيط',perfect:'الماضي التام'})[key]||esc(key)}</h4><p lang="de" dir="ltr">${esc(value)}</p></div>`).join('')}</div>`;
+ if(word.verbForms)html+=`<p class="source-note">الصيغ مع ضمير المفرد الغائب (هو / هي)، ما لم يُذكر الضمير داخل الصيغة.</p><div class="grammar-grid">${Object.entries(word.verbForms).map(([key,value])=>`<div class="grammar-block"><h4>${({present:'المضارع',past:'الماضي البسيط',perfect:'الماضي المركّب (Perfekt)'})[key]||esc(key)}</h4><p lang="de" dir="ltr">${esc(value)}</p></div>`).join('')}</div>`;
  html+='</section>';
  if(word.pos==='adjective'&&word.declensionStem)html+=adjectiveTables(word);
  if(word.forms?.length)html+=`<section class="grammar-section"><h3>صيغ الكلمة من المصدر</h3><div class="grammar-grid">${word.forms.slice(0,80).map(form=>`<div class="grammar-block"><strong lang="de" dir="ltr">${esc(form.form||form.text)}</strong><small dir="ltr">${esc((form.tags||[]).join(' · '))}</small></div>`).join('')}</div></section>`;
@@ -148,8 +149,8 @@ function renderProgress() {
  const shields=manifest.shields||[];const unlocked=shields.filter(s=>learned.size>=s.threshold).length;
  $('#stats-shields').textContent=`${unlocked} / ${shields.length}`;$('#shields-caption').textContent=`${unlocked} مكتسبة`;
  $('#shield-note').textContent=manifest.shieldNote||'تفتح الدروع مع زيادة عدد الكلمات التي تتعلّمها.';
- $('#progress-levels').innerHTML=LEVELS.map(level=>{const count=manifest.levels.find(l=>l.code===level.code)?.count||0,done=Math.min(count,countLearned(level.code));return `<div class="overall-progress"><div class="progress-label"><strong>${level.code} · ${level.name}</strong><span>${done} / ${count}</span></div><div class="track"><i style="width:${count?done/count*100:0}%"></i></div></div>`;}).join('');
- $('#shields').innerHTML=shields.map((shield,index)=>{const earned=learned.size>=shield.threshold;return `<article class="shield-card ${earned?'unlocked':''}"><div class="shield-art">${`<div class="shield-sprite" role="img" aria-label="درع سند ${esc(shield.name)}" style="background-position:${index%5*25}% ${index<5?0:100}%"></div>`}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString('ar')} كلمة</small><span class="shield-lock">${earned?'✓ مكتسب':'🔒 لم يُفتح بعد'}</span></article>`;}).join('');
+ $('#progress-levels').innerHTML=LEVELS.map(level=>{const count=manifest.levels.find(l=>l.code===level.code)?.count||0,done=Math.min(count,countLearned(level.code));return `<div class="overall-progress"><div class="progress-label"><strong>${level.code} · ${level.name}</strong><span dir="ltr">${done} / ${count}</span></div><div class="track"><i style="width:${count?done/count*100:0}%"></i></div></div>`;}).join('');
+ $('#shields').innerHTML=shields.map((shield,index)=>{const earned=learned.size>=shield.threshold;return `<article class="shield-card ${earned?'unlocked':''}"><div class="shield-art">${`<div class="shield-sprite" role="img" aria-label="درع ${esc(shield.name)}" style="background-position:${index%5*25}% ${index<5?0:100}%"></div>`}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString('ar')} كلمة</small><span class="shield-lock">${earned?'✓ مكتسب':'🔒 لم يُفتح بعد'}</span></article>`;}).join('');
 }
 function shuffled(list) {const out=[...list];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
 async function startSession(type,code) {
@@ -164,7 +165,7 @@ function renderSession() {
  const word=s.words[s.index];s.answered=false;
  let html=`<p class="eyebrow">${s.code} · ${s.index+1} من ${s.words.length}</p><h2 id="training-title">${s.type==='quiz'?'ما معنى هذه الكلمة؟':'بطاقات المراجعة'}</h2><div class="track"><i style="width:${s.index/s.words.length*100}%"></i></div><p class="quiz-word" lang="de" dir="ltr">${esc(`${word.article||''} ${word.german}`.trim())}</p><button class="secondary" id="session-speak">استمع ♬</button>`;
  if(s.type==='quiz'){
-  const distractors=shuffled(s.pool.filter(w=>w.id!==word.id&&w.arabic!==word.arabic)).slice(0,3);s.options=shuffled([word,...distractors]);
+  const distractors=shuffled([...new Map(s.pool.filter(w=>w.id!==word.id&&w.arabic!==word.arabic).map(w=>[w.arabic,w])).values()]).slice(0,3);s.options=shuffled([word,...distractors]);
   html+=`<div class="quiz-options">${s.options.map((w,i)=>`<button data-answer="${i}">${esc(w.arabic)}</button>`).join('')}</div><p class="feedback" aria-live="polite"></p><button class="primary" id="session-next" hidden>التالي ←</button>`;
  }else html+='<div id="review-answer" aria-live="polite"></div><div class="review-controls"><button class="secondary" id="review-reveal">أظهر المعنى والمثال</button><button class="primary" id="session-next" hidden>تعلّمتها ←</button><button class="secondary" id="review-skip">راجعها لاحقًا</button></div>';
  $('#training-content').innerHTML=html;$('#session-speak').onclick=()=>speak(`${word.article||''} ${word.german}`);
@@ -179,7 +180,7 @@ function renderSession() {
  }
  $('#session-next').onclick=()=>{if(s.type==='review')learnWord(word);s.index++;renderSession();};
 }
-function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.levelNote||'تصنيف المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.')}</p>${(manifest?.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)}</a><p class="source-note">${esc(source.license||'')}</p>${source.note?`<p>${esc(source.note)}</p>`:''}</div>`).join('')}<p class="source-note">التقدم والمحفوظات محفوظة محليًا في هذا المتصفح. حذف بيانات المتصفح يمحوها. النطق يعتمد على الأصوات الألمانية المتاحة في جهازك.</p>`;}
+function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.levelNote||'تصنيف المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.')}</p>${(manifest?.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)}</a><p class="source-note">${esc(source.license||'')}</p>${source.note?`<p>${esc(source.note)}</p>`:''}</div>`).join('')}<h3>تنزيل بيانات المفردات</h3><div class="data-downloads">${LEVELS.map(level=>`<a href="data/${level.code}.json" download="Wort-${level.code}.json">${level.code} · 2000 مفردة</a>`).join('')}</div><p class="source-note">التقدم والمحفوظات محفوظة محليًا في هذا المتصفح. حذف بيانات المتصفح يمحوها. النطق يعتمد على الأصوات الألمانية المتاحة في جهازك.</p>`;}
 
 $('#search').oninput=()=>{pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};

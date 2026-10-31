@@ -347,3 +347,14 @@ button[aria-busy='true'] { cursor: progress; }
 
 /* Original Sanad shields, extracted from the supplied transparent sheet. */
 .shield-sprite{width:100%;aspect-ratio:1;background-image:url('assets/sanad-shields.png');background-size:500% 200%;background-repeat:no-repeat}.shield-art{overflow:hidden}.shield-card .shield-art{filter:saturate(.65);opacity:.6}.shield-card.unlocked .shield-art{filter:none;opacity:1}.shield-card{position:relative}.shield-art img{width:100%;object-fit:contain}
+
+.german-definition{color:var(--muted);font-size:14px;line-height:1.8;overflow-wrap:anywhere}.data-downloads{display:flex;flex-wrap:wrap;gap:12px}.data-downloads a{border:1px solid var(--border);border-radius:8px;padding:10px;min-height:44px}.example-card .source-note{font-size:10px;line-height:1.7}.track i{max-width:100%}
+/* Keep the vocabulary itself within easy reach on small screens. */
+@media(max-width:600px){
+ .welcome{padding:18px 0 14px}.welcome>.eyebrow{display:none}.hero-title{font-size:24px;margin-bottom:3px}.hero-subtitle{font-size:12px}
+ #library-panel>.overall-progress{padding:12px 14px;margin-bottom:14px}.overall-progress .progress-label{margin-bottom:6px}
+ .level-tabs{margin:14px 0;gap:6px}.level-tab{min-height:64px;padding:8px 4px}.level-tab strong{font-size:21px}
+ .level-summary{margin:15px 0 12px}.level-summary #level-caption,.level-summary>#level-description{display:none}.level-summary .section-heading{margin-bottom:10px}
+ .level-summary .progress-label{margin-top:7px}.level-summary .top-actions{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+ .toolbar{display:grid;grid-template-columns:minmax(0,1fr) 132px;gap:8px;margin:12px 0}.toolbar .filter-select{width:100%;max-width:none;padding:8px;font-size:16px}.search-wrap input{font-size:16px;padding-inline-start:36px;padding-inline-end:8px}.search-wrap input::placeholder{font-size:11px}
+}

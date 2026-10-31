@@ -1,0 +1,46 @@
+{
+  "mal": {
+    "pos": "adverb",
+    "article": ""
+  },
+  "bar": {
+    "pos": "adverb",
+    "article": ""
+  },
+  "schade": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "erwachsen": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "kürzlich": {
+    "pos": "adverb",
+    "article": ""
+  },
+  "cm": {
+    "pos": "other",
+    "article": ""
+  },
+  "km": {
+    "pos": "other",
+    "article": ""
+  },
+  "kg": {
+    "pos": "other",
+    "article": ""
+  },
+  "geschwister": {
+    "pos": "noun",
+    "article": "die"
+  },
+  "nur": {
+    "pos": "adverb",
+    "article": ""
+  },
+  "sehr": {
+    "pos": "adverb",
+    "article": ""
+  }
+}

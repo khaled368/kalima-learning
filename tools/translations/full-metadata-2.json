@@ -1,0 +1,50 @@
+{
+ "entschlossen": {
+  "pos": "adjective"
+ },
+ "erneut": {
+  "pos": "adverb"
+ },
+ "berliner": {
+  "pos": "adjective"
+ },
+ "münchner": {
+  "pos": "adjective"
+ },
+ "wiener": {
+  "pos": "adjective"
+ },
+ "ma": {
+  "pos": "noun",
+  "article": "die"
+ },
+ "miss": {
+  "pos": "noun",
+  "article": "die"
+ },
+ "nick": {
+  "pos": "noun",
+  "article": "der"
+ },
+ "bob": {
+  "pos": "noun",
+  "article": "der"
+ },
+ "matt": {
+  "pos": "noun",
+  "article": "das"
+ },
+ "he": {
+  "pos": "abbrev"
+ },
+ "na": {
+  "pos": "abbrev"
+ },
+ "al": {
+  "pos": "abbrev"
+ },
+ "weihnachten": {
+  "pos": "noun",
+  "article": "das"
+ }
+}

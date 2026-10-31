@@ -1,0 +1,203 @@
+{
+  "nackt": {
+    "pos": "adjective",
+    "article": "",
+    "examples": [
+      {
+        "de": "Die Statue ist nackt.",
+        "ar": "التمثال عارٍ.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "abfolge": {
+    "pos": "noun",
+    "article": "die"
+  },
+  "nadeln": {
+    "pos": "noun",
+    "article": "",
+    "note": "جمع Nadel: إبر، أو أوراق صنوبريّة إبريّة.",
+    "examples": [
+      {
+        "de": "Die Näherin braucht neue Nadeln.",
+        "ar": "تحتاج الخيّاطة إلى إبر جديدة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "gerüste": {
+    "pos": "noun",
+    "article": "",
+    "note": "جمع Gerüst: سقالات أو هياكل داعمة.",
+    "examples": [
+      {
+        "de": "Die Arbeiter bauen die Gerüste ab.",
+        "ar": "يفكّك العمّال السقالات.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "weiche": {
+    "pos": "noun",
+    "article": "die",
+    "examples": [
+      {
+        "de": "Die Weiche leitet den Zug auf ein anderes Gleis.",
+        "ar": "يوجّه محوّل المسار القطار إلى سكّة أخرى.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "scheide": {
+    "pos": "noun",
+    "article": "die",
+    "examples": [
+      {
+        "de": "Er steckt das Schwert in die Scheide.",
+        "ar": "يضع السيف في الغمد.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "scheuer": {
+    "pos": "noun",
+    "article": "die",
+    "note": "لفظ إقليميّ للحظيرة أو مخزن المحاصيل.",
+    "examples": [
+      {
+        "de": "Das Heu wird in der Scheuer gelagert.",
+        "ar": "يُخزَّن التبن في الحظيرة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "glimmer": {
+    "pos": "noun",
+    "article": "der",
+    "examples": [
+      {
+        "de": "Glimmer ist ein Mineral mit dünnen, glänzenden Schichten.",
+        "ar": "الميكا معدن ذو طبقات رقيقة لامعة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "newton": {
+    "pos": "noun",
+    "article": "das",
+    "examples": [
+      {
+        "de": "Die Kraft beträgt zehn Newton.",
+        "ar": "تبلغ القوّة عشرة نيوتن.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "röntgen": {
+    "pos": "noun",
+    "article": "das",
+    "examples": [
+      {
+        "de": "Beim Röntgen soll man sich nicht bewegen.",
+        "ar": "ينبغي عدم التحرّك أثناء التصوير بالأشعّة السينيّة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "lappen": {
+    "pos": "noun",
+    "article": "der",
+    "examples": [
+      {
+        "de": "Mit einem Lappen wischt er den Tisch ab.",
+        "ar": "يمسح الطاولة بخرقة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "roter": {
+    "pos": "noun",
+    "article": "der",
+    "note": "تسمية دارجة، قد تكون ازدرائيّة، لليساريّ أو الشيوعيّ.",
+    "examples": [
+      {
+        "de": "Er gilt als überzeugter Roter.",
+        "ar": "يُعدّ شخصًا يساريًّا مقتنعًا بأفكاره.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "jura": {
+    "pos": "noun",
+    "article": "",
+    "note": "في سياق الدراسة تعني العلوم القانونيّة؛ وتأتي أيضًا اسمًا للعصر الجوراسيّ.",
+    "examples": [
+      {
+        "de": "Sie studiert Jura an der Universität.",
+        "ar": "تدرس القانون في الجامعة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "coca": {
+    "pos": "noun",
+    "article": "die",
+    "examples": [
+      {
+        "de": "Coca wächst in den Anden.",
+        "ar": "ينمو نبات الكوكا في جبال الأنديز.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "chi": {
+    "pos": "noun",
+    "article": "das",
+    "examples": [
+      {
+        "de": "In der chinesischen Philosophie bezeichnet Chi eine Lebensenergie.",
+        "ar": "يشير تشي في الفلسفة الصينيّة إلى طاقة الحياة.",
+        "source": "Wort · مثال تعليمي مُعدّ للموقع",
+        "generated": true
+      }
+    ]
+  },
+  "stupid": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "vulgär": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "schroff": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "optisch": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "merkbar": {
+    "pos": "adjective",
+    "article": ""
+  },
+  "analog": {
+    "pos": "adjective",
+    "article": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "koma": {
+    "article": "das",
+    "pos": "noun"
+  },
+  "single": {
+    "article": "der",
+    "pos": "noun"
+  },
+  "gemäß": {
+    "pos": "preposition"
+  },
+  "binnen": {
+    "pos": "preposition"
+  },
+  "hauptsächlich": {
+    "pos": "adverb"
+  },
+  "dementsprechend": {
+    "pos": "adverb"
+  },
+  "dicken": {
+    "pos": "adjective"
+  }
+}

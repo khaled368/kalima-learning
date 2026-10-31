@@ -1,0 +1,60 @@
+{
+  "kostenpflichtig": {
+    "pos": "adjective"
+  },
+  "unbeschreiblich": {
+    "pos": "adjective"
+  },
+  "gedankenverloren": {
+    "pos": "adjective"
+  },
+  "zusammengebrochen": {
+    "pos": "adjective"
+  },
+  "gesellschaftsleben": {
+    "article": "das",
+    "pos": "noun"
+  },
+  "elan": {
+    "article": "der",
+    "pos": "noun"
+  },
+  "balg": {
+    "article": "der",
+    "pos": "noun"
+  },
+  "claim": {
+    "article": "der",
+    "pos": "noun"
+  },
+  "respektlosigkeit": {
+    "article": "die",
+    "pos": "noun"
+  },
+  "recte": {
+    "pos": "adverb"
+  },
+  "halber": {
+    "pos": "preposition"
+  },
+  "versatzgut": {
+    "article": "das",
+    "pos": "noun"
+  },
+  "beschützerverhalten": {
+    "article": "das",
+    "pos": "noun"
+  },
+  "bestandsinventur": {
+    "article": "die",
+    "pos": "noun"
+  },
+  "beauftragter": {
+    "article": "der",
+    "pos": "noun"
+  },
+  "bevollmächtigter": {
+    "article": "der",
+    "pos": "noun"
+  }
+}

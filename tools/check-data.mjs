@@ -14,6 +14,8 @@ for(const level of levels){
   const normalized=word.german.normalize('NFC').toLocaleLowerCase().trim();
   assert(normalized&&normalized.length>0,`Empty headword ${word.id}`);
   assert(!headwords.has(normalized),`Repeated headword ${word.german}`);headwords.add(normalized);
+  assert.notEqual(word.translationKind,'pivot',`Unreviewed English pivot ${word.german}`);
+  assert(!/معنى مشتق|غير موثّقة المعنى|جزء كلمة غير مكتمل/.test(word.arabic),`Placeholder gloss ${word.german}`);
   assert(typeof word.arabic==='string'&&/[\u0600-\u06ff]/u.test(word.arabic),`Missing Arabic meaning ${word.german}`);
   assert(Array.isArray(word.examples)&&word.examples.some(e=>typeof e.de==='string'&&e.de.trim()),`Missing example ${word.german}`);
   exampleCount+=word.examples.length;
