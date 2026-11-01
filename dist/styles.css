@@ -171,8 +171,8 @@ dialog::backdrop { background: #000b; backdrop-filter: blur(7px); -webkit-backdr
 .grammar-block { min-width: 0; }
 .grammar-block > h4, .grammar-block > h3, .grammar-block > strong { display: block; margin: 0 0 12px; color: #b8c1ce; font-size: 15px; font-weight: 600; }
 .gender-m { color: #82b3df !important; }
-.gender-f { color: #dc8b92 !important; }
-.gender-n { color: #93b98b !important; }
+.gender-f { color: #ef9ec4 !important; }
+.gender-n { color: #c7beb0 !important; }
 .gender-pl { color: #d3ac73 !important; }
 .grammar-table { width: 100%; border-collapse: collapse; font: 500 16px/1.85 var(--latin); direction: ltr; table-layout: fixed; }
 .grammar-table tr { border: 0; }
@@ -182,8 +182,8 @@ dialog::backdrop { background: #000b; backdrop-filter: blur(7px); -webkit-backdr
 .grammar-table td small { display: block; }
 .grammar-table .ending, .grammar-table mark, .grammar-table highlight { color: inherit; background: transparent; font-weight: 700; }
 .gender-m .ending, .gender-m .grammar-table .ending { color: #82b3df; }
-.gender-f .ending, .gender-f .grammar-table .ending { color: #dc8b92; }
-.gender-n .ending, .gender-n .grammar-table .ending { color: #93b98b; }
+.gender-f .ending, .gender-f .grammar-table .ending { color: #ef9ec4; }
+.gender-n .ending, .gender-n .grammar-table .ending { color: #c7beb0; }
 .gender-pl .ending, .gender-pl .grammar-table .ending { color: #d3ac73; }
 .ending { color: var(--gold); font-weight: 700; }
 .grammar-block .grammar-table + .grammar-table { margin-top: 12px; }
@@ -328,8 +328,8 @@ button[aria-busy='true'] { cursor: progress; }
 .word-content > .section-heading { align-items: flex-start; flex-wrap: wrap; }
 .word-detail-footer { padding: 16px 20px calc(18px + env(safe-area-inset-bottom, 0px)); margin-top: 0; background: #10151d; }
 .grammar-block.gender-m > h4 { color: #82b3df; }
-.grammar-block.gender-f > h4 { color: #dc8b92; }
-.grammar-block.gender-n > h4 { color: #93b98b; }
+.grammar-block.gender-f > h4 { color: #ef9ec4; }
+.grammar-block.gender-n > h4 { color: #c7beb0; }
 .grammar-block.gender-pl > h4 { color: #d3ac73; }
 .shield-card > strong { display: block; font-size: 13px; margin: 11px 0 5px; }
 .shield-card.unlocked > strong { color: #e2c08b; }
@@ -603,3 +603,23 @@ body[data-card-view='grid'] .card-actions button{min-width:44px;min-height:44px;
 @media(max-width:359px){.verb-table th,.verb-table td{padding:9px 8px;font-size:16px}.verb-tense-tabs button{font-size:13px}}
 
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.verb-table th{width:42%}.verb-table th,.verb-table td{padding:8px 9px}.verb-pronoun span{unicode-bidi:isolate;font-size:16px}
+
+/* Learning history, foreground usage, and explicit review access. */
+.text-button{border:0;background:none;color:var(--blue);font:inherit;min-height:44px;padding:4px 6px;cursor:pointer}.library-learning-note{font-size:13px!important;line-height:1.8!important;margin:10px 0 4px!important;color:var(--muted)}.library-learning-note .text-button{font-size:13px}.audio-playing{color:var(--gold)!important;border-color:var(--gold)!important;background:#41321b!important}button[aria-busy='true']{box-shadow:inset 0 0 0 1px #5b8ec6}.usage-section{margin:24px 0 30px}.usage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.usage-card{display:flex;flex-direction:column;gap:8px;padding:17px 15px;border:1px solid #2c3a50;background:linear-gradient(130deg,#152339,#101720);border-radius:14px;min-width:0}.usage-card:first-child{grid-column:1/-1}.usage-card>span{font-size:15px;color:#aebed3}.usage-card strong{font:600 25px/1.5 var(--reading-font);font-variant-numeric:tabular-nums;color:#dcecff;overflow-wrap:anywhere}.usage-card small{font-size:12px;color:#8fa4bf;line-height:1.8}.usage-note{font-size:13px;color:#91a2ba;line-height:1.9;margin:13px 0}.usage-live{font-size:12px;color:#98a7bd}.usage-live.is-active{color:#9bc9ac}.progress-level-details,.progress-shield-details{border:1px solid var(--border);border-radius:14px;padding:16px;margin:24px 0;background:#111720}.progress-level-details>summary,.progress-shield-details>summary{min-height:44px;cursor:pointer;font-size:18px;font-weight:600;color:#ceddf0}.progress-shield-details>summary{display:flex;align-items:center;justify-content:space-between;gap:10px}.progress-shield-details #shields-caption{font-size:13px;color:var(--gold)}.progress-shield-details .shields-grid{margin-bottom:0}.progress-level-details #progress-levels{margin-top:15px}.progress-level-details #progress-levels .overall-progress{margin-bottom:12px}#training-scope{max-width:100%;width:100%;margin-top:7px}#training-panel>label{display:block;margin-top:14px}#training-level{margin-top:7px}#assessment-content,#analytics-content{scroll-margin-top:80px}
+@media(min-width:650px){.usage-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.usage-card:first-child{grid-column:auto}.usage-card strong{font-size:28px}.usage-card{padding:20px}}
+@media(max-width:359px){.usage-card{padding:14px 11px}.usage-card strong{font-size:22px}.usage-card>span{font-size:14px}.usage-note{font-size:12px}.progress-level-details,.progress-shield-details{padding:13px}.library-learning-note{font-size:12px!important}}
+
+/* A clear pressed state for touch, mouse, keyboard and assistive activation. */
+button{transition:background-color .12s ease,color .12s ease,border-color .12s ease,box-shadow .12s ease,transform .1s ease}button:not(:disabled).is-pressed,button:not(:disabled):active{background-color:#326eb2!important;color:#fff!important;border-color:#91c5ff!important;box-shadow:inset 0 0 0 1px #91c5ff,0 0 0 3px #4b94ff25!important;transform:translateY(1px) scale(.98)}button[aria-pressed='true']{border-color:#75b3ff}button:focus-visible{outline:2px solid #8fc3ff;outline-offset:3px}button:disabled{transform:none;cursor:default}
+@media(prefers-reduced-motion:reduce){button{transition:none!important}button:not(:disabled).is-pressed,button:not(:disabled):active{transform:none}}
+
+.home-shield-button{display:flex;align-items:center;gap:4px;min-height:44px;padding:1px 5px;border-radius:11px;background:#141d29;border:1px solid #2c3b50;color:#d6b879;font-size:12px;max-width:140px}.home-shield-button.active{border-color:#6a9ad4;background:#1c2d44}#home-shield-art{display:block;width:39px;height:39px;flex-shrink:0}#home-shield-art .shield-sprite{display:block}.shield-empty-symbol{display:grid;place-items:center;width:39px;height:39px;font-size:29px;color:#91a8c5}.badge-page-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px 0 18px;color:#bacde3}.badge-page-meta>strong{color:var(--gold);font-size:19px}.badge-next-card{display:grid;grid-template-columns:80px minmax(0,1fr);gap:16px;padding:19px;background:linear-gradient(130deg,#2b241a,#121a25);border:1px solid #5b4c33;border-radius:15px;margin:18px 0 25px}.badge-next-art{filter:saturate(.6);opacity:.6}.badge-next-art .shield-sprite{display:block}.badge-next-card h2{font-size:21px;margin:3px 0}.badge-next-card p{font-size:15px;color:#bec9d7;margin:5px 0}.badge-next-card small{display:block;text-align:left;color:#bda274;margin-top:7px}.badge-complete{padding:20px;border:1px solid #846b3c;border-radius:14px;background:#2e2618;color:#e0c58c;font-size:17px;line-height:1.9}#badges-panel .shields-grid{margin-top:18px}#badges-panel .shield-art .shield-sprite{display:block}.home-shield-button #home-shield-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:359px){.home-shield-button{padding-inline:3px;gap:1px;font-size:11px}#home-shield-art,.shield-empty-symbol{width:34px;height:34px}.badge-next-card{grid-template-columns:65px minmax(0,1fr);padding:15px;gap:11px}}
+
+.review-empty-note{color:#adc2df;font-size:16px;line-height:1.9;padding:16px;border:1px dashed #3e5573;background:#121e2e;border-radius:12px;margin-top:20px}.training-options[data-review-available='false'] #start-quiz{grid-column:1/-1}
+.translation-note{color:#9eafc4;font-size:13px;line-height:1.8;margin:6px 0 13px}
+
+/* Consistent noun article colours across cards, details, training and assessment. */
+[data-article="der"]{color:#82b3df!important}
+[data-article="die"]{color:#ef9ec4!important}
+[data-article="das"]{color:#c7beb0!important}

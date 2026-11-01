@@ -1,6 +1,7 @@
 'use strict';
 const $ = selector => document.querySelector(selector);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const articleHtml = article => `<span class="article" data-article="${esc(String(article).toLocaleLowerCase())}">${esc(article)}</span>`;
 const LEVELS = [
  {code:'A1',name:'مبتدئ',description:'الأساسيات والتواصل في الحياة اليومية'},
  {code:'A2',name:'أساسي',description:'توسيع مفردات المواقف اليومية والعمل والسفر'},
@@ -14,19 +15,24 @@ const wordMap = new Map();
 let manifest = null, activeLevel = 'A1', panel = 'library', pageSize = 24, currentWord = null, wordTab = 'meaning';
 let session = null, toastTimer, loadRequest = 0;
 const safeRead = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
-const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string'):[]); };
+const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string').map(id=>typeof id==='string'&&/^\d+$/.test(id)&&Number(id)<90?Number(id):id):[]); };
 const saved=storedSet('wort-saved'), learned=storedSet('wort-learned');
-const day = new Date().toLocaleDateString('en-CA');
+const day = WORT_HISTORY.dayKey();
 const oldToday=safeRead('wort-today',{});
 const today={day,ids:oldToday?.day===day&&Array.isArray(oldToday.ids)?[...new Set(oldToday.ids)]:[]};
+WORT_HISTORY.init([...learned],oldToday);
 let storageAvailable=true;
+let analyticsView=null,assessmentView=null,audioRequest=0,audioButton=null;
 let verbDataReady=false,verbLoading=null,verbTense='present';
 let cardView=safeRead('wort-card-view','compact');
 if(!['compact','grid'].includes(cardView))cardView='compact';
 const totalWords=()=>manifest?.levels.reduce((n,l)=>n+l.count,0)||0;
 function idLevel(id) { return typeof id==='number' && id>=0 && id<90 ? LEVELS[Math.floor(id/18)].code : String(id).split(':')[0]; }
 function countLearned(code) { return [...learned].filter(id=>idLevel(id)===code).length; }
+function refreshToday(){const current=WORT_HISTORY.dayKey();today.day=current;today.ids=(WORT_HISTORY.snapshot()?.events||[]).filter(event=>event.day===current).map(event=>event.id);}
 function remember() {
+ for(const id of storedSet('wort-learned'))learned.add(id);
+ WORT_HISTORY.sync([...learned]);refreshToday();
  try { localStorage.setItem('wort-saved',JSON.stringify([...saved]));localStorage.setItem('wort-learned',JSON.stringify([...learned]));localStorage.setItem('wort-today',JSON.stringify(today)); }
  catch { if(storageAvailable)toast('التخزين غير متاح. سيبقى تقدّمك في هذه الجلسة فقط.');storageAvailable=false; }
  updateProgress();
@@ -46,6 +52,7 @@ function buildLevels() {
  $('#training-level').innerHTML=LEVELS.map(level=>`<option value="${level.code}">${level.code} · ${level.name}</option>`).join('');
 }
 function updateProgress() {
+ refreshToday();
  const total=totalWords(),done=Math.min(total,learned.size),percent=total?done/total*100:0;
  $('#overall-count').textContent=`${done.toLocaleString('ar')} / ${total.toLocaleString('ar')}`;
  $('#overall-percent').textContent=`${percent.toLocaleString('ar',{maximumFractionDigits:1})}٪`;
@@ -55,7 +62,8 @@ function updateProgress() {
  $('#level-learned').textContent=`${levelDone} من ${levelCount} كلمة تعلّمتها`;
  $('#level-bar').style.width=`${levelCount?levelDone/levelCount*100:0}%`;
  $('#level-bar').parentElement.setAttribute('aria-valuenow',String(levelCount?Math.round(levelDone/levelCount*100):0));
- $('#stats-learned').textContent=done.toLocaleString('ar');$('#stats-today').textContent=today.ids.length.toLocaleString('ar');
+ $('#stats-learned').textContent=done.toLocaleString('ar');$('#stats-today').textContent=today.ids.length.toLocaleString('ar');$('#stats-saved').textContent=saved.size.toLocaleString('ar');updateOwnedShield();if(panel==='badges')renderBadges();
+ updateReviewAvailability();
  if(panel==='progress')renderProgress();
 }
 async function selectLevel(code) {
@@ -72,7 +80,7 @@ async function selectLevel(code) {
 function normalizeSearch(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ß/g,'ss'); }
 function matchingWords() {
  const query=normalizeSearch($('#search').value.trim()),pos=$('#pos-filter').value;
- return (cache.get(activeLevel)||[]).filter(word=>(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
+ return (cache.get(activeLevel)||[]).filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
 }
 function setCardView(view) {
  cardView=view;document.body.dataset.cardView=view;
@@ -81,17 +89,19 @@ function setCardView(view) {
 }
 function card(word) {
  const full=`${word.article?word.article+' ':''}${word.german}`;
- return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos]||POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id)?'<span class="learned-badge" aria-label="تعلّمتها">✓</span>':'<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="de" dir="ltr">${word.article?`<span class="article">${esc(word.article)}</span> `:''}${esc(word.german)}</span><span class="translation" lang="ar" dir="rtl">${esc(word.arabic)}</span></span></button><div class="card-actions"><button class="save-button ${saved.has(word.id)?'saved':''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id)?'إزالة من المحفوظات':'حفظ الكلمة'}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id)?'★':'☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">♬</button></div></article>`;
+ return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos]||POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id)?'<span class="learned-badge" aria-label="تعلّمتها">✓</span>':'<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="de" dir="ltr">${word.article?`${articleHtml(word.article)} `:''}${esc(word.german)}</span><span class="translation" lang="ar" dir="rtl">${esc(word.arabic)}</span></span></button><div class="card-actions"><button class="save-button ${saved.has(word.id)?'saved':''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id)?'إزالة من المحفوظات':'حفظ الكلمة'}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id)?'★':'☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">♬</button></div></article>`;
 }
 function renderCards() {
- const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة · ${Math.min(pageSize,list.length)} بطاقة معروضة`;
- $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):'<div class="empty">لم نجد كلمات مطابقة. جرّب كلمة أخرى أو غيّر نوع الكلمة.</div>';
+ const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة غير متعلّمة · ${Math.min(pageSize,list.length)} معروضة`;
+ $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):(($('#search').value||$('#pos-filter').value!=='all')?'<div class="empty">لم نجد كلمات غير متعلّمة تطابق البحث. تجد الكلمات السابقة في المراجعة.</div>':'<div class="empty"><h3>أكملت كلمات هذا المستوى 🌿</h3><p>يمكنك مراجعتها أو الانتقال إلى مستوى آخر.</p><button class="secondary" data-review-learned>مراجعة ما تعلّمته</button></div>');
  $('#load-more').hidden=pageSize>=list.length;
 }
 async function showPanel(name) {
+ if(name!==panel)stopSpeech();
  panel=name;document.querySelectorAll('main > .panel').forEach(p=>p.hidden=p.id!==`${name}-panel`);document.querySelectorAll('[data-panel]').forEach(b=>{b.classList.toggle('active',b.dataset.panel===name);if(b.dataset.panel===name)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  status('');window.scrollTo({top:0,behavior:'instant'});
- if(name==='saved')await renderSaved();if(name==='progress')renderProgress();
+ if(name==='training')updateReviewAvailability();
+ if(name==='saved')await renderSaved();if(name==='progress')renderProgress();if(name==='badges')renderBadges();
  if(name==='writing'&&!$('#writing-content').dataset.mounted){WORT_WRITING.mount($('#writing-content'));$('#writing-content').dataset.mounted='true';}
  if(name==='sentences'&&!$('#sentences-content').dataset.mounted){WORT_SENTENCES.mount($('#sentences-content'));$('#sentences-content').dataset.mounted='true';}
 }
@@ -104,24 +114,35 @@ async function renderSaved() {
 }
 function findWord(value) { return wordMap.get(value)||wordMap.get(Number(value)); }
 function toggleSave(word) { if(saved.has(word.id)){saved.delete(word.id);toast('أُزيلت من المحفوظات');}else{saved.add(word.id);toast('حُفظت الكلمة');}remember();renderCards();if(panel==='saved')renderSaved();if(currentWord?.id===word.id)updateWordControls(); }
-function learnWord(word) { if(learned.has(word.id))return;learned.add(word.id);if(!today.ids.includes(word.id))today.ids.push(word.id);remember();renderCards();if(panel==='saved')renderSaved();toast('كلمة جديدة في رصيدك ✨');if(currentWord?.id===word.id)updateWordControls(); }
-function speak(text) {
- if(!('speechSynthesis'in window)){toast('النطق غير مدعوم في هذا المتصفح.');return;}
- speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(text);utterance.lang='de-DE';utterance.rate=.83;
- const voice=speechSynthesis.getVoices().find(voice=>voice.lang.startsWith('de'));if(voice)utterance.voice=voice;speechSynthesis.speak(utterance);
+function learnWord(word) { if(learned.has(word.id))return;learned.add(word.id);WORT_HISTORY.record(word);remember();renderCards();if(panel==='saved')renderSaved();toast('كلمة جديدة في رصيدك ✨');if(currentWord?.id===word.id)updateWordControls(); }
+function speak(text,button=null) {
+ if(button&&audioButton===button&&['loading','playing'].includes(WORT_AUDIO.state.state)){stopSpeech();return Promise.resolve(false);}
+ const request=++audioRequest;
+ if(audioButton){audioButton.removeAttribute('aria-busy');audioButton.classList.remove('audio-playing');}
+ audioButton=button;
+ if(button)button.setAttribute('aria-busy','true');
+ const playing=WORT_AUDIO.speak(text,{onStatus:event=>{
+  if(request!==audioRequest)return;
+  const state=typeof event==='string'?event:event.state;
+  if(state==='loading')toast('جارٍ تجهيز النطق لأول مرة…');
+  if(state==='playing'&&button)button.classList.add('audio-playing');
+ }});
+ return Promise.resolve(playing).catch(error=>{if(request===audioRequest)toast(error.message||'تعذّر تشغيل الصوت. حاول مرة أخرى.');return false;}).finally(()=>{
+  if(request===audioRequest){if(button){button.removeAttribute('aria-busy');button.classList.remove('audio-playing');}audioButton=null;}
+ });
 }
-function stopSpeech() { if('speechSynthesis'in window)speechSynthesis.cancel(); }
+function stopSpeech(){audioRequest++;if(audioButton){audioButton.removeAttribute('aria-busy');audioButton.classList.remove('audio-playing');audioButton=null;}WORT_AUDIO.stop();}
 function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent=learned.has(currentWord.id)?'تعلّمتها ✓':'تعلّمت هذه الكلمة ✓';}
 function openWord(word) {
  currentWord=word;wordTab='meaning';verbTense='present';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
-function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar">${esc(example.ar)}</p>`:''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source?`<p class="source-note">${example.generated?'مثال تعليمي مولَّد في المصدر · ':''}${example.sourceUrl?`<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>`:esc(example.source)}${example.license?' · '+esc(example.license):''}</p>`:''}</article>`;}
+function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar" lang="ar" dir="rtl">${esc(example.ar)}</p>`:''}${example.translationMethod==='machine'?'<p class="translation-note">ترجمة آلية من Google؛ قد تحتاج بعض العبارات إلى تدقيق.</p>':''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source?`<p class="source-note">${example.generated?'مثال تعليمي مولَّد في المصدر · ':''}${example.sourceUrl?`<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>`:esc(example.source)}${example.license?' · '+esc(example.license):''}</p>`:''}</article>`;}
 function renderWord() {
  const word=currentWord;
  document.querySelectorAll('[data-word-tab]').forEach(b=>{const active=b.dataset.wordTab===wordTab;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});$('#word-content').setAttribute('aria-labelledby',`${wordTab}-tab`);
  const examples=word.examples||[];
  if(wordTab==='meaning') {
-  $('#word-content').innerHTML=`<section class="meaning-block"><div class="word-pos"><span>${POS[word.pos]||POS.other}</span><span>${word.level}</span></div><div class="word-main"><h2 lang="de" dir="ltr">${word.article?`<span class="article">${esc(word.article)}</span> `:''}${esc(word.german)}</h2><button class="icon-button" data-pronounce aria-label="نطق الكلمة">♬</button></div>${word.ipa?`<p class="pronunciation" lang="de" dir="ltr">${esc(word.ipa)}</p>`:''}<p class="definition">${esc(word.arabic)}</p>${word.translationKind==='pivot'?'<p class="source-note">معنى عربي تقريبي عبر قاموس وسيط؛ قد يتغيّر مع السياق.</p>':''}${word.germanDefinition?`<p class="german-definition" lang="de" dir="ltr">${esc(word.germanDefinition)}</p>`:''}${degreeHtml(word)}${word.plural?`<p class="pronunciation">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section><section><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة في المصدر الحالي.</p>'}</section>${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
+  $('#word-content').innerHTML=`<section class="meaning-block"><div class="word-pos"><span>${POS[word.pos]||POS.other}</span><span>${word.level}</span></div><div class="word-main"><h2 lang="de" dir="ltr">${word.article?`${articleHtml(word.article)} `:''}${esc(word.german)}</h2><button class="icon-button" data-pronounce aria-label="نطق الكلمة">♬</button></div>${word.ipa?`<p class="pronunciation" lang="de" dir="ltr">${esc(word.ipa)}</p>`:''}<p class="definition">${esc(word.arabic)}</p>${word.translationKind==='pivot'?'<p class="source-note">معنى عربي تقريبي عبر قاموس وسيط؛ قد يتغيّر مع السياق.</p>':''}${word.germanDefinition?`<p class="german-definition" lang="de" dir="ltr">${esc(word.germanDefinition)}</p>`:''}${degreeHtml(word)}${word.plural?`<p class="pronunciation">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section><section><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة في المصدر الحالي.</p>'}</section>${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
  }else if(wordTab==='examples') {
   $('#word-content').innerHTML=`<div class="section-heading"><h2>أمثلة على <b lang="de">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length?examples.map(exampleHtml).join(''):'<div class="empty">لا تتوفر أمثلة في المصدر الحالي لهذه الكلمة.</div>'}`;
  }else if(word.pos==='verb'&&!verbDataReady){
@@ -201,7 +222,7 @@ function verbGrammarHtml(word) {
 function grammarHtml(word) {
  if(word.pos==='verb')return verbGrammarHtml(word);
  let html=`<section class="grammar-section"><h2>تصريفات <b lang="de">${esc(word.german)}</b></h2>${degreeHtml(word)}`;
- if(word.pos==='noun')html+=`<div class="example-card"><p>أداة الاسم: <b lang="de">${esc(word.article||'—')}</b></p>${word.plural?`<p>الجمع: <b lang="de">${esc(word.plural)}</b></p>`:''}</div>`;
+ if(word.pos==='noun')html+=`<div class="example-card"><p>أداة الاسم: <b lang="de">${word.article?articleHtml(word.article):'—'}</b></p>${word.plural?`<p>الجمع: <b lang="de">${esc(word.plural)}</b></p>`:''}</div>`;
  if(word.verbForms)html+=`<p class="source-note">الصيغ مع ضمير المفرد الغائب (هو / هي)، ما لم يُذكر الضمير داخل الصيغة.</p><div class="grammar-grid">${Object.entries(word.verbForms).map(([key,value])=>`<div class="grammar-block"><h4>${({present:'المضارع',past:'الماضي البسيط',perfect:'الماضي المركّب (Perfekt)'})[key]||esc(key)}</h4><p lang="de" dir="ltr">${esc(value)}</p></div>`).join('')}</div>`;
  html+='</section>';
  if(word.pos==='adjective'&&word.declensionStem)html+=adjectiveTables(word);
@@ -209,19 +230,42 @@ function grammarHtml(word) {
  if(!word.declensionStem&&!word.forms?.length&&!word.verbForms&&!word.plural)html+='<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
  return html;
 }
-function nextWord() {const list=cache.get(currentWord.level)||[];const index=list.findIndex(w=>w.id===currentWord.id);if(list.length)openWord(list[(index+1)%list.length]);}
+function nextWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم التدرّب.');}
+function progressModel(){const history=WORT_HISTORY.snapshot();return {history,learnedIds:[...learned],savedIds:[...saved],total:totalWords(),levelCounts:Object.fromEntries(LEVELS.map(level=>[level.code,manifest?.levels.find(item=>item.code===level.code)?.count||0])),unknownCount:history?.undatedIds.length||0,loadLevel,speak};}
+function formatDuration(ms){const sec=Math.floor(Math.max(0,ms||0)/1000);return [Math.floor(sec/3600),Math.floor(sec/60)%60,sec%60].map(value=>String(value).padStart(2,'0')).join(':');}
+function updateUsageStats(snapshot){if(!snapshot)return;$('#usage-total').textContent=formatDuration(snapshot.activeMs);$('#usage-days').textContent=snapshot.totalDays.toLocaleString('ar');const current=WORT_HISTORY.dayKey();$('#usage-today').textContent=formatDuration(snapshot.days.find(day=>day.day===current)?.activeMs||0);$('#usage-start').textContent=`بدأ التسجيل: ${snapshot.startedAt}`;$('#usage-live').textContent=snapshot.isIdle?'متوقف مؤقتًا لعدم التفاعل':snapshot.isActive?'● يُحتسب وقتك الآن':'متوقف مؤقتًا';$('#usage-live').classList.toggle('is-active',snapshot.isActive&&!snapshot.isIdle);if(snapshot.persistent===false)$('#usage-note').textContent='التخزين غير متاح في هذا المتصفح؛ الوقت الحالي محسوب لهذه الجلسة فقط. الوقت السابق لتفعيل الميزة لم يكن مسجّلًا.';}
+function updateReviewAvailability(){const current=countLearned(activeLevel),training=countLearned($('#training-level').value||activeLevel);$('#review-level').hidden=current===0;$('#start-review').hidden=training===0;$('#review-empty-note').hidden=training>0;$('.training-options').dataset.reviewAvailable=String(training>0);document.querySelectorAll('[data-review-learned]').forEach(button=>button.hidden=current===0);}
+function reviewLearned(){showPanel('training');$('#training-level').value=activeLevel;$('#training-scope').value='learned';updateReviewAvailability();}
 function renderProgress() {
  if(!manifest)return;
- const shields=manifest.shields||[];const unlocked=shields.filter(s=>learned.size>=s.threshold).length;
- $('#stats-shields').textContent=`${unlocked} / ${shields.length}`;$('#shields-caption').textContent=`${unlocked} مكتسبة`;
- $('#shield-note').textContent=manifest.shieldNote||'تفتح الدروع مع زيادة عدد الكلمات التي تتعلّمها.';
+ const model=progressModel();
+ if(analyticsView)analyticsView.update(model);else analyticsView=WORT_ANALYTICS.mount($('#analytics-content'),model);
+ if(assessmentView)assessmentView.update(model);else assessmentView=WORT_ASSESSMENT.mount($('#assessment-content'),model);
+ updateUsageStats(WORT_USAGE.snapshot());
  $('#progress-levels').innerHTML=LEVELS.map(level=>{const count=manifest.levels.find(l=>l.code===level.code)?.count||0,done=Math.min(count,countLearned(level.code));return `<div class="overall-progress"><div class="progress-label"><strong>${level.code} · ${level.name}</strong><span dir="ltr">${done} / ${count}</span></div><div class="track"><i style="width:${count?done/count*100:0}%"></i></div></div>`;}).join('');
- $('#shields').innerHTML=shields.map((shield,index)=>{const earned=learned.size>=shield.threshold;return `<article class="shield-card ${earned?'unlocked':''}"><div class="shield-art">${`<div class="shield-sprite" role="img" aria-label="درع ${esc(shield.name)}" style="background-position:${index%5*25}% ${index<5?0:100}%"></div>`}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString('ar')} كلمة</small><span class="shield-lock">${earned?'✓ مكتسب':'🔒 لم يُفتح بعد'}</span></article>`;}).join('');
+ updateOwnedShield();
 }
+function shieldMarkup(index,name){return `<span class="shield-sprite" role="img" aria-label="درع ${esc(name)}" style="background-position:${index%5*25}% ${index<5?0:100}%"></span>`;}
+function ownedShields(){return (manifest?.shields||[]).map((shield,index)=>({...shield,index})).filter(shield=>learned.size>=shield.threshold).sort((a,b)=>a.threshold-b.threshold);}
+function updateOwnedShield(){
+ const owned=ownedShields(),highest=owned.at(-1),button=$('#home-shield-button');
+ $('#stats-shields').textContent=`${owned.length} / ${manifest?.shields?.length||10}`;
+ $('#home-shield-art').innerHTML=highest?shieldMarkup(highest.index,highest.name):'<span class="shield-empty-symbol">♢</span>';
+ $('#home-shield-label').textContent=highest?highest.name:'دروعي';button.setAttribute('aria-label',highest?`درعك الحالي ${highest.name}؛ افتح دروعك المكتسبة`:'لم تكتسب درعًا بعد؛ افتح صفحة الدروع');button.title=highest?`درعك الحالي: ${highest.name}`:'التقدّم نحو درعك الأول';
+}
+function renderBadges(){
+ if(!manifest)return;
+ const owned=ownedShields(),next=(manifest.shields||[]).map((shield,index)=>({...shield,index})).find(shield=>learned.size<shield.threshold);
+ updateOwnedShield();$('#shields-caption').textContent=`${owned.length} دروع مكتسبة`;
+ $('#shield-note').textContent='هذه الدروع التي فتحتها بتعلّم كلمات جديدة. يظهر أعلى درع مكتسب بجانب اسم الموقع.';
+ $('#shields').innerHTML=owned.length?owned.map(shield=>`<article class="shield-card unlocked"><div class="shield-art">${shieldMarkup(shield.index,shield.name)}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString('ar')} كلمة</small><span class="shield-lock">✓ مكتسب</span></article>`).join(''):'<div class="empty"><h2>درعك الأول ينتظرك</h2><p>لم تكتسب درعًا بعد. كل كلمة جديدة تقرّبك منه.</p></div>';
+ $('#badge-next').innerHTML=next?`<article class="badge-next-card"><div class="badge-next-art">${shieldMarkup(next.index,next.name)}</div><div><p class="eyebrow">الدرع القادم</p><h2>${esc(next.name)}</h2><p>باقي ${Math.max(0,next.threshold-learned.size).toLocaleString('ar')} كلمة جديدة</p><div class="track"><i style="width:${Math.min(100,learned.size/next.threshold*100)}%"></i></div><small dir="ltr">${learned.size.toLocaleString('ar')} / ${next.threshold.toLocaleString('ar')}</small></div></article>`:'<div class="badge-complete">اكتملت الدروع العشرة! إنجاز جميل يستحق أن تواصل استخدام كلماتك في الجمل والكتابة.</div>';
+}
+
 function shuffled(list) {const out=[...list];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
 async function startSession(type,code) {
  status('');try {
-  const pool=await loadLevel(code);if(pool.length<4){toast('هذا المستوى لا يحتوي على كلمات كافية للاختبار.');return;}
+  const allWords=await loadLevel(code),scope=type==='review'?'learned':$('#training-scope').value;const pool=allWords.filter(word=>scope==='all'||(scope==='learned'?learned.has(word.id):!learned.has(word.id)));if(pool.length<(type==='review'?1:4)){toast(type==='review'?'تعلّم كلمة في هذا المستوى أولًا لتظهر في المراجعة.':scope==='learned'?'تحتاج أربع كلمات متعلّمة على الأقل لهذا الاختبار.':'لا توجد كلمات كافية لهذا التدريب.');return;}
   session={type,code,pool,words:shuffled(pool).slice(0,10),index:0,score:0,answered:false};renderSession();$('#training-dialog').showModal();
  }catch(error){status(error.message);toast(error.message);}
 }
@@ -229,12 +273,12 @@ function renderSession() {
  const s=session,done=s.index===s.words.length;
  if(done){$('#training-content').innerHTML=`<p class="eyebrow">المستوى ${s.code}</p><h2 id="training-title">${s.type==='quiz'?'أكملت الاختبار 🎉':'أكملت المراجعة 🌱'}</h2><p class="quiz-word">${s.type==='quiz'?`${s.score} / ${s.words.length}`:`${s.words.length} كلمات`}</p><p>كل محاولة تجعل الكلمات أقرب إليك.</p><button class="primary" id="session-again">جلسة جديدة</button>`;$('#session-again').onclick=()=>{$('#training-dialog').close();startSession(s.type,s.code);};return;}
  const word=s.words[s.index];s.answered=false;
- let html=`<p class="eyebrow">${s.code} · ${s.index+1} من ${s.words.length}</p><h2 id="training-title">${s.type==='quiz'?'ما معنى هذه الكلمة؟':'بطاقات المراجعة'}</h2><div class="track"><i style="width:${s.index/s.words.length*100}%"></i></div><p class="quiz-word" lang="de" dir="ltr">${esc(`${word.article||''} ${word.german}`.trim())}</p><button class="secondary" id="session-speak">استمع ♬</button>`;
+ let html=`<p class="eyebrow">${s.code} · ${s.index+1} من ${s.words.length}</p><h2 id="training-title">${s.type==='quiz'?'ما معنى هذه الكلمة؟':'بطاقات المراجعة'}</h2><div class="track"><i style="width:${s.index/s.words.length*100}%"></i></div><p class="quiz-word" lang="de" dir="ltr">${word.article?articleHtml(word.article)+' ':''}${esc(word.german)}</p><button class="secondary" id="session-speak">استمع ♬</button>`;
  if(s.type==='quiz'){
   const distractors=shuffled([...new Map(s.pool.filter(w=>w.id!==word.id&&w.arabic!==word.arabic).map(w=>[w.arabic,w])).values()]).slice(0,3);s.options=shuffled([word,...distractors]);
   html+=`<div class="quiz-options">${s.options.map((w,i)=>`<button data-answer="${i}">${esc(w.arabic)}</button>`).join('')}</div><p class="feedback" aria-live="polite"></p><button class="primary" id="session-next" hidden>التالي ←</button>`;
  }else html+='<div id="review-answer" aria-live="polite"></div><div class="review-controls"><button class="secondary" id="review-reveal">أظهر المعنى والمثال</button><button class="primary" id="session-next" hidden>تعلّمتها ←</button><button class="secondary" id="review-skip">راجعها لاحقًا</button></div>';
- $('#training-content').innerHTML=html;$('#session-speak').onclick=()=>speak(`${word.article||''} ${word.german}`);
+ $('#training-content').innerHTML=html;$('#session-speak').onclick=()=>speak(`${word.article||''} ${word.german}`,$('#session-speak'));
  if(s.type==='quiz')document.querySelectorAll('[data-answer]').forEach(button=>button.onclick=()=>{
   if(s.answered)return;s.answered=true;const correct=s.options[+button.dataset.answer].id===word.id;
   document.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;if(s.options[+b.dataset.answer].id===word.id)b.classList.add('correct');});
@@ -246,7 +290,7 @@ function renderSession() {
  }
  $('#session-next').onclick=()=>{if(s.type==='review')learnWord(word);s.index++;renderSession();};
 }
-function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.levelNote||'تصنيف المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.')}</p>${(manifest?.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)}</a><p class="source-note">${esc(source.license||'')}</p>${source.note?`<p>${esc(source.note)}</p>`:''}</div>`).join('')}<h3>تنزيل بيانات المفردات</h3><div class="data-downloads">${LEVELS.map(level=>`<a href="data/${level.code}.json" download="Wort-${level.code}.json">${level.code} · 2000 مفردة</a>`).join('')}<a href="data/verbs.json" download="Wort-Verbs.json">جداول تصريف الأفعال</a></div><p class="source-note">التقدم والمحفوظات محفوظة محليًا في هذا المتصفح. حذف بيانات المتصفح يمحوها. النطق يعتمد على الأصوات الألمانية المتاحة في جهازك.</p>`;}
+function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.levelNote||'تصنيف المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.')}</p>${(manifest?.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)}</a><p class="source-note">${esc(source.license||'')}</p>${source.note?`<p>${esc(source.note)}</p>`:''}</div>`).join('')}<h3>تنزيل بيانات المفردات</h3><div class="data-downloads">${LEVELS.map(level=>`<a href="data/${level.code}.json" download="Wort-${level.code}.json">${level.code} · 2000 مفردة</a>`).join('')}<a href="data/verbs.json" download="Wort-Verbs.json">جداول تصريف الأفعال</a></div><p class="source-note">التقدّم والمحفوظات ونتائج التقييم ووقت الاستخدام محفوظة محليًا في هذا المتصفح. حذف بيانات المتصفح يمحوها. يعمل النطق بمحرك ألماني مضمّن يُحمّل عند أول استخدام. يبدأ تسجيل تواريخ التعلّم ووقت الاستخدام من تفعيل الميزة؛ الكلمات القديمة غير المؤرّخة لا تُوزَّع على أيام تخمينية.</p>`;}
 
 document.querySelectorAll('[data-card-view]').forEach(button=>button.onclick=()=>setCardView(button.dataset.cardView));
 setCardView(cardView);
@@ -257,12 +301,18 @@ $('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
 $('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?2:(index+(e.key==='ArrowLeft'?1:-1)+3)%3;buttons[next].click();buttons[next].focus();};
 document.body.addEventListener('click',e=>{
+ if(e.target.closest('[data-review-learned]')){reviewLearned();return;}
  const tenseButton=e.target.closest('[data-verb-tense]');if(tenseButton){verbTense=tenseButton.dataset.verbTense;renderWord();document.querySelector(`[data-verb-tense="${verbTense}"]`)?.focus({preventScroll:true});return;}
  const open=e.target.closest('[data-open]'),save=e.target.closest('[data-save]'),audio=e.target.closest('[data-speak]'),example=e.target.closest('[data-example-speak]');
- if(open){const word=findWord(open.dataset.open);if(word)openWord(word);}if(save){const word=findWord(save.dataset.save);if(word)toggleSave(word);}if(audio){const word=findWord(audio.dataset.speak);if(word)speak(`${word.article||''} ${word.german}`);}if(example)speak(example.dataset.exampleSpeak);if(e.target.closest('[data-pronounce]'))speak(`${currentWord.article||''} ${currentWord.german}`);if(e.target.closest('[data-detail-examples]')){wordTab='examples';renderWord();}
+ if(open){const word=findWord(open.dataset.open);if(word)openWord(word);}if(save){const word=findWord(save.dataset.save);if(word)toggleSave(word);}if(audio){const word=findWord(audio.dataset.speak);if(word)speak(`${word.article||''} ${word.german}`,audio);}if(example)speak(example.dataset.exampleSpeak,example);if(e.target.closest('[data-pronounce]'))speak(`${currentWord.article||''} ${currentWord.german}`,e.target.closest('[data-pronounce]'));if(e.target.closest('[data-detail-examples]')){wordTab='examples';renderWord();}
 });
+$('#training-level').onchange=updateReviewAvailability;
 $('#review-level').onclick=()=>startSession('review',activeLevel);$('#quiz-level').onclick=()=>startSession('quiz',activeLevel);$('#start-review').onclick=()=>startSession('review',$('#training-level').value);$('#start-quiz').onclick=()=>startSession('quiz',$('#training-level').value);$('#training-close').onclick=()=>$('#training-dialog').close();
 $('#open-sources').onclick=()=>{renderSources();$('#sources-dialog').showModal();};$('#sources-close').onclick=()=>$('#sources-dialog').close();
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('close',stopSpeech));
+document.addEventListener('wort:speak',event=>{if(event.detail?.text)speak(event.detail.text,event.detail.button||null);});
+WORT_USAGE.start();WORT_USAGE.subscribe(updateUsageStats);
+setInterval(()=>{if(panel==='progress'&&!document.hidden)updateUsageStats(WORT_USAGE.snapshot());},1000);
+window.addEventListener('storage',event=>{if(event.key==='wort-learned'||event.key===WORT_HISTORY.key){for(const id of storedSet('wort-learned'))learned.add(id);WORT_HISTORY.sync([...learned]);renderCards();if(currentWord)updateWordControls();if(manifest)updateProgress();}});
 async function init(){try{const response=await fetch('data/manifest.json');if(!response.ok)throw new Error('تعذّر تحميل بيانات الموقع. أعد المحاولة.');manifest=await response.json();$('#level-note').textContent=manifest.levelNote||$('#level-note').textContent;buildLevels();await selectLevel('A1');updateProgress();}catch(error){status(error.message);$('#cards').innerHTML='<div class="empty">تعذّر بدء الموقع. <button class="secondary" id="retry-app">أعد المحاولة</button></div>';$('#retry-app').onclick=init;}}
 init();

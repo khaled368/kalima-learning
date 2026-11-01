@@ -1,2 +1,4 @@
 data-sources/
 *.tar.gz
+
+__pycache__/

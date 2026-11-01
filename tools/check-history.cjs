@@ -1,0 +1,15 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
+const values=new Map([['wort-learned','[0,1,18,"B1:test"]']]);
+const storage={getItem:key=>values.get(key)||null,setItem:(key,value)=>values.set(key,value)};
+const c={localStorage:storage};vm.runInNewContext(fs.readFileSync('dist/history.js','utf8'),c);
+const h=c.WORT_HISTORY,now=new Date(2026,10,1,12);
+let model=h.init([0,1,18,'B1:test'],{day:'2026-10-31',ids:[0,999]},now);
+assert.equal(model.startedAt,'2026-11-01');assert.equal(model.events.length,1);assert.equal(model.events[0].id,0);assert.equal(model.events[0].day,'2026-10-31');assert.equal(model.undatedIds.length,3);assert.equal(storage.getItem('wort-learned'),'[0,1,18,"B1:test"]');
+model=h.record({id:1,level:'A1'},new Date(2026,10,1,14));assert.equal(model.events.length,1,'reviewing undated legacy word must not invent date');
+model=h.record({id:2,level:'A1'},new Date(2026,10,2,0,1));assert.equal(model.events.find(e=>e.id===2).day,'2026-11-02');
+model=h.record({id:2,level:'A1'},new Date(2026,10,3,12));assert.equal(model.events.filter(e=>e.id===2).length,1);assert.equal(model.events.find(e=>e.id===2).day,'2026-11-02');
+assert(h.validDay('2024-02-29'));assert(!h.validDay('2026-02-30'));assert.equal(h.levelFor(18),'A2');assert.equal(h.levelFor('C1:haus'),'C1');
+model=h.sync([0,1,2,18,'B1:test']);assert.equal(model.events.length,2);assert.equal(model.undatedIds.length,3);
+const reset={localStorage:{getItem:()=>'{bad',setItem:()=>{throw Error('blocked')}}};vm.runInNewContext(fs.readFileSync('dist/history.js','utf8'),reset);model=reset.WORT_HISTORY.init([0],{},now);assert.equal(model.persistent,false);assert.equal(model.undatedIds.length,1);
+console.log('PASS: legacy totals/date recovery, no invented dates, first-learning dedup, local midnight, leap days, levels, blocked storage, untouched old data.');
