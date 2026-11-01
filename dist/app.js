@@ -19,6 +19,8 @@ let badgesReturnPanel = 'library';
 let calendarView=null;
 const DAILY_GOAL=20;
 let session = null, toastTimer, loadRequest = 0;
+let wordAdvanceTimer=null,wordAdvanceVersion=0;
+const WORD_ADVANCE_DELAY=650;
 const safeRead = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string').map(id=>typeof id==='string'&&/^\d+$/.test(id)&&Number(id)<90?Number(id):id):[]); };
 const saved=storedSet('wort-saved'), learned=storedSet('wort-learned');
@@ -115,6 +117,7 @@ function renderCards() {
  $('#load-more').hidden=pageSize>=list.length;
 }
 async function showPanel(name) {
+ if(name!==panel)cancelWordAdvance();
  if(name==='badges'&&panel!=='badges')badgesReturnPanel=panel;
  if(name!==panel)stopSpeech();
  panel=name;document.querySelectorAll('main > .panel').forEach(p=>p.hidden=p.id!==`${name}-panel`);document.querySelectorAll('[data-panel]').forEach(b=>{b.classList.toggle('active',b.dataset.panel===name);if(b.dataset.panel===name)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
@@ -135,6 +138,18 @@ async function renderSaved() {
 function findWord(value) { return wordMap.get(value)||wordMap.get(Number(value)); }
 function toggleSave(word) { if(saved.has(word.id)){saved.delete(word.id);toast('أُزيلت من المحفوظات');}else{saved.add(word.id);toast('حُفظت الكلمة');}remember();renderCards();if(panel==='saved')renderSaved();if(currentWord?.id===word.id)updateWordControls(); }
 function learnWord(word) { if(learned.has(word.id))return;learned.add(word.id);WORT_HISTORY.record(word);remember();renderCards();if(panel==='saved')renderSaved();toast('كلمة جديدة في رصيدك ✨');if(currentWord?.id===word.id)updateWordControls(); }
+function cancelWordAdvance(){clearTimeout(wordAdvanceTimer);wordAdvanceTimer=null;wordAdvanceVersion++;}
+function markCurrentWord(){
+ const word=currentWord,dialog=$('#word-dialog');
+ if(!word||!dialog.open||learned.has(word.id)||wordAdvanceTimer!==null)return;
+ cancelWordAdvance();const version=wordAdvanceVersion;
+ learnWord(word);
+ wordAdvanceTimer=setTimeout(()=>{
+  wordAdvanceTimer=null;
+  if(version!==wordAdvanceVersion||!dialog.open||currentWord?.id!==word.id)return;
+  nextWord();
+ },WORD_ADVANCE_DELAY);
+}
 function speak(text,button=null) {
  if(button&&audioButton===button&&['loading','playing'].includes(WORT_AUDIO.state.state)){stopSpeech();return Promise.resolve(false);}
  const request=++audioRequest;
@@ -152,8 +167,9 @@ function speak(text,button=null) {
  });
 }
 function stopSpeech(){audioRequest++;if(audioButton){audioButton.removeAttribute('aria-busy');audioButton.classList.remove('audio-playing');audioButton=null;}WORT_AUDIO.stop();}
-function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').classList.toggle('saved',isSaved);$('#word-save').title=isSaved?'إزالة من المحفوظات':'حفظ الكلمة';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent='تعلّمتها ✓';}
+function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').classList.toggle('saved',isSaved);$('#word-save').title=isSaved?'إزالة من المحفوظات':'حفظ الكلمة';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');const isLearned=learned.has(currentWord.id);$('#mark-word').disabled=isLearned;$('#mark-word').classList.toggle('is-learned',isLearned);$('#mark-word').textContent='تعلّمتها ✓';}
 function openWord(word) {
+ cancelWordAdvance();
  currentWord=word;wordTab='meaning';verbTense='present';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
 function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar" lang="ar" dir="rtl">${esc(example.ar)}</p>`:''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source?`<p class="source-note">${example.generated?'مثال تعليمي مولَّد في المصدر · ':''}${example.sourceUrl?`<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>`:esc(example.source)}${example.license?' · '+esc(example.license):''}</p>`:''}</article>`;}
@@ -254,7 +270,7 @@ function grammarHtml(word) {
  if(!word.declensionStem&&!word.forms?.length&&!word.verbForms&&!word.plural)html+='<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
  return html;
 }
-function nextWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة.');}
+function nextWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة.');}
 function previousWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index-offset+list.length)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة.');}
 function progressModel(){const history=WORT_HISTORY.snapshot();return {history,learnedIds:[...learned],savedIds:[...saved],total:totalWords(),levelCounts:Object.fromEntries(LEVELS.map(level=>[level.code,manifest?.levels.find(item=>item.code===level.code)?.count||0])),unknownCount:history?.undatedIds.length||0,loadLevel,speak};}
 function formatHours(ms){return (Math.max(0,Number(ms)||0)/3600000).toLocaleString('ar',{maximumFractionDigits:2});}
@@ -332,7 +348,7 @@ $('#daily-goal-button').onclick=startDailyGoal;
 $('#search').oninput=()=>{pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};
 document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.id==='home-shield-button'&&panel==='badges'?badgesReturnPanel:b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
-$('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;$('#word-previous').onclick=previousWord;
+$('#word-back').onclick=()=>{cancelWordAdvance();$('#word-dialog').close();};$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=markCurrentWord;$('#word-previous').onclick=previousWord;
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
 $('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?buttons.length-1:(index+(e.key==='ArrowLeft'?1:-1)+buttons.length)%buttons.length;buttons[next].click();buttons[next].focus();};
 document.body.addEventListener('click',e=>{
@@ -346,6 +362,8 @@ $('#training-level').onchange=updateReviewAvailability;
 $('#review-level').onclick=()=>startSession('review',activeLevel);$('#start-review').onclick=()=>startSession('review',$('#training-level').value);$('#training-close').onclick=()=>{$('#training-dialog').close();reviewRequest++;};
 $('#open-sources').onclick=()=>{renderSources();$('#sources-dialog').showModal();};$('#sources-close').onclick=()=>$('#sources-dialog').close();
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('close',stopSpeech));
+$('#word-dialog').addEventListener('close',cancelWordAdvance);
+$('#word-dialog').addEventListener('cancel',cancelWordAdvance);
 document.addEventListener('wort:speak',event=>{if(event.detail?.text)speak(event.detail.text,event.detail.button||null);});
 WORT_USAGE.start();WORT_USAGE.subscribe(updateUsageStats);
 setInterval(()=>{if(!document.hidden){if(today.day!==WORT_HISTORY.dayKey())updateProgress();if(panel==='progress')updateUsageStats(WORT_USAGE.snapshot());}},1000);

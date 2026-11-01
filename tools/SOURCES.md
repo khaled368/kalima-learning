@@ -73,3 +73,6 @@ The direct vocabulary homepage uses `home.css`; every level retains all 2,000 ca
 
 
 `bottom-nav.css` refines the existing six-destination navigation into a turquoise floating dock with consistent icon sizing, active state, focus feedback, and safe-area spacing. The training destination is now learned-word review: its multiple-choice targets come exclusively from learned cards in the selected level; other level words may supply distractor translations. Reviewing does not award new learned words or alter learning history. `review-screen.css` places large German text and a compact pronunciation icon in one row. The vocabulary assessment in Progress remains independent.
+
+
+The word-detail learned action records a card once, shows a green confirmation for 650ms, then opens the next unlearned card in the same level. Closing the dialog or navigating to another card cancels pending advancement. The separate word-detail Next button is removed; Previous remains available. Completing the final unlearned card closes the dialog with a level-complete message.
