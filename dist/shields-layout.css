@@ -1,0 +1,258 @@
+/* Compact Kalima shields, with a native collapsible horizontal preview.
+   Loaded after light-theme.css to retain the user's white app appearance. */
+
+#badges-panel .badge-page-meta {
+  gap: 8px 12px;
+  padding-block: 8px 10px;
+  color: #5b7682;
+}
+#badges-panel .badge-page-meta > strong { color: #aa8041; }
+#badges-panel #badge-next { margin-block: 8px 13px; }
+#badges-panel .badge-next-card {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-height: 0;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(130deg, #17424a, #0c2d3e);
+  border: 1px solid #8a9272;
+  box-shadow: 0 5px 18px #0a344023;
+}
+#badges-panel .badge-next-art {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  min-width: 0;
+  filter: saturate(.8);
+  opacity: .9;
+}
+#badges-panel .badge-next-art .shield-sprite {
+  display: block;
+  width: 76px;
+  height: 76px;
+}
+#badges-panel .badge-next-card > div:last-child { min-width: 0; }
+#badges-panel .badge-next-card .eyebrow {
+  margin: 0;
+  color: #d3ba8b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+#badges-panel .badge-next-card h2 {
+  margin: 0;
+  color: #f1ddb1;
+  font-size: 19px;
+  line-height: 1.45;
+}
+#badges-panel .badge-next-card p:not(.eyebrow) {
+  margin: 2px 0 5px;
+  color: #d4e3e6;
+  font-size: 13px;
+  line-height: 1.6;
+}
+#badges-panel .badge-next-card .track {
+  height: 5px;
+  margin: 5px 0;
+  background: #c3d9dc55;
+}
+#badges-panel .badge-next-card small {
+  margin: 0;
+  color: #d5d7c4;
+  font-size: 12px;
+}
+
+/* Accessible <details>: closed by default, toggled with the summary. */
+#badges-panel .future-shields-section {
+  width: 100%;
+  min-width: 0;
+  margin: 12px 0 18px;
+  overflow: hidden;
+  border: 1px solid #d4e5ea;
+  border-radius: 17px;
+  background: #f6fafb;
+}
+#badges-panel .future-shields-section[hidden] { display: none !important; }
+#badges-panel .future-shields-section > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 55px;
+  padding: 11px 15px;
+  list-style: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  color: #1e4451;
+}
+#badges-panel .future-shields-section > summary::-webkit-details-marker { display: none; }
+#badges-panel .future-shields-section > summary::marker { content: ''; }
+#badges-panel .future-shields-title {
+  flex: 1;
+  min-width: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+#badges-panel .future-shields-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: #577581;
+  white-space: nowrap;
+}
+#badges-panel .future-shields-chevron {
+  display: grid;
+  place-items: center;
+  flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  color: #168a86;
+  transition: transform .2s ease;
+}
+#badges-panel .future-shields-chevron svg { width: 18px; height: 18px; }
+#badges-panel .future-shields-section[open] .future-shields-chevron { transform: rotate(180deg); }
+#badges-panel .future-shields-section > summary:focus-visible {
+  outline: 2px solid #008d85;
+  outline-offset: -3px;
+  border-radius: 15px;
+}
+#badges-panel .future-shields-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 12px;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 13px 14px;
+}
+#badges-panel .future-shields-row:focus-visible {
+  outline: 2px solid #168a86;
+  outline-offset: -3px;
+}
+#badges-panel .future-shield-card {
+  flex: 0 0 132px;
+  min-width: 0;
+  max-width: 132px;
+  padding: 10px 8px 11px;
+  border: 1px solid #839c9e;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #16414a, #0a2b3c);
+  color: #eef7f5;
+  text-align: center;
+  scroll-snap-align: start;
+}
+#badges-panel .future-shield-card.is-next { border-color: #c4a66e; }
+#badges-panel .future-shield-art {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 3px;
+  opacity: .83;
+  filter: saturate(.85);
+}
+#badges-panel .future-shield-art .shield-sprite {
+  display: block;
+  width: 76px;
+  height: 76px;
+}
+#badges-panel .future-shield-card > strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #f0daab;
+  overflow-wrap: anywhere;
+}
+#badges-panel .future-shield-card > small,
+#badges-panel .future-shield-card > span:last-child {
+  display: block;
+  font-size: 11px;
+  line-height: 1.65;
+  color: #cbdee0;
+}
+#badges-panel .future-shield-card > span:last-child { color: #91dfd4; }
+
+/* Earned shields remain visible but are compact. */
+#badges-panel .earned-shields-heading {
+  margin: 12px 0 9px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c4250;
+}
+#badges-panel .shields-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 22px;
+}
+#badges-panel .shield-card {
+  min-width: 0;
+  padding: 11px 8px 12px;
+  border-radius: 15px;
+}
+#badges-panel .shield-card.unlocked {
+  background: linear-gradient(145deg, #17404a, #0a2c3c);
+  border-color: #8a815a;
+  box-shadow: 0 4px 12px #0c35421d;
+}
+#badges-panel .shield-card .shield-art {
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  min-height: 0;
+  margin-inline: auto;
+}
+#badges-panel .shield-card .shield-art .shield-sprite {
+  display: block;
+  width: 88px;
+  height: 88px;
+}
+#badges-panel .shield-card.unlocked > strong {
+  display: block;
+  margin: 2px 0 0;
+  color: #f1dcae;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#badges-panel .shield-card small {
+  color: #c9dce0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+#badges-panel .shield-card .shield-lock {
+  position: static;
+  display: block;
+  margin: 4px 0 0;
+  color: #a5e1bf;
+  font-size: 11px;
+}
+#badges-panel .shields-grid > .empty {
+  grid-column: 1 / -1;
+  background: #f5fafb;
+  border: 1px solid #d9e7eb;
+  border-radius: 14px;
+  color: #345c6a;
+}
+@media (min-width: 650px) {
+  #badges-panel .shields-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #badges-panel .future-shield-card { flex-basis: 145px; max-width: 145px; }
+}
+@media (min-width: 960px) {
+  #badges-panel .shields-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@media (max-width: 359px) {
+  #badges-panel .badge-next-card { grid-template-columns: 64px minmax(0, 1fr); padding: 11px; gap: 9px; }
+  #badges-panel .badge-next-art, #badges-panel .badge-next-art .shield-sprite { width: 64px; height: 64px; }
+  #badges-panel .future-shield-card { flex-basis: 118px; max-width: 118px; }
+  #badges-panel .future-shields-title { font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #badges-panel .future-shields-chevron { transition: none; }
+}
