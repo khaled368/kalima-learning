@@ -175,7 +175,9 @@ function updateProgress() {
   if (panel === 'progress') renderProgress();
 }
 async function selectLevel(code) {
-  $('#vocabulary-disclosure').open = true;
+  // Keep the upcoming vocabulary list folded whenever the learner changes levels.
+  // It can still be expanded manually, and search/filter actions open it when needed.
+  $('#vocabulary-disclosure').open = false;
   activeLevel = code;
   pageSize = 24;
   const request = ++loadRequest;
