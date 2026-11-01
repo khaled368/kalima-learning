@@ -179,6 +179,35 @@
   if(voice.localService===false)score+=5;
   return score;
  }
+ function androidAvailable(){return Boolean(global.KalimaAndroidTTS && typeof global.KalimaAndroidTTS.speak==='function');}
+ function androidSpeech(job){
+  if(!androidAvailable())return Promise.resolve(false);
+  job.engine='android';
+  return new Promise(resolve=>{
+   let finished=false;
+   const timeout=setTimeout(()=>finish(false),Math.min(70000,job.text.length*220+15000));
+   function finish(ok){
+    if(finished)return;
+    finished=true;
+    clearTimeout(timeout);
+    global.removeEventListener('kalima-tts-status',onStatus);
+    resolve(Boolean(ok&&current(job)));
+   }
+   function onStatus(event){
+    if(Number(event?.detail?.id)!==job.id)return;
+    const status=event.detail.status;
+    if(status==='playing'){announce(job,'playing',messages().playing,'android');}
+    else if(status==='finished')finish(true);
+    else if(status==='error'||status==='stopped')finish(false);
+   }
+   global.addEventListener('kalima-tts-status',onStatus);
+   job.cancel=()=>{
+    try{global.KalimaAndroidTTS.stop();}catch{}
+    finish(false);
+   };
+   try{global.KalimaAndroidTTS.speak(job.text,job.lang,job.id);}catch{finish(false);}
+  });
+ }
  function deviceVoice(lang){
   if(!nativeAvailable())return null;
   try{
@@ -227,7 +256,11 @@
     // The bundled meSpeak/eSpeak voice sounds robotic. Prefer natural TTS
     // from the actual phone/browser, with meSpeak only as a last resort.
     let played=false,localError=null;
-    played=await nativeSpeech(job);
+    // The Android APK uses the installed Android text-to-speech engine. Web
+    // speech synthesis is preferred in ordinary browsers (especially iOS).
+    if(androidAvailable())played=await androidSpeech(job);
+    if(!current(job))return;
+    if(!played)played=await nativeSpeech(job);
     if(!current(job))return;
     if(!played&&LANGUAGES[lang].voice&&options.engine!=='native'){
      try{played=await localSpeech(job,ctx);}catch(error){localError=error;}
