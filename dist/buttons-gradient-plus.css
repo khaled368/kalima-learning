@@ -1,0 +1,302 @@
+/* Kalima — Gradient + outline buttons (selected reference: design 1 with the
+   additional pastel outlined button palette). Loaded last to win old skins.
+   Functional markup, active/disabled state, labels and click handlers unchanged. */
+:root {
+  --kb-blue-1:#159cf3; --kb-blue-2:#1550cf;
+  --kb-green-1:#38d467; --kb-green-2:#109b46;
+  --kb-violet-1:#ab69fb; --kb-violet-2:#6633c7;
+  --kb-orange-1:#ffbc53; --kb-orange-2:#e88609;
+  --kb-blue-text:#144fa7; --kb-blue-border:#7ab7f5;
+  --kb-mint-text:#176b60; --kb-violet-text:#5734aa;
+}
+html:not([data-theme='dark']) body .primary,
+html:not([data-theme='dark']) #course-apply,
+html:not([data-theme='dark']) #account-dialog .account-submit,
+html:not([data-theme='dark']) .assessment-widget .primary {
+  background:linear-gradient(145deg,var(--kb-blue-1),var(--kb-blue-2)) !important;
+  background-image:linear-gradient(145deg,var(--kb-blue-1),var(--kb-blue-2)) !important;
+  border:1px solid #1c77d6 !important;
+  color:#fff !important;
+  box-shadow:0 4px 10px #165bc82d, inset 0 1px 0 #ffffff6b !important;
+  border-radius:16px;
+  font-weight:800;
+  text-shadow:0 1px 1px #0e40934d;
+}
+html:not([data-theme='dark']) body .secondary,
+html:not([data-theme='dark']) .assessment-widget .secondary {
+  background:linear-gradient(150deg,#fff 5%,#e2f3ff 100%) !important;
+  background-image:linear-gradient(150deg,#fff 5%,#e2f3ff 100%) !important;
+  color:#1650a2 !important;
+  border:1.5px solid #7eb8fa !important;
+  box-shadow:0 3px 8px #13477816 !important;
+  border-radius:17px;
+  font-weight:700;
+  text-shadow:none;
+}
+/* Intent-focused gradient actions */
+html:not([data-theme='dark']) body #word-dialog #mark-word,
+html:not([data-theme='dark']) body #word-dialog #mark-word.is-learned {
+  background:linear-gradient(145deg,#50d77b,#18ab62) !important;
+  background-image:linear-gradient(145deg,#50d77b,#18ab62) !important;
+  color:#103f2d !important;
+  border:1.5px solid #28bb70 !important;
+  box-shadow:0 3px 8px #18774825,inset 0 1px 0 #ffffff60 !important;
+  text-shadow:none;
+}
+html:not([data-theme='dark']) #training-panel #start-review,
+html:not([data-theme='dark']) #training-dialog #session-again {
+  background:linear-gradient(145deg,#b18bf8,#704acb) !important;
+  background-image:linear-gradient(145deg,#b18bf8,#704acb) !important;
+  border-color:#7754c2 !important;
+  color:#fff !important;
+  box-shadow:0 4px 11px #633cb529 !important;
+  text-shadow:0 1px 1px #361e6b55;
+}
+/* Match the requested new soft-outline style for review and supporting tools. */
+html:not([data-theme='dark']) #review-level,
+html:not([data-theme='dark']) body .secondary[data-review-learned],
+html:not([data-theme='dark']) #session-finish {
+  background:linear-gradient(140deg,#fff 0%,#f0e5ff 100%) !important;
+  background-image:linear-gradient(140deg,#fff 0%,#f0e5ff 100%) !important;
+  border:1.5px solid #ab7aef !important;
+  color:#6030ab !important;
+  box-shadow:0 3px 8px #7041ab1e !important;
+}
+html:not([data-theme='dark']) #word-dialog .word-content [data-detail-examples],
+html:not([data-theme='dark']) #word-dialog .word-content [data-example-speak],
+html:not([data-theme='dark']) #load-more,
+html:not([data-theme='dark']) body .secondary[data-panel='progress'] {
+  background:linear-gradient(145deg,#fff,#e1fbf8) !important;
+  background-image:linear-gradient(145deg,#fff,#e1fbf8) !important;
+  border:1.5px solid #67cfc5 !important;
+  color:#156d6c !important;
+  box-shadow:0 3px 8px #18787217 !important;
+}
+/* Previous and Skip MUST remain the same, including hover, disabled and dark mode. */
+html:not([data-theme='dark']) body #word-dialog .word-detail-footer > :is(#word-previous,#word-skip) {
+  background:linear-gradient(145deg,#effaff,#b9e0ff) !important;
+  background-image:linear-gradient(145deg,#effaff,#b9e0ff) !important;
+  border:1.5px solid #72b9f1 !important;
+  border-radius:16px !important;
+  color:#114d91 !important;
+  box-shadow:0 3px 8px #1158aa21 !important;
+  font-weight:800;
+}
+html:not([data-theme='dark']) body #word-dialog .word-detail-footer > :is(#word-previous,#word-skip):disabled {
+  opacity:.46 !important;
+}
+/* Secondary colorful pills in home and account areas */
+html:not([data-theme='dark']) body .top-saved-button,
+html:not([data-theme='dark']) body .card-actions .save-button {
+  background:linear-gradient(145deg,#fffdf1,#ffefbf) !important;
+  border:1.5px solid #e5b34c !important;
+  color:#94620f !important;
+  box-shadow:0 2px 7px #845f1619 !important;
+}
+html:not([data-theme='dark']) body .top-saved-button {
+  border-radius:16px !important;
+}
+html:not([data-theme='dark']) #course-swap,
+html:not([data-theme='dark']) #account-dialog .account-tabs>button[aria-selected='true'] {
+  background:linear-gradient(135deg,#f9f7ff,#e9d9ff) !important;
+  color:#59339a !important;
+  border:1px solid #b79bed !important;
+  border-radius:13px !important;
+}
+html:not([data-theme='dark']) #account-dialog .account-signout {
+  background:linear-gradient(135deg,#fff,#ffe0e5) !important;
+  color:#af2848 !important;
+  border:1.5px solid #e69eae !important;
+  border-radius:15px !important;
+  box-shadow:0 3px 9px #ab35531a !important;
+}
+/* Navigation: preserve existing vertical six-button mobile bar, but give each
+   active destination its own pastel pill as in the reference sheet. */
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page']) {
+  border:1px solid #90bbf8 !important;
+  background:linear-gradient(165deg,#fff,#e3f3ff) !important;
+  background-image:linear-gradient(165deg,#fff,#e3f3ff) !important;
+  color:#164fa1 !important;
+  box-shadow:0 2px 6px #1d5ab51c !important;
+}
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='training'] {
+  border-color:#c6a5ee !important;
+  background:linear-gradient(165deg,#fff,#f0e3ff) !important;
+  background-image:linear-gradient(165deg,#fff,#f0e3ff) !important;
+  color:#5830a4 !important;
+}
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='progress'] {
+  border-color:#7bd2c1 !important;
+  background:linear-gradient(165deg,#fff,#d9f8f0) !important;
+  background-image:linear-gradient(165deg,#fff,#d9f8f0) !important;
+  color:#176c5f !important;
+}
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='sentences'] {
+  border-color:#f1c98b !important;
+  background:linear-gradient(165deg,#fff,#fff0d5) !important;
+  background-image:linear-gradient(165deg,#fff,#fff0d5) !important;
+  color:#945d15 !important;
+}
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='writing'] {
+  border-color:#83cbd8 !important;
+  background:linear-gradient(165deg,#fff,#dcf8fa) !important;
+  background-image:linear-gradient(165deg,#fff,#dcf8fa) !important;
+  color:#166776 !important;
+}
+html:not([data-theme='dark']) body .bottom-nav #account-button:is(.active,[aria-current='page']) {
+  border-color:#b9a6e6 !important;
+  background:linear-gradient(165deg,#fff,#eee7ff) !important;
+  background-image:linear-gradient(165deg,#fff,#eee7ff) !important;
+  color:#544187 !important;
+}
+/* Small icons on actionable pills (CSS, no rewritten labels or handlers). */
+#course-apply::before {
+  content:"▶";font:800 15px/1 system-ui,sans-serif;display:inline-block;
+  margin-inline-end:5px;direction:ltr;
+}
+#review-level::before {
+  content:"↻";font:800 20px/1 system-ui,sans-serif;display:inline-block;
+  margin-inline-end:4px;
+}
+/* Dark theme has luminous gradients over dark surfaces, never pale text on pale fill. */
+html[data-theme='dark'] body .primary,
+html[data-theme='dark'] #course-apply,
+html[data-theme='dark'] #account-dialog .account-submit,
+html[data-theme='dark'] .assessment-widget .primary {
+  background:linear-gradient(145deg,#277bd8,#154b9f) !important;
+  background-image:linear-gradient(145deg,#277bd8,#154b9f) !important;
+  border:1px solid #63a7f2 !important;
+  color:#fff !important;
+  box-shadow:0 3px 9px #0006,inset 0 1px 0 #ffffff30 !important;
+  border-radius:16px;
+  font-weight:800;
+}
+html[data-theme='dark'] body .secondary,
+html[data-theme='dark'] .assessment-widget .secondary {
+  background:linear-gradient(150deg,#1b354d,#112438) !important;
+  background-image:linear-gradient(150deg,#1b354d,#112438) !important;
+  color:#d4eaff !important;
+  border:1.5px solid #5684bd !important;
+  box-shadow:0 3px 10px #0004 !important;
+  border-radius:17px;
+}
+html[data-theme='dark'] body #word-dialog #mark-word,
+html[data-theme='dark'] body #word-dialog #mark-word.is-learned {
+  background:linear-gradient(145deg,#31b961,#08773c) !important;
+  background-image:linear-gradient(145deg,#31b961,#08773c) !important;
+  color:#fff !important;
+  border:1.5px solid #4ed287 !important;
+  box-shadow:0 3px 9px #0005 !important;
+}
+html[data-theme='dark'] #training-panel #start-review,
+html[data-theme='dark'] #training-dialog #session-again {
+  background:linear-gradient(145deg,#8d65e3,#4c2d9a) !important;
+  background-image:linear-gradient(145deg,#8d65e3,#4c2d9a) !important;
+  color:#fff !important;
+  border-color:#bb96fc !important;
+}
+html[data-theme='dark'] #review-level,
+html[data-theme='dark'] body .secondary[data-review-learned],
+html[data-theme='dark'] #session-finish {
+  background:linear-gradient(145deg,#37254f,#251a39) !important;
+  background-image:linear-gradient(145deg,#37254f,#251a39) !important;
+  color:#e6d8ff !important;
+  border:1.5px solid #9773ce !important;
+}
+html[data-theme='dark'] #word-dialog .word-content [data-detail-examples],
+html[data-theme='dark'] #word-dialog .word-content [data-example-speak],
+html[data-theme='dark'] #load-more,
+html[data-theme='dark'] body .secondary[data-panel='progress'] {
+  background:linear-gradient(145deg,#153a44,#10303d) !important;
+  background-image:linear-gradient(145deg,#153a44,#10303d) !important;
+  color:#bdf3ee !important;
+  border:1.5px solid #4bbaae !important;
+}
+html[data-theme='dark'] body #word-dialog .word-detail-footer > :is(#word-previous,#word-skip) {
+  background:linear-gradient(145deg,#254b71,#153653) !important;
+  background-image:linear-gradient(145deg,#254b71,#153653) !important;
+  border:1.5px solid #5c9ad2 !important;
+  color:#e1f3ff !important;
+  box-shadow:0 3px 8px #0005 !important;
+  border-radius:16px !important;
+}
+html[data-theme='dark'] body .top-saved-button,
+html[data-theme='dark'] body .card-actions .save-button {
+  background:linear-gradient(145deg,#453c25,#302a20) !important;
+  color:#f7d38a !important;
+  border:1.5px solid #b88e46 !important;
+}
+html[data-theme='dark'] #course-swap,
+html[data-theme='dark'] #account-dialog .account-tabs>button[aria-selected='true'] {
+  background:linear-gradient(145deg,#3a2b57,#29213d) !important;
+  color:#e4d2ff !important;
+  border-color:#9275c5 !important;
+}
+html[data-theme='dark'] #account-dialog .account-signout {
+  background:linear-gradient(145deg,#4a2837,#30202b) !important;
+  color:#ffd5de !important;
+  border:1.5px solid #be728b !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page']) {
+  background:linear-gradient(155deg,#30436f,#242d51) !important;
+  background-image:linear-gradient(155deg,#30436f,#242d51) !important;
+  border:1px solid #738fc2 !important;
+  color:#eaf3ff !important;
+  box-shadow:0 2px 7px #0005 !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='training'] {
+  background:linear-gradient(155deg,#483663,#302643) !important;
+  background-image:linear-gradient(155deg,#483663,#302643) !important;
+  border-color:#a58acb !important;
+  color:#f1e6ff !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='progress'] {
+  background:linear-gradient(155deg,#20564c,#17382f) !important;
+  background-image:linear-gradient(155deg,#20564c,#17382f) !important;
+  border-color:#60b9a0 !important;
+  color:#d9fff4 !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='sentences'] {
+  background:linear-gradient(155deg,#56432c,#392f25) !important;
+  background-image:linear-gradient(155deg,#56432c,#392f25) !important;
+  border-color:#b99764 !important;
+  color:#ffead0 !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page'])[data-panel='writing'] {
+  background:linear-gradient(155deg,#1e5660,#173840) !important;
+  background-image:linear-gradient(155deg,#1e5660,#173840) !important;
+  border-color:#65b2bf !important;
+  color:#dbf8ff !important;
+}
+html[data-theme='dark'] body .bottom-nav #account-button:is(.active,[aria-current='page']) {
+  background:linear-gradient(155deg,#43355c,#29263d) !important;
+  background-image:linear-gradient(155deg,#43355c,#29263d) !important;
+  border-color:#a58ac9 !important;
+  color:#f0e8ff !important;
+}
+/* Tactile response without corrupting correct/incorrect quiz feedback. */
+body .primary:not(:disabled):is(:active,.is-pressed),
+body .secondary:not(:disabled):is(:active,.is-pressed),
+body #word-dialog .word-detail-footer > :is(#word-previous,#word-skip):not(:disabled):is(:active,.is-pressed) {
+  transform:translateY(1px) scale(.985);
+  filter:brightness(.94);
+}
+body :is(.primary,.secondary):disabled {
+  opacity:.54 !important;
+  filter:saturate(.55);
+  box-shadow:none !important;
+  cursor:default;
+}
+@media (max-width:359px) {
+  body #word-dialog .word-detail-footer > :is(#word-previous,#word-skip) {
+    padding-inline:3px !important;
+    font-size:12px !important;
+    border-radius:12px !important;
+  }
+  body .bottom-nav button:is(.active,[aria-current='page']) {border-radius:15px !important;}
+}
+@media (prefers-reduced-motion:reduce) {
+  body :is(.primary,.secondary,#word-previous,#word-skip) {transition:none !important;}
+  body .primary:not(:disabled):is(:active,.is-pressed),
+  body .secondary:not(:disabled):is(:active,.is-pressed) {transform:none !important;}
+}
