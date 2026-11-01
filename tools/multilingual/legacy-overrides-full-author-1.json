@@ -1,0 +1,7302 @@
+{
+  "A1:und": {
+    "en": "and",
+    "nl": "en"
+  },
+  "A1:nicht": {
+    "en": "not",
+    "nl": "niet"
+  },
+  "A1:es": {
+    "en": "it (neuter pronoun)",
+    "nl": "het (onzijdig voornaamwoord)"
+  },
+  "A1:er": {
+    "en": "he",
+    "nl": "hij"
+  },
+  "A1:ich": {
+    "en": "I",
+    "nl": "ik"
+  },
+  "A1:für": {
+    "en": "for; for the sake of",
+    "nl": "voor; ter wille van"
+  },
+  "A1:wir": {
+    "en": "we",
+    "nl": "wij"
+  },
+  "A1:wie": {
+    "en": "how; like",
+    "nl": "hoe; zoals"
+  },
+  "A1:aber": {
+    "en": "but",
+    "nl": "maar"
+  },
+  "A1:sein": {
+    "en": "be",
+    "nl": "zijn"
+  },
+  "A1:oder": {
+    "en": "or",
+    "nl": "of"
+  },
+  "A1:mehr": {
+    "en": "more",
+    "nl": "meer"
+  },
+  "A1:da": {
+    "en": "there",
+    "nl": "daar"
+  },
+  "A1:können": {
+    "en": "can; be able to",
+    "nl": "kunnen"
+  },
+  "A1:hier": {
+    "en": "here",
+    "nl": "hier"
+  },
+  "A1:jetzt": {
+    "en": "now",
+    "nl": "nu"
+  },
+  "A1:immer": {
+    "en": "always",
+    "nl": "altijd"
+  },
+  "A1:ihn": {
+    "en": "him",
+    "nl": "hem"
+  },
+  "A1:wieder": {
+    "en": "again",
+    "nl": "opnieuw; weer"
+  },
+  "A1:gut": {
+    "en": "good",
+    "nl": "goed"
+  },
+  "A1:müssen": {
+    "en": "must; have to",
+    "nl": "moeten"
+  },
+  "A1:nichts": {
+    "en": "nothing",
+    "nl": "niets"
+  },
+  "A1:kein": {
+    "en": "no; not any",
+    "nl": "geen"
+  },
+  "A1:viel": {
+    "en": "much; a lot",
+    "nl": "veel"
+  },
+  "A1:also": {
+    "en": "so; therefore",
+    "nl": "dus; daarom"
+  },
+  "A1:wo": {
+    "en": "where",
+    "nl": "waar"
+  },
+  "A1:wollen": {
+    "en": "want",
+    "nl": "willen"
+  },
+  "A1:heute": {
+    "en": "today",
+    "nl": "vandaag"
+  },
+  "A1:zwei": {
+    "en": "two",
+    "nl": "twee"
+  },
+  "A1:mann": {
+    "en": "man",
+    "nl": "man"
+  },
+  "A1:ab": {
+    "en": "from; starting at",
+    "nl": "vanaf"
+  },
+  "A1:leben": {
+    "en": "life; existence",
+    "nl": "leven; bestaan"
+  },
+  "A1:sagen": {
+    "en": "say",
+    "nl": "zeggen"
+  },
+  "A1:wer": {
+    "en": "who",
+    "nl": "wie"
+  },
+  "A1:ohne": {
+    "en": "without",
+    "nl": "zonder"
+  },
+  "A1:sollen": {
+    "en": "should; be supposed to",
+    "nl": "moeten; behoren te"
+  },
+  "A1:tun": {
+    "en": "do",
+    "nl": "doen"
+  },
+  "A1:seit": {
+    "en": "since",
+    "nl": "sinds"
+  },
+  "A1:tag": {
+    "en": "day",
+    "nl": "dag"
+  },
+  "A1:geben": {
+    "en": "give",
+    "nl": "geven"
+  },
+  "A1:gerade": {
+    "en": "right now; straight",
+    "nl": "nu net; recht"
+  },
+  "A1:nie": {
+    "en": "never",
+    "nl": "nooit"
+  },
+  "A1:dort": {
+    "en": "there",
+    "nl": "daar"
+  },
+  "A1:finden": {
+    "en": "find",
+    "nl": "vinden"
+  },
+  "A1:drei": {
+    "en": "three",
+    "nl": "drie"
+  },
+  "A1:welt": {
+    "en": "world",
+    "nl": "wereld"
+  },
+  "A1:geld": {
+    "en": "money",
+    "nl": "geld"
+  },
+  "A1:leute": {
+    "en": "people",
+    "nl": "mensen"
+  },
+  "A1:europäisch": {
+    "en": "European",
+    "nl": "Europees"
+  },
+  "A1:vielleicht": {
+    "en": "perhaps; maybe",
+    "nl": "misschien"
+  },
+  "A1:arbeit": {
+    "en": "work",
+    "nl": "werk"
+  },
+  "A1:uhr": {
+    "en": "clock; watch",
+    "nl": "klok; horloge"
+  },
+  "A1:gleich": {
+    "en": "equal; immediately",
+    "nl": "gelijk; meteen"
+  },
+  "A1:ende": {
+    "en": "end",
+    "nl": "einde"
+  },
+  "A1:lange": {
+    "en": "for a long time",
+    "nl": "lang; gedurende lange tijd"
+  },
+  "A1:stadt": {
+    "en": "city",
+    "nl": "stad"
+  },
+  "A1:zusammen": {
+    "en": "together",
+    "nl": "samen"
+  },
+  "A1:jahr": {
+    "en": "year",
+    "nl": "jaar"
+  },
+  "A1:nehmen": {
+    "en": "take",
+    "nl": "nemen"
+  },
+  "A1:bringen": {
+    "en": "bring",
+    "nl": "brengen"
+  },
+  "A1:schnell": {
+    "en": "fast; quick",
+    "nl": "snel"
+  },
+  "A1:klar": {
+    "en": "clear",
+    "nl": "helder; duidelijk"
+  },
+  "A1:stehen": {
+    "en": "stand",
+    "nl": "staan"
+  },
+  "A1:frage": {
+    "en": "question",
+    "nl": "vraag"
+  },
+  "A1:weit": {
+    "en": "far; wide",
+    "nl": "ver; wijd"
+  },
+  "A1:halten": {
+    "en": "hold; keep",
+    "nl": "vasthouden; bewaren"
+  },
+  "A1:mein": {
+    "en": "my; mine",
+    "nl": "mijn; van mij"
+  },
+  "A1:problem": {
+    "en": "problem",
+    "nl": "probleem"
+  },
+  "A1:zwischen": {
+    "en": "between",
+    "nl": "tussen"
+  },
+  "A1:warum": {
+    "en": "why",
+    "nl": "waarom"
+  },
+  "A1:allein": {
+    "en": "alone",
+    "nl": "alleen"
+  },
+  "A1:land": {
+    "en": "country; land",
+    "nl": "land"
+  },
+  "A1:vater": {
+    "en": "father",
+    "nl": "vader"
+  },
+  "A1:beide": {
+    "en": "both",
+    "nl": "beide"
+  },
+  "A1:mutter": {
+    "en": "mother",
+    "nl": "moeder"
+  },
+  "A1:familie": {
+    "en": "family",
+    "nl": "familie; gezin"
+  },
+  "A1:wenig": {
+    "en": "little; not much",
+    "nl": "weinig"
+  },
+  "A1:richtig": {
+    "en": "correct; right",
+    "nl": "juist; correct"
+  },
+  "A1:hilfe": {
+    "en": "help",
+    "nl": "hulp"
+  },
+  "A1:bekommen": {
+    "en": "get; receive",
+    "nl": "krijgen; ontvangen"
+  },
+  "A1:lang": {
+    "en": "long",
+    "nl": "lang"
+  },
+  "A1:jeder": {
+    "en": "each; every",
+    "nl": "ieder; elk"
+  },
+  "A1:teil": {
+    "en": "part",
+    "nl": "deel"
+  },
+  "A1:kind": {
+    "en": "child",
+    "nl": "kind"
+  },
+  "A1:woche": {
+    "en": "week",
+    "nl": "week"
+  },
+  "A1:sprechen": {
+    "en": "speak",
+    "nl": "spreken"
+  },
+  "A1:fragen": {
+    "en": "ask",
+    "nl": "vragen"
+  },
+  "A1:bisschen": {
+    "en": "a little bit",
+    "nl": "een beetje"
+  },
+  "A1:kurz": {
+    "en": "short",
+    "nl": "kort"
+  },
+  "A1:hand": {
+    "en": "hand",
+    "nl": "hand"
+  },
+  "A1:unser": {
+    "en": "our; ours",
+    "nl": "ons; onze"
+  },
+  "A1:spielen": {
+    "en": "play",
+    "nl": "spelen"
+  },
+  "A1:vier": {
+    "en": "four",
+    "nl": "vier"
+  },
+  "A1:möglich": {
+    "en": "possible",
+    "nl": "mogelijk"
+  },
+  "A1:oft": {
+    "en": "often",
+    "nl": "vaak"
+  },
+  "A1:schwer": {
+    "en": "heavy; difficult",
+    "nl": "zwaar; moeilijk"
+  },
+  "A1:helfen": {
+    "en": "help",
+    "nl": "helpen"
+  },
+  "A1:arbeiten": {
+    "en": "work",
+    "nl": "werken"
+  },
+  "A1:kopf": {
+    "en": "head",
+    "nl": "hoofd"
+  },
+  "A1:polizei": {
+    "en": "police",
+    "nl": "politie"
+  },
+  "A1:sofort": {
+    "en": "immediately",
+    "nl": "meteen"
+  },
+  "A1:hoch": {
+    "en": "high",
+    "nl": "hoog"
+  },
+  "A1:fünf": {
+    "en": "five",
+    "nl": "vijf"
+  },
+  "A1:bald": {
+    "en": "soon",
+    "nl": "binnenkort"
+  },
+  "A1:brauchen": {
+    "en": "need",
+    "nl": "nodig hebben"
+  },
+  "A1:stellen": {
+    "en": "put; place upright",
+    "nl": "zetten; rechtop plaatsen"
+  },
+  "A1:hören": {
+    "en": "hear; listen",
+    "nl": "horen; luisteren"
+  },
+  "A1:mädchen": {
+    "en": "girl",
+    "nl": "meisje"
+  },
+  "A1:film": {
+    "en": "film; movie",
+    "nl": "film"
+  },
+  "A1:wort": {
+    "en": "word",
+    "nl": "woord"
+  },
+  "A1:abend": {
+    "en": "evening",
+    "nl": "avond"
+  },
+  "A1:platz": {
+    "en": "place; square",
+    "nl": "plaats; plein"
+  },
+  "A1:dürfen": {
+    "en": "may; be allowed to",
+    "nl": "mogen"
+  },
+  "A1:sohn": {
+    "en": "son",
+    "nl": "zoon"
+  },
+  "A1:schön": {
+    "en": "beautiful",
+    "nl": "mooi"
+  },
+  "A1:nein": {
+    "en": "no",
+    "nl": "nee"
+  },
+  "A1:mensch": {
+    "en": "human being",
+    "nl": "mens"
+  },
+  "A1:glauben": {
+    "en": "believe",
+    "nl": "geloven"
+  },
+  "A1:schule": {
+    "en": "school",
+    "nl": "school"
+  },
+  "A1:eltern": {
+    "en": "parents",
+    "nl": "ouders"
+  },
+  "A1:freund": {
+    "en": "friend",
+    "nl": "vriend"
+  },
+  "A1:oben": {
+    "en": "above; upstairs",
+    "nl": "boven"
+  },
+  "A1:fahren": {
+    "en": "drive; travel by vehicle",
+    "nl": "rijden; reizen"
+  },
+  "A1:suchen": {
+    "en": "look for; search",
+    "nl": "zoeken"
+  },
+  "A1:ort": {
+    "en": "place; location",
+    "nl": "plaats; locatie"
+  },
+  "A1:treffen": {
+    "en": "meet",
+    "nl": "ontmoeten"
+  },
+  "A1:wichtig": {
+    "en": "important",
+    "nl": "belangrijk"
+  },
+  "A1:auto": {
+    "en": "car",
+    "nl": "auto"
+  },
+  "A1:frei": {
+    "en": "free; available",
+    "nl": "vrij; gratis"
+  },
+  "A1:leicht": {
+    "en": "light; easy",
+    "nl": "licht; gemakkelijk"
+  },
+  "A1:all": {
+    "en": "all",
+    "nl": "alle"
+  },
+  "A1:alt": {
+    "en": "old",
+    "nl": "oud"
+  },
+  "A1:zehn": {
+    "en": "ten",
+    "nl": "tien"
+  },
+  "A1:gestern": {
+    "en": "yesterday",
+    "nl": "gisteren"
+  },
+  "A1:name": {
+    "en": "name",
+    "nl": "naam"
+  },
+  "A1:liegen": {
+    "en": "lie; be located",
+    "nl": "liggen"
+  },
+  "A1:warten": {
+    "en": "wait",
+    "nl": "wachten"
+  },
+  "A1:verstehen": {
+    "en": "understand",
+    "nl": "begrijpen"
+  },
+  "A1:sechs": {
+    "en": "six",
+    "nl": "zes"
+  },
+  "A1:gerne": {
+    "en": "gladly; like to",
+    "nl": "graag"
+  },
+  "A1:neu": {
+    "en": "new",
+    "nl": "nieuw"
+  },
+  "A1:kennen": {
+    "en": "know; be acquainted with",
+    "nl": "kennen"
+  },
+  "A1:stunde": {
+    "en": "hour",
+    "nl": "uur"
+  },
+  "A1:schlecht": {
+    "en": "bad",
+    "nl": "slecht"
+  },
+  "A1:stelle": {
+    "en": "place; job position",
+    "nl": "plek; betrekking"
+  },
+  "A1:morgen": {
+    "en": "morning; tomorrow (adverb)",
+    "nl": "ochtend; morgen (bijwoord)"
+  },
+  "A1:anfang": {
+    "en": "beginning",
+    "nl": "begin"
+  },
+  "A1:moment": {
+    "en": "moment",
+    "nl": "moment"
+  },
+  "A1:tochter": {
+    "en": "daughter",
+    "nl": "dochter"
+  },
+  "A1:ordnung": {
+    "en": "order; arrangement",
+    "nl": "orde; ordening"
+  },
+  "A1:pass": {
+    "en": "passport; mountain pass",
+    "nl": "paspoort; bergpas"
+  },
+  "A1:gern": {
+    "en": "gladly; willingly",
+    "nl": "graag"
+  },
+  "A1:alter": {
+    "en": "age",
+    "nl": "leeftijd"
+  },
+  "A1:laufen": {
+    "en": "run; walk",
+    "nl": "lopen; rennen"
+  },
+  "A1:bekannt": {
+    "en": "known; famous",
+    "nl": "bekend; beroemd"
+  },
+  "A1:spät": {
+    "en": "late",
+    "nl": "laat"
+  },
+  "A1:raum": {
+    "en": "room; space",
+    "nl": "ruimte; kamer"
+  },
+  "A1:fehler": {
+    "en": "mistake",
+    "nl": "fout"
+  },
+  "A1:hallo": {
+    "en": "hello",
+    "nl": "hallo"
+  },
+  "A1:beispiel": {
+    "en": "example",
+    "nl": "voorbeeld"
+  },
+  "A1:laut": {
+    "en": "loud",
+    "nl": "luid"
+  },
+  "A1:erklären": {
+    "en": "explain",
+    "nl": "uitleggen"
+  },
+  "A1:gewinnen": {
+    "en": "win",
+    "nl": "winnen"
+  },
+  "A1:lernen": {
+    "en": "learn; study",
+    "nl": "leren; studeren"
+  },
+  "A1:sitzen": {
+    "en": "sit",
+    "nl": "zitten"
+  },
+  "A1:firma": {
+    "en": "company",
+    "nl": "bedrijf"
+  },
+  "A1:falsch": {
+    "en": "wrong; incorrect",
+    "nl": "fout; onjuist"
+  },
+  "A1:licht": {
+    "en": "light",
+    "nl": "licht"
+  },
+  "A1:essen": {
+    "en": "eat",
+    "nl": "eten"
+  },
+  "A1:bruder": {
+    "en": "brother",
+    "nl": "broer"
+  },
+  "A1:antwort": {
+    "en": "answer",
+    "nl": "antwoord"
+  },
+  "A1:preis": {
+    "en": "price; prize",
+    "nl": "prijs"
+  },
+  "A1:verein": {
+    "en": "association; club",
+    "nl": "vereniging"
+  },
+  "A1:gehören": {
+    "en": "belong to",
+    "nl": "toebehoren aan"
+  },
+  "A1:schreiben": {
+    "en": "write",
+    "nl": "schrijven"
+  },
+  "A1:plan": {
+    "en": "plan",
+    "nl": "plan"
+  },
+  "A1:unten": {
+    "en": "below; downstairs",
+    "nl": "onder; beneden"
+  },
+  "A1:acht": {
+    "en": "eight",
+    "nl": "acht"
+  },
+  "A1:heissen": {
+    "en": "be called; mean",
+    "nl": "heten; betekenen"
+  },
+  "A1:blick": {
+    "en": "look; glance",
+    "nl": "blik"
+  },
+  "A1:langsam": {
+    "en": "slow",
+    "nl": "langzaam"
+  },
+  "A1:kulturell": {
+    "en": "cultural",
+    "nl": "cultureel"
+  },
+  "A1:bitte": {
+    "en": "request; plea",
+    "nl": "verzoek; smeekbede"
+  },
+  "A1:lesen": {
+    "en": "read",
+    "nl": "lezen"
+  },
+  "A1:kaufen": {
+    "en": "buy",
+    "nl": "kopen"
+  },
+  "A1:gruppe": {
+    "en": "group",
+    "nl": "groep"
+  },
+  "A1:geschäft": {
+    "en": "shop; business",
+    "nl": "winkel; zaak"
+  },
+  "A1:sieben": {
+    "en": "seven",
+    "nl": "zeven"
+  },
+  "A1:leider": {
+    "en": "unfortunately",
+    "nl": "helaas"
+  },
+  "A1:klasse": {
+    "en": "class; category",
+    "nl": "klas; categorie"
+  },
+  "A1:arzt": {
+    "en": "doctor",
+    "nl": "arts"
+  },
+  "A1:aufgabe": {
+    "en": "task; assignment",
+    "nl": "taak; opdracht"
+  },
+  "A1:fertig": {
+    "en": "ready; finished",
+    "nl": "klaar; af"
+  },
+  "A1:dich": {
+    "en": "you; yourself (singular object)",
+    "nl": "jou; jezelf"
+  },
+  "A1:auge": {
+    "en": "eye",
+    "nl": "oog"
+  },
+  "A1:legen": {
+    "en": "lay; put horizontally",
+    "nl": "leggen"
+  },
+  "A1:wann": {
+    "en": "when",
+    "nl": "wanneer"
+  },
+  "A1:vorstellen": {
+    "en": "introduce; imagine",
+    "nl": "voorstellen"
+  },
+  "A1:partner": {
+    "en": "partner",
+    "nl": "partner"
+  },
+  "A1:thema": {
+    "en": "topic",
+    "nl": "onderwerp"
+  },
+  "A1:dank": {
+    "en": "thanks; gratitude",
+    "nl": "dank; dankbaarheid"
+  },
+  "A1:verkaufen": {
+    "en": "sell",
+    "nl": "verkopen"
+  },
+  "A1:nummer": {
+    "en": "number",
+    "nl": "nummer"
+  },
+  "A1:zahlen": {
+    "en": "pay",
+    "nl": "betalen"
+  },
+  "A1:erzählen": {
+    "en": "tell; narrate",
+    "nl": "vertellen"
+  },
+  "A1:bank": {
+    "en": "bank; bench",
+    "nl": "bank; zitbank"
+  },
+  "A1:computer": {
+    "en": "computer",
+    "nl": "computer"
+  },
+  "A1:tot": {
+    "en": "dead",
+    "nl": "dood"
+  },
+  "A1:wagen": {
+    "en": "car; carriage",
+    "nl": "auto; wagen"
+  },
+  "A1:beginnen": {
+    "en": "begin",
+    "nl": "beginnen"
+  },
+  "A1:minute": {
+    "en": "minute",
+    "nl": "minuut"
+  },
+  "A1:holen": {
+    "en": "fetch; get",
+    "nl": "halen"
+  },
+  "A1:zimmer": {
+    "en": "room",
+    "nl": "kamer"
+  },
+  "A1:bezahlen": {
+    "en": "pay",
+    "nl": "betalen"
+  },
+  "A1:angebot": {
+    "en": "offer; quotation",
+    "nl": "aanbod; offerte"
+  },
+  "A1:job": {
+    "en": "job",
+    "nl": "baan; werk"
+  },
+  "A1:danke": {
+    "en": "thank you",
+    "nl": "dank je"
+  },
+  "A1:chef": {
+    "en": "boss",
+    "nl": "baas"
+  },
+  "A1:meter": {
+    "en": "metre",
+    "nl": "meter"
+  },
+  "A1:feuer": {
+    "en": "fire",
+    "nl": "vuur"
+  },
+  "A1:telefon": {
+    "en": "telephone",
+    "nl": "telefoon"
+  },
+  "A1:gespräch": {
+    "en": "conversation",
+    "nl": "gesprek"
+  },
+  "A1:dir": {
+    "en": "to you; for you (singular)",
+    "nl": "aan jou; voor jou"
+  },
+  "A1:hotel": {
+    "en": "hotel",
+    "nl": "hotel"
+  },
+  "A1:brief": {
+    "en": "letter",
+    "nl": "brief"
+  },
+  "A1:zeitung": {
+    "en": "newspaper",
+    "nl": "krant"
+  },
+  "A1:mögen": {
+    "en": "like",
+    "nl": "leuk vinden; graag mogen"
+  },
+  "A1:lösung": {
+    "en": "solution; chemical solution",
+    "nl": "oplossing"
+  },
+  "A1:klein": {
+    "en": "small",
+    "nl": "klein"
+  },
+  "A1:ausländisch": {
+    "en": "foreign",
+    "nl": "buitenlands"
+  },
+  "A1:ruhig": {
+    "en": "quiet; calm",
+    "nl": "rustig"
+  },
+  "A1:prozent": {
+    "en": "percent",
+    "nl": "procent"
+  },
+  "A1:fernsehen": {
+    "en": "watch television",
+    "nl": "televisiekijken"
+  },
+  "A1:sprache": {
+    "en": "language",
+    "nl": "taal"
+  },
+  "A1:schwester": {
+    "en": "sister",
+    "nl": "zus"
+  },
+  "A1:schüler": {
+    "en": "pupil; school student",
+    "nl": "leerling; scholier"
+  },
+  "A1:lehrer": {
+    "en": "teacher",
+    "nl": "leraar"
+  },
+  "A1:schliessen": {
+    "en": "close; shut",
+    "nl": "sluiten"
+  },
+  "A1:entschuldigen": {
+    "en": "excuse; apologise",
+    "nl": "verontschuldigen; zich verontschuldigen"
+  },
+  "A1:links": {
+    "en": "left; to the left",
+    "nl": "links"
+  },
+  "A1:wochenende": {
+    "en": "weekend",
+    "nl": "weekend"
+  },
+  "A1:glücklich": {
+    "en": "happy",
+    "nl": "gelukkig"
+  },
+  "A1:tschüss": {
+    "en": "goodbye",
+    "nl": "dag; tot ziens"
+  },
+  "A1:glückwunsch": {
+    "en": "congratulation",
+    "nl": "gelukwens; felicitatie"
+  },
+  "A1:bett": {
+    "en": "bed",
+    "nl": "bed"
+  },
+  "A1:freundin": {
+    "en": "female friend",
+    "nl": "vriendin"
+  },
+  "A1:neun": {
+    "en": "nine",
+    "nl": "negen"
+  },
+  "A1:million": {
+    "en": "million",
+    "nl": "miljoen"
+  },
+  "A1:sommer": {
+    "en": "summer",
+    "nl": "zomer"
+  },
+  "A1:alleine": {
+    "en": "alone",
+    "nl": "alleen"
+  },
+  "A1:zufrieden": {
+    "en": "satisfied; content",
+    "nl": "tevreden"
+  },
+  "A1:öffnen": {
+    "en": "open",
+    "nl": "openen"
+  },
+  "A1:freitag": {
+    "en": "Friday",
+    "nl": "vrijdag"
+  },
+  "A1:schicken": {
+    "en": "send",
+    "nl": "sturen"
+  },
+  "A1:bedeuten": {
+    "en": "mean",
+    "nl": "betekenen"
+  },
+  "A1:lieben": {
+    "en": "love",
+    "nl": "liefhebben; houden van"
+  },
+  "A1:rechts": {
+    "en": "to the right",
+    "nl": "rechts"
+  },
+  "A1:dorf": {
+    "en": "village",
+    "nl": "dorp"
+  },
+  "A1:welcher": {
+    "en": "which; which one",
+    "nl": "welke"
+  },
+  "A1:anrufen": {
+    "en": "phone; call up",
+    "nl": "opbellen"
+  },
+  "A1:benutzen": {
+    "en": "use",
+    "nl": "gebruiken"
+  },
+  "A1:deutsche": {
+    "en": "Germans; German woman",
+    "nl": "Duitsers; Duitse vrouw"
+  },
+  "A1:danken": {
+    "en": "thank",
+    "nl": "bedanken"
+  },
+  "A1:fuss": {
+    "en": "foot",
+    "nl": "voet"
+  },
+  "A1:mitte": {
+    "en": "middle",
+    "nl": "midden"
+  },
+  "A1:kurs": {
+    "en": "course; exchange rate",
+    "nl": "cursus; wisselkoers"
+  },
+  "A1:kümmern": {
+    "en": "take care of; concern oneself with",
+    "nl": "zorgen voor; zich bekommeren om"
+  },
+  "A1:taxi": {
+    "en": "taxi",
+    "nl": "taxi"
+  },
+  "A1:geburtstag": {
+    "en": "birthday",
+    "nl": "verjaardag"
+  },
+  "A1:reise": {
+    "en": "journey; travel",
+    "nl": "reis"
+  },
+  "A1:scheinen": {
+    "en": "shine; seem",
+    "nl": "schijnen; lijken"
+  },
+  "A1:foto": {
+    "en": "photograph",
+    "nl": "foto"
+  },
+  "A1:mund": {
+    "en": "mouth",
+    "nl": "mond"
+  },
+  "A1:montag": {
+    "en": "Monday",
+    "nl": "maandag"
+  },
+  "A1:arm": {
+    "en": "arm",
+    "nl": "arm"
+  },
+  "A1:fliegen": {
+    "en": "fly; travel by plane",
+    "nl": "vliegen"
+  },
+  "A1:samstag": {
+    "en": "Saturday",
+    "nl": "zaterdag"
+  },
+  "A1:europa": {
+    "en": "Europe",
+    "nl": "Europa"
+  },
+  "A1:verdienen": {
+    "en": "earn; deserve",
+    "nl": "verdienen"
+  },
+  "A1:dauern": {
+    "en": "last; take time",
+    "nl": "duren"
+  },
+  "A1:internet": {
+    "en": "internet",
+    "nl": "internet"
+  },
+  "A1:quadratmeter": {
+    "en": "square metre",
+    "nl": "vierkante meter"
+  },
+  "A1:normal": {
+    "en": "normal",
+    "nl": "normaal"
+  },
+  "A1:deutschland": {
+    "en": "Germany",
+    "nl": "Duitsland"
+  },
+  "A1:wind": {
+    "en": "wind",
+    "nl": "wind"
+  },
+  "A1:feiern": {
+    "en": "celebrate",
+    "nl": "vieren"
+  },
+  "A1:halb": {
+    "en": "half",
+    "nl": "half"
+  },
+  "A1:mitkommen": {
+    "en": "come along",
+    "nl": "meekomen"
+  },
+  "A1:weiblich": {
+    "en": "female; feminine",
+    "nl": "vrouwelijk"
+  },
+  "A1:besuchen": {
+    "en": "visit",
+    "nl": "bezoeken"
+  },
+  "A1:hinten": {
+    "en": "behind; at the back",
+    "nl": "achter; achteraan"
+  },
+  "A1:aussehen": {
+    "en": "look; appear",
+    "nl": "eruitzien"
+  },
+  "A1:karte": {
+    "en": "card; map",
+    "nl": "kaart"
+  },
+  "A1:laden": {
+    "en": "shop; window shutter",
+    "nl": "winkel; vensterluik"
+  },
+  "A1:maschine": {
+    "en": "machine",
+    "nl": "machine"
+  },
+  "A1:jung": {
+    "en": "young",
+    "nl": "jong"
+  },
+  "A1:fehlen": {
+    "en": "be missing; be absent",
+    "nl": "ontbreken; afwezig zijn"
+  },
+  "A1:text": {
+    "en": "text",
+    "nl": "tekst"
+  },
+  "A1:grad": {
+    "en": "degree; level",
+    "nl": "graad; niveau"
+  },
+  "A1:frühjahr": {
+    "en": "spring",
+    "nl": "voorjaar"
+  },
+  "A1:farbe": {
+    "en": "colour; paint",
+    "nl": "kleur; verf"
+  },
+  "A1:teuer": {
+    "en": "expensive",
+    "nl": "duur"
+  },
+  "A1:ecke": {
+    "en": "corner",
+    "nl": "hoek"
+  },
+  "A1:information": {
+    "en": "information",
+    "nl": "informatie"
+  },
+  "A1:milliarde": {
+    "en": "billion",
+    "nl": "miljard"
+  },
+  "A1:bitten": {
+    "en": "ask; request",
+    "nl": "vragen; verzoeken"
+  },
+  "A1:april": {
+    "en": "April",
+    "nl": "april"
+  },
+  "A1:grösse": {
+    "en": "size; height",
+    "nl": "maat; grootte"
+  },
+  "A1:krank": {
+    "en": "ill; sick",
+    "nl": "ziek"
+  },
+  "A1:auskunft": {
+    "en": "information; statement",
+    "nl": "inlichtingen; informatie"
+  },
+  "A1:bus": {
+    "en": "bus",
+    "nl": "bus"
+  },
+  "A1:oma": {
+    "en": "grandma",
+    "nl": "oma"
+  },
+  "A1:aussage": {
+    "en": "statement; assertion",
+    "nl": "verklaring; uitspraak"
+  },
+  "A1:freuen": {
+    "en": "please; rejoice",
+    "nl": "verheugen; blij maken"
+  },
+  "A1:wohnen": {
+    "en": "live; reside",
+    "nl": "wonen"
+  },
+  "A1:trinken": {
+    "en": "drink",
+    "nl": "drinken"
+  },
+  "A1:osten": {
+    "en": "east",
+    "nl": "oosten"
+  },
+  "A1:ergebnis": {
+    "en": "result",
+    "nl": "resultaat"
+  },
+  "A1:papier": {
+    "en": "paper; document",
+    "nl": "papier; document"
+  },
+  "A1:westen": {
+    "en": "west",
+    "nl": "westen"
+  },
+  "A1:flugzeug": {
+    "en": "aeroplane",
+    "nl": "vliegtuig"
+  },
+  "A1:norden": {
+    "en": "north",
+    "nl": "noorden"
+  },
+  "A1:gast": {
+    "en": "guest",
+    "nl": "gast"
+  },
+  "A1:satz": {
+    "en": "sentence; set",
+    "nl": "zin; reeks"
+  },
+  "A1:adresse": {
+    "en": "address",
+    "nl": "adres"
+  },
+  "A1:anfangen": {
+    "en": "start; begin",
+    "nl": "beginnen"
+  },
+  "A1:see": {
+    "en": "lake; sea (die See)",
+    "nl": "meer; zee (die See)"
+  },
+  "A1:pause": {
+    "en": "break; pause",
+    "nl": "pauze"
+  },
+  "A1:donnerstag": {
+    "en": "Thursday",
+    "nl": "donderdag"
+  },
+  "A1:mitnehmen": {
+    "en": "take along",
+    "nl": "meenemen"
+  },
+  "A1:kriegen": {
+    "en": "get; receive (informal)",
+    "nl": "krijgen (informeel)"
+  },
+  "A1:zwölf": {
+    "en": "twelve",
+    "nl": "twaalf"
+  },
+  "A1:kilometer": {
+    "en": "kilometre",
+    "nl": "kilometer"
+  },
+  "A1:opa": {
+    "en": "grandpa",
+    "nl": "opa"
+  },
+  "A1:tasche": {
+    "en": "bag; pocket",
+    "nl": "tas; zak"
+  },
+  "A1:toilette": {
+    "en": "toilet",
+    "nl": "toilet"
+  },
+  "A1:glas": {
+    "en": "glass",
+    "nl": "glas"
+  },
+  "A1:böse": {
+    "en": "evil; angry",
+    "nl": "kwaadaardig; boos"
+  },
+  "A1:kino": {
+    "en": "cinema",
+    "nl": "bioscoop"
+  },
+  "A1:wohin": {
+    "en": "where to",
+    "nl": "waarheen"
+  },
+  "A1:dienstag": {
+    "en": "Tuesday",
+    "nl": "dinsdag"
+  },
+  "A1:heimat": {
+    "en": "homeland; home region",
+    "nl": "vaderland; thuisland"
+  },
+  "A1:küche": {
+    "en": "kitchen; cuisine",
+    "nl": "keuken"
+  },
+  "A1:wein": {
+    "en": "wine",
+    "nl": "wijn"
+  },
+  "A1:post": {
+    "en": "post; post office",
+    "nl": "post; postkantoor"
+  },
+  "A1:lied": {
+    "en": "song",
+    "nl": "lied"
+  },
+  "A1:fleisch": {
+    "en": "meat",
+    "nl": "vlees"
+  },
+  "A1:süden": {
+    "en": "south",
+    "nl": "zuiden"
+  },
+  "A1:mai": {
+    "en": "May",
+    "nl": "mei"
+  },
+  "A1:fahrer": {
+    "en": "driver",
+    "nl": "bestuurder; chauffeur"
+  },
+  "A1:nachmittag": {
+    "en": "afternoon",
+    "nl": "namiddag"
+  },
+  "A1:schlafen": {
+    "en": "sleep",
+    "nl": "slapen"
+  },
+  "A1:anbieten": {
+    "en": "offer",
+    "nl": "aanbieden"
+  },
+  "A1:reparieren": {
+    "en": "repair",
+    "nl": "repareren"
+  },
+  "A1:garten": {
+    "en": "garden",
+    "nl": "tuin"
+  },
+  "A1:müde": {
+    "en": "tired",
+    "nl": "moe"
+  },
+  "A1:juli": {
+    "en": "July",
+    "nl": "juli"
+  },
+  "A1:lachen": {
+    "en": "laugh",
+    "nl": "lachen"
+  },
+  "A1:haar": {
+    "en": "hair",
+    "nl": "haar"
+  },
+  "A1:september": {
+    "en": "September",
+    "nl": "september"
+  },
+  "A1:test": {
+    "en": "test",
+    "nl": "test"
+  },
+  "A1:restaurant": {
+    "en": "restaurant",
+    "nl": "restaurant"
+  },
+  "A1:dein": {
+    "en": "your; yours (singular)",
+    "nl": "jouw; van jou"
+  },
+  "A1:schwarz": {
+    "en": "black",
+    "nl": "zwart"
+  },
+  "A1:pfund": {
+    "en": "pound (weight or currency)",
+    "nl": "pond (gewicht of munt)"
+  },
+  "A1:führung": {
+    "en": "leadership; guided tour",
+    "nl": "leiding; rondleiding"
+  },
+  "A1:aufstehen": {
+    "en": "get up",
+    "nl": "opstaan"
+  },
+  "A1:reisen": {
+    "en": "travel",
+    "nl": "reizen"
+  },
+  "A1:wetter": {
+    "en": "weather",
+    "nl": "weer"
+  },
+  "A1:drücken": {
+    "en": "press; push",
+    "nl": "drukken; duwen"
+  },
+  "A1:sport": {
+    "en": "sport",
+    "nl": "sport"
+  },
+  "A1:sekunde": {
+    "en": "second",
+    "nl": "seconde"
+  },
+  "A1:baby": {
+    "en": "baby",
+    "nl": "baby"
+  },
+  "A1:bein": {
+    "en": "leg",
+    "nl": "been"
+  },
+  "A1:erlauben": {
+    "en": "allow",
+    "nl": "toestaan"
+  },
+  "A1:enden": {
+    "en": "end",
+    "nl": "eindigen"
+  },
+  "A1:abholen": {
+    "en": "collect; pick up",
+    "nl": "ophalen"
+  },
+  "A1:hundert": {
+    "en": "hundred",
+    "nl": "honderd"
+  },
+  "A1:lustig": {
+    "en": "funny; cheerful",
+    "nl": "grappig; vrolijk"
+  },
+  "A1:party": {
+    "en": "party",
+    "nl": "feest"
+  },
+  "A1:wehtun": {
+    "en": "hurt; cause pain",
+    "nl": "pijn doen"
+  },
+  "A1:vorsicht": {
+    "en": "caution; care",
+    "nl": "voorzichtigheid"
+  },
+  "A1:tausend": {
+    "en": "thousand",
+    "nl": "duizend"
+  },
+  "A1:prüfung": {
+    "en": "examination; test",
+    "nl": "examen; toets"
+  },
+  "A1:stock": {
+    "en": "stick; storey",
+    "nl": "stok; verdieping"
+  },
+  "A1:hunger": {
+    "en": "hunger",
+    "nl": "honger"
+  },
+  "A1:kunde": {
+    "en": "customer",
+    "nl": "klant"
+  },
+  "A1:juni": {
+    "en": "June",
+    "nl": "juni"
+  },
+  "A1:rauchen": {
+    "en": "smoke",
+    "nl": "roken"
+  },
+  "A1:euro": {
+    "en": "euro",
+    "nl": "euro"
+  },
+  "A1:oktober": {
+    "en": "October",
+    "nl": "oktober"
+  },
+  "A1:bad": {
+    "en": "bathroom; bath",
+    "nl": "badkamer; bad"
+  },
+  "A1:einladen": {
+    "en": "invite",
+    "nl": "uitnodigen"
+  },
+  "A1:buchstabe": {
+    "en": "letter of the alphabet",
+    "nl": "letter"
+  },
+  "A1:kilogramm": {
+    "en": "kilogram",
+    "nl": "kilogram"
+  },
+  "A1:kochen": {
+    "en": "cook; boil",
+    "nl": "koken"
+  },
+  "A1:unterricht": {
+    "en": "teaching; lesson",
+    "nl": "onderwijs; les"
+  },
+  "A1:willkommen": {
+    "en": "welcome",
+    "nl": "welkom"
+  },
+  "A1:schrank": {
+    "en": "cupboard; wardrobe",
+    "nl": "kast"
+  },
+  "A1:viertel": {
+    "en": "quarter; neighbourhood",
+    "nl": "kwart; wijk"
+  },
+  "A1:tanzen": {
+    "en": "dance",
+    "nl": "dansen"
+  },
+  "A1:wunderbar": {
+    "en": "wonderful",
+    "nl": "prachtig; wonderbaarlijk"
+  },
+  "A1:geschenk": {
+    "en": "gift",
+    "nl": "cadeau"
+  },
+  "A1:woher": {
+    "en": "where from",
+    "nl": "waarvandaan"
+  },
+  "A1:aufhören": {
+    "en": "stop; cease",
+    "nl": "ophouden"
+  },
+  "A1:handy": {
+    "en": "mobile phone",
+    "nl": "mobiele telefoon"
+  },
+  "A1:unterschreiben": {
+    "en": "sign",
+    "nl": "ondertekenen"
+  },
+  "A1:fisch": {
+    "en": "fish",
+    "nl": "vis"
+  },
+  "A1:gewicht": {
+    "en": "weight",
+    "nl": "gewicht"
+  },
+  "A1:ehemann": {
+    "en": "husband",
+    "nl": "echtgenoot"
+  },
+  "A1:schwimmen": {
+    "en": "swim",
+    "nl": "zwemmen"
+  },
+  "A1:anziehen": {
+    "en": "put on; attract",
+    "nl": "aantrekken"
+  },
+  "A1:elf": {
+    "en": "eleven",
+    "nl": "elf"
+  },
+  "A1:rot": {
+    "en": "red",
+    "nl": "rood"
+  },
+  "A1:leise": {
+    "en": "quiet; soft",
+    "nl": "zacht; stil"
+  },
+  "A1:eilig": {
+    "en": "urgent; hurried",
+    "nl": "haastig; dringend"
+  },
+  "A1:daneben": {
+    "en": "next to it; beside it",
+    "nl": "ernaast"
+  },
+  "A1:heiraten": {
+    "en": "marry",
+    "nl": "trouwen"
+  },
+  "A1:november": {
+    "en": "November",
+    "nl": "november"
+  },
+  "A1:bahnhof": {
+    "en": "railway station",
+    "nl": "treinstation"
+  },
+  "A1:abgeben": {
+    "en": "hand in; give up",
+    "nl": "inleveren; afstaan"
+  },
+  "A1:einladung": {
+    "en": "invitation",
+    "nl": "uitnodiging"
+  },
+  "A1:cent": {
+    "en": "cent",
+    "nl": "cent"
+  },
+  "A1:ausland": {
+    "en": "foreign countries; abroad",
+    "nl": "het buitenland"
+  },
+  "A1:meist": {
+    "en": "mostly; usually",
+    "nl": "meestal"
+  },
+  "A1:km": {
+    "en": "kilometre (abbreviation)",
+    "nl": "kilometer (afkorting)"
+  },
+  "A1:entschuldigung": {
+    "en": "apology; excuse",
+    "nl": "excuus; verontschuldiging"
+  },
+  "A1:ankommen": {
+    "en": "arrive",
+    "nl": "aankomen"
+  },
+  "A1:hochzeit": {
+    "en": "wedding; heyday",
+    "nl": "bruiloft; bloeitijd"
+  },
+  "A1:bahn": {
+    "en": "railway; train",
+    "nl": "spoorweg; trein"
+  },
+  "A1:doktor": {
+    "en": "doctor; doctorate holder",
+    "nl": "dokter; doctor"
+  },
+  "A1:kleidung": {
+    "en": "clothing",
+    "nl": "kleding"
+  },
+  "A1:achtung": {
+    "en": "attention; respect",
+    "nl": "aandacht; achting"
+  },
+  "A1:anzeige": {
+    "en": "advertisement; official report",
+    "nl": "advertentie; aangifte"
+  },
+  "A1:fieber": {
+    "en": "fever",
+    "nl": "koorts"
+  },
+  "A1:ausziehen": {
+    "en": "take off clothes; move out",
+    "nl": "uitkleden; verhuizen"
+  },
+  "A1:wiederholen": {
+    "en": "repeat",
+    "nl": "herhalen"
+  },
+  "A1:bauch": {
+    "en": "belly; abdomen",
+    "nl": "buik"
+  },
+  "A1:europäer": {
+    "en": "European person",
+    "nl": "Europeaan"
+  },
+  "A1:frühstück": {
+    "en": "breakfast",
+    "nl": "ontbijt"
+  },
+  "A1:fax": {
+    "en": "fax",
+    "nl": "fax"
+  },
+  "A1:dusche": {
+    "en": "shower",
+    "nl": "douche"
+  },
+  "A1:grün": {
+    "en": "green",
+    "nl": "groen"
+  },
+  "A1:kühlschrank": {
+    "en": "refrigerator",
+    "nl": "koelkast"
+  },
+  "A1:bekannte": {
+    "en": "acquaintances",
+    "nl": "kennissen"
+  },
+  "A1:flasche": {
+    "en": "bottle",
+    "nl": "fles"
+  },
+  "A1:märz": {
+    "en": "March",
+    "nl": "maart"
+  },
+  "A1:januar": {
+    "en": "January",
+    "nl": "januari"
+  },
+  "A1:ausweis": {
+    "en": "identity card",
+    "nl": "identiteitsbewijs"
+  },
+  "A1:bar": {
+    "en": "in cash; bar (capitalised noun)",
+    "nl": "contant; bar (zelfstandig naamwoord)"
+  },
+  "A1:fünfzig": {
+    "en": "fifty",
+    "nl": "vijftig"
+  },
+  "A1:dezember": {
+    "en": "December",
+    "nl": "december"
+  },
+  "A1:hell": {
+    "en": "bright; light-coloured",
+    "nl": "helder; licht"
+  },
+  "A1:riechen": {
+    "en": "smell",
+    "nl": "ruiken"
+  },
+  "A1:jugendliche": {
+    "en": "teenager; young person",
+    "nl": "jongere; tiener"
+  },
+  "A1:schluss": {
+    "en": "end; conclusion",
+    "nl": "einde; slot"
+  },
+  "A1:waschen": {
+    "en": "wash",
+    "nl": "wassen"
+  },
+  "A1:eingang": {
+    "en": "entrance",
+    "nl": "ingang"
+  },
+  "A1:tee": {
+    "en": "tea",
+    "nl": "thee"
+  },
+  "A1:breit": {
+    "en": "wide",
+    "nl": "breed"
+  },
+  "A1:datum": {
+    "en": "date",
+    "nl": "datum"
+  },
+  "A1:koffer": {
+    "en": "suitcase",
+    "nl": "koffer"
+  },
+  "A1:international": {
+    "en": "international",
+    "nl": "internationaal"
+  },
+  "A1:appetit": {
+    "en": "appetite",
+    "nl": "eetlust"
+  },
+  "A1:kilo": {
+    "en": "kilo",
+    "nl": "kilo"
+  },
+  "A1:kennenlernen": {
+    "en": "get to know",
+    "nl": "leren kennen"
+  },
+  "A1:anruf": {
+    "en": "phone call",
+    "nl": "telefoongesprek"
+  },
+  "A1:kuchen": {
+    "en": "cake",
+    "nl": "cake; taart"
+  },
+  "A1:aussteigen": {
+    "en": "get off; alight",
+    "nl": "uitstappen"
+  },
+  "A1:konto": {
+    "en": "bank account",
+    "nl": "bankrekening"
+  },
+  "A1:studieren": {
+    "en": "study at university; study carefully",
+    "nl": "studeren; bestuderen"
+  },
+  "A1:schuh": {
+    "en": "shoe",
+    "nl": "schoen"
+  },
+  "A1:mitbringen": {
+    "en": "bring along",
+    "nl": "meebrengen"
+  },
+  "A1:selbständig": {
+    "en": "independent",
+    "nl": "zelfstandig"
+  },
+  "A1:kaputt": {
+    "en": "broken; out of order",
+    "nl": "kapot"
+  },
+  "A1:telefonieren": {
+    "en": "make a phone call",
+    "nl": "telefoneren"
+  },
+  "A1:fussball": {
+    "en": "football",
+    "nl": "voetbal"
+  },
+  "A1:erwachsene": {
+    "en": "adult",
+    "nl": "volwassene"
+  },
+  "A1:ausgang": {
+    "en": "exit",
+    "nl": "uitgang"
+  },
+  "A1:herbst": {
+    "en": "autumn",
+    "nl": "herfst"
+  },
+  "A1:februar": {
+    "en": "February",
+    "nl": "februari"
+  },
+  "A1:bestellen": {
+    "en": "order; book",
+    "nl": "bestellen; reserveren"
+  },
+  "A1:deutsch": {
+    "en": "German",
+    "nl": "Duits"
+  },
+  "A1:praxis": {
+    "en": "practice; doctor's surgery",
+    "nl": "praktijk; artsenpraktijk"
+  },
+  "A1:ehefrau": {
+    "en": "wife",
+    "nl": "echtgenote"
+  },
+  "A1:schmecken": {
+    "en": "taste",
+    "nl": "smaken; proeven"
+  },
+  "A1:umziehen": {
+    "en": "move house; change clothes",
+    "nl": "verhuizen; omkleden"
+  },
+  "A1:anmeldung": {
+    "en": "registration",
+    "nl": "aanmelding"
+  },
+  "A1:durst": {
+    "en": "thirst",
+    "nl": "dorst"
+  },
+  "A1:grossvater": {
+    "en": "grandfather",
+    "nl": "grootvader"
+  },
+  "A1:treppe": {
+    "en": "stairs",
+    "nl": "trap"
+  },
+  "A1:billig": {
+    "en": "cheap",
+    "nl": "goedkoop"
+  },
+  "A1:zwanzig": {
+    "en": "twenty",
+    "nl": "twintig"
+  },
+  "A1:studium": {
+    "en": "university studies",
+    "nl": "studie aan de universiteit"
+  },
+  "A1:schild": {
+    "en": "sign; signboard",
+    "nl": "bord; uithangbord"
+  },
+  "A1:grossmutter": {
+    "en": "grandmother",
+    "nl": "grootmoeder"
+  },
+  "A1:vierzig": {
+    "en": "forty",
+    "nl": "veertig"
+  },
+  "A1:apartment": {
+    "en": "small apartment",
+    "nl": "klein appartement"
+  },
+  "A1:ankunft": {
+    "en": "arrival",
+    "nl": "aankomst"
+  },
+  "A1:öl": {
+    "en": "oil",
+    "nl": "olie"
+  },
+  "A1:gelb": {
+    "en": "yellow",
+    "nl": "geel"
+  },
+  "A1:aufzug": {
+    "en": "lift; procession",
+    "nl": "lift; optocht"
+  },
+  "A1:fahrrad": {
+    "en": "bicycle",
+    "nl": "fiets"
+  },
+  "A1:kasse": {
+    "en": "cash register; checkout",
+    "nl": "kassa"
+  },
+  "A1:automatisch": {
+    "en": "automatic",
+    "nl": "automatisch"
+  },
+  "A1:empfehlen": {
+    "en": "recommend",
+    "nl": "aanbevelen"
+  },
+  "A1:ei": {
+    "en": "egg",
+    "nl": "ei"
+  },
+  "A1:blau": {
+    "en": "blue",
+    "nl": "blauw"
+  },
+  "A1:empfänger": {
+    "en": "recipient; receiver",
+    "nl": "ontvanger"
+  },
+  "A1:ausmachen": {
+    "en": "switch off; arrange",
+    "nl": "uitzetten; afspreken"
+  },
+  "A1:praktikum": {
+    "en": "internship; work placement",
+    "nl": "stage"
+  },
+  "A1:mittag": {
+    "en": "noon; midday",
+    "nl": "middag; middaguur"
+  },
+  "A1:eintritt": {
+    "en": "admission; entrance fee",
+    "nl": "toegang; toegangsprijs"
+  },
+  "A1:halle": {
+    "en": "hall",
+    "nl": "hal"
+  },
+  "A1:reis": {
+    "en": "rice",
+    "nl": "rijst"
+  },
+  "A1:gültig": {
+    "en": "valid",
+    "nl": "geldig"
+  },
+  "A1:sonnabend": {
+    "en": "Saturday",
+    "nl": "zaterdag"
+  },
+  "A1:salat": {
+    "en": "salad; lettuce",
+    "nl": "salade; sla"
+  },
+  "A1:ausländer": {
+    "en": "foreigner",
+    "nl": "buitenlander"
+  },
+  "A1:cm": {
+    "en": "centimetre (abbreviation)",
+    "nl": "centimeter (afkorting)"
+  },
+  "A1:gruss": {
+    "en": "greeting",
+    "nl": "groet"
+  },
+  "A1:zentimeter": {
+    "en": "centimetre",
+    "nl": "centimeter"
+  },
+  "A1:café": {
+    "en": "café",
+    "nl": "café"
+  },
+  "A1:saft": {
+    "en": "juice",
+    "nl": "sap"
+  },
+  "A1:günstig": {
+    "en": "affordable; favourable",
+    "nl": "voordelig; gunstig"
+  },
+  "A1:unterschrift": {
+    "en": "signature",
+    "nl": "handtekening"
+  },
+  "A1:sofa": {
+    "en": "sofa",
+    "nl": "bank; sofa"
+  },
+  "A1:liter": {
+    "en": "litre",
+    "nl": "liter"
+  },
+  "A1:zigarette": {
+    "en": "cigarette",
+    "nl": "sigaret"
+  },
+  "A1:grau": {
+    "en": "grey",
+    "nl": "grijs"
+  },
+  "A1:zurzeit": {
+    "en": "currently",
+    "nl": "momenteel"
+  },
+  "A1:butter": {
+    "en": "butter",
+    "nl": "boter"
+  },
+  "A1:fremd": {
+    "en": "unfamiliar; foreign",
+    "nl": "vreemd; buitenlands"
+  },
+  "A1:arbeitsplatz": {
+    "en": "workplace; job",
+    "nl": "werkplek; baan"
+  },
+  "A1:anmelden": {
+    "en": "register; announce arrival",
+    "nl": "aanmelden"
+  },
+  "A1:ticket": {
+    "en": "ticket",
+    "nl": "kaartje; ticket"
+  },
+  "A1:herzlich": {
+    "en": "warm; cordial",
+    "nl": "hartelijk"
+  },
+  "A1:dreissig": {
+    "en": "thirty",
+    "nl": "dertig"
+  },
+  "A1:ausflug": {
+    "en": "outing; excursion",
+    "nl": "uitstapje"
+  },
+  "A1:gemüse": {
+    "en": "vegetables",
+    "nl": "groente"
+  },
+  "A1:gepäck": {
+    "en": "luggage",
+    "nl": "bagage"
+  },
+  "A1:student": {
+    "en": "university student",
+    "nl": "student"
+  },
+  "A1:verwandte": {
+    "en": "relative",
+    "nl": "familielid"
+  },
+  "A1:kreditkarte": {
+    "en": "credit card",
+    "nl": "creditcard"
+  },
+  "A1:frühling": {
+    "en": "spring",
+    "nl": "lente"
+  },
+  "A1:freizeit": {
+    "en": "free time",
+    "nl": "vrije tijd"
+  },
+  "A1:übernachten": {
+    "en": "stay overnight",
+    "nl": "overnachten"
+  },
+  "A1:lebensmittel": {
+    "en": "food; groceries",
+    "nl": "levensmiddelen"
+  },
+  "A1:autobahn": {
+    "en": "motorway",
+    "nl": "snelweg"
+  },
+  "A1:männlich": {
+    "en": "male; masculine",
+    "nl": "mannelijk"
+  },
+  "A1:schalter": {
+    "en": "switch; service counter",
+    "nl": "schakelaar; loket"
+  },
+  "A1:lokal": {
+    "en": "restaurant; eating establishment",
+    "nl": "restaurant; horecagelegenheid"
+  },
+  "A1:geradeaus": {
+    "en": "straight ahead",
+    "nl": "rechtdoor"
+  },
+  "A1:schinken": {
+    "en": "ham",
+    "nl": "ham"
+  },
+  "A1:möbel": {
+    "en": "furniture",
+    "nl": "meubels"
+  },
+  "A1:salz": {
+    "en": "salt",
+    "nl": "zout"
+  },
+  "A1:bogen": {
+    "en": "bow; sheet of paper",
+    "nl": "boog; vel papier"
+  },
+  "A1:einsteigen": {
+    "en": "board; get into a vehicle",
+    "nl": "instappen"
+  },
+  "A1:wandern": {
+    "en": "hike",
+    "nl": "wandelen"
+  },
+  "A1:verkäufer": {
+    "en": "salesperson",
+    "nl": "verkoper"
+  },
+  "A1:arbeitslos": {
+    "en": "unemployed",
+    "nl": "werkloos"
+  },
+  "A1:vermieter": {
+    "en": "landlord",
+    "nl": "verhuurder"
+  },
+  "A1:bitter": {
+    "en": "bitter; harsh",
+    "nl": "bitter; hard"
+  },
+  "A1:geschwister": {
+    "en": "siblings",
+    "nl": "broers en zussen"
+  },
+  "A1:braun": {
+    "en": "brown",
+    "nl": "bruin"
+  },
+  "A1:kg": {
+    "en": "kilogram (abbreviation)",
+    "nl": "kilogram (afkorting)"
+  },
+  "A1:baden": {
+    "en": "bathe; swim for recreation",
+    "nl": "baden; zwemmen"
+  },
+  "A1:getränk": {
+    "en": "drink; beverage",
+    "nl": "drankje"
+  },
+  "A1:gramm": {
+    "en": "gram",
+    "nl": "gram"
+  },
+  "A1:hobby": {
+    "en": "hobby",
+    "nl": "hobby"
+  },
+  "A1:gratulieren": {
+    "en": "congratulate",
+    "nl": "feliciteren"
+  },
+  "A1:feierabend": {
+    "en": "end of the working day",
+    "nl": "einde van de werkdag"
+  },
+  "A1:fünfzehn": {
+    "en": "fifteen",
+    "nl": "vijftien"
+  },
+  "A1:vormittag": {
+    "en": "morning; before noon",
+    "nl": "ochtend; voormiddag"
+  },
+  "A1:mieten": {
+    "en": "rent",
+    "nl": "huren"
+  },
+  "A1:balkon": {
+    "en": "balcony",
+    "nl": "balkon"
+  },
+  "A1:drucken": {
+    "en": "print",
+    "nl": "afdrukken"
+  },
+  "A1:partnerin": {
+    "en": "female partner",
+    "nl": "partner (vrouw)"
+  },
+  "A1:zoll": {
+    "en": "customs; inch",
+    "nl": "douane; duim"
+  },
+  "A1:lkw": {
+    "en": "lorry; truck",
+    "nl": "vrachtwagen"
+  },
+  "A1:regnen": {
+    "en": "rain",
+    "nl": "regenen"
+  },
+  "A1:qm": {
+    "en": "square metre (abbreviation)",
+    "nl": "vierkante meter (afkorting)"
+  },
+  "A1:sechzig": {
+    "en": "sixty",
+    "nl": "zestig"
+  },
+  "A1:frühstücken": {
+    "en": "have breakfast",
+    "nl": "ontbijten"
+  },
+  "A1:besichtigen": {
+    "en": "visit and inspect; view",
+    "nl": "bezichtigen"
+  },
+  "A1:formular": {
+    "en": "form",
+    "nl": "formulier"
+  },
+  "A1:obst": {
+    "en": "fruit",
+    "nl": "fruit"
+  },
+  "A1:herd": {
+    "en": "cooker; stove",
+    "nl": "fornuis"
+  },
+  "A1:brötchen": {
+    "en": "bread roll",
+    "nl": "broodje"
+  },
+  "A1:birne": {
+    "en": "pear; light bulb",
+    "nl": "peer; gloeilamp"
+  },
+  "A1:abfahrt": {
+    "en": "departure",
+    "nl": "vertrek"
+  },
+  "A1:vierzehn": {
+    "en": "fourteen",
+    "nl": "veertien"
+  },
+  "A1:durchsage": {
+    "en": "loudspeaker announcement",
+    "nl": "omroepbericht"
+  },
+  "A1:drucker": {
+    "en": "printer",
+    "nl": "printer"
+  },
+  "A1:anschluss": {
+    "en": "connection; connecting service",
+    "nl": "aansluiting; overstap"
+  },
+  "A1:anmachen": {
+    "en": "switch on; hit on someone",
+    "nl": "aanzetten; iemand versieren"
+  },
+  "A1:anrufbeantworter": {
+    "en": "answering machine",
+    "nl": "antwoordapparaat"
+  },
+  "A1:reparatur": {
+    "en": "repair",
+    "nl": "reparatie"
+  },
+  "A1:siebzig": {
+    "en": "seventy",
+    "nl": "zeventig"
+  },
+  "A1:strassenbahn": {
+    "en": "tram",
+    "nl": "tram"
+  },
+  "A1:achtzig": {
+    "en": "eighty",
+    "nl": "tachtig"
+  },
+  "A1:banane": {
+    "en": "banana",
+    "nl": "banaan"
+  },
+  "A1:abflug": {
+    "en": "flight departure; take-off",
+    "nl": "vertrek per vliegtuig; opstijgen"
+  },
+  "A1:hausfrau": {
+    "en": "housewife",
+    "nl": "huisvrouw"
+  },
+  "A1:circa": {
+    "en": "approximately",
+    "nl": "circa; ongeveer"
+  },
+  "A1:gleis": {
+    "en": "railway track",
+    "nl": "spoor"
+  },
+  "A1:kiosk": {
+    "en": "kiosk",
+    "nl": "kiosk"
+  },
+  "A1:ledig": {
+    "en": "unmarried; single",
+    "nl": "ongehuwd"
+  },
+  "A1:zirka": {
+    "en": "approximately",
+    "nl": "ongeveer"
+  },
+  "A1:anrede": {
+    "en": "form of address",
+    "nl": "aanspreekvorm"
+  },
+  "A1:ansage": {
+    "en": "announcement; announced instructions",
+    "nl": "aankondiging"
+  },
+  "A1:kundin": {
+    "en": "female customer",
+    "nl": "vrouwelijke klant"
+  },
+  "A1:nächst": {
+    "en": "next; nearest",
+    "nl": "volgende; dichtstbijzijnde"
+  },
+  "A1:automat": {
+    "en": "vending machine; automatic machine",
+    "nl": "automaat"
+  },
+  "A1:neunzig": {
+    "en": "ninety",
+    "nl": "negentig"
+  },
+  "A1:vorwahl": {
+    "en": "telephone dialling code",
+    "nl": "netnummer"
+  },
+  "A1:abfahren": {
+    "en": "depart; drive off",
+    "nl": "vertrekken; wegrijden"
+  },
+  "A1:absender": {
+    "en": "sender",
+    "nl": "afzender"
+  },
+  "A1:achtzehn": {
+    "en": "eighteen",
+    "nl": "achttien"
+  },
+  "A1:bäckerei": {
+    "en": "bakery",
+    "nl": "bakkerij"
+  },
+  "A1:dreizehn": {
+    "en": "thirteen",
+    "nl": "dertien"
+  },
+  "A1:feiertag": {
+    "en": "public holiday",
+    "nl": "feestdag"
+  },
+  "A1:hausmann": {
+    "en": "househusband",
+    "nl": "huisman"
+  },
+  "A1:hähnchen": {
+    "en": "young chicken; roast chicken",
+    "nl": "jonge kip; gebraden kip"
+  },
+  "A1:neunzehn": {
+    "en": "nineteen",
+    "nl": "negentien"
+  },
+  "A1:prospekt": {
+    "en": "brochure; sales leaflet",
+    "nl": "brochure; reclamefolder"
+  },
+  "A1:sechzehn": {
+    "en": "sixteen",
+    "nl": "zestien"
+  },
+  "A1:siebzehn": {
+    "en": "seventeen",
+    "nl": "zeventien"
+  },
+  "A1:abfliegen": {
+    "en": "take off; depart by plane",
+    "nl": "opstijgen; per vliegtuig vertrekken"
+  },
+  "A1:anklicken": {
+    "en": "click on",
+    "nl": "aanklikken"
+  },
+  "A1:ankreuzen": {
+    "en": "tick; mark with a cross",
+    "nl": "aankruisen"
+  },
+  "A1:ausfüllen": {
+    "en": "fill in",
+    "nl": "invullen"
+  },
+  "A1:bahnsteig": {
+    "en": "railway platform",
+    "nl": "perron"
+  },
+  "A1:bleistift": {
+    "en": "pencil",
+    "nl": "potlood"
+  },
+  "A1:kartoffel": {
+    "en": "potato",
+    "nl": "aardappel"
+  },
+  "A1:reisebüro": {
+    "en": "travel agency",
+    "nl": "reisbureau"
+  },
+  "A1:rezeption": {
+    "en": "reception; reception desk",
+    "nl": "receptie"
+  },
+  "A1:vermieten": {
+    "en": "let; rent out",
+    "nl": "verhuren"
+  },
+  "A1:wochentag": {
+    "en": "day of the week",
+    "nl": "weekdag"
+  },
+  "A1:eintausend": {
+    "en": "one thousand",
+    "nl": "duizend"
+  },
+  "A1:geburtsort": {
+    "en": "place of birth",
+    "nl": "geboorteplaats"
+  },
+  "A1:schwimmbad": {
+    "en": "swimming pool",
+    "nl": "zwembad"
+  },
+  "A1:überweisen": {
+    "en": "transfer money; refer",
+    "nl": "geld overmaken; doorverwijzen"
+  },
+  "A1:appartement": {
+    "en": "small apartment",
+    "nl": "klein appartement"
+  },
+  "A1:geburtsjahr": {
+    "en": "year of birth",
+    "nl": "geboortejaar"
+  },
+  "A1:halbpension": {
+    "en": "half board",
+    "nl": "halfpension"
+  },
+  "A1:hausaufgabe": {
+    "en": "homework",
+    "nl": "huiswerk"
+  },
+  "A1:reiseführer": {
+    "en": "tour guide; guidebook",
+    "nl": "reisleider; reisgids"
+  },
+  "A1:speisekarte": {
+    "en": "menu",
+    "nl": "menukaart"
+  },
+  "A1:doppelzimmer": {
+    "en": "double room",
+    "nl": "tweepersoonskamer"
+  },
+  "A1:einzelzimmer": {
+    "en": "single room",
+    "nl": "eenpersoonskamer"
+  },
+  "A1:familienname": {
+    "en": "surname",
+    "nl": "achternaam"
+  },
+  "A1:postleitzahl": {
+    "en": "postcode",
+    "nl": "postcode"
+  },
+  "A1:buchstabieren": {
+    "en": "spell",
+    "nl": "spellen"
+  },
+  "A1:familienstand": {
+    "en": "marital status",
+    "nl": "burgerlijke staat"
+  },
+  "A1:kugelschreiber": {
+    "en": "ballpoint pen",
+    "nl": "balpen"
+  },
+  "A1:sehenswürdigkeit": {
+    "en": "sight; tourist attraction",
+    "nl": "bezienswaardigheid"
+  },
+  "A1:als": {
+    "en": "as; when; than",
+    "nl": "als; toen; dan"
+  },
+  "A1:wenn": {
+    "en": "if; when",
+    "nl": "als; wanneer"
+  },
+  "A1:doch": {
+    "en": "but; yes contradicting a negative",
+    "nl": "toch; jawel"
+  },
+  "A1:dass": {
+    "en": "that (conjunction)",
+    "nl": "dat (voegwoord)"
+  },
+  "A1:etwas": {
+    "en": "something; some",
+    "nl": "iets; wat"
+  },
+  "A1:weil": {
+    "en": "because",
+    "nl": "omdat"
+  },
+  "A1:mal": {
+    "en": "once; just (softening a request)",
+    "nl": "een keer; eens"
+  },
+  "A1:ganz": {
+    "en": "whole; completely",
+    "nl": "heel; helemaal"
+  },
+  "A1:lassen": {
+    "en": "let; leave",
+    "nl": "laten"
+  },
+  "A1:selbst": {
+    "en": "self; even",
+    "nl": "zelf; zelfs"
+  },
+  "A1:weg": {
+    "en": "way; path",
+    "nl": "weg; pad"
+  },
+  "A1:erst": {
+    "en": "first; not until",
+    "nl": "eerst; pas"
+  },
+  "A1:dabei": {
+    "en": "with it; in the process",
+    "nl": "daarbij; ondertussen"
+  },
+  "A1:wirklich": {
+    "en": "really",
+    "nl": "echt; werkelijk"
+  },
+  "A1:dafür": {
+    "en": "for that; in return",
+    "nl": "daarvoor; daartegenover"
+  },
+  "A1:wegen": {
+    "en": "because of",
+    "nl": "wegens; vanwege"
+  },
+  "A1:einmal": {
+    "en": "once",
+    "nl": "eenmaal"
+  },
+  "A1:genau": {
+    "en": "exact; exactly",
+    "nl": "precies; nauwkeurig"
+  },
+  "A1:hin": {
+    "en": "to there; away",
+    "nl": "daarheen; weg"
+  },
+  "A1:natürlich": {
+    "en": "naturally; of course",
+    "nl": "natuurlijk"
+  },
+  "A1:darauf": {
+    "en": "on it; afterwards",
+    "nl": "daarop; daarna"
+  },
+  "A1:darüber": {
+    "en": "over it; about it",
+    "nl": "erover; daarover"
+  },
+  "A1:fast": {
+    "en": "almost",
+    "nl": "bijna"
+  },
+  "A1:paar": {
+    "en": "pair",
+    "nl": "paar"
+  },
+  "A1:recht": {
+    "en": "right; quite",
+    "nl": "juist; tamelijk"
+  },
+  "A1:eigentlich": {
+    "en": "actually; basically",
+    "nl": "eigenlijk"
+  },
+  "A1:sogar": {
+    "en": "even",
+    "nl": "zelfs"
+  },
+  "A1:geschichte": {
+    "en": "history; story",
+    "nl": "geschiedenis; verhaal"
+  },
+  "A1:seite": {
+    "en": "side; page",
+    "nl": "kant; pagina"
+  },
+  "A1:sache": {
+    "en": "thing; matter",
+    "nl": "ding; zaak"
+  },
+  "A1:hinter": {
+    "en": "behind",
+    "nl": "achter"
+  },
+  "A1:musik": {
+    "en": "music",
+    "nl": "muziek"
+  },
+  "A1:meinen": {
+    "en": "mean; think",
+    "nl": "bedoelen; menen"
+  },
+  "A1:deshalb": {
+    "en": "therefore",
+    "nl": "daarom"
+  },
+  "A1:einige": {
+    "en": "some; a few",
+    "nl": "enige; enkele"
+  },
+  "A1:genug": {
+    "en": "enough",
+    "nl": "genoeg"
+  },
+  "A1:sonst": {
+    "en": "otherwise; usually",
+    "nl": "anders; gewoonlijk"
+  },
+  "A1:liebe": {
+    "en": "love",
+    "nl": "liefde"
+  },
+  "A1:her": {
+    "en": "towards here; from",
+    "nl": "hierheen; vandaan"
+  },
+  "A1:angst": {
+    "en": "fear",
+    "nl": "angst"
+  },
+  "A1:zeigen": {
+    "en": "show",
+    "nl": "tonen; laten zien"
+  },
+  "A1:anders": {
+    "en": "differently",
+    "nl": "anders"
+  },
+  "A1:spiel": {
+    "en": "game; match",
+    "nl": "spel; wedstrijd"
+  },
+  "A1:fest": {
+    "en": "festival; celebration",
+    "nl": "feest"
+  },
+  "A1:niemand": {
+    "en": "nobody",
+    "nl": "niemand"
+  },
+  "A1:jemand": {
+    "en": "somebody",
+    "nl": "iemand"
+  },
+  "A1:idee": {
+    "en": "idea",
+    "nl": "idee"
+  },
+  "A1:endlich": {
+    "en": "finally",
+    "nl": "eindelijk"
+  },
+  "A1:reden": {
+    "en": "talk",
+    "nl": "praten"
+  },
+  "A1:denken": {
+    "en": "think",
+    "nl": "denken"
+  },
+  "A1:schaffen": {
+    "en": "create; accomplish",
+    "nl": "scheppen; voor elkaar krijgen"
+  },
+  "A1:stark": {
+    "en": "strong",
+    "nl": "sterk"
+  },
+  "A1:besonders": {
+    "en": "especially",
+    "nl": "vooral; bijzonder"
+  },
+  "A1:setzen": {
+    "en": "put; seat",
+    "nl": "zetten"
+  },
+  "A1:damals": {
+    "en": "at that time",
+    "nl": "toen; destijds"
+  },
+  "A1:versuchen": {
+    "en": "try",
+    "nl": "proberen"
+  },
+  "A1:direkt": {
+    "en": "direct",
+    "nl": "direct"
+  },
+  "A1:ziel": {
+    "en": "goal; destination",
+    "nl": "doel; bestemming"
+  },
+  "A1:stück": {
+    "en": "piece; play",
+    "nl": "stuk; toneelstuk"
+  },
+  "A1:voll": {
+    "en": "full",
+    "nl": "vol"
+  },
+  "A1:vergessen": {
+    "en": "forget",
+    "nl": "vergeten"
+  },
+  "A1:ausserdem": {
+    "en": "in addition",
+    "nl": "bovendien"
+  },
+  "A1:ziehen": {
+    "en": "pull; draw",
+    "nl": "trekken"
+  },
+  "A1:vorbei": {
+    "en": "past; over",
+    "nl": "voorbij; afgelopen"
+  },
+  "A1:dagegen": {
+    "en": "against it; on the other hand",
+    "nl": "daartegen; daarentegen"
+  },
+  "A1:tragen": {
+    "en": "carry; wear",
+    "nl": "dragen"
+  },
+  "A1:ändern": {
+    "en": "change",
+    "nl": "veranderen"
+  },
+  "A1:meinung": {
+    "en": "opinion",
+    "nl": "mening"
+  },
+  "A1:rein": {
+    "en": "inside; pure",
+    "nl": "naar binnen; puur"
+  },
+  "A1:nennen": {
+    "en": "name; mention",
+    "nl": "noemen"
+  },
+  "A1:manchmal": {
+    "en": "sometimes",
+    "nl": "soms"
+  },
+  "A1:menge": {
+    "en": "quantity; large amount",
+    "nl": "hoeveelheid; menigte"
+  },
+  "A1:neben": {
+    "en": "next to",
+    "nl": "naast"
+  },
+  "A1:fallen": {
+    "en": "fall",
+    "nl": "vallen"
+  },
+  "A1:erreichen": {
+    "en": "reach; achieve",
+    "nl": "bereiken"
+  },
+  "A1:heraus": {
+    "en": "out; out towards here",
+    "nl": "naar buiten; hieruit"
+  },
+  "A1:gegenüber": {
+    "en": "opposite; towards",
+    "nl": "tegenover"
+  },
+  "A1:körper": {
+    "en": "body",
+    "nl": "lichaam"
+  },
+  "A1:verlieren": {
+    "en": "lose",
+    "nl": "verliezen"
+  },
+  "A1:früh": {
+    "en": "early",
+    "nl": "vroeg"
+  },
+  "A1:wahrscheinlich": {
+    "en": "probably",
+    "nl": "waarschijnlijk"
+  },
+  "A1:person": {
+    "en": "person",
+    "nl": "persoon"
+  },
+  "A1:offen": {
+    "en": "open",
+    "nl": "open"
+  },
+  "A1:situation": {
+    "en": "situation",
+    "nl": "situatie"
+  },
+  "A1:plötzlich": {
+    "en": "sudden; suddenly",
+    "nl": "plotseling"
+  },
+  "A1:überall": {
+    "en": "everywhere",
+    "nl": "overal"
+  },
+  "A1:ruhe": {
+    "en": "quiet; rest",
+    "nl": "rust; kalmte"
+  },
+  "A1:kirche": {
+    "en": "church",
+    "nl": "kerk"
+  },
+  "A1:team": {
+    "en": "team",
+    "nl": "team"
+  },
+  "A1:nähe": {
+    "en": "nearness; vicinity",
+    "nl": "nabijheid; omgeving"
+  },
+  "A1:vorher": {
+    "en": "beforehand; previously",
+    "nl": "vooraf; eerder"
+  },
+  "A1:pro": {
+    "en": "per; for each",
+    "nl": "per"
+  },
+  "A1:erinnern": {
+    "en": "remember; remind",
+    "nl": "herinneren"
+  },
+  "A1:zuerst": {
+    "en": "first; at first",
+    "nl": "eerst"
+  },
+  "A1:fühlen": {
+    "en": "feel",
+    "nl": "voelen"
+  },
+  "A1:himmel": {
+    "en": "sky",
+    "nl": "hemel"
+  },
+  "A1:gericht": {
+    "en": "court of law",
+    "nl": "rechtbank"
+  },
+  "A1:wenigstens": {
+    "en": "at least",
+    "nl": "tenminste"
+  },
+  "A1:wahr": {
+    "en": "true; real",
+    "nl": "waar; echt"
+  },
+  "A1:sterben": {
+    "en": "die",
+    "nl": "sterven"
+  },
+  "A1:band": {
+    "en": "musical band",
+    "nl": "muziekband"
+  },
+  "A1:unternehmen": {
+    "en": "undertake; do something",
+    "nl": "ondernemen"
+  },
+  "A1:rest": {
+    "en": "rest; remainder",
+    "nl": "rest; overblijfsel"
+  },
+  "A1:unbedingt": {
+    "en": "absolutely; without fail",
+    "nl": "beslist; absoluut"
+  },
+  "A1:interesse": {
+    "en": "interest",
+    "nl": "interesse; belang"
+  },
+  "A1:tief": {
+    "en": "deep",
+    "nl": "diep"
+  },
+  "A1:witzig": {
+    "en": "funny; witty",
+    "nl": "grappig; geestig"
+  },
+  "A1:kontakt": {
+    "en": "contact",
+    "nl": "contact"
+  },
+  "A1:fenster": {
+    "en": "window",
+    "nl": "raam"
+  },
+  "A1:passieren": {
+    "en": "happen",
+    "nl": "gebeuren"
+  },
+  "A1:nachricht": {
+    "en": "news; message",
+    "nl": "nieuws; bericht"
+  },
+  "A1:büro": {
+    "en": "office",
+    "nl": "kantoor"
+  },
+  "A1:besuch": {
+    "en": "visit; visitors",
+    "nl": "bezoek"
+  },
+  "A1:egal": {
+    "en": "irrelevant; all the same",
+    "nl": "onverschillig; om het even"
+  },
+  "A1:programm": {
+    "en": "programme",
+    "nl": "programma"
+  },
+  "A1:traum": {
+    "en": "dream",
+    "nl": "droom"
+  },
+  "A1:insel": {
+    "en": "island",
+    "nl": "eiland"
+  },
+  "A1:reihe": {
+    "en": "row; series",
+    "nl": "rij; reeks"
+  },
+  "A1:natur": {
+    "en": "nature",
+    "nl": "natuur"
+  },
+  "A1:mindestens": {
+    "en": "at least",
+    "nl": "minstens"
+  },
+  "A1:raus": {
+    "en": "out; outside (informal)",
+    "nl": "naar buiten (informeel)"
+  },
+  "A1:bauen": {
+    "en": "build",
+    "nl": "bouwen"
+  },
+  "A1:projekt": {
+    "en": "project",
+    "nl": "project"
+  },
+  "A1:schiff": {
+    "en": "ship",
+    "nl": "schip"
+  },
+  "A1:kunst": {
+    "en": "art",
+    "nl": "kunst"
+  },
+  "A1:schwierig": {
+    "en": "difficult",
+    "nl": "moeilijk"
+  },
+  "A1:deutlich": {
+    "en": "clear; distinct",
+    "nl": "duidelijk"
+  },
+  "A1:wunsch": {
+    "en": "wish; desire",
+    "nl": "wens"
+  },
+  "A1:teilen": {
+    "en": "divide; share",
+    "nl": "verdelen; delen"
+  },
+  "A1:unterschied": {
+    "en": "difference",
+    "nl": "verschil"
+  },
+  "A1:vertrag": {
+    "en": "contract",
+    "nl": "overeenkomst; contract"
+  },
+  "A1:wählen": {
+    "en": "choose; elect",
+    "nl": "kiezen"
+  },
+  "A1:rufen": {
+    "en": "call; shout",
+    "nl": "roepen"
+  },
+  "A1:drinnen": {
+    "en": "inside",
+    "nl": "binnen"
+  },
+  "A1:schwanger": {
+    "en": "pregnant",
+    "nl": "zwanger"
+  },
+  "A1:gefährlich": {
+    "en": "dangerous",
+    "nl": "gevaarlijk"
+  },
+  "A1:zahl": {
+    "en": "number",
+    "nl": "getal"
+  },
+  "A1:lust": {
+    "en": "desire; pleasure",
+    "nl": "zin; lust"
+  },
+  "A1:rücken": {
+    "en": "back",
+    "nl": "rug"
+  },
+  "A1:hoffen": {
+    "en": "hope",
+    "nl": "hopen"
+  },
+  "A1:hängen": {
+    "en": "hang",
+    "nl": "hangen"
+  },
+  "A1:wald": {
+    "en": "forest",
+    "nl": "bos"
+  },
+  "A1:super": {
+    "en": "great; excellent",
+    "nl": "geweldig; uitstekend"
+  },
+  "A1:schrecklich": {
+    "en": "terrible",
+    "nl": "verschrikkelijk"
+  },
+  "A1:homepage": {
+    "en": "website home page",
+    "nl": "homepage"
+  },
+  "A1:ausserhalb": {
+    "en": "outside",
+    "nl": "buiten"
+  },
+  "A1:dame": {
+    "en": "lady",
+    "nl": "dame"
+  },
+  "A1:aufpassen": {
+    "en": "pay attention; watch out",
+    "nl": "opletten; oppassen"
+  },
+  "A1:krankheit": {
+    "en": "illness",
+    "nl": "ziekte"
+  },
+  "A1:froh": {
+    "en": "glad; happy",
+    "nl": "blij"
+  },
+  "A1:fantastisch": {
+    "en": "fantastic",
+    "nl": "fantastisch"
+  },
+  "A1:kamera": {
+    "en": "camera",
+    "nl": "camera"
+  },
+  "A1:zuletzt": {
+    "en": "last; most recently",
+    "nl": "als laatste; laatst"
+  },
+  "A1:unfall": {
+    "en": "accident",
+    "nl": "ongeval"
+  },
+  "A1:reich": {
+    "en": "rich",
+    "nl": "rijk"
+  },
+  "A1:artikel": {
+    "en": "article; item",
+    "nl": "artikel"
+  },
+  "A1:total": {
+    "en": "total; complete",
+    "nl": "totaal; volledig"
+  },
+  "A1:mittel": {
+    "en": "means; resource",
+    "nl": "middel"
+  },
+  "A1:ansehen": {
+    "en": "look at; consider",
+    "nl": "bekijken; beschouwen"
+  },
+  "A1:vorschlag": {
+    "en": "proposal; suggestion",
+    "nl": "voorstel"
+  },
+  "A1:theater": {
+    "en": "theatre",
+    "nl": "theater"
+  },
+  "A1:titel": {
+    "en": "title",
+    "nl": "titel"
+  },
+  "A1:süss": {
+    "en": "sweet; cute",
+    "nl": "zoet; schattig"
+  },
+  "A1:fluss": {
+    "en": "river",
+    "nl": "rivier"
+  },
+  "A1:dringend": {
+    "en": "urgent",
+    "nl": "dringend"
+  },
+  "A1:wünschen": {
+    "en": "wish",
+    "nl": "wensen"
+  },
+  "A1:markt": {
+    "en": "market",
+    "nl": "markt"
+  },
+  "A1:ball": {
+    "en": "ball; formal dance",
+    "nl": "bal"
+  },
+  "A1:verletzen": {
+    "en": "injure; violate",
+    "nl": "verwonden; schenden"
+  },
+  "A1:vorne": {
+    "en": "at the front",
+    "nl": "vooraan"
+  },
+  "A1:leer": {
+    "en": "empty",
+    "nl": "leeg"
+  },
+  "A1:singen": {
+    "en": "sing",
+    "nl": "zingen"
+  },
+  "A1:beenden": {
+    "en": "end; finish",
+    "nl": "beëindigen"
+  },
+  "A1:tier": {
+    "en": "animal",
+    "nl": "dier"
+  },
+  "A1:schlimm": {
+    "en": "bad; serious",
+    "nl": "erg; ernstig"
+  },
+  "A1:gegenteil": {
+    "en": "opposite; contrary",
+    "nl": "tegendeel"
+  },
+  "A1:rund": {
+    "en": "round; approximately",
+    "nl": "rond; ongeveer"
+  },
+  "A1:praktisch": {
+    "en": "practical; practically",
+    "nl": "praktisch"
+  },
+  "A1:echt": {
+    "en": "genuine; real",
+    "nl": "echt"
+  },
+  "A1:bestehen": {
+    "en": "exist; pass an exam",
+    "nl": "bestaan; slagen"
+  },
+  "A1:ding": {
+    "en": "thing",
+    "nl": "ding"
+  },
+  "A1:kleid": {
+    "en": "dress",
+    "nl": "jurk"
+  },
+  "A1:kalt": {
+    "en": "cold",
+    "nl": "koud"
+  },
+  "A1:passen": {
+    "en": "fit; suit",
+    "nl": "passen"
+  },
+  "A1:mitarbeiter": {
+    "en": "employee",
+    "nl": "medewerker"
+  },
+  "A1:brücke": {
+    "en": "bridge",
+    "nl": "brug"
+  },
+  "A1:weinen": {
+    "en": "cry; weep",
+    "nl": "huilen"
+  },
+  "A1:berg": {
+    "en": "mountain",
+    "nl": "berg"
+  },
+  "A1:universität": {
+    "en": "university",
+    "nl": "universiteit"
+  },
+  "A1:notwendig": {
+    "en": "necessary",
+    "nl": "noodzakelijk"
+  },
+  "A1:wach": {
+    "en": "awake",
+    "nl": "wakker"
+  },
+  "A1:park": {
+    "en": "park",
+    "nl": "park"
+  },
+  "A1:blöde": {
+    "en": "stupid; silly",
+    "nl": "dom; stom"
+  },
+  "A1:furchtbar": {
+    "en": "terrible",
+    "nl": "vreselijk"
+  },
+  "A1:beeilen": {
+    "en": "hurry (reflexive)",
+    "nl": "zich haasten"
+  },
+  "A1:ring": {
+    "en": "ring",
+    "nl": "ring"
+  },
+  "A1:gerät": {
+    "en": "device; equipment",
+    "nl": "apparaat; toestel"
+  },
+  "A1:scharf": {
+    "en": "sharp; spicy",
+    "nl": "scherp; pittig"
+  },
+  "A1:heiss": {
+    "en": "hot",
+    "nl": "heet"
+  },
+  "A1:schwein": {
+    "en": "pig",
+    "nl": "varken"
+  },
+  "A1:keller": {
+    "en": "cellar; basement",
+    "nl": "kelder"
+  },
+  "A1:blöd": {
+    "en": "stupid; annoying",
+    "nl": "dom; vervelend"
+  },
+  "A1:ausgehen": {
+    "en": "go out; run out",
+    "nl": "uitgaan; opraken"
+  },
+  "A1:berichten": {
+    "en": "report; give an account",
+    "nl": "berichten; verslag doen"
+  },
+  "A1:club": {
+    "en": "club",
+    "nl": "club"
+  },
+  "A1:eng": {
+    "en": "narrow; close",
+    "nl": "nauw; hecht"
+  },
+  "A1:pferd": {
+    "en": "horse",
+    "nl": "paard"
+  },
+  "A1:hals": {
+    "en": "neck; throat",
+    "nl": "hals; keel"
+  },
+  "A1:ahnung": {
+    "en": "inkling; idea",
+    "nl": "vermoeden; idee"
+  },
+  "A1:radio": {
+    "en": "radio",
+    "nl": "radio"
+  },
+  "A1:mail": {
+    "en": "email",
+    "nl": "e-mail"
+  },
+  "A1:schwach": {
+    "en": "weak",
+    "nl": "zwak"
+  },
+  "A1:eis": {
+    "en": "ice; ice cream",
+    "nl": "ijs"
+  },
+  "A1:wechseln": {
+    "en": "change; exchange",
+    "nl": "wisselen"
+  },
+  "A1:unterhalten": {
+    "en": "entertain; support financially",
+    "nl": "vermaken; onderhouden"
+  },
+  "A1:liefern": {
+    "en": "deliver; supply",
+    "nl": "leveren"
+  },
+  "A1:kontrollieren": {
+    "en": "check; monitor",
+    "nl": "controleren; toezicht houden"
+  },
+  "A1:sendung": {
+    "en": "consignment; broadcast",
+    "nl": "zending; uitzending"
+  },
+  "A1:bestätigen": {
+    "en": "confirm",
+    "nl": "bevestigen"
+  },
+  "A1:schmerz": {
+    "en": "pain",
+    "nl": "pijn"
+  },
+  "A1:untersuchen": {
+    "en": "examine; investigate",
+    "nl": "onderzoeken"
+  },
+  "A1:gesund": {
+    "en": "healthy",
+    "nl": "gezond"
+  },
+  "A1:lügen": {
+    "en": "lie; tell lies",
+    "nl": "liegen"
+  },
+  "A1:museum": {
+    "en": "museum",
+    "nl": "museum"
+  },
+  "A1:schlafzimmer": {
+    "en": "bedroom",
+    "nl": "slaapkamer"
+  },
+  "A1:witz": {
+    "en": "joke",
+    "nl": "grap; mop"
+  },
+  "A1:mittagessen": {
+    "en": "lunch",
+    "nl": "middagmaal; lunch"
+  },
+  "A1:mannschaft": {
+    "en": "team",
+    "nl": "ploeg; team"
+  },
+  "A1:prüfen": {
+    "en": "check; test",
+    "nl": "controleren; toetsen"
+  },
+  "A1:kultur": {
+    "en": "culture",
+    "nl": "cultuur"
+  },
+  "A1:frisch": {
+    "en": "fresh",
+    "nl": "vers; fris"
+  },
+  "A1:herein": {
+    "en": "in; in towards here",
+    "nl": "naar binnen; hierin"
+  },
+  "A1:pizza": {
+    "en": "pizza",
+    "nl": "pizza"
+  },
+  "A1:interessieren": {
+    "en": "interest; be interested",
+    "nl": "interesseren; belangstelling hebben"
+  },
+  "A1:flug": {
+    "en": "flight",
+    "nl": "vlucht"
+  },
+  "A1:wettbewerb": {
+    "en": "competition",
+    "nl": "wedstrijd"
+  },
+  "A1:traurig": {
+    "en": "sad",
+    "nl": "verdrietig"
+  },
+  "A1:übersetzung": {
+    "en": "translation",
+    "nl": "vertaling"
+  },
+  "A1:toll": {
+    "en": "great; amazing",
+    "nl": "geweldig"
+  },
+  "A1:ohr": {
+    "en": "ear",
+    "nl": "oor"
+  },
+  "A1:schenken": {
+    "en": "give as a present",
+    "nl": "cadeau geven"
+  },
+  "A1:streng": {
+    "en": "strict",
+    "nl": "streng"
+  },
+  "A1:stören": {
+    "en": "disturb; bother",
+    "nl": "storen"
+  },
+  "A1:vorn": {
+    "en": "at the front",
+    "nl": "vooraan"
+  },
+  "A1:messer": {
+    "en": "knife",
+    "nl": "mes"
+  },
+  "A1:vorwärts": {
+    "en": "forwards",
+    "nl": "vooruit"
+  },
+  "A1:sparen": {
+    "en": "save",
+    "nl": "besparen; sparen"
+  },
+  "A1:dorthin": {
+    "en": "to there",
+    "nl": "daarheen"
+  },
+  "A1:freiwillig": {
+    "en": "voluntary",
+    "nl": "vrijwillig"
+  },
+  "A1:training": {
+    "en": "training",
+    "nl": "training"
+  },
+  "A1:planen": {
+    "en": "plan",
+    "nl": "plannen"
+  },
+  "A1:verpassen": {
+    "en": "miss; fail to catch",
+    "nl": "missen"
+  },
+  "A1:eintragen": {
+    "en": "enter; record",
+    "nl": "inschrijven; noteren"
+  },
+  "A1:zentrum": {
+    "en": "centre",
+    "nl": "centrum"
+  },
+  "A1:zurückkommen": {
+    "en": "come back",
+    "nl": "terugkomen"
+  },
+  "A1:nett": {
+    "en": "nice; friendly",
+    "nl": "aardig"
+  },
+  "A1:rechnen": {
+    "en": "calculate",
+    "nl": "rekenen"
+  },
+  "A1:verkehr": {
+    "en": "traffic; transport",
+    "nl": "verkeer"
+  },
+  "A1:sauber": {
+    "en": "clean",
+    "nl": "schoon"
+  },
+  "A1:sammeln": {
+    "en": "collect",
+    "nl": "verzamelen"
+  },
+  "A1:spazieren": {
+    "en": "take a walk",
+    "nl": "wandelen"
+  },
+  "A1:beantworten": {
+    "en": "answer",
+    "nl": "beantwoorden"
+  },
+  "A1:informieren": {
+    "en": "inform",
+    "nl": "informeren"
+  },
+  "A1:aufmachen": {
+    "en": "open",
+    "nl": "openmaken"
+  },
+  "A1:dumm": {
+    "en": "stupid",
+    "nl": "dom"
+  },
+  "A1:müll": {
+    "en": "rubbish; waste",
+    "nl": "afval"
+  },
+  "A1:aktuell": {
+    "en": "current; up-to-date",
+    "nl": "actueel"
+  },
+  "A1:merken": {
+    "en": "notice; remember",
+    "nl": "merken; onthouden"
+  },
+  "A1:stress": {
+    "en": "stress",
+    "nl": "stress"
+  },
+  "A1:schneiden": {
+    "en": "cut",
+    "nl": "snijden; knippen"
+  },
+  "A1:streiten": {
+    "en": "argue; quarrel",
+    "nl": "ruziën; twisten"
+  },
+  "A1:meistens": {
+    "en": "usually; mostly",
+    "nl": "meestal"
+  },
+  "A1:zuhören": {
+    "en": "listen attentively",
+    "nl": "luisteren"
+  },
+  "A1:krankenkasse": {
+    "en": "health insurance fund",
+    "nl": "ziekenfonds; zorgverzekeraar"
+  },
+  "A1:interview": {
+    "en": "interview",
+    "nl": "interview"
+  },
+  "A1:suppe": {
+    "en": "soup",
+    "nl": "soep"
+  },
+  "A1:motor": {
+    "en": "engine; motor",
+    "nl": "motor"
+  },
+  "A1:konzert": {
+    "en": "concert",
+    "nl": "concert"
+  },
+  "A1:probieren": {
+    "en": "try; taste",
+    "nl": "proberen; proeven"
+  },
+  "A1:bescheid": {
+    "en": "notice; official decision",
+    "nl": "bericht; beschikking"
+  },
+  "A1:rock": {
+    "en": "skirt; rock music",
+    "nl": "rok; rockmuziek"
+  },
+  "A1:nervös": {
+    "en": "nervous",
+    "nl": "zenuwachtig"
+  },
+  "A1:workshop": {
+    "en": "workshop",
+    "nl": "workshop"
+  },
+  "A1:ausruhen": {
+    "en": "rest (reflexive)",
+    "nl": "uitrusten"
+  },
+  "A1:strand": {
+    "en": "beach",
+    "nl": "strand"
+  },
+  "A1:diskutieren": {
+    "en": "discuss",
+    "nl": "discussiëren"
+  },
+  "A1:schnee": {
+    "en": "snow",
+    "nl": "sneeuw"
+  },
+  "A1:stuhl": {
+    "en": "chair",
+    "nl": "stoel"
+  },
+  "A1:service": {
+    "en": "service",
+    "nl": "dienstverlening"
+  },
+  "A1:qualität": {
+    "en": "quality",
+    "nl": "kwaliteit"
+  },
+  "A1:tour": {
+    "en": "tour; trip",
+    "nl": "tocht; rondreis"
+  },
+  "A1:reiten": {
+    "en": "ride a horse",
+    "nl": "paardrijden"
+  },
+  "A1:komisch": {
+    "en": "strange; funny",
+    "nl": "vreemd; grappig"
+  },
+  "A1:schokolade": {
+    "en": "chocolate",
+    "nl": "chocolade"
+  },
+  "A1:aktiv": {
+    "en": "active",
+    "nl": "actief"
+  },
+  "A1:warm": {
+    "en": "warm",
+    "nl": "warm"
+  },
+  "A1:üben": {
+    "en": "practise",
+    "nl": "oefenen"
+  },
+  "A1:bibliothek": {
+    "en": "library",
+    "nl": "bibliotheek"
+  },
+  "A1:beschreiben": {
+    "en": "describe",
+    "nl": "beschrijven"
+  },
+  "A1:tourist": {
+    "en": "tourist",
+    "nl": "toerist"
+  },
+  "A1:hoffentlich": {
+    "en": "hopefully",
+    "nl": "hopelijk"
+  },
+  "A1:blatt": {
+    "en": "sheet; leaf",
+    "nl": "blad"
+  },
+  "A1:weich": {
+    "en": "soft",
+    "nl": "zacht"
+  },
+  "A1:hässlich": {
+    "en": "ugly",
+    "nl": "lelijk"
+  },
+  "A1:schade": {
+    "en": "a pity; regrettable",
+    "nl": "jammer"
+  },
+  "A1:wäsche": {
+    "en": "laundry",
+    "nl": "wasgoed"
+  },
+  "A1:langweilig": {
+    "en": "boring",
+    "nl": "saai"
+  },
+  "A1:stattfinden": {
+    "en": "take place",
+    "nl": "plaatsvinden"
+  },
+  "A1:dunkel": {
+    "en": "dark",
+    "nl": "donker"
+  },
+  "A1:drüben": {
+    "en": "over there; on the other side",
+    "nl": "aan de overkant; daar"
+  },
+  "A1:fett": {
+    "en": "fat; fatty",
+    "nl": "vet"
+  },
+  "A1:vorbereiten": {
+    "en": "prepare",
+    "nl": "voorbereiden"
+  },
+  "A1:nass": {
+    "en": "wet",
+    "nl": "nat"
+  },
+  "A1:einverstanden": {
+    "en": "agreed; in agreement",
+    "nl": "akkoord"
+  },
+  "A1:berühmt": {
+    "en": "famous",
+    "nl": "beroemd"
+  },
+  "A1:sauer": {
+    "en": "sour; angry",
+    "nl": "zuur; boos"
+  },
+  "A1:garage": {
+    "en": "garage",
+    "nl": "garage"
+  },
+  "A1:produkt": {
+    "en": "product; mathematical product",
+    "nl": "product"
+  },
+  "A1:hose": {
+    "en": "trousers",
+    "nl": "broek"
+  },
+  "A1:träumen": {
+    "en": "dream",
+    "nl": "dromen"
+  },
+  "A1:beraten": {
+    "en": "advise",
+    "nl": "adviseren"
+  },
+  "A1:messe": {
+    "en": "trade fair; religious mass",
+    "nl": "beurs; mis"
+  },
+  "A1:hauptstadt": {
+    "en": "capital city",
+    "nl": "hoofdstad"
+  },
+  "A1:typisch": {
+    "en": "typical",
+    "nl": "typisch"
+  },
+  "A1:haushalt": {
+    "en": "household; budget",
+    "nl": "huishouden; begroting"
+  },
+  "A1:rose": {
+    "en": "rose",
+    "nl": "roos"
+  },
+  "A1:lüge": {
+    "en": "lie; untruth",
+    "nl": "leugen"
+  },
+  "A1:webseite": {
+    "en": "web page",
+    "nl": "webpagina"
+  },
+  "A1:einzeln": {
+    "en": "single; individually",
+    "nl": "afzonderlijk"
+  },
+  "A1:bedanken": {
+    "en": "thank (German reflexive verb)",
+    "nl": "bedanken"
+  },
+  "A1:leihen": {
+    "en": "lend; borrow",
+    "nl": "uitlenen; lenen"
+  },
+  "A1:dick": {
+    "en": "thick; fat",
+    "nl": "dik"
+  },
+  "A1:begründen": {
+    "en": "justify; give reasons",
+    "nl": "motiveren; onderbouwen"
+  },
+  "A1:teller": {
+    "en": "plate",
+    "nl": "bord"
+  },
+  "A1:malen": {
+    "en": "paint; draw in colour",
+    "nl": "schilderen; kleuren"
+  },
+  "A1:tipp": {
+    "en": "tip; hint",
+    "nl": "tip; aanwijzing"
+  },
+  "A1:stift": {
+    "en": "pen; pin",
+    "nl": "pen; stift"
+  },
+  "A1:klug": {
+    "en": "clever; wise",
+    "nl": "slim; wijs"
+  },
+  "A1:privat": {
+    "en": "private",
+    "nl": "privé"
+  },
+  "A1:schmutzig": {
+    "en": "dirty",
+    "nl": "vuil"
+  },
+  "A1:tauschen": {
+    "en": "exchange; swap",
+    "nl": "ruilen"
+  },
+  "A1:anzug": {
+    "en": "man's suit",
+    "nl": "herenkostuum"
+  },
+  "A1:medikament": {
+    "en": "medicine",
+    "nl": "geneesmiddel"
+  },
+  "A1:nirgends": {
+    "en": "nowhere",
+    "nl": "nergens"
+  },
+  "A1:hamburger": {
+    "en": "hamburger; person from Hamburg",
+    "nl": "hamburger; inwoner van Hamburg"
+  },
+  "A1:festival": {
+    "en": "festival",
+    "nl": "festival"
+  },
+  "A1:schloss": {
+    "en": "castle; lock",
+    "nl": "kasteel; slot"
+  },
+  "A1:raten": {
+    "en": "advise; guess",
+    "nl": "adviseren; raden"
+  },
+  "A1:rentner": {
+    "en": "pensioner",
+    "nl": "gepensioneerde"
+  },
+  "A1:ausgeben": {
+    "en": "spend; issue",
+    "nl": "uitgeven"
+  },
+  "A1:kette": {
+    "en": "chain; necklace",
+    "nl": "ketting"
+  },
+  "A1:organisieren": {
+    "en": "organise",
+    "nl": "organiseren"
+  },
+  "A1:feier": {
+    "en": "celebration",
+    "nl": "viering; feest"
+  },
+  "A1:stiefel": {
+    "en": "boot",
+    "nl": "laars"
+  },
+  "A1:rätsel": {
+    "en": "riddle; puzzle",
+    "nl": "raadsel"
+  },
+  "A1:intelligent": {
+    "en": "intelligent",
+    "nl": "intelligent"
+  },
+  "A1:ausstellung": {
+    "en": "exhibition",
+    "nl": "tentoonstelling"
+  },
+  "A1:rad": {
+    "en": "wheel; bicycle",
+    "nl": "wiel; fiets"
+  },
+  "A1:packen": {
+    "en": "pack; grasp",
+    "nl": "inpakken; vastgrijpen"
+  },
+  "A1:romantisch": {
+    "en": "romantic",
+    "nl": "romantisch"
+  },
+  "A1:erlaubnis": {
+    "en": "permission",
+    "nl": "toestemming"
+  },
+  "A1:bewölkt": {
+    "en": "cloudy",
+    "nl": "bewolkt"
+  },
+  "A1:hemd": {
+    "en": "shirt",
+    "nl": "overhemd"
+  },
+  "A1:schädlich": {
+    "en": "harmful",
+    "nl": "schadelijk"
+  },
+  "A1:apparat": {
+    "en": "device; apparatus",
+    "nl": "apparaat"
+  },
+  "A1:zahn": {
+    "en": "tooth",
+    "nl": "tand"
+  },
+  "A1:online": {
+    "en": "online",
+    "nl": "online"
+  },
+  "A1:paket": {
+    "en": "parcel; package",
+    "nl": "pakket"
+  },
+  "A1:zurückgeben": {
+    "en": "give back",
+    "nl": "teruggeven"
+  },
+  "A1:gehalt": {
+    "en": "salary",
+    "nl": "salaris"
+  },
+  "A1:kenntnis": {
+    "en": "knowledge",
+    "nl": "kennis"
+  },
+  "A1:instrument": {
+    "en": "instrument",
+    "nl": "instrument"
+  },
+  "A1:verschieden": {
+    "en": "different; varied",
+    "nl": "verschillend"
+  },
+  "A1:trocken": {
+    "en": "dry",
+    "nl": "droog"
+  },
+  "A1:eigen": {
+    "en": "own; personal",
+    "nl": "eigen"
+  },
+  "A1:vergleichen": {
+    "en": "compare",
+    "nl": "vergelijken"
+  },
+  "A1:aussprechen": {
+    "en": "pronounce; express",
+    "nl": "uitspreken"
+  },
+  "A1:lampe": {
+    "en": "lamp",
+    "nl": "lamp"
+  },
+  "A1:wecken": {
+    "en": "wake someone",
+    "nl": "wekken"
+  },
+  "A1:kostenlos": {
+    "en": "free of charge",
+    "nl": "gratis"
+  },
+  "A1:verlieben": {
+    "en": "fall in love",
+    "nl": "verliefd worden"
+  },
+  "A1:zettel": {
+    "en": "slip of paper",
+    "nl": "briefje"
+  },
+  "A1:modern": {
+    "en": "modern",
+    "nl": "modern"
+  },
+  "A1:faul": {
+    "en": "lazy; rotten",
+    "nl": "lui; rot"
+  },
+  "A1:handtuch": {
+    "en": "towel",
+    "nl": "handdoek"
+  },
+  "A1:brille": {
+    "en": "glasses",
+    "nl": "bril"
+  },
+  "A1:herstellen": {
+    "en": "manufacture; produce",
+    "nl": "vervaardigen; produceren"
+  },
+  "A1:nützlich": {
+    "en": "useful",
+    "nl": "nuttig"
+  },
+  "A1:bequem": {
+    "en": "comfortable",
+    "nl": "comfortabel"
+  },
+  "A1:klavier": {
+    "en": "piano",
+    "nl": "piano"
+  },
+  "A1:ärgern": {
+    "en": "annoy; get annoyed",
+    "nl": "ergeren; zich ergeren"
+  },
+  "A1:zucker": {
+    "en": "sugar",
+    "nl": "suiker"
+  },
+  "A1:verschieben": {
+    "en": "postpone; shift",
+    "nl": "uitstellen; verschuiven"
+  },
+  "A1:nebenan": {
+    "en": "next door",
+    "nl": "hiernaast"
+  },
+  "A1:veranstaltung": {
+    "en": "event",
+    "nl": "evenement"
+  },
+  "A1:trainieren": {
+    "en": "train",
+    "nl": "trainen"
+  },
+  "A1:putzen": {
+    "en": "clean; polish",
+    "nl": "poetsen"
+  },
+  "A1:heft": {
+    "en": "notebook; booklet",
+    "nl": "schrift; boekje"
+  },
+  "A1:mantel": {
+    "en": "coat",
+    "nl": "jas"
+  },
+  "A1:magen": {
+    "en": "stomach",
+    "nl": "maag"
+  },
+  "A1:reifen": {
+    "en": "tyre",
+    "nl": "band"
+  },
+  "A1:spaziergang": {
+    "en": "walk; stroll",
+    "nl": "wandeling"
+  },
+  "A1:ferien": {
+    "en": "school holidays; vacation",
+    "nl": "vakantie"
+  },
+  "A1:mode": {
+    "en": "fashion",
+    "nl": "mode"
+  },
+  "A1:nachbar": {
+    "en": "neighbour",
+    "nl": "buurman"
+  },
+  "A1:verbieten": {
+    "en": "forbid",
+    "nl": "verbieden"
+  },
+  "A1:zeugnis": {
+    "en": "certificate; school report",
+    "nl": "getuigschrift; schoolrapport"
+  },
+  "A1:rathaus": {
+    "en": "town hall",
+    "nl": "gemeentehuis"
+  },
+  "A1:zeichnen": {
+    "en": "draw",
+    "nl": "tekenen"
+  },
+  "A1:käse": {
+    "en": "cheese",
+    "nl": "kaas"
+  },
+  "A1:spannend": {
+    "en": "exciting; gripping",
+    "nl": "spannend"
+  },
+  "A1:wohnzimmer": {
+    "en": "living room",
+    "nl": "woonkamer"
+  },
+  "A1:zeitschrift": {
+    "en": "magazine",
+    "nl": "tijdschrift"
+  },
+  "A1:zurückgehen": {
+    "en": "go back",
+    "nl": "teruggaan"
+  },
+  "A1:kredit": {
+    "en": "credit; bank loan",
+    "nl": "krediet; lening"
+  },
+  "A1:abschliessen": {
+    "en": "lock; conclude",
+    "nl": "afsluiten"
+  },
+  "A1:buchen": {
+    "en": "book; enter in accounts",
+    "nl": "boeken"
+  },
+  "A1:bunt": {
+    "en": "colourful",
+    "nl": "kleurrijk"
+  },
+  "A1:zelt": {
+    "en": "tent",
+    "nl": "tent"
+  },
+  "A1:fach": {
+    "en": "compartment; school subject",
+    "nl": "vak; schoolvak"
+  },
+  "A1:schriftlich": {
+    "en": "written",
+    "nl": "schriftelijk"
+  },
+  "A1:tafel": {
+    "en": "blackboard; panel",
+    "nl": "schoolbord; paneel"
+  },
+  "A1:landschaft": {
+    "en": "landscape",
+    "nl": "landschap"
+  },
+  "A1:führerschein": {
+    "en": "driving licence",
+    "nl": "rijbewijs"
+  },
+  "A1:dünn": {
+    "en": "thin",
+    "nl": "dun"
+  },
+  "A1:bewerben": {
+    "en": "apply for; advertise",
+    "nl": "solliciteren; promoten"
+  },
+  "A1:schirm": {
+    "en": "umbrella; screen",
+    "nl": "paraplu; scherm"
+  },
+  "A1:spass": {
+    "en": "fun",
+    "nl": "plezier"
+  },
+  "A1:werkstatt": {
+    "en": "workshop; repair shop",
+    "nl": "werkplaats"
+  },
+  "A1:datei": {
+    "en": "digital file",
+    "nl": "bestand"
+  },
+  "A1:rezept": {
+    "en": "recipe; prescription",
+    "nl": "recept"
+  },
+  "A1:babysitter": {
+    "en": "babysitter",
+    "nl": "oppas"
+  },
+  "A1:gitarre": {
+    "en": "guitar",
+    "nl": "gitaar"
+  },
+  "A1:kündigen": {
+    "en": "terminate a contract; resign",
+    "nl": "opzeggen; ontslag nemen"
+  },
+  "A1:kollegin": {
+    "en": "female colleague",
+    "nl": "collega (vrouw)"
+  },
+  "A1:löffel": {
+    "en": "spoon",
+    "nl": "lepel"
+  },
+  "A1:mütze": {
+    "en": "cap",
+    "nl": "muts"
+  },
+  "A1:austauschen": {
+    "en": "exchange; replace",
+    "nl": "uitwisselen; vervangen"
+  },
+  "A1:wolke": {
+    "en": "cloud",
+    "nl": "wolk"
+  },
+  "A1:pflanze": {
+    "en": "plant",
+    "nl": "plant"
+  },
+  "A1:umzug": {
+    "en": "moving house; procession",
+    "nl": "verhuizing; optocht"
+  },
+  "A1:schülerin": {
+    "en": "female school pupil",
+    "nl": "leerlinge"
+  },
+  "A1:fit": {
+    "en": "fit; healthy",
+    "nl": "fit"
+  },
+  "A1:passwort": {
+    "en": "password",
+    "nl": "wachtwoord"
+  },
+  "A1:laptop": {
+    "en": "laptop",
+    "nl": "laptop"
+  },
+  "A1:beschweren": {
+    "en": "weigh down; complain",
+    "nl": "verzwaren; zich beklagen"
+  },
+  "A1:sportlich": {
+    "en": "sporty; athletic",
+    "nl": "sportief"
+  },
+  "A1:aufregen": {
+    "en": "excite; upset",
+    "nl": "opwinden"
+  },
+  "A1:note": {
+    "en": "grade; musical note",
+    "nl": "cijfer; muzieknoot"
+  },
+  "A1:chefin": {
+    "en": "female boss",
+    "nl": "bazin; vrouwelijke leidinggevende"
+  },
+  "A1:zoo": {
+    "en": "zoo",
+    "nl": "dierentuin"
+  },
+  "A1:übersetzen": {
+    "en": "translate; ferry across",
+    "nl": "vertalen; overzetten"
+  },
+  "A1:fotografieren": {
+    "en": "take photographs",
+    "nl": "fotograferen"
+  },
+  "A1:plakat": {
+    "en": "poster",
+    "nl": "affiche"
+  },
+  "A1:zirkus": {
+    "en": "circus",
+    "nl": "circus"
+  },
+  "A1:rucksack": {
+    "en": "backpack",
+    "nl": "rugzak"
+  },
+  "A1:backen": {
+    "en": "bake",
+    "nl": "bakken"
+  },
+  "A1:unterkunft": {
+    "en": "accommodation",
+    "nl": "onderkomen"
+  },
+  "A1:tennis": {
+    "en": "tennis",
+    "nl": "tennis"
+  },
+  "A1:braten": {
+    "en": "fry; roast",
+    "nl": "bakken; braden"
+  },
+  "A1:aufräumen": {
+    "en": "tidy up",
+    "nl": "opruimen"
+  },
+  "A1:notiz": {
+    "en": "note",
+    "nl": "notitie"
+  },
+  "A1:fleissig": {
+    "en": "diligent; hardworking",
+    "nl": "ijverig"
+  },
+  "A1:parken": {
+    "en": "park a vehicle",
+    "nl": "parkeren"
+  },
+  "A1:supermarkt": {
+    "en": "supermarket",
+    "nl": "supermarkt"
+  },
+  "A1:baustelle": {
+    "en": "building site",
+    "nl": "bouwplaats"
+  },
+  "A1:schere": {
+    "en": "scissors",
+    "nl": "schaar"
+  },
+  "A1:einziehen": {
+    "en": "move in; collect payment",
+    "nl": "intrekken; innen"
+  },
+  "A1:einkaufszentrum": {
+    "en": "shopping centre",
+    "nl": "winkelcentrum"
+  },
+  "A1:kühl": {
+    "en": "cool",
+    "nl": "koel"
+  },
+  "A1:nachbarin": {
+    "en": "female neighbour",
+    "nl": "buurvrouw"
+  },
+  "A1:reinigung": {
+    "en": "cleaning; dry cleaner's",
+    "nl": "reiniging; stomerij"
+  },
+  "A1:basketball": {
+    "en": "basketball",
+    "nl": "basketbal"
+  },
+  "A1:husten": {
+    "en": "cough",
+    "nl": "hoesten"
+  },
+  "A1:übermorgen": {
+    "en": "the day after tomorrow",
+    "nl": "overmorgen"
+  },
+  "A1:kalender": {
+    "en": "calendar",
+    "nl": "kalender"
+  },
+  "A1:verreisen": {
+    "en": "go away on a trip",
+    "nl": "op reis gaan"
+  },
+  "A1:topf": {
+    "en": "pot",
+    "nl": "pot; pan"
+  },
+  "A1:kreuzung": {
+    "en": "crossroads",
+    "nl": "kruising"
+  },
+  "A1:wurst": {
+    "en": "sausage",
+    "nl": "worst"
+  },
+  "A1:blond": {
+    "en": "blond",
+    "nl": "blond"
+  },
+  "A1:mailbox": {
+    "en": "voicemail; email inbox",
+    "nl": "voicemail; mailbox"
+  },
+  "A1:geschirr": {
+    "en": "crockery; dishes",
+    "nl": "servies"
+  },
+  "A1:zumachen": {
+    "en": "close; shut",
+    "nl": "dichtmaken"
+  },
+  "A1:grippe": {
+    "en": "influenza",
+    "nl": "griep"
+  },
+  "A1:vorgestern": {
+    "en": "the day before yesterday",
+    "nl": "eergisteren"
+  },
+  "A1:parfüm": {
+    "en": "perfume",
+    "nl": "parfum"
+  },
+  "A1:stipendium": {
+    "en": "scholarship",
+    "nl": "studiebeurs"
+  },
+  "A1:einpacken": {
+    "en": "pack; wrap",
+    "nl": "inpakken"
+  },
+  "A1:auspacken": {
+    "en": "unpack",
+    "nl": "uitpakken"
+  },
+  "A1:heizung": {
+    "en": "heating",
+    "nl": "verwarming"
+  },
+  "A1:gewitter": {
+    "en": "thunderstorm",
+    "nl": "onweer"
+  },
+  "A1:pullover": {
+    "en": "jumper; sweater",
+    "nl": "trui"
+  },
+  "A1:studentin": {
+    "en": "female university student",
+    "nl": "studente"
+  },
+  "A1:bluse": {
+    "en": "blouse",
+    "nl": "blouse"
+  },
+  "A1:ampel": {
+    "en": "traffic light",
+    "nl": "verkeerslicht"
+  },
+  "A1:kaufhaus": {
+    "en": "department store",
+    "nl": "warenhuis"
+  },
+  "A1:blog": {
+    "en": "blog",
+    "nl": "blog"
+  },
+  "A1:quiz": {
+    "en": "quiz",
+    "nl": "quiz"
+  },
+  "A1:rind": {
+    "en": "bovine; cow or bull",
+    "nl": "rund"
+  },
+  "A1:bohne": {
+    "en": "bean",
+    "nl": "boon"
+  },
+  "A1:comic": {
+    "en": "comic",
+    "nl": "stripverhaal"
+  },
+  "A1:disco": {
+    "en": "discotheque",
+    "nl": "discotheek"
+  },
+  "A1:disko": {
+    "en": "discotheque",
+    "nl": "discotheek"
+  },
+  "A1:krimi": {
+    "en": "detective story or film",
+    "nl": "detectiveverhaal of -film"
+  },
+  "A1:nudel": {
+    "en": "noodle; piece of pasta",
+    "nl": "noedel; stukje pasta"
+  },
+  "A1:joggen": {
+    "en": "jog",
+    "nl": "joggen"
+  },
+  "A1:neblig": {
+    "en": "foggy",
+    "nl": "mistig"
+  },
+  "A1:parfum": {
+    "en": "perfume",
+    "nl": "parfum"
+  },
+  "A1:poster": {
+    "en": "poster",
+    "nl": "poster"
+  },
+  "A1:sonnig": {
+    "en": "sunny",
+    "nl": "zonnig"
+  },
+  "A1:surfen": {
+    "en": "surf; browse the internet",
+    "nl": "surfen"
+  },
+  "A1:tablet": {
+    "en": "tablet computer",
+    "nl": "tabletcomputer"
+  },
+  "A1:windig": {
+    "en": "windy",
+    "nl": "winderig"
+  },
+  "A1:basteln": {
+    "en": "make handicrafts",
+    "nl": "knutselen"
+  },
+  "A1:leidtun": {
+    "en": "be sorry; cause regret",
+    "nl": "spijten"
+  },
+  "A1:nebelig": {
+    "en": "foggy",
+    "nl": "mistig"
+  },
+  "A1:portion": {
+    "en": "portion",
+    "nl": "portie"
+  },
+  "A1:zitrone": {
+    "en": "lemon",
+    "nl": "citroen"
+  },
+  "A1:fahrplan": {
+    "en": "timetable",
+    "nl": "dienstregeling"
+  },
+  "A1:kosmetik": {
+    "en": "cosmetics",
+    "nl": "cosmetica"
+  },
+  "A1:notieren": {
+    "en": "note down",
+    "nl": "noteren"
+  },
+  "A1:rundgang": {
+    "en": "walking tour",
+    "nl": "rondwandeling"
+  },
+  "A1:schneien": {
+    "en": "snow",
+    "nl": "sneeuwen"
+  },
+  "A1:stressig": {
+    "en": "stressful",
+    "nl": "stressvol"
+  },
+  "A1:tablette": {
+    "en": "pill; tablet",
+    "nl": "tablet; pil"
+  },
+  "A1:cafeteria": {
+    "en": "cafeteria",
+    "nl": "cafetaria"
+  },
+  "A1:flohmarkt": {
+    "en": "flea market",
+    "nl": "vlooienmarkt"
+  },
+  "A1:geldbörse": {
+    "en": "wallet; purse",
+    "nl": "portemonnee"
+  },
+  "A1:postkarte": {
+    "en": "postcard",
+    "nl": "ansichtkaart"
+  },
+  "A1:preiswert": {
+    "en": "reasonably priced",
+    "nl": "voordelig"
+  },
+  "A1:schimpfen": {
+    "en": "scold; swear",
+    "nl": "schelden; mopperen"
+  },
+  "A1:stadtplan": {
+    "en": "city map",
+    "nl": "stadsplattegrond"
+  },
+  "A1:stockwerk": {
+    "en": "storey; floor",
+    "nl": "verdieping"
+  },
+  "A1:süssigkeit": {
+    "en": "sweet; piece of confectionery",
+    "nl": "snoepje"
+  },
+  "A1:touristin": {
+    "en": "female tourist",
+    "nl": "toeriste"
+  },
+  "A1:umsteigen": {
+    "en": "change trains or vehicles",
+    "nl": "overstappen"
+  },
+  "A1:ehepartner": {
+    "en": "spouse",
+    "nl": "echtgenoot; huwelijkspartner"
+  },
+  "A1:ermässigung": {
+    "en": "discount",
+    "nl": "korting"
+  },
+  "A1:renovieren": {
+    "en": "renovate",
+    "nl": "renoveren"
+  },
+  "A1:sportplatz": {
+    "en": "sports ground",
+    "nl": "sportveld"
+  },
+  "A1:volleyball": {
+    "en": "volleyball",
+    "nl": "volleybal"
+  },
+  "A1:erdgeschoss": {
+    "en": "ground floor",
+    "nl": "begane grond"
+  },
+  "A1:fotoapparat": {
+    "en": "camera",
+    "nl": "fototoestel"
+  },
+  "A1:motorroller": {
+    "en": "motor scooter",
+    "nl": "scooter"
+  },
+  "A1:reservieren": {
+    "en": "reserve; book",
+    "nl": "reserveren"
+  },
+  "A1:sympathisch": {
+    "en": "likeable; pleasant",
+    "nl": "sympathiek; aardig"
+  },
+  "A1:taschengeld": {
+    "en": "pocket money",
+    "nl": "zakgeld"
+  },
+  "A1:vermieterin": {
+    "en": "female landlord",
+    "nl": "verhuurster"
+  },
+  "A1:mobiltelefon": {
+    "en": "mobile phone",
+    "nl": "mobiele telefoon"
+  },
+  "A1:phantastisch": {
+    "en": "fantastic",
+    "nl": "fantastisch"
+  },
+  "A1:sprechstunde": {
+    "en": "consultation hours",
+    "nl": "spreekuur"
+  },
+  "A1:zurückfahren": {
+    "en": "drive back",
+    "nl": "terugrijden"
+  },
+  "A1:herunterladen": {
+    "en": "download",
+    "nl": "downloaden"
+  },
+  "A1:mineralwasser": {
+    "en": "mineral water",
+    "nl": "mineraalwater"
+  },
+  "A1:jugendherberge": {
+    "en": "youth hostel",
+    "nl": "jeugdherberg"
+  },
+  "A1:verkehrsmittel": {
+    "en": "means of transport",
+    "nl": "vervoermiddel"
+  },
+  "A1:damit": {
+    "en": "with that; so that",
+    "nl": "daarmee; opdat"
+  },
+  "A1:dieser": {
+    "en": "this",
+    "nl": "deze"
+  },
+  "A1:nun": {
+    "en": "now; well",
+    "nl": "nu; welnu"
+  },
+  "A1:ob": {
+    "en": "whether",
+    "nl": "of"
+  },
+  "A1:wohl": {
+    "en": "well; probably",
+    "nl": "goed; waarschijnlijk"
+  },
+  "A1:gar": {
+    "en": "fully cooked; at all",
+    "nl": "gaar; helemaal"
+  },
+  "A1:sicher": {
+    "en": "safe; certain",
+    "nl": "veilig; zeker"
+  },
+  "A1:folgend": {
+    "en": "following",
+    "nl": "volgend"
+  },
+  "A1:weiter": {
+    "en": "further; additional",
+    "nl": "verder; extra"
+  },
+  "A1:fall": {
+    "en": "case; situation",
+    "nl": "geval; zaak"
+  },
+  "A1:etwa": {
+    "en": "approximately; roughly",
+    "nl": "ongeveer"
+  },
+  "A1:art": {
+    "en": "kind; manner",
+    "nl": "soort; wijze"
+  },
+  "A1:grund": {
+    "en": "reason; ground",
+    "nl": "reden; grond"
+  },
+  "A1:während": {
+    "en": "during; while",
+    "nl": "tijdens; terwijl"
+  },
+  "A1:sondern": {
+    "en": "but rather (after a negative)",
+    "nl": "maar (na een ontkenning)"
+  },
+  "A1:nacht": {
+    "en": "night",
+    "nl": "nacht"
+  },
+  "A1:bereits": {
+    "en": "already",
+    "nl": "reeds; al"
+  },
+  "A1:je": {
+    "en": "per; ever",
+    "nl": "per; ooit"
+  },
+  "A1:überhaupt": {
+    "en": "at all; in general",
+    "nl": "überhaupt; in het algemeen"
+  },
+  "A1:zwar": {
+    "en": "admittedly; it is true that",
+    "nl": "weliswaar"
+  },
+  "A1:eben": {
+    "en": "just now; flat",
+    "nl": "zojuist; vlak"
+  },
+  "A1:kaum": {
+    "en": "hardly",
+    "nl": "nauwelijks"
+  },
+  "A1:tod": {
+    "en": "death",
+    "nl": "dood"
+  },
+  "A1:bevor": {
+    "en": "before",
+    "nl": "voordat"
+  },
+  "A1:krieg": {
+    "en": "war",
+    "nl": "oorlog"
+  },
+  "A1:gott": {
+    "en": "God; a god",
+    "nl": "God; een god"
+  },
+  "A1:bereit": {
+    "en": "ready; prepared",
+    "nl": "gereed; klaar"
+  },
+  "A1:jeweils": {
+    "en": "each time; in each case",
+    "nl": "telkens; in elk geval"
+  },
+  "A1:chance": {
+    "en": "chance; opportunity",
+    "nl": "kans"
+  },
+  "A1:zukunft": {
+    "en": "future",
+    "nl": "toekomst"
+  },
+  "A1:völlig": {
+    "en": "completely; total",
+    "nl": "volledig; totaal"
+  },
+  "A1:zahlreich": {
+    "en": "numerous",
+    "nl": "talrijk"
+  },
+  "A1:führen": {
+    "en": "lead; manage",
+    "nl": "leiden"
+  },
+  "A1:eher": {
+    "en": "rather; earlier",
+    "nl": "eerder"
+  },
+  "A1:verlassen": {
+    "en": "leave; abandon",
+    "nl": "verlaten"
+  },
+  "A1:wahl": {
+    "en": "election; choice",
+    "nl": "verkiezing; keuze"
+  },
+  "A1:nachdem": {
+    "en": "after (conjunction)",
+    "nl": "nadat"
+  },
+  "A1:wert": {
+    "en": "value",
+    "nl": "waarde"
+  },
+  "A1:rolle": {
+    "en": "role; roll",
+    "nl": "rol"
+  },
+  "A1:sorgen": {
+    "en": "care for; worry",
+    "nl": "zorgen voor; zich zorgen maken"
+  },
+  "A1:danach": {
+    "en": "afterwards; accordingly",
+    "nl": "daarna; dienovereenkomstig"
+  },
+  "A1:ziemlich": {
+    "en": "fairly; quite",
+    "nl": "tamelijk"
+  },
+  "A1:kampf": {
+    "en": "fight; struggle",
+    "nl": "gevecht; strijd"
+  },
+  "A1:sinn": {
+    "en": "meaning; sense",
+    "nl": "zin; zintuig"
+  },
+  "A1:sicherheit": {
+    "en": "safety; security",
+    "nl": "veiligheid"
+  },
+  "A1:lage": {
+    "en": "situation; location",
+    "nl": "toestand; ligging"
+  },
+  "A1:rede": {
+    "en": "speech; talk",
+    "nl": "toespraak; rede"
+  },
+  "A1:mehrheit": {
+    "en": "majority",
+    "nl": "meerderheid"
+  },
+  "A1:boden": {
+    "en": "ground; soil",
+    "nl": "grond; bodem"
+  },
+  "A1:erde": {
+    "en": "earth",
+    "nl": "aarde"
+  },
+  "A1:los": {
+    "en": "go!; loose",
+    "nl": "vooruit!; los"
+  },
+  "A1:nämlich": {
+    "en": "namely; for the reason that",
+    "nl": "namelijk"
+  },
+  "A1:wahrheit": {
+    "en": "truth",
+    "nl": "waarheid"
+  },
+  "A1:opfer": {
+    "en": "victim; sacrifice",
+    "nl": "slachtoffer; offer"
+  },
+  "A1:tatsächlich": {
+    "en": "actual; actually",
+    "nl": "werkelijk; daadwerkelijk"
+  },
+  "A1:luft": {
+    "en": "air",
+    "nl": "lucht"
+  },
+  "A1:erhalten": {
+    "en": "receive; preserve",
+    "nl": "ontvangen; behouden"
+  },
+  "A1:bisher": {
+    "en": "so far",
+    "nl": "tot nu toe"
+  },
+  "A1:trotzdem": {
+    "en": "nevertheless",
+    "nl": "toch; desondanks"
+  },
+  "A1:richtung": {
+    "en": "direction",
+    "nl": "richting"
+  },
+  "A1:folgen": {
+    "en": "follow",
+    "nl": "volgen"
+  },
+  "A1:möglichkeit": {
+    "en": "possibility; opportunity",
+    "nl": "mogelijkheid"
+  },
+  "A1:gesellschaft": {
+    "en": "society; company",
+    "nl": "maatschappij; vennootschap"
+  },
+  "A1:kraft": {
+    "en": "strength; force",
+    "nl": "kracht"
+  },
+  "A1:gefahr": {
+    "en": "danger",
+    "nl": "gevaar"
+  },
+  "A1:stimme": {
+    "en": "voice; vote",
+    "nl": "stem"
+  },
+  "A1:folge": {
+    "en": "consequence; episode",
+    "nl": "gevolg; aflevering"
+  },
+  "A1:gefühl": {
+    "en": "feeling",
+    "nl": "gevoel"
+  },
+  "A1:obwohl": {
+    "en": "although",
+    "nl": "hoewel"
+  },
+  "A1:erfahren": {
+    "en": "find out; experience",
+    "nl": "vernemen; ervaren"
+  },
+  "A1:versuch": {
+    "en": "attempt; experiment",
+    "nl": "poging; proef"
+  },
+  "A1:herz": {
+    "en": "heart",
+    "nl": "hart"
+  },
+  "A1:wieso": {
+    "en": "why; how come",
+    "nl": "waarom; hoezo"
+  },
+  "A1:statt": {
+    "en": "instead of",
+    "nl": "in plaats van"
+  },
+  "A1:könig": {
+    "en": "king",
+    "nl": "koning"
+  },
+  "A1:schritt": {
+    "en": "step",
+    "nl": "stap"
+  },
+  "A1:erwarten": {
+    "en": "expect; await",
+    "nl": "verwachten"
+  },
+  "A1:verzeihung": {
+    "en": "pardon; forgiveness",
+    "nl": "vergiffenis; pardon"
+  },
+  "A1:forderung": {
+    "en": "demand; financial claim",
+    "nl": "eis; vordering"
+  },
+  "A1:gemeinsam": {
+    "en": "shared; together",
+    "nl": "gemeenschappelijk; samen"
+  },
+  "A1:ständig": {
+    "en": "constant; continually",
+    "nl": "voortdurend"
+  },
+  "A1:nötig": {
+    "en": "necessary",
+    "nl": "nodig"
+  },
+  "A1:system": {
+    "en": "system",
+    "nl": "systeem"
+  },
+  "A1:erfolg": {
+    "en": "success",
+    "nl": "succes"
+  },
+  "A1:schliesslich": {
+    "en": "finally; after all",
+    "nl": "uiteindelijk; immers"
+  },
+  "A1:punkt": {
+    "en": "point",
+    "nl": "punt"
+  },
+  "A1:entscheiden": {
+    "en": "decide",
+    "nl": "beslissen"
+  },
+  "A1:selber": {
+    "en": "oneself; personally",
+    "nl": "zelf"
+  },
+  "A1:liste": {
+    "en": "list",
+    "nl": "lijst"
+  },
+  "A1:allerdings": {
+    "en": "however",
+    "nl": "echter"
+  },
+  "A1:weder": {
+    "en": "neither (with nor)",
+    "nl": "noch (met noch)"
+  },
+  "A1:verbindung": {
+    "en": "connection; link",
+    "nl": "verbinding"
+  },
+  "A1:zumindest": {
+    "en": "at least",
+    "nl": "tenminste"
+  },
+  "A1:gesetz": {
+    "en": "law",
+    "nl": "wet"
+  },
+  "A1:schwierigkeit": {
+    "en": "difficulty",
+    "nl": "moeilijkheid"
+  },
+  "A1:genauso": {
+    "en": "in exactly the same way",
+    "nl": "net zo"
+  },
+  "A1:einführung": {
+    "en": "introduction",
+    "nl": "inleiding; invoering"
+  },
+  "A1:bericht": {
+    "en": "report",
+    "nl": "verslag"
+  },
+  "A1:vergangenheit": {
+    "en": "past",
+    "nl": "verleden"
+  },
+  "A1:hoffnung": {
+    "en": "hope",
+    "nl": "hoop"
+  },
+  "A1:kontrolle": {
+    "en": "inspection; control",
+    "nl": "controle; toezicht"
+  },
+  "A1:indem": {
+    "en": "by doing; in that",
+    "nl": "door ... te"
+  },
+  "A1:erkennen": {
+    "en": "recognise; realise",
+    "nl": "herkennen; beseffen"
+  },
+  "A1:tat": {
+    "en": "deed; criminal act",
+    "nl": "daad; misdaad"
+  },
+  "A1:ernst": {
+    "en": "serious",
+    "nl": "ernstig"
+  },
+  "A1:geschehen": {
+    "en": "happen",
+    "nl": "gebeuren"
+  },
+  "A1:falls": {
+    "en": "if; in case",
+    "nl": "als; indien"
+  },
+  "A1:übernehmen": {
+    "en": "take over; assume",
+    "nl": "overnemen"
+  },
+  "A1:hälfte": {
+    "en": "half",
+    "nl": "helft"
+  },
+  "A1:industrie": {
+    "en": "industry",
+    "nl": "industrie"
+  },
+  "A1:kämpfen": {
+    "en": "fight; struggle",
+    "nl": "vechten; strijden"
+  },
+  "A1:zeichen": {
+    "en": "sign; symbol",
+    "nl": "teken"
+  },
+  "A1:professor": {
+    "en": "professor",
+    "nl": "hoogleraar"
+  },
+  "A1:sorge": {
+    "en": "worry; care",
+    "nl": "zorg"
+  },
+  "A1:leisten": {
+    "en": "accomplish; provide",
+    "nl": "presteren; leveren"
+  },
+  "A1:sucht": {
+    "en": "addiction",
+    "nl": "verslaving"
+  },
+  "A1:druck": {
+    "en": "pressure; printing",
+    "nl": "druk"
+  },
+  "A1:gebäude": {
+    "en": "building",
+    "nl": "gebouw"
+  },
+  "A1:verantwortlich": {
+    "en": "responsible",
+    "nl": "verantwoordelijk"
+  },
+  "A1:halt": {
+    "en": "support; stop",
+    "nl": "houvast; stop"
+  },
+  "A1:form": {
+    "en": "form; shape",
+    "nl": "vorm"
+  },
+  "A1:meister": {
+    "en": "master craftsman; champion",
+    "nl": "meester; kampioen"
+  },
+  "A1:retten": {
+    "en": "rescue; save",
+    "nl": "redden"
+  },
+  "A1:erforderlich": {
+    "en": "required",
+    "nl": "vereist"
+  },
+  "A1:verlag": {
+    "en": "publishing house",
+    "nl": "uitgeverij"
+  },
+  "A1:persönlich": {
+    "en": "personal",
+    "nl": "persoonlijk"
+  },
+  "A1:dahin": {
+    "en": "to there; until then",
+    "nl": "daarheen; tot dan"
+  },
+  "A1:freiheit": {
+    "en": "freedom",
+    "nl": "vrijheid"
+  },
+  "A1:reform": {
+    "en": "reform",
+    "nl": "hervorming"
+  },
+  "A1:frieden": {
+    "en": "peace",
+    "nl": "vrede"
+  },
+  "A1:regional": {
+    "en": "regional",
+    "nl": "regionaal"
+  },
+  "A1:gewalt": {
+    "en": "violence; power",
+    "nl": "geweld; macht"
+  },
+  "A1:szene": {
+    "en": "scene; social milieu",
+    "nl": "scène; milieu"
+  },
+  "A1:miteinander": {
+    "en": "with each other",
+    "nl": "met elkaar"
+  },
+  "A1:auftrag": {
+    "en": "assignment; order",
+    "nl": "opdracht"
+  },
+  "A1:leser": {
+    "en": "reader",
+    "nl": "lezer"
+  },
+  "A1:nutzen": {
+    "en": "use; exploit",
+    "nl": "gebruiken; benutten"
+  },
+  "A1:vertrauen": {
+    "en": "trust",
+    "nl": "vertrouwen"
+  },
+  "A1:deswegen": {
+    "en": "therefore",
+    "nl": "daarom"
+  },
+  "A1:ähnlich": {
+    "en": "similar",
+    "nl": "vergelijkbaar"
+  },
+  "A1:solange": {
+    "en": "as long as",
+    "nl": "zolang"
+  },
+  "A1:treten": {
+    "en": "step; kick",
+    "nl": "stappen; trappen"
+  },
+  "A1:energie": {
+    "en": "energy",
+    "nl": "energie"
+  },
+  "A1:elektronisch": {
+    "en": "electronic",
+    "nl": "elektronisch"
+  },
+  "A1:wunder": {
+    "en": "miracle; wonder",
+    "nl": "wonder"
+  },
+  "A1:daher": {
+    "en": "therefore; from there",
+    "nl": "daarom; daarvandaan"
+  },
+  "A1:zeitpunkt": {
+    "en": "point in time",
+    "nl": "tijdstip"
+  },
+  "A1:diesmal": {
+    "en": "this time",
+    "nl": "deze keer"
+  },
+  "A1:richter": {
+    "en": "judge",
+    "nl": "rechter"
+  },
+  "A1:stimmen": {
+    "en": "be correct; vote",
+    "nl": "kloppen; stemmen"
+  },
+  "A1:augenblick": {
+    "en": "moment",
+    "nl": "ogenblik"
+  },
+  "A1:längst": {
+    "en": "long since; long ago",
+    "nl": "allang"
+  },
+  "A1:jedoch": {
+    "en": "however",
+    "nl": "echter"
+  },
+  "A1:innerhalb": {
+    "en": "inside; within",
+    "nl": "binnen"
+  },
+  "A1:knapp": {
+    "en": "scarce; barely sufficient",
+    "nl": "schaars; nipt"
+  },
+  "A1:ebenso": {
+    "en": "equally; likewise",
+    "nl": "evenzo; eveneens"
+  },
+  "A1:ebenfalls": {
+    "en": "also",
+    "nl": "eveneens"
+  },
+  "A1:mehrere": {
+    "en": "several",
+    "nl": "verscheidene"
+  },
+  "A1:verhindern": {
+    "en": "prevent",
+    "nl": "voorkomen; verhinderen"
+  },
+  "A1:gefängnis": {
+    "en": "prison",
+    "nl": "gevangenis"
+  },
+  "A1:vermutlich": {
+    "en": "presumably",
+    "nl": "vermoedelijk"
+  },
+  "A1:übrigens": {
+    "en": "by the way",
+    "nl": "overigens"
+  },
+  "A1:freude": {
+    "en": "joy",
+    "nl": "vreugde"
+  },
+  "A1:bieten": {
+    "en": "offer",
+    "nl": "bieden"
+  },
+  "A1:grenze": {
+    "en": "border; limit",
+    "nl": "grens"
+  },
+  "A1:rat": {
+    "en": "advice; council",
+    "nl": "raad"
+  },
+  "A1:typ": {
+    "en": "type; guy",
+    "nl": "type; vent"
+  },
+  "A1:reichen": {
+    "en": "suffice; hand to",
+    "nl": "volstaan; aanreiken"
+  },
+  "A1:erklärung": {
+    "en": "explanation; declaration",
+    "nl": "uitleg; verklaring"
+  },
+  "A1:übrig": {
+    "en": "remaining",
+    "nl": "overgebleven"
+  },
+  "A1:bedeutung": {
+    "en": "meaning; importance",
+    "nl": "betekenis; belang"
+  },
+  "A1:gering": {
+    "en": "small; slight",
+    "nl": "gering"
+  },
+  "A1:verschwinden": {
+    "en": "disappear",
+    "nl": "verdwijnen"
+  },
+  "A1:beteiligen": {
+    "en": "involve; participate",
+    "nl": "betrekken; deelnemen"
+  },
+  "A1:regeln": {
+    "en": "regulate; settle",
+    "nl": "regelen"
+  },
+  "A1:tätigkeit": {
+    "en": "activity; occupation",
+    "nl": "activiteit; werkzaamheid"
+  },
+  "A1:stolz": {
+    "en": "proud",
+    "nl": "trots"
+  },
+  "A1:unterstützung": {
+    "en": "support",
+    "nl": "ondersteuning"
+  },
+  "A1:entweder": {
+    "en": "either (with or)",
+    "nl": "ofwel"
+  },
+  "A1:schutz": {
+    "en": "protection",
+    "nl": "bescherming"
+  },
+  "A1:offenbar": {
+    "en": "apparently; evident",
+    "nl": "blijkbaar; duidelijk"
+  },
+  "A1:schützen": {
+    "en": "protect",
+    "nl": "beschermen"
+  },
+  "A1:sieg": {
+    "en": "victory",
+    "nl": "overwinning"
+  },
+  "A1:gebiet": {
+    "en": "area; field",
+    "nl": "gebied"
+  },
+  "A1:gelegenheit": {
+    "en": "opportunity; occasion",
+    "nl": "gelegenheid"
+  },
+  "A1:werfen": {
+    "en": "throw",
+    "nl": "gooien; werpen"
+  },
+  "A1:behalten": {
+    "en": "keep",
+    "nl": "behouden"
+  },
+  "A1:anerkennen": {
+    "en": "acknowledge; recognise",
+    "nl": "erkennen"
+  },
+  "A1:absolut": {
+    "en": "absolute; complete",
+    "nl": "absoluut; volledig"
+  },
+  "A1:zustand": {
+    "en": "condition; state",
+    "nl": "toestand"
+  },
+  "A1:steigen": {
+    "en": "rise; climb",
+    "nl": "stijgen; klimmen"
+  },
+  "A1:zweifel": {
+    "en": "doubt",
+    "nl": "twijfel"
+  },
+  "A1:streit": {
+    "en": "quarrel; dispute",
+    "nl": "ruzie; geschil"
+  },
+  "A1:arbeitslosigkeit": {
+    "en": "unemployment",
+    "nl": "werkloosheid"
+  },
+  "A1:interessiert": {
+    "en": "interested",
+    "nl": "geïnteresseerd"
+  },
+  "A1:politik": {
+    "en": "politics; policy",
+    "nl": "politiek; beleid"
+  },
+  "A1:dienst": {
+    "en": "service; duty",
+    "nl": "dienst"
+  },
+  "A1:trotz": {
+    "en": "despite",
+    "nl": "ondanks"
+  },
+  "A1:tatsache": {
+    "en": "fact",
+    "nl": "feit"
+  },
+  "A1:selten": {
+    "en": "rarely",
+    "nl": "zelden"
+  },
+  "A1:lösen": {
+    "en": "solve; loosen",
+    "nl": "oplossen; losmaken"
+  },
+  "A1:schaden": {
+    "en": "damage",
+    "nl": "schade"
+  },
+  "A1:allgemein": {
+    "en": "general",
+    "nl": "algemeen"
+  },
+  "A1:beweisen": {
+    "en": "prove",
+    "nl": "bewijzen"
+  },
+  "A1:gleichzeitig": {
+    "en": "simultaneous; at the same time",
+    "nl": "gelijktijdig"
+  },
+  "A1:schauen": {
+    "en": "look; watch",
+    "nl": "kijken"
+  },
+  "A1:risiko": {
+    "en": "risk",
+    "nl": "risico"
+  },
+  "A1:bereich": {
+    "en": "area; scope",
+    "nl": "gebied; bereik"
+  },
+  "A1:planung": {
+    "en": "planning",
+    "nl": "planning"
+  },
+  "A1:sinnvoll": {
+    "en": "meaningful; sensible",
+    "nl": "zinvol"
+  },
+  "A1:spur": {
+    "en": "trace; lane",
+    "nl": "spoor; rijstrook"
+  },
+  "A1:fördern": {
+    "en": "promote; extract minerals",
+    "nl": "bevorderen; delven"
+  },
+  "A1:erfordern": {
+    "en": "require",
+    "nl": "vereisen"
+  },
+  "A1:irgendwann": {
+    "en": "sometime",
+    "nl": "ooit"
+  },
+  "A1:inzwischen": {
+    "en": "meanwhile; by now",
+    "nl": "intussen; inmiddels"
+  },
+  "A1:publikum": {
+    "en": "audience",
+    "nl": "publiek"
+  },
+  "A1:vorstellung": {
+    "en": "idea; performance",
+    "nl": "voorstelling"
+  },
+  "A1:interessant": {
+    "en": "interesting",
+    "nl": "interessant"
+  },
+  "A1:runde": {
+    "en": "round; group",
+    "nl": "ronde; gezelschap"
+  },
+  "A1:betrunken": {
+    "en": "drunk",
+    "nl": "dronken"
+  },
+  "A1:verhalten": {
+    "en": "behaviour",
+    "nl": "gedrag"
+  },
+  "A1:stecken": {
+    "en": "put in; be stuck",
+    "nl": "steken; vastzitten"
+  },
+  "A1:vorhin": {
+    "en": "a short while ago",
+    "nl": "daarstraks"
+  },
+  "A1:sowieso": {
+    "en": "anyway",
+    "nl": "toch al; sowieso"
+  },
+  "A1:gang": {
+    "en": "corridor; course of a meal",
+    "nl": "gang"
+  },
+  "A1:ehe": {
+    "en": "marriage",
+    "nl": "huwelijk"
+  },
+  "A1:erinnerung": {
+    "en": "memory; recollection",
+    "nl": "herinnering"
+  },
+  "A1:anwalt": {
+    "en": "lawyer",
+    "nl": "advocaat"
+  },
+  "A1:mitglied": {
+    "en": "member",
+    "nl": "lid"
+  },
+  "A1:begründung": {
+    "en": "justification; reasoning",
+    "nl": "onderbouwing; motivering"
+  },
+  "A1:beratung": {
+    "en": "advice; consultation",
+    "nl": "advies; overleg"
+  },
+  "A1:bürger": {
+    "en": "citizen",
+    "nl": "burger"
+  },
+  "A1:eindruck": {
+    "en": "impression",
+    "nl": "indruk"
+  },
+  "A1:feld": {
+    "en": "field",
+    "nl": "veld"
+  },
+  "A1:unterschiedlich": {
+    "en": "different; varied",
+    "nl": "verschillend"
+  },
+  "A1:leiden": {
+    "en": "suffer",
+    "nl": "lijden"
+  },
+  "A1:ungefähr": {
+    "en": "approximately; roughly",
+    "nl": "ongeveer"
+  },
+  "A1:hersteller": {
+    "en": "manufacturer",
+    "nl": "fabrikant"
+  },
+  "A1:bühne": {
+    "en": "stage",
+    "nl": "podium"
+  },
+  "A1:herausfinden": {
+    "en": "find out",
+    "nl": "erachter komen"
+  },
+  "A1:wand": {
+    "en": "wall",
+    "nl": "muur"
+  },
+  "A1:handeln": {
+    "en": "act; trade",
+    "nl": "handelen"
+  },
+  "A1:untersuchung": {
+    "en": "examination; investigation",
+    "nl": "onderzoek"
+  },
+  "A1:erfolgreich": {
+    "en": "successful",
+    "nl": "succesvol"
+  },
+  "A1:hübsch": {
+    "en": "pretty",
+    "nl": "mooi; knap"
+  },
+  "A1:melden": {
+    "en": "report; register",
+    "nl": "melden"
+  },
+  "A1:zählen": {
+    "en": "count",
+    "nl": "tellen"
+  },
+  "A1:zugang": {
+    "en": "access; entrance",
+    "nl": "toegang"
+  },
+  "A1:lager": {
+    "en": "warehouse; camp",
+    "nl": "magazijn; kamp"
+  },
+  "A1:werk": {
+    "en": "work; factory",
+    "nl": "werk; fabriek"
+  },
+  "A1:dienen": {
+    "en": "serve",
+    "nl": "dienen"
+  },
+  "A1:mitten": {
+    "en": "in the middle of",
+    "nl": "midden in"
+  },
+  "A1:spitz": {
+    "en": "pointed",
+    "nl": "puntig"
+  },
+  "A1:finger": {
+    "en": "finger",
+    "nl": "vinger"
+  },
+  "A1:einigen": {
+    "en": "unite; reach agreement",
+    "nl": "verenigen; het eens worden"
+  },
+  "A1:nase": {
+    "en": "nose",
+    "nl": "neus"
+  },
+  "A1:gold": {
+    "en": "gold",
+    "nl": "goud"
+  },
+  "A1:beweis": {
+    "en": "proof; evidence",
+    "nl": "bewijs"
+  },
+  "A1:finanziell": {
+    "en": "financial",
+    "nl": "financieel"
+  },
+  "A1:perfekt": {
+    "en": "perfect",
+    "nl": "perfect"
+  },
+  "A1:protest": {
+    "en": "protest",
+    "nl": "protest"
+  },
+  "A1:anbieter": {
+    "en": "provider",
+    "nl": "aanbieder"
+  },
+  "A1:drin": {
+    "en": "inside (informal)",
+    "nl": "binnenin (informeel)"
+  },
+  "A1:sobald": {
+    "en": "as soon as",
+    "nl": "zodra"
+  },
+  "A1:rauf": {
+    "en": "up; upwards (informal)",
+    "nl": "omhoog (informeel)"
+  },
+  "A1:befinden": {
+    "en": "be located; feel (reflexive)",
+    "nl": "zich bevinden; zich voelen"
+  },
+  "A1:mut": {
+    "en": "courage",
+    "nl": "moed"
+  },
+  "A1:per": {
+    "en": "by; by means of",
+    "nl": "per; via"
+  },
+  "A1:tabelle": {
+    "en": "table; chart",
+    "nl": "tabel"
+  },
+  "A1:wunderschön": {
+    "en": "very beautiful",
+    "nl": "prachtig"
+  },
+  "A1:wirken": {
+    "en": "have an effect; seem",
+    "nl": "werken; overkomen"
+  },
+  "A1:leiter": {
+    "en": "ladder; leader",
+    "nl": "ladder; leider"
+  },
+  "A1:schreien": {
+    "en": "scream",
+    "nl": "schreeuwen"
+  },
+  "A1:stein": {
+    "en": "stone",
+    "nl": "steen"
+  },
+  "A1:unterstützen": {
+    "en": "support",
+    "nl": "ondersteunen"
+  },
+  "A1:entlang": {
+    "en": "along",
+    "nl": "langs"
+  },
+  "A1:botschaft": {
+    "en": "embassy; message",
+    "nl": "ambassade; boodschap"
+  },
+  "A1:worüber": {
+    "en": "about what",
+    "nl": "waarover"
+  },
+  "A1:kreis": {
+    "en": "circle; district",
+    "nl": "cirkel; district"
+  },
+  "A1:still": {
+    "en": "quiet; still",
+    "nl": "stil"
+  },
+  "A1:gegner": {
+    "en": "opponent",
+    "nl": "tegenstander"
+  },
+  "A1:integration": {
+    "en": "integration",
+    "nl": "integratie"
+  },
+  "A1:bart": {
+    "en": "beard",
+    "nl": "baard"
+  },
+  "A1:verändern": {
+    "en": "change",
+    "nl": "veranderen"
+  },
+  "A1:dach": {
+    "en": "roof",
+    "nl": "dak"
+  },
+  "A1:haut": {
+    "en": "skin",
+    "nl": "huid"
+  },
+  "A1:geheimnis": {
+    "en": "secret",
+    "nl": "geheim"
+  },
+  "A1:wahnsinnig": {
+    "en": "insane; tremendous (informal)",
+    "nl": "waanzinnig"
+  },
+  "A1:öffentlichkeit": {
+    "en": "the public; public sphere",
+    "nl": "publiek; openbaarheid"
+  },
+  "A1:verlangen": {
+    "en": "demand; require",
+    "nl": "verlangen; eisen"
+  },
+  "A1:einheitlich": {
+    "en": "uniform; consistent",
+    "nl": "uniform; eenvormig"
+  },
+  "A1:karriere": {
+    "en": "career",
+    "nl": "carrière"
+  },
+  "A1:forum": {
+    "en": "forum",
+    "nl": "forum"
+  },
+  "A1:kuss": {
+    "en": "kiss",
+    "nl": "kus"
+  },
+  "A1:unternehmer": {
+    "en": "entrepreneur",
+    "nl": "ondernemer"
+  },
+  "A1:urteil": {
+    "en": "judgment; verdict",
+    "nl": "oordeel; vonnis"
+  },
+  "A1:spätestens": {
+    "en": "at the latest",
+    "nl": "uiterlijk"
+  },
+  "A1:spieler": {
+    "en": "player",
+    "nl": "speler"
+  },
+  "A1:höhe": {
+    "en": "height",
+    "nl": "hoogte"
+  },
+  "A1:künstler": {
+    "en": "artist",
+    "nl": "kunstenaar"
+  },
+  "A1:aufnehmen": {
+    "en": "receive; record",
+    "nl": "opnemen; ontvangen"
+  },
+  "A1:drehen": {
+    "en": "turn; shoot a film",
+    "nl": "draaien"
+  },
+  "A1:antrag": {
+    "en": "formal application; motion",
+    "nl": "aanvraag; voorstel"
+  },
+  "A1:aufnahme": {
+    "en": "recording; admission",
+    "nl": "opname"
+  },
+  "A1:ärger": {
+    "en": "anger; trouble",
+    "nl": "ergernis; problemen"
+  },
+  "A1:lohnen": {
+    "en": "be worthwhile; reward",
+    "nl": "de moeite waard zijn; belonen"
+  },
+  "A1:überprüfen": {
+    "en": "check; verify",
+    "nl": "controleren"
+  },
+  "A1:möglicherweise": {
+    "en": "possibly",
+    "nl": "mogelijk"
+  },
+  "A1:rennen": {
+    "en": "run",
+    "nl": "rennen"
+  },
+  "A1:leitung": {
+    "en": "management; conduit",
+    "nl": "leiding"
+  },
+  "A1:gegend": {
+    "en": "area; region",
+    "nl": "streek; omgeving"
+  },
+  "A1:wirklichkeit": {
+    "en": "reality",
+    "nl": "werkelijkheid"
+  },
+  "A1:pflicht": {
+    "en": "duty; obligation",
+    "nl": "plicht"
+  },
+  "A1:voraus": {
+    "en": "in advance; ahead",
+    "nl": "vooraf; vooruit"
+  },
+  "A1:operation": {
+    "en": "operation",
+    "nl": "operatie"
+  },
+  "A1:alltag": {
+    "en": "everyday life",
+    "nl": "dagelijks leven"
+  },
+  "A1:fassen": {
+    "en": "grasp; comprehend",
+    "nl": "grijpen; bevatten"
+  },
+  "A1:einkommen": {
+    "en": "income",
+    "nl": "inkomen"
+  },
+  "A1:starten": {
+    "en": "start; set off",
+    "nl": "starten"
+  },
+  "A1:erleben": {
+    "en": "experience",
+    "nl": "meemaken"
+  },
+  "A1:erhöhung": {
+    "en": "increase; rise",
+    "nl": "verhoging"
+  },
+  "A1:verwenden": {
+    "en": "use",
+    "nl": "gebruiken"
+  },
+  "A1:hinweis": {
+    "en": "hint; indication",
+    "nl": "aanwijzing"
+  },
+  "A1:direktor": {
+    "en": "director",
+    "nl": "directeur"
+  },
+  "A1:festlegen": {
+    "en": "determine; lay down",
+    "nl": "vastleggen"
+  },
+  "A1:verlust": {
+    "en": "loss",
+    "nl": "verlies"
+  },
+  "A1:organisation": {
+    "en": "organisation",
+    "nl": "organisatie"
+  },
+  "A1:schatten": {
+    "en": "shadow",
+    "nl": "schaduw"
+  },
+  "A1:beschäftigung": {
+    "en": "employment; occupation",
+    "nl": "werkgelegenheid; bezigheid"
+  },
+  "A1:teilnahme": {
+    "en": "participation",
+    "nl": "deelname"
+  },
+  "A1:beobachten": {
+    "en": "observe",
+    "nl": "observeren"
+  },
+  "A1:offiziell": {
+    "en": "official",
+    "nl": "officieel"
+  },
+  "A1:wissenschaftler": {
+    "en": "scientist",
+    "nl": "wetenschapper"
+  },
+  "A1:desto": {
+    "en": "the (in the more ... the better)",
+    "nl": "des te"
+  },
+  "A1:spüren": {
+    "en": "feel; sense",
+    "nl": "voelen; bespeuren"
+  },
+  "A1:strom": {
+    "en": "electric current",
+    "nl": "stroom"
+  },
+  "A1:serie": {
+    "en": "series",
+    "nl": "serie"
+  },
+  "A1:technik": {
+    "en": "technology; technique",
+    "nl": "techniek"
+  },
+  "A1:wütend": {
+    "en": "angry; furious",
+    "nl": "woedend"
+  },
+  "A1:brechen": {
+    "en": "break",
+    "nl": "breken"
+  },
+  "A1:alternativ": {
+    "en": "alternative",
+    "nl": "alternatief"
+  },
+  "A1:material": {
+    "en": "material",
+    "nl": "materiaal"
+  },
+  "A1:gründen": {
+    "en": "found; establish",
+    "nl": "oprichten"
+  },
+  "A1:linie": {
+    "en": "line",
+    "nl": "lijn"
+  },
+  "A1:schätzen": {
+    "en": "estimate; appreciate",
+    "nl": "schatten; waarderen"
+  },
+  "A1:jemals": {
+    "en": "ever",
+    "nl": "ooit"
+  },
+  "A1:selbstverständlich": {
+    "en": "obvious; of course",
+    "nl": "vanzelfsprekend; natuurlijk"
+  },
+  "A1:soviel": {
+    "en": "so much; as much",
+    "nl": "zoveel; zoveel als"
+  },
+  "A1:komplett": {
+    "en": "complete",
+    "nl": "compleet"
+  },
+  "A1:ankündigen": {
+    "en": "announce",
+    "nl": "aankondigen"
+  },
+  "A1:überlegen": {
+    "en": "consider; reflect",
+    "nl": "overwegen; nadenken"
+  },
+  "A1:wachsen": {
+    "en": "grow",
+    "nl": "groeien"
+  },
+  "A1:eindeutig": {
+    "en": "unambiguous; clear",
+    "nl": "eenduidig; duidelijk"
+  },
+  "A1:zweck": {
+    "en": "purpose",
+    "nl": "doel"
+  },
+  "A1:realität": {
+    "en": "reality",
+    "nl": "realiteit"
+  },
+  "A1:erfüllen": {
+    "en": "fulfil",
+    "nl": "vervullen"
+  },
+  "A1:solch": {
+    "en": "such",
+    "nl": "zo'n; dergelijk"
+  },
+  "A1:stimmung": {
+    "en": "mood; atmosphere",
+    "nl": "stemming; sfeer"
+  },
+  "A1:fair": {
+    "en": "fair; equitable",
+    "nl": "eerlijk; rechtvaardig"
+  },
+  "A1:eck": {
+    "en": "corner",
+    "nl": "hoek"
+  },
+  "A1:installieren": {
+    "en": "install",
+    "nl": "installeren"
+  },
+  "A1:regel": {
+    "en": "rule; habit",
+    "nl": "regel; gewoonte"
+  },
+  "A1:fläche": {
+    "en": "area; surface",
+    "nl": "oppervlak; oppervlakte"
+  },
+  "A1:durcheinander": {
+    "en": "mixed up; in disorder",
+    "nl": "door elkaar"
+  },
+  "A1:ursache": {
+    "en": "cause",
+    "nl": "oorzaak"
+  },
+  "A1:flucht": {
+    "en": "escape; flight",
+    "nl": "vlucht"
+  },
+  "A1:funktionieren": {
+    "en": "function; work",
+    "nl": "functioneren"
+  },
+  "A1:roman": {
+    "en": "novel",
+    "nl": "roman"
+  },
+  "A1:sozial": {
+    "en": "social; caring",
+    "nl": "sociaal"
+  },
+  "A1:einerseits": {
+    "en": "on the one hand",
+    "nl": "enerzijds"
+  },
+  "A1:zufällig": {
+    "en": "accidental; by chance",
+    "nl": "toevallig"
+  },
+  "A1:täter": {
+    "en": "perpetrator",
+    "nl": "dader"
+  },
+  "A1:kiste": {
+    "en": "box; old car (informal)",
+    "nl": "kist; oude auto (informeel)"
+  },
+  "A1:konzentrieren": {
+    "en": "concentrate",
+    "nl": "concentreren"
+  },
+  "A1:medizin": {
+    "en": "medicine; medical science",
+    "nl": "medicijn; geneeskunde"
+  },
+  "A1:auffordern": {
+    "en": "ask; call upon",
+    "nl": "verzoeken; oproepen"
+  },
+  "A1:irgendein": {
+    "en": "any; some unspecified",
+    "nl": "een of andere"
+  },
+  "A1:behaupten": {
+    "en": "claim; assert",
+    "nl": "beweren"
+  },
+  "A1:theorie": {
+    "en": "theory",
+    "nl": "theorie"
+  },
+  "A1:versprechen": {
+    "en": "promise; misspeak",
+    "nl": "beloven; zich verspreken"
+  },
+  "A1:greifen": {
+    "en": "grasp; reach for",
+    "nl": "grijpen"
+  },
+  "A1:zufall": {
+    "en": "coincidence",
+    "nl": "toeval"
+  },
+  "A1:landwirtschaft": {
+    "en": "agriculture",
+    "nl": "landbouw"
+  },
+  "A1:entwickeln": {
+    "en": "develop",
+    "nl": "ontwikkelen"
+  },
+  "A1:reaktion": {
+    "en": "reaction",
+    "nl": "reactie"
+  },
+  "A1:respekt": {
+    "en": "respect",
+    "nl": "respect"
+  },
+  "A1:reduzieren": {
+    "en": "reduce",
+    "nl": "verminderen"
+  },
+  "A1:akzeptieren": {
+    "en": "accept",
+    "nl": "accepteren"
+  },
+  "A1:spiegel": {
+    "en": "mirror",
+    "nl": "spiegel"
+  },
+  "A1:entlassen": {
+    "en": "dismiss; discharge",
+    "nl": "ontslaan"
+  },
+  "A1:schauspieler": {
+    "en": "actor",
+    "nl": "acteur"
+  },
+  "A1:zuhause": {
+    "en": "home",
+    "nl": "thuis"
+  },
+  "A1:figur": {
+    "en": "figure; character",
+    "nl": "figuur; personage"
+  },
+  "A1:durchschnittlich": {
+    "en": "average; ordinary",
+    "nl": "gemiddeld; doorsnee"
+  },
+  "A1:erwachsen": {
+    "en": "adult; grown-up",
+    "nl": "volwassen"
+  },
+  "A1:überzeugen": {
+    "en": "convince",
+    "nl": "overtuigen"
+  },
+  "A1:behandeln": {
+    "en": "treat; deal with",
+    "nl": "behandelen"
+  },
+  "A1:abteilung": {
+    "en": "department",
+    "nl": "afdeling"
+  },
+  "A1:besorgen": {
+    "en": "obtain; take care of",
+    "nl": "bezorgen; regelen"
+  },
+  "A1:virtuell": {
+    "en": "virtual",
+    "nl": "virtueel"
+  },
+  "A1:beginn": {
+    "en": "beginning",
+    "nl": "begin"
+  },
+  "A1:vergleich": {
+    "en": "comparison",
+    "nl": "vergelijking"
+  },
+  "A1:bauer": {
+    "en": "farmer",
+    "nl": "boer"
+  },
+  "A1:überraschung": {
+    "en": "surprise",
+    "nl": "verrassing"
+  },
+  "A1:schiessen": {
+    "en": "shoot",
+    "nl": "schieten"
+  },
+  "A1:mühe": {
+    "en": "effort; trouble",
+    "nl": "moeite"
+  },
+  "A1:voraussichtlich": {
+    "en": "expected; probably",
+    "nl": "vermoedelijk; naar verwachting"
+  },
+  "A1:autor": {
+    "en": "author",
+    "nl": "auteur"
+  },
+  "A1:neulich": {
+    "en": "recently",
+    "nl": "onlangs"
+  },
+  "A1:nah": {
+    "en": "near",
+    "nl": "nabij; dichtbij"
+  },
+  "A1:hof": {
+    "en": "courtyard; farm",
+    "nl": "binnenplaats; boerderij"
+  },
+  "A1:ewig": {
+    "en": "eternal",
+    "nl": "eeuwig"
+  },
+  "A1:hassen": {
+    "en": "hate",
+    "nl": "haten"
+  },
+  "A1:stil": {
+    "en": "style",
+    "nl": "stijl"
+  },
+  "A1:seitdem": {
+    "en": "since then",
+    "nl": "sindsdien"
+  },
+  "A1:held": {
+    "en": "hero",
+    "nl": "held"
+  },
+  "A1:loch": {
+    "en": "hole",
+    "nl": "gat"
+  },
+  "A1:netz": {
+    "en": "net; network",
+    "nl": "net; netwerk"
+  },
+  "A1:wirkung": {
+    "en": "effect",
+    "nl": "werking; effect"
+  },
+  "A1:prima": {
+    "en": "excellent",
+    "nl": "prima"
+  },
+  "A1:zerstören": {
+    "en": "destroy",
+    "nl": "vernietigen"
+  },
+  "A1:aufgeben": {
+    "en": "give up; hand in",
+    "nl": "opgeven; afgeven"
+  },
+  "A1:dieb": {
+    "en": "thief",
+    "nl": "dief"
+  },
+  "A1:ausdruck": {
+    "en": "expression; printout",
+    "nl": "uitdrukking; afdruk"
+  },
+  "A1:beinahe": {
+    "en": "almost",
+    "nl": "bijna"
+  },
+  "A1:start": {
+    "en": "start",
+    "nl": "start"
+  },
+  "A1:schief": {
+    "en": "crooked; unsuccessful",
+    "nl": "scheef; misgegaan"
+  },
+  "A1:zuschauer": {
+    "en": "spectator; viewer",
+    "nl": "toeschouwer; kijker"
+  },
+  "A1:umgebung": {
+    "en": "surroundings",
+    "nl": "omgeving"
+  },
+  "A1:besprechen": {
+    "en": "discuss",
+    "nl": "bespreken"
+  },
+  "A1:annehmen": {
+    "en": "accept; assume",
+    "nl": "aannemen"
+  },
+  "A1:merkwürdig": {
+    "en": "strange",
+    "nl": "merkwaardig"
+  },
+  "A1:ehrlich": {
+    "en": "honest",
+    "nl": "eerlijk"
+  },
+  "A1:auflösen": {
+    "en": "dissolve; disband",
+    "nl": "oplossen; ontbinden"
+  },
+  "A1:biologisch": {
+    "en": "biological; organic",
+    "nl": "biologisch"
+  },
+  "A1:stoff": {
+    "en": "material; fabric",
+    "nl": "stof"
+  },
+  "A1:trennen": {
+    "en": "separate",
+    "nl": "scheiden"
+  },
+  "A1:entwicklung": {
+    "en": "development",
+    "nl": "ontwikkeling"
+  },
+  "A1:jugend": {
+    "en": "youth",
+    "nl": "jeugd"
+  },
+  "A1:modell": {
+    "en": "model",
+    "nl": "model"
+  },
+  "A1:schuldig": {
+    "en": "guilty; owing",
+    "nl": "schuldig"
+  },
+  "A1:rechtzeitig": {
+    "en": "in time",
+    "nl": "op tijd"
+  },
+  "A1:entschliessen": {
+    "en": "decide; make up one's mind",
+    "nl": "besluiten"
+  },
+  "A1:stehlen": {
+    "en": "steal",
+    "nl": "stelen"
+  },
+  "A1:geniessen": {
+    "en": "enjoy",
+    "nl": "genieten"
+  },
+  "A1:handel": {
+    "en": "trade",
+    "nl": "handel"
+  },
+  "A1:bau": {
+    "en": "construction; structure",
+    "nl": "bouw; bouwwerk"
+  },
+  "A1:tote": {
+    "en": "dead person; the dead",
+    "nl": "dode; doden"
+  },
+  "A1:aktion": {
+    "en": "action; campaign",
+    "nl": "actie"
+  },
+  "A1:cousin": {
+    "en": "male cousin",
+    "nl": "neef (zoon van oom of tante)"
+  },
+  "A1:arbeiter": {
+    "en": "worker",
+    "nl": "arbeider"
+  },
+  "A1:strafe": {
+    "en": "punishment; fine",
+    "nl": "straf; boete"
+  },
+  "A1:maximal": {
+    "en": "maximum; at most",
+    "nl": "maximaal"
+  },
+  "A1:boot": {
+    "en": "boat",
+    "nl": "boot"
+  },
+  "A1:notfall": {
+    "en": "emergency",
+    "nl": "noodgeval"
+  },
+  "A1:treiben": {
+    "en": "drive; practise",
+    "nl": "drijven; beoefenen"
+  },
+  "A1:prozess": {
+    "en": "process; trial",
+    "nl": "proces"
+  },
+  "A1:ernsthaft": {
+    "en": "serious; seriously",
+    "nl": "ernstig; serieus"
+  },
+  "A1:hungrig": {
+    "en": "hungry",
+    "nl": "hongerig"
+  },
+  "A1:klicken": {
+    "en": "click",
+    "nl": "klikken"
+  },
+  "A1:positiv": {
+    "en": "positive",
+    "nl": "positief"
+  },
+  "A1:amt": {
+    "en": "government office; official post",
+    "nl": "overheidsdienst; ambt"
+  },
+  "A1:verbringen": {
+    "en": "spend time",
+    "nl": "doorbrengen"
+  },
+  "A1:verbot": {
+    "en": "prohibition",
+    "nl": "verbod"
+  },
+  "A1:verdacht": {
+    "en": "suspicion",
+    "nl": "verdenking"
+  },
+  "A1:kauf": {
+    "en": "purchase",
+    "nl": "aankoop"
+  },
+  "A1:kreativ": {
+    "en": "creative",
+    "nl": "creatief"
+  },
+  "A1:rückkehr": {
+    "en": "return",
+    "nl": "terugkeer"
+  },
+  "A1:gebrauchen": {
+    "en": "use; need",
+    "nl": "gebruiken; nodig hebben"
+  },
+  "A1:reagieren": {
+    "en": "react",
+    "nl": "reageren"
+  },
+  "A1:umfrage": {
+    "en": "survey; opinion poll",
+    "nl": "enquête; opiniepeiling"
+  },
+  "A1:hinterlassen": {
+    "en": "leave behind",
+    "nl": "achterlaten"
+  },
+  "A1:umgehen": {
+    "en": "deal with; circumvent",
+    "nl": "omgaan met; omzeilen"
+  },
+  "A1:leistung": {
+    "en": "performance; capacity",
+    "nl": "prestatie; vermogen"
+  },
+  "A1:verbrecher": {
+    "en": "criminal",
+    "nl": "misdadiger"
+  },
+  "A1:normalerweise": {
+    "en": "normally",
+    "nl": "normaal gesproken"
+  },
+  "A1:geburt": {
+    "en": "birth",
+    "nl": "geboorte"
+  },
+  "A1:krise": {
+    "en": "crisis",
+    "nl": "crisis"
+  },
+  "A1:zusammenfassen": {
+    "en": "summarise; combine",
+    "nl": "samenvatten"
+  },
+  "A1:verhaften": {
+    "en": "arrest",
+    "nl": "arresteren"
+  },
+  "A1:wunde": {
+    "en": "wound",
+    "nl": "wond"
+  },
+  "A1:au": {
+    "en": "riverside meadow; floodplain",
+    "nl": "rivierweide; uiterwaard"
+  },
+  "A1:weshalb": {
+    "en": "why; for which reason",
+    "nl": "waarom"
+  },
+  "A1:gewissen": {
+    "en": "conscience",
+    "nl": "geweten"
+  },
+  "A1:auftritt": {
+    "en": "appearance; performance",
+    "nl": "optreden"
+  },
+  "A1:studie": {
+    "en": "research study",
+    "nl": "studie"
+  },
+  "A1:dasselbe": {
+    "en": "the same thing",
+    "nl": "hetzelfde"
+  },
+  "A1:geheim": {
+    "en": "secret",
+    "nl": "geheim"
+  },
+  "A1:stoppen": {
+    "en": "stop",
+    "nl": "stoppen"
+  },
+  "A1:vertreten": {
+    "en": "represent; deputise",
+    "nl": "vertegenwoordigen; vervangen"
+  },
+  "A1:diskussion": {
+    "en": "discussion",
+    "nl": "discussie"
+  },
+  "A1:städtisch": {
+    "en": "urban; municipal",
+    "nl": "stedelijk; gemeentelijk"
+  },
+  "A1:extrem": {
+    "en": "extreme",
+    "nl": "extreem"
+  },
+  "A1:sitz": {
+    "en": "seat; headquarters",
+    "nl": "zitplaats; zetel"
+  },
+  "A1:dicht": {
+    "en": "dense; tightly sealed",
+    "nl": "dicht"
+  },
+  "A1:betreuung": {
+    "en": "care; supervision",
+    "nl": "begeleiding; verzorging"
+  },
+  "A1:alkohol": {
+    "en": "alcohol",
+    "nl": "alcohol"
+  },
+  "A1:klinik": {
+    "en": "clinic; hospital",
+    "nl": "kliniek; ziekenhuis"
+  },
+  "A1:minderheit": {
+    "en": "minority",
+    "nl": "minderheid"
+  },
+  "A1:polizist": {
+    "en": "police officer",
+    "nl": "politieagent"
+  },
+  "A1:einsetzen": {
+    "en": "insert; deploy",
+    "nl": "invoegen; inzetten"
+  },
+  "A1:region": {
+    "en": "region",
+    "nl": "regio"
+  },
+  "A1:achten": {
+    "en": "respect; pay attention",
+    "nl": "achten; letten op"
+  },
+  "A1:jederzeit": {
+    "en": "at any time",
+    "nl": "altijd; op elk moment"
+  },
+  "A1:holz": {
+    "en": "wood",
+    "nl": "hout"
+  },
+  "A1:dauernd": {
+    "en": "constant; continually",
+    "nl": "voortdurend"
+  },
+  "A1:klären": {
+    "en": "clarify; resolve",
+    "nl": "verduidelijken; oplossen"
+  },
+  "A1:stern": {
+    "en": "star",
+    "nl": "ster"
+  },
+  "A1:tradition": {
+    "en": "tradition",
+    "nl": "traditie"
+  },
+  "A1:medium": {
+    "en": "medium",
+    "nl": "medium"
+  },
+  "A1:verzeihen": {
+    "en": "forgive",
+    "nl": "vergeven"
+  },
+  "A1:zunächst": {
+    "en": "first; initially",
+    "nl": "aanvankelijk; eerst"
+  },
+  "A1:zwingen": {
+    "en": "force; compel",
+    "nl": "dwingen"
+  },
+  "A1:video": {
+    "en": "video",
+    "nl": "video"
+  },
+  "A1:bevölkerung": {
+    "en": "population",
+    "nl": "bevolking"
+  },
+  "A1:gedanke": {
+    "en": "thought",
+    "nl": "gedachte"
+  },
+  "A1:elektrisch": {
+    "en": "electric",
+    "nl": "elektrisch"
+  },
+  "A1:sender": {
+    "en": "transmitter; broadcasting station",
+    "nl": "zender"
+  },
+  "A1:kürzlich": {
+    "en": "recently",
+    "nl": "onlangs"
+  },
+  "A1:gucken": {
+    "en": "look; watch (informal)",
+    "nl": "kijken (informeel)"
+  },
+  "A1:empfangen": {
+    "en": "receive",
+    "nl": "ontvangen"
+  },
+  "A1:werbung": {
+    "en": "advertising",
+    "nl": "reclame"
+  },
+  "A1:angabe": {
+    "en": "statement; information",
+    "nl": "opgave; informatie"
+  },
+  "A1:gewinn": {
+    "en": "profit; gain",
+    "nl": "winst"
+  },
+  "A1:einstellen": {
+    "en": "employ; discontinue",
+    "nl": "aannemen; stopzetten"
+  },
+  "A1:verständnis": {
+    "en": "understanding",
+    "nl": "begrip"
+  },
+  "A1:lächeln": {
+    "en": "smile",
+    "nl": "glimlachen"
+  },
+  "A1:nachher": {
+    "en": "afterwards",
+    "nl": "later; daarna"
+  },
+  "A1:trainer": {
+    "en": "trainer; coach",
+    "nl": "trainer"
+  },
+  "A1:unterlage": {
+    "en": "document; supporting pad",
+    "nl": "document; onderlegger"
+  },
+  "A1:springen": {
+    "en": "jump",
+    "nl": "springen"
+  },
+  "A1:zins": {
+    "en": "bank interest",
+    "nl": "rente"
+  },
+  "A1:wenden": {
+    "en": "turn; address oneself",
+    "nl": "keren; zich wenden tot"
+  },
+  "A1:fürchten": {
+    "en": "fear",
+    "nl": "vrezen"
+  },
+  "A1:vermissen": {
+    "en": "miss; long for",
+    "nl": "missen"
+  },
+  "A1:traditionell": {
+    "en": "traditional",
+    "nl": "traditioneel"
+  },
+  "A1:landen": {
+    "en": "land; arrive",
+    "nl": "landen"
+  },
+  "A1:fähigkeit": {
+    "en": "ability; skill",
+    "nl": "vermogen; vaardigheid"
+  },
+  "A1:freundschaft": {
+    "en": "friendship",
+    "nl": "vriendschap"
+  },
+  "A1:politiker": {
+    "en": "politician",
+    "nl": "politicus"
+  },
+  "A1:station": {
+    "en": "station; hospital ward",
+    "nl": "station; ziekenhuisafdeling"
+  },
+  "A1:klima": {
+    "en": "climate",
+    "nl": "klimaat"
+  },
+  "A1:atmen": {
+    "en": "breathe",
+    "nl": "ademen"
+  },
+  "A1:schick": {
+    "en": "chic; stylish",
+    "nl": "chic; stijlvol"
+  },
+  "A1:begleiten": {
+    "en": "accompany",
+    "nl": "begeleiden"
+  },
+  "A1:kapitel": {
+    "en": "chapter",
+    "nl": "hoofdstuk"
+  },
+  "A1:onkel": {
+    "en": "uncle",
+    "nl": "oom"
+  },
+  "A1:sturm": {
+    "en": "storm",
+    "nl": "storm"
+  },
+  "A1:hut": {
+    "en": "hat; guard",
+    "nl": "hoed; hoede"
+  },
+  "A1:unglaublich": {
+    "en": "incredible",
+    "nl": "onvoorstelbaar"
+  },
+  "A1:patient": {
+    "en": "patient",
+    "nl": "patiënt"
+  },
+  "A1:verhältnis": {
+    "en": "relationship; ratio",
+    "nl": "verhouding"
+  },
+  "A1:generation": {
+    "en": "generation",
+    "nl": "generatie"
+  },
+  "A1:auseinander": {
+    "en": "apart",
+    "nl": "uit elkaar"
+  },
+  "A1:warnen": {
+    "en": "warn",
+    "nl": "waarschuwen"
+  },
+  "A1:vergnügen": {
+    "en": "pleasure",
+    "nl": "genoegen"
+  },
+  "A1:institut": {
+    "en": "institute",
+    "nl": "instituut"
+  },
+  "A1:aufhalten": {
+    "en": "hold back; stay (reflexive)",
+    "nl": "tegenhouden; zich ophouden"
+  },
+  "A1:strecke": {
+    "en": "distance; route",
+    "nl": "traject; afstand"
+  },
+  "A1:gegensatz": {
+    "en": "contrast; opposite",
+    "nl": "tegenstelling"
+  },
+  "A1:erledigen": {
+    "en": "complete; deal with",
+    "nl": "afhandelen"
+  },
+  "A1:doppelt": {
+    "en": "double",
+    "nl": "dubbel"
+  },
+  "A1:verzichten": {
+    "en": "forgo; do without",
+    "nl": "afzien van; afstand doen van"
+  },
+  "A1:fangen": {
+    "en": "catch",
+    "nl": "vangen"
+  },
+  "A1:schlaf": {
+    "en": "sleep",
+    "nl": "slaap"
+  },
+  "A1:mauer": {
+    "en": "wall",
+    "nl": "muur"
+  },
+  "A1:sichern": {
+    "en": "secure; safeguard",
+    "nl": "beveiligen; verzekeren"
+  },
+  "A1:mobil": {
+    "en": "mobile",
+    "nl": "mobiel"
+  },
+  "A1:durchschnitt": {
+    "en": "average",
+    "nl": "gemiddelde"
+  },
+  "A1:tanz": {
+    "en": "dance",
+    "nl": "dans"
+  },
+  "A1:einzig": {
+    "en": "only; unique",
+    "nl": "enig; uniek"
+  },
+  "A1:ware": {
+    "en": "goods; merchandise",
+    "nl": "waar; goederen"
+  },
+  "A1:gas": {
+    "en": "gas",
+    "nl": "gas"
+  },
+  "A1:öfter": {
+    "en": "more often",
+    "nl": "vaker"
+  },
+  "A1:ausnahme": {
+    "en": "exception",
+    "nl": "uitzondering"
+  },
+  "A1:methode": {
+    "en": "method",
+    "nl": "methode"
+  },
+  "A1:prost": {
+    "en": "cheers!",
+    "nl": "proost!"
+  },
+  "A1:öffentlich": {
+    "en": "public",
+    "nl": "openbaar"
+  },
+  "A1:berechnen": {
+    "en": "calculate; charge",
+    "nl": "berekenen"
+  },
+  "A1:brust": {
+    "en": "chest; breast",
+    "nl": "borst"
+  },
+  "A1:klopfen": {
+    "en": "knock",
+    "nl": "kloppen"
+  },
+  "A1:angehörige": {
+    "en": "relative; family member",
+    "nl": "familielid; naaste"
+  },
+  "A1:erzählung": {
+    "en": "narrative; story",
+    "nl": "vertelling; verhaal"
+  },
+  "A1:forschung": {
+    "en": "scientific research",
+    "nl": "onderzoek"
+  },
+  "A1:locker": {
+    "en": "loose; relaxed",
+    "nl": "los; ontspannen"
+  },
+  "A1:eignen": {
+    "en": "be suitable",
+    "nl": "geschikt zijn"
+  },
+  "A1:knie": {
+    "en": "knee",
+    "nl": "knie"
+  },
+  "A1:wetten": {
+    "en": "bet",
+    "nl": "wedden"
+  },
+  "A1:technologie": {
+    "en": "technology",
+    "nl": "technologie"
+  },
+  "A1:aufmerksam": {
+    "en": "attentive; considerate",
+    "nl": "oplettend; attent"
+  },
+  "A1:schmal": {
+    "en": "narrow",
+    "nl": "smal"
+  },
+  "A1:mond": {
+    "en": "moon",
+    "nl": "maan"
+  },
+  "A1:ausbilden": {
+    "en": "train; provide vocational training",
+    "nl": "opleiden"
+  },
+  "A1:begeistert": {
+    "en": "enthusiastic",
+    "nl": "enthousiast"
+  },
+  "A1:phantasie": {
+    "en": "imagination",
+    "nl": "fantasie"
+  },
+  "A1:ersetzen": {
+    "en": "replace; compensate",
+    "nl": "vervangen; vergoeden"
+  },
+  "A1:hinterher": {
+    "en": "afterwards; behind",
+    "nl": "naderhand; erachteraan"
+  },
+  "A1:lippe": {
+    "en": "lip",
+    "nl": "lip"
+  },
+  "A1:zusammenarbeit": {
+    "en": "cooperation",
+    "nl": "samenwerking"
+  },
+  "A1:verabredung": {
+    "en": "appointment; arrangement",
+    "nl": "afspraak"
+  },
+  "A1:verrückt": {
+    "en": "crazy; eccentric",
+    "nl": "gek"
+  },
+  "A1:not": {
+    "en": "distress; need",
+    "nl": "nood"
+  },
+  "A1:schweigen": {
+    "en": "be silent",
+    "nl": "zwijgen"
+  },
+  "A1:zuständig": {
+    "en": "responsible; having jurisdiction",
+    "nl": "bevoegd; verantwoordelijk"
+  },
+  "A1:literatur": {
+    "en": "literature",
+    "nl": "literatuur"
+  },
+  "A1:aussen": {
+    "en": "outside",
+    "nl": "aan de buitenkant"
+  },
+  "A1:wolle": {
+    "en": "wool",
+    "nl": "wol"
+  },
+  "A1:statistik": {
+    "en": "statistics",
+    "nl": "statistiek"
+  },
+  "A1:verbessern": {
+    "en": "improve",
+    "nl": "verbeteren"
+  },
+  "A1:rechtlich": {
+    "en": "legal; relating to law",
+    "nl": "juridisch"
+  },
+  "A1:heim": {
+    "en": "home; residential home",
+    "nl": "thuis; tehuis"
+  }
+}

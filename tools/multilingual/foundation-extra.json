@@ -1,0 +1,388 @@
+[
+  {
+    "id": "foundation-extra:zero",
+    "level": "A1",
+    "texts": {
+      "ar": "صفر",
+      "en": "zero",
+      "nl": "nul",
+      "de": "null"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:one",
+    "level": "A1",
+    "texts": {
+      "ar": "واحد",
+      "en": "one",
+      "nl": "één",
+      "de": "eins"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:two",
+    "level": "A1",
+    "texts": {
+      "ar": "اثنان",
+      "en": "two",
+      "nl": "twee",
+      "de": "zwei"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:three",
+    "level": "A1",
+    "texts": {
+      "ar": "ثلاثة",
+      "en": "three",
+      "nl": "drie",
+      "de": "drei"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:four",
+    "level": "A1",
+    "texts": {
+      "ar": "أربعة",
+      "en": "four",
+      "nl": "vier",
+      "de": "vier"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:five",
+    "level": "A1",
+    "texts": {
+      "ar": "خمسة",
+      "en": "five",
+      "nl": "vijf",
+      "de": "fünf"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:six",
+    "level": "A1",
+    "texts": {
+      "ar": "ستة",
+      "en": "six",
+      "nl": "zes",
+      "de": "sechs"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:seven",
+    "level": "A1",
+    "texts": {
+      "ar": "سبعة",
+      "en": "seven",
+      "nl": "zeven",
+      "de": "sieben"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:eight",
+    "level": "A1",
+    "texts": {
+      "ar": "ثمانية",
+      "en": "eight",
+      "nl": "acht",
+      "de": "acht"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:nine",
+    "level": "A1",
+    "texts": {
+      "ar": "تسعة",
+      "en": "nine",
+      "nl": "negen",
+      "de": "neun"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:ten",
+    "level": "A1",
+    "texts": {
+      "ar": "عشرة",
+      "en": "ten",
+      "nl": "tien",
+      "de": "zehn"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:object-me",
+    "level": "A1",
+    "texts": {
+      "ar": "إياي",
+      "en": "me",
+      "nl": "mij",
+      "de": "mich"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation-extra:object-him",
+    "level": "A1",
+    "texts": {
+      "ar": "إياه",
+      "en": "him",
+      "nl": "hem",
+      "de": "ihn"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation-extra:object-her",
+    "level": "A1",
+    "texts": {
+      "ar": "إياها",
+      "en": "her",
+      "nl": "haar",
+      "de": "sie"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation-extra:object-us",
+    "level": "A1",
+    "texts": {
+      "ar": "إيانا",
+      "en": "us",
+      "nl": "ons",
+      "de": "uns"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation-extra:object-them",
+    "level": "A1",
+    "texts": {
+      "ar": "إياهم",
+      "en": "them",
+      "nl": "hen",
+      "de": "sie"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation-extra:my-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابي",
+      "en": "my book",
+      "nl": "mijn boek",
+      "de": "mein Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:your-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابك",
+      "en": "your book",
+      "nl": "jouw boek",
+      "de": "dein Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:his-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابه",
+      "en": "his book",
+      "nl": "zijn boek",
+      "de": "sein Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:her-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابها",
+      "en": "her book",
+      "nl": "haar boek",
+      "de": "ihr Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:our-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابنا",
+      "en": "our book",
+      "nl": "ons boek",
+      "de": "unser Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:their-book",
+    "level": "A1",
+    "texts": {
+      "ar": "كتابهم",
+      "en": "their book",
+      "nl": "hun boek",
+      "de": "ihr Buch"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation-extra:article-a",
+    "level": "A1",
+    "texts": {
+      "ar": "أداة تنكير",
+      "en": "a",
+      "nl": "een",
+      "de": "ein / eine"
+    },
+    "pos": "other",
+    "targetOnly": "en",
+    "examples": [
+      {
+        "texts": {
+          "ar": "لدي كتاب.",
+          "en": "I have a book.",
+          "nl": "Ik heb een boek.",
+          "de": "Ich habe ein Buch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation-extra:article-an",
+    "level": "A1",
+    "texts": {
+      "ar": "أداة تنكير",
+      "en": "an",
+      "nl": "een",
+      "de": "ein / eine"
+    },
+    "pos": "other",
+    "targetOnly": "en",
+    "examples": [
+      {
+        "texts": {
+          "ar": "هذه تفاحة.",
+          "en": "This is an apple.",
+          "nl": "Dit is een appel.",
+          "de": "Das ist ein Apfel."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation-extra:article-the",
+    "level": "A1",
+    "texts": {
+      "ar": "الـ",
+      "en": "the",
+      "nl": "de / het",
+      "de": "der / die / das"
+    },
+    "pos": "other",
+    "targetOnly": "en",
+    "examples": [
+      {
+        "texts": {
+          "ar": "افتح الكتاب.",
+          "en": "Open the book.",
+          "nl": "Open het boek.",
+          "de": "Öffne das Buch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation-extra:dutch-de",
+    "level": "A1",
+    "texts": {
+      "ar": "الـ",
+      "en": "the",
+      "nl": "de",
+      "de": "der / die"
+    },
+    "pos": "other",
+    "targetOnly": "nl",
+    "examples": [
+      {
+        "texts": {
+          "ar": "المدرسة مفتوحة.",
+          "en": "The school is open.",
+          "nl": "De school is open.",
+          "de": "Die Schule ist geöffnet."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation-extra:dutch-het",
+    "level": "A1",
+    "texts": {
+      "ar": "الـ",
+      "en": "the",
+      "nl": "het",
+      "de": "das"
+    },
+    "pos": "other",
+    "targetOnly": "nl",
+    "examples": [
+      {
+        "texts": {
+          "ar": "الكتاب هنا.",
+          "en": "The book is here.",
+          "nl": "Het boek is hier.",
+          "de": "Das Buch ist hier."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation-extra:dutch-een",
+    "level": "A1",
+    "texts": {
+      "ar": "أداة تنكير",
+      "en": "a / an",
+      "nl": "een",
+      "de": "ein / eine"
+    },
+    "pos": "other",
+    "targetOnly": "nl",
+    "examples": [
+      {
+        "texts": {
+          "ar": "لدي كتاب.",
+          "en": "I have a book.",
+          "nl": "Ik heb een boek.",
+          "de": "Ich habe ein Buch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  }
+]

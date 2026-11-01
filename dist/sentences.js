@@ -1,12 +1,15 @@
 /* Original German sentence-building lessons, with Arabic teaching notes. */
 (() => {
   'use strict';
+  const C=globalThis.WORT_COURSE||{native:'ar',target:'de',dir:code=>code==='ar'?'rtl':'ltr',key:key=>key};
+  const L=globalThis.WORT_LESSON_COURSES||{sentences:(exercises,rules)=>({exercises,rules}),t:value=>value,text:value=>value,localize:()=>{}};
+  const TARGET=C.target,NATIVE=C.native,TDIR=C.dir(TARGET),NDIR=C.dir(NATIVE);
   const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
-  const STORAGE_KEY = 'wort-sentences-v1';
+  const STORAGE_KEY = C.key('wort-sentences-v1');
   const mounted = new WeakMap();
   const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const make = (id, level, title, words, meaning, instruction, explanation, alternatives = []) => ({ id, level, title, words, meaning, instruction, explanation, alternatives });
-  const EXERCISES = [
+  const LEGACY_EXERCISES = [
     make('a1-statement', 'A1', 'الجملة الخبرية البسيطة', ['Ich', 'lerne', 'Deutsch', '.'], 'أنا أتعلّم الألمانية.', 'ابدأ بـ Ich، ثم ضع الفعل وبعده اللغة التي تتعلّمها.', 'في هذه الجملة: Ich فاعل، وlerne فعل مصرّف مع ich، وDeutsch تكملة. الفعل المصرّف يحتلّ الموضع الثاني.'),
     make('a1-time-first', 'A1', 'حين تبدأ الجملة بالزمان', ['Heute', 'trinke', 'ich', 'Kaffee', '.'], 'اليوم أشرب القهوة.', 'ابدأ بظرف الزمان Heute. اجعل الفاعل مباشرة بعد الفعل.', 'يمكن أن يبدأ ظرف الزمان الجملة. يبقى الفعل trinke في الموضع الثاني، ثم يأتي الفاعل ich. الموضع يعني عنصرًا في الجملة، لا عدد الكلمات دائمًا.'),
     make('a1-yes-no', 'A1', 'سؤال إجابته نعم أو لا', ['Lernst', 'du', 'Deutsch', '?'], 'هل تتعلّم الألمانية؟', 'كوّن سؤالًا يبدأ بالفعل Lernst، ثم ضع الفاعل.', 'في سؤال نعم/لا يبدأ الفعل المصرّف الجملة: Lernst du …? صيغة lernst تناسب الضمير du.'),
@@ -37,13 +40,14 @@
     make('c1-unreal-condition', 'C1', 'الشرط الافتراضي', ['Wenn', 'ich', 'mehr', 'Zeit', 'hätte', ',', 'würde', 'ich', 'regelmäßig', 'schreiben', '.'], 'لو كان لديّ وقت أكثر، لكتبت بانتظام.', 'ابدأ بـ Wenn ich mehr Zeit hätte. بعد الفاصلة ضع würde ثم ich، واجعل schreiben آخر كلمة قبل النقطة.', 'hätte في جملة الشرط صيغة Konjunktiv II ويتأخّر إلى النهاية. تبدأ الجملة الرئيسية بـ würde بعد الجزء الشرطي، ويبقى schreiben مصدرًا في آخرها.'),
     make('c1-reported-speech', 'C1', 'الكلام المنقول دون dass', ['Der', 'Autor', 'betont', ',', 'die', 'Ergebnisse', 'seien', 'noch', 'nicht', 'eindeutig', '.'], 'يؤكّد الكاتب أن النتائج ليست حاسمة بعد.', 'ابدأ بـ Der Autor betont. انقل قوله دون dass: ابدأ بالفاعل die Ergebnisse، ثم seien.', 'seien صيغة Konjunktiv I للجمع، وتُستخدم هنا لنقل كلام الكاتب. لأن الجزء المنقول لا يبدأ بـ dass في هذا النمط، يبقى فعله seien في الموضع الثاني بعد die Ergebnisse.')
   ];
-  const RULES = {
+  const LEGACY_RULES = {
     A1: { title: 'ابدأ من مكان الفعل', pattern: [['الفاعل', 'subject'], ['الفعل المصرّف', 'verb'], ['التكملة', 'object']], notes: ['في الجملة الخبرية يكون الفعل المصرّف ثاني عنصر.', 'في سؤال نعم/لا يبدأ الفعل الجملة. مع أداة سؤال يأتي بعدها.', 'طابق تصريف الفعل مع الفاعل، وأضف علامة النهاية.'] },
     A2: { title: 'تعلّم قوس الفعل', pattern: [['العنصر الأول', 'subject'], ['الفعل المصرّف', 'verb'], ['التكملات', 'object'], ['جزء الفعل الأخير', 'verb']], notes: ['مع فعل ناقص يتأخّر المصدر إلى آخر الجملة.', 'الفعل القابل للانفصال يترك بادئته في النهاية.', 'في Perfekt يأتي الفعل المساعد مبكرًا واسم المفعول أخيرًا.'] },
     B1: { title: 'ميّز الرئيسية عن الفرعية', pattern: [['أداة الربط', 'connector'], ['الفاعل والتكملات', 'object'], ['الفعل المصرّف أخيرًا', 'verb']], notes: ['بعد weil وdass وwenn يأتي الفعل المصرّف في نهاية الجملة الفرعية.', 'إذا سبقت الجملة الفرعية، يليها فعل الجملة الرئيسية ثم فاعلها.', 'المصدر مع zu له تركيب مختلف عن الفعل المصرّف.'] },
     B2: { title: 'اربط الأفكار مع ضبط وظيفة كل جزء', pattern: [['الفكرة الرئيسية', 'subject'], ['فاصلة وأداة ربط', 'connector'], ['تفصيل أو هدف', 'object'], ['فعل الجزء الفرعي', 'verb']], notes: ['ضمير الوصل يأخذ جنسه وعدده من الاسم السابق، وحالته من دوره داخل جملة الوصل.', 'بعد obwohl يبقى الفعل في نهاية الجزء الفرعي.', 'um … zu يعبّر عن هدف يشترك صاحبه مع فاعل الرئيسية.'] },
     C1: { title: 'اضبط نوع الجملة قبل ترتيب الأفعال', pattern: [['جملة ممهِّدة', 'subject'], ['ترابط منطقي', 'connector'], ['مجموعة الأفعال', 'verb']], notes: ['السؤال غير المباشر مع ob يتبع ترتيب الجملة الفرعية.', 'المبني للمجهول مع فعل ناقص ينتهي باسم المفعول ثم werden.', 'الكلام المنقول والشرط والمقارنة النسبية تحتاج الانتباه إلى صيغة الفعل وموضعه معًا.'] }
   };
+  const {exercises:EXERCISES,rules:RULES}=L.sentences(LEGACY_EXERCISES,LEGACY_RULES);
   function readProgress() {
     try {
       const value = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
@@ -60,7 +64,7 @@
     if (length > 1 && indices.every((value, index) => value === index)) indices.push(indices.shift());
     return indices;
   }
-  function sentence(words) { return words.join(' ').replace(/\s+([,.!?;:])/g, '$1'); }
+  function sentence(words) { return words.join(' ').replace(/\s+([,.!?;:،؛؟])/g, '$1'); }
   function equalWords(a, b) { return a.length === b.length && a.every((word, index) => word === b[index]); }
   function mount(container) {
     if (!container || typeof container.innerHTML !== 'string') throw new TypeError('A container element is required.');
@@ -95,22 +99,23 @@
       const alternatives = [exercise.words, ...exercise.alternatives];
       const answer = state.selected.map(tokenIndex => exercise.words[tokenIndex]);
       container.innerHTML = `<div class="lesson-module sentence-module">
-        <div class="welcome"><p class="eyebrow">افهم النمط، ثم جرّبه بنفسك</p><h1 class="hero-title">كيف أركّب جملة؟</h1><p class="hero-subtitle">شرح قصير، وكلمات ترتّبها لتبني جملة ألمانية مفهومة.</p></div>
+        <div class="welcome"><p class="eyebrow">افهم النمط، ثم جرّبه بنفسك</p><h1 class="hero-title">كيف أركّب جملة؟</h1><p class="hero-subtitle">شرح قصير، وكلمات ترتّبها لتبني جملة مفهومة.</p></div>
         <div class="lesson-levels level-tabs" aria-label="مستوى تركيب الجملة">${LEVELS.map(level => `<button type="button" class="lesson-level level-tab ${level === state.level ? 'active' : ''}" data-sentence-level="${level}" aria-pressed="${level === state.level}"><strong dir="ltr">${level}</strong></button>`).join('')}</div>
-        <details class="lesson-rule-card sentence-rule-card" ${state.ruleOpen ? 'open' : ''}><summary>${escapeHtml(rule.title)}</summary><div class="sentence-pattern" aria-label="مخطط الجملة">${rule.pattern.map(([label, role], position) => `${position ? '<span class="sentence-pattern-arrow" aria-hidden="true">←</span>' : ''}<span class="sentence-pattern-chip sentence-role-${role}">${escapeHtml(label)}</span>`).join('')}</div><ul>${rule.notes.map(note => `<li>${escapeHtml(note)}</li>`).join('')}</ul></details>
+        <details class="lesson-rule-card sentence-rule-card" ${state.ruleOpen ? 'open' : ''}><summary>${escapeHtml(rule.title)}</summary><div class="sentence-pattern" aria-label="مخطط الجملة">${rule.pattern.map(([label, role], position) => `${position ? `<span class="sentence-pattern-arrow" aria-hidden="true">${NDIR==='rtl'?'←':'→'}</span>` : ''}<span class="sentence-pattern-chip sentence-role-${role}">${escapeHtml(label)}</span>`).join('')}</div><ul>${rule.notes.map(note => `<li>${escapeHtml(note)}</li>`).join('')}</ul></details>
         <div class="lesson-progress"><span>أنجزت ${solvedLevel} من ${exercises.length} في ${state.level}</span><span>المجموع <bdi dir="ltr">${progress.solved.size} / ${EXERCISES.length}</bdi></span></div>
         <div class="track" role="progressbar" aria-label="تقدم تمارين ${state.level}" aria-valuemin="0" aria-valuemax="${exercises.length}" aria-valuenow="${solvedLevel}"><i style="width:${solvedLevel / exercises.length * 100}%"></i></div>
         <div class="lesson-toolbar sentence-toolbar"><label for="sentence-exercise-select">اختر التمرين</label><select id="sentence-exercise-select" class="filter-select" data-sentence-select>${exercises.map((item, itemIndex) => `<option value="${item.id}" ${item.id === exercise.id ? 'selected' : ''}>${itemIndex + 1}. ${escapeHtml(item.title)}${progress.solved.has(item.id) ? ' ✓' : ''}</option>`).join('')}</select></div>
         <section class="sentence-exercise lesson-card" aria-labelledby="sentence-exercise-title"><div class="section-heading"><h2 id="sentence-exercise-title" tabindex="-1">${escapeHtml(exercise.title)}</h2><span dir="ltr">${index + 1} / ${exercises.length}</span></div><p class="sentence-meaning">${escapeHtml(exercise.meaning)}</p><p class="sentence-instruction">${escapeHtml(exercise.instruction)}</p>
-          <h3 class="lesson-label">جملتك</h3><div class="sentence-answer" lang="de" dir="ltr" aria-label="الجملة التي تركّبها">${state.selected.length ? state.selected.map(tokenIndex => `<button type="button" class="sentence-token sentence-answer-token" data-answer-token="${tokenIndex}" aria-label="إزالة ${escapeHtml(exercise.words[tokenIndex])} من الجملة؛ يمكنك تحريكه بسهمَي اليمين واليسار">${escapeHtml(exercise.words[tokenIndex])}</button>`).join('') : '<span class="sentence-placeholder" lang="ar" dir="rtl">اضغط الكلمات في الأسفل بالترتيب الذي تختاره.</span>'}</div>
-          <h3 class="lesson-label">الكلمات المتاحة</h3><div class="sentence-bank" lang="de" dir="ltr" aria-label="كلمات التمرين">${state.bank.map(tokenIndex => `<button type="button" class="sentence-token ${selected.has(tokenIndex) ? 'is-used' : ''}" data-bank-token="${tokenIndex}" ${selected.has(tokenIndex) ? 'disabled' : ''} aria-label="أضف ${escapeHtml(exercise.words[tokenIndex])} إلى الجملة">${escapeHtml(exercise.words[tokenIndex])}</button>`).join('')}</div>
+          <h3 class="lesson-label">جملتك</h3><div class="sentence-answer" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}" aria-label="الجملة التي تركّبها">${state.selected.length ? state.selected.map(tokenIndex => `<button type="button" class="sentence-token sentence-answer-token" data-answer-token="${tokenIndex}" aria-label="إزالة ${escapeHtml(exercise.words[tokenIndex])} من الجملة؛ يمكنك تحريكه بسهمَي اليمين واليسار">${escapeHtml(exercise.words[tokenIndex])}</button>`).join('') : `<span class="sentence-placeholder" lang="${NATIVE}" dir="${NDIR}" data-lesson-ui>${escapeHtml(L.t('اضغط الكلمات في الأسفل بالترتيب الذي تختاره.'))}</span>`}</div>
+          <h3 class="lesson-label">الكلمات المتاحة</h3><div class="sentence-bank" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}" aria-label="كلمات التمرين">${state.bank.map(tokenIndex => `<button type="button" class="sentence-token ${selected.has(tokenIndex) ? 'is-used' : ''}" data-bank-token="${tokenIndex}" ${selected.has(tokenIndex) ? 'disabled' : ''} aria-label="أضف ${escapeHtml(exercise.words[tokenIndex])} إلى الجملة">${escapeHtml(exercise.words[tokenIndex])}</button>`).join('')}</div>
           <p class="source-note sentence-help">اضغط كلمة في جملتك لإعادتها إلى البنك. من لوحة المفاتيح: حرّك الكلمة بسهمَي اليمين واليسار، أو احذفها بزر الحذف.</p>
           <div class="sentence-actions"><button type="button" class="primary" data-sentence-action="check">تحقّق من الترتيب ✓</button><button type="button" class="secondary" data-sentence-action="undo" ${state.selected.length ? '' : 'disabled'}>تراجع</button><button type="button" class="secondary" data-sentence-action="reset">أعد المحاولة</button><button type="button" class="secondary" data-sentence-action="reveal">أظهر النموذج</button><button type="button" class="secondary" data-example-speak="${escapeHtml(sentence(exercise.words))}">استمع إلى النموذج ♬</button></div>
-          <div class="sentence-feedback ${state.feedbackType}" role="status" aria-live="polite" tabindex="-1">${state.feedback ? `<p>${escapeHtml(state.feedback)}</p>` : ''}${state.showExplanation ? `<p class="sentence-result" lang="de" dir="ltr">${escapeHtml(sentence(answer.length ? answer : exercise.words))}</p><p>${escapeHtml(exercise.explanation)}</p>${alternatives.length > 1 ? `<details class="sentence-alternatives"><summary>ترتيبات مقبولة في هذا التمرين</summary>${alternatives.map(words => `<p lang="de" dir="ltr">${escapeHtml(sentence(words))}</p>`).join('')}</details>` : ''}` : ''}</div>
+          <div class="sentence-feedback ${state.feedbackType}" role="status" aria-live="polite" tabindex="-1">${state.feedback ? `<p>${escapeHtml(state.feedback)}</p>` : ''}${state.showExplanation ? `<p class="sentence-result" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}">${escapeHtml(sentence(answer.length ? answer : exercise.words))}</p><p>${escapeHtml(exercise.explanation)}</p>${alternatives.length > 1 ? `<details class="sentence-alternatives"><summary>ترتيبات مقبولة في هذا التمرين</summary>${alternatives.map(words => `<p lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}">${escapeHtml(sentence(words))}</p>`).join('')}</details>` : ''}` : ''}</div>
         </section>
         <div class="lesson-pagination"><button type="button" class="secondary" data-sentence-action="previous" ${index > 0 ? '' : 'disabled'}>التمرين السابق</button><button type="button" class="primary" data-sentence-action="next" ${index < exercises.length - 1 ? '' : 'disabled'}>التمرين التالي ←</button></div>
         <p class="source-note">كل تمرين يحدّد نمطًا أو بدايةً مطلوبة. قد توجد جمل صحيحة أخرى خارج هذا النمط؛ هذا تدريب على الترتيب، وليس مصحّحًا آليًا للكتابة الحرّة.${state.storageAvailable ? ' يُحفظ إنجازك في هذا المتصفح.' : ' التخزين غير متاح حاليًا؛ يُحفظ الإنجاز خلال هذه الجلسة فقط.'}</p>
       </div>`;
+      L.localize(container);
     }
     function checkAnswer() {
       const exercise = current();
@@ -206,7 +211,7 @@
         container.querySelector(`[data-bank-token="${tokenIndex}"]`)?.focus();
         return;
       }
-      const next = event.key === 'Home' ? 0 : event.key === 'End' ? state.selected.length - 1 : index + (event.key === 'ArrowLeft' ? -1 : 1);
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? state.selected.length - 1 : index + (event.key === 'ArrowLeft' ? -1 : 1) * (TDIR==='rtl'?-1:1);
       if (next < 0 || next >= state.selected.length || next === index) return;
       state.selected.splice(index, 1); state.selected.splice(next, 0, tokenIndex);
       clearFeedback(); render();

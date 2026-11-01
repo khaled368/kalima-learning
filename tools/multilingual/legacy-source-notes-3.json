@@ -1,0 +1,146 @@
+[
+  {
+    "id": "A2:zack",
+    "german": "Zack",
+    "arabic": "طق؛ تعبير عن ضربة أو حركة سريعة",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:ciao",
+    "german": "Ciao",
+    "arabic": "مرحبًا؛ وداعًا (تحية إيطالية)",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:aua",
+    "german": "Aua",
+    "arabic": "آخ؛ وجع (تعبير طفولي)",
+    "pos": "noun",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:hurra",
+    "german": "Hurra",
+    "arabic": "مرحى؛ هورّاي",
+    "pos": "noun",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:pst",
+    "german": "Pst",
+    "arabic": "هسّ؛ صوت لطلب الصمت",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:nö",
+    "german": "Nö",
+    "arabic": "لا، بالعامية",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:autsch",
+    "german": "Autsch",
+    "arabic": "آخ؛ تعبير عن الألم",
+    "pos": "noun",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:igitt",
+    "german": "Igitt",
+    "arabic": "أُفّ؛ يع؛ تعبير عن الاشمئزاز",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "The intended sense is an interjection or exclamation; the source POS labels it as an adjective or noun. Translations give the actual exclamation or a descriptive gloss."
+  },
+  {
+    "id": "B1:gemäss",
+    "german": "gemäß",
+    "arabic": "وفقًا لـ؛ مطابق لـ",
+    "pos": "adjective",
+    "kind": "part_of_speech",
+    "note": "Arabic and translations use gemäß as a preposition meaning according to; source POS says adjective."
+  },
+  {
+    "id": "B1:ca",
+    "german": "ca",
+    "arabic": "حوالي؛ تقريبًا (اختصار circa)",
+    "pos": "noun",
+    "kind": "part_of_speech",
+    "note": "ca is the abbreviation of circa (approximately), not an ordinary noun."
+  },
+  {
+    "id": "B1:unglücklicherweise",
+    "german": "Unglücklicherweise",
+    "arabic": "للأسف؛ لسوء الحظ",
+    "pos": "noun",
+    "kind": "part_of_speech",
+    "note": "Unglücklicherweise means unfortunately and normally functions as an adverb; source POS says noun."
+  },
+  {
+    "id": "B1:han",
+    "german": "Han",
+    "arabic": "خان؛ نُزل للمسافرين؛ أو هان اسم علم",
+    "pos": "noun",
+    "kind": "sense_ambiguity",
+    "note": "Han is translated according to the supplied Arabic caravanserai/inn sense, with the personal-name alternative retained. Context should determine whether a proper name is intended."
+  },
+  {
+    "id": "B1:jean",
+    "german": "Jean",
+    "arabic": "جينز؛ سروال دنيم (صيغة إقليمية)",
+    "pos": "noun",
+    "kind": "sense_ambiguity",
+    "note": "Jean is translated as the regional singular noun for jeans, as specified in Arabic; it can also be a personal name in other contexts."
+  },
+  {
+    "id": "B1:amber",
+    "german": "Amber",
+    "arabic": "العنبر المستخدم في العطور",
+    "pos": "noun",
+    "kind": "sense_ambiguity",
+    "note": "Amber is translated as ambergris/perfumery fragrance substance according to Arabic, rather than the fossil resin sense of English amber."
+  },
+  {
+    "id": "B1:chan",
+    "german": "Chan",
+    "arabic": "خان؛ نُزل للقوافل",
+    "pos": "noun",
+    "kind": "sense_ambiguity",
+    "note": "Chan is translated as the historical caravanserai/inn sense specified in Arabic, not as a personal name."
+  },
+  {
+    "id": "B1:merlin",
+    "german": "Merlin",
+    "arabic": "صقر صغير؛ صقر اليؤيؤ",
+    "pos": "noun",
+    "kind": "sense_disambiguation",
+    "note": "Merlin is translated as the small falcon (Dutch smelleken), not the legendary wizard."
+  },
+  {
+    "id": "B1:gipfel",
+    "german": "Gipfel",
+    "arabic": "قيمة جبل / قمة قمة مؤتمر",
+    "pos": "noun",
+    "kind": "arabic_typo",
+    "note": "Arabic contains قيمة جبل; the mountain-peak sense should be قمة جبل. English and Dutch use peak/summit."
+  },
+  {
+    "id": "B1:tiger",
+    "german": "Tiger",
+    "arabic": "نمر",
+    "pos": "noun",
+    "kind": "arabic_ambiguity",
+    "note": "German Tiger is tiger / tijger. Arabic نمر can be ambiguous or refer to leopard in precise zoological usage; ببر is the unambiguous tiger term."
+  }
+]

@@ -1,0 +1,25 @@
+Ding / FreeDict German–English
+https://dict.tu-chemnitz.de/
+GPL-3.0 / AGPL-3.0 for separate parts of the combined TEI
+
+WikDict German–Dutch and English–Dutch
+https://www.wikdict.com/page/download
+CC BY-SA 4.0; Wiktionary data extracted via DBnary and WikDict
+
+FreeDict English–Arabic / Arabeyes
+https://freedict.org/downloads/#dictionary-downloads
+GPL-2.0-or-later
+
+Arabic WordNet / Open Dutch WordNet / Princeton WordNet3.0
+https://github.com/omwn/omw-data
+Arabic CC BY-SA3.0; Dutch CC BY-SA4.0; English WordNet licence
+
+Tatoeba sentence pairs via ManyThings
+https://www.manythings.org/anki/
+CC BY2.0 FR; sentence attribution retained in each example
+
+FrequencyWords
+https://github.com/hermitdave/FrequencyWords
+CC BY-SA4.0 (frequency data); ranking only
+
+Source dictionary translation links are reproduced with original source attribution. Sentence attributions are included per example. Authored legacy overrides are maintained in tools/multilingual/.

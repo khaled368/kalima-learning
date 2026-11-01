@@ -1,0 +1,7302 @@
+{
+  "B1:stange": {
+    "en": "rod; pole",
+    "nl": "stang; paal"
+  },
+  "B1:volltreffer": {
+    "en": "direct hit; complete success",
+    "nl": "voltreffer; groot succes"
+  },
+  "B1:luxus": {
+    "en": "luxury",
+    "nl": "luxe"
+  },
+  "B1:look": {
+    "en": "look; style",
+    "nl": "uiterlijk; stijl"
+  },
+  "B2:leinwand": {
+    "en": "canvas; projection screen",
+    "nl": "schilderdoek; projectiescherm"
+  },
+  "B2:model": {
+    "en": "fashion model",
+    "nl": "fotomodel; mannequin"
+  },
+  "B2:chirurg": {
+    "en": "surgeon",
+    "nl": "chirurg"
+  },
+  "B2:blase": {
+    "en": "bladder; bubble",
+    "nl": "blaas; luchtbel"
+  },
+  "B2:rüstung": {
+    "en": "armour; armament",
+    "nl": "harnas; bewapening"
+  },
+  "B2:glotzt": {
+    "en": "stares; gawks",
+    "nl": "staart; gaapt aan"
+  },
+  "B2:misere": {
+    "en": "predicament; miserable situation",
+    "nl": "ellende; benarde situatie"
+  },
+  "B2:unverständlich": {
+    "en": "incomprehensible; unintelligible",
+    "nl": "onbegrijpelijk; onverstaanbaar"
+  },
+  "B2:übergabe": {
+    "en": "handover; delivery",
+    "nl": "overdracht; overhandiging"
+  },
+  "B2:angreifer": {
+    "en": "attacker; assassin",
+    "nl": "aanvaller; aanslagpleger"
+  },
+  "B2:knurren": {
+    "en": "growling; rumbling",
+    "nl": "gegrom; gerommel"
+  },
+  "B2:vergeltung": {
+    "en": "retribution; retaliation",
+    "nl": "vergelding; wraak"
+  },
+  "B2:techniker": {
+    "en": "technician",
+    "nl": "technicus"
+  },
+  "B2:mathe": {
+    "en": "mathematics; maths (informal)",
+    "nl": "wiskunde (informele afkorting)"
+  },
+  "B2:sirene": {
+    "en": "siren; alarm signal",
+    "nl": "sirene"
+  },
+  "B2:attentäter": {
+    "en": "assailant; would-be assassin",
+    "nl": "aanslagpleger; moordaanslagpleger"
+  },
+  "B2:einsame": {
+    "en": "lonely; isolated (inflected form)",
+    "nl": "eenzaam; afgezonderd (verbogen vorm)"
+  },
+  "B2:reue": {
+    "en": "remorse; regret",
+    "nl": "berouw; spijt"
+  },
+  "B2:erzähler": {
+    "en": "narrator",
+    "nl": "verteller"
+  },
+  "B2:belügen": {
+    "en": "to lie to someone",
+    "nl": "tegen iemand liegen"
+  },
+  "B2:dom": {
+    "en": "cathedral",
+    "nl": "kathedraal"
+  },
+  "B2:beruhigungsmittel": {
+    "en": "sedative; tranquilizer",
+    "nl": "kalmeringsmiddel"
+  },
+  "B2:untergehen": {
+    "en": "to sink; to set; to perish",
+    "nl": "zinken; ondergaan"
+  },
+  "B2:beutel": {
+    "en": "bag; pouch",
+    "nl": "zak; buidel"
+  },
+  "B2:verdächtiger": {
+    "en": "suspect",
+    "nl": "verdachte"
+  },
+  "B2:gnädig": {
+    "en": "merciful; gracious",
+    "nl": "genadig; welwillend"
+  },
+  "B2:aufhängen": {
+    "en": "to hang up; to hang someone",
+    "nl": "ophangen"
+  },
+  "B2:abstellen": {
+    "en": "to park; to switch off",
+    "nl": "parkeren; uitschakelen"
+  },
+  "B2:überdenken": {
+    "en": "to reconsider; to rethink",
+    "nl": "heroverwegen; opnieuw doordenken"
+  },
+  "B2:schwindel": {
+    "en": "dizziness; fraud",
+    "nl": "duizeligheid; bedrog"
+  },
+  "B2:pest": {
+    "en": "plague",
+    "nl": "pest"
+  },
+  "B2:untergrund": {
+    "en": "ground; underground",
+    "nl": "ondergrond; ondergrondse beweging"
+  },
+  "B2:geduldig": {
+    "en": "patient",
+    "nl": "geduldig"
+  },
+  "B2:tango": {
+    "en": "tango",
+    "nl": "tango"
+  },
+  "B2:herhören": {
+    "en": "to listen to the speaker",
+    "nl": "hier luisteren; naar de spreker luisteren"
+  },
+  "B2:drohne": {
+    "en": "drone; male bee",
+    "nl": "drone; dar"
+  },
+  "B2:sumpf": {
+    "en": "swamp; marsh",
+    "nl": "moeras"
+  },
+  "B2:kinn": {
+    "en": "chin",
+    "nl": "kin"
+  },
+  "B2:aufgeschrieben": {
+    "en": "written down",
+    "nl": "opgeschreven"
+  },
+  "B2:bedacht": {
+    "en": "considered; roofed",
+    "nl": "overwogen; van een dak voorzien"
+  },
+  "B2:tower": {
+    "en": "airport control tower",
+    "nl": "verkeerstoren van een luchthaven"
+  },
+  "B2:kratzen": {
+    "en": "to scratch",
+    "nl": "krabben"
+  },
+  "B2:qual": {
+    "en": "torment; agony",
+    "nl": "kwelling; hevige pijn"
+  },
+  "B2:dinosaurier": {
+    "en": "dinosaur",
+    "nl": "dinosaurus"
+  },
+  "B2:unsterblich": {
+    "en": "immortal",
+    "nl": "onsterfelijk"
+  },
+  "B2:quatschen": {
+    "en": "to chat; to chatter",
+    "nl": "kletsen; babbelen"
+  },
+  "B2:speed": {
+    "en": "speed; amphetamine (slang)",
+    "nl": "speed; amfetamine"
+  },
+  "B2:freilassen": {
+    "en": "to release; to set free",
+    "nl": "vrijlaten"
+  },
+  "B2:pentagon": {
+    "en": "pentagon; five-sided polygon",
+    "nl": "vijfhoek"
+  },
+  "B2:wal": {
+    "en": "whale",
+    "nl": "walvis"
+  },
+  "B2:ertrinken": {
+    "en": "to drown",
+    "nl": "verdrinken"
+  },
+  "B2:hervorragende": {
+    "en": "excellent; outstanding (inflected form)",
+    "nl": "uitstekend; voortreffelijk (verbogen vorm)"
+  },
+  "B2:anstalt": {
+    "en": "institution; establishment",
+    "nl": "instelling; inrichting"
+  },
+  "B2:arena": {
+    "en": "arena",
+    "nl": "arena"
+  },
+  "B2:vati": {
+    "en": "daddy; dad",
+    "nl": "papa; pappie"
+  },
+  "B2:jahrhunderte": {
+    "en": "centuries",
+    "nl": "eeuwen"
+  },
+  "B2:spitzel": {
+    "en": "informer; spy",
+    "nl": "verklikker; spion"
+  },
+  "B2:auslöser": {
+    "en": "trigger; cause",
+    "nl": "aanleiding; trekker"
+  },
+  "B2:horn": {
+    "en": "horn",
+    "nl": "hoorn"
+  },
+  "B2:tänzerin": {
+    "en": "female dancer",
+    "nl": "danseres"
+  },
+  "B2:aufzupassen": {
+    "en": "to pay attention; to watch out",
+    "nl": "op te letten; op te passen"
+  },
+  "B2:schlamm": {
+    "en": "mud; sludge",
+    "nl": "modder; slijk"
+  },
+  "B2:inspiration": {
+    "en": "inspiration",
+    "nl": "inspiratie"
+  },
+  "B2:pakt": {
+    "en": "pact; alliance",
+    "nl": "pact; verbond"
+  },
+  "B2:hotelzimmer": {
+    "en": "hotel room",
+    "nl": "hotelkamer"
+  },
+  "B2:wehen": {
+    "en": "labour pains",
+    "nl": "weeën"
+  },
+  "B2:satellit": {
+    "en": "satellite",
+    "nl": "satelliet"
+  },
+  "B2:verhören": {
+    "en": "to interrogate; to mishear",
+    "nl": "verhoren; verkeerd verstaan"
+  },
+  "B2:zutiefst": {
+    "en": "deeply; profoundly",
+    "nl": "diep; ten zeerste"
+  },
+  "B2:zerrissen": {
+    "en": "torn; ripped",
+    "nl": "gescheurd; verscheurd"
+  },
+  "B2:umarmung": {
+    "en": "hug; embrace",
+    "nl": "omhelzing"
+  },
+  "B2:jedesmal": {
+    "en": "every time",
+    "nl": "elke keer"
+  },
+  "B2:durchkommen": {
+    "en": "to get through; to make it through",
+    "nl": "erdoor komen; doorkomen"
+  },
+  "B2:prügeln": {
+    "en": "to beat up; to fight",
+    "nl": "in elkaar slaan; vechten"
+  },
+  "B2:unfähig": {
+    "en": "incapable; incompetent",
+    "nl": "onbekwaam; niet in staat"
+  },
+  "B2:entführer": {
+    "en": "kidnapper",
+    "nl": "ontvoerder"
+  },
+  "B2:letztens": {
+    "en": "recently; lately",
+    "nl": "onlangs; laatst"
+  },
+  "B2:pony": {
+    "en": "pony; fringe of hair",
+    "nl": "pony; ponyhaar"
+  },
+  "B2:misstrauisch": {
+    "en": "suspicious; distrustful",
+    "nl": "wantrouwig; achterdochtig"
+  },
+  "B2:verwirrung": {
+    "en": "confusion",
+    "nl": "verwarring"
+  },
+  "B2:erraten": {
+    "en": "to guess correctly",
+    "nl": "juist raden"
+  },
+  "B2:hoppla": {
+    "en": "oops!; whoops!",
+    "nl": "oeps!; hopla!"
+  },
+  "B2:perücke": {
+    "en": "wig",
+    "nl": "pruik"
+  },
+  "B2:ehrgeiz": {
+    "en": "ambition",
+    "nl": "eerzucht; ambitie"
+  },
+  "B2:generator": {
+    "en": "generator",
+    "nl": "generator"
+  },
+  "B2:unerträglich": {
+    "en": "unbearable",
+    "nl": "ondraaglijk"
+  },
+  "B2:kindermädchen": {
+    "en": "nanny; childminder",
+    "nl": "kindermeisje; oppas"
+  },
+  "B2:schickst": {
+    "en": "you send",
+    "nl": "jij stuurt"
+  },
+  "B2:spaghetti": {
+    "en": "spaghetti",
+    "nl": "spaghetti"
+  },
+  "B2:mittagspause": {
+    "en": "lunch break",
+    "nl": "lunchpauze"
+  },
+  "B2:schuldgefühle": {
+    "en": "feelings of guilt",
+    "nl": "schuldgevoelens"
+  },
+  "B2:valentinstag": {
+    "en": "Valentine's Day",
+    "nl": "Valentijnsdag"
+  },
+  "B2:feinen": {
+    "en": "to refine metal",
+    "nl": "metaal zuiveren"
+  },
+  "B2:bucht": {
+    "en": "bay; small inlet",
+    "nl": "baai; inham"
+  },
+  "B2:zerbrechen": {
+    "en": "to break; to shatter",
+    "nl": "breken; verbrijzelen"
+  },
+  "B2:fies": {
+    "en": "mean; nasty",
+    "nl": "gemeen; akelig"
+  },
+  "B2:hospital": {
+    "en": "hospital",
+    "nl": "ziekenhuis"
+  },
+  "B2:orbit": {
+    "en": "orbit",
+    "nl": "baan om een hemellichaam"
+  },
+  "B2:hinkriegen": {
+    "en": "to manage; to get something done",
+    "nl": "voor elkaar krijgen; klaarkrijgen"
+  },
+  "B2:wildnis": {
+    "en": "wilderness",
+    "nl": "wildernis"
+  },
+  "B2:altmodisch": {
+    "en": "old-fashioned",
+    "nl": "ouderwets"
+  },
+  "B2:gegenmittel": {
+    "en": "antidote; countermeasure",
+    "nl": "tegengif; tegenmiddel"
+  },
+  "B2:meinerseits": {
+    "en": "for my part; on my side",
+    "nl": "van mijn kant; mijnerzijds"
+  },
+  "B2:armband": {
+    "en": "bracelet",
+    "nl": "armband"
+  },
+  "B2:rumhängen": {
+    "en": "to hang around; to loiter",
+    "nl": "rondhangen"
+  },
+  "B2:taube": {
+    "en": "pigeon; dove",
+    "nl": "duif"
+  },
+  "B2:medaille": {
+    "en": "medal",
+    "nl": "medaille"
+  },
+  "B2:amüsant": {
+    "en": "amusing; entertaining",
+    "nl": "amusant; vermakelijk"
+  },
+  "B2:magier": {
+    "en": "magician",
+    "nl": "magiër; goochelaar"
+  },
+  "B2:fee": {
+    "en": "fairy",
+    "nl": "fee"
+  },
+  "B2:popcorn": {
+    "en": "popcorn",
+    "nl": "popcorn"
+  },
+  "B2:chauffeur": {
+    "en": "chauffeur; private driver",
+    "nl": "chauffeur; privéchauffeur"
+  },
+  "B2:erstaunt": {
+    "en": "astonished; surprised",
+    "nl": "verbaasd; verwonderd"
+  },
+  "B2:anstand": {
+    "en": "decency; good manners",
+    "nl": "fatsoen; goede manieren"
+  },
+  "B2:vollmond": {
+    "en": "full moon",
+    "nl": "volle maan"
+  },
+  "B2:sektion": {
+    "en": "section; dissection",
+    "nl": "sectie; ontleding"
+  },
+  "B2:anvertrauen": {
+    "en": "to entrust; to confide",
+    "nl": "toevertrouwen; in vertrouwen vertellen"
+  },
+  "B2:aufsicht": {
+    "en": "supervision",
+    "nl": "toezicht"
+  },
+  "B2:menschlichkeit": {
+    "en": "humanity; compassion",
+    "nl": "menselijkheid; medemenselijkheid"
+  },
+  "B2:arrogant": {
+    "en": "arrogant",
+    "nl": "hoogmoedig; arrogant"
+  },
+  "B2:aufenthaltsort": {
+    "en": "whereabouts; place of residence",
+    "nl": "verblijfplaats"
+  },
+  "B2:verstorben": {
+    "en": "deceased; died",
+    "nl": "overleden"
+  },
+  "B2:ausdenken": {
+    "en": "to think up; to invent",
+    "nl": "bedenken; verzinnen"
+  },
+  "B2:parade": {
+    "en": "parade; defensive parry",
+    "nl": "parade; afweerbeweging"
+  },
+  "B2:sattel": {
+    "en": "saddle",
+    "nl": "zadel"
+  },
+  "B2:begleiter": {
+    "en": "companion; escort",
+    "nl": "begeleider; metgezel"
+  },
+  "B2:hingabe": {
+    "en": "devotion; dedication",
+    "nl": "toewijding; overgave"
+  },
+  "B2:routine": {
+    "en": "routine; practiced skill",
+    "nl": "routine; geoefendheid"
+  },
+  "B2:schneid": {
+    "en": "guts; courage",
+    "nl": "lef; durf"
+  },
+  "B2:ungeduldig": {
+    "en": "impatient; eager",
+    "nl": "ongeduldig; ongedurig"
+  },
+  "B2:überbringen": {
+    "en": "to deliver; to convey",
+    "nl": "overbrengen; bezorgen"
+  },
+  "B2:ausschlag": {
+    "en": "rash; movement of a gauge",
+    "nl": "uitslag; uitslaan van een meter"
+  },
+  "B2:schimmer": {
+    "en": "glimmer; faint shine",
+    "nl": "schijnsel; glimp"
+  },
+  "B2:reinlassen": {
+    "en": "to let in",
+    "nl": "binnenlaten"
+  },
+  "B2:verpasse": {
+    "en": "I miss; I fail to catch",
+    "nl": "ik mis; ik loop mis"
+  },
+  "B2:versehentlich": {
+    "en": "accidental; by mistake",
+    "nl": "per ongeluk; onbedoeld"
+  },
+  "B2:selbstvertrauen": {
+    "en": "self-confidence",
+    "nl": "zelfvertrouwen"
+  },
+  "B2:bestrafung": {
+    "en": "punishment",
+    "nl": "bestraffing; straf"
+  },
+  "B2:fortfahren": {
+    "en": "to continue; to drive away",
+    "nl": "doorgaan; wegrijden"
+  },
+  "B2:schlamassel": {
+    "en": "mess; predicament",
+    "nl": "warboel; penarie"
+  },
+  "B2:bonus": {
+    "en": "bonus",
+    "nl": "bonus"
+  },
+  "B2:abgrund": {
+    "en": "abyss; precipice",
+    "nl": "afgrond"
+  },
+  "B2:toiletten": {
+    "en": "toilets",
+    "nl": "toiletten"
+  },
+  "B2:jeep": {
+    "en": "jeep; four-wheel-drive vehicle",
+    "nl": "jeep; terreinwagen"
+  },
+  "B2:würfel": {
+    "en": "cube; die",
+    "nl": "kubus; dobbelsteen"
+  },
+  "B2:kindisch": {
+    "en": "childish; immature",
+    "nl": "kinderachtig"
+  },
+  "B2:herbringen": {
+    "en": "to bring here",
+    "nl": "hierheen brengen"
+  },
+  "B2:jahreszeit": {
+    "en": "season of the year",
+    "nl": "jaargetijde; seizoen"
+  },
+  "B2:lamm": {
+    "en": "lamb",
+    "nl": "lam"
+  },
+  "B2:retter": {
+    "en": "rescuer",
+    "nl": "redder"
+  },
+  "B2:damm": {
+    "en": "dam; embankment",
+    "nl": "dam; dijk"
+  },
+  "B2:befahl": {
+    "en": "ordered; commanded",
+    "nl": "beval"
+  },
+  "B2:schmetterling": {
+    "en": "butterfly",
+    "nl": "vlinder"
+  },
+  "B2:immerzu": {
+    "en": "constantly; without stopping",
+    "nl": "voortdurend; alsmaar"
+  },
+  "B2:einschlagen": {
+    "en": "to smash in; to take a route",
+    "nl": "inslaan; een weg inslaan"
+  },
+  "B2:kamerad": {
+    "en": "comrade; fellow",
+    "nl": "kameraad; maat"
+  },
+  "B2:munter": {
+    "en": "lively; alert",
+    "nl": "levendig; opgewekt"
+  },
+  "B2:pirat": {
+    "en": "pirate",
+    "nl": "piraat"
+  },
+  "B2:nikolaus": {
+    "en": "Saint Nicholas",
+    "nl": "Sint-Nicolaas; Sinterklaas"
+  },
+  "B2:nasa": {
+    "en": "NASA; US space agency",
+    "nl": "NASA; Amerikaanse ruimtevaartorganisatie"
+  },
+  "B2:haustür": {
+    "en": "front door; house door",
+    "nl": "voordeur; huisdeur"
+  },
+  "B2:aufruhr": {
+    "en": "uproar; unrest",
+    "nl": "oproer; onrust"
+  },
+  "B2:bedrückt": {
+    "en": "dejected; weighed down",
+    "nl": "bedrukt; bezwaard"
+  },
+  "B2:schwerkraft": {
+    "en": "gravity",
+    "nl": "zwaartekracht"
+  },
+  "B2:klempner": {
+    "en": "plumber",
+    "nl": "loodgieter"
+  },
+  "B2:romantik": {
+    "en": "romance; romanticism",
+    "nl": "romantiek"
+  },
+  "B2:metro": {
+    "en": "metro; underground railway",
+    "nl": "metro"
+  },
+  "B2:stürmen": {
+    "en": "to storm; to rush in",
+    "nl": "bestormen; naar binnen stormen"
+  },
+  "B2:davonkommen": {
+    "en": "to escape; to get off lightly",
+    "nl": "ontkomen; er goed vanaf komen"
+  },
+  "B2:gegenleistung": {
+    "en": "something in return; reciprocal service",
+    "nl": "tegenprestatie"
+  },
+  "B2:araber": {
+    "en": "Arab person",
+    "nl": "Arabier"
+  },
+  "B2:kiefer": {
+    "en": "jaw; jawbone",
+    "nl": "kaak"
+  },
+  "B2:unterwelt": {
+    "en": "underworld; criminal world",
+    "nl": "onderwereld"
+  },
+  "B2:berührung": {
+    "en": "touch; contact",
+    "nl": "aanraking; beroering"
+  },
+  "B2:martini": {
+    "en": "Saint Martin's Day; martini cocktail",
+    "nl": "Sint-Maarten; martinicocktail"
+  },
+  "B2:besen": {
+    "en": "broom",
+    "nl": "bezem"
+  },
+  "B2:intakt": {
+    "en": "intact; undamaged",
+    "nl": "intact; onbeschadigd"
+  },
+  "B2:pudding": {
+    "en": "pudding",
+    "nl": "pudding"
+  },
+  "B2:ohnmacht": {
+    "en": "fainting; powerlessness",
+    "nl": "flauwte; onmacht"
+  },
+  "B2:komiker": {
+    "en": "comedian",
+    "nl": "komiek"
+  },
+  "B2:gehör": {
+    "en": "hearing; sense of hearing",
+    "nl": "gehoor"
+  },
+  "B2:cents": {
+    "en": "cents",
+    "nl": "centen"
+  },
+  "B2:mithalten": {
+    "en": "to keep up; to match",
+    "nl": "bijhouden; meekomen"
+  },
+  "B2:taxifahrer": {
+    "en": "taxi driver",
+    "nl": "taxichauffeur"
+  },
+  "B2:häuschen": {
+    "en": "small house",
+    "nl": "huisje"
+  },
+  "B2:anzünden": {
+    "en": "to set fire to; to light",
+    "nl": "aansteken; in brand steken"
+  },
+  "B2:hemden": {
+    "en": "shirts",
+    "nl": "overhemden"
+  },
+  "B2:auserwählt": {
+    "en": "chosen; selected",
+    "nl": "uitverkoren; gekozen"
+  },
+  "B2:massage": {
+    "en": "massage",
+    "nl": "massage"
+  },
+  "B2:menschenleben": {
+    "en": "human life",
+    "nl": "mensenleven"
+  },
+  "B2:schaufel": {
+    "en": "shovel",
+    "nl": "schep"
+  },
+  "B2:schwindelig": {
+    "en": "dizzy; causing dizziness",
+    "nl": "duizelig; duizelingwekkend"
+  },
+  "B2:stützpunkt": {
+    "en": "base; stronghold",
+    "nl": "steunpunt; basis"
+  },
+  "B2:butch": {
+    "en": "butch woman; masculine-presenting lesbian",
+    "nl": "butch; masculien ogende lesbische vrouw"
+  },
+  "B2:vage": {
+    "en": "vague",
+    "nl": "vaag"
+  },
+  "B2:rücksitz": {
+    "en": "rear seat",
+    "nl": "achterbank; achterzitplaats"
+  },
+  "B2:desaster": {
+    "en": "disaster; fiasco",
+    "nl": "ramp; fiasco"
+  },
+  "B2:kiki": {
+    "en": "child's play; trivial matter (colloquial)",
+    "nl": "kinderspel; kleinigheid (spreektaal)"
+  },
+  "B2:hauptrolle": {
+    "en": "leading role",
+    "nl": "hoofdrol"
+  },
+  "B2:wahrlich": {
+    "en": "truly; indeed",
+    "nl": "waarlijk; inderdaad"
+  },
+  "B2:zwecklos": {
+    "en": "pointless; futile",
+    "nl": "zinloos; nutteloos"
+  },
+  "B2:schliessfach": {
+    "en": "locker; lockable compartment",
+    "nl": "kluisje; afsluitbaar vak"
+  },
+  "B2:aneinander": {
+    "en": "against one another; touching each other",
+    "nl": "tegen elkaar; aan elkaar"
+  },
+  "B2:schurken": {
+    "en": "villains; scoundrels",
+    "nl": "schurken"
+  },
+  "B2:verständigen": {
+    "en": "to inform; to reach an understanding",
+    "nl": "inlichten; tot overeenstemming komen"
+  },
+  "B2:verwirren": {
+    "en": "to confuse",
+    "nl": "verwarren"
+  },
+  "B2:frass": {
+    "en": "ate greedily; ate (of an animal)",
+    "nl": "vrat"
+  },
+  "B2:mithilfe": {
+    "en": "with the help of",
+    "nl": "met behulp van"
+  },
+  "B2:solo": {
+    "en": "solo performance",
+    "nl": "solo"
+  },
+  "B2:silvester": {
+    "en": "New Year's Eve",
+    "nl": "oudejaarsavond"
+  },
+  "B2:ast": {
+    "en": "branch; bough",
+    "nl": "tak"
+  },
+  "B2:lid": {
+    "en": "eyelid",
+    "nl": "ooglid"
+  },
+  "B2:opi": {
+    "en": "grandpa (affectionate)",
+    "nl": "opaatje; opa"
+  },
+  "B2:reh": {
+    "en": "roe deer",
+    "nl": "ree"
+  },
+  "B2:uhu": {
+    "en": "Eurasian eagle-owl",
+    "nl": "oehoe"
+  },
+  "B2:bude": {
+    "en": "hut; small shop; simple dwelling",
+    "nl": "hok; kraam; eenvoudige woning"
+  },
+  "B2:etui": {
+    "en": "small case; protective case",
+    "nl": "etui; beschermhoesje"
+  },
+  "B2:eule": {
+    "en": "owl",
+    "nl": "uil"
+  },
+  "B2:fahl": {
+    "en": "pale; wan",
+    "nl": "vaal; bleek"
+  },
+  "B2:faxe": {
+    "en": "faxes; pranks",
+    "nl": "faxberichten; fratsen"
+  },
+  "B2:fell": {
+    "en": "fur; animal pelt",
+    "nl": "vacht; dierenvel"
+  },
+  "B2:fund": {
+    "en": "find; discovery",
+    "nl": "vondst"
+  },
+  "B2:igel": {
+    "en": "hedgehog",
+    "nl": "egel"
+  },
+  "B2:laub": {
+    "en": "foliage",
+    "nl": "loof; bladeren"
+  },
+  "B2:lose": {
+    "en": "loose; unattached",
+    "nl": "los; loszittend"
+  },
+  "B2:moos": {
+    "en": "moss",
+    "nl": "mos"
+  },
+  "B2:napf": {
+    "en": "animal feeding bowl",
+    "nl": "voerbak"
+  },
+  "B2:nuss": {
+    "en": "nut",
+    "nl": "noot"
+  },
+  "B2:popo": {
+    "en": "bottom; buttocks (children's word)",
+    "nl": "bibs; billen (kindertaal)"
+  },
+  "B2:rabe": {
+    "en": "raven",
+    "nl": "raaf"
+  },
+  "B2:riss": {
+    "en": "crack; tear",
+    "nl": "scheur; barst"
+  },
+  "B2:ruck": {
+    "en": "jerk; sudden jolt",
+    "nl": "ruk; schok"
+  },
+  "B2:amsel": {
+    "en": "blackbird",
+    "nl": "merel"
+  },
+  "B2:backe": {
+    "en": "cheek",
+    "nl": "wang"
+  },
+  "B2:bange": {
+    "en": "afraid; anxious",
+    "nl": "bang; angstig"
+  },
+  "B2:beere": {
+    "en": "berry",
+    "nl": "bes"
+  },
+  "B2:biber": {
+    "en": "beaver",
+    "nl": "bever"
+  },
+  "B2:biene": {
+    "en": "bee",
+    "nl": "bij"
+  },
+  "B2:binde": {
+    "en": "bandage; band",
+    "nl": "verband; band"
+  },
+  "B2:bowle": {
+    "en": "fruit punch",
+    "nl": "vruchtenpunch"
+  },
+  "B2:busse": {
+    "en": "buses",
+    "nl": "bussen"
+  },
+  "B2:fegen": {
+    "en": "to sweep",
+    "nl": "vegen"
+  },
+  "B2:flyer": {
+    "en": "advertising leaflet",
+    "nl": "flyer; reclamefolder"
+  },
+  "B2:gecko": {
+    "en": "gecko",
+    "nl": "gekko"
+  },
+  "B2:griess": {
+    "en": "semolina",
+    "nl": "griesmeel"
+  },
+  "B2:hagel": {
+    "en": "hail",
+    "nl": "hagel"
+  },
+  "B2:kacke": {
+    "en": "shit; rubbish (vulgar)",
+    "nl": "stront; rotzooi (vulgair)"
+  },
+  "B2:kante": {
+    "en": "edge",
+    "nl": "rand"
+  },
+  "B2:kauen": {
+    "en": "chew",
+    "nl": "kauwen"
+  },
+  "B2:kegel": {
+    "en": "cone; bowling pin",
+    "nl": "kegel; bowlingkegel"
+  },
+  "B2:klotz": {
+    "en": "block; block of wood",
+    "nl": "blok; houten blok"
+  },
+  "B2:krumm": {
+    "en": "crooked; curved",
+    "nl": "krom; gebogen"
+  },
+  "B2:köter": {
+    "en": "mutt (insulting word for a dog)",
+    "nl": "mormel (scheldwoord voor een hond)"
+  },
+  "B2:larve": {
+    "en": "larva; mask",
+    "nl": "larve; masker"
+  },
+  "B2:lolli": {
+    "en": "lollipop",
+    "nl": "lolly"
+  },
+  "B2:luchs": {
+    "en": "lynx",
+    "nl": "lynx"
+  },
+  "B2:mähen": {
+    "en": "mow",
+    "nl": "maaien"
+  },
+  "B2:orkan": {
+    "en": "violent windstorm",
+    "nl": "orkaan; zeer zware storm"
+  },
+  "B2:pappe": {
+    "en": "cardboard",
+    "nl": "karton"
+  },
+  "B2:pulle": {
+    "en": "bottle (informal)",
+    "nl": "fles (informeel)"
+  },
+  "B2:pulli": {
+    "en": "jumper; sweater",
+    "nl": "trui"
+  },
+  "B2:puste": {
+    "en": "breath; puff",
+    "nl": "adem; puf"
+  },
+  "B2:qualm": {
+    "en": "thick smoke",
+    "nl": "dikke rook"
+  },
+  "B2:rasse": {
+    "en": "breed; race",
+    "nl": "ras"
+  },
+  "B2:saite": {
+    "en": "musical instrument string",
+    "nl": "snaar"
+  },
+  "B2:salto": {
+    "en": "somersault",
+    "nl": "salto"
+  },
+  "B2:scheu": {
+    "en": "shy; skittish",
+    "nl": "schuw; verlegen"
+  },
+  "B2:selig": {
+    "en": "blissful; blessed",
+    "nl": "zalig; gelukzalig"
+  },
+  "B2:spatz": {
+    "en": "sparrow",
+    "nl": "mus"
+  },
+  "B2:spiess": {
+    "en": "skewer; spear",
+    "nl": "spies; braadpen"
+  },
+  "B2:stele": {
+    "en": "standing commemorative stone; stele",
+    "nl": "gedenksteen; stèle"
+  },
+  "B2:stier": {
+    "en": "bull",
+    "nl": "stier"
+  },
+  "B2:teich": {
+    "en": "pond",
+    "nl": "vijver"
+  },
+  "B2:theke": {
+    "en": "serving counter; bar",
+    "nl": "toonbank; bar"
+  },
+  "B2:toben": {
+    "en": "romp noisily; rage",
+    "nl": "wild spelen; tekeergaan"
+  },
+  "B2:tropf": {
+    "en": "poor fool; intravenous drip",
+    "nl": "sukkel; infuus"
+  },
+  "B2:tulpe": {
+    "en": "tulip",
+    "nl": "tulp"
+  },
+  "B2:waage": {
+    "en": "weighing scales",
+    "nl": "weegschaal"
+  },
+  "B2:wange": {
+    "en": "cheek",
+    "nl": "wang"
+  },
+  "B2:welpe": {
+    "en": "puppy",
+    "nl": "puppy; welp"
+  },
+  "B2:wucht": {
+    "en": "force; impact",
+    "nl": "kracht; hevigheid"
+  },
+  "B2:zügig": {
+    "en": "brisk; prompt",
+    "nl": "vlot; voortvarend"
+  },
+  "B2:advent": {
+    "en": "Advent (period before Christmas)",
+    "nl": "advent (tijd voor Kerstmis)"
+  },
+  "B2:ameise": {
+    "en": "ant",
+    "nl": "mier"
+  },
+  "B2:bambus": {
+    "en": "bamboo",
+    "nl": "bamboe"
+  },
+  "B2:barfuss": {
+    "en": "barefoot",
+    "nl": "blootsvoets"
+  },
+  "B2:beugen": {
+    "en": "bend; inflect a word",
+    "nl": "buigen; een woord verbuigen"
+  },
+  "B2:bonbon": {
+    "en": "sweet; candy",
+    "nl": "snoepje"
+  },
+  "B2:brezel": {
+    "en": "pretzel",
+    "nl": "zoute krakeling; pretzel"
+  },
+  "B2:bäcker": {
+    "en": "baker",
+    "nl": "bakker"
+  },
+  "B2:dackel": {
+    "en": "dachshund",
+    "nl": "teckel"
+  },
+  "B2:deckel": {
+    "en": "lid",
+    "nl": "deksel"
+  },
+  "B2:ducken": {
+    "en": "duck down; crouch",
+    "nl": "bukken; wegduiken"
+  },
+  "B2:dussel": {
+    "en": "fool; clumsy person",
+    "nl": "sufferd; kluns"
+  },
+  "B2:filter": {
+    "en": "filter",
+    "nl": "filter"
+  },
+  "B2:flosse": {
+    "en": "fin",
+    "nl": "vin"
+  },
+  "B2:frönen": {
+    "en": "indulge in a hobby or pleasure",
+    "nl": "zich wijden aan een liefhebberij; zich overgeven aan genot"
+  },
+  "B2:furzen": {
+    "en": "fart",
+    "nl": "een scheet laten"
+  },
+  "B2:gebell": {
+    "en": "barking",
+    "nl": "geblaf"
+  },
+  "B2:gehweg": {
+    "en": "footpath; pavement",
+    "nl": "voetpad; trottoir"
+  },
+  "B2:geissel": {
+    "en": "scourge; whip",
+    "nl": "gesel; zweep"
+  },
+  "B2:gierig": {
+    "en": "greedy",
+    "nl": "gierig; begerig"
+  },
+  "B2:ginkgo": {
+    "en": "ginkgo tree",
+    "nl": "ginkgo; Japanse notenboom"
+  },
+  "B2:gondel": {
+    "en": "gondola; cable-car cabin",
+    "nl": "gondel; kabelbaancabine"
+  },
+  "B2:grölen": {
+    "en": "bellow; sing raucously",
+    "nl": "brullen; luidkeels zingen"
+  },
+  "B2:gönnen": {
+    "en": "be happy for someone; allow oneself a treat",
+    "nl": "iemand iets gunnen; zichzelf iets gunnen"
+  },
+  "B2:hastig": {
+    "en": "hasty",
+    "nl": "haastig"
+  },
+  "B2:heften": {
+    "en": "staple; fasten temporarily",
+    "nl": "nieten; tijdelijk vasthechten"
+  },
+  "B2:hocken": {
+    "en": "squat; crouch",
+    "nl": "hurken"
+  },
+  "B2:hocker": {
+    "en": "stool",
+    "nl": "kruk"
+  },
+  "B2:hopsen": {
+    "en": "hop; skip",
+    "nl": "huppelen"
+  },
+  "B2:hotdog": {
+    "en": "hot dog",
+    "nl": "hotdog"
+  },
+  "B2:hüpfen": {
+    "en": "hop; jump",
+    "nl": "huppelen; springen"
+  },
+  "B2:jubeln": {
+    "en": "cheer with joy",
+    "nl": "juichen"
+  },
+  "B2:jucken": {
+    "en": "itch; cause itching",
+    "nl": "jeuken; jeuk veroorzaken"
+  },
+  "B2:karton": {
+    "en": "cardboard box",
+    "nl": "kartonnen doos"
+  },
+  "B2:kicken": {
+    "en": "kick; play football (informal)",
+    "nl": "schoppen; voetballen (informeel)"
+  },
+  "B2:kirmes": {
+    "en": "funfair",
+    "nl": "kermis"
+  },
+  "B2:kitten": {
+    "en": "mend with putty; cement together",
+    "nl": "kitten; met lijm of kit repareren"
+  },
+  "B2:kleber": {
+    "en": "glue; adhesive",
+    "nl": "lijm; kleefstof"
+  },
+  "B2:klippe": {
+    "en": "cliff",
+    "nl": "klif"
+  },
+  "B2:knacks": {
+    "en": "cracking sound; crack or slight damage",
+    "nl": "knak; barst of lichte beschadiging"
+  },
+  "B2:kneten": {
+    "en": "knead",
+    "nl": "kneden"
+  },
+  "B2:knolle": {
+    "en": "tuber; plant bulb",
+    "nl": "knol; bloembol"
+  },
+  "B2:kordel": {
+    "en": "cord; strong string",
+    "nl": "koord; stevig touwtje"
+  },
+  "B2:kralle": {
+    "en": "claw",
+    "nl": "klauw"
+  },
+  "B2:kreide": {
+    "en": "chalk",
+    "nl": "krijt"
+  },
+  "B2:krümel": {
+    "en": "crumb",
+    "nl": "kruimel"
+  },
+  "B2:kucken": {
+    "en": "look; watch (informal)",
+    "nl": "kijken (informeel)"
+  },
+  "B2:kämmen": {
+    "en": "comb",
+    "nl": "kammen"
+  },
+  "B2:leinen": {
+    "en": "linen; leads or leashes",
+    "nl": "linnen; riemen"
+  },
+  "B2:lerche": {
+    "en": "lark",
+    "nl": "leeuwerik"
+  },
+  "B2:lineal": {
+    "en": "ruler",
+    "nl": "liniaal"
+  },
+  "B2:lärche": {
+    "en": "larch tree",
+    "nl": "lariks"
+  },
+  "B2:mahlen": {
+    "en": "grind",
+    "nl": "malen"
+  },
+  "B2:mutlos": {
+    "en": "discouraged; dispirited",
+    "nl": "moedeloos; ontmoedigd"
+  },
+  "B2:nervig": {
+    "en": "annoying",
+    "nl": "irritant; vervelend"
+  },
+  "B2:obolus": {
+    "en": "small donation; ancient Greek coin",
+    "nl": "kleine bijdrage; oude Griekse munt"
+  },
+  "B2:paneel": {
+    "en": "wall or ceiling panel",
+    "nl": "wandpaneel; plafondpaneel"
+  },
+  "B2:pfütze": {
+    "en": "puddle",
+    "nl": "plas"
+  },
+  "B2:pinsel": {
+    "en": "paintbrush",
+    "nl": "penseel; verfkwast"
+  },
+  "B2:pogrom": {
+    "en": "pogrom; organized massacre of a minority",
+    "nl": "pogrom; georganiseerde slachting onder een minderheid"
+  },
+  "B2:putzig": {
+    "en": "cute; endearing",
+    "nl": "schattig; koddig"
+  },
+  "B2:quaken": {
+    "en": "croak; quack",
+    "nl": "kwaken"
+  },
+  "B2:ranzen": {
+    "en": "school satchel",
+    "nl": "schooltas"
+  },
+  "B2:rassel": {
+    "en": "rattle",
+    "nl": "rammelaar"
+  },
+  "B2:rasten": {
+    "en": "rest; take a break",
+    "nl": "rusten; een rustpauze houden"
+  },
+  "B2:ratlos": {
+    "en": "at a loss; puzzled",
+    "nl": "radeloos; niet weten wat te doen"
+  },
+  "B2:recken": {
+    "en": "stretch out; stretch oneself",
+    "nl": "uitstrekken; zich rekken"
+  },
+  "B2:reling": {
+    "en": "ship's railing",
+    "nl": "reling"
+  },
+  "B2:roller": {
+    "en": "scooter; kick scooter",
+    "nl": "scooter; step"
+  },
+  "B2:salami": {
+    "en": "salami",
+    "nl": "salami"
+  },
+  "B2:saugen": {
+    "en": "suck; vacuum clean",
+    "nl": "zuigen; stofzuigen"
+  },
+  "B2:sausen": {
+    "en": "rush; whizz",
+    "nl": "voorbij suizen; razen"
+  },
+  "B2:schnur": {
+    "en": "string; cord",
+    "nl": "touwtje; koord"
+  },
+  "B2:siphon": {
+    "en": "siphon; water-trap pipe",
+    "nl": "sifon; waterslot"
+  },
+  "B2:smiley": {
+    "en": "smiley face",
+    "nl": "smiley; lachend gezichtje"
+  },
+  "B2:stramm": {
+    "en": "taut; upright",
+    "nl": "strak; stram"
+  },
+  "B2:strang": {
+    "en": "thick rope; strand",
+    "nl": "dik touw; streng"
+  },
+  "B2:subtil": {
+    "en": "subtle; delicate",
+    "nl": "subtiel; fijnzinnig"
+  },
+  "B2:tarnen": {
+    "en": "camouflage; disguise",
+    "nl": "camoufleren; vermommen"
+  },
+  "B2:traube": {
+    "en": "grape; bunch of grapes",
+    "nl": "druif; tros druiven"
+  },
+  "B2:turnen": {
+    "en": "do gymnastics",
+    "nl": "turnen; gymnastiek doen"
+  },
+  "B2:waffel": {
+    "en": "waffle; wafer",
+    "nl": "wafel"
+  },
+  "B2:waggon": {
+    "en": "railway carriage",
+    "nl": "treinwagon"
+  },
+  "B2:wauwau": {
+    "en": "doggy; woof-woof (children's words)",
+    "nl": "woefwoef; hondje (kindertaal)"
+  },
+  "B2:wedeln": {
+    "en": "wag; wave",
+    "nl": "kwispelen; wuiven"
+  },
+  "B2:wermut": {
+    "en": "wormwood plant",
+    "nl": "alsem"
+  },
+  "B2:wühlen": {
+    "en": "rummage; root around",
+    "nl": "woelen; rondsnuffelen"
+  },
+  "B2:zirkel": {
+    "en": "drawing compass; circle of people",
+    "nl": "passer; kring"
+  },
+  "B2:zornig": {
+    "en": "angry; furious",
+    "nl": "toornig; boos"
+  },
+  "B2:zupfen": {
+    "en": "pluck; pick a string",
+    "nl": "plukken; tokkelen"
+  },
+  "B2:öfters": {
+    "en": "several times; now and then",
+    "nl": "vaker; af en toe"
+  },
+  "B2:abhauen": {
+    "en": "run away; clear off",
+    "nl": "weglopen; ervandoor gaan"
+  },
+  "B2:abwasch": {
+    "en": "washing-up; dirty dishes",
+    "nl": "afwas; vuile vaat"
+  },
+  "B2:adäquat": {
+    "en": "adequate; appropriate",
+    "nl": "adequaat; passend"
+  },
+  "B2:anrufer": {
+    "en": "telephone caller",
+    "nl": "beller"
+  },
+  "B2:armatur": {
+    "en": "control fitting; tap fitting",
+    "nl": "armatuur; kraanwerk"
+  },
+  "B2:asozial": {
+    "en": "antisocial",
+    "nl": "asociaal"
+  },
+  "B2:bauteil": {
+    "en": "building component; component part",
+    "nl": "bouwonderdeel; onderdeel"
+  },
+  "B2:bellend": {
+    "en": "barking",
+    "nl": "blaffend"
+  },
+  "B2:billard": {
+    "en": "billiards",
+    "nl": "biljart"
+  },
+  "B2:biskuit": {
+    "en": "sponge cake; light biscuit",
+    "nl": "biscuitgebak; luchtig koekje"
+  },
+  "B2:brummen": {
+    "en": "buzz; hum",
+    "nl": "zoemen; brommen"
+  },
+  "B2:buddeln": {
+    "en": "dig; burrow",
+    "nl": "graven"
+  },
+  "B2:bummeln": {
+    "en": "stroll; dawdle",
+    "nl": "slenteren; boemelen"
+  },
+  "B2:bärchen": {
+    "en": "little bear; small teddy bear",
+    "nl": "beertje; knuffelbeertje"
+  },
+  "B2:diarrhö": {
+    "en": "diarrhoea",
+    "nl": "diarree"
+  },
+  "B2:dreieck": {
+    "en": "triangle",
+    "nl": "driehoek"
+  },
+  "B2:eismann": {
+    "en": "ice-cream seller",
+    "nl": "ijsverkoper; ijscoman"
+  },
+  "B2:ekstase": {
+    "en": "ecstasy; rapture",
+    "nl": "extase; verrukking"
+  },
+  "B2:entgelt": {
+    "en": "payment; remuneration",
+    "nl": "vergoeding; loon"
+  },
+  "B2:fitness": {
+    "en": "physical fitness",
+    "nl": "fitheid; lichamelijke conditie"
+  },
+  "B2:flüssig": {
+    "en": "liquid; fluent",
+    "nl": "vloeibaar; vloeiend"
+  },
+  "B2:freudig": {
+    "en": "joyful; glad",
+    "nl": "blij; verheugd"
+  },
+  "B2:furnier": {
+    "en": "wood veneer",
+    "nl": "fineer"
+  },
+  "B2:fünfmal": {
+    "en": "five times",
+    "nl": "vijf keer"
+  },
+  "B2:gebrüll": {
+    "en": "shouting; roaring",
+    "nl": "gebrul; geschreeuw"
+  },
+  "B2:gebüsch": {
+    "en": "bushes; thicket",
+    "nl": "struikgewas"
+  },
+  "B2:gehüpft": {
+    "en": "hopped; jumped",
+    "nl": "gehuppeld; gesprongen"
+  },
+  "B2:geleckt": {
+    "en": "licked",
+    "nl": "gelikt"
+  },
+  "B2:genervt": {
+    "en": "annoyed",
+    "nl": "geërgerd; geïrriteerd"
+  },
+  "B2:gleiten": {
+    "en": "glide",
+    "nl": "glijden; voortglijden"
+  },
+  "B2:googeln": {
+    "en": "search on Google",
+    "nl": "googelen"
+  },
+  "B2:graupel": {
+    "en": "soft hail; snow pellets",
+    "nl": "korrelhagel; korrelsneeuw"
+  },
+  "B2:grinsen": {
+    "en": "grin",
+    "nl": "grijnzen"
+  },
+  "B2:hamster": {
+    "en": "hamster",
+    "nl": "hamster"
+  },
+  "B2:hecheln": {
+    "en": "pant",
+    "nl": "hijgen"
+  },
+  "B2:herüber": {
+    "en": "across to here",
+    "nl": "hierheen van de overkant"
+  },
+  "B2:hirnlos": {
+    "en": "brainless; stupid",
+    "nl": "hersenloos; dom"
+  },
+  "B2:hungern": {
+    "en": "go hungry; starve",
+    "nl": "honger lijden; verhongeren"
+  },
+  "B2:häkchen": {
+    "en": "tick mark; small hook",
+    "nl": "vinkje; haakje"
+  },
+  "B2:hämmern": {
+    "en": "hammer",
+    "nl": "hameren"
+  },
+  "B2:impfung": {
+    "en": "vaccination",
+    "nl": "inenting; vaccinatie"
+  },
+  "B2:jackett": {
+    "en": "suit jacket",
+    "nl": "colbert; jasje"
+  },
+  "B2:joghurt": {
+    "en": "yoghurt",
+    "nl": "yoghurt"
+  },
+  "B2:keuchen": {
+    "en": "gasp; pant heavily",
+    "nl": "naar adem snakken; hijgen"
+  },
+  "B2:kippeln": {
+    "en": "rock on a chair's legs",
+    "nl": "wippen op een stoel"
+  },
+  "B2:kitzeln": {
+    "en": "tickle",
+    "nl": "kietelen"
+  },
+  "B2:klammer": {
+    "en": "clip; bracket",
+    "nl": "klem; haakje"
+  },
+  "B2:klirren": {
+    "en": "clink; clatter",
+    "nl": "rinkelen; kletteren"
+  },
+  "B2:knicken": {
+    "en": "bend sharply; crease",
+    "nl": "knikken; omvouwen"
+  },
+  "B2:kopfweh": {
+    "en": "headache",
+    "nl": "hoofdpijn"
+  },
+  "B2:krallen": {
+    "en": "claw; cling with claws",
+    "nl": "klauwen; zich met klauwen vastgrijpen"
+  },
+  "B2:kullern": {
+    "en": "roll; tumble",
+    "nl": "rollen; buitelen"
+  },
+  "B2:laterne": {
+    "en": "lantern; street lamp",
+    "nl": "lantaarn; straatlantaarn"
+  },
+  "B2:lockern": {
+    "en": "loosen",
+    "nl": "losmaken; versoepelen"
+  },
+  "B2:lynchen": {
+    "en": "lynch",
+    "nl": "lynchen"
+  },
+  "B2:meckern": {
+    "en": "complain; bleat",
+    "nl": "mopperen; mekkeren"
+  },
+  "B2:mittags": {
+    "en": "at midday",
+    "nl": "'s middags; rond het middaguur"
+  },
+  "B2:murmeln": {
+    "en": "murmur; play marbles",
+    "nl": "mompelen; knikkeren"
+  },
+  "B2:muschel": {
+    "en": "shell; shellfish",
+    "nl": "schelp; schelpdier"
+  },
+  "B2:nashorn": {
+    "en": "rhinoceros",
+    "nl": "neushoorn"
+  },
+  "B2:obsolet": {
+    "en": "obsolete",
+    "nl": "verouderd; achterhaald"
+  },
+  "B2:papagei": {
+    "en": "parrot",
+    "nl": "papegaai"
+  },
+  "B2:paprika": {
+    "en": "sweet pepper; paprika powder",
+    "nl": "paprika; paprikapoeder"
+  },
+  "B2:quadrat": {
+    "en": "square",
+    "nl": "vierkant"
+  },
+  "B2:rappeln": {
+    "en": "rattle",
+    "nl": "rammelen"
+  },
+  "B2:rattern": {
+    "en": "rattling; mechanical clatter",
+    "nl": "geratel; gerammel"
+  },
+  "B2:rentier": {
+    "en": "reindeer",
+    "nl": "rendier"
+  },
+  "B2:resümee": {
+    "en": "summary; conclusion",
+    "nl": "samenvatting; slotsom"
+  },
+  "B2:rutsche": {
+    "en": "playground slide",
+    "nl": "glijbaan"
+  },
+  "B2:sauerei": {
+    "en": "filthy mess; dirty business",
+    "nl": "vuile boel; smeerboel"
+  },
+  "B2:scheisse": {
+    "en": "shit (vulgar)",
+    "nl": "stront; shit (vulgair)"
+  },
+  "B2:scherbe": {
+    "en": "shard; broken fragment",
+    "nl": "scherf"
+  },
+  "B2:schlapp": {
+    "en": "exhausted; limp",
+    "nl": "slap; futloos"
+  },
+  "B2:schlitz": {
+    "en": "narrow slit; slot",
+    "nl": "spleet; gleuf"
+  },
+  "B2:schmalz": {
+    "en": "lard; rendered fat",
+    "nl": "reuzel; gesmolten vet"
+  },
+  "B2:schrill": {
+    "en": "shrill; garish",
+    "nl": "schel; schreeuwerig"
+  },
+  "B2:schwanz": {
+    "en": "tail; penis (vulgar)",
+    "nl": "staart; lul (vulgair)"
+  },
+  "B2:seerose": {
+    "en": "water lily",
+    "nl": "waterlelie"
+  },
+  "B2:separat": {
+    "en": "separate; separately",
+    "nl": "afzonderlijk; apart"
+  },
+  "B2:skurril": {
+    "en": "quirky; bizarre",
+    "nl": "bizar; zonderling"
+  },
+  "B2:spannen": {
+    "en": "stretch tight; create suspense",
+    "nl": "spannen; nieuwsgierig maken"
+  },
+  "B2:spucken": {
+    "en": "spit",
+    "nl": "spugen"
+  },
+  "B2:stauben": {
+    "en": "raise dust; become dusty",
+    "nl": "stuiven; stoffig worden"
+  },
+  "B2:sticker": {
+    "en": "sticker",
+    "nl": "sticker"
+  },
+  "B2:strophe": {
+    "en": "stanza; verse",
+    "nl": "strofe; couplet"
+  },
+  "B2:strömen": {
+    "en": "flow; stream",
+    "nl": "stromen"
+  },
+  "B2:stupsen": {
+    "en": "nudge gently",
+    "nl": "een duwtje geven; aanstoten"
+  },
+  "B2:t-shirt": {
+    "en": "T-shirt",
+    "nl": "T-shirt"
+  },
+  "B2:tanzend": {
+    "en": "dancing",
+    "nl": "dansend"
+  },
+  "B2:vanille": {
+    "en": "vanilla",
+    "nl": "vanille"
+  },
+  "B2:verlies": {
+    "en": "dungeon",
+    "nl": "kerker"
+  },
+  "B2:viereck": {
+    "en": "quadrilateral; four-sided figure",
+    "nl": "vierhoek"
+  },
+  "B2:wackeln": {
+    "en": "wobble; shake",
+    "nl": "wiebelen; wankelen"
+  },
+  "B2:wickeln": {
+    "en": "wrap; change a baby's nappy",
+    "nl": "wikkelen; een luier verschonen"
+  },
+  "B2:wirbeln": {
+    "en": "whirl; stir up into the air",
+    "nl": "wervelen; doen opstuiven"
+  },
+  "B2:wischen": {
+    "en": "wipe",
+    "nl": "vegen; afvegen"
+  },
+  "B2:zappeln": {
+    "en": "fidget; squirm",
+    "nl": "spartelen; wiebelen"
+  },
+  "B2:anbinden": {
+    "en": "tie up; tether",
+    "nl": "vastbinden; aanbinden"
+  },
+  "B2:andauern": {
+    "en": "continue; last",
+    "nl": "voortduren; aanhouden"
+  },
+  "B2:anleinen": {
+    "en": "put an animal on a lead",
+    "nl": "een dier aanlijnen"
+  },
+  "B2:anlocken": {
+    "en": "attract; lure",
+    "nl": "lokken; aantrekken"
+  },
+  "B2:aquarium": {
+    "en": "aquarium",
+    "nl": "aquarium"
+  },
+  "B2:attrappe": {
+    "en": "dummy; imitation model",
+    "nl": "namaakmodel; dummy"
+  },
+  "B2:bauklotz": {
+    "en": "toy building block",
+    "nl": "speelgoedbouwblok"
+  },
+  "B2:baustein": {
+    "en": "building block; brick",
+    "nl": "bouwsteen"
+  },
+  "B2:belohnen": {
+    "en": "reward",
+    "nl": "belonen"
+  },
+  "B2:blendend": {
+    "en": "dazzling; excellent",
+    "nl": "verblindend; uitstekend"
+  },
+  "B2:blinzeln": {
+    "en": "blink",
+    "nl": "knipperen"
+  },
+  "B2:blödsinn": {
+    "en": "nonsense; rubbish",
+    "nl": "onzin; flauwekul"
+  },
+  "B2:busfahrt": {
+    "en": "bus journey",
+    "nl": "busreis; busrit"
+  },
+  "B2:charisma": {
+    "en": "charisma",
+    "nl": "charisma; persoonlijke uitstraling"
+  },
+  "B2:diffizil": {
+    "en": "difficult and delicate",
+    "nl": "moeilijk; delicaat"
+  },
+  "B2:eisdiele": {
+    "en": "ice-cream parlour",
+    "nl": "ijssalon"
+  },
+  "B2:eiskugel": {
+    "en": "scoop of ice cream",
+    "nl": "bolletje ijs"
+  },
+  "B2:empathie": {
+    "en": "empathy",
+    "nl": "empathie; inlevingsvermogen"
+  },
+  "B2:epidemie": {
+    "en": "epidemic",
+    "nl": "epidemie"
+  },
+  "B2:erdbeere": {
+    "en": "strawberry",
+    "nl": "aardbei"
+  },
+  "B2:eruieren": {
+    "en": "investigate; ascertain",
+    "nl": "achterhalen; uitzoeken"
+  },
+  "B2:erwidern": {
+    "en": "reply; respond",
+    "nl": "antwoorden; reageren"
+  },
+  "B2:frauchen": {
+    "en": "female owner of a pet",
+    "nl": "vrouwtje van een huisdier"
+  },
+  "B2:gedenken": {
+    "en": "commemorate; remember",
+    "nl": "herdenken; gedenken"
+  },
+  "B2:gehstock": {
+    "en": "walking stick",
+    "nl": "wandelstok"
+  },
+  "B2:gelatine": {
+    "en": "gelatine",
+    "nl": "gelatine"
+  },
+  "B2:gelblich": {
+    "en": "yellowish",
+    "nl": "geelachtig"
+  },
+  "B2:gespenst": {
+    "en": "ghost",
+    "nl": "spook; geest"
+  },
+  "B2:graffito": {
+    "en": "graffito; inscription on a wall",
+    "nl": "graffito; muuropschrift"
+  },
+  "B2:guerilla": {
+    "en": "guerrilla warfare; guerrilla group",
+    "nl": "guerrilla; guerrillagroep"
+  },
+  "B2:hauswand": {
+    "en": "house wall",
+    "nl": "huismuur"
+  },
+  "B2:hektisch": {
+    "en": "hectic; frantic",
+    "nl": "hectisch; gejaagd"
+  },
+  "B2:heulsuse": {
+    "en": "crybaby",
+    "nl": "huilbaby; huilebalk"
+  },
+  "B2:hörnchen": {
+    "en": "croissant; small horn",
+    "nl": "croissant; hoorntje"
+  },
+  "B2:kastanie": {
+    "en": "chestnut",
+    "nl": "kastanje"
+  },
+  "B2:klammern": {
+    "en": "cling; put in brackets",
+    "nl": "zich vastklampen; tussen haakjes zetten"
+  },
+  "B2:knuddeln": {
+    "en": "cuddle",
+    "nl": "knuffelen"
+  },
+  "B2:knusprig": {
+    "en": "crispy; crunchy",
+    "nl": "knapperig"
+  },
+  "B2:kohärent": {
+    "en": "coherent; consistent",
+    "nl": "samenhangend; coherent"
+  },
+  "B2:kolossal": {
+    "en": "colossal; enormous",
+    "nl": "kolossaal; enorm"
+  },
+  "B2:koryphäe": {
+    "en": "leading expert; authority",
+    "nl": "vooraanstaand deskundige; autoriteit"
+  },
+  "B2:krabbeln": {
+    "en": "crawl",
+    "nl": "kruipen"
+  },
+  "B2:kuscheln": {
+    "en": "cuddle; snuggle",
+    "nl": "knuffelen; tegen elkaar aan kruipen"
+  },
+  "B2:köpfchen": {
+    "en": "little head; brains",
+    "nl": "hoofdje; verstand"
+  },
+  "B2:küsschen": {
+    "en": "little kiss",
+    "nl": "kusje"
+  },
+  "B2:lappalie": {
+    "en": "trivial matter",
+    "nl": "kleinigheid; onbenulligheid"
+  },
+  "B2:leckerli": {
+    "en": "pet treat",
+    "nl": "traktatie voor een huisdier; dierensnoepje"
+  },
+  "B2:lutscher": {
+    "en": "lollipop; sucker (informal)",
+    "nl": "lolly; sukkel (informeel)"
+  },
+  "B2:lächelnd": {
+    "en": "smiling",
+    "nl": "glimlachend"
+  },
+  "B2:mobiliar": {
+    "en": "furniture",
+    "nl": "meubilair"
+  },
+  "B2:müllsack": {
+    "en": "rubbish bag",
+    "nl": "vuilniszak"
+  },
+  "B2:oleander": {
+    "en": "oleander",
+    "nl": "oleander"
+  },
+  "B2:pflücken": {
+    "en": "pick; pluck",
+    "nl": "plukken"
+  },
+  "B2:pfötchen": {
+    "en": "little paw",
+    "nl": "pootje"
+  },
+  "B2:plaudern": {
+    "en": "chat",
+    "nl": "gezellig praten; keuvelen"
+  },
+  "B2:plumpsen": {
+    "en": "plump down; fall heavily",
+    "nl": "neerploffen"
+  },
+  "B2:pubertät": {
+    "en": "puberty",
+    "nl": "puberteit"
+  },
+  "B2:quasseln": {
+    "en": "chatter; blabber",
+    "nl": "kletsen; babbelen"
+  },
+  "B2:rechteck": {
+    "en": "rectangle",
+    "nl": "rechthoek"
+  },
+  "B2:renommee": {
+    "en": "good reputation; renown",
+    "nl": "goede naam; aanzien"
+  },
+  "B2:revanche": {
+    "en": "revenge; return match",
+    "nl": "revanche; herkansing"
+  },
+  "B2:reziprok": {
+    "en": "reciprocal; mutual",
+    "nl": "wederkerig; wederzijds"
+  },
+  "B2:rhetorik": {
+    "en": "rhetoric; art of public speaking",
+    "nl": "retorica; welsprekendheid"
+  },
+  "B2:rutschig": {
+    "en": "slippery",
+    "nl": "glad; glibberig"
+  },
+  "B2:rückgrat": {
+    "en": "backbone; strength of character",
+    "nl": "ruggengraat; karaktervastheid"
+  },
+  "B2:schaukel": {
+    "en": "swing",
+    "nl": "schommel"
+  },
+  "B2:schellen": {
+    "en": "ring a bell",
+    "nl": "bellen; rinkelen"
+  },
+  "B2:schmusen": {
+    "en": "cuddle; caress",
+    "nl": "knuffelen; liefkozen"
+  },
+  "B2:schnecke": {
+    "en": "snail",
+    "nl": "slak"
+  },
+  "B2:schraube": {
+    "en": "screw",
+    "nl": "schroef"
+  },
+  "B2:schubsen": {
+    "en": "shove; push",
+    "nl": "duwen; een duw geven"
+  },
+  "B2:schulbus": {
+    "en": "school bus",
+    "nl": "schoolbus"
+  },
+  "B2:schulhof": {
+    "en": "school playground",
+    "nl": "schoolplein"
+  },
+  "B2:schultag": {
+    "en": "school day",
+    "nl": "schooldag"
+  },
+  "B2:schulweg": {
+    "en": "journey to school; route to school",
+    "nl": "weg naar school; schoolroute"
+  },
+  "B2:schöpfen": {
+    "en": "ladle; draw from",
+    "nl": "scheppen; putten uit"
+  },
+  "B2:schütten": {
+    "en": "pour",
+    "nl": "gieten; storten"
+  },
+  "B2:seilbahn": {
+    "en": "cable car",
+    "nl": "kabelbaan"
+  },
+  "B2:splitter": {
+    "en": "splinter; shard",
+    "nl": "splinter; scherf"
+  },
+  "B2:stadttor": {
+    "en": "town gate",
+    "nl": "stadspoort"
+  },
+  "B2:stanniol": {
+    "en": "tinfoil",
+    "nl": "bladtin; tinfolie"
+  },
+  "B2:stegreif": {
+    "en": "improvisation; without preparation",
+    "nl": "improvisatie; uit het hoofd zonder voorbereiding"
+  },
+  "B2:stolpern": {
+    "en": "stumble",
+    "nl": "struikelen"
+  },
+  "B2:stottern": {
+    "en": "stutter",
+    "nl": "stotteren"
+  },
+  "B2:strahlen": {
+    "en": "shine; beam",
+    "nl": "stralen"
+  },
+  "B2:stuntman": {
+    "en": "stunt performer",
+    "nl": "stuntman; stuntspeler"
+  },
+  "B2:teddybär": {
+    "en": "teddy bear",
+    "nl": "teddybeer"
+  },
+  "B2:terabyte": {
+    "en": "terabyte (data storage unit)",
+    "nl": "terabyte (eenheid voor gegevensopslag)"
+  },
+  "B2:tierarzt": {
+    "en": "veterinarian",
+    "nl": "dierenarts"
+  },
+  "B2:tierheim": {
+    "en": "animal shelter",
+    "nl": "dierenasiel"
+  },
+  "B2:tragisch": {
+    "en": "tragic",
+    "nl": "tragisch"
+  },
+  "B2:trilogie": {
+    "en": "trilogy",
+    "nl": "trilogie"
+  },
+  "B2:umfahren": {
+    "en": "knock over with a vehicle; drive around (stress differs)",
+    "nl": "omverrijden; omheen rijden (andere klemtoon)"
+  },
+  "B2:umfallen": {
+    "en": "fall over",
+    "nl": "omvallen"
+  },
+  "B2:umkippen": {
+    "en": "tip over",
+    "nl": "omkiepen; omvallen"
+  },
+  "B2:unglaube": {
+    "en": "disbelief; lack of faith",
+    "nl": "ongeloof"
+  },
+  "B2:verarmen": {
+    "en": "become poor",
+    "nl": "verarmen"
+  },
+  "B2:verdammt": {
+    "en": "damned; damn (swear word)",
+    "nl": "verdomd; vervloekt"
+  },
+  "B2:verflixt": {
+    "en": "darned; darn (mild swear word)",
+    "nl": "verdraaid; verdorie"
+  },
+  "B2:verhaken": {
+    "en": "catch on a hook; snag",
+    "nl": "vasthaken; blijven haken"
+  },
+  "B2:verjagen": {
+    "en": "chase away",
+    "nl": "verjagen"
+  },
+  "B2:wackelig": {
+    "en": "wobbly; unstable",
+    "nl": "wankel; wiebelig"
+  },
+  "B2:zappelig": {
+    "en": "fidgety; restless",
+    "nl": "onrustig; wiebelig"
+  },
+  "B2:zauberei": {
+    "en": "magic; sorcery",
+    "nl": "toverij; magie"
+  },
+  "B2:zerfetzt": {
+    "en": "torn to shreds",
+    "nl": "aan flarden gescheurd"
+  },
+  "B2:zucchini": {
+    "en": "courgette; zucchini",
+    "nl": "courgette"
+  },
+  "B2:zugfahrt": {
+    "en": "train journey",
+    "nl": "treinreis; treinrit"
+  },
+  "B2:zugucken": {
+    "en": "watch; look on",
+    "nl": "toekijken; kijken"
+  },
+  "B2:zuwinken": {
+    "en": "wave to someone",
+    "nl": "naar iemand zwaaien"
+  },
+  "B2:zwinkern": {
+    "en": "wink",
+    "nl": "knipogen"
+  },
+  "B2:ärgernis": {
+    "en": "annoyance; nuisance",
+    "nl": "ergernis; aanstootgevend iets"
+  },
+  "B2:akustisch": {
+    "en": "acoustic; relating to sound",
+    "nl": "akoestisch; met geluid te maken hebbend"
+  },
+  "B2:angstvoll": {
+    "en": "fearful; frightened",
+    "nl": "angstig; bang"
+  },
+  "B2:apartheid": {
+    "en": "apartheid; racial segregation",
+    "nl": "apartheid; rassenscheiding"
+  },
+  "B2:astronaut": {
+    "en": "astronaut",
+    "nl": "astronaut"
+  },
+  "B2:auffangen": {
+    "en": "catch something falling",
+    "nl": "opvangen"
+  },
+  "B2:aufpasser": {
+    "en": "watcher; supervisor",
+    "nl": "oppasser; toezichthouder"
+  },
+  "B2:aufreissen": {
+    "en": "tear open; rip apart",
+    "nl": "openscheuren; openrukken"
+  },
+  "B2:aufwecken": {
+    "en": "wake someone up",
+    "nl": "wekken; wakker maken"
+  },
+  "B2:augenarzt": {
+    "en": "eye specialist; ophthalmologist",
+    "nl": "oogarts"
+  },
+  "B2:ausleeren": {
+    "en": "empty out",
+    "nl": "leegmaken"
+  },
+  "B2:ausrasten": {
+    "en": "lose one's temper; take a rest",
+    "nl": "uit zijn slof schieten; uitrusten"
+  },
+  "B2:austeilen": {
+    "en": "distribute; hand out",
+    "nl": "uitdelen"
+  },
+  "B2:avisieren": {
+    "en": "notify in advance; announce",
+    "nl": "aankondigen; vooraf melden"
+  },
+  "B2:badeanzug": {
+    "en": "swimsuit",
+    "nl": "badpak"
+  },
+  "B2:begrüssung": {
+    "en": "greeting; welcome",
+    "nl": "begroeting; ontvangst"
+  },
+  "B2:bolzplatz": {
+    "en": "informal football pitch",
+    "nl": "trapveldje"
+  },
+  "B2:buntstift": {
+    "en": "coloured pencil",
+    "nl": "kleurpotlood"
+  },
+  "B2:busfahrer": {
+    "en": "bus driver",
+    "nl": "buschauffeur"
+  },
+  "B2:dachboden": {
+    "en": "attic",
+    "nl": "zolder"
+  },
+  "B2:dekolleté": {
+    "en": "neckline; décolletage",
+    "nl": "halsuitsnijding; decolleté"
+  },
+  "B2:dilettant": {
+    "en": "dilettante; unskilled amateur",
+    "nl": "dilettant; ondeskundige amateur"
+  },
+  "B2:einfangen": {
+    "en": "catch; capture alive",
+    "nl": "vangen; levend vangen"
+  },
+  "B2:entlaufen": {
+    "en": "run away; escape",
+    "nl": "weglopen; ontsnappen"
+  },
+  "B2:entsetzen": {
+    "en": "horrify; appal",
+    "nl": "doen ontzetten; ontstellen"
+  },
+  "B2:entzücken": {
+    "en": "delight; enchant",
+    "nl": "verrukken; bekoren"
+  },
+  "B2:epikureer": {
+    "en": "Epicurean; follower of Epicurus",
+    "nl": "epicurist; aanhanger van Epicurus"
+  },
+  "B2:erfolglos": {
+    "en": "unsuccessful; in vain",
+    "nl": "zonder succes; vergeefs"
+  },
+  "B2:erstaunen": {
+    "en": "astonish; be amazed",
+    "nl": "verbazen; zich verwonderen"
+  },
+  "B2:exzellent": {
+    "en": "excellent",
+    "nl": "uitstekend; voortreffelijk"
+  },
+  "B2:faxnummer": {
+    "en": "fax number",
+    "nl": "faxnummer"
+  },
+  "B2:filzstift": {
+    "en": "felt-tip pen",
+    "nl": "viltstift"
+  },
+  "B2:fressnapf": {
+    "en": "animal food bowl",
+    "nl": "voerbak"
+  },
+  "B2:fundgrube": {
+    "en": "treasure trove; rich source",
+    "nl": "schatkamer; rijke bron"
+  },
+  "B2:fundstück": {
+    "en": "found object",
+    "nl": "gevonden voorwerp; vondst"
+  },
+  "B2:geisselung": {
+    "en": "flogging; scourging",
+    "nl": "geseling"
+  },
+  "B2:griesgram": {
+    "en": "grouch; grumpy person",
+    "nl": "mopperpot; brombeer"
+  },
+  "B2:halskette": {
+    "en": "necklace",
+    "nl": "halsketting"
+  },
+  "B2:hasardeur": {
+    "en": "reckless adventurer; gambler",
+    "nl": "waaghals; roekeloze avonturier"
+  },
+  "B2:hausmauer": {
+    "en": "house wall",
+    "nl": "huismuur"
+  },
+  "B2:hellbraun": {
+    "en": "light brown",
+    "nl": "lichtbruin"
+  },
+  "B2:hinkommen": {
+    "en": "get there",
+    "nl": "daar aankomen; er komen"
+  },
+  "B2:hochheben": {
+    "en": "lift up",
+    "nl": "optillen"
+  },
+  "B2:holzklotz": {
+    "en": "block of wood",
+    "nl": "houtblok"
+  },
+  "B2:hosenbein": {
+    "en": "trouser leg",
+    "nl": "broekspijp"
+  },
+  "B2:incentive": {
+    "en": "incentive; encouraging reward",
+    "nl": "prikkel; stimuleringspremie"
+  },
+  "B2:kannibale": {
+    "en": "cannibal",
+    "nl": "kannibaal; menseneter"
+  },
+  "B2:karussell": {
+    "en": "merry-go-round",
+    "nl": "carrousel; draaimolen"
+  },
+  "B2:katzenhai": {
+    "en": "catshark",
+    "nl": "kathaai"
+  },
+  "B2:klatschen": {
+    "en": "clap; slap",
+    "nl": "klappen; een klap geven"
+  },
+  "B2:klebeband": {
+    "en": "adhesive tape",
+    "nl": "plakband"
+  },
+  "B2:klebstoff": {
+    "en": "adhesive; glue",
+    "nl": "lijm; kleefstof"
+  },
+  "B2:knuddelig": {
+    "en": "cuddly; cute",
+    "nl": "knuffelig; schattig"
+  },
+  "B2:krakeelen": {
+    "en": "make a row; shout noisily",
+    "nl": "lawaai schoppen; schreeuwen"
+  },
+  "B2:kreisssaal": {
+    "en": "delivery room",
+    "nl": "verloskamer"
+  },
+  "B2:kuschelig": {
+    "en": "cosy; cuddly",
+    "nl": "knus; knuffelig"
+  },
+  "B2:leckerlis": {
+    "en": "pet treats",
+    "nl": "dierensnoepjes; traktaties voor huisdieren"
+  },
+  "B2:mischpoke": {
+    "en": "family; relatives (informal)",
+    "nl": "familie; verwanten (informeel)"
+  },
+  "B2:mitdenken": {
+    "en": "think along; pay attention",
+    "nl": "meedenken; opletten"
+  },
+  "B2:mitfahrer": {
+    "en": "fellow passenger",
+    "nl": "medepassagier; meerijder"
+  },
+  "B2:mülleimer": {
+    "en": "rubbish bin",
+    "nl": "vuilnisbak"
+  },
+  "B2:nachsagen": {
+    "en": "repeat after someone; say something about someone",
+    "nl": "nazeggen; iemand iets toedichten"
+  },
+  "B2:nasenkuss": {
+    "en": "nose kiss; touching noses affectionately",
+    "nl": "neuskus; liefdevolle aanraking van neuzen"
+  },
+  "B2:ouvertüre": {
+    "en": "overture",
+    "nl": "ouverture"
+  },
+  "B2:portfolio": {
+    "en": "portfolio; investment portfolio",
+    "nl": "portfolio; beleggingsportefeuille"
+  },
+  "B2:redundant": {
+    "en": "redundant; unnecessarily repeated",
+    "nl": "overbodig; redundant"
+  },
+  "B2:retriever": {
+    "en": "retriever (dog breed)",
+    "nl": "retriever (hondenras)"
+  },
+  "B2:scharnier": {
+    "en": "hinge",
+    "nl": "scharnier"
+  },
+  "B2:schaukeln": {
+    "en": "swing; rock",
+    "nl": "schommelen; wiegen"
+  },
+  "B2:scheppern": {
+    "en": "clatter; rattle",
+    "nl": "kletteren; rammelen"
+  },
+  "B2:schlecken": {
+    "en": "lick",
+    "nl": "likken"
+  },
+  "B2:schleppen": {
+    "en": "drag; carry with difficulty",
+    "nl": "slepen; met moeite dragen"
+  },
+  "B2:schlingen": {
+    "en": "gulp down; wind around",
+    "nl": "schrokken; ergens omheen winden"
+  },
+  "B2:schmelzen": {
+    "en": "melt",
+    "nl": "smelten"
+  },
+  "B2:schniefen": {
+    "en": "sniffle",
+    "nl": "snotteren; snuiven"
+  },
+  "B2:schrauben": {
+    "en": "screw; fasten with screws",
+    "nl": "schroeven; vastschroeven"
+  },
+  "B2:schulzeit": {
+    "en": "school years; time at school",
+    "nl": "schooltijd; schooljaren"
+  },
+  "B2:schwanken": {
+    "en": "sway; waver",
+    "nl": "wankelen; twijfelen"
+  },
+  "B2:schwenken": {
+    "en": "wave; swivel",
+    "nl": "zwaaien; zwenken"
+  },
+  "B2:schwingen": {
+    "en": "swing; sway",
+    "nl": "zwaaien; slingeren"
+  },
+  "B2:sitzplatz": {
+    "en": "seat",
+    "nl": "zitplaats"
+  },
+  "B2:sommertag": {
+    "en": "summer day",
+    "nl": "zomerdag"
+  },
+  "B2:sonnentag": {
+    "en": "sunny day",
+    "nl": "zonnige dag"
+  },
+  "B2:spaghetto": {
+    "en": "single strand of spaghetti",
+    "nl": "een sliert spaghetti"
+  },
+  "B2:spitzname": {
+    "en": "nickname",
+    "nl": "bijnaam"
+  },
+  "B2:splittern": {
+    "en": "splinter; shatter",
+    "nl": "versplinteren; in scherven breken"
+  },
+  "B2:sprachlos": {
+    "en": "speechless",
+    "nl": "sprakeloos"
+  },
+  "B2:standhaft": {
+    "en": "steadfast; firm",
+    "nl": "standvastig; onverzettelijk"
+  },
+  "B2:stirnband": {
+    "en": "headband",
+    "nl": "hoofdband"
+  },
+  "B2:strahlend": {
+    "en": "radiant; beaming",
+    "nl": "stralend"
+  },
+  "B2:stringent": {
+    "en": "logically rigorous; coherent",
+    "nl": "logisch sluitend; samenhangend"
+  },
+  "B2:symmetrie": {
+    "en": "symmetry",
+    "nl": "symmetrie"
+  },
+  "B2:telefonat": {
+    "en": "phone call",
+    "nl": "telefoongesprek"
+  },
+  "B2:tierkunde": {
+    "en": "study of animals; zoology",
+    "nl": "dierkunde"
+  },
+  "B2:tornister": {
+    "en": "school or military knapsack",
+    "nl": "ransel; school- of soldatenrugzak"
+  },
+  "B2:tröpfchen": {
+    "en": "droplet",
+    "nl": "druppeltje"
+  },
+  "B2:unbemerkt": {
+    "en": "unnoticed",
+    "nl": "onopgemerkt"
+  },
+  "B2:unberührt": {
+    "en": "untouched",
+    "nl": "onaangeroerd; ongerept"
+  },
+  "B2:verdecken": {
+    "en": "cover; conceal",
+    "nl": "bedekken; verbergen"
+  },
+  "B2:verfangen": {
+    "en": "get caught; become entangled",
+    "nl": "verstrikt raken; blijven haken"
+  },
+  "B2:vergebens": {
+    "en": "in vain",
+    "nl": "tevergeefs"
+  },
+  "B2:verknoten": {
+    "en": "knot; tie in a knot",
+    "nl": "knopen; in de knoop leggen"
+  },
+  "B2:versinken": {
+    "en": "sink; become submerged",
+    "nl": "wegzinken; verzinken"
+  },
+  "B2:vorschein": {
+    "en": "appearance; emergence",
+    "nl": "verschijning; tevoorschijn komen"
+  },
+  "B2:vögelchen": {
+    "en": "little bird",
+    "nl": "vogeltje"
+  },
+  "B2:wegfahren": {
+    "en": "drive away; leave by vehicle",
+    "nl": "wegrijden; vertrekken"
+  },
+  "B2:wegrennen": {
+    "en": "run away",
+    "nl": "wegrennen"
+  },
+  "B2:zerfallen": {
+    "en": "fall apart; decay",
+    "nl": "uiteenvallen; vervallen"
+  },
+  "B2:zerreissen": {
+    "en": "tear apart",
+    "nl": "verscheuren"
+  },
+  "B2:abbekommen": {
+    "en": "get a share; receive one's portion",
+    "nl": "een deel krijgen; iets meekrijgen"
+  },
+  "B2:aggression": {
+    "en": "aggression",
+    "nl": "agressie"
+  },
+  "B2:ahnungslos": {
+    "en": "unaware; unsuspecting",
+    "nl": "onwetend; nietsvermoedend"
+  },
+  "B2:akupunktur": {
+    "en": "acupuncture",
+    "nl": "acupunctuur"
+  },
+  "B2:antipathie": {
+    "en": "antipathy; personal dislike",
+    "nl": "antipathie; afkeer"
+  },
+  "B2:asymmetrie": {
+    "en": "asymmetry",
+    "nl": "asymmetrie"
+  },
+  "B2:aufbleiben": {
+    "en": "stay up; remain awake",
+    "nl": "opblijven; wakker blijven"
+  },
+  "B2:auffliegen": {
+    "en": "fly up; be exposed",
+    "nl": "opvliegen; aan het licht komen"
+  },
+  "B2:auffressen": {
+    "en": "eat up; devour",
+    "nl": "opvreten; verslinden"
+  },
+  "B2:aufheitern": {
+    "en": "cheer up; brighten",
+    "nl": "opvrolijken; verblijden"
+  },
+  "B2:aufmuntern": {
+    "en": "encourage; cheer up",
+    "nl": "aanmoedigen; opmonteren"
+  },
+  "B2:aufplatzen": {
+    "en": "burst open",
+    "nl": "openbarsten"
+  },
+  "B2:ausrechnen": {
+    "en": "calculate",
+    "nl": "uitrekenen"
+  },
+  "B2:barzahlung": {
+    "en": "cash payment",
+    "nl": "contante betaling"
+  },
+  "B2:befestigen": {
+    "en": "fasten; secure",
+    "nl": "bevestigen; vastmaken"
+  },
+  "B2:begeistern": {
+    "en": "inspire enthusiasm; enthuse",
+    "nl": "enthousiast maken; bezielen"
+  },
+  "B2:besitzerin": {
+    "en": "female owner",
+    "nl": "eigenares; bezitster"
+  },
+  "B2:blumentopf": {
+    "en": "flowerpot",
+    "nl": "bloempot"
+  },
+  "B2:commitment": {
+    "en": "commitment; dedication",
+    "nl": "inzet; toewijding"
+  },
+  "B2:delegieren": {
+    "en": "delegate",
+    "nl": "delegeren; een taak overdragen"
+  },
+  "B2:diphtherie": {
+    "en": "diphtheria",
+    "nl": "difterie"
+  },
+  "B2:drankommen": {
+    "en": "have one's turn",
+    "nl": "aan de beurt komen"
+  },
+  "B2:dreckspatz": {
+    "en": "dirty child; mucky person",
+    "nl": "smeerpijp; viespeuk"
+  },
+  "B2:eierkuchen": {
+    "en": "pancake",
+    "nl": "pannenkoek"
+  },
+  "B2:eiffelturm": {
+    "en": "Eiffel Tower",
+    "nl": "Eiffeltoren"
+  },
+  "B2:erdbeereis": {
+    "en": "strawberry ice cream",
+    "nl": "aardbeienijs"
+  },
+  "B2:erledigung": {
+    "en": "completion of a task; dealing with an errand",
+    "nl": "afhandeling; uitvoering"
+  },
+  "B2:essenziell": {
+    "en": "essential",
+    "nl": "essentieel; onmisbaar"
+  },
+  "B2:festbinden": {
+    "en": "tie firmly",
+    "nl": "vastbinden"
+  },
+  "B2:festmachen": {
+    "en": "fasten; tie up",
+    "nl": "vastmaken; aanleggen"
+  },
+  "B2:frondienst": {
+    "en": "unpaid forced labour",
+    "nl": "herendienst; onbetaalde dwangarbeid"
+  },
+  "B2:fundstelle": {
+    "en": "place where something was found",
+    "nl": "vindplaats"
+  },
+  "B2:futternapf": {
+    "en": "animal feed bowl",
+    "nl": "voerbak"
+  },
+  "B2:gequatsche": {
+    "en": "idle chatter",
+    "nl": "geklets; gebabbel"
+  },
+  "B2:hanebüchen": {
+    "en": "outrageously absurd",
+    "nl": "volstrekt onzinnig; belachelijk"
+  },
+  "B2:hausarbeit": {
+    "en": "housework; term paper",
+    "nl": "huishoudelijk werk; werkstuk"
+  },
+  "B2:hausnummer": {
+    "en": "house number",
+    "nl": "huisnummer"
+  },
+  "B2:hinterbein": {
+    "en": "hind leg",
+    "nl": "achterpoot"
+  },
+  "B2:hintertüre": {
+    "en": "back door",
+    "nl": "achterdeur"
+  },
+  "B2:hochnehmen": {
+    "en": "lift up; pick up",
+    "nl": "optillen; oppakken"
+  },
+  "B2:hochziehen": {
+    "en": "pull up",
+    "nl": "omhoogtrekken"
+  },
+  "B2:hundeleine": {
+    "en": "dog lead; dog leash",
+    "nl": "hondenriem"
+  },
+  "B2:karosserie": {
+    "en": "car body",
+    "nl": "carrosserie"
+  },
+  "B2:krückstock": {
+    "en": "crutch; supporting walking stick",
+    "nl": "kruk; steunstok"
+  },
+  "B2:kumulation": {
+    "en": "accumulation",
+    "nl": "cumulatie; ophoping"
+  },
+  "B2:kumulieren": {
+    "en": "accumulate",
+    "nl": "cumuleren; ophopen"
+  },
+  "B2:mitschüler": {
+    "en": "schoolmate",
+    "nl": "medeleerling; schoolgenoot"
+  },
+  "B2:müllbeutel": {
+    "en": "rubbish bag",
+    "nl": "vuilniszak"
+  },
+  "B2:nachsitzen": {
+    "en": "stay after school in detention",
+    "nl": "nablijven op school"
+  },
+  "B2:pappkarton": {
+    "en": "cardboard box",
+    "nl": "kartonnen doos"
+  },
+  "B2:picknicken": {
+    "en": "have a picnic",
+    "nl": "picknicken"
+  },
+  "B2:platzieren": {
+    "en": "place; position",
+    "nl": "plaatsen; positioneren"
+  },
+  "B2:potenziell": {
+    "en": "potential",
+    "nl": "potentieel; mogelijk"
+  },
+  "B2:puppenhaus": {
+    "en": "doll's house",
+    "nl": "poppenhuis"
+  },
+  "B2:regnerisch": {
+    "en": "rainy",
+    "nl": "regenachtig"
+  },
+  "B2:respektive": {
+    "en": "or rather; respectively",
+    "nl": "ofwel; respectievelijk"
+  },
+  "B2:riesengross": {
+    "en": "enormous; huge",
+    "nl": "reusachtig; enorm groot"
+  },
+  "B2:schlabbern": {
+    "en": "lap; slurp",
+    "nl": "slobberen; slurpen"
+  },
+  "B2:schleichen": {
+    "en": "sneak; creep",
+    "nl": "sluipen"
+  },
+  "B2:schleudern": {
+    "en": "hurl; spin",
+    "nl": "slingeren; centrifugeren"
+  },
+  "B2:schläfchen": {
+    "en": "nap",
+    "nl": "dutje"
+  },
+  "B2:schmettern": {
+    "en": "hurl forcefully; belt out",
+    "nl": "met kracht gooien; luid schallen"
+  },
+  "B2:schmuggeln": {
+    "en": "smuggle",
+    "nl": "smokkelen"
+  },
+  "B2:schneemann": {
+    "en": "snowman",
+    "nl": "sneeuwpop"
+  },
+  "B2:schnuppern": {
+    "en": "sniff; sample a scent",
+    "nl": "snuffelen"
+  },
+  "B2:schnüffeln": {
+    "en": "sniff around; snoop",
+    "nl": "snuffelen; rondsnuffelen"
+  },
+  "B2:schwingung": {
+    "en": "vibration; oscillation",
+    "nl": "trilling; schommeling"
+  },
+  "B2:seriosität": {
+    "en": "reliability; seriousness",
+    "nl": "betrouwbaarheid; ernst"
+  },
+  "B2:silhouette": {
+    "en": "silhouette; outline",
+    "nl": "silhouet; omtrek"
+  },
+  "B2:souterrain": {
+    "en": "semi-basement; basement flat",
+    "nl": "souterrain; halfondergrondse verdieping"
+  },
+  "B2:spielstein": {
+    "en": "game piece",
+    "nl": "speelsteen"
+  },
+  "B2:steckbrief": {
+    "en": "wanted notice with a description",
+    "nl": "opsporingsbericht met signalement"
+  },
+  "B2:streicheln": {
+    "en": "stroke; caress",
+    "nl": "aaien; strelen"
+  },
+  "B2:verkleiden": {
+    "en": "dress up in disguise; clad",
+    "nl": "verkleden; bekleden"
+  },
+  "B2:verstopfen": {
+    "en": "block; clog",
+    "nl": "verstoppen; verstopt raken"
+  },
+  "B2:verstreuen": {
+    "en": "scatter; strew",
+    "nl": "verstrooien; verspreiden"
+  },
+  "B2:vorderbein": {
+    "en": "foreleg",
+    "nl": "voorpoot"
+  },
+  "B2:wasserfall": {
+    "en": "waterfall",
+    "nl": "waterval"
+  },
+  "B2:weismachen": {
+    "en": "make someone believe something false",
+    "nl": "iemand iets wijsmaken"
+  },
+  "B2:widerlegen": {
+    "en": "refute; disprove",
+    "nl": "weerleggen; ontkrachten"
+  },
+  "B2:zerkratzen": {
+    "en": "scratch; damage by scratching",
+    "nl": "bekrassen; beschadigen door krassen"
+  },
+  "B2:zerstreuen": {
+    "en": "disperse; distract",
+    "nl": "verstrooien; afleiden"
+  },
+  "B2:zwitschern": {
+    "en": "chirp",
+    "nl": "tjilpen; kwetteren"
+  },
+  "B2:akquirieren": {
+    "en": "acquire; attract customers",
+    "nl": "verwerven; klanten werven"
+  },
+  "B2:akquisition": {
+    "en": "acquisition; winning new business",
+    "nl": "acquisitie; klantenwerving"
+  },
+  "B2:annullieren": {
+    "en": "annul; cancel",
+    "nl": "annuleren; ongeldig verklaren"
+  },
+  "B2:ausrutschen": {
+    "en": "slip",
+    "nl": "uitglijden"
+  },
+  "B2:auswechseln": {
+    "en": "replace; exchange",
+    "nl": "vervangen; verwisselen"
+  },
+  "B2:bürgersteig": {
+    "en": "pavement; sidewalk",
+    "nl": "trottoir; stoep"
+  },
+  "B2:delegierter": {
+    "en": "delegate; representative",
+    "nl": "afgevaardigde; gedelegeerde"
+  },
+  "B2:fensterbank": {
+    "en": "windowsill",
+    "nl": "vensterbank"
+  },
+  "B2:fingernagel": {
+    "en": "fingernail",
+    "nl": "vingernagel"
+  },
+  "B2:galoppieren": {
+    "en": "gallop",
+    "nl": "galopperen"
+  },
+  "B2:geiselnahme": {
+    "en": "hostage-taking",
+    "nl": "gijzeling"
+  },
+  "B2:gelangweilt": {
+    "en": "bored",
+    "nl": "verveeld"
+  },
+  "B2:glasscheibe": {
+    "en": "pane of glass",
+    "nl": "glasruit"
+  },
+  "B2:griesgrämig": {
+    "en": "grumpy; grouchy",
+    "nl": "knorrig; chagrijnig"
+  },
+  "B2:hundebellen": {
+    "en": "dog barking",
+    "nl": "hondengeblaf"
+  },
+  "B2:hundefutter": {
+    "en": "dog food",
+    "nl": "hondenvoer"
+  },
+  "B2:hundekuchen": {
+    "en": "dog biscuit",
+    "nl": "hondenkoekje"
+  },
+  "B2:klassenraum": {
+    "en": "classroom",
+    "nl": "klaslokaal"
+  },
+  "B2:klitschnass": {
+    "en": "soaking wet",
+    "nl": "doornat; kletsnat"
+  },
+  "B2:kommilitone": {
+    "en": "fellow university student",
+    "nl": "medestudent"
+  },
+  "B2:lizenzieren": {
+    "en": "license; grant a licence",
+    "nl": "een licentie verlenen; licentiëren"
+  },
+  "B2:mitgekommen": {
+    "en": "came along; accompanied",
+    "nl": "meegekomen"
+  },
+  "B2:mordshunger": {
+    "en": "ravenous hunger",
+    "nl": "reuzenhonger; razende honger"
+  },
+  "B2:morgendlich": {
+    "en": "morning; relating to the morning",
+    "nl": "ochtendlijk; van de ochtend"
+  },
+  "B2:nachmittags": {
+    "en": "in the afternoon",
+    "nl": "'s middags"
+  },
+  "B2:platzierung": {
+    "en": "placement; ranking",
+    "nl": "plaatsing; klassering"
+  },
+  "B2:projizieren": {
+    "en": "project an image",
+    "nl": "een beeld projecteren"
+  },
+  "B2:präferieren": {
+    "en": "prefer",
+    "nl": "verkiezen; de voorkeur geven aan"
+  },
+  "B2:radiergummi": {
+    "en": "eraser",
+    "nl": "gum"
+  },
+  "B2:regenschirm": {
+    "en": "umbrella",
+    "nl": "paraplu"
+  },
+  "B2:schleunigst": {
+    "en": "as quickly as possible; immediately",
+    "nl": "zo snel mogelijk; onmiddellijk"
+  },
+  "B2:schulklasse": {
+    "en": "school class",
+    "nl": "schoolklas"
+  },
+  "B2:schultasche": {
+    "en": "school bag",
+    "nl": "schooltas"
+  },
+  "B2:sehnsüchtig": {
+    "en": "longing; yearning",
+    "nl": "verlangend; hunkerend"
+  },
+  "B2:sparschwein": {
+    "en": "piggy bank",
+    "nl": "spaarvarken"
+  },
+  "B2:stakeholder": {
+    "en": "stakeholder; interested party",
+    "nl": "belanghebbende; betrokkene"
+  },
+  "B2:startbereit": {
+    "en": "ready to start",
+    "nl": "startklaar"
+  },
+  "B2:staubsauger": {
+    "en": "vacuum cleaner",
+    "nl": "stofzuiger"
+  },
+  "B2:stoppschild": {
+    "en": "stop sign",
+    "nl": "stopbord"
+  },
+  "B2:strafarbeit": {
+    "en": "punishment assignment at school",
+    "nl": "strafwerk"
+  },
+  "B2:strassenecke": {
+    "en": "street corner",
+    "nl": "straathoek"
+  },
+  "B2:strassenrand": {
+    "en": "roadside; edge of the road",
+    "nl": "wegrand; berm"
+  },
+  "B2:subsumieren": {
+    "en": "subsume; include under a general category",
+    "nl": "onder een algemeen begrip of regel brengen"
+  },
+  "B2:telefonbuch": {
+    "en": "telephone directory",
+    "nl": "telefoonboek"
+  },
+  "B2:thermometer": {
+    "en": "thermometer",
+    "nl": "thermometer"
+  },
+  "B2:tomatensosse": {
+    "en": "tomato sauce",
+    "nl": "tomatensaus"
+  },
+  "B2:traurigkeit": {
+    "en": "sadness",
+    "nl": "verdriet; droefheid"
+  },
+  "B2:waldmeister": {
+    "en": "sweet woodruff; woodruff flavouring",
+    "nl": "lievevrouwebedstro; het aroma daarvan"
+  },
+  "B2:widerfahren": {
+    "en": "befall; happen to",
+    "nl": "overkomen; ten deel vallen"
+  },
+  "B2:zeigefinger": {
+    "en": "index finger",
+    "nl": "wijsvinger"
+  },
+  "B2:zurückhaben": {
+    "en": "have something back; regain possession",
+    "nl": "iets terughebben; weer in bezit hebben"
+  },
+  "B2:abstellplatz": {
+    "en": "parking space; storage place",
+    "nl": "parkeerplaats; opslagplek"
+  },
+  "B2:astralkörper": {
+    "en": "astral body (spiritual belief)",
+    "nl": "astraal lichaam (spiritueel geloof)"
+  },
+  "B2:asymmetrisch": {
+    "en": "asymmetric",
+    "nl": "asymmetrisch"
+  },
+  "B2:ausschütteln": {
+    "en": "shake out",
+    "nl": "uitkloppen; uitschudden"
+  },
+  "B2:autorisieren": {
+    "en": "authorize",
+    "nl": "autoriseren; machtigen"
+  },
+  "B2:bauchschmerz": {
+    "en": "abdominal pain; stomach ache",
+    "nl": "buikpijn"
+  },
+  "B2:beredsamkeit": {
+    "en": "eloquence",
+    "nl": "welsprekendheid"
+  },
+  "B2:beängstigend": {
+    "en": "frightening; alarming",
+    "nl": "beangstigend; verontrustend"
+  },
+  "B2:blitzschnell": {
+    "en": "lightning-fast",
+    "nl": "bliksemsnel"
+  },
+  "B2:blumenstrauss": {
+    "en": "bouquet of flowers",
+    "nl": "boeket bloemen"
+  },
+  "B2:bombardieren": {
+    "en": "bomb; bombard",
+    "nl": "bombarderen"
+  },
+  "B2:dominosteine": {
+    "en": "domino tiles; layered chocolate sweets",
+    "nl": "dominostenen; Duitse gelaagde chocoladegebakjes"
+  },
+  "B2:eisverkäufer": {
+    "en": "ice-cream seller",
+    "nl": "ijsverkoper"
+  },
+  "B2:fensterbrett": {
+    "en": "windowsill",
+    "nl": "vensterbank"
+  },
+  "B2:fertigmachen": {
+    "en": "get ready; finish; wear out",
+    "nl": "klaarmaken; afmaken; uitputten"
+  },
+  "B2:fronleichnam": {
+    "en": "Corpus Christi (Christian feast)",
+    "nl": "Sacramentsdag (christelijke feestdag)"
+  },
+  "B2:fröhlichkeit": {
+    "en": "cheerfulness; merriment",
+    "nl": "vrolijkheid; opgewektheid"
+  },
+  "B2:galionsfigur": {
+    "en": "figurehead; symbolic representative",
+    "nl": "boegbeeld; symbolische vertegenwoordiger"
+  },
+  "B2:hausbesitzer": {
+    "en": "homeowner",
+    "nl": "huiseigenaar"
+  },
+  "B2:hereinkommen": {
+    "en": "come in",
+    "nl": "binnenkomen"
+  },
+  "B2:herzlichkeit": {
+    "en": "warmth; cordiality",
+    "nl": "hartelijkheid"
+  },
+  "B2:hochspringen": {
+    "en": "jump up",
+    "nl": "omhoogspringen"
+  },
+  "B2:jackentasche": {
+    "en": "jacket pocket",
+    "nl": "jaszak"
+  },
+  "B2:katastrophal": {
+    "en": "catastrophic",
+    "nl": "catastrofaal"
+  },
+  "B2:klassenfahrt": {
+    "en": "school trip",
+    "nl": "schoolreis"
+  },
+  "B2:missgeschick": {
+    "en": "mishap; small misfortune",
+    "nl": "ongelukje; tegenslag"
+  },
+  "B2:montagmorgen": {
+    "en": "Monday morning",
+    "nl": "maandagochtend"
+  },
+  "B2:nachdenklich": {
+    "en": "thoughtful; pensive",
+    "nl": "nadenkend; peinzend"
+  },
+  "B2:schlauberger": {
+    "en": "know-it-all",
+    "nl": "slimmerik; betweter"
+  },
+  "B2:schrottplatz": {
+    "en": "scrapyard",
+    "nl": "schroothoop; sloopterrein"
+  },
+  "B2:schulaufgabe": {
+    "en": "school assignment; school test",
+    "nl": "schoolopdracht; proefwerk"
+  },
+  "B2:schulgebäude": {
+    "en": "school building",
+    "nl": "schoolgebouw"
+  },
+  "B2:sommerferien": {
+    "en": "summer holidays",
+    "nl": "zomervakantie"
+  },
+  "B2:spazierstock": {
+    "en": "walking stick",
+    "nl": "wandelstok"
+  },
+  "B2:sprechanlage": {
+    "en": "intercom",
+    "nl": "intercom"
+  },
+  "B2:strassenseite": {
+    "en": "side of the street",
+    "nl": "straatkant"
+  },
+  "B2:stubenarrest": {
+    "en": "being grounded (punishment)",
+    "nl": "huisarrest"
+  },
+  "B2:telefonhörer": {
+    "en": "telephone handset",
+    "nl": "telefoonhoorn"
+  },
+  "B2:telefonzelle": {
+    "en": "telephone booth",
+    "nl": "telefooncel"
+  },
+  "B2:triumphieren": {
+    "en": "triumph; exult",
+    "nl": "zegevieren; triomferen"
+  },
+  "B2:unvorsichtig": {
+    "en": "careless; imprudent",
+    "nl": "onvoorzichtig; roekeloos"
+  },
+  "B2:verscheuchen": {
+    "en": "scare away",
+    "nl": "wegjagen; verjagen"
+  },
+  "B2:wegschmeissen": {
+    "en": "throw away",
+    "nl": "weggooien"
+  },
+  "B2:weiterfahren": {
+    "en": "continue driving or travelling",
+    "nl": "verder rijden; de reis voortzetten"
+  },
+  "B2:zersplittern": {
+    "en": "splinter; shatter",
+    "nl": "versplinteren; verbrijzelen"
+  },
+  "B2:aufgesprungen": {
+    "en": "jumped up; sprung open",
+    "nl": "opgesprongen"
+  },
+  "B2:beeinflussung": {
+    "en": "influence; influencing",
+    "nl": "beïnvloeding"
+  },
+  "B2:dilettantisch": {
+    "en": "amateurish; unskilled",
+    "nl": "amateuristisch; dilettantisch"
+  },
+  "B2:fensterrahmen": {
+    "en": "window frame",
+    "nl": "raamkozijn"
+  },
+  "B2:freitagmorgen": {
+    "en": "Friday morning",
+    "nl": "vrijdagochtend"
+  },
+  "B2:freudensprung": {
+    "en": "jump for joy",
+    "nl": "vreugdesprong"
+  },
+  "B2:gratwanderung": {
+    "en": "walking a ridge; delicate balancing act",
+    "nl": "bergkamwandeling; delicate evenwichtsoefening"
+  },
+  "B2:guerillakrieg": {
+    "en": "guerrilla warfare",
+    "nl": "guerrillaoorlog"
+  },
+  "B2:hoffnungsvoll": {
+    "en": "hopeful",
+    "nl": "hoopvol"
+  },
+  "B2:inkrafttreten": {
+    "en": "entry into force",
+    "nl": "inwerkingtreding"
+  },
+  "B2:klassenzimmer": {
+    "en": "classroom",
+    "nl": "klaslokaal"
+  },
+  "B2:klettergerüst": {
+    "en": "climbing frame",
+    "nl": "klimrek"
+  },
+  "B2:lieblingstier": {
+    "en": "favourite animal",
+    "nl": "lievelingsdier"
+  },
+  "B2:mitbewohnerin": {
+    "en": "female housemate",
+    "nl": "medebewoonster; huisgenote"
+  },
+  "B2:mittagsschlaf": {
+    "en": "afternoon nap",
+    "nl": "middagdutje"
+  },
+  "B2:nebeneinander": {
+    "en": "side by side",
+    "nl": "naast elkaar"
+  },
+  "B2:schadenersatz": {
+    "en": "damages; compensation for harm",
+    "nl": "schadevergoeding"
+  },
+  "B2:schweinestall": {
+    "en": "pigsty",
+    "nl": "varkensstal"
+  },
+  "B2:selbstgemacht": {
+    "en": "homemade; self-made",
+    "nl": "zelfgemaakt"
+  },
+  "B2:sonntagmorgen": {
+    "en": "Sunday morning",
+    "nl": "zondagochtend"
+  },
+  "B2:spielzeugauto": {
+    "en": "toy car",
+    "nl": "speelgoedauto"
+  },
+  "B2:stracciatella": {
+    "en": "stracciatella ice cream with chocolate flakes",
+    "nl": "stracciatella-ijs met chocoladevlokken"
+  },
+  "B2:taucherbrille": {
+    "en": "diving mask",
+    "nl": "duikbril"
+  },
+  "B2:todlangweilig": {
+    "en": "extremely boring",
+    "nl": "doodsaai"
+  },
+  "B2:trockenfutter": {
+    "en": "dry animal food",
+    "nl": "droogvoer"
+  },
+  "B2:unentgeltlich": {
+    "en": "free of charge",
+    "nl": "gratis; kosteloos"
+  },
+  "B2:unsympathisch": {
+    "en": "unlikable; unpleasant",
+    "nl": "onsympathiek; onaangenaam"
+  },
+  "B2:viertelstunde": {
+    "en": "quarter of an hour",
+    "nl": "een kwartier"
+  },
+  "B2:widerspiegeln": {
+    "en": "reflect; mirror",
+    "nl": "weerspiegelen"
+  },
+  "B2:währenddessen": {
+    "en": "meanwhile",
+    "nl": "ondertussen"
+  },
+  "B2:wäscheklammer": {
+    "en": "clothes peg",
+    "nl": "wasknijper"
+  },
+  "B2:zebrastreifen": {
+    "en": "zebra crossing",
+    "nl": "zebrapad"
+  },
+  "B2:zerschmettern": {
+    "en": "smash to pieces",
+    "nl": "verbrijzelen; aan stukken slaan"
+  },
+  "B2:überglücklich": {
+    "en": "overjoyed",
+    "nl": "dolgelukkig"
+  },
+  "B2:achtunddreissig": {
+    "en": "thirty-eight",
+    "nl": "achtendertig"
+  },
+  "B2:bushaltestelle": {
+    "en": "bus stop",
+    "nl": "bushalte"
+  },
+  "B2:diskriminieren": {
+    "en": "discriminate against",
+    "nl": "discrimineren"
+  },
+  "B2:dreiundachtzig": {
+    "en": "eighty-three",
+    "nl": "drieëntachtig"
+  },
+  "B2:einfaltspinsel": {
+    "en": "simpleton; fool",
+    "nl": "onnozele hals; sufferd"
+  },
+  "B2:einkaufstasche": {
+    "en": "shopping bag",
+    "nl": "boodschappentas"
+  },
+  "B2:fensterscheibe": {
+    "en": "windowpane",
+    "nl": "ruit; vensterglas"
+  },
+  "B2:klassenkamerad": {
+    "en": "classmate",
+    "nl": "klasgenoot"
+  },
+  "B2:prophylaktisch": {
+    "en": "preventive; prophylactic",
+    "nl": "preventief; profylactisch"
+  },
+  "B2:schlussendlich": {
+    "en": "ultimately; in the end",
+    "nl": "uiteindelijk; ten slotte"
+  },
+  "B2:schokoladeneis": {
+    "en": "chocolate ice cream",
+    "nl": "chocolade-ijs"
+  },
+  "B2:spazierengehen": {
+    "en": "go for a walk",
+    "nl": "gaan wandelen"
+  },
+  "B2:säbelzahntiger": {
+    "en": "sabre-toothed tiger",
+    "nl": "sabeltandtijger"
+  },
+  "B2:verwandtschaft": {
+    "en": "kinship; relatives",
+    "nl": "verwantschap; familieleden"
+  },
+  "B2:zeichensprache": {
+    "en": "sign language",
+    "nl": "gebarentaal"
+  },
+  "B2:fleischklösschen": {
+    "en": "small meatball",
+    "nl": "gehaktballetje"
+  },
+  "B2:gesichtsausdruck": {
+    "en": "facial expression",
+    "nl": "gezichtsuitdrukking"
+  },
+  "B2:nichtsdestotrotz": {
+    "en": "nevertheless",
+    "nl": "desondanks; niettemin"
+  },
+  "B2:schnellstmöglich": {
+    "en": "as soon as possible",
+    "nl": "zo snel mogelijk"
+  },
+  "B2:freitagnachmittag": {
+    "en": "Friday afternoon",
+    "nl": "vrijdagmiddag"
+  },
+  "B2:staubsaugerbeutel": {
+    "en": "vacuum cleaner bag",
+    "nl": "stofzuigerzak"
+  },
+  "B2:drum": {
+    "en": "around it; therefore (informal)",
+    "nl": "eromheen; daarom (informeel)"
+  },
+  "B2:irgendeinem": {
+    "en": "any; some (dative form)",
+    "nl": "enig; een of ander (datiefvorm)"
+  },
+  "B2:türe": {
+    "en": "door",
+    "nl": "deur"
+  },
+  "B2:plump": {
+    "en": "clumsy; coarse",
+    "nl": "lomp; plomp"
+  },
+  "B2:pistole": {
+    "en": "pistol",
+    "nl": "pistool"
+  },
+  "B2:rutschen": {
+    "en": "slide; slip",
+    "nl": "glijden; uitglijden"
+  },
+  "B2:aas": {
+    "en": "carrion; animal carcass",
+    "nl": "aas; kadaver"
+  },
+  "B2:bon": {
+    "en": "receipt; voucher",
+    "nl": "bon; kassabon"
+  },
+  "B2:chi": {
+    "en": "qi; life energy in Chinese philosophy",
+    "nl": "qi; levensenergie in de Chinese filosofie"
+  },
+  "B2:fix": {
+    "en": "fixed; quick",
+    "nl": "vast; vlug"
+  },
+  "B2:kur": {
+    "en": "course of treatment; therapeutic stay",
+    "nl": "kuur; kuurverblijf"
+  },
+  "B2:mau": {
+    "en": "poor; disappointing",
+    "nl": "matig; tegenvallend"
+  },
+  "B2:rap": {
+    "en": "rap music",
+    "nl": "rapmuziek"
+  },
+  "B2:sau": {
+    "en": "sow (female pig)",
+    "nl": "zeug"
+  },
+  "B2:sex": {
+    "en": "sex; sexual activity",
+    "nl": "seks; seksuele activiteit"
+  },
+  "B2:süd": {
+    "en": "south",
+    "nl": "zuid; zuiden"
+  },
+  "B2:zar": {
+    "en": "tsar",
+    "nl": "tsaar"
+  },
+  "B2:aids": {
+    "en": "AIDS; acquired immune deficiency syndrome",
+    "nl": "aids; verworven immunodeficiëntiesyndroom"
+  },
+  "B2:akne": {
+    "en": "acne",
+    "nl": "acne; jeugdpuistjes"
+  },
+  "B2:akut": {
+    "en": "acute accent (´)",
+    "nl": "accent aigu (´)"
+  },
+  "B2:bast": {
+    "en": "bast; inner bark fibres",
+    "nl": "bast; vezels uit de binnenbast"
+  },
+  "B2:blut": {
+    "en": "blood",
+    "nl": "bloed"
+  },
+  "B2:coca": {
+    "en": "coca plant",
+    "nl": "cocaplant"
+  },
+  "B2:daus": {
+    "en": "ace in German-suited card games; expression of surprise",
+    "nl": "aas in Duitse kaartspelen; uitroep van verbazing"
+  },
+  "B2:ebbe": {
+    "en": "ebb tide; low tide",
+    "nl": "eb; laagwater"
+  },
+  "B2:edel": {
+    "en": "noble; fine",
+    "nl": "edel; voornaam"
+  },
+  "B2:etat": {
+    "en": "allocated budget",
+    "nl": "begroting; toegewezen budget"
+  },
+  "B2:fick": {
+    "en": "fuck; sexual intercourse (vulgar)",
+    "nl": "neukpartij (vulgair)"
+  },
+  "B2:flau": {
+    "en": "weak; slightly nauseous",
+    "nl": "flauw; licht misselijk"
+  },
+  "B2:gans": {
+    "en": "goose",
+    "nl": "gans"
+  },
+  "B2:gaul": {
+    "en": "nag; horse (informal)",
+    "nl": "knol; paard (informeel)"
+  },
+  "B2:gips": {
+    "en": "gypsum; plaster",
+    "nl": "gips"
+  },
+  "B2:hain": {
+    "en": "grove",
+    "nl": "bosje; boomgaardje"
+  },
+  "B2:heli": {
+    "en": "helicopter (informal)",
+    "nl": "heli; helikopter"
+  },
+  "B2:herb": {
+    "en": "tart; bitter; harsh",
+    "nl": "wrang; bitter; hard"
+  },
+  "B2:jura": {
+    "en": "law as a university subject; Jurassic period",
+    "nl": "rechtenstudie; Jura (geologisch tijdperk)"
+  },
+  "B2:keim": {
+    "en": "germ; beginning of growth",
+    "nl": "kiem; ziektekiem"
+  },
+  "B2:kode": {
+    "en": "code",
+    "nl": "code"
+  },
+  "B2:korn": {
+    "en": "grain; grain spirit",
+    "nl": "graankorrel; graanjenever"
+  },
+  "B2:laie": {
+    "en": "layperson; non-specialist",
+    "nl": "leek; niet-deskundige"
+  },
+  "B2:laus": {
+    "en": "louse",
+    "nl": "luis"
+  },
+  "B2:list": {
+    "en": "cunning; trick",
+    "nl": "list; sluwheid"
+  },
+  "B2:moor": {
+    "en": "peat bog; moorland",
+    "nl": "veen; veenmoeras"
+  },
+  "B2:mord": {
+    "en": "murder",
+    "nl": "moord"
+  },
+  "B2:neid": {
+    "en": "envy",
+    "nl": "afgunst; nijd"
+  },
+  "B2:pein": {
+    "en": "torment; severe pain",
+    "nl": "kwelling; hevige pijn"
+  },
+  "B2:pose": {
+    "en": "pose; affectation",
+    "nl": "pose; aanstellerij"
+  },
+  "B2:raub": {
+    "en": "robbery",
+    "nl": "roof; beroving"
+  },
+  "B2:reck": {
+    "en": "horizontal gymnastics bar",
+    "nl": "rekstok"
+  },
+  "B2:rege": {
+    "en": "active; lively",
+    "nl": "levendig; bedrijvig"
+  },
+  "B2:rost": {
+    "en": "rust; cooking grate",
+    "nl": "roest; rooster"
+  },
+  "B2:saat": {
+    "en": "sowing; seed for sowing",
+    "nl": "zaai; zaaigoed"
+  },
+  "B2:senf": {
+    "en": "mustard",
+    "nl": "mosterd"
+  },
+  "B2:sexy": {
+    "en": "sexually attractive",
+    "nl": "sexy; seksueel aantrekkelijk"
+  },
+  "B2:sieb": {
+    "en": "sieve; strainer",
+    "nl": "zeef"
+  },
+  "B2:span": {
+    "en": "wood shaving; splinter",
+    "nl": "spaander; splinter"
+  },
+  "B2:tabu": {
+    "en": "taboo",
+    "nl": "taboe"
+  },
+  "B2:teig": {
+    "en": "dough",
+    "nl": "deeg"
+  },
+  "B2:tofu": {
+    "en": "tofu",
+    "nl": "tofu"
+  },
+  "B2:wink": {
+    "en": "signal; hint",
+    "nl": "wenk; hint"
+  },
+  "B2:zink": {
+    "en": "zinc",
+    "nl": "zink"
+  },
+  "B2:after": {
+    "en": "anus",
+    "nl": "anus"
+  },
+  "B2:anbau": {
+    "en": "cultivation; building extension",
+    "nl": "teelt; aanbouw"
+  },
+  "B2:anker": {
+    "en": "anchor",
+    "nl": "anker"
+  },
+  "B2:arsch": {
+    "en": "arse; butt (vulgar)",
+    "nl": "reet; kont (grof)"
+  },
+  "B2:atout": {
+    "en": "trump card",
+    "nl": "troefkaart"
+  },
+  "B2:belag": {
+    "en": "covering layer; topping",
+    "nl": "deklaag; beleg"
+  },
+  "B2:blank": {
+    "en": "shiny; bare",
+    "nl": "blank; glanzend; kaal"
+  },
+  "B2:blech": {
+    "en": "sheet metal",
+    "nl": "plaatmetaal; blik"
+  },
+  "B2:botin": {
+    "en": "female messenger",
+    "nl": "bode; vrouwelijke boodschapper"
+  },
+  "B2:brühe": {
+    "en": "broth",
+    "nl": "bouillon"
+  },
+  "B2:bürde": {
+    "en": "burden",
+    "nl": "last; zware last"
+  },
+  "B2:cello": {
+    "en": "cello",
+    "nl": "cello"
+  },
+  "B2:dicke": {
+    "en": "thickness; plumpness",
+    "nl": "dikte; gezetheid"
+  },
+  "B2:dodel": {
+    "en": "fool; idiot (dialect)",
+    "nl": "sukkel; domkop (dialect)"
+  },
+  "B2:dufte": {
+    "en": "great; excellent (informal)",
+    "nl": "geweldig; tof (informeel)"
+  },
+  "B2:dödel": {
+    "en": "fool; idiot (informal)",
+    "nl": "sukkel; domkop (informeel)"
+  },
+  "B2:dürre": {
+    "en": "drought",
+    "nl": "droogte"
+  },
+  "B2:eifer": {
+    "en": "zeal; diligence",
+    "nl": "ijver; geestdrift"
+  },
+  "B2:eklat": {
+    "en": "scandal; public uproar",
+    "nl": "schandaal; openlijke rel"
+  },
+  "B2:empor": {
+    "en": "upwards",
+    "nl": "omhoog"
+  },
+  "B2:erlös": {
+    "en": "proceeds; revenue",
+    "nl": "opbrengst"
+  },
+  "B2:euter": {
+    "en": "udder",
+    "nl": "uier"
+  },
+  "B2:falte": {
+    "en": "wrinkle; fold",
+    "nl": "rimpel; vouw"
+  },
+  "B2:fleiss": {
+    "en": "diligence",
+    "nl": "vlijt; ijver"
+  },
+  "B2:flink": {
+    "en": "agile; quick",
+    "nl": "vlug; behendig"
+  },
+  "B2:folio": {
+    "en": "folio; large printing-paper format",
+    "nl": "folio; groot papierformaat"
+  },
+  "B2:galle": {
+    "en": "bile",
+    "nl": "gal"
+  },
+  "B2:gemüt": {
+    "en": "temperament; emotional nature",
+    "nl": "gemoed; aard"
+  },
+  "B2:genus": {
+    "en": "grammatical gender; taxonomic genus",
+    "nl": "grammaticaal geslacht; taxonomisch geslacht"
+  },
+  "B2:glied": {
+    "en": "limb; link or member",
+    "nl": "ledemaat; schakel"
+  },
+  "B2:graph": {
+    "en": "graph; mathematical graph",
+    "nl": "grafiek; graaf in de wiskunde"
+  },
+  "B2:graus": {
+    "en": "horror; revulsion",
+    "nl": "afgrijzen; gruwel"
+  },
+  "B2:grips": {
+    "en": "brains; intelligence (informal)",
+    "nl": "verstand; slimheid (informeel)"
+  },
+  "B2:gummi": {
+    "en": "rubber",
+    "nl": "rubber"
+  },
+  "B2:haupt": {
+    "en": "head; chief element in compounds",
+    "nl": "hoofd; hoofdelement in samenstellingen"
+  },
+  "B2:henne": {
+    "en": "hen",
+    "nl": "hen; kip"
+  },
+  "B2:hinab": {
+    "en": "downwards",
+    "nl": "naar beneden"
+  },
+  "B2:hirte": {
+    "en": "shepherd; herder",
+    "nl": "herder"
+  },
+  "B2:hymne": {
+    "en": "anthem; hymn",
+    "nl": "volkslied; hymne"
+  },
+  "B2:härte": {
+    "en": "hardness; severity",
+    "nl": "hardheid; strengheid"
+  },
+  "B2:hülle": {
+    "en": "cover; casing",
+    "nl": "hoes; omhulsel"
+  },
+  "B2:idiot": {
+    "en": "idiot; fool (insult)",
+    "nl": "idioot; domkop (scheldwoord)"
+  },
+  "B2:ikone": {
+    "en": "religious icon; prominent symbol",
+    "nl": "icoon; toonaangevend symbool"
+  },
+  "B2:jüdin": {
+    "en": "Jewish woman",
+    "nl": "Joodse vrouw"
+  },
+  "B2:kappe": {
+    "en": "cap; covering cap",
+    "nl": "pet; dop"
+  },
+  "B2:kassa": {
+    "en": "cash desk; till (Austrian German)",
+    "nl": "kassa (Oostenrijks-Duits)"
+  },
+  "B2:kippe": {
+    "en": "cigarette butt; rubbish tip",
+    "nl": "peuk; vuilnisbelt"
+  },
+  "B2:kleie": {
+    "en": "bran",
+    "nl": "zemelen"
+  },
+  "B2:kniff": {
+    "en": "clever trick; pinch",
+    "nl": "handigheidje; kneep"
+  },
+  "B2:krass": {
+    "en": "extreme; striking; awesome (informal)",
+    "nl": "extreem; opvallend; heftig (informeel)"
+  },
+  "B2:kraut": {
+    "en": "herb; leafy plant",
+    "nl": "kruid; bladgewas"
+  },
+  "B2:kühle": {
+    "en": "coolness; lack of warmth",
+    "nl": "koelte; koelheid"
+  },
+  "B2:küken": {
+    "en": "chick",
+    "nl": "kuiken"
+  },
+  "B2:lyrik": {
+    "en": "lyric poetry",
+    "nl": "lyriek; lyrische poëzie"
+  },
+  "B2:macke": {
+    "en": "small defect; eccentric habit",
+    "nl": "mankementje; eigenaardigheid"
+  },
+  "B2:makel": {
+    "en": "flaw; blemish",
+    "nl": "gebrek; smet"
+  },
+  "B2:mücke": {
+    "en": "mosquito",
+    "nl": "mug"
+  },
+  "B2:nackt": {
+    "en": "naked",
+    "nl": "naakt"
+  },
+  "B2:obhut": {
+    "en": "care; protective custody",
+    "nl": "hoede; bescherming"
+  },
+  "B2:ochse": {
+    "en": "ox; castrated bull",
+    "nl": "os"
+  },
+  "B2:odium": {
+    "en": "odium; bad reputation",
+    "nl": "slechte naam; afkeer oproepende reputatie"
+  },
+  "B2:order": {
+    "en": "order; purchase order",
+    "nl": "order; koopopdracht"
+  },
+  "B2:organ": {
+    "en": "body organ; official body",
+    "nl": "orgaan; instantie"
+  },
+  "B2:parat": {
+    "en": "ready; at hand",
+    "nl": "gereed; bij de hand"
+  },
+  "B2:pasta": {
+    "en": "pasta",
+    "nl": "pasta"
+  },
+  "B2:photo": {
+    "en": "photograph",
+    "nl": "foto"
+  },
+  "B2:polin": {
+    "en": "Polish woman",
+    "nl": "Poolse vrouw"
+  },
+  "B2:pöbel": {
+    "en": "rabble; mob (derogatory)",
+    "nl": "gepeupel; uitschot"
+  },
+  "B2:reede": {
+    "en": "roadstead; anchorage outside a harbour",
+    "nl": "rede; ankerplaats buiten de haven"
+  },
+  "B2:remis": {
+    "en": "draw; tied match",
+    "nl": "remise; gelijkspel"
+  },
+  "B2:roter": {
+    "en": "leftist; communist (informal)",
+    "nl": "rode; communist (informeel)"
+  },
+  "B2:rubel": {
+    "en": "rouble; currency unit",
+    "nl": "roebel; munteenheid"
+  },
+  "B2:rügen": {
+    "en": "reprimand; formally criticize",
+    "nl": "berispen; terechtwijzen"
+  },
+  "B2:scham": {
+    "en": "shame; modesty",
+    "nl": "schaamte; schroom"
+  },
+  "B2:schar": {
+    "en": "crowd; large group",
+    "nl": "schare; menigte"
+  },
+  "B2:segel": {
+    "en": "sail",
+    "nl": "zeil"
+  },
+  "B2:seide": {
+    "en": "silk",
+    "nl": "zijde"
+  },
+  "B2:smart": {
+    "en": "smart; stylish",
+    "nl": "slim; stijlvol"
+  },
+  "B2:snack": {
+    "en": "snack",
+    "nl": "snack; tussendoortje"
+  },
+  "B2:spott": {
+    "en": "mockery; ridicule",
+    "nl": "spot; hoon"
+  },
+  "B2:spüle": {
+    "en": "kitchen sink",
+    "nl": "gootsteen; spoelbak"
+  },
+  "B2:stroh": {
+    "en": "straw",
+    "nl": "stro"
+  },
+  "B2:sujet": {
+    "en": "subject of an artistic or literary work",
+    "nl": "onderwerp van een kunstwerk; thema"
+  },
+  "B2:sushi": {
+    "en": "sushi",
+    "nl": "sushi"
+  },
+  "B2:säure": {
+    "en": "acid; acidity",
+    "nl": "zuur; zuurgraad"
+  },
+  "B2:sünde": {
+    "en": "sin",
+    "nl": "zonde"
+  },
+  "B2:tabak": {
+    "en": "tobacco",
+    "nl": "tabak"
+  },
+  "B2:träge": {
+    "en": "sluggish; slow",
+    "nl": "traag; loom"
+  },
+  "B2:unmut": {
+    "en": "displeasure; annoyance",
+    "nl": "ongenoegen; onvrede"
+  },
+  "B2:vegan": {
+    "en": "vegan; without animal products",
+    "nl": "veganistisch; zonder dierlijke producten"
+  },
+  "B2:waise": {
+    "en": "orphan",
+    "nl": "wees"
+  },
+  "B2:wägen": {
+    "en": "weigh; weigh considerations",
+    "nl": "wegen; afwegen"
+  },
+  "B2:zebra": {
+    "en": "zebra",
+    "nl": "zebra"
+  },
+  "B2:zwist": {
+    "en": "quarrel; discord",
+    "nl": "twist; onenigheid"
+  },
+  "B2:ägide": {
+    "en": "aegis; leadership and protection",
+    "nl": "beschermheerschap; hoede"
+  },
+  "B2:abhang": {
+    "en": "slope; hillside",
+    "nl": "helling; bergflank"
+  },
+  "B2:ablage": {
+    "en": "filing; place for documents",
+    "nl": "archivering; opbergplek"
+  },
+  "B2:analog": {
+    "en": "analogous; analogue",
+    "nl": "analoog; overeenkomstig"
+  },
+  "B2:anstoss": {
+    "en": "impulse; kick-off",
+    "nl": "aanzet; aftrap"
+  },
+  "B2:arznei": {
+    "en": "medicine",
+    "nl": "geneesmiddel"
+  },
+  "B2:avatar": {
+    "en": "digital avatar; user's representative image",
+    "nl": "avatar; digitale gebruikersfiguur"
+  },
+  "B2:ballon": {
+    "en": "balloon; hot-air balloon",
+    "nl": "ballon; luchtballon"
+  },
+  "B2:balsam": {
+    "en": "balm; something soothing",
+    "nl": "balsem; verzachting"
+  },
+  "B2:bangen": {
+    "en": "anxious anticipation; apprehension",
+    "nl": "angstige spanning; bezorgdheid"
+  },
+  "B2:bergig": {
+    "en": "mountainous",
+    "nl": "bergachtig"
+  },
+  "B2:bissen": {
+    "en": "bite; mouthful",
+    "nl": "hap; beet"
+  },
+  "B2:bissig": {
+    "en": "biting; caustic",
+    "nl": "bijterig; bijtend"
+  },
+  "B2:blöken": {
+    "en": "bleating of sheep",
+    "nl": "geblat; gemekker"
+  },
+  "B2:bronze": {
+    "en": "bronze",
+    "nl": "brons"
+  },
+  "B2:bullig": {
+    "en": "stocky; powerfully built",
+    "nl": "potig; gedrongen en sterk"
+  },
+  "B2:bündig": {
+    "en": "concise; flush with a surface",
+    "nl": "bondig; vlak aansluitend"
+  },
+  "B2:charta": {
+    "en": "charter",
+    "nl": "handvest; charter"
+  },
+  "B2:diesel": {
+    "en": "diesel fuel; diesel engine",
+    "nl": "diesel; dieselmotor"
+  },
+  "B2:droben": {
+    "en": "up there",
+    "nl": "daarboven"
+  },
+  "B2:duften": {
+    "en": "smell pleasant",
+    "nl": "lekker geuren"
+  },
+  "B2:endlos": {
+    "en": "endless",
+    "nl": "eindeloos"
+  },
+  "B2:erbaut": {
+    "en": "built; uplifted",
+    "nl": "gebouwd; geestelijk opgebeurd"
+  },
+  "B2:essbar": {
+    "en": "edible",
+    "nl": "eetbaar"
+  },
+  "B2:etappe": {
+    "en": "stage; leg of a journey",
+    "nl": "etappe; fase"
+  },
+  "B2:faible": {
+    "en": "fondness; special liking",
+    "nl": "zwak voor iets; voorliefde"
+  },
+  "B2:faktum": {
+    "en": "fact",
+    "nl": "feit"
+  },
+  "B2:fasten": {
+    "en": "fasting",
+    "nl": "vasten"
+  },
+  "B2:fettig": {
+    "en": "greasy; fatty",
+    "nl": "vettig; vet"
+  },
+  "B2:fiskus": {
+    "en": "public treasury; tax authorities",
+    "nl": "fiscus; schatkist"
+  },
+  "B2:fühler": {
+    "en": "antenna; feeler",
+    "nl": "voelspriet; sensor"
+  },
+  "B2:gefeit": {
+    "en": "immune; protected against",
+    "nl": "gevrijwaard; bestand tegen"
+  },
+  "B2:geigen": {
+    "en": "play the violin",
+    "nl": "vioolspelen"
+  },
+  "B2:glätte": {
+    "en": "smoothness; slipperiness",
+    "nl": "gladheid"
+  },
+  "B2:granit": {
+    "en": "granite",
+    "nl": "graniet"
+  },
+  "B2:gräfin": {
+    "en": "countess",
+    "nl": "gravin"
+  },
+  "B2:gurren": {
+    "en": "coo",
+    "nl": "koeren"
+  },
+  "B2:gönner": {
+    "en": "generous patron; benefactor",
+    "nl": "begunstiger; weldoener"
+  },
+  "B2:hallen": {
+    "en": "resound; echo",
+    "nl": "weerklinken; galmen"
+  },
+  "B2:hektik": {
+    "en": "hectic activity; frantic rush",
+    "nl": "hectiek; gejaagdheid"
+  },
+  "B2:heroin": {
+    "en": "heroin",
+    "nl": "heroïne"
+  },
+  "B2:hetzer": {
+    "en": "agitator; inciter of hatred",
+    "nl": "ophitser; haatzaaier"
+  },
+  "B2:hopfen": {
+    "en": "hops plant",
+    "nl": "hop"
+  },
+  "B2:humbug": {
+    "en": "humbug; nonsense",
+    "nl": "onzin; flauwekul"
+  },
+  "B2:häufen": {
+    "en": "heap up; accumulate",
+    "nl": "ophopen; opstapelen"
+  },
+  "B2:kittel": {
+    "en": "work coat; professional gown",
+    "nl": "stofjas; werkkiel"
+  },
+  "B2:klacks": {
+    "en": "cinch; small amount",
+    "nl": "een fluitje van een cent; kleine hoeveelheid"
+  },
+  "B2:knilch": {
+    "en": "little squirt; irritating fellow (informal)",
+    "nl": "ventje; vervelend kereltje (informeel)"
+  },
+  "B2:kokain": {
+    "en": "cocaine",
+    "nl": "cocaïne"
+  },
+  "B2:kupfer": {
+    "en": "copper",
+    "nl": "koper"
+  },
+  "B2:kürbis": {
+    "en": "pumpkin; squash",
+    "nl": "pompoen"
+  },
+  "B2:lagern": {
+    "en": "store; be stored; camp",
+    "nl": "opslaan; opgeslagen liggen; kamperen"
+  },
+  "B2:lahmen": {
+    "en": "limp; falter",
+    "nl": "mank lopen; vertragen"
+  },
+  "B2:lappen": {
+    "en": "rag; cleaning cloth",
+    "nl": "lap; poetsdoek"
+  },
+  "B2:latein": {
+    "en": "Latin language",
+    "nl": "Latijn"
+  },
+  "B2:leiche": {
+    "en": "human corpse",
+    "nl": "lijk"
+  },
+  "B2:leiste": {
+    "en": "narrow strip; groin",
+    "nl": "lat; lies"
+  },
+  "B2:lesbar": {
+    "en": "legible; readable",
+    "nl": "leesbaar"
+  },
+  "B2:masche": {
+    "en": "stitch; trick",
+    "nl": "steek; truc"
+  },
+  "B2:matsch": {
+    "en": "mud; slush",
+    "nl": "modder; drab"
+  },
+  "B2:mithin": {
+    "en": "therefore; consequently",
+    "nl": "derhalve; bijgevolg"
+  },
+  "B2:mondän": {
+    "en": "fashionably sophisticated; glamorous",
+    "nl": "mondain; chic"
+  },
+  "B2:murmel": {
+    "en": "playing marble",
+    "nl": "knikker"
+  },
+  "B2:mühsal": {
+    "en": "hardship; toil",
+    "nl": "moeite; zware inspanning"
+  },
+  "B2:nadeln": {
+    "en": "needles; conifer needles",
+    "nl": "naalden; dennennaalden"
+  },
+  "B2:navajo": {
+    "en": "Navajo language",
+    "nl": "Navajo (taal)"
+  },
+  "B2:nektar": {
+    "en": "nectar",
+    "nl": "nectar"
+  },
+  "B2:newton": {
+    "en": "newton (unit of force)",
+    "nl": "newton (eenheid van kracht)"
+  },
+  "B2:niacin": {
+    "en": "niacin; vitamin B3",
+    "nl": "niacine; vitamine B3"
+  },
+  "B2:nimmer": {
+    "en": "never; no longer (literary or dialect)",
+    "nl": "nimmer; niet meer (literair of dialect)"
+  },
+  "B2:nisten": {
+    "en": "nest; build a nest",
+    "nl": "nestelen; een nest bouwen"
+  },
+  "B2:nuance": {
+    "en": "nuance; subtle difference",
+    "nl": "nuance; fijn verschil"
+  },
+  "B2:obenan": {
+    "en": "at the top; first in importance",
+    "nl": "bovenaan; voorop"
+  },
+  "B2:oktave": {
+    "en": "octave (musical interval)",
+    "nl": "octaaf"
+  },
+  "B2:pilger": {
+    "en": "pilgrim",
+    "nl": "pelgrim"
+  },
+  "B2:podest": {
+    "en": "raised platform",
+    "nl": "podium; verhoging"
+  },
+  "B2:pointe": {
+    "en": "punchline; witty climax",
+    "nl": "clou; pointe"
+  },
+  "B2:pokern": {
+    "en": "play poker; take a negotiating gamble",
+    "nl": "pokeren; hoog inzetten bij onderhandelingen"
+  },
+  "B2:portal": {
+    "en": "portal; web portal",
+    "nl": "portaal; internetportaal"
+  },
+  "B2:pracht": {
+    "en": "splendour; magnificence",
+    "nl": "pracht; luister"
+  },
+  "B2:prompt": {
+    "en": "promptly; immediately",
+    "nl": "prompt; onmiddellijk"
+  },
+  "B2:präzis": {
+    "en": "precise",
+    "nl": "nauwkeurig; precies"
+  },
+  "B2:pupsen": {
+    "en": "fart (informal)",
+    "nl": "een windje laten (informeel)"
+  },
+  "B2:quitte": {
+    "en": "quince",
+    "nl": "kweepeer"
+  },
+  "B2:rasant": {
+    "en": "rapid; very fast",
+    "nl": "razendsnel; snel"
+  },
+  "B2:ration": {
+    "en": "ration; fixed allowance",
+    "nl": "rantsoen; vaste portie"
+  },
+  "B2:raunen": {
+    "en": "murmuring; whispering",
+    "nl": "gefluister; gemurmel"
+  },
+  "B2:redner": {
+    "en": "speaker; orator",
+    "nl": "spreker; redenaar"
+  },
+  "B2:regung": {
+    "en": "stir of emotion; slight movement",
+    "nl": "gevoelsopwelling; lichte beweging"
+  },
+  "B2:riemen": {
+    "en": "strap; leather belt",
+    "nl": "riem; leren band"
+  },
+  "B2:roggen": {
+    "en": "rye",
+    "nl": "rogge"
+  },
+  "B2:rohbau": {
+    "en": "unfinished building shell",
+    "nl": "ruwbouw"
+  },
+  "B2:russin": {
+    "en": "Russian woman",
+    "nl": "Russische vrouw"
+  },
+  "B2:saufen": {
+    "en": "heavy drinking (informal)",
+    "nl": "zuipen; overmatig drinken (informeel)"
+  },
+  "B2:schaum": {
+    "en": "foam; froth",
+    "nl": "schuim"
+  },
+  "B2:scheiss": {
+    "en": "shit; rubbish (vulgar)",
+    "nl": "shit; rotzooi (vulgair)"
+  },
+  "B2:schelm": {
+    "en": "lovable rogue; mischievous person",
+    "nl": "schelm; guit"
+  },
+  "B2:sklave": {
+    "en": "slave; enslaved person",
+    "nl": "slaaf; tot slaaf gemaakte persoon"
+  },
+  "B2:solide": {
+    "en": "solid; reliable",
+    "nl": "degelijk; betrouwbaar"
+  },
+  "B2:steppe": {
+    "en": "steppe; open grassland",
+    "nl": "steppe; uitgestrekt grasland"
+  },
+  "B2:strauss": {
+    "en": "bouquet; ostrich",
+    "nl": "boeket; struisvogel"
+  },
+  "B2:stupid": {
+    "en": "stupid; dull",
+    "nl": "dom; stompzinnig"
+  },
+  "B2:süffig": {
+    "en": "pleasant and easy to drink",
+    "nl": "lekker en gemakkelijk drinkbaar"
+  },
+  "B2:taifun": {
+    "en": "typhoon",
+    "nl": "tyfoon"
+  },
+  "B2:tortur": {
+    "en": "torment; painful ordeal",
+    "nl": "marteling; kwelling"
+  },
+  "B2:tracht": {
+    "en": "traditional folk costume",
+    "nl": "klederdracht"
+  },
+  "B2:trumpf": {
+    "en": "trump card",
+    "nl": "troef; troefkaart"
+  },
+  "B2:umhang": {
+    "en": "cape; cloak",
+    "nl": "cape; mantel"
+  },
+  "B2:unklug": {
+    "en": "unwise; foolish",
+    "nl": "onverstandig; dwaas"
+  },
+  "B2:unnütz": {
+    "en": "useless",
+    "nl": "nutteloos"
+  },
+  "B2:unreif": {
+    "en": "unripe; immature",
+    "nl": "onrijp; onvolwassen"
+  },
+  "B2:unruhe": {
+    "en": "restlessness; unrest",
+    "nl": "onrust"
+  },
+  "B2:unwohl": {
+    "en": "unwell; uncomfortable",
+    "nl": "onwel; niet op zijn gemak"
+  },
+  "B2:urform": {
+    "en": "original form",
+    "nl": "oervorm; oorspronkelijke vorm"
+  },
+  "B2:verruf": {
+    "en": "bad reputation",
+    "nl": "slechte naam; kwade roep"
+  },
+  "B2:vierer": {
+    "en": "group of four; number or grade four",
+    "nl": "viertal; vier als cijfer"
+  },
+  "B2:voodoo": {
+    "en": "voodoo; spiritual religious tradition",
+    "nl": "voodoo; spirituele religieuze traditie"
+  },
+  "B2:vulgär": {
+    "en": "vulgar; coarse",
+    "nl": "vulgair; grof"
+  },
+  "B2:walzer": {
+    "en": "waltz",
+    "nl": "wals"
+  },
+  "B2:weiche": {
+    "en": "railway points; railroad switch",
+    "nl": "spoorwissel"
+  },
+  "B2:weizen": {
+    "en": "wheat",
+    "nl": "tarwe"
+  },
+  "B2:wellig": {
+    "en": "wavy",
+    "nl": "golvend"
+  },
+  "B2:widder": {
+    "en": "ram; Aries",
+    "nl": "ram; sterrenbeeld Ram"
+  },
+  "B2:wirbel": {
+    "en": "whirl; spinal vertebra",
+    "nl": "werveling; ruggenwervel"
+  },
+  "B2:witwer": {
+    "en": "widower",
+    "nl": "weduwnaar"
+  },
+  "B2:woraus": {
+    "en": "from what; out of what",
+    "nl": "waaruit; waarvan"
+  },
+  "B2:wucher": {
+    "en": "usury; exorbitant prices",
+    "nl": "woeker; woekerprijzen"
+  },
+  "B2:wölfin": {
+    "en": "female wolf",
+    "nl": "wolvin"
+  },
+  "B2:zanken": {
+    "en": "quarrel; bicker",
+    "nl": "bekvechten; ruziën"
+  },
+  "B2:zeiger": {
+    "en": "clock hand; pointer",
+    "nl": "wijzer; aanwijzer"
+  },
+  "B2:zement": {
+    "en": "cement",
+    "nl": "cement"
+  },
+  "B2:zugabe": {
+    "en": "addition; encore",
+    "nl": "toevoeging; toegift"
+  },
+  "B2:äussere": {
+    "en": "outward appearance",
+    "nl": "uiterlijk"
+  },
+  "B2:abbruch": {
+    "en": "demolition; premature termination",
+    "nl": "afbraak; afbreking"
+  },
+  "B2:abfluss": {
+    "en": "drain; drainage",
+    "nl": "afvoer; afwatering"
+  },
+  "B2:abfolge": {
+    "en": "sequence",
+    "nl": "opeenvolging; volgorde"
+  },
+  "B2:abhilfe": {
+    "en": "remedy; solution to a problem",
+    "nl": "verhelping; oplossing"
+  },
+  "B2:algebra": {
+    "en": "algebra",
+    "nl": "algebra"
+  },
+  "B2:anmutig": {
+    "en": "graceful",
+    "nl": "bevallig; sierlijk"
+  },
+  "B2:anreise": {
+    "en": "journey to a destination",
+    "nl": "heenreis; aankomstreis"
+  },
+  "B2:antonym": {
+    "en": "antonym; word with the opposite meaning",
+    "nl": "antoniem; woord met tegengestelde betekenis"
+  },
+  "B2:antrieb": {
+    "en": "motive; propulsion",
+    "nl": "drijfveer; aandrijving"
+  },
+  "B2:argwohn": {
+    "en": "suspicion; mistrust",
+    "nl": "argwaan; wantrouwen"
+  },
+  "B2:armreif": {
+    "en": "bangle",
+    "nl": "armband; stijve armband"
+  },
+  "B2:arsenal": {
+    "en": "arsenal; weapons stockpile",
+    "nl": "arsenaal; wapenvoorraad"
+  },
+  "B2:atemzug": {
+    "en": "single breath",
+    "nl": "ademteug"
+  },
+  "B2:atheist": {
+    "en": "atheist",
+    "nl": "atheïst"
+  },
+  "B2:auftakt": {
+    "en": "opening; beginning",
+    "nl": "aftrap; begin"
+  },
+  "B2:auspuff": {
+    "en": "vehicle exhaust",
+    "nl": "uitlaat"
+  },
+  "B2:balance": {
+    "en": "balance",
+    "nl": "evenwicht; balans"
+  },
+  "B2:baujahr": {
+    "en": "year of construction or manufacture",
+    "nl": "bouwjaar"
+  },
+  "B2:bauplan": {
+    "en": "construction plan",
+    "nl": "bouwplan"
+  },
+  "B2:bauwerk": {
+    "en": "structure; building",
+    "nl": "bouwwerk"
+  },
+  "B2:beilage": {
+    "en": "enclosure; side dish",
+    "nl": "bijlage; bijgerecht"
+  },
+  "B2:blessur": {
+    "en": "minor injury; bruise",
+    "nl": "lichte verwonding; kneuzing"
+  },
+  "B2:blinken": {
+    "en": "flash; indicate a turn",
+    "nl": "knipperen; richting aangeven"
+  },
+  "B2:bohrung": {
+    "en": "drilling; drilled hole",
+    "nl": "boring; boorgat"
+  },
+  "B2:boxerin": {
+    "en": "female boxer",
+    "nl": "bokster"
+  },
+  "B2:captain": {
+    "en": "captain; team captain",
+    "nl": "kapitein; teamaanvoerder"
+  },
+  "B2:dichten": {
+    "en": "write poetry; seal against leaks",
+    "nl": "dichten; afdichten"
+  },
+  "B2:diskret": {
+    "en": "discreet; confidential",
+    "nl": "discreet; terughoudend"
+  },
+  "B2:duldung": {
+    "en": "toleration; temporary suspension of deportation",
+    "nl": "dulding; tijdelijk uitstel van uitzetting"
+  },
+  "B2:eilends": {
+    "en": "hastily",
+    "nl": "ijlings; haastig"
+  },
+  "B2:einfuhr": {
+    "en": "import of goods",
+    "nl": "invoer; import"
+  },
+  "B2:einlass": {
+    "en": "admission; permission to enter",
+    "nl": "toegang; toelating"
+  },
+  "B2:eiszeit": {
+    "en": "ice age",
+    "nl": "ijstijd"
+  },
+  "B2:eleganz": {
+    "en": "elegance",
+    "nl": "elegantie"
+  },
+  "B2:entzwei": {
+    "en": "in two pieces; broken",
+    "nl": "in tweeën; kapot"
+  },
+  "B2:ermüden": {
+    "en": "tire; become tired",
+    "nl": "vermoeien; moe worden"
+  },
+  "B2:falltür": {
+    "en": "trapdoor",
+    "nl": "valluik"
+  },
+  "B2:fassade": {
+    "en": "façade; deceptive outward appearance",
+    "nl": "gevel; schijn"
+  },
+  "B2:finster": {
+    "en": "dark; gloomy",
+    "nl": "donker; somber"
+  },
+  "B2:fluorid": {
+    "en": "fluoride",
+    "nl": "fluoride"
+  },
+  "B2:fraglos": {
+    "en": "unquestionably; without doubt",
+    "nl": "ongetwijfeld"
+  },
+  "B2:füchsin": {
+    "en": "vixen; female fox",
+    "nl": "moervos; vrouwtjesvos"
+  },
+  "B2:garstig": {
+    "en": "nasty; ill-tempered",
+    "nl": "onaardig; akelig"
+  },
+  "B2:gattung": {
+    "en": "type; taxonomic genus",
+    "nl": "soort; taxonomisch geslacht"
+  },
+  "B2:geartet": {
+    "en": "of a particular nature",
+    "nl": "van een bepaalde aard"
+  },
+  "B2:gebannt": {
+    "en": "spellbound; captivated",
+    "nl": "geboeid; betoverd"
+  },
+  "B2:gekonnt": {
+    "en": "skilful; expertly done",
+    "nl": "vakkundig; bedreven"
+  },
+  "B2:gespött": {
+    "en": "mockery; object of ridicule",
+    "nl": "spot; voorwerp van spot"
+  },
+  "B2:gewitzt": {
+    "en": "shrewd; clever",
+    "nl": "schrander; slim"
+  },
+  "B2:glimmer": {
+    "en": "mica (shiny layered mineral)",
+    "nl": "mica; glimmer"
+  },
+  "B2:glücken": {
+    "en": "succeed; turn out well",
+    "nl": "lukken; slagen"
+  },
+  "B2:gotisch": {
+    "en": "Gothic",
+    "nl": "gotisch"
+  },
+  "B2:grotesk": {
+    "en": "grotesque; absurd",
+    "nl": "grotesk; absurd"
+  },
+  "B2:grunzen": {
+    "en": "grunting of a pig",
+    "nl": "geknor"
+  },
+  "B2:gärtner": {
+    "en": "gardener",
+    "nl": "tuinman; hovenier"
+  },
+  "B2:haftung": {
+    "en": "legal liability; adhesion",
+    "nl": "aansprakelijkheid; hechting"
+  },
+  "B2:hautnah": {
+    "en": "at very close range; first-hand",
+    "nl": "van heel dichtbij; rechtstreeks"
+  },
+  "B2:heilsam": {
+    "en": "healing; salutary",
+    "nl": "heilzaam; genezend"
+  },
+  "B2:hexerei": {
+    "en": "witchcraft; sorcery",
+    "nl": "hekserij; toverij"
+  },
+  "B2:hintere": {
+    "en": "rear; back (inflected form)",
+    "nl": "achterste; achtergelegen"
+  },
+  "B2:hochmut": {
+    "en": "arrogance; pride",
+    "nl": "hoogmoed; arrogantie"
+  },
+  "B2:hälftig": {
+    "en": "by half; in equal halves",
+    "nl": "voor de helft; elk de helft"
+  },
+  "B2:irrsinn": {
+    "en": "madness; absurdity",
+    "nl": "waanzin; onzin"
+  },
+  "B2:jackpot": {
+    "en": "jackpot; top prize",
+    "nl": "jackpot; hoofdprijs"
+  },
+  "B2:jogging": {
+    "en": "jogging",
+    "nl": "joggen"
+  },
+  "B2:journal": {
+    "en": "journal; daily record",
+    "nl": "tijdschrift; dagboek"
+  },
+  "B2:kaserne": {
+    "en": "military barracks",
+    "nl": "kazerne"
+  },
+  "B2:kipferl": {
+    "en": "crescent-shaped pastry",
+    "nl": "halvemaanvormig gebakje"
+  },
+  "B2:klebrig": {
+    "en": "sticky",
+    "nl": "kleverig"
+  },
+  "B2:kolorit": {
+    "en": "colouring; distinctive atmosphere",
+    "nl": "coloriet; eigen karakter"
+  },
+  "B2:komfort": {
+    "en": "comfort; conveniences",
+    "nl": "comfort; gerief"
+  },
+  "B2:korrupt": {
+    "en": "corrupt",
+    "nl": "corrupt; omkoopbaar"
+  },
+  "B2:krempel": {
+    "en": "clutter; junk (informal)",
+    "nl": "rommel; troep"
+  },
+  "B2:kulisse": {
+    "en": "stage scenery; backdrop",
+    "nl": "decor; achtergrond"
+  },
+  "B2:lauwarm": {
+    "en": "lukewarm",
+    "nl": "lauw"
+  },
+  "B2:lechzen": {
+    "en": "yearn; pant with thirst",
+    "nl": "smachten; naar water snakken"
+  },
+  "B2:legitim": {
+    "en": "legitimate; justified",
+    "nl": "legitiem; gerechtvaardigd"
+  },
+  "B2:liberal": {
+    "en": "liberal; tolerant",
+    "nl": "liberaal; ruimdenkend"
+  },
+  "B2:löchrig": {
+    "en": "full of holes",
+    "nl": "vol gaten; gaten vertonend"
+  },
+  "B2:machbar": {
+    "en": "feasible; achievable",
+    "nl": "haalbaar; uitvoerbaar"
+  },
+  "B2:makrele": {
+    "en": "mackerel",
+    "nl": "makreel"
+  },
+  "B2:marxist": {
+    "en": "Marxist",
+    "nl": "marxist"
+  },
+  "B2:merkbar": {
+    "en": "noticeable; perceptible",
+    "nl": "merkbaar; waarneembaar"
+  },
+  "B2:mobbing": {
+    "en": "bullying; systematic harassment",
+    "nl": "pesten; stelselmatige intimidatie"
+  },
+  "B2:modisch": {
+    "en": "fashionable",
+    "nl": "modieus"
+  },
+  "B2:monopol": {
+    "en": "monopoly",
+    "nl": "monopolie"
+  },
+  "B2:nachbau": {
+    "en": "replica; reproduction",
+    "nl": "nabouw; replica"
+  },
+  "B2:neutral": {
+    "en": "neutral",
+    "nl": "neutraal"
+  },
+  "B2:optisch": {
+    "en": "optical; visual",
+    "nl": "optisch; visueel"
+  },
+  "B2:packung": {
+    "en": "pack; package",
+    "nl": "verpakking; pak"
+  },
+  "B2:palette": {
+    "en": "paint palette; range; pallet",
+    "nl": "palet; assortiment; laadpallet"
+  },
+  "B2:paradox": {
+    "en": "paradoxical",
+    "nl": "paradoxaal; schijnbaar tegenstrijdig"
+  },
+  "B2:partout": {
+    "en": "absolutely; at all costs",
+    "nl": "beslist; koste wat het kost"
+  },
+  "B2:pendant": {
+    "en": "counterpart; equivalent",
+    "nl": "tegenhanger; pendant"
+  },
+  "B2:pianist": {
+    "en": "pianist",
+    "nl": "pianist"
+  },
+  "B2:plagiat": {
+    "en": "plagiarism",
+    "nl": "plagiaat"
+  },
+  "B2:planlos": {
+    "en": "aimless; without a plan",
+    "nl": "planloos; zonder plan"
+  },
+  "B2:plausch": {
+    "en": "friendly chat",
+    "nl": "gezellig praatje"
+  },
+  "B2:polemik": {
+    "en": "polemic; combative criticism",
+    "nl": "polemiek; felle woordenstrijd"
+  },
+  "B2:protein": {
+    "en": "protein",
+    "nl": "eiwit; proteïne"
+  },
+  "B2:prägung": {
+    "en": "formative influence; minting",
+    "nl": "inprenting; muntslag"
+  },
+  "B2:reserve": {
+    "en": "reserve; stock in reserve",
+    "nl": "reserve; voorraad"
+  },
+  "B2:rhombus": {
+    "en": "rhombus; diamond shape",
+    "nl": "ruit (meetkundige vorm)"
+  },
+  "B2:rumänin": {
+    "en": "Romanian woman",
+    "nl": "Roemeense vrouw"
+  },
+  "B2:röntgen": {
+    "en": "X-ray examination; roentgen unit",
+    "nl": "röntgenonderzoek; röntgen als eenheid"
+  },
+  "B2:rückruf": {
+    "en": "return phone call; product recall",
+    "nl": "terugbelgesprek; terugroepactie"
+  },
+  "B2:scanner": {
+    "en": "scanner",
+    "nl": "scanner"
+  },
+  "B2:schanze": {
+    "en": "earthwork fortification; ski-jump ramp",
+    "nl": "verschansing; skischans"
+  },
+  "B2:schatzi": {
+    "en": "darling; sweetheart",
+    "nl": "schatje; lieverd"
+  },
+  "B2:schauer": {
+    "en": "rain shower; shudder",
+    "nl": "regenbui; huivering"
+  },
+  "B2:scheide": {
+    "en": "sheath; vagina",
+    "nl": "schede; vagina"
+  },
+  "B2:scheuer": {
+    "en": "barn; crop store (regional)",
+    "nl": "schuur; oogstopslag (regionaal)"
+  },
+  "B2:schlips": {
+    "en": "necktie",
+    "nl": "stropdas"
+  },
+  "B2:schmied": {
+    "en": "blacksmith",
+    "nl": "smid"
+  },
+  "B2:schroff": {
+    "en": "abrupt; steep",
+    "nl": "bars; steil"
+  },
+  "B2:schwamm": {
+    "en": "sponge",
+    "nl": "spons"
+  },
+  "B2:schweiss": {
+    "en": "sweat",
+    "nl": "zweet"
+  },
+  "B2:segnung": {
+    "en": "blessing",
+    "nl": "zegening"
+  },
+  "B2:siedler": {
+    "en": "settler",
+    "nl": "kolonist; nieuwe bewoner"
+  },
+  "B2:silbern": {
+    "en": "silvery; silver-coloured",
+    "nl": "zilverachtig; zilverkleurig"
+  },
+  "B2:spalten": {
+    "en": "split; divide",
+    "nl": "splijten; splitsen"
+  },
+  "B2:speisen": {
+    "en": "dine; supply energy",
+    "nl": "dineren; voeden met energie"
+  },
+  "B2:spionin": {
+    "en": "female spy",
+    "nl": "spionne"
+  },
+  "B2:sponsor": {
+    "en": "sponsor; financial backer",
+    "nl": "sponsor; geldschieter"
+  },
+  "B2:spurlos": {
+    "en": "without a trace",
+    "nl": "spoorloos"
+  },
+  "B2:spötter": {
+    "en": "mocker; scoffer",
+    "nl": "spotter; bespotter"
+  },
+  "B2:stimmig": {
+    "en": "coherent; harmonious",
+    "nl": "kloppend; samenhangend"
+  },
+  "B2:stoiker": {
+    "en": "Stoic; unflappable person",
+    "nl": "stoïcijn; onverstoorbaar persoon"
+  },
+  "B2:subjekt": {
+    "en": "grammatical subject; subject as a self",
+    "nl": "onderwerp in de grammatica; kennend subject"
+  },
+  "B2:torheit": {
+    "en": "folly; foolishness",
+    "nl": "dwaasheid"
+  },
+  "B2:toxisch": {
+    "en": "toxic",
+    "nl": "giftig; toxisch"
+  },
+  "B2:tragbar": {
+    "en": "portable; tolerable",
+    "nl": "draagbaar; aanvaardbaar"
+  },
+  "B2:tratsch": {
+    "en": "gossip",
+    "nl": "geroddel; geklets"
+  },
+  "B2:trivial": {
+    "en": "trivial; obvious",
+    "nl": "triviaal; onbeduidend"
+  },
+  "B2:trübsal": {
+    "en": "gloom; sorrow",
+    "nl": "droefenis; somberheid"
+  },
+  "B2:tsunami": {
+    "en": "tsunami",
+    "nl": "tsunami"
+  },
+  "B2:töricht": {
+    "en": "foolish; unwise",
+    "nl": "dwaas; onverstandig"
+  },
+  "B2:tüchtig": {
+    "en": "capable; industrious",
+    "nl": "bekwaam; flink"
+  },
+  "B2:uhrzeit": {
+    "en": "time of day",
+    "nl": "kloktijd; tijdstip"
+  },
+  "B2:umstieg": {
+    "en": "change of transport; switch",
+    "nl": "overstap; omschakeling"
+  },
+  "B2:undicht": {
+    "en": "leaky; not watertight",
+    "nl": "lek; niet dicht"
+  },
+  "B2:violett": {
+    "en": "violet; purple",
+    "nl": "violet; paars"
+  },
+  "B2:violine": {
+    "en": "violin",
+    "nl": "viool"
+  },
+  "B2:volumen": {
+    "en": "volume; capacity",
+    "nl": "volume; inhoud"
+  },
+  "B2:vorstoss": {
+    "en": "advance; bold initiative",
+    "nl": "opmars; initiatief"
+  },
+  "B2:wahllos": {
+    "en": "indiscriminately; at random",
+    "nl": "willekeurig; zonder onderscheid"
+  },
+  "B2:walross": {
+    "en": "walrus",
+    "nl": "walrus"
+  },
+  "B2:weggang": {
+    "en": "departure",
+    "nl": "vertrek; weggaan"
+  },
+  "B2:wieseln": {
+    "en": "scurry about",
+    "nl": "zich snel en behendig bewegen"
+  },
+  "B2:wohlauf": {
+    "en": "in good health",
+    "nl": "gezond en wel; in goede gezondheid"
+  },
+  "B2:wohltat": {
+    "en": "good deed; welcome relief",
+    "nl": "weldaad; verademing"
+  },
+  "B2:wollust": {
+    "en": "lust; sensual pleasure",
+    "nl": "wellust; zinnelijk genot"
+  },
+  "B2:zaghaft": {
+    "en": "timidly; hesitantly",
+    "nl": "schuchter; aarzelend"
+  },
+  "B2:zaubern": {
+    "en": "perform magic; conjure",
+    "nl": "toveren; goochelen"
+  },
+  "B2:zerrung": {
+    "en": "muscle strain",
+    "nl": "verrekking"
+  },
+  "B2:zigarre": {
+    "en": "cigar",
+    "nl": "sigaar"
+  },
+  "B2:zulegen": {
+    "en": "increase; acquire something extra",
+    "nl": "toenemen; zich iets extra aanschaffen"
+  },
+  "B2:zwergin": {
+    "en": "female dwarf; woman with dwarfism",
+    "nl": "dwergin; vrouw met dwerggroei"
+  },
+  "B2:äusseres": {
+    "en": "outward appearance",
+    "nl": "uiterlijk"
+  },
+  "B2:abbaubar": {
+    "en": "degradable; dismantlable",
+    "nl": "afbreekbaar; demonteerbaar"
+  },
+  "B2:abdanken": {
+    "en": "abdicate; resign",
+    "nl": "aftreden; afstand doen van de troon"
+  },
+  "B2:ablassen": {
+    "en": "drain off; desist from",
+    "nl": "aftappen; afzien van"
+  },
+  "B2:abreisen": {
+    "en": "depart; leave on a journey",
+    "nl": "vertrekken; afreizen"
+  },
+  "B2:absenker": {
+    "en": "plant shoot rooted by layering",
+    "nl": "aflegger; door afleggen bewortelde scheut"
+  },
+  "B2:abstrakt": {
+    "en": "abstract; theoretical",
+    "nl": "abstract; theoretisch"
+  },
+  "B2:actinium": {
+    "en": "actinium (chemical element)",
+    "nl": "actinium (chemisch element)"
+  },
+  "B2:addieren": {
+    "en": "addition of numbers",
+    "nl": "optellen van getallen"
+  },
+  "B2:analogie": {
+    "en": "analogy; similarity",
+    "nl": "analogie; overeenkomst"
+  },
+  "B2:anarchie": {
+    "en": "anarchy; absence of government",
+    "nl": "anarchie; gezagsloosheid"
+  },
+  "B2:anderswo": {
+    "en": "elsewhere",
+    "nl": "ergens anders"
+  },
+  "B2:anfällig": {
+    "en": "susceptible; prone to",
+    "nl": "vatbaar; gevoelig voor"
+  },
+  "B2:anrainer": {
+    "en": "neighbour; adjoining resident",
+    "nl": "omwonende; buur"
+  },
+  "B2:anteilig": {
+    "en": "proportionally; according to one's share",
+    "nl": "naar evenredigheid; naar rato"
+  },
+  "B2:antragen": {
+    "en": "offer to someone; propose",
+    "nl": "aanbieden; voorstellen"
+  },
+  "B2:anwohner": {
+    "en": "local resident",
+    "nl": "omwonende; buurtbewoner"
+  },
+  "B2:aquädukt": {
+    "en": "aqueduct",
+    "nl": "aquaduct"
+  },
+  "B2:astronom": {
+    "en": "astronomer",
+    "nl": "astronoom; sterrenkundige"
+  },
+  "B2:aufschub": {
+    "en": "postponement; deferment",
+    "nl": "uitstel; opschorting"
+  },
+  "B2:auftrieb": {
+    "en": "buoyancy; lift; morale boost",
+    "nl": "drijfvermogen; opwaartse kracht; oppepper"
+  },
+  "B2:ausatmen": {
+    "en": "exhale",
+    "nl": "uitademen"
+  },
+  "B2:ausbeute": {
+    "en": "yield; proceeds",
+    "nl": "opbrengst; buit"
+  },
+  "B2:ausdauer": {
+    "en": "stamina; perseverance",
+    "nl": "uithoudingsvermogen; volharding"
+  },
+  "B2:ausübung": {
+    "en": "exercise; practice of an activity",
+    "nl": "uitoefening; beoefening"
+  },
+  "B2:baldrian": {
+    "en": "valerian plant",
+    "nl": "valeriaan"
+  },
+  "B2:bankrott": {
+    "en": "bankruptcy",
+    "nl": "faillissement; bankroet"
+  },
+  "B2:barbarei": {
+    "en": "barbarity; barbarism",
+    "nl": "barbaarsheid; barbarij"
+  },
+  "B2:bauchweh": {
+    "en": "stomach ache",
+    "nl": "buikpijn"
+  },
+  "B2:bazillus": {
+    "en": "bacillus; rod-shaped bacterium",
+    "nl": "bacil; staafvormige bacterie"
+  },
+  "B2:befahren": {
+    "en": "used by traffic; busy with vehicles",
+    "nl": "bereden; druk bereden"
+  },
+  "B2:begehbar": {
+    "en": "walkable; accessible on foot",
+    "nl": "begaanbaar; beloopbaar"
+  },
+  "B2:behutsam": {
+    "en": "gentle; cautious",
+    "nl": "behoedzaam; voorzichtig"
+  },
+  "B2:beinchen": {
+    "en": "little leg",
+    "nl": "beentje"
+  },
+  "B2:beneiden": {
+    "en": "envy",
+    "nl": "benijden"
+  },
+  "B2:bereisen": {
+    "en": "travel around a country",
+    "nl": "bereizen; rondreizen door"
+  },
+  "B2:beschiss": {
+    "en": "cheating; swindle (coarse)",
+    "nl": "bedrog; oplichterij (grof)"
+  },
+  "B2:betonung": {
+    "en": "pronunciation stress; emphasis",
+    "nl": "klemtoon; nadruk"
+  },
+  "B2:blackout": {
+    "en": "blackout; sudden loss of memory or power",
+    "nl": "black-out; plotseling geheugenverlies of stroomuitval"
+  },
+  "B2:blamabel": {
+    "en": "embarrassing; disgraceful",
+    "nl": "beschamend; gênant"
+  },
+  "B2:blättern": {
+    "en": "turn pages; leaf through",
+    "nl": "bladeren"
+  },
+  "B2:bläulich": {
+    "en": "bluish",
+    "nl": "blauwachtig"
+  },
+  "B2:blümchen": {
+    "en": "little flower",
+    "nl": "bloemetje"
+  },
+  "B2:bösartig": {
+    "en": "malicious; malignant",
+    "nl": "kwaadaardig; boosaardig"
+  },
+  "B2:chemiker": {
+    "en": "chemist; chemistry scientist",
+    "nl": "chemicus; scheikundige"
+  },
+  "B2:demgemäss": {
+    "en": "accordingly; in accordance with that",
+    "nl": "dienovereenkomstig; bijgevolg"
+  },
+  "B2:dickkopf": {
+    "en": "stubborn person",
+    "nl": "stijfkop"
+  },
+  "B2:dienerin": {
+    "en": "female servant",
+    "nl": "dienares; dienstmeid"
+  },
+  "B2:drängeln": {
+    "en": "push and jostle",
+    "nl": "dringen; voordringen"
+  },
+  "B2:dummchen": {
+    "en": "naive person; little silly thing",
+    "nl": "domkopje; onnozel persoon"
+  },
+  "B2:dummkopf": {
+    "en": "fool; idiot",
+    "nl": "domkop; sufferd"
+  },
+  "B2:echtheit": {
+    "en": "authenticity; genuineness",
+    "nl": "echtheid; authenticiteit"
+  },
+  "B2:egoismus": {
+    "en": "selfishness",
+    "nl": "egoïsme; zelfzucht"
+  },
+  "B2:ehegatte": {
+    "en": "spouse; husband",
+    "nl": "echtgenoot"
+  },
+  "B2:empörung": {
+    "en": "indignation; outrage",
+    "nl": "verontwaardiging"
+  },
+  "B2:endspiel": {
+    "en": "final match; endgame",
+    "nl": "finale; eindspel"
+  },
+  "B2:erlebbar": {
+    "en": "capable of being experienced",
+    "nl": "beleefbaar; te ervaren"
+  },
+  "B2:ermessen": {
+    "en": "discretion; considered judgment",
+    "nl": "oordeel; beoordelingsvrijheid"
+  },
+  "B2:erwägung": {
+    "en": "consideration",
+    "nl": "overweging"
+  },
+  "B2:erzengel": {
+    "en": "archangel",
+    "nl": "aartsengel"
+  },
+  "B2:estnisch": {
+    "en": "Estonian; relating to Estonia or its language",
+    "nl": "Estisch; van Estland"
+  },
+  "B2:explosiv": {
+    "en": "explosive",
+    "nl": "explosief; ontplofbaar"
+  },
+  "B2:fairness": {
+    "en": "fairness; fair treatment",
+    "nl": "eerlijkheid; rechtvaardigheid"
+  },
+  "B2:faktisch": {
+    "en": "in fact; actually",
+    "nl": "feitelijk; in werkelijkheid"
+  },
+  "B2:faulheit": {
+    "en": "laziness",
+    "nl": "luiheid"
+  },
+  "B2:feedback": {
+    "en": "feedback; comments on performance",
+    "nl": "feedback; terugkoppeling"
+  },
+  "B2:feigling": {
+    "en": "coward",
+    "nl": "lafaard"
+  },
+  "B2:frappant": {
+    "en": "striking; astonishing",
+    "nl": "opvallend; frappant"
+  },
+  "B2:friseuse": {
+    "en": "female hairdresser",
+    "nl": "kapster"
+  },
+  "B2:gefroren": {
+    "en": "frozen",
+    "nl": "bevroren"
+  },
+  "B2:gefällig": {
+    "en": "pleasant; obliging",
+    "nl": "aangenaam; voorkomend"
+  },
+  "B2:gegnerin": {
+    "en": "female opponent; rival",
+    "nl": "tegenstandster; rivale"
+  },
+  "B2:gehorsam": {
+    "en": "obedience",
+    "nl": "gehoorzaamheid"
+  },
+  "B2:genossin": {
+    "en": "female comrade; fellow member",
+    "nl": "genote; kameraad"
+  },
+  "B2:geräumig": {
+    "en": "spacious",
+    "nl": "ruim"
+  },
+  "B2:gescheit": {
+    "en": "intelligent; sensible",
+    "nl": "verstandig; slim"
+  },
+  "B2:gestimmt": {
+    "en": "tuned; in a particular mood",
+    "nl": "gestemd; in een bepaalde stemming"
+  },
+  "B2:glashaus": {
+    "en": "glasshouse; greenhouse",
+    "nl": "glazen huis; kas"
+  },
+  "B2:glumpert": {
+    "en": "junk; useless stuff (Austrian German)",
+    "nl": "rommel; troep (Oostenrijks-Duits)"
+  },
+  "B2:grandios": {
+    "en": "magnificent; impressive",
+    "nl": "groots; schitterend"
+  },
+  "B2:grauzone": {
+    "en": "grey area",
+    "nl": "grijs gebied"
+  },
+  "B2:greifbar": {
+    "en": "tangible; within reach",
+    "nl": "tastbaar; binnen handbereik"
+  },
+  "B2:griechin": {
+    "en": "Greek woman",
+    "nl": "Griekse vrouw"
+  },
+  "B2:groschen": {
+    "en": "groschen; old small coin",
+    "nl": "groschen; oud muntje"
+  },
+  "B2:grübchen": {
+    "en": "dimple; small hollow",
+    "nl": "kuiltje"
+  },
+  "B2:gutartig": {
+    "en": "benign; not malignant",
+    "nl": "goedaardig"
+  },
+  "B2:handbuch": {
+    "en": "manual; handbook",
+    "nl": "handboek; handleiding"
+  },
+  "B2:hauswart": {
+    "en": "building caretaker",
+    "nl": "huisbewaarder; conciërge"
+  },
+  "B2:hufeisen": {
+    "en": "horseshoe",
+    "nl": "hoefijzer"
+  },
+  "B2:hurrikan": {
+    "en": "hurricane",
+    "nl": "orkaan"
+  },
+  "B2:häufchen": {
+    "en": "small heap",
+    "nl": "hoopje"
+  },
+  "B2:häuslich": {
+    "en": "domestic; home-related",
+    "nl": "huiselijk; huishoudelijk"
+  },
+  "B2:höllisch": {
+    "en": "hellish; extremely",
+    "nl": "hels; ontzettend"
+  },
+  "B2:instabil": {
+    "en": "unstable",
+    "nl": "instabiel; onstabiel"
+  },
+  "B2:inventur": {
+    "en": "stocktaking; inventory check",
+    "nl": "inventarisatie; voorraadopname"
+  },
+  "B2:jubiläum": {
+    "en": "anniversary; jubilee",
+    "nl": "jubileum"
+  },
+  "B2:juristin": {
+    "en": "female legal professional",
+    "nl": "juriste"
+  },
+  "B2:kaiserin": {
+    "en": "empress",
+    "nl": "keizerin"
+  },
+  "B2:kanadier": {
+    "en": "Canadian man",
+    "nl": "Canadees"
+  },
+  "B2:kaufmann": {
+    "en": "merchant; businessman",
+    "nl": "koopman; zakenman"
+  },
+  "B2:kavalier": {
+    "en": "gentleman; courteous man",
+    "nl": "galante heer; gentleman"
+  },
+  "B2:kitschig": {
+    "en": "kitsch; tastelessly sentimental",
+    "nl": "kitscherig; smakeloos sentimenteel"
+  },
+  "B2:klappern": {
+    "en": "clattering; rattling",
+    "nl": "geklepper; gerammel"
+  },
+  "B2:klientin": {
+    "en": "female client",
+    "nl": "cliënte"
+  },
+  "B2:klägerin": {
+    "en": "female plaintiff",
+    "nl": "eiseres; aanklaagster"
+  },
+  "B2:konklave": {
+    "en": "conclave to elect a pope",
+    "nl": "conclaaf voor een pausverkiezing"
+  },
+  "B2:kontrast": {
+    "en": "contrast",
+    "nl": "contrast; tegenstelling"
+  },
+  "B2:krokodil": {
+    "en": "crocodile",
+    "nl": "krokodil"
+  },
+  "B2:kännchen": {
+    "en": "small jug",
+    "nl": "kannetje"
+  },
+  "B2:käuflich": {
+    "en": "available for purchase; corruptible",
+    "nl": "te koop; omkoopbaar"
+  },
+  "B2:lachhaft": {
+    "en": "laughable; ridiculous",
+    "nl": "lachwekkend; belachelijk"
+  },
+  "B2:lauschen": {
+    "en": "listen attentively; eavesdrop",
+    "nl": "luisteren; afluisteren"
+  },
+  "B2:lebewohl": {
+    "en": "farewell",
+    "nl": "vaarwel; afscheid"
+  },
+  "B2:luftpost": {
+    "en": "airmail",
+    "nl": "luchtpost"
+  },
+  "B2:lämmchen": {
+    "en": "little lamb",
+    "nl": "lammetje"
+  },
+  "B2:machtlos": {
+    "en": "powerless",
+    "nl": "machteloos"
+  },
+  "B2:makellos": {
+    "en": "flawless; immaculate",
+    "nl": "vlekkeloos; onberispelijk"
+  },
+  "B2:malstift": {
+    "en": "drawing pencil; colouring pencil",
+    "nl": "tekenpotlood; kleurpotlood"
+  },
+  "B2:maskulin": {
+    "en": "masculine; male",
+    "nl": "mannelijk; masculien"
+  },
+  "B2:mediator": {
+    "en": "mediator in a dispute",
+    "nl": "mediator; bemiddelaar"
+  },
+  "B2:meniskus": {
+    "en": "knee meniscus; curved liquid surface",
+    "nl": "meniscus in de knie; gebogen vloeistofoppervlak"
+  },
+  "B2:merklich": {
+    "en": "noticeably",
+    "nl": "merkbaar; duidelijk"
+  },
+  "B2:mitreden": {
+    "en": "join the discussion; have a say",
+    "nl": "meepraten; iets te zeggen hebben"
+  },
+  "B2:mittlere": {
+    "en": "middle; medium (inflected form)",
+    "nl": "middelste; gemiddelde"
+  },
+  "B2:musikant": {
+    "en": "musician; instrumentalist",
+    "nl": "muzikant"
+  },
+  "B2:männchen": {
+    "en": "male animal; little man",
+    "nl": "mannetjesdier; mannetje"
+  },
+  "B2:mätresse": {
+    "en": "mistress; female lover",
+    "nl": "maîtresse; minnares"
+  },
+  "B2:mäuschen": {
+    "en": "little mouse",
+    "nl": "muisje"
+  },
+  "B2:nagetier": {
+    "en": "rodent",
+    "nl": "knaagdier"
+  },
+  "B2:nahrhaft": {
+    "en": "nutritious",
+    "nl": "voedzaam"
+  },
+  "B2:narrativ": {
+    "en": "narrative; explanatory account",
+    "nl": "narratief; verklarend verhaal"
+  },
+  "B2:nervlich": {
+    "en": "nervous; relating to the nerves",
+    "nl": "zenuwgerelateerd; nerveus"
+  },
+  "B2:notebook": {
+    "en": "laptop; notebook",
+    "nl": "laptop; notitieboek"
+  },
+  "B2:obgleich": {
+    "en": "although; even though",
+    "nl": "hoewel; ofschoon"
+  },
+  "B2:ohrfeige": {
+    "en": "slap in the face",
+    "nl": "oorvijg"
+  },
+  "B2:opportun": {
+    "en": "opportune; appropriate to the circumstances",
+    "nl": "opportuun; gelegen"
+  },
+  "B2:originär": {
+    "en": "original; originating in itself",
+    "nl": "oorspronkelijk; uit zichzelf ontstaan"
+  },
+  "B2:patronat": {
+    "en": "patronage; honorary protection",
+    "nl": "beschermheerschap; patronaat"
+  },
+  "B2:persisch": {
+    "en": "Persian",
+    "nl": "Perzisch"
+  },
+  "B2:pingelig": {
+    "en": "fussy; excessively meticulous",
+    "nl": "pietluttig; overdreven precies"
+  },
+  "B2:predigen": {
+    "en": "preach",
+    "nl": "preken"
+  },
+  "B2:prediger": {
+    "en": "preacher",
+    "nl": "prediker"
+  },
+  "B2:primzahl": {
+    "en": "prime number",
+    "nl": "priemgetal"
+  },
+  "B2:prozedur": {
+    "en": "procedure; medical or technical process",
+    "nl": "procedure; werkwijze"
+  },
+  "B2:psychose": {
+    "en": "psychosis; loss of contact with reality",
+    "nl": "psychose; verlies van werkelijkheidsbesef"
+  },
+  "B2:randvoll": {
+    "en": "full to the brim",
+    "nl": "boordevol"
+  },
+  "B2:rednerin": {
+    "en": "female speaker; female orator",
+    "nl": "spreekster; redenaarster"
+  },
+  "B2:refugium": {
+    "en": "refuge; haven",
+    "nl": "toevluchtsoord"
+  },
+  "B2:reinfall": {
+    "en": "flop; disappointing failure",
+    "nl": "mislukking; tegenvaller"
+  },
+  "B2:religiös": {
+    "en": "religious",
+    "nl": "religieus; godsdienstig"
+  },
+  "B2:resonanz": {
+    "en": "resonance; response",
+    "nl": "resonantie; weerklank"
+  },
+  "B2:rostfrei": {
+    "en": "stainless; rustproof",
+    "nl": "roestvrij; roestvast"
+  },
+  "B2:rückstau": {
+    "en": "backlog; backed-up flow",
+    "nl": "opstuwing; achterstand"
+  },
+  "B2:saustall": {
+    "en": "pigsty; filthy mess",
+    "nl": "varkensstal; zwijnenstal"
+  },
+  "B2:scherben": {
+    "en": "shards; broken glass or pottery",
+    "nl": "scherven"
+  },
+  "B2:scherzen": {
+    "en": "joke; jest",
+    "nl": "grappen maken; schertsen"
+  },
+  "B2:schimmel": {
+    "en": "mould; grey or white horse",
+    "nl": "schimmel; schimmelpaard"
+  },
+  "B2:schleife": {
+    "en": "bow; loop",
+    "nl": "strik; lus"
+  },
+  "B2:schlucht": {
+    "en": "gorge; ravine",
+    "nl": "kloof; ravijn"
+  },
+  "B2:schneise": {
+    "en": "cleared path through a forest",
+    "nl": "open strook in een bos; bosdoorgang"
+  },
+  "B2:schonung": {
+    "en": "sparing; rest for recovery",
+    "nl": "ontzien; rust om te herstellen"
+  },
+  "B2:schuften": {
+    "en": "toil; work extremely hard",
+    "nl": "zwoegen; zich afbeulen"
+  },
+  "B2:seekrank": {
+    "en": "seasick",
+    "nl": "zeeziek"
+  },
+  "B2:sehnlich": {
+    "en": "yearning; ardent",
+    "nl": "vurig verlangend; smachtend"
+  },
+  "B2:silicium": {
+    "en": "silicon (chemical element)",
+    "nl": "silicium (chemisch element)"
+  },
+  "B2:sonstwie": {
+    "en": "in some other way",
+    "nl": "op een andere manier; hoe dan ook"
+  },
+  "B2:sparbuch": {
+    "en": "savings book",
+    "nl": "spaarbankboekje"
+  },
+  "B2:spelunke": {
+    "en": "seedy tavern",
+    "nl": "slecht befaamde kroeg; schimmig café"
+  },
+  "B2:stacheln": {
+    "en": "prickle; goad",
+    "nl": "prikken; aanzetten"
+  },
+  "B2:straftat": {
+    "en": "criminal offence",
+    "nl": "strafbaar feit; misdrijf"
+  },
+  "B2:stäbchen": {
+    "en": "small stick; small rod",
+    "nl": "stokje; staafje"
+  },
+  "B2:symbolik": {
+    "en": "symbolism; system of symbols",
+    "nl": "symboliek"
+  },
+  "B2:sündigen": {
+    "en": "sin; commit a sin",
+    "nl": "zondigen"
+  },
+  "B2:terminus": {
+    "en": "term; technical term",
+    "nl": "term; vakterm"
+  },
+  "B2:todernst": {
+    "en": "in complete seriousness",
+    "nl": "doodernstig; volkomen serieus"
+  },
+  "B2:torhüter": {
+    "en": "goalkeeper",
+    "nl": "doelman; keeper"
+  },
+  "B2:trompete": {
+    "en": "trumpet",
+    "nl": "trompet"
+  },
+  "B2:trostlos": {
+    "en": "desolate; bleak",
+    "nl": "troosteloos; somber"
+  },
+  "B2:turnerin": {
+    "en": "female gymnast",
+    "nl": "turnster"
+  },
+  "B2:tyrannei": {
+    "en": "tyranny",
+    "nl": "tirannie"
+  },
+  "B2:umdenken": {
+    "en": "rethinking; change of mindset",
+    "nl": "herbezinning; anders leren denken"
+  },
+  "B2:umseitig": {
+    "en": "on the other side of the page",
+    "nl": "op de ommezijde"
+  },
+  "B2:unbequem": {
+    "en": "uncomfortable",
+    "nl": "oncomfortabel; ongemakkelijk"
+  },
+  "B2:ungelöst": {
+    "en": "unsolved",
+    "nl": "onopgelost"
+  },
+  "B2:ungerade": {
+    "en": "odd-numbered; not straight",
+    "nl": "oneven; niet recht"
+  },
+  "B2:ungesund": {
+    "en": "unhealthy",
+    "nl": "ongezond"
+  },
+  "B2:unlesbar": {
+    "en": "illegible",
+    "nl": "onleesbaar"
+  },
+  "B2:unnahbar": {
+    "en": "unapproachable; aloof",
+    "nl": "onbenaderbaar; afstandelijk"
+  },
+  "B2:unsauber": {
+    "en": "unclean; dishonest",
+    "nl": "onzindelijk; oneerlijk"
+  },
+  "B2:unscharf": {
+    "en": "blurred; not sharp",
+    "nl": "onscherp"
+  },
+  "B2:verehrer": {
+    "en": "admirer; suitor",
+    "nl": "bewonderaar; aanbidder"
+  },
+  "B2:verfault": {
+    "en": "rotten",
+    "nl": "verrot"
+  },
+  "B2:verfrüht": {
+    "en": "prematurely",
+    "nl": "voortijdig; te vroeg"
+  },
+  "B2:verleger": {
+    "en": "publisher",
+    "nl": "uitgever"
+  },
+  "B2:verlosen": {
+    "en": "raffle off; award by lottery",
+    "nl": "verloten"
+  },
+  "B2:verorten": {
+    "en": "locate; place in context",
+    "nl": "lokaliseren; in een context plaatsen"
+  },
+  "B2:vorderer": {
+    "en": "front; forward (inflected form)",
+    "nl": "voorste; vooraan gelegen"
+  },
+  "B2:vorkasse": {
+    "en": "advance payment",
+    "nl": "vooruitbetaling"
+  },
+  "B2:vorliebe": {
+    "en": "preference; special liking",
+    "nl": "voorkeur; voorliefde"
+  },
+  "B2:wachheit": {
+    "en": "wakefulness; alertness",
+    "nl": "wakkerheid; waakzaamheid"
+  },
+  "B2:winzling": {
+    "en": "tiny person or creature",
+    "nl": "klein wezentje; kleintje"
+  },
+  "B2:witzbold": {
+    "en": "joker; wisecracker",
+    "nl": "grappenmaker"
+  },
+  "B2:wucherer": {
+    "en": "usurer; profiteer",
+    "nl": "woekeraar; uitbuiter"
+  },
+  "B2:würdigen": {
+    "en": "appreciate; honour",
+    "nl": "waarderen; eren"
+  },
+  "B2:würfelig": {
+    "en": "cube-shaped",
+    "nl": "kubusvormig"
+  },
+  "B2:zaumzeug": {
+    "en": "horse's bridle and tack",
+    "nl": "hoofdstel; paardentuig"
+  },
+  "B2:zeitwahl": {
+    "en": "choice of timing",
+    "nl": "tijdkeuze; keuze van het tijdstip"
+  },
+  "B2:äbtissin": {
+    "en": "abbess",
+    "nl": "abdis"
+  },
+  "B2:ästhetik": {
+    "en": "aesthetics; sense of beauty",
+    "nl": "esthetiek; schoonheidsleer"
+  },
+  "B2:abendbrot": {
+    "en": "evening meal",
+    "nl": "avondmaaltijd; avondbrood"
+  },
+  "B2:abfassung": {
+    "en": "drafting; composition of a text",
+    "nl": "opstelling; redactie van een tekst"
+  },
+  "B2:abferkeln": {
+    "en": "farrow; give birth to piglets",
+    "nl": "biggen werpen"
+  },
+  "B2:abgehängt": {
+    "en": "left behind; taken down",
+    "nl": "achteropgeraakt; van de haak gehaald"
+  },
+  "B2:abgenutzt": {
+    "en": "worn; worn out",
+    "nl": "versleten; afgesleten"
+  },
+  "B2:abpraller": {
+    "en": "rebound; ricochet",
+    "nl": "afketsende bal of kogel"
+  },
+  "B2:absetzbar": {
+    "en": "tax-deductible; removable from office",
+    "nl": "aftrekbaar; afzetbaar"
+  },
+  "B2:absterben": {
+    "en": "die off; become necrotic",
+    "nl": "afsterven"
+  },
+  "B2:afrikaans": {
+    "en": "Afrikaans language",
+    "nl": "Afrikaans (taal)"
+  },
+  "B2:anfechten": {
+    "en": "challenge legally; contest",
+    "nl": "aanvechten; betwisten"
+  },
+  "B2:anfordern": {
+    "en": "request officially",
+    "nl": "aanvragen; opvragen"
+  },
+  "B2:anhaltend": {
+    "en": "continuously; persistently",
+    "nl": "aanhoudend; voortdurend"
+  },
+  "B2:antisemit": {
+    "en": "antisemite",
+    "nl": "antisemiet; Jodenhater"
+  },
+  "B2:apfelsine": {
+    "en": "orange (fruit)",
+    "nl": "sinaasappel"
+  },
+  "B2:arthritis": {
+    "en": "arthritis; joint inflammation",
+    "nl": "artritis; gewrichtsontsteking"
+  },
+  "B2:atavismus": {
+    "en": "atavism; reappearance of ancestral traits",
+    "nl": "atavisme; terugkeer van voorouderlijke kenmerken"
+  },
+  "B2:atempause": {
+    "en": "breathing space; short break",
+    "nl": "adempauze"
+  },
+  "B2:aubergine": {
+    "en": "aubergine; eggplant",
+    "nl": "aubergine"
+  },
+  "B2:aufkleber": {
+    "en": "adhesive sticker",
+    "nl": "sticker"
+  },
+  "B2:aufwenden": {
+    "en": "expend; devote time or money",
+    "nl": "besteden; aanwenden"
+  },
+  "B2:aufwändig": {
+    "en": "costly; requiring much effort",
+    "nl": "bewerkelijk; veel inspanning vergend"
+  },
+  "B2:ausfällig": {
+    "en": "abusive; insulting",
+    "nl": "beledigend; grof"
+  },
+  "B2:auslassen": {
+    "en": "omit; vent feelings",
+    "nl": "weglaten; gevoelens afreageren"
+  },
+  "B2:auspizien": {
+    "en": "auspices; favourable signs",
+    "nl": "gunstige voortekenen; auspiciën"
+  },
+  "B2:ausspruch": {
+    "en": "saying; utterance",
+    "nl": "uitspraak; gezegde"
+  },
+  "B2:automarke": {
+    "en": "car make",
+    "nl": "automerk"
+  },
+  "B2:baumstamm": {
+    "en": "tree trunk",
+    "nl": "boomstam"
+  },
+  "B2:bedienbar": {
+    "en": "operable; possible to use",
+    "nl": "bedienbaar"
+  },
+  "B2:bedienung": {
+    "en": "operation of a device; service; server",
+    "nl": "bediening; service; serveerster"
+  },
+  "B2:begründer": {
+    "en": "founder; originator",
+    "nl": "grondlegger; oprichter"
+  },
+  "B2:behindert": {
+    "en": "disabled; having a disability",
+    "nl": "gehandicapt; met een beperking"
+  },
+  "B2:belanglos": {
+    "en": "insignificant; irrelevant",
+    "nl": "onbelangrijk; onbeduidend"
+  },
+  "B2:belüftung": {
+    "en": "ventilation",
+    "nl": "ventilatie"
+  },
+  "B2:besiegbar": {
+    "en": "defeatable",
+    "nl": "verslaanbaar"
+  },
+  "B2:bestreben": {
+    "en": "endeavour; aspiration",
+    "nl": "streven; poging"
+  },
+  "B2:bevorzugt": {
+    "en": "preferred; given priority",
+    "nl": "geprefereerd; met voorrang"
+  },
+  "B2:bewandert": {
+    "en": "well-versed; knowledgeable",
+    "nl": "bedreven; goed onderlegd"
+  },
+  "B2:beweglich": {
+    "en": "movable; flexible",
+    "nl": "beweeglijk; flexibel"
+  },
+  "B2:bisweilen": {
+    "en": "sometimes",
+    "nl": "soms; af en toe"
+  },
+  "B2:blaupause": {
+    "en": "blueprint; initial plan",
+    "nl": "blauwdruk; basisplan"
+  },
+  "B2:brennholz": {
+    "en": "firewood",
+    "nl": "brandhout"
+  },
+  "B2:buschfunk": {
+    "en": "grapevine; informal rumours",
+    "nl": "geruchtencircuit; mondeling verspreid nieuws"
+  },
+  "B2:countdown": {
+    "en": "countdown",
+    "nl": "aftelling"
+  },
+  "B2:datierung": {
+    "en": "dating; determination of a date",
+    "nl": "datering"
+  },
+  "B2:deodorant": {
+    "en": "deodorant",
+    "nl": "deodorant"
+  },
+  "B2:depressiv": {
+    "en": "depressive; depressed",
+    "nl": "depressief"
+  },
+  "B2:diktieren": {
+    "en": "dictation of a text",
+    "nl": "dicteren; tekst dicteren"
+  },
+  "B2:direktive": {
+    "en": "directive; binding instruction",
+    "nl": "richtlijn; directief"
+  },
+  "B2:dunkelrot": {
+    "en": "dark red",
+    "nl": "donkerrood"
+  },
+  "B2:dämmerung": {
+    "en": "twilight; dawn or dusk",
+    "nl": "schemering"
+  },
+  "B2:einhellig": {
+    "en": "unanimous",
+    "nl": "eensgezind; eenstemmig"
+  },
+  "B2:einigkeit": {
+    "en": "unity; agreement",
+    "nl": "eensgezindheid; overeenstemming"
+  },
+  "B2:eintracht": {
+    "en": "harmony; concord",
+    "nl": "eendracht; harmonie"
+  },
+  "B2:eishockey": {
+    "en": "ice hockey",
+    "nl": "ijshockey"
+  },
+  "B2:eitelkeit": {
+    "en": "vanity",
+    "nl": "ijdelheid"
+  },
+  "B2:endstelle": {
+    "en": "terminus; last stop",
+    "nl": "eindhalte"
+  },
+  "B2:engelchen": {
+    "en": "little angel",
+    "nl": "engeltje"
+  },
+  "B2:entdecker": {
+    "en": "discoverer",
+    "nl": "ontdekker"
+  },
+  "B2:entrüstet": {
+    "en": "indignant",
+    "nl": "verontwaardigd"
+  },
+  "B2:entsafter": {
+    "en": "juicer",
+    "nl": "sapcentrifuge; sapextractor"
+  },
+  "B2:entwirren": {
+    "en": "untangle; disentangle",
+    "nl": "ontwarren; uit de knoop halen"
+  },
+  "B2:erblindet": {
+    "en": "blinded; having lost one's sight",
+    "nl": "blind geworden"
+  },
+  "B2:erklingen": {
+    "en": "sound; ring out",
+    "nl": "weerklinken; klinken"
+  },
+  "B2:erloschen": {
+    "en": "extinguished; expired",
+    "nl": "gedoofd; vervallen"
+  },
+  "B2:erläutern": {
+    "en": "explain; elucidate",
+    "nl": "toelichten; verduidelijken"
+  },
+  "B2:ernennung": {
+    "en": "appointment to a position",
+    "nl": "benoeming"
+  },
+  "B2:erstatten": {
+    "en": "reimburse; file a report",
+    "nl": "vergoeden; aangifte doen"
+  },
+  "B2:erwähnung": {
+    "en": "mention",
+    "nl": "vermelding"
+  },
+  "B2:erwünscht": {
+    "en": "desired; welcome",
+    "nl": "gewenst"
+  },
+  "B2:erzwingen": {
+    "en": "force; compel",
+    "nl": "afdwingen"
+  },
+  "B2:esperanto": {
+    "en": "Esperanto (constructed international language)",
+    "nl": "Esperanto (internationale kunsttaal)"
+  },
+  "B2:exklusive": {
+    "en": "excluding; not including",
+    "nl": "exclusief; zonder"
+  },
+  "B2:fahrpreis": {
+    "en": "fare; travel price",
+    "nl": "ritprijs; vervoersprijs"
+  },
+  "B2:fanatisch": {
+    "en": "fanatical",
+    "nl": "fanatiek; dweepziek"
+  },
+  "B2:fegefeuer": {
+    "en": "purgatory in Catholic belief",
+    "nl": "vagevuur in het katholieke geloof"
+  },
+  "B2:feindbild": {
+    "en": "stereotyped image of an enemy",
+    "nl": "vijandbeeld"
+  },
+  "B2:filmmusik": {
+    "en": "film music; film score",
+    "nl": "filmmuziek"
+  },
+  "B2:flittchen": {
+    "en": "slut (derogatory sexual insult)",
+    "nl": "slet (seksueel scheldwoord)"
+  },
+  "B2:französin": {
+    "en": "French woman",
+    "nl": "Française; Franse vrouw"
+  },
+  "B2:frechheit": {
+    "en": "insolence; cheek",
+    "nl": "brutaliteit; onbeschoftheid"
+  },
+  "B2:freibrief": {
+    "en": "carte blanche; unrestricted authorization",
+    "nl": "vrijbrief; onbeperkte toestemming"
+  },
+  "B2:friseurin": {
+    "en": "female hairdresser",
+    "nl": "kapster"
+  },
+  "B2:fruchtbar": {
+    "en": "fertile; fruitful",
+    "nl": "vruchtbaar"
+  },
+  "B2:fussballer": {
+    "en": "football player",
+    "nl": "voetballer"
+  },
+  "B2:gefühllos": {
+    "en": "unfeeling; emotionally cold",
+    "nl": "gevoelloos; ongevoelig"
+  },
+  "B2:gegenwehr": {
+    "en": "resistance; self-defence",
+    "nl": "verweer; tegenstand"
+  },
+  "B2:gelehrter": {
+    "en": "scholar",
+    "nl": "geleerde"
+  },
+  "B2:geniessbar": {
+    "en": "fit for consumption; edible",
+    "nl": "geschikt voor consumptie; eetbaar"
+  },
+  "B2:gesättigt": {
+    "en": "saturated; satiated",
+    "nl": "verzadigd"
+  },
+  "B2:gewittern": {
+    "en": "be thundery; have a thunderstorm",
+    "nl": "onweren"
+  },
+  "B2:grammatik": {
+    "en": "grammar",
+    "nl": "grammatica; spraakkunst"
+  },
+  "B2:grossstadt": {
+    "en": "large city",
+    "nl": "grote stad"
+  },
+  "B2:grässlich": {
+    "en": "horrible; dreadful",
+    "nl": "afschuwelijk; vreselijk"
+  },
+  "B2:gründerin": {
+    "en": "female founder",
+    "nl": "oprichtster"
+  },
+  "B2:halleluja": {
+    "en": "hallelujah; expression of praise",
+    "nl": "halleluja; lofprijzing"
+  },
+  "B2:haschisch": {
+    "en": "hashish; cannabis resin",
+    "nl": "hasj; cannabishars"
+  },
+  "B2:hauptfach": {
+    "en": "major subject; main subject",
+    "nl": "hoofdvak; hoofdvak van een studie"
+  },
+  "B2:hauptgang": {
+    "en": "main course",
+    "nl": "hoofdgerecht"
+  },
+  "B2:hellseher": {
+    "en": "clairvoyant; fortune-teller",
+    "nl": "helderziende; waarzegger"
+  },
+  "B2:herzstück": {
+    "en": "centrepiece; essential core",
+    "nl": "hart; kernstuk"
+  },
+  "B2:heterogen": {
+    "en": "heterogeneous; diverse",
+    "nl": "heterogeen; ongelijksoortig"
+  },
+  "B2:hilfsverb": {
+    "en": "auxiliary verb",
+    "nl": "hulpwerkwoord"
+  },
+  "B2:hinfällig": {
+    "en": "frail; no longer valid",
+    "nl": "broos; vervallen"
+  },
+  "B2:hochebene": {
+    "en": "high plateau",
+    "nl": "hoogvlakte"
+  },
+  "B2:humanität": {
+    "en": "humanity; humane treatment",
+    "nl": "menselijkheid; humaniteit"
+  },
+  "B2:hypothese": {
+    "en": "hypothesis",
+    "nl": "hypothese"
+  },
+  "B2:immunität": {
+    "en": "immunity",
+    "nl": "immuniteit"
+  },
+  "B2:intellekt": {
+    "en": "intellect",
+    "nl": "intellect; verstand"
+  },
+  "B2:interpret": {
+    "en": "performing artist; interpreter of a work",
+    "nl": "uitvoerend artiest; vertolker"
+  },
+  "B2:isolation": {
+    "en": "isolation",
+    "nl": "isolatie; afzondering"
+  },
+  "B2:jahrestag": {
+    "en": "anniversary",
+    "nl": "jaarlijkse herdenkingsdag; gedenkdag"
+  },
+  "B2:kaminsims": {
+    "en": "mantelpiece",
+    "nl": "schoorsteenmantel"
+  },
+  "B2:kaufladen": {
+    "en": "small shop",
+    "nl": "winkeltje"
+  },
+  "B2:klaviatur": {
+    "en": "keyboard of a musical instrument",
+    "nl": "klavier; toetsenbord van een muziekinstrument"
+  },
+  "B2:kleinlich": {
+    "en": "petty; small-minded",
+    "nl": "kleinzielig; kleingeestig"
+  },
+  "B2:knöllchen": {
+    "en": "parking ticket",
+    "nl": "parkeerbon"
+  },
+  "B2:kommunist": {
+    "en": "communist",
+    "nl": "communist"
+  },
+  "B2:konstante": {
+    "en": "constant; fixed quantity",
+    "nl": "constante; vaste grootheid"
+  },
+  "B2:kraftvoll": {
+    "en": "powerful; vigorous",
+    "nl": "krachtig; sterk"
+  },
+  "B2:kunstvoll": {
+    "en": "artistically accomplished; ornate",
+    "nl": "kunstig; kunstvaardig"
+  },
+  "B2:körperbau": {
+    "en": "physique; body build",
+    "nl": "lichaamsbouw"
+  },
+  "B2:körperlos": {
+    "en": "bodiless; immaterial",
+    "nl": "onlichamelijk; zonder lichaam"
+  },
+  "B2:lehrstuhl": {
+    "en": "university chair; professorship",
+    "nl": "leerstoel; hoogleraarschap"
+  },
+  "B2:liberaler": {
+    "en": "liberal; supporter of liberalism",
+    "nl": "liberaal; aanhanger van het liberalisme"
+  },
+  "B2:luftdicht": {
+    "en": "airtight",
+    "nl": "luchtdicht"
+  },
+  "B2:machtwort": {
+    "en": "authoritative word ending a dispute",
+    "nl": "een beslissend woord; een gezaghebbend bevel"
+  },
+  "B2:menetekel": {
+    "en": "ominous warning sign",
+    "nl": "onheilspellend voorteken; waarschuwing"
+  },
+  "B2:mikrophon": {
+    "en": "microphone",
+    "nl": "microfoon"
+  },
+  "B2:mikroskop": {
+    "en": "microscope",
+    "nl": "microscoop"
+  },
+  "B2:mutwillig": {
+    "en": "wilfully; recklessly",
+    "nl": "opzettelijk; moedwillig"
+  },
+  "B2:mässigkeit": {
+    "en": "moderation; temperance",
+    "nl": "matigheid; gematigdheid"
+  },
+  "B2:müssiggang": {
+    "en": "idleness",
+    "nl": "ledigheid; nietsdoen"
+  },
+  "B2:nachdruck": {
+    "en": "emphasis; reprint",
+    "nl": "nadruk; herdruk"
+  },
+  "B2:nachkomme": {
+    "en": "descendant",
+    "nl": "nakomeling"
+  },
+  "B2:nachleben": {
+    "en": "continued existence; lasting influence",
+    "nl": "voortleven; blijvende invloed"
+  },
+  "B2:nachspiel": {
+    "en": "aftermath; repercussions",
+    "nl": "nasleep; naspel"
+  },
+  "B2:nagellack": {
+    "en": "nail polish",
+    "nl": "nagellak"
+  },
+  "B2:nebenfach": {
+    "en": "minor subject; secondary field of study",
+    "nl": "bijvak; nevenvak"
+  },
+  "B2:neugierde": {
+    "en": "curiosity",
+    "nl": "nieuwsgierigheid"
+  },
+  "B2:nichtstun": {
+    "en": "doing nothing; idleness",
+    "nl": "nietsdoen; ledigheid"
+  },
+  "B2:notizbuch": {
+    "en": "notebook",
+    "nl": "notitieboek"
+  },
+  "B2:nächtlich": {
+    "en": "nocturnal; nightly",
+    "nl": "nachtelijk"
+  },
+  "B2:organisch": {
+    "en": "organically; in a naturally connected way",
+    "nl": "op organische wijze; op natuurlijk samenhangende wijze"
+  },
+  "C1:originell": {
+    "en": "original; inventive",
+    "nl": "origineel; oorspronkelijk"
+  },
+  "C1:parallele": {
+    "en": "parallel line; comparable case",
+    "nl": "evenwijdige lijn; parallel geval"
+  },
+  "C1:pausenlos": {
+    "en": "non-stop; without a break",
+    "nl": "onophoudelijk; zonder pauze"
+  },
+  "C1:penetrant": {
+    "en": "annoyingly persistent; penetrating",
+    "nl": "opdringerig; doordringend"
+  },
+  "C1:pessimist": {
+    "en": "pessimist",
+    "nl": "pessimist"
+  },
+  "C1:pferdchen": {
+    "en": "little horse",
+    "nl": "paardje"
+  },
+  "C1:pferdefuss": {
+    "en": "horse's hoof; hidden snag",
+    "nl": "paardenhoef; addertje onder het gras"
+  },
+  "C1:plädieren": {
+    "en": "argue in favour of; plead",
+    "nl": "pleiten; een pleidooi houden"
+  },
+  "C1:pompadour": {
+    "en": "pompadour hairstyle",
+    "nl": "pompadourkapsel met hoog opstaand voorhaar"
+  },
+  "C1:potenzial": {
+    "en": "potential; latent ability",
+    "nl": "potentieel; mogelijkheden"
+  },
+  "C1:pseudonym": {
+    "en": "pseudonym",
+    "nl": "pseudoniem; schuilnaam"
+  },
+  "C1:quantität": {
+    "en": "quantity",
+    "nl": "hoeveelheid; kwantiteit"
+  },
+  "C1:raubkatze": {
+    "en": "predatory cat",
+    "nl": "katachtig roofdier"
+  },
+  "C1:regenwurm": {
+    "en": "earthworm",
+    "nl": "regenworm"
+  },
+  "C1:reichstag": {
+    "en": "Reichstag; historical German parliament",
+    "nl": "Rijksdag; historisch Duits parlement"
+  },
+  "C1:reisepass": {
+    "en": "passport",
+    "nl": "paspoort"
+  },
+  "C1:reiseziel": {
+    "en": "travel destination",
+    "nl": "reisbestemming"
+  },
+  "C1:ruderboot": {
+    "en": "rowing boat",
+    "nl": "roeiboot"
+  },
+  "C1:rumänisch": {
+    "en": "Romanian",
+    "nl": "Roemeens"
+  },
+  "C1:rückblick": {
+    "en": "look back; retrospective",
+    "nl": "terugblik"
+  },
+  "C1:sagenhaft": {
+    "en": "legendary; fabulous",
+    "nl": "legendarisch; fantastisch"
+  },
+  "C1:saugfähig": {
+    "en": "absorbent",
+    "nl": "absorberend; vochtopnemend"
+  },
+  "C1:schichten": {
+    "en": "layer; arrange in layers",
+    "nl": "in lagen leggen; stapelen"
+  },
+  "C1:schlammig": {
+    "en": "muddy",
+    "nl": "modderig"
+  },
+  "C1:schlampig": {
+    "en": "sloppy; untidy",
+    "nl": "slordig"
+  },
+  "C1:schläfrig": {
+    "en": "sleepy",
+    "nl": "slaperig"
+  },
+  "C1:schnitzer": {
+    "en": "blunder; woodcarver",
+    "nl": "blunder; houtsnijder"
+  },
+  "C1:schnulzig": {
+    "en": "overly sentimental; mawkish",
+    "nl": "sentimenteel; overdreven zoetsappig"
+  },
+  "C1:schnurren": {
+    "en": "purring; amusing tales",
+    "nl": "gespin; grappige verhalen"
+  },
+  "C1:schuhband": {
+    "en": "shoelace",
+    "nl": "schoenveter"
+  },
+  "C1:schuldner": {
+    "en": "debtor",
+    "nl": "schuldenaar"
+  },
+  "C1:schutzlos": {
+    "en": "unprotected",
+    "nl": "weerloos; onbeschermd"
+  },
+  "C1:schwammig": {
+    "en": "spongy; vague",
+    "nl": "sponsachtig; vaag"
+  },
+  "C1:schwatzen": {
+    "en": "chatter; gossip",
+    "nl": "kletsen; babbelen"
+  },
+  "C1:schwätzen": {
+    "en": "chatter; talk a lot",
+    "nl": "kletsen; babbelen"
+  },
+  "C1:senatorin": {
+    "en": "female senator",
+    "nl": "senator; vrouwelijk senaatslid"
+  },
+  "C1:sichtlich": {
+    "en": "visibly; evidently",
+    "nl": "zichtbaar; duidelijk"
+  },
+  "C1:singvogel": {
+    "en": "songbird",
+    "nl": "zangvogel"
+  },
+  "C1:sinngemäss": {
+    "en": "in sense rather than word for word",
+    "nl": "naar de betekenis; vrij vertaald"
+  },
+  "C1:sklaverei": {
+    "en": "slavery",
+    "nl": "slavernij"
+  },
+  "C1:sonderbar": {
+    "en": "strange; peculiar",
+    "nl": "zonderling; vreemd"
+  },
+  "C1:sortieren": {
+    "en": "sort; arrange by type",
+    "nl": "sorteren"
+  },
+  "C1:spanierin": {
+    "en": "Spanish woman",
+    "nl": "Spaanse vrouw"
+  },
+  "C1:spektakel": {
+    "en": "spectacle; commotion",
+    "nl": "spektakel; heisa"
+  },
+  "C1:spielball": {
+    "en": "playing ball; pawn in others' hands",
+    "nl": "speelbal; speelbal van anderen"
+  },
+  "C1:stadtrand": {
+    "en": "outskirts of a city",
+    "nl": "stadsrand"
+  },
+  "C1:stammwort": {
+    "en": "root word; underived word",
+    "nl": "stamwoord; ongeleed woord"
+  },
+  "C1:steinbock": {
+    "en": "ibex; Capricorn",
+    "nl": "steenbok; sterrenbeeld Steenbok"
+  },
+  "C1:stündlich": {
+    "en": "hourly; every hour",
+    "nl": "uurlijks; elk uur"
+  },
+  "C1:stürmisch": {
+    "en": "stormy; turbulent",
+    "nl": "stormachtig; onstuimig"
+  },
+  "C1:subjektiv": {
+    "en": "subjective; personal",
+    "nl": "subjectief; persoonlijk"
+  },
+  "C1:symphonie": {
+    "en": "symphony",
+    "nl": "symfonie"
+  },
+  "C1:südwesten": {
+    "en": "southwest",
+    "nl": "zuidwesten"
+  },
+  "C1:thunfisch": {
+    "en": "tuna",
+    "nl": "tonijn"
+  },
+  "C1:tiefpunkt": {
+    "en": "lowest point",
+    "nl": "dieptepunt"
+  },
+  "C1:tiefstand": {
+    "en": "lowest level",
+    "nl": "laagste stand"
+  },
+  "C1:trampolin": {
+    "en": "trampoline",
+    "nl": "trampoline"
+  },
+  "C1:turbulent": {
+    "en": "turbulent; eventful",
+    "nl": "turbulent; onstuimig"
+  },
+  "C1:turnhalle": {
+    "en": "gymnasium; sports hall",
+    "nl": "gymzaal; turnzaal"
+  },
+  "C1:täuschung": {
+    "en": "deception; illusion",
+    "nl": "misleiding; bedrog"
+  },
+  "C1:ultimatum": {
+    "en": "ultimatum",
+    "nl": "ultimatum"
+  },
+  "C1:umfassend": {
+    "en": "comprehensive; extensive",
+    "nl": "omvattend; uitgebreid"
+  },
+  "C1:umkreisen": {
+    "en": "circle; orbit",
+    "nl": "omcirkelen; rond iets draaien"
+  },
+  "C1:unbehagen": {
+    "en": "unease; discomfort",
+    "nl": "onbehagen; ongemak"
+  },
+  "C1:unbenutzt": {
+    "en": "unused",
+    "nl": "ongebruikt"
+  },
+  "C1:unbewohnt": {
+    "en": "uninhabited",
+    "nl": "onbewoond"
+  },
+  "C1:undenkbar": {
+    "en": "unthinkable",
+    "nl": "ondenkbaar"
+  },
+  "C1:unerkannt": {
+    "en": "unrecognized; unidentified",
+    "nl": "onherkend; onontdekt"
+  },
+  "C1:unfehlbar": {
+    "en": "infallible",
+    "nl": "onfeilbaar"
+  },
+  "C1:ungebeten": {
+    "en": "uninvited; unsolicited",
+    "nl": "ongevraagd; ongenood"
+  },
+  "C1:ungehörig": {
+    "en": "improper; outrageous",
+    "nl": "onbehoorlijk; ongepast"
+  },
+  "C1:ungelegen": {
+    "en": "inconveniently timed",
+    "nl": "ongelegen"
+  },
+  "C1:ungenannt": {
+    "en": "unnamed",
+    "nl": "onbenoemd; niet bij naam genoemd"
+  },
+  "C1:ungeniert": {
+    "en": "unashamedly; without inhibition",
+    "nl": "ongegeneerd; zonder schroom"
+  },
+  "C1:ungenutzt": {
+    "en": "unused; unexploited",
+    "nl": "onbenut; ongebruikt"
+  },
+  "C1:ungewollt": {
+    "en": "unintentionally; accidentally",
+    "nl": "ongewild; onbedoeld"
+  },
+  "C1:ungünstig": {
+    "en": "unfavourable; unsuitable",
+    "nl": "ongunstig; ongeschikt"
+  },
+  "C1:unhaltbar": {
+    "en": "untenable; indefensible",
+    "nl": "onhoudbaar; onverdedigbaar"
+  },
+  "C1:unlogisch": {
+    "en": "illogical",
+    "nl": "onlogisch"
+  },
+  "C1:unpassend": {
+    "en": "inappropriately",
+    "nl": "op ongepaste wijze"
+  },
+  "C1:unpräzise": {
+    "en": "imprecisely",
+    "nl": "onnauwkeurig"
+  },
+  "C1:vaterland": {
+    "en": "homeland; fatherland",
+    "nl": "vaderland"
+  },
+  "C1:verblasst": {
+    "en": "faded",
+    "nl": "verbleekt; vervaagd"
+  },
+  "C1:verblüfft": {
+    "en": "astonished; baffled",
+    "nl": "verbluft; verbijsterd"
+  },
+  "C1:verbuchen": {
+    "en": "accounting entry; recording in the accounts",
+    "nl": "boekhoudkundige registratie; boeking"
+  },
+  "C1:verdauung": {
+    "en": "digestion",
+    "nl": "spijsvertering"
+  },
+  "C1:vererbbar": {
+    "en": "heritable; inheritable",
+    "nl": "erfelijk; overerfbaar"
+  },
+  "C1:verlegung": {
+    "en": "relocation; postponement; installation",
+    "nl": "verplaatsing; uitstel; aanleg"
+  },
+  "C1:vermessen": {
+    "en": "presumptuous; audacious",
+    "nl": "aanmatigend; vermetel"
+  },
+  "C1:verordnen": {
+    "en": "prescribe; officially order",
+    "nl": "voorschrijven; verordenen"
+  },
+  "C1:verschämt": {
+    "en": "shyly; bashfully",
+    "nl": "verlegen; beschroomd"
+  },
+  "C1:verspannt": {
+    "en": "muscularly tense; strained",
+    "nl": "gespannen; met stijve spieren"
+  },
+  "C1:verspätet": {
+    "en": "late; delayed",
+    "nl": "te laat; vertraagd"
+  },
+  "C1:verstimmt": {
+    "en": "in a bad mood; out of tune",
+    "nl": "ontstemd; vals gestemd"
+  },
+  "C1:viereckig": {
+    "en": "four-sided; quadrangular",
+    "nl": "vierhoekig"
+  },
+  "C1:vorbehalt": {
+    "en": "reservation; proviso",
+    "nl": "voorbehoud; beperking"
+  },
+  "C1:vorfreude": {
+    "en": "joyful anticipation",
+    "nl": "voorpret"
+  },
+  "C1:vorläufer": {
+    "en": "predecessor; precursor",
+    "nl": "voorloper"
+  },
+  "C1:wahlweise": {
+    "en": "optionally; as one chooses",
+    "nl": "naar keuze"
+  },
+  "C1:walisisch": {
+    "en": "Welsh",
+    "nl": "Welsh; van Wales"
+  }
+}

@@ -1,8 +1,8 @@
 # Vocabulary compilation
 
-The published JSON files under `dist/data/` are the complete compiled learning data (2,000 records per level). Source datasets include imperfect and multi-language records; the app therefore uses curated seeds, authored Arabic glosses, explicit exclusions, and examples that contain the headword or a sourced inflection. Generic merged IPA/inflection tables are intentionally omitted; displayed morphology is in `reviewed-details.json` or the original curated vocabulary.
+The original German JSON files under `dist/data/` retain 2,000 records per level. Additional curricula live under `dist/data/courses/`; each manifest reports its actual compiled counts. Source datasets include imperfect and multi-language records; the app therefore uses curated seeds, authored Arabic glosses, explicit exclusions, and examples that contain the headword or a sourced inflection. Generic merged IPA/inflection tables are intentionally omitted; displayed morphology is in `reviewed-details.json` or the original curated vocabulary.
 
-The equal-sized A1–C1 sections are approximate learning groups, not official CEFR exam lists. The inventory includes useful dictionary words and some lexicalized grammatical forms. Examples can be complete sentences or dictionary collocations. All 17,584 example occurrences include Arabic. Original Arabic is preserved; the additional translations are prepared Google machine translations or targeted assistant corrections. Machine translations are labelled in the interface and have not all received semantic review.
+The equal-sized A1–C1 sections are approximate learning groups, not official CEFR exam lists. The inventory includes useful dictionary words and some lexicalized grammatical forms. Examples can be complete sentences or dictionary collocations. All 17,584 original German example occurrences include Arabic. Original Arabic and source provenance are preserved. The current contextual Arabic catalogue uses assistant-assisted authorship and targeted checks, as documented below; it does not use Google translation or claim certified human review.
 
 Upstream inputs (download into ignored `data-sources/`):
 
@@ -76,3 +76,22 @@ The direct vocabulary homepage uses `home.css`; every level retains all 2,000 ca
 
 
 The word-detail learned action records a card once, shows a green confirmation for 650ms, then opens the next unlearned card in the same level. Closing the dialog or navigating to another card cancels pending advancement. The separate word-detail Next button is removed; Previous remains available. Completing the final unlearned card closes the dialog with a level-complete message.
+
+
+## Four-language courses
+
+`course.js` initializes the native and target language before progress modules load. Arabic, English, Dutch and German form twelve valid distinct pairs. The course picker persists `wort-course-selection` and reloads once; the native language controls menus, explanations, locale and reading direction. Target words, translations, examples and audio have independent language attributes. `content.js` adapts the multilingual records to the existing card interface without changing legacy German IDs.
+
+Learning, saved words, first-learning history, sentence progress and writing drafts follow the target language. German retains its original storage keys; other targets append their code. Changing only the native language preserves target knowledge. Recognition assessment results are pair-scoped, retaining the original Arabic-to-German result key. Site usage time remains global.
+
+New vocabulary is compiled by `tools/build-multilingual.py` from the versioned WikDict SQLite sources, Ding/FreeDict, Arabic/Open Dutch/Princeton WordNet, manually authored contextual English/Dutch meanings, and the four-language foundation. Exact concept links, part-of-speech and original Arabic meaning agreements constrain dictionary admission. Counts are actual unique target terms; data is not padded to claim 2,000 words per new level. FrequencyWords orders approximate study bands, not official CEFR exam lists. Source-specific licences and WordNet permission notices ship in `dist/licenses/`.
+
+`tools/multilingual/legacy-overrides-*.json` records contextual English and Dutch glosses prepared against each original German/Arabic card. These are assistant-assisted educational translations, not certified human translations. `data/courses/de/translations.json` supplements the unchanged German corpus. The new course manifests and `data/courses/sources.json` expose provenance and actual inventory sizes. The publication contains 10,000 German cards (2,000 per level), 8,400 English cards (1,680 per level), 8,755 Dutch cards (1,751 per level), and 8,535 Arabic cards (1,707 per level). All 10,000 German cards have contextual English and Dutch meanings in the supplement.
+
+Tatoeba/ManyThings examples are joined from attributed source pairs. Each emitted example contains only target/native languages whose context was validated for that card; authored foundation examples are labelled separately. The card adapter displays an example only when both selected languages are available. Existing German/Arabic examples remain unchanged. Coverage differs by pair and is reported honestly in course metadata.
+
+Original German grammar remains mapped through `verbs.json`. `grammar.js` adds exact teaching tables for common English, Dutch and Arabic verbs, including Arabic's actual person system. It displays a localized missing-table message for unverified paradigms. English/Dutch/Arabic sentence and writing workshops contain target-specific models and localized explanations; existing German exercises, prompts and draft IDs remain intact.
+
+German, English and Dutch pronunciation use compatible bundled meSpeak voice data; real non-silent WAV synthesis is checked for all three. Arabic uses an available Arabic device voice and reports a localized unavailable error if none exists, without falling back to a different language. Source URLs and licence notices are in `assets/audio-engine/README-LICENSE.txt`.
+
+Run `python tools/check-multilingual.py --require-authored` to check complete native-language supplements, actual counts, stable IDs, pairwise examples and byte-identical preservation of the original German files against the last single-course publication.

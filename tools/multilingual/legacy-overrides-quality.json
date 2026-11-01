@@ -1,0 +1,226 @@
+{
+  "A1:hart": {
+    "en": "hard; tough; difficult",
+    "nl": "hard; streng; moeilijk"
+  },
+  "A1:der": {
+    "en": "the (masculine definite article); who or which (relative pronoun)",
+    "nl": "de (mannelijk bepaald lidwoord); die (betrekkelijk voornaamwoord)"
+  },
+  "A1:zu": {
+    "en": "to; at; too, depending on context",
+    "nl": "naar; bij; te, afhankelijk van de context"
+  },
+  "A1:in": {
+    "en": "in; into",
+    "nl": "in; naar binnen"
+  },
+  "A1:ein": {
+    "en": "a; an; one",
+    "nl": "een; één"
+  },
+  "A1:mit": {
+    "en": "with; by means of",
+    "nl": "met; door middel van"
+  },
+  "A1:sie": {
+    "en": "you (polite singular or plural); she or they when written sie",
+    "nl": "u (beleefd enkelvoud of meervoud); zij of ze bij schrijfwijze sie"
+  },
+  "A1:auf": {
+    "en": "on; onto; on top of",
+    "nl": "op; bovenop"
+  },
+  "A1:sich": {
+    "en": "oneself; himself, herself or themselves (reflexive pronoun)",
+    "nl": "zich; zichzelf (wederkerend voornaamwoord)"
+  },
+  "A1:haben": {
+    "en": "to have; to possess",
+    "nl": "hebben; bezitten"
+  },
+  "A1:an": {
+    "en": "at; on; along",
+    "nl": "bij; aan; langs"
+  },
+  "A1:so": {
+    "en": "so; in this way; to this extent",
+    "nl": "zo; op die manier; in die mate"
+  },
+  "A1:auch": {
+    "en": "also; too",
+    "nl": "ook"
+  },
+  "A1:noch": {
+    "en": "still; yet; more",
+    "nl": "nog; nog steeds"
+  },
+  "A1:werden": {
+    "en": "to become; auxiliary for the future and passive",
+    "nl": "worden; hulpwerkwoord voor de toekomst en de lijdende vorm"
+  },
+  "A1:aus": {
+    "en": "from; out of; made of",
+    "nl": "uit; van; gemaakt van"
+  },
+  "A1:nur": {
+    "en": "only; just",
+    "nl": "alleen; slechts"
+  },
+  "A1:was": {
+    "en": "what; that which",
+    "nl": "wat; datgene wat"
+  },
+  "A1:um": {
+    "en": "around; about; at (when telling the time)",
+    "nl": "om; rondom; omstreeks"
+  },
+  "A1:nach": {
+    "en": "after; to; according to",
+    "nl": "na; naar; volgens"
+  },
+  "A1:ihr": {
+    "en": "you (plural); her or their, depending on context",
+    "nl": "jullie; haar of hun, afhankelijk van de context"
+  },
+  "A1:bei": {
+    "en": "at; with; near",
+    "nl": "bij; in de buurt van"
+  },
+  "A1:schon": {
+    "en": "already; before",
+    "nl": "al; reeds; eerder"
+  },
+  "A1:man": {
+    "en": "one; people in general",
+    "nl": "men; mensen in het algemeen"
+  },
+  "A1:dann": {
+    "en": "then; next; in that case",
+    "nl": "dan; vervolgens; in dat geval"
+  },
+  "A1:vor": {
+    "en": "in front of; before; ago",
+    "nl": "voor; geleden"
+  },
+  "A1:über": {
+    "en": "above; over; about; more than",
+    "nl": "boven; over; meer dan"
+  },
+  "A1:ja": {
+    "en": "yes; an emphatic particle",
+    "nl": "ja; een nadrukpartikel"
+  },
+  "A1:machen": {
+    "en": "to do; to make",
+    "nl": "doen; maken"
+  },
+  "A1:ihm": {
+    "en": "to him; to it (dative)",
+    "nl": "hem; aan hem (datief)"
+  },
+  "A1:sehr": {
+    "en": "very; extremely",
+    "nl": "heel; zeer; erg"
+  },
+  "A1:bis": {
+    "en": "until; up to",
+    "nl": "tot; totdat"
+  },
+  "A1:denn": {
+    "en": "because; an emphatic word in questions",
+    "nl": "want; een versterkend woord in vragen"
+  },
+  "A1:zeit": {
+    "en": "time",
+    "nl": "tijd"
+  },
+  "A1:durch": {
+    "en": "through; by means of",
+    "nl": "door; via; door middel van"
+  },
+  "A1:sehen": {
+    "en": "to see",
+    "nl": "zien"
+  },
+  "A1:gehen": {
+    "en": "to go; to walk",
+    "nl": "gaan; lopen"
+  },
+  "A1:kommen": {
+    "en": "to come",
+    "nl": "komen"
+  },
+  "A1:frau": {
+    "en": "woman; wife",
+    "nl": "vrouw; echtgenote"
+  },
+  "A1:unter": {
+    "en": "under; among",
+    "nl": "onder; tussen"
+  },
+  "A1:zurück": {
+    "en": "back; backwards",
+    "nl": "terug; achteruit"
+  },
+  "A1:einfach": {
+    "en": "simple; easy",
+    "nl": "eenvoudig; gemakkelijk"
+  },
+  "A1:gegen": {
+    "en": "against; towards; around (a time)",
+    "nl": "tegen; in de richting van; omstreeks"
+  },
+  "A1:wissen": {
+    "en": "to know (a fact)",
+    "nl": "weten"
+  },
+  "A1:vergeblich": {
+    "en": "futile; in vain",
+    "nl": "vergeefs; tevergeefs"
+  },
+  "C1:bündel": {
+    "en": "bundle; bunch",
+    "nl": "bundel; bos"
+  },
+  "B1:anweisung": {
+    "en": "instruction; directive",
+    "nl": "aanwijzing; instructie"
+  },
+  "C1:drain": {
+    "en": "drainage tube",
+    "nl": "drainagebuis"
+  },
+  "C1:flanke": {
+    "en": "flank; side",
+    "nl": "flank; zij"
+  },
+  "C1:ungesichert": {
+    "en": "unsecured; unprotected",
+    "nl": "onbeveiligd; onbeschermd"
+  },
+  "B1:dunkelheit": {
+    "en": "darkness",
+    "nl": "duisternis"
+  },
+  "C1:waisenknabe": {
+    "en": "orphan boy; an innocent by comparison (figurative)",
+    "nl": "weesjongen; een onschuldige vergeleken met anderen (figuurlijk)"
+  },
+  "A1:bleiben": {
+    "en": "to stay; to remain",
+    "nl": "blijven"
+  },
+  "A2:einzahlung": {
+    "en": "deposit of money; payment",
+    "nl": "storting; betaling"
+  },
+  "B2:halsband": {
+    "en": "collar; animal collar",
+    "nl": "halsband"
+  },
+  "B2:geschmolzen": {
+    "en": "melted; molten",
+    "nl": "gesmolten"
+  }
+}

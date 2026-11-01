@@ -1,0 +1,127 @@
+{
+  "count": 1825,
+  "complete": true,
+  "unresolved_meanings": [],
+  "source_notes": [
+    {
+      "id": "B2:tropf",
+      "index": 279,
+      "german": "Tropf",
+      "arabic": "أحمق مسكين؛ قطرة عامّيًا",
+      "kind": "source_sense_clarification",
+      "note": "German Tropf means a poor fool or an intravenous drip. Arabic قطرة is not the ordinary lexical equivalent. EN/NL uses the correct German intravenous-drip sense, rather than a generic drop."
+    },
+    {
+      "id": "B2:kitten",
+      "index": 322,
+      "german": "kitten",
+      "arabic": "يلحم؛ يُصلح بمعجون لاصق",
+      "kind": "source_pos",
+      "note": "kitten is a verb here (mend/cement with putty), although source POS is noun. EN/NL follows the German verb and Arabic meaning."
+    },
+    {
+      "id": "B2:wauwau",
+      "index": 369,
+      "german": "Wauwau",
+      "arabic": "هوهو؛ كلب بلغة الأطفال",
+      "kind": "source_pos",
+      "note": "Wauwau is a children’s word for a dog or its barking, rather than an adjective. EN/NL is labelled as children’s language."
+    },
+    {
+      "id": "B2:hungern",
+      "index": 414,
+      "german": "hungern",
+      "arabic": "يجوع؛ يعاني الجوع",
+      "kind": "source_pos",
+      "note": "hungern is a verb, although source POS is adjective. EN/NL follows the German verb and Arabic meaning."
+    },
+    {
+      "id": "B2:keuchen",
+      "index": 420,
+      "german": "keuchen",
+      "arabic": "يلهث بصعوبة",
+      "kind": "source_pos",
+      "note": "keuchen is a verb, although source POS is adjective."
+    },
+    {
+      "id": "B2:verflixt",
+      "index": 572,
+      "german": "verflixt",
+      "arabic": "ملعون؛ تبًّا بلطف",
+      "kind": "source_pos",
+      "note": "verflixt is a mild swear-word adjective/interjection, although source POS is noun. The mild register is explicit in both meanings."
+    },
+    {
+      "id": "B2:entsetzen",
+      "index": 608,
+      "german": "entsetzen",
+      "arabic": "يفزع؛ يثير الرعب",
+      "kind": "source_pos",
+      "note": "entsetzen is a verb in this sense, although source POS is adjective."
+    },
+    {
+      "id": "B2:erstaunen",
+      "index": 612,
+      "german": "erstaunen",
+      "arabic": "يدهش؛ يتعجّب",
+      "kind": "source_pos",
+      "note": "erstaunen is a verb in this sense, although source POS is adjective."
+    },
+    {
+      "id": "B2:aufmuntern",
+      "index": 703,
+      "german": "aufmuntern",
+      "arabic": "يشجّع؛ يرفع المعنويات",
+      "kind": "source_pos",
+      "note": "aufmuntern is a verb, although source POS is noun."
+    },
+    {
+      "id": "B2:verstreuen",
+      "index": 768,
+      "german": "verstreuen",
+      "arabic": "ينثر؛ يبعثر",
+      "kind": "source_pos",
+      "note": "verstreuen is a verb, although source POS is adjective."
+    },
+    {
+      "id": "B2:zerstreuen",
+      "index": 774,
+      "german": "zerstreuen",
+      "arabic": "يشتّت؛ يبعثر؛ يسلّي",
+      "kind": "source_pos",
+      "note": "zerstreuen is a verb, although source POS is adjective."
+    },
+    {
+      "id": "B2:weiterfahren",
+      "index": 870,
+      "german": "weiterfahren",
+      "arabic": "يواصل السفر أو القيادة",
+      "kind": "source_pos",
+      "note": "weiterfahren is a verb, although source POS is adverb."
+    },
+    {
+      "id": "B2:martini",
+      "index": 178,
+      "german": "Martini",
+      "arabic": "عيد القديس مارتن؛ مارتيني مشروب أيضًا",
+      "kind": "multiple_source_senses",
+      "note": "Martini can name Saint Martin’s Day regionally and the cocktail. Both senses in the Arabic context are retained, rather than silently choosing one."
+    },
+    {
+      "id": "B2:daus",
+      "index": 950,
+      "german": "Daus",
+      "arabic": "ورقة الآس في بعض ألعاب الورق؛ لفظ للتعجّب",
+      "kind": "multiple_source_senses",
+      "note": "Daus is the high card in German-suited decks (historically the deuce, now functioning as the ace). The card-game context and surprise expression are retained."
+    },
+    {
+      "id": "B2:nachleben",
+      "index": 1716,
+      "german": "Nachleben",
+      "arabic": "الحياة اللاحقة؛ استمرار الأثر",
+      "kind": "source_sense_clarification",
+      "note": "Nachleben chiefly means continued existence or enduring influence of someone/something. EN/NL avoids religious afterlife so as not to teach the usual false association with Leben nach dem Tod."
+    }
+  ]
+}

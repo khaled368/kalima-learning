@@ -1,0 +1,362 @@
+{
+  "0": {
+    "en": "apple",
+    "nl": "appel"
+  },
+  "1": {
+    "en": "bread",
+    "nl": "brood"
+  },
+  "2": {
+    "en": "water",
+    "nl": "water"
+  },
+  "3": {
+    "en": "cat",
+    "nl": "kat"
+  },
+  "4": {
+    "en": "house; home",
+    "nl": "huis"
+  },
+  "5": {
+    "en": "sun",
+    "nl": "zon"
+  },
+  "6": {
+    "en": "coffee",
+    "nl": "koffie"
+  },
+  "7": {
+    "en": "dog",
+    "nl": "hond"
+  },
+  "8": {
+    "en": "book",
+    "nl": "boek"
+  },
+  "9": {
+    "en": "tree",
+    "nl": "boom"
+  },
+  "10": {
+    "en": "train",
+    "nl": "trein"
+  },
+  "11": {
+    "en": "airport",
+    "nl": "luchthaven"
+  },
+  "12": {
+    "en": "milk",
+    "nl": "melk"
+  },
+  "13": {
+    "en": "flower",
+    "nl": "bloem"
+  },
+  "14": {
+    "en": "table",
+    "nl": "tafel"
+  },
+  "15": {
+    "en": "travel ticket",
+    "nl": "vervoerbewijs"
+  },
+  "16": {
+    "en": "bird",
+    "nl": "vogel"
+  },
+  "17": {
+    "en": "door",
+    "nl": "deur"
+  },
+  "18": {
+    "en": "appointment",
+    "nl": "afspraak"
+  },
+  "19": {
+    "en": "bill; invoice",
+    "nl": "rekening; factuur"
+  },
+  "20": {
+    "en": "profession; occupation",
+    "nl": "beroep"
+  },
+  "21": {
+    "en": "colleague at work",
+    "nl": "collega"
+  },
+  "22": {
+    "en": "apartment",
+    "nl": "appartement"
+  },
+  "23": {
+    "en": "rent",
+    "nl": "huur"
+  },
+  "24": {
+    "en": "key",
+    "nl": "sleutel"
+  },
+  "25": {
+    "en": "hospital",
+    "nl": "ziekenhuis"
+  },
+  "26": {
+    "en": "health",
+    "nl": "gezondheid"
+  },
+  "27": {
+    "en": "pharmacy",
+    "nl": "apotheek"
+  },
+  "28": {
+    "en": "holiday; vacation",
+    "nl": "vakantie"
+  },
+  "29": {
+    "en": "public transport stop",
+    "nl": "halte"
+  },
+  "30": {
+    "en": "delay",
+    "nl": "vertraging"
+  },
+  "31": {
+    "en": "arrange; agree on",
+    "nl": "afspreken; overeenkomen"
+  },
+  "32": {
+    "en": "shop; go shopping",
+    "nl": "boodschappen doen"
+  },
+  "33": {
+    "en": "punctual; on time",
+    "nl": "stipt; op tijd"
+  },
+  "34": {
+    "en": "friendly",
+    "nl": "vriendelijk"
+  },
+  "35": {
+    "en": "on the way",
+    "nl": "onderweg"
+  },
+  "36": {
+    "en": "experience",
+    "nl": "ervaring"
+  },
+  "37": {
+    "en": "vocational training",
+    "nl": "beroepsopleiding"
+  },
+  "38": {
+    "en": "responsibility",
+    "nl": "verantwoordelijkheid"
+  },
+  "39": {
+    "en": "decision",
+    "nl": "beslissing"
+  },
+  "40": {
+    "en": "job application",
+    "nl": "sollicitatie"
+  },
+  "41": {
+    "en": "advantage",
+    "nl": "voordeel"
+  },
+  "42": {
+    "en": "disadvantage; drawback",
+    "nl": "nadeel"
+  },
+  "43": {
+    "en": "environment",
+    "nl": "milieu"
+  },
+  "44": {
+    "en": "pollution",
+    "nl": "vervuiling"
+  },
+  "45": {
+    "en": "community",
+    "nl": "gemeenschap"
+  },
+  "46": {
+    "en": "relationship",
+    "nl": "relatie"
+  },
+  "47": {
+    "en": "apply for a job",
+    "nl": "solliciteren"
+  },
+  "48": {
+    "en": "participate; take part",
+    "nl": "deelnemen"
+  },
+  "49": {
+    "en": "avoid",
+    "nl": "vermijden"
+  },
+  "50": {
+    "en": "reliable",
+    "nl": "betrouwbaar"
+  },
+  "51": {
+    "en": "independent; self-reliant",
+    "nl": "zelfstandig"
+  },
+  "52": {
+    "en": "challenge",
+    "nl": "uitdaging"
+  },
+  "53": {
+    "en": "continuing education; professional development",
+    "nl": "bijscholing; professionele ontwikkeling"
+  },
+  "54": {
+    "en": "prerequisite",
+    "nl": "voorwaarde"
+  },
+  "55": {
+    "en": "sustainability",
+    "nl": "duurzaamheid"
+  },
+  "56": {
+    "en": "connection; context",
+    "nl": "verband; context"
+  },
+  "57": {
+    "en": "effect; impact",
+    "nl": "effect; invloed"
+  },
+  "58": {
+    "en": "measure; action",
+    "nl": "maatregel"
+  },
+  "59": {
+    "en": "contradiction; objection",
+    "nl": "tegenstrijdigheid; bezwaar"
+  },
+  "60": {
+    "en": "equal rights",
+    "nl": "gelijke rechten"
+  },
+  "61": {
+    "en": "insight; knowledge gained",
+    "nl": "inzicht; verworven kennis"
+  },
+  "62": {
+    "en": "heated discussion; confrontation",
+    "nl": "felle discussie; confrontatie"
+  },
+  "63": {
+    "en": "take into account",
+    "nl": "rekening houden met"
+  },
+  "64": {
+    "en": "guarantee; ensure",
+    "nl": "waarborgen; garanderen"
+  },
+  "65": {
+    "en": "adversely affect; impair",
+    "nl": "aantasten; nadelig beïnvloeden"
+  },
+  "66": {
+    "en": "prove with evidence",
+    "nl": "aantonen; bewijzen"
+  },
+  "67": {
+    "en": "overcome a difficulty",
+    "nl": "een moeilijkheid overwinnen"
+  },
+  "68": {
+    "en": "decisive",
+    "nl": "doorslaggevend"
+  },
+  "69": {
+    "en": "understandable; logically traceable",
+    "nl": "begrijpelijk; navolgbaar"
+  },
+  "70": {
+    "en": "diverse; varied",
+    "nl": "veelzijdig; gevarieerd"
+  },
+  "71": {
+    "en": "independent; not dependent",
+    "nl": "onafhankelijk"
+  },
+  "72": {
+    "en": "proportionality",
+    "nl": "evenredigheid"
+  },
+  "73": {
+    "en": "inadequacy; insufficiency",
+    "nl": "ontoereikendheid"
+  },
+  "74": {
+    "en": "scope; implications",
+    "nl": "reikwijdte; gevolgen"
+  },
+  "75": {
+    "en": "discretion; room for judgment",
+    "nl": "beoordelingsruimte"
+  },
+  "76": {
+    "en": "mutual influence; interaction",
+    "nl": "wisselwerking"
+  },
+  "77": {
+    "en": "conclusion; inference",
+    "nl": "gevolgtrekking; conclusie"
+  },
+  "78": {
+    "en": "facts of the matter",
+    "nl": "feiten van de zaak"
+  },
+  "79": {
+    "en": "prejudice; bias",
+    "nl": "vooringenomenheid"
+  },
+  "80": {
+    "en": "inevitability",
+    "nl": "onvermijdelijkheid"
+  },
+  "81": {
+    "en": "put in perspective",
+    "nl": "relativeren; in perspectief plaatsen"
+  },
+  "82": {
+    "en": "differentiate; distinguish nuances",
+    "nl": "differentiëren; nuances onderscheiden"
+  },
+  "83": {
+    "en": "illustrate; make clear with an example",
+    "nl": "verduidelijken; illustreren"
+  },
+  "84": {
+    "en": "question critically",
+    "nl": "kritisch bevragen"
+  },
+  "85": {
+    "en": "concede; acknowledge an argument",
+    "nl": "toegeven; een argument erkennen"
+  },
+  "86": {
+    "en": "unavoidable",
+    "nl": "onvermijdelijk"
+  },
+  "87": {
+    "en": "well-founded; convincing",
+    "nl": "steekhoudend; overtuigend"
+  },
+  "88": {
+    "en": "ambivalent; having conflicting feelings",
+    "nl": "ambivalent; met tegenstrijdige gevoelens"
+  },
+  "89": {
+    "en": "revealing; informative",
+    "nl": "verhelderend; informatief"
+  }
+}

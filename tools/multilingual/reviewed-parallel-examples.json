@@ -1,0 +1,16 @@
+[
+  {
+    "replaceEnglish": "Pull the other one.",
+    "conceptEnglish": "other",
+    "example": {
+      "texts": {
+        "en": "Give me the other book.",
+        "de": "Gib mir das andere Buch.",
+        "nl": "Geef me het andere boek.",
+        "ar": "أعطني الكتاب الآخر."
+      },
+      "source": "Wort — authored parallel example",
+      "authored": true
+    }
+  }
+]

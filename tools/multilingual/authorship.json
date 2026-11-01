@@ -1,0 +1,41 @@
+{
+  "method": "Assistant-assisted contextual English and Dutch gloss authoring using each original German word, Arabic meaning, part of speech and available notes. Not certified human translation.",
+  "baseCommit": "b277e6f402a96f0cc2be2cb667a525807e977211",
+  "cards": 10000,
+  "nativeMeanings": 20000,
+  "coverageComplete": true,
+  "fullAuthorBatches": [
+    {
+      "file": "legacy-overrides-full-author-1.json",
+      "records": 1825,
+      "sha256": "0030c09ab282825bcc13eee60b1ff29ca1d4f4e4b3ee87eaf2e2237f16fd4b92"
+    },
+    {
+      "file": "legacy-overrides-full-author-2.json",
+      "records": 1825,
+      "sha256": "cf813a59db76b63080d706bb7df325de64a0219fce0cc218e9a82a06ca88c372"
+    },
+    {
+      "file": "legacy-overrides-full-author-3.json",
+      "records": 1826,
+      "sha256": "79758689cb359c5ad7c79b02cc053063a28521f836dd17a467a648364acdbb4f"
+    },
+    {
+      "file": "legacy-overrides-full-author-4.json",
+      "records": 1825,
+      "sha256": "2554fbb8d1c11826748a8caf54261a503d0f17c17d4b228bb6614b297560ba57"
+    },
+    {
+      "file": "legacy-overrides-full-author-5.json",
+      "records": 1826,
+      "sha256": "117e466689c66fdf294608b96ca303d30d68e79d2b781fade208af1acb32af6b"
+    }
+  ],
+  "originalGermanFiles": {
+    "A1": "e3cac2ec7aa9811c01b090cef138863af48533ac974d9e271f31bc3a3cc544a1",
+    "A2": "028e2cc841cfa85a682561e4748f3a4ab3d131d06d897502559672b3685340e2",
+    "B1": "a46e3b518a9e1dab53361166ad04a3c70a71e7b6d97ee1c283b8a89ab58a0c66",
+    "B2": "ae24204e2a4efb36491cea98fa1e5db23880261d2ea6fba87b5da1ef2145db34",
+    "C1": "b9ddf40f8b2ed2b6599292b8e2b2e9f2701b5ac96575c36e50e78a13b40b17cc"
+  }
+}

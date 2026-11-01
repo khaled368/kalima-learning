@@ -1,7 +1,10 @@
 /* Writing workshop: local drafts and explicit self-assessment, without automated grading. */
 (() => {
   'use strict';
-  const LEVELS = {
+  const C=globalThis.WORT_COURSE||{native:'ar',target:'de',dir:code=>code==='ar'?'rtl':'ltr',key:key=>key};
+  const L=globalThis.WORT_LESSON_COURSES||{writing:(levels,prompts)=>({levels,prompts}),text:value=>value,localize:()=>{},placeholder:'Schreibe hier deinen Text …'};
+  const TARGET=C.target,TDIR=C.dir(TARGET),LEVEL_KEY=C.key('wort-writing-level');
+  const LEGACY_LEVELS = {
     A1: { name: 'البداية', target: [35, 60], focus: 'جمل قصيرة واضحة: من؟ ماذا؟ متى؟ أين؟',
       error: ['Ich heute komme.', 'Ich komme heute.', 'في الجملة الخبرية يأتي الفعل المصَرَّف في الموقع الثاني.'],
       connectors: [ ['بداية', 'Hallo …,', 'Hallo [Name],\n', 'تحية لصديق أو لشخص تعرفه.'], ['سبب', 'denn', 'denn ', 'بعد denn تبقى الجملة بترتيبها المعتاد: فاعل ثم فعل.'], ['إضافة / اختلاف', 'aber', 'aber ', 'اربط فكرتين بسيطتين من دون تغيير موضع الفعل.'], ['ختام', 'Viele Grüße', '\nViele Grüße\n[Dein Name]', 'ختام مناسب لرسالة غير رسمية.'] ] },
@@ -18,7 +21,7 @@
       error: ['Die Maßnahme ist sinnvoll, weil sie spart Zeit.', 'Die Maßnahme ist sinnvoll, weil sie Zeit spart.', 'الدقة لا تعني إطالة الجملة: راجع الروابط ومواضع الأفعال في كل جملة تابعة.'],
       connectors: [ ['تمهيد', 'Angesichts …', 'Angesichts ', 'تأتي بعدها عبارة اسمية في حالة Genitiv؛ مثل: angesichts der steigenden Kosten.'], ['تعليل إضافي', 'zumal', 'zumal ', 'أضف سببًا يعزّز الحُجّة، مع الفعل في آخر الجملة التابعة.'], ['تحفّظ', 'gleichwohl', 'Gleichwohl ', 'أظهر تحفظًا؛ يأتي الفعل بعد gleichwohl مباشرة.'], ['نتيجة', 'Insgesamt …', 'Insgesamt lässt sich festhalten, dass ', 'استخلص نتيجة محددة يمكن إرجاعها إلى التحليل السابق.'] ] }
   };
-  const PROMPTS = [
+  const LEGACY_PROMPTS = [
     { id:'a1-einladung', level:'A1', title:'دعوة صديق إلى لقاء', audience:'رسالة غير رسمية', task:'ادعُ صديقًا إلى لقاء يوم السبت، ووضّح له الموعد والمكان وما ستفعلانه.', requirements:['اذكر سبب الكتابة.', 'حدّد اليوم والساعة والمكان.', 'اقترح نشاطًا واطلب ردًّا.'],
       outline:['Hallo [Name],\nich möchte dich am [Tag] einladen.', 'Wir treffen uns um [Uhrzeit] in/bei [Ort].\nWir können [Aktivität].', 'Hast du Zeit?\nBitte schreib mir.\nViele Grüße\n[Dein Name]'],
       sample:[['المقدمة: سبب الرسالة','Hallo Sara,\nich möchte dich am Samstag zu mir nach Hause einladen.','تحية مباشرة ثم سبب واضح للرسالة، من دون مقدمة طويلة.'],['العرض: التفاصيل','Wir treffen uns um 16 Uhr. Wir können zusammen kochen und danach einen Film sehen. Mein Bruder kommt auch. Bring bitte etwas zu trinken mit.','اذكر الوقت والنشاط. استخدم فعلًا مناسبًا للطلب: Bring bitte … mit.'],['الخاتمة: طلب الرد','Hast du Zeit? Bitte schreib mir bis Freitag.\nViele Grüße\nLena','اختم بسؤال وموعد للرد، ثم تحية ختامية.']], checks:['كتبت تحية مناسبة وسبب الرسالة.', 'ذكرت اليوم والساعة والمكان.', 'اقترحت نشاطًا وطلبت ردًّا.', 'راجعت الحرف الكبير للأسماء وموضع الفعل.'] },
@@ -50,26 +53,27 @@
       outline:['Sehr geehrte Damen und Herren,\nich möchte zur Diskussion über [Thema] Stellung nehmen.\nAusgangspunkt ist [konkrete Beobachtung].', 'Aus Sicht der Anwohnenden [Interesse]. Zugleich ist zu berücksichtigen, dass [anderes Interesse].\nEin pauschales Verbot [Problem]. Stattdessen schlage ich vor, [Maßnahmen].\nDie Umsetzung setzt voraus, dass [Bedingung].', 'Für die Bewertung sollten [Kriterien] herangezogen werden.\nIch bitte Sie, [nächster Schritt].\nMit freundlichen Grüßen\n[Name]'],
       sample:[['المقدمة: المشكلة وحدودها','Sehr geehrte Damen und Herren,\nich möchte zur aktuellen Diskussion über die nächtliche Lärmbelastung im Bahnhofviertel Stellung nehmen. Zahlreiche Anwohnende berichten von einer erheblichen Beeinträchtigung ihrer Nachtruhe. Die Debatte sollte jedoch nicht auf einen Gegensatz zwischen ruhesuchenden Bewohnern und grundsätzlich rücksichtslosen Betrieben reduziert werden. Eine tragfähige Lösung muss die unterschiedlichen Nutzungen des Viertels berücksichtigen.','حدّد المشكلة بوضوح، وارفض التعميم على الأطراف من البداية.'],['العرض: المصالح والإجراءات','Aus Sicht der Anwohnenden ist ein verlässlicher Schutz der Nachtruhe unverzichtbar. Zugleich erfüllen Gastronomie und Kulturangebote eine wichtige soziale und wirtschaftliche Funktion. Ein pauschales Verbot könnte deshalb Probleme lediglich in andere Straßen verlagern, ohne ihre Ursachen zu beheben. Stattdessen schlage ich ein abgestuftes Maßnahmenpaket vor. Zunächst sollten besonders belastete Orte und Zeiten auf Grundlage transparenter Messungen ermittelt werden. Für diese Bereiche könnten klare Regeln zur Nutzung von Außenflächen vereinbart und verbindliche Ansprechpersonen benannt werden. Ergänzend wären regelmäßige Gespräche zwischen Betrieben, Anwohnenden und Verwaltung sinnvoll, damit Beschwerden frühzeitig bearbeitet werden können. Bei wiederholten Verstößen müssten bestehende Regeln konsequent durchgesetzt werden. Gleichzeitig sollte die Stadt prüfen, ob bessere Verkehrsverbindungen und eine geeignete Gestaltung öffentlicher Räume zusätzliche Entlastung schaffen. Entscheidend ist, dass Zuständigkeiten, Finanzierung und Zeitplan vor der Einführung geklärt werden.','وازن المصالح، ثم صمّم إجراءات متدرجة ومتناسبة. وضّح التنفيذ، لا الفكرة وحدها.'],['الخاتمة: المتابعة','Nach einer festgelegten Erprobungsphase sollten Messergebnisse und Rückmeldungen gemeinsam ausgewertet werden. Maßstab wäre nicht allein die Zahl der Beschwerden, sondern auch deren Entwicklung und die tatsächliche Belastung. Ich bitte Sie, einen entsprechenden Beteiligungsprozess einzuleiten und die Ergebnisse öffentlich zu machen.\nMit freundlichen Grüßen\nKarim Mansour','أضف آلية تقييم ومعايير، ثم طلبًا رسميًا واضحًا.']], checks:['وصفت المشكلة دون تعميم أو اتهام.', 'ناقشت المصالح المختلفة بإنصاف.', 'قدّمت إجراءات محددة ومتناسبة.', 'ذكرت التنفيذ والمتابعة ومعيار النجاح.', 'راجعت النبرة الرسمية والإحالات والجمل المعقدة.'] }
   ];
+  const {levels:LEVELS,prompts:PROMPTS}=L.writing(LEGACY_LEVELS,LEGACY_PROMPTS);
   const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const instances = new WeakMap();
   const getSaved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
-  const countWords = text => (text.match(/\p{L}+(?:['’\-]\p{L}+)*|\p{N}+/gu) || []).length;
-  const draftKey = id => `wort-writing-v1:${id}`;
+  const countWords = text => (text.match(/\p{L}[\p{L}\p{M}]*(?:['’\-]\p{L}[\p{L}\p{M}]*)*|\p{N}+/gu) || []).length;
+  const draftKey = id => C.key(`wort-writing-v1:${id}`);
   function mount(container) {
     if (!container || typeof container.addEventListener !== 'function') throw new TypeError('A writing workshop container is required.');
     instances.get(container)?.destroy();
-    let level = getSaved('wort-writing-level', 'A1');
+    let level = getSaved(LEVEL_KEY, 'A1');
     if (!LEVELS[level]) level = 'A1';
     let prompt = PROMPTS.find(item => item.level === level);
     let draft = '', checked = [], saveTimer, savedStatus = '', outlineVisible = false;
     const find = selector => container.querySelector(selector);
-    function announce(message) { const target = find('[data-writing-status]'); if (target) target.textContent = message; }
+    function announce(message) { const target = find('[data-writing-status]'); if (target) target.textContent = L.text(message); }
     function save(immediate = false) {
       clearTimeout(saveTimer);
       const write = () => {
-        try { localStorage.setItem(draftKey(prompt.id), JSON.stringify({text:draft,checked})); localStorage.setItem('wort-writing-level', JSON.stringify(level)); savedStatus = 'حُفظت مسودتك في هذا المتصفح.'; }
+        try { localStorage.setItem(draftKey(prompt.id), JSON.stringify({text:draft,checked})); localStorage.setItem(LEVEL_KEY, JSON.stringify(level)); savedStatus = 'حُفظت مسودتك في هذا المتصفح.'; }
         catch { savedStatus = 'التخزين غير متاح؛ انسخ مسودتك قبل إغلاق الصفحة.'; }
-        const target = find('[data-writing-save]'); if (target) target.textContent = savedStatus;
+        const target = find('[data-writing-save]'); if (target) target.textContent = L.text(savedStatus);
       };
       if (immediate) write(); else saveTimer = setTimeout(write, 300);
     }
@@ -83,28 +87,28 @@
     }
     function updateCounter() {
       const count = countWords(draft), range = LEVELS[level].target;
-      find('[data-writing-count]').textContent = `${count} كلمة`;
-      find('[data-writing-range]').textContent = `نطاق تدريبي مقترح: ${range[0]}–${range[1]} كلمة`;
+      find('[data-writing-count]').textContent = L.text(`${count} كلمة`);
+      find('[data-writing-range]').textContent = L.text(`نطاق تدريبي مقترح: ${range[0]}–${range[1]} كلمة`);
       const total = prompt.checks.length, done = checked.length;
-      find('[data-writing-check-count]').textContent = `${done} من ${total} بنود راجعتها بنفسك`;
+      find('[data-writing-check-count]').textContent = L.text(`${done} من ${total} بنود راجعتها بنفسك`);
       const progress = find('[data-writing-check-progress]'); progress.style.width = `${done / total * 100}%`;
       progress.parentElement.setAttribute('aria-valuenow', String(Math.round(done / total * 100)));
     }
     function render() {
       const config = LEVELS[level];
-      container.innerHTML = `<section class="lesson-workshop writing-workshop" data-writing-root aria-labelledby="writing-workshop-title"><div class="lesson-heading"><p class="eyebrow">من الفكرة إلى نص مترابط</p><h1 id="writing-workshop-title">كيف أكتب موضوعًا بالألمانية؟</h1><p class="lesson-description">تعلّم خطوة خطوة، ثم اكتب مسودتك وراجعها بنفسك.</p></div>
+      container.innerHTML = `<section class="lesson-workshop writing-workshop" data-writing-root aria-labelledby="writing-workshop-title"><div class="lesson-heading"><p class="eyebrow">من الفكرة إلى نص مترابط</p><h1 id="writing-workshop-title">كيف أكتب موضوعًا؟</h1><p class="lesson-description">تعلّم خطوة خطوة، ثم اكتب مسودتك وراجعها بنفسك.</p></div>
         <nav class="lesson-levels" aria-label="مستوى تدريب الكتابة">${Object.entries(LEVELS).map(([code, item]) => `<button type="button" class="lesson-level ${code===level?'active':''}" data-writing-level="${code}" aria-pressed="${code===level}"><b dir="ltr">${code}</b><span>${item.name}</span></button>`).join('')}</nav>
         <div class="lesson-select-row"><label for="writing-prompt-select">اختر تدريبًا</label><select id="writing-prompt-select" data-writing-prompt>${PROMPTS.filter(item=>item.level===level).map(item=>`<option value="${item.id}" ${item.id===prompt.id?'selected':''}>${esc(item.title)}</option>`).join('')}</select></div>
         <article class="lesson-card writing-task"><div class="lesson-card-heading"><h2>${esc(prompt.title)}</h2><span class="lesson-tag">${esc(prompt.audience)}</span></div><p>${esc(prompt.task)}</p><ol class="writing-requirements">${prompt.requirements.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><p class="lesson-note">تركيزك الآن: ${esc(config.focus)}</p></article>
         <div class="writing-steps">${[['1','خطّط','حدّد القارئ والهدف والنقاط المطلوبة.'],['2','اكتب','قسّم النص إلى مقدمة وعرض وخاتمة.'],['3','راجع','تحقّق من المطلوب والترابط واللغة.']].map(([number,title,text])=>`<article class="writing-step"><b>${number}</b><h3>${title}</h3><p>${text}</p></article>`).join('')}</div>
-        <section class="lesson-card writing-outline-card"><h2>ابدأ بمخطط</h2><p>المخطط يعطي كل فقرة وظيفة. استبدل الأقواس بمعلوماتك، ولا تنسخها كما هي في النص النهائي.</p><button type="button" class="secondary" data-writing-action="outline" aria-expanded="false" aria-controls="writing-outline-panel">اعرض مخطط هذا الموضوع</button><div id="writing-outline-panel" class="writing-outline" data-writing-outline hidden><pre class="lesson-de" lang="de" dir="ltr">${esc(prompt.outline.join('\n\n'))}</pre><button type="button" class="secondary" data-writing-action="insert-outline">أضف المخطط إلى مسودتي</button></div></section>
-        <details class="lesson-card writing-model"><summary>اقرأ نموذجًا واشرح دور كل فقرة</summary><p class="lesson-note">مثال واحد للتعلّم، وليس صيغة وحيدة للحفظ. عدد كلماته ${countWords(prompt.sample.map(part=>part[1]).join(' '))} كلمة تقريبًا.</p>${prompt.sample.map(([title,de,explanation])=>`<article class="writing-sample-part"><h3>${esc(title)}</h3><p class="lesson-de" lang="de" dir="ltr">${esc(de).replace(/\n/g,'<br>')}</p><p class="lesson-explanation">${esc(explanation)}</p><button type="button" class="secondary" data-example-speak="${esc(de)}">استمع إلى الفقرة ♬</button></article>`).join('')}</details>
-        <section class="lesson-card writing-connectors"><h2>روابط تساعدك على تنظيم الأفكار</h2><p class="lesson-note">اضغط عبارة لإدراجها عند المؤشر في مسودتك، ثم أكملها بما يناسب فكرتك.</p><div class="writing-connector-grid">${config.connectors.map(([category,label,insert,note],index)=>`<article class="writing-connector"><span>${esc(category)}</span><button type="button" class="secondary lesson-de" lang="de" dir="ltr" data-writing-insert="${index}">${esc(label)}</button><p>${esc(note)}</p></article>`).join('')}</div></section>
-        <section class="lesson-card writing-draft"><div class="lesson-card-heading"><h2>مسودتك</h2><strong data-writing-count></strong></div><label class="lesson-note" for="writing-draft-text" data-writing-range></label><textarea id="writing-draft-text" class="writing-textarea lesson-de" data-writing-draft lang="de" dir="ltr" rows="10" spellcheck="true" placeholder="Schreibe hier deinen Text …" aria-describedby="writing-draft-guide">${esc(draft)}</textarea><p id="writing-draft-guide" class="lesson-note">الطول المقترح للتدريب فقط، وليس شرطًا رسميًا لامتحان. لا تُصحَّح اللغة تلقائيًا في هذا القسم.</p><div class="writing-draft-actions"><button type="button" class="secondary" data-writing-action="copy">انسخ مسودتي</button><button type="button" class="secondary" data-writing-action="listen-draft">استمع إلى مسودتي ♬</button><span class="lesson-note" data-writing-save>${esc(savedStatus)}</span></div></section>
-        <section class="lesson-card writing-language-tip"><h2>راجع هذا الخطأ الشائع</h2><p class="lesson-de writing-wrong" lang="de" dir="ltr"><del>${esc(config.error[0])}</del></p><p class="lesson-de writing-correct" lang="de" dir="ltr">${esc(config.error[1])}</p><p>${esc(config.error[2])}</p></section>
+        <section class="lesson-card writing-outline-card"><h2>ابدأ بمخطط</h2><p>المخطط يعطي كل فقرة وظيفة. استبدل الأقواس بمعلوماتك، ولا تنسخها كما هي في النص النهائي.</p><button type="button" class="secondary" data-writing-action="outline" aria-expanded="false" aria-controls="writing-outline-panel">اعرض مخطط هذا الموضوع</button><div id="writing-outline-panel" class="writing-outline" data-writing-outline hidden><pre class="lesson-de" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}">${esc(prompt.outline.join('\n\n'))}</pre><button type="button" class="secondary" data-writing-action="insert-outline">أضف المخطط إلى مسودتي</button></div></section>
+        <details class="lesson-card writing-model"><summary>اقرأ نموذجًا واشرح دور كل فقرة</summary><p class="lesson-note">مثال واحد للتعلّم، وليس صيغة وحيدة للحفظ. عدد كلماته ${countWords(prompt.sample.map(part=>part[1]).join(' '))} كلمة تقريبًا.</p>${prompt.sample.map(([title,de,explanation])=>`<article class="writing-sample-part"><h3>${esc(title)}</h3><p class="lesson-de" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}">${esc(de).replace(/\n/g,'<br>')}</p><p class="lesson-explanation">${esc(explanation)}</p><button type="button" class="secondary" data-example-speak="${esc(de)}">استمع إلى الفقرة ♬</button></article>`).join('')}</details>
+        <section class="lesson-card writing-connectors"><h2>روابط تساعدك على تنظيم الأفكار</h2><p class="lesson-note">اضغط عبارة لإدراجها عند المؤشر في مسودتك، ثم أكملها بما يناسب فكرتك.</p><div class="writing-connector-grid">${config.connectors.map(([category,label,insert,note],index)=>`<article class="writing-connector"><span>${esc(category)}</span><button type="button" class="secondary lesson-de" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}" data-writing-insert="${index}">${esc(label)}</button><p>${esc(note)}</p></article>`).join('')}</div></section>
+        <section class="lesson-card writing-draft"><div class="lesson-card-heading"><h2>مسودتك</h2><strong data-writing-count></strong></div><label class="lesson-note" for="writing-draft-text" data-writing-range></label><textarea id="writing-draft-text" class="writing-textarea lesson-de" data-writing-draft lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}" rows="10" spellcheck="true" placeholder="${esc(L.placeholder)}" aria-describedby="writing-draft-guide">${esc(draft)}</textarea><p id="writing-draft-guide" class="lesson-note">الطول المقترح للتدريب فقط، وليس شرطًا رسميًا لامتحان. لا تُصحَّح اللغة تلقائيًا في هذا القسم.</p><div class="writing-draft-actions"><button type="button" class="secondary" data-writing-action="copy">انسخ مسودتي</button><button type="button" class="secondary" data-writing-action="listen-draft">استمع إلى مسودتي ♬</button><span class="lesson-note" data-writing-save>${esc(savedStatus)}</span></div></section>
+        <section class="lesson-card writing-language-tip"><h2>راجع هذا الخطأ الشائع</h2><p class="lesson-de writing-wrong" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}"><del>${esc(config.error[0])}</del></p><p class="lesson-de writing-correct" lang="${TARGET}" dir="${TDIR}" style="direction:${TDIR}">${esc(config.error[1])}</p><p>${esc(config.error[2])}</p></section>
         <section class="lesson-card writing-review"><h2>مراجعة ذاتية قبل التسليم</h2><p>ضع علامة بعد أن تراجع كل بند فعليًا في نصك.</p><div class="writing-checklist">${prompt.checks.map((item,index)=>`<label><input type="checkbox" data-writing-check="${index}" ${checked.includes(index)?'checked':''}><span>${esc(item)}</span></label>`).join('')}</div><div class="track writing-check-track" role="progressbar" aria-label="بنود المراجعة الذاتية المكتملة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i data-writing-check-progress></i></div><p class="lesson-note" data-writing-check-count></p><button type="button" class="primary" data-writing-action="assess">اعرض ملخص مراجعتي</button><div class="writing-feedback" data-writing-feedback aria-live="polite"></div></section>
         <p class="status-message" data-writing-status role="status"></p></section>`;
-      updateCounter();
+      updateCounter();L.localize(container);
     }
     function insert(text) {
       const textarea = find('[data-writing-draft]');
@@ -125,10 +129,10 @@
       if (connector && container.contains(connector)) { insert(LEVELS[level].connectors[+connector.dataset.writingInsert][2]); return; }
       const action = event.target.closest('[data-writing-action]');
       if (!action || !container.contains(action)) return;
-      if(action.dataset.writingAction==='listen-draft'){if(!draft.trim()){announce('اكتب مسودّة أولًا للاستماع إليها.');return;}container.dispatchEvent(new CustomEvent('wort:speak',{bubbles:true,detail:{text:draft,button:action}}));return;}
+      if(action.dataset.writingAction==='listen-draft'){if(!draft.trim()){announce('اكتب مسودّة أولًا للاستماع إليها.');return;}container.dispatchEvent(new CustomEvent('wort:speak',{bubbles:true,detail:{text:draft,button:action,lang:TARGET}}));return;}
       if (action.dataset.writingAction==='outline') {
         outlineVisible=!outlineVisible;find('[data-writing-outline]').hidden=!outlineVisible;
-        action.textContent=outlineVisible?'أخفِ المخطط':'اعرض مخطط هذا الموضوع';action.setAttribute('aria-expanded',String(outlineVisible));
+        action.textContent=L.text(outlineVisible?'أخفِ المخطط':'اعرض مخطط هذا الموضوع');action.setAttribute('aria-expanded',String(outlineVisible));
       } else if (action.dataset.writingAction==='insert-outline') {
         const textarea=find('[data-writing-draft]');textarea.focus();textarea.setSelectionRange(textarea.value.length,textarea.value.length);
         insert((textarea.value.trim()?'\n\n':'')+prompt.outline.join('\n\n'));
@@ -156,6 +160,7 @@
         }
         find('[data-writing-feedback]').innerHTML=`<h3>ملخص مراجعتك</h3><ul>${notes.map(note=>`<li>${esc(note)}</li>`).join('')}</ul><p class="lesson-note">هذا ملخص للطول والقائمة التي أكملتها بنفسك، وليس تقييمًا آليًا لصحة اللغة.</p>`;
       }
+      L.localize(container);
     }
     function onChange(event) {
       const target=event.target;

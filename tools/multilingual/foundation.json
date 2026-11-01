@@ -1,0 +1,2055 @@
+[
+  {
+    "id": "foundation:i",
+    "level": "A1",
+    "texts": {
+      "ar": "أنا",
+      "en": "I",
+      "nl": "ik",
+      "de": "ich"
+    },
+    "pos": "pronoun",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أنا أتعلم الألمانية.",
+          "en": "I am learning German.",
+          "nl": "Ik leer Duits.",
+          "de": "Ich lerne Deutsch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:you",
+    "level": "A1",
+    "texts": {
+      "ar": "أنت",
+      "en": "you",
+      "nl": "jij",
+      "de": "du"
+    },
+    "pos": "pronoun",
+    "sense": "Second-person singular informal pronoun."
+  },
+  {
+    "id": "foundation:he",
+    "level": "A1",
+    "texts": {
+      "ar": "هو",
+      "en": "he",
+      "nl": "hij",
+      "de": "er"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:she",
+    "level": "A1",
+    "texts": {
+      "ar": "هي",
+      "en": "she",
+      "nl": "zij",
+      "de": "sie"
+    },
+    "pos": "pronoun",
+    "sense": "Third-person singular feminine pronoun.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "هي تقرأ كتابًا.",
+          "en": "She reads a book.",
+          "nl": "Zij leest een boek.",
+          "de": "Sie liest ein Buch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:we",
+    "level": "A1",
+    "texts": {
+      "ar": "نحن",
+      "en": "we",
+      "nl": "wij",
+      "de": "wir"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:they",
+    "level": "A1",
+    "texts": {
+      "ar": "هم",
+      "en": "they",
+      "nl": "ze",
+      "de": "sie"
+    },
+    "pos": "pronoun",
+    "sense": "Third-person plural pronoun.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "هم يعيشون هنا.",
+          "en": "They live here.",
+          "nl": "Ze wonen hier.",
+          "de": "Sie wohnen hier."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:you-plural",
+    "level": "A1",
+    "texts": {
+      "ar": "أنتم",
+      "en": "you all",
+      "nl": "jullie",
+      "de": "ihr"
+    },
+    "pos": "pronoun",
+    "sense": "Addressing several people.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أنتم تتكلمون الهولندية.",
+          "en": "You all speak Dutch.",
+          "nl": "Jullie spreken Nederlands.",
+          "de": "Ihr sprecht Niederländisch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:myself",
+    "level": "A2",
+    "texts": {
+      "ar": "نفسي",
+      "en": "myself",
+      "nl": "mezelf",
+      "de": "mich selbst"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:yourself",
+    "level": "A2",
+    "texts": {
+      "ar": "نفسك",
+      "en": "yourself",
+      "nl": "jezelf",
+      "de": "dich selbst"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:ourselves",
+    "level": "A2",
+    "texts": {
+      "ar": "أنفسنا",
+      "en": "ourselves",
+      "nl": "onszelf",
+      "de": "uns selbst"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:someone",
+    "level": "A1",
+    "texts": {
+      "ar": "شخص ما",
+      "en": "someone",
+      "nl": "iemand",
+      "de": "jemand"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:nobody",
+    "level": "A1",
+    "texts": {
+      "ar": "لا أحد",
+      "en": "nobody",
+      "nl": "niemand",
+      "de": "niemand"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:everyone",
+    "level": "A1",
+    "texts": {
+      "ar": "الجميع",
+      "en": "everyone",
+      "nl": "iedereen",
+      "de": "alle"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:something",
+    "level": "A1",
+    "texts": {
+      "ar": "شيء ما",
+      "en": "something",
+      "nl": "iets",
+      "de": "etwas"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:nothing",
+    "level": "A1",
+    "texts": {
+      "ar": "لا شيء",
+      "en": "nothing",
+      "nl": "niets",
+      "de": "nichts"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:everything",
+    "level": "A1",
+    "texts": {
+      "ar": "كل شيء",
+      "en": "everything",
+      "nl": "alles",
+      "de": "alles"
+    },
+    "pos": "pronoun"
+  },
+  {
+    "id": "foundation:this",
+    "level": "A1",
+    "texts": {
+      "ar": "هذا",
+      "en": "this",
+      "nl": "dit",
+      "de": "dies"
+    },
+    "pos": "pronoun",
+    "sense": "Demonstrative pronoun for something nearby.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "هذا كتابي.",
+          "en": "This is my book.",
+          "nl": "Dit is mijn boek.",
+          "de": "Dies ist mein Buch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:that",
+    "level": "A1",
+    "texts": {
+      "ar": "ذلك",
+      "en": "that",
+      "nl": "dat",
+      "de": "das"
+    },
+    "pos": "pronoun",
+    "sense": "Demonstrative pronoun, as in that is your house.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "ذلك منزلك.",
+          "en": "That is your house.",
+          "nl": "Dat is jouw huis.",
+          "de": "Das ist dein Haus."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:who",
+    "level": "A1",
+    "texts": {
+      "ar": "مَن",
+      "en": "who",
+      "nl": "wie",
+      "de": "wer"
+    },
+    "pos": "pronoun",
+    "sense": "Question about a person; not the preposition from.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "مَن عند الباب؟",
+          "en": "Who is at the door?",
+          "nl": "Wie staat er bij de deur?",
+          "de": "Wer ist an der Tür?"
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:what",
+    "level": "A1",
+    "texts": {
+      "ar": "ماذا",
+      "en": "what",
+      "nl": "wat",
+      "de": "was"
+    },
+    "pos": "pronoun",
+    "examples": [
+      {
+        "texts": {
+          "ar": "ماذا تريد؟",
+          "en": "What do you want?",
+          "nl": "Wat wil je?",
+          "de": "Was willst du?"
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:where",
+    "level": "A1",
+    "texts": {
+      "ar": "أين",
+      "en": "where",
+      "nl": "waar",
+      "de": "wo"
+    },
+    "pos": "adverb",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أين المحطة؟",
+          "en": "Where is the station?",
+          "nl": "Waar is het station?",
+          "de": "Wo ist der Bahnhof?"
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:when",
+    "level": "A1",
+    "texts": {
+      "ar": "متى",
+      "en": "when",
+      "nl": "wanneer",
+      "de": "wann"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:why",
+    "level": "A1",
+    "texts": {
+      "ar": "لماذا",
+      "en": "why",
+      "nl": "waarom",
+      "de": "warum"
+    },
+    "pos": "adverb",
+    "examples": [
+      {
+        "texts": {
+          "ar": "لماذا أنت هنا؟",
+          "en": "Why are you here?",
+          "nl": "Waarom ben je hier?",
+          "de": "Warum bist du hier?"
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:how",
+    "level": "A1",
+    "texts": {
+      "ar": "كيف",
+      "en": "how",
+      "nl": "hoe",
+      "de": "wie"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:which",
+    "level": "A1",
+    "texts": {
+      "ar": "أيّ",
+      "en": "which",
+      "nl": "welk",
+      "de": "welcher"
+    },
+    "pos": "other",
+    "sense": "Interrogative determiner used to choose from alternatives."
+  },
+  {
+    "id": "foundation:whose",
+    "level": "A2",
+    "texts": {
+      "ar": "لمن",
+      "en": "whose",
+      "nl": "van wie",
+      "de": "wessen"
+    },
+    "pos": "pronoun",
+    "sense": "Question about possession."
+  },
+  {
+    "id": "foundation:yes",
+    "level": "A1",
+    "texts": {
+      "ar": "نعم",
+      "en": "yes",
+      "nl": "ja",
+      "de": "ja"
+    },
+    "pos": "interjection"
+  },
+  {
+    "id": "foundation:no",
+    "level": "A1",
+    "texts": {
+      "ar": "لا",
+      "en": "no",
+      "nl": "nee",
+      "de": "nein"
+    },
+    "pos": "interjection",
+    "sense": "A standalone negative answer."
+  },
+  {
+    "id": "foundation:not",
+    "level": "A1",
+    "texts": {
+      "ar": "لا",
+      "en": "not",
+      "nl": "niet",
+      "de": "nicht"
+    },
+    "pos": "other",
+    "sense": "Negation of a statement or verb, not the standalone answer no.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أنا لا أدخن.",
+          "en": "I do not smoke.",
+          "nl": "Ik rook niet.",
+          "de": "Ich rauche nicht."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:and",
+    "level": "A1",
+    "texts": {
+      "ar": "و",
+      "en": "and",
+      "nl": "en",
+      "de": "und"
+    },
+    "pos": "conjunction"
+  },
+  {
+    "id": "foundation:or",
+    "level": "A1",
+    "texts": {
+      "ar": "أو",
+      "en": "or",
+      "nl": "of",
+      "de": "oder"
+    },
+    "pos": "conjunction"
+  },
+  {
+    "id": "foundation:but",
+    "level": "A1",
+    "texts": {
+      "ar": "لكن",
+      "en": "but",
+      "nl": "maar",
+      "de": "aber"
+    },
+    "pos": "conjunction"
+  },
+  {
+    "id": "foundation:because",
+    "level": "A1",
+    "texts": {
+      "ar": "لأن",
+      "en": "because",
+      "nl": "omdat",
+      "de": "weil"
+    },
+    "pos": "conjunction",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أنا متعب لأنني عملت كثيرًا.",
+          "en": "I am tired because I worked a lot.",
+          "nl": "Ik ben moe omdat ik veel heb gewerkt.",
+          "de": "Ich bin müde, weil ich viel gearbeitet habe."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:if",
+    "level": "A2",
+    "texts": {
+      "ar": "إذا",
+      "en": "if",
+      "nl": "als",
+      "de": "wenn"
+    },
+    "pos": "conjunction",
+    "sense": "Introducing a condition.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "إذا هطل المطر، سأبقى في المنزل.",
+          "en": "If it rains, I will stay at home.",
+          "nl": "Als het regent, blijf ik thuis.",
+          "de": "Wenn es regnet, bleibe ich zu Hause."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:although",
+    "level": "A2",
+    "texts": {
+      "ar": "رغم أن",
+      "en": "although",
+      "nl": "hoewel",
+      "de": "obwohl"
+    },
+    "pos": "conjunction",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أمشي إلى العمل رغم أن المطر يهطل.",
+          "en": "I walk to work although it is raining.",
+          "nl": "Ik loop naar het werk hoewel het regent.",
+          "de": "Ich gehe zu Fuß zur Arbeit, obwohl es regnet."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:before",
+    "level": "A2",
+    "texts": {
+      "ar": "قبل أن",
+      "en": "before",
+      "nl": "voordat",
+      "de": "bevor"
+    },
+    "pos": "conjunction",
+    "sense": "Conjunction before an event happens, not a spatial preposition."
+  },
+  {
+    "id": "foundation:after",
+    "level": "A2",
+    "texts": {
+      "ar": "بعد أن",
+      "en": "after",
+      "nl": "nadat",
+      "de": "nachdem"
+    },
+    "pos": "conjunction",
+    "sense": "Conjunction after an event has happened."
+  },
+  {
+    "id": "foundation:while",
+    "level": "A2",
+    "texts": {
+      "ar": "بينما",
+      "en": "while",
+      "nl": "terwijl",
+      "de": "während"
+    },
+    "pos": "conjunction",
+    "sense": "Two events taking place at the same time.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أستمع إلى الموسيقى بينما أطبخ.",
+          "en": "I listen to music while I cook.",
+          "nl": "Ik luister naar muziek terwijl ik kook.",
+          "de": "Ich höre Musik, während ich koche."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:until",
+    "level": "A2",
+    "texts": {
+      "ar": "حتى",
+      "en": "until",
+      "nl": "totdat",
+      "de": "bis"
+    },
+    "pos": "conjunction",
+    "sense": "A time limit expressed by a following clause.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "سأنتظر حتى تعود.",
+          "en": "I will wait until you return.",
+          "nl": "Ik wacht totdat je terug bent.",
+          "de": "Ich warte, bis du wieder da bist."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:therefore",
+    "level": "A2",
+    "texts": {
+      "ar": "لذلك",
+      "en": "therefore",
+      "nl": "daarom",
+      "de": "deshalb"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:also",
+    "level": "A1",
+    "texts": {
+      "ar": "أيضًا",
+      "en": "also",
+      "nl": "ook",
+      "de": "auch"
+    },
+    "pos": "adverb",
+    "sense": "Adding another item or fact."
+  },
+  {
+    "id": "foundation:only",
+    "level": "A1",
+    "texts": {
+      "ar": "فقط",
+      "en": "only",
+      "nl": "alleen",
+      "de": "nur"
+    },
+    "pos": "adverb",
+    "sense": "Restricting to just one item or possibility."
+  },
+  {
+    "id": "foundation:even",
+    "level": "A2",
+    "texts": {
+      "ar": "حتى",
+      "en": "even",
+      "nl": "zelfs",
+      "de": "sogar"
+    },
+    "pos": "adverb",
+    "sense": "Emphasising an unexpected or extreme case."
+  },
+  {
+    "id": "foundation:already",
+    "level": "A2",
+    "texts": {
+      "ar": "بالفعل",
+      "en": "already",
+      "nl": "al",
+      "de": "schon"
+    },
+    "pos": "adverb",
+    "sense": "An event has happened earlier than the reference time.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "لقد أكلت بالفعل.",
+          "en": "I have already eaten.",
+          "nl": "Ik heb al gegeten.",
+          "de": "Ich habe schon gegessen."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:yet",
+    "level": "A2",
+    "texts": {
+      "ar": "بعد",
+      "en": "yet",
+      "nl": "nog",
+      "de": "noch"
+    },
+    "pos": "adverb",
+    "sense": "At the present time, chiefly in negative clauses such as not yet.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "لم آكل بعد.",
+          "en": "I have not eaten yet.",
+          "nl": "Ik heb nog niet gegeten.",
+          "de": "Ich habe noch nicht gegessen."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:again",
+    "level": "A1",
+    "texts": {
+      "ar": "مجدّدًا",
+      "en": "again",
+      "nl": "opnieuw",
+      "de": "wieder"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:always",
+    "level": "A1",
+    "texts": {
+      "ar": "دائمًا",
+      "en": "always",
+      "nl": "altijd",
+      "de": "immer"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:never",
+    "level": "A1",
+    "texts": {
+      "ar": "أبدًا",
+      "en": "never",
+      "nl": "nooit",
+      "de": "nie"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:often",
+    "level": "A1",
+    "texts": {
+      "ar": "غالبًا",
+      "en": "often",
+      "nl": "vaak",
+      "de": "oft"
+    },
+    "pos": "adverb",
+    "sense": "Frequently, not the probability meaning probably."
+  },
+  {
+    "id": "foundation:sometimes",
+    "level": "A1",
+    "texts": {
+      "ar": "أحيانًا",
+      "en": "sometimes",
+      "nl": "soms",
+      "de": "manchmal"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:usually",
+    "level": "A2",
+    "texts": {
+      "ar": "عادةً",
+      "en": "usually",
+      "nl": "meestal",
+      "de": "gewöhnlich"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:now",
+    "level": "A1",
+    "texts": {
+      "ar": "الآن",
+      "en": "now",
+      "nl": "nu",
+      "de": "jetzt"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:then",
+    "level": "A1",
+    "texts": {
+      "ar": "ثم",
+      "en": "then",
+      "nl": "dan",
+      "de": "dann"
+    },
+    "pos": "adverb",
+    "sense": "The next step in a sequence."
+  },
+  {
+    "id": "foundation:today",
+    "level": "A1",
+    "texts": {
+      "ar": "اليوم",
+      "en": "today",
+      "nl": "vandaag",
+      "de": "heute"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:tomorrow",
+    "level": "A1",
+    "texts": {
+      "ar": "غدًا",
+      "en": "tomorrow",
+      "nl": "morgen",
+      "de": "morgen"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:yesterday",
+    "level": "A1",
+    "texts": {
+      "ar": "أمس",
+      "en": "yesterday",
+      "nl": "gisteren",
+      "de": "gestern"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:here",
+    "level": "A1",
+    "texts": {
+      "ar": "هنا",
+      "en": "here",
+      "nl": "hier",
+      "de": "hier"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:there",
+    "level": "A1",
+    "texts": {
+      "ar": "هناك",
+      "en": "there",
+      "nl": "daar",
+      "de": "dort"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:everywhere",
+    "level": "A2",
+    "texts": {
+      "ar": "في كل مكان",
+      "en": "everywhere",
+      "nl": "overal",
+      "de": "überall"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:place",
+    "level": "A1",
+    "texts": {
+      "ar": "مكان",
+      "en": "place",
+      "nl": "plaats",
+      "de": "Ort"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "der",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:inside",
+    "level": "A1",
+    "texts": {
+      "ar": "في الداخل",
+      "en": "inside",
+      "nl": "binnen",
+      "de": "drinnen"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:outside",
+    "level": "A1",
+    "texts": {
+      "ar": "في الخارج",
+      "en": "outside",
+      "nl": "buiten",
+      "de": "draußen"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:together",
+    "level": "A1",
+    "texts": {
+      "ar": "معًا",
+      "en": "together",
+      "nl": "samen",
+      "de": "zusammen"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:alone",
+    "level": "A1",
+    "texts": {
+      "ar": "وحيدًا",
+      "en": "alone",
+      "nl": "alleen",
+      "de": "allein"
+    },
+    "pos": "adjective",
+    "sense": "Without other people, not the restrictive meaning only."
+  },
+  {
+    "id": "foundation:almost",
+    "level": "A2",
+    "texts": {
+      "ar": "تقريبًا",
+      "en": "almost",
+      "nl": "bijna",
+      "de": "fast"
+    },
+    "pos": "adverb",
+    "sense": "Nearly, not approximately as a numerical estimate."
+  },
+  {
+    "id": "foundation:very",
+    "level": "A1",
+    "texts": {
+      "ar": "جدًا",
+      "en": "very",
+      "nl": "heel",
+      "de": "sehr"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:enough",
+    "level": "A2",
+    "texts": {
+      "ar": "بما يكفي",
+      "en": "enough",
+      "nl": "genoeg",
+      "de": "genug"
+    },
+    "pos": "adverb",
+    "sense": "To a sufficient degree."
+  },
+  {
+    "id": "foundation:more",
+    "level": "A1",
+    "texts": {
+      "ar": "أكثر",
+      "en": "more",
+      "nl": "meer",
+      "de": "mehr"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:less",
+    "level": "A2",
+    "texts": {
+      "ar": "أقل",
+      "en": "less",
+      "nl": "minder",
+      "de": "weniger"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:most",
+    "level": "A2",
+    "texts": {
+      "ar": "معظم",
+      "en": "most",
+      "nl": "meeste",
+      "de": "meiste"
+    },
+    "pos": "other",
+    "sense": "The largest part or number."
+  },
+  {
+    "id": "foundation:all",
+    "level": "A1",
+    "texts": {
+      "ar": "كل",
+      "en": "all",
+      "nl": "alle",
+      "de": "alle"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:some",
+    "level": "A1",
+    "texts": {
+      "ar": "بعض",
+      "en": "some",
+      "nl": "sommige",
+      "de": "einige"
+    },
+    "pos": "other",
+    "sense": "An unspecified part or number."
+  },
+  {
+    "id": "foundation:many",
+    "level": "A1",
+    "texts": {
+      "ar": "كثير",
+      "en": "many",
+      "nl": "veel",
+      "de": "viele"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:few",
+    "level": "A2",
+    "texts": {
+      "ar": "قليل",
+      "en": "few",
+      "nl": "weinig",
+      "de": "wenige"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:each",
+    "level": "A2",
+    "texts": {
+      "ar": "كل واحد",
+      "en": "each",
+      "nl": "elk",
+      "de": "jeder"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:other",
+    "level": "A1",
+    "texts": {
+      "ar": "آخر",
+      "en": "other",
+      "nl": "ander",
+      "de": "anderer"
+    },
+    "pos": "other"
+  },
+  {
+    "id": "foundation:same",
+    "level": "A2",
+    "texts": {
+      "ar": "نفس",
+      "en": "same",
+      "nl": "hetzelfde",
+      "de": "gleich"
+    },
+    "pos": "other",
+    "sense": "The same or equal in a relevant respect."
+  },
+  {
+    "id": "foundation:how-much",
+    "level": "A1",
+    "texts": {
+      "ar": "كم",
+      "en": "how much",
+      "nl": "hoeveel",
+      "de": "wie viel"
+    },
+    "pos": "adverb"
+  },
+  {
+    "id": "foundation:in",
+    "level": "A1",
+    "texts": {
+      "ar": "في",
+      "en": "in",
+      "nl": "in",
+      "de": "in"
+    },
+    "pos": "preposition",
+    "sense": "Location inside a space."
+  },
+  {
+    "id": "foundation:on",
+    "level": "A1",
+    "texts": {
+      "ar": "على",
+      "en": "on",
+      "nl": "op",
+      "de": "auf"
+    },
+    "pos": "preposition",
+    "sense": "On top of and in contact with a surface.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "الكتاب على الطاولة.",
+          "en": "The book is on the table.",
+          "nl": "Het boek ligt op de tafel.",
+          "de": "Das Buch liegt auf dem Tisch."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:under",
+    "level": "A1",
+    "texts": {
+      "ar": "تحت",
+      "en": "under",
+      "nl": "onder",
+      "de": "unter"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "foundation:above",
+    "level": "A1",
+    "texts": {
+      "ar": "فوق",
+      "en": "above",
+      "nl": "boven",
+      "de": "über"
+    },
+    "pos": "preposition",
+    "sense": "Higher than something else."
+  },
+  {
+    "id": "foundation:beside",
+    "level": "A1",
+    "texts": {
+      "ar": "بجانب",
+      "en": "beside",
+      "nl": "naast",
+      "de": "neben"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "foundation:between",
+    "level": "A1",
+    "texts": {
+      "ar": "بين",
+      "en": "between",
+      "nl": "tussen",
+      "de": "zwischen"
+    },
+    "pos": "preposition",
+    "examples": [
+      {
+        "texts": {
+          "ar": "المحطة بين البنك والمدرسة.",
+          "en": "The station is between the bank and the school.",
+          "nl": "Het station ligt tussen de bank en de school.",
+          "de": "Der Bahnhof liegt zwischen der Bank und der Schule."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:with",
+    "level": "A1",
+    "texts": {
+      "ar": "مع",
+      "en": "with",
+      "nl": "met",
+      "de": "mit"
+    },
+    "pos": "preposition",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أذهب مع صديقي.",
+          "en": "I am going with my friend.",
+          "nl": "Ik ga met mijn vriend.",
+          "de": "Ich gehe mit meinem Freund."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:without",
+    "level": "A2",
+    "texts": {
+      "ar": "دون",
+      "en": "without",
+      "nl": "zonder",
+      "de": "ohne"
+    },
+    "pos": "preposition",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أشرب القهوة دون سكر.",
+          "en": "I drink coffee without sugar.",
+          "nl": "Ik drink koffie zonder suiker.",
+          "de": "Ich trinke Kaffee ohne Zucker."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:for",
+    "level": "A1",
+    "texts": {
+      "ar": "من أجل",
+      "en": "for",
+      "nl": "voor",
+      "de": "für"
+    },
+    "pos": "preposition",
+    "sense": "Purpose or beneficiary, not duration.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أتعلم من أجل مستقبلي.",
+          "en": "I am learning for my future.",
+          "nl": "Ik leer voor mijn toekomst.",
+          "de": "Ich lerne für meine Zukunft."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:from",
+    "level": "A1",
+    "texts": {
+      "ar": "من",
+      "en": "from",
+      "nl": "van",
+      "de": "von"
+    },
+    "pos": "preposition",
+    "sense": "Source or origin."
+  },
+  {
+    "id": "foundation:to",
+    "level": "A1",
+    "texts": {
+      "ar": "إلى",
+      "en": "to",
+      "nl": "naar",
+      "de": "zu"
+    },
+    "pos": "preposition",
+    "sense": "Direction toward a person or destination, not an infinitive marker."
+  },
+  {
+    "id": "foundation:through",
+    "level": "A2",
+    "texts": {
+      "ar": "عبر",
+      "en": "through",
+      "nl": "door",
+      "de": "durch"
+    },
+    "pos": "preposition",
+    "sense": "Passing from one side or end to the other."
+  },
+  {
+    "id": "foundation:against",
+    "level": "A2",
+    "texts": {
+      "ar": "ضد",
+      "en": "against",
+      "nl": "tegen",
+      "de": "gegen"
+    },
+    "pos": "preposition",
+    "sense": "Opposition or a contrary position."
+  },
+  {
+    "id": "foundation:around",
+    "level": "A2",
+    "texts": {
+      "ar": "حول",
+      "en": "around",
+      "nl": "rond",
+      "de": "um"
+    },
+    "pos": "preposition",
+    "sense": "Surrounding or encircling something."
+  },
+  {
+    "id": "foundation:about",
+    "level": "A1",
+    "texts": {
+      "ar": "عن",
+      "en": "about",
+      "nl": "over",
+      "de": "über"
+    },
+    "pos": "preposition",
+    "sense": "On the subject of something.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "نتحدث عن الموسيقى.",
+          "en": "We are talking about music.",
+          "nl": "We praten over muziek.",
+          "de": "Wir sprechen über Musik."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:during",
+    "level": "A2",
+    "texts": {
+      "ar": "أثناء",
+      "en": "during",
+      "nl": "tijdens",
+      "de": "während"
+    },
+    "pos": "preposition",
+    "sense": "Within the time occupied by an event."
+  },
+  {
+    "id": "foundation:since",
+    "level": "A2",
+    "texts": {
+      "ar": "منذ",
+      "en": "since",
+      "nl": "sinds",
+      "de": "seit"
+    },
+    "pos": "preposition",
+    "sense": "From a starting point in time up to the present or reference time.",
+    "examples": [
+      {
+        "texts": {
+          "ar": "أعيش هنا منذ عام 2020.",
+          "en": "I have lived here since 2020.",
+          "nl": "Ik woon hier sinds 2020.",
+          "de": "Ich wohne hier seit 2020."
+        },
+        "source": "Wort — authored parallel example",
+        "authored": true
+      }
+    ]
+  },
+  {
+    "id": "foundation:despite",
+    "level": "A2",
+    "texts": {
+      "ar": "رغم",
+      "en": "despite",
+      "nl": "ondanks",
+      "de": "trotz"
+    },
+    "pos": "preposition",
+    "sense": "Regardless of an obstacle or contrary circumstance."
+  },
+  {
+    "id": "foundation:behind",
+    "level": "A1",
+    "texts": {
+      "ar": "خلف",
+      "en": "behind",
+      "nl": "achter",
+      "de": "hinter"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "foundation:in-front-of",
+    "level": "A1",
+    "texts": {
+      "ar": "أمام",
+      "en": "in front of",
+      "nl": "voor",
+      "de": "vor"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "foundation:near",
+    "level": "A2",
+    "texts": {
+      "ar": "قرب",
+      "en": "near",
+      "nl": "nabij",
+      "de": "nahe"
+    },
+    "pos": "preposition",
+    "sense": "A short distance from something."
+  },
+  {
+    "id": "foundation:along",
+    "level": "A2",
+    "texts": {
+      "ar": "على طول",
+      "en": "along",
+      "nl": "langs",
+      "de": "entlang"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "foundation:be",
+    "level": "A1",
+    "texts": {
+      "ar": "يكون",
+      "en": "be",
+      "nl": "zijn",
+      "de": "sein"
+    },
+    "pos": "verb",
+    "sense": "The verb to be, including the copular or existence sense."
+  },
+  {
+    "id": "foundation:have",
+    "level": "A1",
+    "texts": {
+      "ar": "يمتلك",
+      "en": "have",
+      "nl": "hebben",
+      "de": "haben"
+    },
+    "pos": "verb",
+    "sense": "Possess as a main verb, not a perfect-tense auxiliary."
+  },
+  {
+    "id": "foundation:can",
+    "level": "A1",
+    "texts": {
+      "ar": "يستطيع",
+      "en": "can",
+      "nl": "kunnen",
+      "de": "können"
+    },
+    "pos": "verb",
+    "sense": "Ability, not a metal container."
+  },
+  {
+    "id": "foundation:must",
+    "level": "A1",
+    "texts": {
+      "ar": "يجب",
+      "en": "must",
+      "nl": "moeten",
+      "de": "müssen"
+    },
+    "pos": "verb",
+    "sense": "Necessity or obligation."
+  },
+  {
+    "id": "foundation:want",
+    "level": "A1",
+    "texts": {
+      "ar": "يريد",
+      "en": "want",
+      "nl": "willen",
+      "de": "wollen"
+    },
+    "pos": "verb",
+    "sense": "Desire or wish."
+  },
+  {
+    "id": "foundation:need",
+    "level": "A1",
+    "texts": {
+      "ar": "يحتاج",
+      "en": "need",
+      "nl": "nodig hebben",
+      "de": "brauchen"
+    },
+    "pos": "verb",
+    "sense": "Require something."
+  },
+  {
+    "id": "foundation:do",
+    "level": "A1",
+    "texts": {
+      "ar": "يفعل",
+      "en": "do",
+      "nl": "doen",
+      "de": "tun"
+    },
+    "pos": "verb",
+    "sense": "Carry out an action."
+  },
+  {
+    "id": "foundation:make",
+    "level": "A1",
+    "texts": {
+      "ar": "يصنع",
+      "en": "make",
+      "nl": "maken",
+      "de": "machen"
+    },
+    "pos": "verb",
+    "sense": "Produce or create something."
+  },
+  {
+    "id": "foundation:go",
+    "level": "A1",
+    "texts": {
+      "ar": "يذهب",
+      "en": "go",
+      "nl": "gaan",
+      "de": "gehen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:come",
+    "level": "A1",
+    "texts": {
+      "ar": "يأتي",
+      "en": "come",
+      "nl": "komen",
+      "de": "kommen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:see",
+    "level": "A1",
+    "texts": {
+      "ar": "يرى",
+      "en": "see",
+      "nl": "zien",
+      "de": "sehen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:hear",
+    "level": "A1",
+    "texts": {
+      "ar": "يسمع",
+      "en": "hear",
+      "nl": "horen",
+      "de": "hören"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:say",
+    "level": "A1",
+    "texts": {
+      "ar": "يقول",
+      "en": "say",
+      "nl": "zeggen",
+      "de": "sagen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:speak",
+    "level": "A1",
+    "texts": {
+      "ar": "يتكلم",
+      "en": "speak",
+      "nl": "spreken",
+      "de": "sprechen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:ask",
+    "level": "A1",
+    "texts": {
+      "ar": "يسأل",
+      "en": "ask",
+      "nl": "vragen",
+      "de": "fragen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:answer",
+    "level": "A1",
+    "texts": {
+      "ar": "يجيب",
+      "en": "answer",
+      "nl": "antwoorden",
+      "de": "antworten"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:know",
+    "level": "A1",
+    "texts": {
+      "ar": "يعرف",
+      "en": "know",
+      "nl": "weten",
+      "de": "wissen"
+    },
+    "pos": "verb",
+    "sense": "Know a fact, not be acquainted with a person."
+  },
+  {
+    "id": "foundation:understand",
+    "level": "A1",
+    "texts": {
+      "ar": "يفهم",
+      "en": "understand",
+      "nl": "begrijpen",
+      "de": "verstehen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:think",
+    "level": "A1",
+    "texts": {
+      "ar": "يفكر",
+      "en": "think",
+      "nl": "denken",
+      "de": "denken"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:learn",
+    "level": "A1",
+    "texts": {
+      "ar": "يتعلم",
+      "en": "learn",
+      "nl": "leren",
+      "de": "lernen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:read",
+    "level": "A1",
+    "texts": {
+      "ar": "يقرأ",
+      "en": "read",
+      "nl": "lezen",
+      "de": "lesen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:write",
+    "level": "A1",
+    "texts": {
+      "ar": "يكتب",
+      "en": "write",
+      "nl": "schrijven",
+      "de": "schreiben"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:eat",
+    "level": "A1",
+    "texts": {
+      "ar": "يأكل",
+      "en": "eat",
+      "nl": "eten",
+      "de": "essen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:drink",
+    "level": "A1",
+    "texts": {
+      "ar": "يشرب",
+      "en": "drink",
+      "nl": "drinken",
+      "de": "trinken"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:sleep",
+    "level": "A1",
+    "texts": {
+      "ar": "ينام",
+      "en": "sleep",
+      "nl": "slapen",
+      "de": "schlafen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:live",
+    "level": "A1",
+    "texts": {
+      "ar": "يعيش",
+      "en": "live",
+      "nl": "leven",
+      "de": "leben"
+    },
+    "pos": "verb",
+    "sense": "Be alive or lead a life; not specifically reside at an address."
+  },
+  {
+    "id": "foundation:work",
+    "level": "A1",
+    "texts": {
+      "ar": "يعمل",
+      "en": "work",
+      "nl": "werken",
+      "de": "arbeiten"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:give",
+    "level": "A1",
+    "texts": {
+      "ar": "يعطي",
+      "en": "give",
+      "nl": "geven",
+      "de": "geben"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:take",
+    "level": "A1",
+    "texts": {
+      "ar": "يأخذ",
+      "en": "take",
+      "nl": "nemen",
+      "de": "nehmen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:get",
+    "level": "A1",
+    "texts": {
+      "ar": "يحصل على",
+      "en": "get",
+      "nl": "krijgen",
+      "de": "bekommen"
+    },
+    "pos": "verb",
+    "sense": "Receive or obtain something, not become."
+  },
+  {
+    "id": "foundation:find",
+    "level": "A1",
+    "texts": {
+      "ar": "يجد",
+      "en": "find",
+      "nl": "vinden",
+      "de": "finden"
+    },
+    "pos": "verb",
+    "sense": "Discover or locate something."
+  },
+  {
+    "id": "foundation:look-for",
+    "level": "A1",
+    "texts": {
+      "ar": "يبحث عن",
+      "en": "look for",
+      "nl": "zoeken",
+      "de": "suchen"
+    },
+    "pos": "verb",
+    "sense": "Search for something or someone."
+  },
+  {
+    "id": "foundation:love",
+    "level": "A1",
+    "texts": {
+      "ar": "يحب",
+      "en": "love",
+      "nl": "houden van",
+      "de": "lieben"
+    },
+    "pos": "verb",
+    "sense": "Feel affection or love."
+  },
+  {
+    "id": "foundation:help",
+    "level": "A1",
+    "texts": {
+      "ar": "يساعد",
+      "en": "help",
+      "nl": "helpen",
+      "de": "helfen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:open",
+    "level": "A1",
+    "texts": {
+      "ar": "يفتح",
+      "en": "open",
+      "nl": "openen",
+      "de": "öffnen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:close",
+    "level": "A1",
+    "texts": {
+      "ar": "يغلق",
+      "en": "close",
+      "nl": "sluiten",
+      "de": "schließen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:start",
+    "level": "A1",
+    "texts": {
+      "ar": "يبدأ",
+      "en": "start",
+      "nl": "beginnen",
+      "de": "anfangen"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:stop",
+    "level": "A1",
+    "texts": {
+      "ar": "يتوقف",
+      "en": "stop",
+      "nl": "stoppen",
+      "de": "aufhören"
+    },
+    "pos": "verb",
+    "sense": "Cease doing something."
+  },
+  {
+    "id": "foundation:wait",
+    "level": "A1",
+    "texts": {
+      "ar": "ينتظر",
+      "en": "wait",
+      "nl": "wachten",
+      "de": "warten"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:stay",
+    "level": "A1",
+    "texts": {
+      "ar": "يبقى",
+      "en": "stay",
+      "nl": "blijven",
+      "de": "bleiben"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "foundation:person",
+    "level": "A1",
+    "texts": {
+      "ar": "شخص",
+      "en": "person",
+      "nl": "persoon",
+      "de": "Person"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "die",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:child",
+    "level": "A1",
+    "texts": {
+      "ar": "طفل",
+      "en": "child",
+      "nl": "kind",
+      "de": "Kind"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "das",
+      "nl": "het"
+    }
+  },
+  {
+    "id": "foundation:house",
+    "level": "A1",
+    "texts": {
+      "ar": "منزل",
+      "en": "house",
+      "nl": "huis",
+      "de": "Haus"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "das",
+      "nl": "het"
+    }
+  },
+  {
+    "id": "foundation:water",
+    "level": "A1",
+    "texts": {
+      "ar": "ماء",
+      "en": "water",
+      "nl": "water",
+      "de": "Wasser"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "das",
+      "nl": "het"
+    }
+  },
+  {
+    "id": "foundation:food",
+    "level": "A1",
+    "texts": {
+      "ar": "طعام",
+      "en": "food",
+      "nl": "voedsel",
+      "de": "Essen"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "das",
+      "nl": "het"
+    }
+  },
+  {
+    "id": "foundation:time",
+    "level": "A1",
+    "texts": {
+      "ar": "وقت",
+      "en": "time",
+      "nl": "tijd",
+      "de": "Zeit"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "die",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:day",
+    "level": "A1",
+    "texts": {
+      "ar": "يوم",
+      "en": "day",
+      "nl": "dag",
+      "de": "Tag"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "der",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:night",
+    "level": "A1",
+    "texts": {
+      "ar": "ليل",
+      "en": "night",
+      "nl": "nacht",
+      "de": "Nacht"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "die",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:name",
+    "level": "A1",
+    "texts": {
+      "ar": "اسم",
+      "en": "name",
+      "nl": "naam",
+      "de": "Name"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "der",
+      "nl": "de"
+    }
+  },
+  {
+    "id": "foundation:friend",
+    "level": "A1",
+    "texts": {
+      "ar": "صديق",
+      "en": "friend",
+      "nl": "vriend",
+      "de": "Freund"
+    },
+    "pos": "noun",
+    "articles": {
+      "de": "der",
+      "nl": "de"
+    },
+    "sense": "A friend; masculine forms where the language marks this."
+  }
+]

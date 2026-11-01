@@ -1,0 +1,47 @@
+[
+  {
+    "id": "C1:zugführer",
+    "german": "Zugführer",
+    "note": "Zugführer is the person responsible for a train (conductor/train manager), not automatically Lokführer (train driver). Authored train conductor/train leader sense matching source train context."
+  },
+  {
+    "id": "C1:leimsiederei",
+    "german": "Leimsiederei",
+    "note": "Leimsiederei is uncommon. Preserved source alternatives: sluggish dawdling and literal glue manufacture."
+  },
+  {
+    "id": "C1:nachweisqualität",
+    "german": "Nachweisqualität",
+    "note": "Nachweisqualität is domain-dependent (quality of evidence or of detection). Both source alternatives retained descriptively."
+  },
+  {
+    "id": "C1:fächer",
+    "german": "Fächer",
+    "note": "Fächer as singular lemma means hand fan; Fächer can also be plural of Fach (compartments). Source mixes them; output explicitly gives fan and plural compartments."
+  },
+  {
+    "id": "C1:abfohlen",
+    "german": "Abfohlen",
+    "note": "Rare nominalised Abfohlen translated descriptively as foaling/birth of a foal, matching Arabic."
+  },
+  {
+    "id": "C1:objektiv",
+    "german": "Objektiv",
+    "note": "SOURCE MISMATCH: Objektiv is tagged noun, while Arabic gives objective/impartial (adjective). Output follows noun POS and German capitalisation: lens/objective lens; objectief/cameralens. Arabic source should be corrected separately if noun retained."
+  },
+  {
+    "id": "C1:absteller",
+    "german": "Absteller",
+    "note": "Absteller is technical/domain-dependent; output follows given mechanical damper/shut-off device meaning."
+  },
+  {
+    "id": "C1:dehnsonde",
+    "german": "Dehnsonde",
+    "note": "Dehnsonde is a specialist medical term; descriptive dilator/expanding probe used instead of an unsupported exact device name."
+  },
+  {
+    "id": "C1:stemmbogen",
+    "german": "Stemmbogen",
+    "note": "Stemmbogen rendered by established ski term stem turn/stembocht; detailed Arabic technique wording may need specialist review."
+  }
+]

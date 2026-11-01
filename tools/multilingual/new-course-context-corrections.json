@@ -1,0 +1,97 @@
+{
+  "A1:morgen": {
+    "texts": {
+      "en": "morning",
+      "nl": "ochtend",
+      "ar": "صباح"
+    },
+    "pos": "noun"
+  },
+  "A1:stellen": {
+    "texts": {
+      "ar": "يضع؛ يضع في وضع قائم"
+    },
+    "pos": "verb"
+  },
+  "A1:fliegen": {
+    "texts": {
+      "ar": "يطير؛ يسافر بالطائرة"
+    },
+    "pos": "verb"
+  },
+  "B1:gipfel": {
+    "texts": {
+      "ar": "قمة جبل؛ قمة مؤتمر"
+    },
+    "pos": "noun"
+  },
+  "C1:objektiv": {
+    "texts": {
+      "ar": "عدسة؛ عدسة الكاميرا"
+    },
+    "pos": "noun"
+  },
+  "A2:hi": {
+    "pos": "interjection"
+  },
+  "A2:zack": {
+    "pos": "interjection"
+  },
+  "B1:ciao": {
+    "pos": "interjection"
+  },
+  "B1:aua": {
+    "pos": "interjection"
+  },
+  "B1:hurra": {
+    "pos": "interjection"
+  },
+  "B1:pst": {
+    "pos": "interjection"
+  },
+  "B1:nö": {
+    "pos": "interjection"
+  },
+  "B1:autsch": {
+    "pos": "interjection"
+  },
+  "B1:igitt": {
+    "pos": "interjection"
+  },
+  "B1:gemäss": {
+    "pos": "preposition"
+  },
+  "B1:ca": {
+    "pos": "adverb"
+  },
+  "B1:unglücklicherweise": {
+    "pos": "adverb"
+  },
+  "B2:kitten": {
+    "pos": "verb"
+  },
+  "B2:hungern": {
+    "pos": "verb"
+  },
+  "B2:keuchen": {
+    "pos": "verb"
+  },
+  "B2:entsetzen": {
+    "pos": "verb"
+  },
+  "B2:erstaunen": {
+    "pos": "verb"
+  },
+  "B2:aufmuntern": {
+    "pos": "verb"
+  },
+  "B2:verstreuen": {
+    "pos": "verb"
+  },
+  "B2:zerstreuen": {
+    "pos": "verb"
+  },
+  "B2:weiterfahren": {
+    "pos": "verb"
+  }
+}

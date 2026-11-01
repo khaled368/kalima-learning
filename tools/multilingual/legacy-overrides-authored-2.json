@@ -1,0 +1,1394 @@
+{
+  "B1:bay": {
+    "en": "baying of a hunting hound",
+    "nl": "geblaf van een jachthond"
+  },
+  "B1:verhelfen": {
+    "en": "to help someone achieve something; to enable",
+    "nl": "iemand aan iets helpen; in staat stellen"
+  },
+  "B1:wünsch": {
+    "en": "wish!; I wish (colloquial form)",
+    "nl": "wens!; ik wens (spreektaal)"
+  },
+  "B1:heller": {
+    "en": "heller, an old coin; brighter, depending on context",
+    "nl": "oude kleine munt; helderder, afhankelijk van de context"
+  },
+  "B1:kranken": {
+    "en": "to suffer from an illness or defect; sick (inflected form)",
+    "nl": "aan een ziekte of gebrek lijden; ziek (verbogen vorm)"
+  },
+  "B1:seltsamen": {
+    "en": "strange; peculiar (inflected form)",
+    "nl": "vreemd; eigenaardig (verbogen vorm)"
+  },
+  "B1:deinetwegen": {
+    "en": "because of you; for your sake",
+    "nl": "vanwege jou; omwille van jou"
+  },
+  "B1:wunderbaren": {
+    "en": "wonderful; marvelous (inflected form)",
+    "nl": "prachtig; wonderbaarlijk (verbogen vorm)"
+  },
+  "B1:wunderschönen": {
+    "en": "very beautiful; gorgeous (inflected form)",
+    "nl": "beeldschoon; prachtig (verbogen vorm)"
+  },
+  "B1:schiffes": {
+    "en": "of the ship (genitive form)",
+    "nl": "van het schip (genitief)"
+  },
+  "B1:kämpfst": {
+    "en": "you fight; you struggle (singular)",
+    "nl": "je vecht; je strijdt"
+  },
+  "B1:vieler": {
+    "en": "many; of many (inflected form)",
+    "nl": "veel; van velen (verbogen vorm)"
+  },
+  "B1:sahst": {
+    "en": "you saw (singular, past tense)",
+    "nl": "jij zag (verleden tijd)"
+  },
+  "B1:drunter": {
+    "en": "underneath; under it (colloquial)",
+    "nl": "eronder (spreektaal)"
+  },
+  "B1:behalt": {
+    "en": "keep!; retain! (shortened imperative)",
+    "nl": "bewaar!; houd! (verkorte gebiedende wijs)"
+  },
+  "B1:klüger": {
+    "en": "cleverer; wiser",
+    "nl": "slimmer; wijzer"
+  },
+  "B1:überleg": {
+    "en": "think!; consider!",
+    "nl": "denk na!; overweeg!"
+  },
+  "B1:moore": {
+    "en": "bogs; peatlands",
+    "nl": "moerassen; veengebieden"
+  },
+  "B1:wirfst": {
+    "en": "you throw (singular)",
+    "nl": "jij gooit"
+  },
+  "B1:rausgeworfen": {
+    "en": "thrown out; expelled; fired",
+    "nl": "eruit gegooid; weggestuurd; ontslagen"
+  },
+  "B1:küsse": {
+    "en": "I kiss",
+    "nl": "ik kus"
+  },
+  "B1:vorhat": {
+    "en": "intends; plans to do",
+    "nl": "van plan is; voorheeft"
+  },
+  "B1:traust": {
+    "en": "you trust; you dare (singular)",
+    "nl": "je vertrouwt; je durft"
+  },
+  "B1:doppelte": {
+    "en": "double the amount; twice as much",
+    "nl": "het dubbele; twee keer zoveel"
+  },
+  "B1:merkst": {
+    "en": "you notice; you remember (singular)",
+    "nl": "je merkt; je onthoudt"
+  },
+  "B1:roll": {
+    "en": "roll!; roll up!",
+    "nl": "rol!; rol op!"
+  },
+  "B1:hüte": {
+    "en": "hats",
+    "nl": "hoeden"
+  },
+  "B1:lüg": {
+    "en": "lie!; tell a lie! (imperative)",
+    "nl": "lieg! (gebiedende wijs)"
+  },
+  "B1:schalt": {
+    "en": "switch!; change! (from schalten)",
+    "nl": "schakel!; zet om!"
+  },
+  "B1:spar": {
+    "en": "save!; economize!",
+    "nl": "spaar!; bespaar!"
+  },
+  "B1:gelitten": {
+    "en": "suffered; endured",
+    "nl": "geleden; doorstaan"
+  },
+  "B1:ana": {
+    "en": "collection of sayings or anecdotes about a notable person",
+    "nl": "verzameling uitspraken of anekdotes over een bekend persoon"
+  },
+  "B1:tschuldigung": {
+    "en": "sorry; excuse me (colloquial)",
+    "nl": "sorry; pardon (spreektaal)"
+  },
+  "B1:geistes": {
+    "en": "of the mind; of the spirit (genitive)",
+    "nl": "van de geest; van het verstand (genitief)"
+  },
+  "B1:hingegangen": {
+    "en": "gone there; went there",
+    "nl": "daarheen gegaan"
+  },
+  "B1:zukünftigen": {
+    "en": "future; forthcoming (inflected form)",
+    "nl": "toekomstig; aanstaand (verbogen vorm)"
+  },
+  "B1:freust": {
+    "en": "you are pleased; you rejoice (singular)",
+    "nl": "je bent blij; je verheugt je"
+  },
+  "B1:bräuchten": {
+    "en": "we or they would need",
+    "nl": "wij of zij zouden nodig hebben"
+  },
+  "B1:rangehen": {
+    "en": "to approach; to answer the phone (colloquial)",
+    "nl": "naderen; de telefoon opnemen (spreektaal)"
+  },
+  "B1:wünschst": {
+    "en": "you wish (singular)",
+    "nl": "jij wenst"
+  },
+  "B1:grösseres": {
+    "en": "bigger; something bigger (comparative form)",
+    "nl": "groter; iets groters (vergrotende trap)"
+  },
+  "B1:überein": {
+    "en": "in agreement; in accord (in compound verbs)",
+    "nl": "overeen; eensgezind (in samengestelde werkwoorden)"
+  },
+  "B1:ähnliches": {
+    "en": "something similar; things of that kind",
+    "nl": "iets dergelijks; soortgelijke dingen"
+  },
+  "B1:rühr": {
+    "en": "stir!; mix!",
+    "nl": "roer!; meng!"
+  },
+  "B1:überlass": {
+    "en": "leave to someone!; hand over!; entrust!",
+    "nl": "laat aan iemand over!; draag over!"
+  },
+  "B1:hängst": {
+    "en": "you hang; you are hanging (singular)",
+    "nl": "je hangt; je hangt ergens aan"
+  },
+  "B1:äpfel": {
+    "en": "apples",
+    "nl": "appels"
+  },
+  "B1:codes": {
+    "en": "codes; ciphers",
+    "nl": "codes; geheime codes"
+  },
+  "B1:rumlaufen": {
+    "en": "to walk around; to roam about",
+    "nl": "rondlopen; rondzwerven"
+  },
+  "B1:kapierst": {
+    "en": "you understand; you get it (colloquial)",
+    "nl": "je begrijpt het; je snapt het (spreektaal)"
+  },
+  "B1:schmeiss": {
+    "en": "throw!; toss! (colloquial)",
+    "nl": "gooi!; smijt! (spreektaal)"
+  },
+  "B1:verkaufst": {
+    "en": "you sell (singular)",
+    "nl": "jij verkoopt"
+  },
+  "B1:lach": {
+    "en": "laugh! (imperative)",
+    "nl": "lach! (gebiedende wijs)"
+  },
+  "B1:cooler": {
+    "en": "cool; cooler or calmer, depending on context",
+    "nl": "cool; stoerder of kalmer, afhankelijk van de context"
+  },
+  "B1:kang": {
+    "en": "cangue; wooden neck restraint",
+    "nl": "Chinees houten halsblok; halsboei"
+  },
+  "B1:rennst": {
+    "en": "you run (singular)",
+    "nl": "jij rent"
+  },
+  "B1:stundenlang": {
+    "en": "for hours; lasting hours",
+    "nl": "urenlang"
+  },
+  "B2:alarmstufe": {
+    "en": "alert level",
+    "nl": "alarmniveau"
+  },
+  "B2:entscheidest": {
+    "en": "you decide; you make a decision",
+    "nl": "jij beslist; je neemt een besluit"
+  },
+  "B2:wagst": {
+    "en": "you dare; you venture (singular)",
+    "nl": "je durft; je waagt"
+  },
+  "B2:vorhast": {
+    "en": "you intend; you plan to (singular)",
+    "nl": "je bent van plan; je hebt voor"
+  },
+  "B2:ewigen": {
+    "en": "eternal; everlasting (inflected form)",
+    "nl": "eeuwig; blijvend (verbogen vorm)"
+  },
+  "B2:abe": {
+    "en": "telephone answering machine",
+    "nl": "antwoordapparaat"
+  },
+  "B2:sonntags": {
+    "en": "on Sundays",
+    "nl": "op zondag; 's zondags"
+  },
+  "B2:quere": {
+    "en": "crosswise direction; obstruction, as in getting in the way",
+    "nl": "dwarsrichting; hindernis, zoals in iemand in de weg zitten"
+  },
+  "B2:reingezogen": {
+    "en": "pulled inside; moved in (colloquial)",
+    "nl": "naar binnen getrokken; ingetrokken (spreektaal)"
+  },
+  "B2:rückweg": {
+    "en": "way back; return journey",
+    "nl": "terugweg"
+  },
+  "B2:boten": {
+    "en": "we or they offered; we or they provided",
+    "nl": "wij of zij boden; wij of zij verschaften"
+  },
+  "B2:fehlst": {
+    "en": "you are absent; you are missed (singular)",
+    "nl": "je ontbreekt; je wordt gemist"
+  },
+  "B2:brüdern": {
+    "en": "brothers (dative plural)",
+    "nl": "broers (datief meervoud)"
+  },
+  "B2:mindeste": {
+    "en": "least; slightest",
+    "nl": "minste; geringste"
+  },
+  "B2:helf": {
+    "en": "I help (colloquial shortened form)",
+    "nl": "ik help (verkorte spreektaalvorm)"
+  },
+  "B2:renn": {
+    "en": "run! (imperative)",
+    "nl": "ren! (gebiedende wijs)"
+  },
+  "B2:fällst": {
+    "en": "you fall (singular)",
+    "nl": "jij valt"
+  },
+  "B2:zustösst": {
+    "en": "happens to someone; befalls",
+    "nl": "iemand overkomt; gebeurt"
+  },
+  "B2:aufpasst": {
+    "en": "you or someone pays attention; watches out",
+    "nl": "je of iemand let op; past op"
+  },
+  "B2:anbetracht": {
+    "en": "consideration, as in in view of",
+    "nl": "beschouwing, zoals in met het oog op of in aanmerking nemend"
+  },
+  "B2:schmutzigen": {
+    "en": "dirty; filthy (inflected form)",
+    "nl": "vuil; smerig (verbogen vorm)"
+  },
+  "B2:dunkler": {
+    "en": "dark; darker, depending on context",
+    "nl": "donker; donkerder, afhankelijk van de context"
+  },
+  "B2:rauswerfen": {
+    "en": "to throw out; to expel; to fire",
+    "nl": "eruit gooien; wegsturen; ontslaan"
+  },
+  "B2:zurückgebracht": {
+    "en": "brought back; returned",
+    "nl": "teruggebracht"
+  },
+  "B2:kluger": {
+    "en": "clever; wise (inflected form)",
+    "nl": "slim; wijs (verbogen vorm)"
+  },
+  "B2:beneide": {
+    "en": "I envy",
+    "nl": "ik benijd"
+  },
+  "B2:glückstag": {
+    "en": "lucky day",
+    "nl": "geluksdag"
+  },
+  "B2:springe": {
+    "en": "I jump",
+    "nl": "ik spring"
+  },
+  "B2:würmer": {
+    "en": "worms",
+    "nl": "wormen"
+  },
+  "B2:riesiger": {
+    "en": "huge; more enormous, depending on context",
+    "nl": "reusachtig; nog groter, afhankelijk van de context"
+  },
+  "B2:zurückkommst": {
+    "en": "you come back; you return (singular)",
+    "nl": "je terugkomt; je terugkeert"
+  },
+  "B2:warmen": {
+    "en": "warm; hot (inflected form)",
+    "nl": "warm; heet (verbogen vorm)"
+  },
+  "B2:brichst": {
+    "en": "you break; you fracture (singular)",
+    "nl": "je breekt"
+  },
+  "B2:zuzuhören": {
+    "en": "to listen attentively (infinitive with zu)",
+    "nl": "aandachtig te luisteren"
+  },
+  "B2:nervst": {
+    "en": "you annoy; you get on someone's nerves",
+    "nl": "je irriteert; je werkt iemand op de zenuwen"
+  },
+  "B2:gingst": {
+    "en": "you went; you walked (singular, past tense)",
+    "nl": "jij ging; jij liep (verleden tijd)"
+  },
+  "B2:pilze": {
+    "en": "mushrooms; fungi",
+    "nl": "paddenstoelen; schimmels"
+  },
+  "B2:vorsichtiger": {
+    "en": "careful; more careful, depending on context",
+    "nl": "voorzichtig; voorzichtiger, afhankelijk van de context"
+  },
+  "B2:mieses": {
+    "en": "lousy; bad (neuter inflected form)",
+    "nl": "waardeloos; slecht (onzijdige verbogen vorm)"
+  },
+  "B2:rausgeschmissen": {
+    "en": "thrown out; kicked out (colloquial)",
+    "nl": "eruit gegooid; buitengezet (spreektaal)"
+  },
+  "B2:schweig": {
+    "en": "be quiet!; keep silent!",
+    "nl": "zwijg!; houd je mond!"
+  },
+  "B2:gabst": {
+    "en": "you gave (singular, past tense)",
+    "nl": "jij gaf (verleden tijd)"
+  },
+  "B2:erschrocken": {
+    "en": "frightened; startled",
+    "nl": "geschrokken; verschrikt"
+  },
+  "B2:startklar": {
+    "en": "ready to start; ready for takeoff",
+    "nl": "startklaar; klaar voor vertrek"
+  },
+  "B2:xxl": {
+    "en": "extra extra large size; XXL",
+    "nl": "extra extra grote maat; XXL"
+  },
+  "B2:hüpf": {
+    "en": "hop!; jump! (shortened imperative)",
+    "nl": "huppel!; spring! (verkorte gebiedende wijs)"
+  },
+  "B2:merk": {
+    "en": "remember!; take note! (shortened imperative)",
+    "nl": "onthoud!; merk op! (verkorte gebiedende wijs)"
+  },
+  "B2:mini": {
+    "en": "very small; miniature",
+    "nl": "piepklein; miniatuur"
+  },
+  "B2:räum": {
+    "en": "tidy up!; clear away! (shortened imperative)",
+    "nl": "ruim op!; maak vrij! (verkorte gebiedende wijs)"
+  },
+  "B2:tags": {
+    "en": "during the day",
+    "nl": "overdag"
+  },
+  "B2:büxen": {
+    "en": "to run away; to escape (usually in ausbüxen)",
+    "nl": "ervandoor gaan; ontsnappen (meestal in ausbüxen)"
+  },
+  "B2:fress": {
+    "en": "eat! (addressed to an animal or in coarse speech)",
+    "nl": "vreet! (tegen een dier of in grof taalgebruik)"
+  },
+  "B2:fünft": {
+    "en": "fifth (inflected stem)",
+    "nl": "vijfde (verbogen woordstam)"
+  },
+  "B2:gassi": {
+    "en": "dog walk, especially for the dog to relieve itself",
+    "nl": "uitlaatronde met de hond"
+  },
+  "B2:inbus": {
+    "en": "Allen key; hex key",
+    "nl": "inbussleutel"
+  },
+  "B2:wufft": {
+    "en": "barks; makes a woof sound",
+    "nl": "blaft; maakt een woefgeluid"
+  },
+  "B2:darein": {
+    "en": "into it; into that",
+    "nl": "daarin; erin"
+  },
+  "B2:finder": {
+    "en": "finder; person who finds something",
+    "nl": "vinder; iemand die iets vindt"
+  },
+  "B2:kakadu": {
+    "en": "cockatoo",
+    "nl": "kaketoe"
+  },
+  "B2:klötze": {
+    "en": "blocks; wooden blocks",
+    "nl": "blokken; houten blokken"
+  },
+  "B2:wangen": {
+    "en": "cheeks",
+    "nl": "wangen"
+  },
+  "B2:dadrauf": {
+    "en": "on it; on top of that (colloquial)",
+    "nl": "daarop; erop (spreektaal)"
+  },
+  "B2:ersehnt": {
+    "en": "longed-for; eagerly awaited",
+    "nl": "verlangd; langverwacht"
+  },
+  "B2:geheult": {
+    "en": "howled; cried loudly",
+    "nl": "gehuild; gejankt"
+  },
+  "B2:hotdogs": {
+    "en": "hot dogs",
+    "nl": "hotdogs"
+  },
+  "B2:lachend": {
+    "en": "laughing; while laughing",
+    "nl": "lachend"
+  },
+  "B2:orangen": {
+    "en": "orange (inflected colour adjective); oranges, depending on context",
+    "nl": "oranje (verbogen kleuraanduiding); sinaasappels, afhankelijk van de context"
+  },
+  "B2:oranges": {
+    "en": "orange (inflected colour adjective)",
+    "nl": "oranje (verbogen kleuraanduiding)"
+  },
+  "B2:schwupp": {
+    "en": "whoosh!; an expression of a sudden quick movement",
+    "nl": "woeps!; uitroep bij een plotselinge snelle beweging"
+  },
+  "B2:schwups": {
+    "en": "whoosh!; just like that!",
+    "nl": "woeps!; in een oogwenk!"
+  },
+  "B2:ammenhai": {
+    "en": "nurse shark",
+    "nl": "verpleegsterhaai"
+  },
+  "B2:angerast": {
+    "en": "rushed up; came speeding along",
+    "nl": "kwam aangesneld; kwam aangeraasd"
+  },
+  "B2:anknoten": {
+    "en": "to tie on with a knot",
+    "nl": "vastknopen"
+  },
+  "B2:aufessen": {
+    "en": "to eat up; to finish all the food",
+    "nl": "opeten; het eten helemaal opmaken"
+  },
+  "B2:bällchen": {
+    "en": "small ball; small balls",
+    "nl": "balletje; balletjes"
+  },
+  "B2:eissorte": {
+    "en": "ice-cream flavour",
+    "nl": "ijssmaak"
+  },
+  "B2:eiswagen": {
+    "en": "ice-cream van; ice-cream cart",
+    "nl": "ijskar; ijswagen"
+  },
+  "B2:erschrak": {
+    "en": "was startled; took fright",
+    "nl": "schrok"
+  },
+  "B2:happyend": {
+    "en": "happy ending",
+    "nl": "gelukkig einde"
+  },
+  "B2:haustüre": {
+    "en": "front door; house door",
+    "nl": "voordeur; huisdeur"
+  },
+  "B2:herrchen": {
+    "en": "male pet owner; a pet's master",
+    "nl": "baasje van een huisdier"
+  },
+  "B2:holzteil": {
+    "en": "wooden component; wooden part",
+    "nl": "houten onderdeel"
+  },
+  "B2:kärtchen": {
+    "en": "small card",
+    "nl": "kaartje"
+  },
+  "B2:lollipop": {
+    "en": "lollipop",
+    "nl": "lolly"
+  },
+  "B2:pinnwand": {
+    "en": "pinboard; noticeboard",
+    "nl": "prikbord"
+  },
+  "B2:quarzuhr": {
+    "en": "quartz watch; quartz clock",
+    "nl": "kwartshorloge; kwartsklok"
+  },
+  "B2:schubser": {
+    "en": "shove; push",
+    "nl": "duw; zetje"
+  },
+  "B2:seilende": {
+    "en": "end of a rope",
+    "nl": "uiteinde van een touw"
+  },
+  "B2:spürhund": {
+    "en": "tracking dog; sniffer dog",
+    "nl": "speurhond"
+  },
+  "B2:spürnase": {
+    "en": "keen nose for tracking; natural detective",
+    "nl": "speurneus; geboren speurder"
+  },
+  "B2:strengen": {
+    "en": "to exert; to strain (usually in anstrengen)",
+    "nl": "inspannen; belasten (meestal in anstrengen)"
+  },
+  "B2:zuwerfen": {
+    "en": "to throw something to someone",
+    "nl": "iemand iets toewerpen"
+  },
+  "B2:amurtiger": {
+    "en": "Amur tiger; Siberian tiger",
+    "nl": "Amoertijger; Siberische tijger"
+  },
+  "B2:angerannt": {
+    "en": "came running up",
+    "nl": "kwam aangerend"
+  },
+  "B2:ausfindig": {
+    "en": "in ausfindig machen: to locate; to track down",
+    "nl": "in ausfindig machen: opsporen; achterhalen"
+  },
+  "B2:eingejagt": {
+    "en": "instilled fear; frightened someone",
+    "nl": "angst aangejaagd"
+  },
+  "B2:einsaugen": {
+    "en": "to suck in; to absorb",
+    "nl": "opzuigen; inzuigen"
+  },
+  "B2:gekichert": {
+    "en": "giggled",
+    "nl": "gegiecheld"
+  },
+  "B2:geschockt": {
+    "en": "shocked",
+    "nl": "geschokt"
+  },
+  "B2:holzstück": {
+    "en": "piece of wood",
+    "nl": "stuk hout"
+  },
+  "B2:hundekeks": {
+    "en": "dog biscuit",
+    "nl": "hondenkoekje"
+  },
+  "B2:hundenapf": {
+    "en": "dog's food bowl",
+    "nl": "hondenvoerbak"
+  },
+  "B2:kreppband": {
+    "en": "masking tape",
+    "nl": "afplaktape; schilderstape"
+  },
+  "B2:losreissen": {
+    "en": "to tear loose; to wrench free",
+    "nl": "losrukken; zich losrukken"
+  },
+  "B2:losrennen": {
+    "en": "to start running; to run off",
+    "nl": "wegrennen; beginnen te rennen"
+  },
+  "B2:mathebuch": {
+    "en": "mathematics textbook",
+    "nl": "wiskundeboek"
+  },
+  "B2:mathetest": {
+    "en": "mathematics test",
+    "nl": "wiskundetoets"
+  },
+  "B2:reinholen": {
+    "en": "to bring inside; to fetch in",
+    "nl": "binnenhalen; naar binnen brengen"
+  },
+  "B2:rumliegen": {
+    "en": "to lie around; to be left lying about",
+    "nl": "rondslingeren; ergens liggen"
+  },
+  "B2:scheuchen": {
+    "en": "to scare away; to shoo away",
+    "nl": "wegjagen; verjagen"
+  },
+  "B2:schmälzen": {
+    "en": "to prepare or dress food with melted fat",
+    "nl": "voedsel met gesmolten vet bereiden of overgieten"
+  },
+  "B2:spielhaus": {
+    "en": "playhouse",
+    "nl": "speelhuisje"
+  },
+  "B2:stöckchen": {
+    "en": "small stick",
+    "nl": "takje; stokje"
+  },
+  "B2:totlachen": {
+    "en": "to laugh oneself to death (figurative)",
+    "nl": "zich doodlachen"
+  },
+  "B2:wollfaden": {
+    "en": "strand of wool; woollen thread",
+    "nl": "wollen draad"
+  },
+  "B2:augenfarbe": {
+    "en": "eye colour",
+    "nl": "oogkleur"
+  },
+  "B2:ausgelacht": {
+    "en": "laughed at; ridiculed",
+    "nl": "uitgelachen"
+  },
+  "B2:bitteschön": {
+    "en": "here you are; you're welcome; please",
+    "nl": "alstublieft; alsjeblieft; graag gedaan"
+  },
+  "B2:busfenster": {
+    "en": "bus window",
+    "nl": "raam van een bus"
+  },
+  "B2:einstauben": {
+    "en": "to gather dust; to become dusty",
+    "nl": "onder het stof raken; verstoffen"
+  },
+  "B2:gassigehen": {
+    "en": "taking the dog for a walk",
+    "nl": "het uitlaten van de hond"
+  },
+  "B2:gekuschelt": {
+    "en": "cuddled; snuggled",
+    "nl": "geknuffeld; tegen elkaar aangekropen"
+  },
+  "B2:geplaudert": {
+    "en": "chatted",
+    "nl": "gekletst; gepraat"
+  },
+  "B2:geratewohl": {
+    "en": "in aufs Geratewohl: at random; on the off chance",
+    "nl": "op goed geluk; op de gok"
+  },
+  "B2:geschimpft": {
+    "en": "scolded; cursed",
+    "nl": "gescholden; gemopperd"
+  },
+  "B2:geschwitzt": {
+    "en": "sweated",
+    "nl": "gezweet"
+  },
+  "B2:gondelbahn": {
+    "en": "gondola lift; cable car",
+    "nl": "gondelbaan; kabelbaan met cabines"
+  },
+  "B2:hundewiese": {
+    "en": "grassy area where dogs can run or be walked",
+    "nl": "hondenveld; grasveld voor honden"
+  },
+  "B2:ineinander": {
+    "en": "into one another; inside each other",
+    "nl": "in elkaar"
+  },
+  "B2:leckerchen": {
+    "en": "small tasty treat, especially for a pet",
+    "nl": "lekkernijtje; kleine beloning voor een huisdier"
+  },
+  "B2:mischpoche": {
+    "en": "family; relatives (colloquial)",
+    "nl": "familie; verwanten (spreektaal)"
+  },
+  "B2:mädchenklo": {
+    "en": "girls' toilet",
+    "nl": "meisjestoilet"
+  },
+  "B2:pillepalle": {
+    "en": "a trivial matter; something very easy (colloquial)",
+    "nl": "onbenulligheid; kinderspel (spreektaal)"
+  },
+  "B2:pitschnass": {
+    "en": "soaking wet",
+    "nl": "drijfnat; kletsnat"
+  },
+  "B2:rausfallen": {
+    "en": "to fall out",
+    "nl": "uitvallen; naar buiten vallen"
+  },
+  "B2:rausnehmen": {
+    "en": "to take out",
+    "nl": "eruit halen; uitnemen"
+  },
+  "B2:rausziehen": {
+    "en": "to pull out",
+    "nl": "eruit trekken"
+  },
+  "B2:rechenbuch": {
+    "en": "arithmetic textbook",
+    "nl": "rekenboek"
+  },
+  "B2:rechenheft": {
+    "en": "arithmetic exercise book",
+    "nl": "rekenschrift"
+  },
+  "B2:rosenblatt": {
+    "en": "rose leaf; rose petal",
+    "nl": "rozenblad; rozenblaadje"
+  },
+  "B2:tiefschlaf": {
+    "en": "deep sleep",
+    "nl": "diepe slaap"
+  },
+  "B2:todtraurig": {
+    "en": "extremely sad; heartbroken",
+    "nl": "doodbedroefd; intens verdrietig"
+  },
+  "B2:verwundern": {
+    "en": "to amaze; to surprise",
+    "nl": "verbazen; verwonderen"
+  },
+  "B2:draufsetzen": {
+    "en": "to put on top; to sit on it",
+    "nl": "erop zetten; erop gaan zitten"
+  },
+  "B2:dreckhaufen": {
+    "en": "pile of dirt; heap of filth",
+    "nl": "vuilhoop; hoop vuil"
+  },
+  "B2:fensterrand": {
+    "en": "edge of a window",
+    "nl": "vensterrand; raamrand"
+  },
+  "B2:festkrallen": {
+    "en": "to cling with one's claws; to grip tightly",
+    "nl": "zich vastklampen; zich met de klauwen vasthouden"
+  },
+  "B2:froschkönig": {
+    "en": "the Frog King, a fairy-tale character",
+    "nl": "de Kikkerkoning, een sprookjesfiguur"
+  },
+  "B2:frühmorgens": {
+    "en": "early in the morning",
+    "nl": "vroeg in de ochtend"
+  },
+  "B2:gelb-orange": {
+    "en": "yellow-orange",
+    "nl": "geeloranje"
+  },
+  "B2:gequietscht": {
+    "en": "squeaked; squealed",
+    "nl": "gepiept; gegild"
+  },
+  "B2:glasscherbe": {
+    "en": "shard of glass",
+    "nl": "glasscherf"
+  },
+  "B2:irgendwoher": {
+    "en": "from somewhere",
+    "nl": "ergens vandaan"
+  },
+  "B2:mathearbeit": {
+    "en": "mathematics test; mathematics exam",
+    "nl": "wiskundeproefwerk; wiskundetoets"
+  },
+  "B2:mathestunde": {
+    "en": "mathematics lesson",
+    "nl": "wiskundeles"
+  },
+  "B2:nasenspitze": {
+    "en": "tip of the nose",
+    "nl": "neuspunt"
+  },
+  "B2:pappenstiel": {
+    "en": "trifle; small matter, often in no small matter",
+    "nl": "kleinigheid; vaak in geen kleinigheid of geen sinecure"
+  },
+  "B2:riesenlolli": {
+    "en": "giant lollipop",
+    "nl": "reuzenlolly"
+  },
+  "B2:schulglocke": {
+    "en": "school bell",
+    "nl": "schoolbel"
+  },
+  "B2:urplötzlich": {
+    "en": "all of a sudden; quite suddenly",
+    "nl": "plotseling; heel onverwacht"
+  },
+  "B2:verkriechen": {
+    "en": "to crawl away and hide; to take cover",
+    "nl": "wegkruipen; zich verschuilen"
+  },
+  "B2:vorderpfote": {
+    "en": "forepaw; front paw",
+    "nl": "voorpoot"
+  },
+  "B2:zauberkiste": {
+    "en": "magic box",
+    "nl": "toverkist"
+  },
+  "B2:angsterfüllt": {
+    "en": "filled with fear; fearful",
+    "nl": "angstig; vervuld van angst"
+  },
+  "B2:bauklötzchen": {
+    "en": "small toy building block",
+    "nl": "speelgoedblokje; bouwblokje"
+  },
+  "B2:fenstergriff": {
+    "en": "window handle",
+    "nl": "raamgreep"
+  },
+  "B2:futterschale": {
+    "en": "animal feeding bowl",
+    "nl": "voerbakje"
+  },
+  "B2:hundeknochen": {
+    "en": "dog bone; bone for a dog",
+    "nl": "hondenbot"
+  },
+  "B2:hundesprache": {
+    "en": "dog communication; the language of dogs",
+    "nl": "hondentaal; communicatie van honden"
+  },
+  "B2:lieblingstag": {
+    "en": "favourite day",
+    "nl": "lievelingsdag; favoriete dag"
+  },
+  "B2:matheaufgabe": {
+    "en": "mathematics problem",
+    "nl": "wiskundeopgave"
+  },
+  "B2:projektwoche": {
+    "en": "school project week",
+    "nl": "projectweek op school"
+  },
+  "B2:revanchieren": {
+    "en": "to return a favour; to get even",
+    "nl": "iets terugdoen; revanche nemen"
+  },
+  "B2:riesenhunger": {
+    "en": "enormous hunger; being very hungry",
+    "nl": "reuzenhonger; enorme honger"
+  },
+  "B2:runterfahren": {
+    "en": "to drive down; to reduce; to shut down a device",
+    "nl": "naar beneden rijden; verminderen; een apparaat afsluiten"
+  },
+  "B2:runterfallen": {
+    "en": "to fall down",
+    "nl": "naar beneden vallen"
+  },
+  "B2:runtergucken": {
+    "en": "to look down",
+    "nl": "naar beneden kijken"
+  },
+  "B2:schulgelände": {
+    "en": "school grounds; school premises",
+    "nl": "schoolterrein"
+  },
+  "B2:schulprojekt": {
+    "en": "school project",
+    "nl": "schoolproject"
+  },
+  "B2:schwimmsache": {
+    "en": "item of swimwear",
+    "nl": "stuk zwemkleding"
+  },
+  "B2:seitentasche": {
+    "en": "side pocket",
+    "nl": "zijvak; zijzak"
+  },
+  "B2:sommermorgen": {
+    "en": "summer morning",
+    "nl": "zomerochtend"
+  },
+  "B2:spielekarton": {
+    "en": "game box",
+    "nl": "speldoos"
+  },
+  "B2:wegscheuchen": {
+    "en": "to shoo away; to scare away",
+    "nl": "wegjagen; verjagen"
+  },
+  "B2:wiederfinden": {
+    "en": "to find again",
+    "nl": "terugvinden"
+  },
+  "B2:wohnungstüre": {
+    "en": "flat door; apartment door",
+    "nl": "deur van een appartement; woningdeur"
+  },
+  "B2:deutscharbeit": {
+    "en": "German-language test at school",
+    "nl": "proefwerk Duits"
+  },
+  "B2:fluchtversuch": {
+    "en": "escape attempt",
+    "nl": "ontsnappingspoging; vluchtpoging"
+  },
+  "B2:freitagmittag": {
+    "en": "Friday noon; Friday lunchtime",
+    "nl": "vrijdag rond het middaguur"
+  },
+  "B2:gegeneinander": {
+    "en": "against each other",
+    "nl": "tegen elkaar"
+  },
+  "B2:herbeifliegen": {
+    "en": "to fly towards someone; to come flying",
+    "nl": "komen aanvliegen"
+  },
+  "B2:mathe-aufgabe": {
+    "en": "mathematics problem",
+    "nl": "wiskundeopgave"
+  },
+  "B2:mathelehrerin": {
+    "en": "female mathematics teacher",
+    "nl": "wiskundelerares"
+  },
+  "B2:rechenaufgabe": {
+    "en": "arithmetic problem",
+    "nl": "rekensom; rekenopgave"
+  },
+  "B2:riesenschreck": {
+    "en": "huge fright; terrible scare",
+    "nl": "enorme schrik"
+  },
+  "B2:samstagmorgen": {
+    "en": "Saturday morning",
+    "nl": "zaterdagochtend"
+  },
+  "B2:vorbeibringen": {
+    "en": "to bring something round; to drop something off",
+    "nl": "langsbrengen; afgeven"
+  },
+  "B2:wegschleichen": {
+    "en": "to sneak away",
+    "nl": "wegsluipen"
+  },
+  "B2:dienstagmorgen": {
+    "en": "Tuesday morning",
+    "nl": "dinsdagochtend"
+  },
+  "B2:draufschreiben": {
+    "en": "to write on it",
+    "nl": "erop schrijven"
+  },
+  "B2:futterschüssel": {
+    "en": "animal feeding bowl",
+    "nl": "voerbak; voerkom"
+  },
+  "B2:herunterwerfen": {
+    "en": "to throw down",
+    "nl": "naar beneden gooien"
+  },
+  "B2:lieblingsessen": {
+    "en": "favourite food",
+    "nl": "lievelingseten; lievelingsgerecht"
+  },
+  "B2:lieblingsspiel": {
+    "en": "favourite game",
+    "nl": "lievelingsspel"
+  },
+  "B2:rausschleichen": {
+    "en": "to sneak out",
+    "nl": "naar buiten sluipen"
+  },
+  "B2:runterrutschen": {
+    "en": "to slide down",
+    "nl": "naar beneden glijden"
+  },
+  "B2:sachunterricht": {
+    "en": "primary-school subject covering the natural and social world",
+    "nl": "wereldoriëntatie op de basisschool"
+  },
+  "B2:sisyphosarbeit": {
+    "en": "endless futile task; Sisyphean labour",
+    "nl": "sisyfusarbeid; eindeloos vergeefs werk"
+  },
+  "B2:sisyphusarbeit": {
+    "en": "endless futile task; Sisyphean labour",
+    "nl": "sisyfusarbeid; eindeloos vergeefs werk"
+  },
+  "B2:spielzeugkiste": {
+    "en": "toy box",
+    "nl": "speelgoedkist"
+  },
+  "B2:wiederbekommen": {
+    "en": "to get back; to recover",
+    "nl": "terugkrijgen"
+  },
+  "B2:blutverschmiert": {
+    "en": "smeared with blood",
+    "nl": "met bloed besmeurd"
+  },
+  "B2:hundespielplatz": {
+    "en": "dog playground; dog exercise area",
+    "nl": "hondenspeelplaats; speelterrein voor honden"
+  },
+  "B2:klassenlehrerin": {
+    "en": "female class teacher; female homeroom teacher",
+    "nl": "klassenlerares; vrouwelijke groepsleerkracht"
+  },
+  "B2:matheunterricht": {
+    "en": "mathematics teaching; mathematics class",
+    "nl": "wiskundeonderwijs; wiskundeles"
+  },
+  "B2:staubsaugertüte": {
+    "en": "vacuum-cleaner bag",
+    "nl": "stofzuigerzak"
+  },
+  "B2:vorsichtshalber": {
+    "en": "as a precaution; just to be safe",
+    "nl": "voor de zekerheid; uit voorzorg"
+  },
+  "B2:donnerstagmorgen": {
+    "en": "Thursday morning",
+    "nl": "donderdagochtend"
+  },
+  "B2:flachbettscanner": {
+    "en": "flatbed scanner",
+    "nl": "flatbedscanner"
+  },
+  "B2:montagnachmittag": {
+    "en": "Monday afternoon",
+    "nl": "maandagmiddag"
+  },
+  "B2:rechenunterricht": {
+    "en": "arithmetic teaching; arithmetic lesson",
+    "nl": "rekenonderwijs; rekenles"
+  },
+  "B2:vermisstenplakat": {
+    "en": "missing-person poster",
+    "nl": "vermissingsposter; opsporingsposter voor een vermiste"
+  },
+  "B2:forschungsprojekt": {
+    "en": "research project",
+    "nl": "onderzoeksproject"
+  },
+  "B2:mathematikaufgabe": {
+    "en": "mathematics problem",
+    "nl": "wiskundeopgave"
+  },
+  "B2:mittagsschläfchen": {
+    "en": "short afternoon nap; midday nap",
+    "nl": "middagdutje"
+  },
+  "B2:dienstagnachmittag": {
+    "en": "Tuesday afternoon",
+    "nl": "dinsdagmiddag"
+  },
+  "B2:kernspintomografie": {
+    "en": "magnetic resonance imaging; MRI",
+    "nl": "magnetische-resonantiebeeldvorming; MRI"
+  },
+  "B2:verwandtschaftlich": {
+    "en": "related by kinship; relating to family ties",
+    "nl": "op verwantschap betrekking hebbend; verwant"
+  },
+  "B2:mathematikunterricht": {
+    "en": "mathematics teaching; mathematics class",
+    "nl": "wiskundeonderwijs; wiskundeles"
+  },
+  "B2:erwisch": {
+    "en": "catch!; get hold of! (shortened imperative)",
+    "nl": "pak!; betrap! (verkorte gebiedende wijs)"
+  },
+  "B2:gerüste": {
+    "en": "scaffolding; supporting frameworks",
+    "nl": "steigers; draagconstructies"
+  },
+  "B2:anlieger": {
+    "en": "local resident; owner or occupier of an adjoining property",
+    "nl": "aanwonende; eigenaar of bewoner van een aangrenzend perceel"
+  },
+  "B2:farbfilm": {
+    "en": "colour film",
+    "nl": "kleurenfilm"
+  },
+  "B2:klanglos": {
+    "en": "muted; without resonance; soundless",
+    "nl": "klankloos; dof; zonder weerklank"
+  },
+  "B2:staffage": {
+    "en": "decorative accessories; incidental figures in a scene",
+    "nl": "decoratieve bijfiguren; aankleding van een tafereel"
+  },
+  "B2:täubchen": {
+    "en": "small dove; little pigeon",
+    "nl": "duifje"
+  },
+  "B2:ungesagt": {
+    "en": "unsaid; unspoken",
+    "nl": "ongezegd; onuitgesproken"
+  },
+  "B2:günstiger": {
+    "en": "cheaper; more favourable; more convenient",
+    "nl": "goedkoper; gunstiger; geschikter"
+  },
+  "B2:mafiaboss": {
+    "en": "mafia boss",
+    "nl": "maffiabaas"
+  },
+  "72": {
+    "en": "proportionality between a measure and its purpose",
+    "nl": "evenredigheid tussen een maatregel en het doel ervan"
+  },
+  "75": {
+    "en": "margin of discretion; scope for judgment",
+    "nl": "beoordelingsruimte; beleidsvrijheid"
+  },
+  "80": {
+    "en": "inevitability",
+    "nl": "onvermijdelijkheid"
+  },
+  "C1:ungeplant": {
+    "en": "unplanned",
+    "nl": "ongepland"
+  },
+  "C1:entfernten": {
+    "en": "distant; remote (inflected form)",
+    "nl": "ver; afgelegen (verbogen vorm)"
+  },
+  "C1:entkernung": {
+    "en": "removal of the core or pith; gutting",
+    "nl": "verwijdering van de kern of het binnenste; ontpitten"
+  },
+  "C1:fleischlos": {
+    "en": "meatless",
+    "nl": "zonder vlees; vleesloos"
+  },
+  "C1:frühestens": {
+    "en": "at the earliest",
+    "nl": "op zijn vroegst"
+  },
+  "C1:jüngelchen": {
+    "en": "young lad; young boy",
+    "nl": "jong knaapje; jongetje"
+  },
+  "C1:nachtlager": {
+    "en": "place or bed for the night",
+    "nl": "nachtverblijf; slaapplaats voor de nacht"
+  },
+  "C1:schneewall": {
+    "en": "snowbank; bank of piled-up snow",
+    "nl": "sneeuwwal"
+  },
+  "C1:verkrustet": {
+    "en": "encrusted; covered with a hardened crust",
+    "nl": "verkorst; bedekt met een harde korst"
+  },
+  "C1:vorgefasst": {
+    "en": "preconceived; formed in advance",
+    "nl": "vooropgezet; vooraf gevormd"
+  },
+  "C1:detailfrage": {
+    "en": "question of detail; specific issue",
+    "nl": "detailkwestie; detailvraag"
+  },
+  "C1:fantasielos": {
+    "en": "unimaginative",
+    "nl": "fantasieloos"
+  },
+  "C1:gepflastert": {
+    "en": "paved with stones; cobbled",
+    "nl": "bestraat; geplaveid"
+  },
+  "C1:glückssache": {
+    "en": "matter of luck",
+    "nl": "kwestie van geluk"
+  },
+  "C1:ineffizient": {
+    "en": "inefficient",
+    "nl": "inefficiënt; ondoelmatig"
+  },
+  "C1:pfandnehmer": {
+    "en": "pledgee; creditor holding a pledge",
+    "nl": "pandhouder"
+  },
+  "C1:steinschlag": {
+    "en": "rockfall; impact from loose stones",
+    "nl": "steenslag; vallend gesteente"
+  },
+  "C1:weichherzig": {
+    "en": "soft-hearted; with tender compassion",
+    "nl": "zachthartig; met veel medeleven"
+  },
+  "C1:äquidistant": {
+    "en": "equidistant; at equal distances",
+    "nl": "op gelijke afstand; equidistant"
+  },
+  "C1:gleichschritt": {
+    "en": "marching in step; synchronized steps",
+    "nl": "gelijke pas; lopen in de pas"
+  },
+  "C1:hinterblieben": {
+    "en": "bereaved; surviving after a relative's death",
+    "nl": "nabestaand; achtergebleven na het overlijden van een naaste"
+  },
+  "C1:konkurrenzlos": {
+    "en": "unrivalled; without competition",
+    "nl": "ongeëvenaard; zonder concurrentie"
+  },
+  "C1:schnellfahren": {
+    "en": "fast driving; speeding",
+    "nl": "hardrijden; te hard rijden"
+  },
+  "C1:schutzwirkung": {
+    "en": "protective effect; ability to protect",
+    "nl": "beschermende werking"
+  },
+  "C1:unbeschriftet": {
+    "en": "unlabelled; without writing or a label",
+    "nl": "onbeschreven; zonder opschrift of etiket"
+  },
+  "C1:haareschneiden": {
+    "en": "haircutting",
+    "nl": "haar knippen"
+  },
+  "C1:suchtpotenzial": {
+    "en": "addictive potential; capacity to cause addiction",
+    "nl": "verslavingspotentieel; verslavende werking"
+  },
+  "C1:personalführung": {
+    "en": "staff management; personnel management",
+    "nl": "personeelsleiding; leidinggeven aan medewerkers"
+  },
+  "C1:unwidersprochen": {
+    "en": "unchallenged; uncontradicted",
+    "nl": "onweersproken; zonder tegenspraak"
+  },
+  "C1:widerspruchslos": {
+    "en": "without objection; without protest",
+    "nl": "zonder tegenspraak; zonder bezwaar"
+  },
+  "C1:probevorstellung": {
+    "en": "trial performance; audition",
+    "nl": "proefvoorstelling; auditie"
+  },
+  "C1:schönheitspflege": {
+    "en": "beauty care; cosmetic treatment",
+    "nl": "schoonheidsverzorging"
+  },
+  "C1:beschützerhaltung": {
+    "en": "protective attitude",
+    "nl": "beschermende houding"
+  },
+  "C1:teflonbeschichtet": {
+    "en": "Teflon-coated",
+    "nl": "met teflon bekleed"
+  },
+  "C1:gesellschaftsleben": {
+    "en": "social life",
+    "nl": "maatschappelijk leven; sociaal leven"
+  },
+  "C1:unrealistischerweise": {
+    "en": "unrealistically",
+    "nl": "op onrealistische wijze"
+  },
+  "C1:ornat": {
+    "en": "ceremonial robes; official vestments",
+    "nl": "ornaat; ambtsgewaad"
+  },
+  "C1:sonar": {
+    "en": "sonar; sound-based detection equipment",
+    "nl": "sonar; apparatuur voor detectie met geluidsgolven"
+  },
+  "C1:halali": {
+    "en": "hunting-horn call, especially at the end of a hunt",
+    "nl": "jachthoornsignaal, vooral aan het einde van de jacht"
+  },
+  "C1:seeweg": {
+    "en": "sea route",
+    "nl": "zeeroute; vaarroute over zee"
+  },
+  "C1:gedinge": {
+    "en": "piecework; work paid by the piece",
+    "nl": "stukwerk; werk tegen stukloon"
+  },
+  "C1:luftsog": {
+    "en": "suction of air; inward air current",
+    "nl": "luchtzuiging; zuigende luchtstroom"
+  },
+  "C1:auszieher": {
+    "en": "extractor; tool for pulling something out",
+    "nl": "uittrekker; gereedschap om iets uit te trekken"
+  },
+  "C1:bemannung": {
+    "en": "providing a vessel or facility with a crew",
+    "nl": "bemanning; het van personeel voorzien"
+  },
+  "C1:betankung": {
+    "en": "refuelling; filling with fuel",
+    "nl": "bijtanken; het vullen met brandstof"
+  },
+  "C1:abplattung": {
+    "en": "flattening; becoming flattened",
+    "nl": "afplatting"
+  },
+  "C1:versatzgut": {
+    "en": "material used to backfill excavated mine spaces",
+    "nl": "opvulmateriaal voor ontgonnen mijnruimten"
+  },
+  "C1:additivität": {
+    "en": "additivity; the property of being additive",
+    "nl": "additiviteit; optellende eigenschap"
+  },
+  "C1:begradigung": {
+    "en": "straightening a course or line",
+    "nl": "rechttrekken; het rechtmaken van een verloop"
+  }
+}

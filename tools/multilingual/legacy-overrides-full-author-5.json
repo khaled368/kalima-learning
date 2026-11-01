@@ -1,0 +1,7306 @@
+{
+  "C1:wegesrand": {
+    "en": "roadside; edge of a path",
+    "nl": "wegkant; rand van een pad"
+  },
+  "C1:widerrede": {
+    "en": "objection; contradiction",
+    "nl": "tegenspraak; bezwaar"
+  },
+  "C1:wortspiel": {
+    "en": "play on words; pun",
+    "nl": "woordspeling"
+  },
+  "C1:wortstamm": {
+    "en": "word stem; root",
+    "nl": "stam van een woord"
+  },
+  "C1:zerrüttet": {
+    "en": "shattered; severely disrupted",
+    "nl": "ontwricht; zwaar beschadigd"
+  },
+  "C1:zugführer": {
+    "en": "train conductor; person in charge of a train",
+    "nl": "treinconducteur; verantwoordelijke voor een trein"
+  },
+  "C1:zusehends": {
+    "en": "visibly; increasingly",
+    "nl": "zienderogen; steeds meer"
+  },
+  "C1:österlich": {
+    "en": "relating to Easter",
+    "nl": "paas-; met Pasen verbonden"
+  },
+  "C1:übeltäter": {
+    "en": "wrongdoer; criminal",
+    "nl": "boosdoener; misdadiger"
+  },
+  "C1:überfüllt": {
+    "en": "overcrowded; overfull",
+    "nl": "overvol; te druk"
+  },
+  "C1:überladen": {
+    "en": "overloaded; excessively ornate",
+    "nl": "overbeladen; overdreven versierd"
+  },
+  "C1:übermässig": {
+    "en": "excessively; too much",
+    "nl": "overmatig; te veel"
+  },
+  "C1:überzogen": {
+    "en": "exaggerated; coated",
+    "nl": "overdreven; met een laag bedekt"
+  },
+  "C1:aberglaube": {
+    "en": "superstition",
+    "nl": "bijgeloof"
+  },
+  "C1:abgebrannt": {
+    "en": "burned down; broke",
+    "nl": "afgebrand; blut"
+  },
+  "C1:abgespannt": {
+    "en": "exhausted; worn out",
+    "nl": "afgemat; uitgeput"
+  },
+  "C1:absurdität": {
+    "en": "absurdity; ridiculousness",
+    "nl": "absurditeit; ongerijmdheid"
+  },
+  "C1:anbefehlen": {
+    "en": "command; entrust to someone's care",
+    "nl": "bevelen; aan iemands zorg toevertrouwen"
+  },
+  "C1:andernorts": {
+    "en": "elsewhere",
+    "nl": "elders"
+  },
+  "C1:anfängerin": {
+    "en": "female beginner",
+    "nl": "beginster; vrouwelijke beginner"
+  },
+  "C1:angreifbar": {
+    "en": "vulnerable to attack or criticism",
+    "nl": "kwetsbaar voor aanvallen of kritiek"
+  },
+  "C1:ansammlung": {
+    "en": "gathering; accumulation",
+    "nl": "verzameling; opeenhoping"
+  },
+  "C1:anstellung": {
+    "en": "employment; appointment",
+    "nl": "aanstelling; betrekking"
+  },
+  "C1:assoziiert": {
+    "en": "associated; affiliated",
+    "nl": "geassocieerd; aangesloten"
+  },
+  "C1:astronomie": {
+    "en": "astronomy",
+    "nl": "sterrenkunde; astronomie"
+  },
+  "C1:aufgeladen": {
+    "en": "charged; loaded",
+    "nl": "opgeladen; beladen"
+  },
+  "C1:aufspiessen": {
+    "en": "skewer; impale",
+    "nl": "aan een spies rijgen; doorboren"
+  },
+  "C1:aufteilung": {
+    "en": "division; allocation",
+    "nl": "verdeling; opsplitsing"
+  },
+  "C1:ausgelaugt": {
+    "en": "drained; exhausted",
+    "nl": "uitgeput; afgemat"
+  },
+  "C1:ausschnitt": {
+    "en": "excerpt; cut-out section",
+    "nl": "fragment; uitsnede"
+  },
+  "C1:ausspucken": {
+    "en": "spit out",
+    "nl": "uitspugen"
+  },
+  "C1:aussterben": {
+    "en": "extinction",
+    "nl": "uitsterven"
+  },
+  "C1:autofahren": {
+    "en": "drive a car",
+    "nl": "autorijden"
+  },
+  "C1:bandbreite": {
+    "en": "bandwidth; range",
+    "nl": "bandbreedte; breed scala"
+  },
+  "C1:bekleidung": {
+    "en": "clothing; apparel",
+    "nl": "kleding; bekleding"
+  },
+  "C1:beklemmung": {
+    "en": "oppression; feeling of anxiety",
+    "nl": "beklemming; benauwd gevoel"
+  },
+  "C1:berüchtigt": {
+    "en": "notorious; infamous",
+    "nl": "berucht"
+  },
+  "C1:bewandtnis": {
+    "en": "nature of the matter; circumstances",
+    "nl": "toedracht; omstandigheden"
+  },
+  "C1:bewunderer": {
+    "en": "admirer",
+    "nl": "bewonderaar"
+  },
+  "C1:bezugswort": {
+    "en": "antecedent; word referred to",
+    "nl": "antecedent; woord waarnaar wordt verwezen"
+  },
+  "C1:binnenland": {
+    "en": "inland region; interior",
+    "nl": "binnenland"
+  },
+  "C1:blasphemie": {
+    "en": "blasphemy",
+    "nl": "godslastering"
+  },
+  "C1:brutstätte": {
+    "en": "breeding ground",
+    "nl": "broedplaats"
+  },
+  "C1:buddhismus": {
+    "en": "Buddhism",
+    "nl": "boeddhisme"
+  },
+  "C1:bürschchen": {
+    "en": "little fellow; young lad",
+    "nl": "kereltje; knaapje"
+  },
+  "C1:charleston": {
+    "en": "Charleston dance",
+    "nl": "charleston; dans uit de jaren twintig"
+  },
+  "C1:darbietung": {
+    "en": "performance; presentation",
+    "nl": "optreden; uitvoering"
+  },
+  "C1:dauerwelle": {
+    "en": "perm; permanent wave",
+    "nl": "permanent; blijvende haarkrullen"
+  },
+  "C1:denkzettel": {
+    "en": "punishing lesson; warning",
+    "nl": "gevoelige les; waarschuwing"
+  },
+  "C1:depression": {
+    "en": "depression; economic slump",
+    "nl": "depressie; economische neergang"
+  },
+  "C1:despotisch": {
+    "en": "despotic; tyrannical",
+    "nl": "despotisch; tiranniek"
+  },
+  "C1:diabetiker": {
+    "en": "person with diabetes",
+    "nl": "persoon met diabetes; diabeticus"
+  },
+  "C1:dividieren": {
+    "en": "divide a number",
+    "nl": "delen; een getal delen"
+  },
+  "C1:dummerchen": {
+    "en": "little fool; silly person",
+    "nl": "domkopje; onnozel persoon"
+  },
+  "C1:durchsehen": {
+    "en": "looking through; checking",
+    "nl": "doorkijken; nakijken"
+  },
+  "C1:durchsicht": {
+    "en": "inspection; visibility through something",
+    "nl": "controle; doorzicht"
+  },
+  "C1:dünnhäutig": {
+    "en": "thin-skinned; oversensitive",
+    "nl": "overgevoelig; lichtgeraakt"
+  },
+  "C1:effektvoll": {
+    "en": "to striking effect",
+    "nl": "op indrukwekkende wijze; met veel effect"
+  },
+  "C1:eingepackt": {
+    "en": "wrapped; packed",
+    "nl": "ingepakt; verpakt"
+  },
+  "C1:eingrenzen": {
+    "en": "narrow down; delimit",
+    "nl": "afbakenen; beperken"
+  },
+  "C1:einstecken": {
+    "en": "pocket; take a blow or loss",
+    "nl": "in de zak steken; een klap of verlies incasseren"
+  },
+  "C1:einstimmig": {
+    "en": "unanimous",
+    "nl": "unaniem; eensgezind"
+  },
+  "C1:endstation": {
+    "en": "final stop; terminus",
+    "nl": "eindhalte; eindstation"
+  },
+  "C1:entfliehen": {
+    "en": "escape; flee from",
+    "nl": "ontvluchten; ontsnappen"
+  },
+  "C1:erdenklich": {
+    "en": "conceivable; imaginable",
+    "nl": "denkbaar; voorstelbaar"
+  },
+  "C1:erpressung": {
+    "en": "blackmail; extortion",
+    "nl": "afpersing; chantage"
+  },
+  "C1:ersatzmann": {
+    "en": "substitute; reserve player",
+    "nl": "vervanger; reservespeler"
+  },
+  "C1:erschossen": {
+    "en": "shot dead",
+    "nl": "doodgeschoten"
+  },
+  "C1:erschweren": {
+    "en": "make harder; aggravate",
+    "nl": "bemoeilijken; verzwaren"
+  },
+  "C1:erstickung": {
+    "en": "suffocation; asphyxiation",
+    "nl": "verstikking"
+  },
+  "C1:erzbischof": {
+    "en": "archbishop",
+    "nl": "aartsbisschop"
+  },
+  "C1:essentiell": {
+    "en": "essential; indispensable",
+    "nl": "essentieel; onmisbaar"
+  },
+  "C1:euthanasie": {
+    "en": "euthanasia",
+    "nl": "euthanasie"
+  },
+  "C1:expresszug": {
+    "en": "express train",
+    "nl": "sneltrein"
+  },
+  "C1:fehlerfrei": {
+    "en": "error-free",
+    "nl": "foutloos"
+  },
+  "C1:fehlerhaft": {
+    "en": "faulty; erroneous",
+    "nl": "foutief; gebrekkig"
+  },
+  "C1:forscherin": {
+    "en": "female researcher",
+    "nl": "onderzoekster"
+  },
+  "C1:fotografin": {
+    "en": "female photographer",
+    "nl": "fotografe"
+  },
+  "C1:fragwürdig": {
+    "en": "questionable; dubious",
+    "nl": "twijfelachtig; bedenkelijk"
+  },
+  "C1:fussabdruck": {
+    "en": "footprint",
+    "nl": "voetafdruk"
+  },
+  "C1:fälschlich": {
+    "en": "erroneously; mistakenly",
+    "nl": "ten onrechte; abusievelijk"
+  },
+  "C1:gegenstück": {
+    "en": "counterpart; matching piece",
+    "nl": "tegenhanger; bijpassend onderdeel"
+  },
+  "C1:geldbeutel": {
+    "en": "wallet; purse",
+    "nl": "portemonnee"
+  },
+  "C1:geradewegs": {
+    "en": "straight ahead; directly",
+    "nl": "rechtstreeks; regelrecht"
+  },
+  "C1:gesprächig": {
+    "en": "talkative; chatty",
+    "nl": "spraakzaam; praatgraag"
+  },
+  "C1:goldbarren": {
+    "en": "gold bar",
+    "nl": "goudstaaf"
+  },
+  "C1:grenzenlos": {
+    "en": "boundless; unlimited",
+    "nl": "grenzeloos"
+  },
+  "C1:griechisch": {
+    "en": "Greek; relating to Greece or Greek",
+    "nl": "Grieks"
+  },
+  "C1:halbleiter": {
+    "en": "semiconductor",
+    "nl": "halfgeleider"
+  },
+  "C1:handarbeit": {
+    "en": "handwork; handicraft",
+    "nl": "handwerk; handenarbeid"
+  },
+  "C1:hartnäckig": {
+    "en": "persistently; stubbornly",
+    "nl": "hardnekkig; koppig"
+  },
+  "C1:hermetisch": {
+    "en": "hermetically sealed; airtight",
+    "nl": "hermetisch; luchtdicht"
+  },
+  "C1:hochwasser": {
+    "en": "high water; flooding",
+    "nl": "hoogwater; overstroming"
+  },
+  "C1:holzhammer": {
+    "en": "wooden mallet",
+    "nl": "houten hamer"
+  },
+  "C1:hosenstall": {
+    "en": "trouser fly",
+    "nl": "broekgulp"
+  },
+  "C1:hundeelend": {
+    "en": "utterly miserable; terribly ill",
+    "nl": "doodongelukkig; doodziek"
+  },
+  "C1:hungersnot": {
+    "en": "famine",
+    "nl": "hongersnood"
+  },
+  "C1:höhenangst": {
+    "en": "fear of heights",
+    "nl": "hoogtevrees"
+  },
+  "C1:indianerin": {
+    "en": "Indigenous woman of the Americas",
+    "nl": "inheemse vrouw uit de Amerika's"
+  },
+  "C1:instinktiv": {
+    "en": "instinctive",
+    "nl": "instinctief"
+  },
+  "C1:jugendlich": {
+    "en": "youthful; adolescent",
+    "nl": "jeugdig; jongeren-"
+  },
+  "C1:jämmerlich": {
+    "en": "pitiful; miserable",
+    "nl": "jammerlijk; erbarmelijk"
+  },
+  "C1:kanadierin": {
+    "en": "Canadian woman",
+    "nl": "Canadese vrouw"
+  },
+  "C1:kandidatin": {
+    "en": "female candidate",
+    "nl": "kandidate"
+  },
+  "C1:kopfkissen": {
+    "en": "pillow",
+    "nl": "hoofdkussen"
+  },
+  "C1:kostgänger": {
+    "en": "paying boarder; person paying for meals",
+    "nl": "kostganger"
+  },
+  "C1:kritikerin": {
+    "en": "female critic",
+    "nl": "critica; vrouwelijke recensent"
+  },
+  "C1:kundgebung": {
+    "en": "demonstration; public rally",
+    "nl": "betoging; manifestatie"
+  },
+  "C1:kunstgriff": {
+    "en": "clever trick; skilled technique",
+    "nl": "kunstgreep; handige techniek"
+  },
+  "C1:lebensgross": {
+    "en": "life-size",
+    "nl": "levensgroot"
+  },
+  "C1:lebensraum": {
+    "en": "habitat; living space",
+    "nl": "leefgebied; leefruimte"
+  },
+  "C1:leichtsinn": {
+    "en": "recklessness; carelessness",
+    "nl": "lichtzinnigheid; onbezonnenheid"
+  },
+  "C1:lobenswert": {
+    "en": "praiseworthy; commendable",
+    "nl": "prijzenswaardig; lovenswaardig"
+  },
+  "C1:lokomotive": {
+    "en": "locomotive",
+    "nl": "locomotief"
+  },
+  "C1:luftballon": {
+    "en": "balloon",
+    "nl": "ballon"
+  },
+  "C1:lästermaul": {
+    "en": "malicious gossip; slanderer",
+    "nl": "roddelaar; kwaadspreker"
+  },
+  "C1:marionette": {
+    "en": "marionette; puppet",
+    "nl": "marionet; speelbal"
+  },
+  "C1:ministerin": {
+    "en": "female government minister",
+    "nl": "vrouwelijke minister"
+  },
+  "C1:missbrauch": {
+    "en": "misuse; abuse",
+    "nl": "misbruik"
+  },
+  "C1:mitwirkung": {
+    "en": "participation; contribution",
+    "nl": "medewerking; bijdrage"
+  },
+  "C1:moderation": {
+    "en": "moderation of a discussion; presenting a programme",
+    "nl": "gespreksleiding; presentatie van een programma"
+  },
+  "C1:nachgerade": {
+    "en": "positively; downright; by now",
+    "nl": "ronduit; onderhand; werkelijk"
+  },
+  "C1:nachmachen": {
+    "en": "imitate; copy",
+    "nl": "nadoen; namaken"
+  },
+  "C1:nachtaktiv": {
+    "en": "nocturnal",
+    "nl": "'s nachts actief"
+  },
+  "C1:nachtigall": {
+    "en": "nightingale",
+    "nl": "nachtegaal"
+  },
+  "C1:normalität": {
+    "en": "normality; usual state",
+    "nl": "normaliteit; gewone gang van zaken"
+  },
+  "C1:ohrstöpsel": {
+    "en": "earplug",
+    "nl": "oordopje"
+  },
+  "C1:oligarchie": {
+    "en": "oligarchy; rule by a few",
+    "nl": "oligarchie; bestuur door een kleine groep"
+  },
+  "C1:optimismus": {
+    "en": "optimism",
+    "nl": "optimisme"
+  },
+  "C1:pegelstand": {
+    "en": "water level",
+    "nl": "waterstand"
+  },
+  "C1:perfektion": {
+    "en": "perfection; mastery",
+    "nl": "perfectie; volmaaktheid"
+  },
+  "C1:peruanerin": {
+    "en": "Peruvian woman",
+    "nl": "Peruaanse vrouw"
+  },
+  "C1:preisgeben": {
+    "en": "reveal; give up",
+    "nl": "prijsgeven; onthullen"
+  },
+  "C1:projektion": {
+    "en": "projection; display of an image",
+    "nl": "projectie; weergave van een beeld"
+  },
+  "C1:psychologe": {
+    "en": "psychologist",
+    "nl": "psycholoog"
+  },
+  "C1:radioaktiv": {
+    "en": "radioactive",
+    "nl": "radioactief"
+  },
+  "C1:regungslos": {
+    "en": "motionless",
+    "nl": "bewegingloos"
+  },
+  "C1:reitschule": {
+    "en": "riding school",
+    "nl": "rijschool voor paardrijden; manege"
+  },
+  "C1:riesending": {
+    "en": "huge thing",
+    "nl": "reusachtig ding"
+  },
+  "C1:romantiker": {
+    "en": "romantic; follower of Romanticism",
+    "nl": "romanticus"
+  },
+  "C1:ruhekissen": {
+    "en": "cushion; reassurance for one's conscience",
+    "nl": "rustkussen; geruststelling voor het geweten"
+  },
+  "C1:sandkasten": {
+    "en": "sandpit",
+    "nl": "zandbak"
+  },
+  "C1:sanftmütig": {
+    "en": "gentle; meek",
+    "nl": "zachtaardig; zachtmoedig"
+  },
+  "C1:scheusslich": {
+    "en": "hideous; dreadful",
+    "nl": "afschuwelijk; afzichtelijk"
+  },
+  "C1:schilfrohr": {
+    "en": "reed; reed stalk",
+    "nl": "riet; rietstengel"
+  },
+  "C1:schlichter": {
+    "en": "mediator; conciliator",
+    "nl": "bemiddelaar"
+  },
+  "C1:schneefall": {
+    "en": "snowfall",
+    "nl": "sneeuwval"
+  },
+  "C1:schubkarre": {
+    "en": "wheelbarrow",
+    "nl": "kruiwagen"
+  },
+  "C1:schwachfug": {
+    "en": "nonsense; rubbish",
+    "nl": "onzin; kletskoek"
+  },
+  "C1:schwindlig": {
+    "en": "dizzy",
+    "nl": "duizelig"
+  },
+  "C1:schwäbisch": {
+    "en": "Swabian; relating to Swabia or its dialect",
+    "nl": "Zwabisch"
+  },
+  "C1:schändlich": {
+    "en": "disgraceful; shameful",
+    "nl": "schandelijk; oneervol"
+  },
+  "C1:selbstmord": {
+    "en": "suicide",
+    "nl": "zelfdoding; zelfmoord"
+  },
+  "C1:sexualität": {
+    "en": "sexuality",
+    "nl": "seksualiteit"
+  },
+  "C1:sichtweite": {
+    "en": "visibility; visual range",
+    "nl": "zicht; zichtafstand"
+  },
+  "C1:solcherlei": {
+    "en": "of this kind; such",
+    "nl": "dergelijk; van dit soort"
+  },
+  "C1:sommerzeit": {
+    "en": "summertime; daylight saving time",
+    "nl": "zomertijd; zomerperiode"
+  },
+  "C1:sonderlich": {
+    "en": "particularly; especially",
+    "nl": "bijzonder; erg"
+  },
+  "C1:spekulativ": {
+    "en": "speculative",
+    "nl": "speculatief; op vermoedens gebaseerd"
+  },
+  "C1:spesenfrei": {
+    "en": "free of fees or expenses",
+    "nl": "zonder bijkomende kosten"
+  },
+  "C1:sprecherin": {
+    "en": "female speaker; spokeswoman",
+    "nl": "spreekster; woordvoerster"
+  },
+  "C1:spülmittel": {
+    "en": "washing-up liquid; detergent",
+    "nl": "afwasmiddel"
+  },
+  "C1:staatsmann": {
+    "en": "statesman",
+    "nl": "staatsman"
+  },
+  "C1:stecknadel": {
+    "en": "pin; straight pin",
+    "nl": "speld; kopspeld"
+  },
+  "C1:superlativ": {
+    "en": "superlative",
+    "nl": "overtreffende trap"
+  },
+  "C1:tapferkeit": {
+    "en": "bravery; valour",
+    "nl": "dapperheid; moed"
+  },
+  "C1:tiergarten": {
+    "en": "zoo",
+    "nl": "dierentuin"
+  },
+  "C1:tierschutz": {
+    "en": "animal protection; animal welfare",
+    "nl": "dierenbescherming"
+  },
+  "C1:todesopfer": {
+    "en": "person killed; fatality",
+    "nl": "dodelijk slachtoffer"
+  },
+  "C1:treibstoff": {
+    "en": "fuel",
+    "nl": "brandstof"
+  },
+  "C1:umlaufbahn": {
+    "en": "orbit",
+    "nl": "omloopbaan"
+  },
+  "C1:unablässig": {
+    "en": "incessantly; continually",
+    "nl": "onophoudelijk; voortdurend"
+  },
+  "C1:unbegrenzt": {
+    "en": "unlimited",
+    "nl": "onbeperkt"
+  },
+  "C1:unbestellt": {
+    "en": "unsolicited; uncultivated",
+    "nl": "onbesteld; onbebouwd"
+  },
+  "C1:unbestraft": {
+    "en": "unpunished",
+    "nl": "onbestraft"
+  },
+  "C1:undeutlich": {
+    "en": "unclear; indistinct",
+    "nl": "onduidelijk"
+  },
+  "C1:ungeahndet": {
+    "en": "unpunished; not dealt with by authorities",
+    "nl": "onbestraft; zonder bestraffend optreden"
+  },
+  "C1:ungenügend": {
+    "en": "failing grade",
+    "nl": "onvoldoende; onvoldoende cijfer"
+  },
+  "C1:ungestraft": {
+    "en": "unpunished; without consequences",
+    "nl": "ongestraft"
+  },
+  "C1:ungeziefer": {
+    "en": "vermin",
+    "nl": "ongedierte"
+  },
+  "C1:universell": {
+    "en": "universally",
+    "nl": "universeel; overal toepasbaar"
+  },
+  "C1:unsensibel": {
+    "en": "insensitively",
+    "nl": "ongevoelig; zonder rekening te houden met gevoelens"
+  },
+  "C1:unstrittig": {
+    "en": "indisputably; without dispute",
+    "nl": "onbetwist; ontegenzeggelijk"
+  },
+  "C1:unverletzt": {
+    "en": "uninjured; unharmed",
+    "nl": "ongedeerd"
+  },
+  "C1:unwirtlich": {
+    "en": "inhospitable; bleak",
+    "nl": "onherbergzaam; guur"
+  },
+  "C1:vegetarier": {
+    "en": "vegetarian",
+    "nl": "vegetariër"
+  },
+  "C1:verbündete": {
+    "en": "ally; allies",
+    "nl": "bondgenoot; bondgenoten"
+  },
+  "C1:vergriffen": {
+    "en": "out of print; sold out",
+    "nl": "uitverkocht; niet meer verkrijgbaar"
+  },
+  "C1:vermittler": {
+    "en": "intermediary; mediator",
+    "nl": "bemiddelaar; tussenpersoon"
+  },
+  "C1:verpackung": {
+    "en": "packaging; wrapping",
+    "nl": "verpakking"
+  },
+  "C1:verschneit": {
+    "en": "snow-covered",
+    "nl": "besneeuwd"
+  },
+  "C1:vielfaches": {
+    "en": "multiple; many times an amount",
+    "nl": "veelvoud"
+  },
+  "C1:vielsagend": {
+    "en": "suggestively; meaningfully",
+    "nl": "veelzeggend; betekenisvol"
+  },
+  "C1:vorfristig": {
+    "en": "ahead of schedule",
+    "nl": "vóór de afgesproken termijn"
+  },
+  "C1:vorschüler": {
+    "en": "preschool child",
+    "nl": "kleuter; kind in de voorschoolse leeftijd"
+  },
+  "C1:vorzüglich": {
+    "en": "excellent; first-rate",
+    "nl": "uitstekend; voortreffelijk"
+  },
+  "C1:völkermord": {
+    "en": "genocide",
+    "nl": "genocide; volkerenmoord"
+  },
+  "C1:wachsoldat": {
+    "en": "sentry; guard soldier",
+    "nl": "wachtsoldaat; schildwacht"
+  },
+  "C1:waisenkind": {
+    "en": "orphan",
+    "nl": "weeskind"
+  },
+  "C1:wasserfest": {
+    "en": "waterproof; water-resistant",
+    "nl": "waterbestendig; watervast"
+  },
+  "C1:wasserglas": {
+    "en": "water glass",
+    "nl": "waterglas"
+  },
+  "C1:wassermann": {
+    "en": "Aquarius; mythical water spirit",
+    "nl": "Waterman; mythische watergeest"
+  },
+  "C1:wendepunkt": {
+    "en": "turning point",
+    "nl": "keerpunt"
+  },
+  "C1:wettrennen": {
+    "en": "race",
+    "nl": "wedloop; race"
+  },
+  "C1:wirbellose": {
+    "en": "invertebrates",
+    "nl": "ongewervelden"
+  },
+  "C1:wohingegen": {
+    "en": "whereas; while",
+    "nl": "daarentegen; terwijl"
+  },
+  "C1:wortschatz": {
+    "en": "vocabulary",
+    "nl": "woordenschat"
+  },
+  "C1:wählerisch": {
+    "en": "choosy; picky",
+    "nl": "kieskeurig"
+  },
+  "C1:zauberstab": {
+    "en": "magic wand",
+    "nl": "toverstaf"
+  },
+  "C1:zugefroren": {
+    "en": "frozen over",
+    "nl": "dichtgevroren"
+  },
+  "C1:zugeknöpft": {
+    "en": "buttoned up; reserved",
+    "nl": "dichtgeknoopt; gesloten van aard"
+  },
+  "C1:zuschlagen": {
+    "en": "strike hard; slam",
+    "nl": "hard slaan; dichtslaan"
+  },
+  "C1:zustellbar": {
+    "en": "deliverable; capable of being delivered",
+    "nl": "bezorgbaar; afleverbaar"
+  },
+  "C1:zutreffend": {
+    "en": "correct; accurate; applicable",
+    "nl": "juist; toepasselijk"
+  },
+  "C1:zuversicht": {
+    "en": "confidence; optimism",
+    "nl": "vertrouwen in de toekomst; goede moed"
+  },
+  "C1:überträger": {
+    "en": "transmitter; carrier of infection",
+    "nl": "overdrager; drager van een infectie"
+  },
+  "C1:abgrundtief": {
+    "en": "abysmal; extremely deep",
+    "nl": "bodemloos diep; zeer intens"
+  },
+  "C1:absolutheit": {
+    "en": "absoluteness; unconditional nature",
+    "nl": "absoluutheid; onvoorwaardelijkheid"
+  },
+  "C1:abwechselnd": {
+    "en": "alternating; taking turns",
+    "nl": "afwisselend; beurtelings"
+  },
+  "C1:affenzirkus": {
+    "en": "noisy farce; ridiculous fuss",
+    "nl": "apencircus; belachelijk gedoe"
+  },
+  "C1:anderweitig": {
+    "en": "elsewhere; otherwise",
+    "nl": "elders; op een andere manier"
+  },
+  "C1:angeknackst": {
+    "en": "cracked; damaged",
+    "nl": "aangetast; gebarsten"
+  },
+  "C1:angewachsen": {
+    "en": "increased; grown together",
+    "nl": "toegenomen; vastgegroeid"
+  },
+  "C1:angreiferin": {
+    "en": "female attacker",
+    "nl": "aanvalster; vrouwelijke aanvaller"
+  },
+  "C1:anstrengung": {
+    "en": "effort; exertion",
+    "nl": "inspanning; moeite"
+  },
+  "C1:anteilnahme": {
+    "en": "sympathy; compassion",
+    "nl": "medeleven; deelneming"
+  },
+  "C1:apodiktisch": {
+    "en": "categorically; dogmatically",
+    "nl": "stellig; zonder tegenspraak te dulden"
+  },
+  "C1:argwöhnisch": {
+    "en": "suspiciously; distrustfully",
+    "nl": "argwanend; wantrouwig"
+  },
+  "C1:augenfällig": {
+    "en": "strikingly; noticeably",
+    "nl": "in het oog springend; overduidelijk"
+  },
+  "C1:ausgetreten": {
+    "en": "worn by footsteps; having left a group",
+    "nl": "uitgesleten; uit een vereniging getreden"
+  },
+  "C1:ausplaudern": {
+    "en": "let slip; reveal a secret",
+    "nl": "een geheim verklappen"
+  },
+  "C1:ausverkauft": {
+    "en": "sold out",
+    "nl": "uitverkocht"
+  },
+  "C1:bedauerlich": {
+    "en": "regrettable; unfortunate",
+    "nl": "betreurenswaardig; jammer"
+  },
+  "C1:begleiterin": {
+    "en": "female companion",
+    "nl": "begeleidster; gezellin"
+  },
+  "C1:begünstigen": {
+    "en": "favour; facilitate; benefit",
+    "nl": "bevoordelen; begunstigen"
+  },
+  "C1:beieinander": {
+    "en": "together; close to one another",
+    "nl": "bijeen; bij elkaar"
+  },
+  "C1:bekanntgabe": {
+    "en": "announcement; official notification",
+    "nl": "bekendmaking"
+  },
+  "C1:beliebtheit": {
+    "en": "popularity",
+    "nl": "populariteit; geliefdheid"
+  },
+  "C1:berechenbar": {
+    "en": "predictable; calculable",
+    "nl": "voorspelbaar; berekenbaar"
+  },
+  "C1:bereinigung": {
+    "en": "cleanup; resolution of problems",
+    "nl": "opschoning; vereffening"
+  },
+  "C1:berühmtheit": {
+    "en": "fame; celebrity",
+    "nl": "beroemdheid"
+  },
+  "C1:beschaulich": {
+    "en": "peaceful; tranquil",
+    "nl": "gemoedelijk; rustig"
+  },
+  "C1:bezeichnend": {
+    "en": "characteristic; telling",
+    "nl": "kenmerkend; veelzeggend"
+  },
+  "C1:bezugspunkt": {
+    "en": "point of reference",
+    "nl": "referentiepunt"
+  },
+  "C1:bodybuilder": {
+    "en": "bodybuilder",
+    "nl": "bodybuilder"
+  },
+  "C1:brasilianer": {
+    "en": "Brazilian man",
+    "nl": "Braziliaanse man"
+  },
+  "C1:bundesstaat": {
+    "en": "federal state; constituent state",
+    "nl": "bondsstaat; deelstaat"
+  },
+  "C1:buttermilch": {
+    "en": "buttermilk",
+    "nl": "karnemelk"
+  },
+  "C1:dazugehören": {
+    "en": "belong; be part of",
+    "nl": "erbij horen; deel uitmaken van"
+  },
+  "C1:desgleichen": {
+    "en": "likewise; similarly",
+    "nl": "eveneens; evenzo"
+  },
+  "C1:dickschädel": {
+    "en": "stubborn person; blockhead",
+    "nl": "koppig persoon; stijfkop"
+  },
+  "C1:dummerweise": {
+    "en": "unfortunately; annoyingly",
+    "nl": "helaas; vervelend genoeg"
+  },
+  "C1:durchlaucht": {
+    "en": "Serene Highness; princely title",
+    "nl": "Doorluchtige Hoogheid; vorstelijke aanspreektitel"
+  },
+  "C1:ehrenbürger": {
+    "en": "honorary citizen",
+    "nl": "ereburger"
+  },
+  "C1:einfachheit": {
+    "en": "simplicity",
+    "nl": "eenvoud"
+  },
+  "C1:einklappbar": {
+    "en": "foldable; able to fold inward",
+    "nl": "inklapbaar"
+  },
+  "C1:einwandfrei": {
+    "en": "flawless; faultless",
+    "nl": "onberispelijk; zonder gebreken"
+  },
+  "C1:emotionslos": {
+    "en": "emotionless",
+    "nl": "emotieloos; gevoelloos"
+  },
+  "C1:empfänglich": {
+    "en": "receptive; susceptible",
+    "nl": "ontvankelijk; vatbaar"
+  },
+  "C1:endergebnis": {
+    "en": "final result",
+    "nl": "eindresultaat"
+  },
+  "C1:engländerin": {
+    "en": "English woman",
+    "nl": "Engelse vrouw"
+  },
+  "C1:entsetzlich": {
+    "en": "terrible; horrifying",
+    "nl": "ontzettend; afschuwelijk"
+  },
+  "C1:ergonomisch": {
+    "en": "ergonomic",
+    "nl": "ergonomisch"
+  },
+  "C1:ersatzweise": {
+    "en": "as a replacement",
+    "nl": "ter vervanging; als alternatief"
+  },
+  "C1:erstklassig": {
+    "en": "first-class; top-quality",
+    "nl": "eersteklas; van topkwaliteit"
+  },
+  "C1:expandieren": {
+    "en": "expand",
+    "nl": "uitbreiden; expanderen"
+  },
+  "C1:fachgerecht": {
+    "en": "professionally executed; according to good practice",
+    "nl": "vakkundig; volgens de vakregels"
+  },
+  "C1:fahrgestell": {
+    "en": "chassis; undercarriage",
+    "nl": "chassis; onderstel"
+  },
+  "C1:farbenblind": {
+    "en": "colour-blind",
+    "nl": "kleurenblind"
+  },
+  "C1:feindschaft": {
+    "en": "hostility; enmity",
+    "nl": "vijandschap"
+  },
+  "C1:flatterhaft": {
+    "en": "fickle; flighty",
+    "nl": "wispelturig; onstandvastig"
+  },
+  "C1:frappierend": {
+    "en": "striking; astounding",
+    "nl": "frappant; verbazingwekkend"
+  },
+  "C1:freisetzung": {
+    "en": "release; liberation of energy or material",
+    "nl": "vrijkomen; vrijmaking"
+  },
+  "C1:gastgeberin": {
+    "en": "hostess",
+    "nl": "gastvrouw"
+  },
+  "C1:genauigkeit": {
+    "en": "accuracy; precision",
+    "nl": "nauwkeurigheid"
+  },
+  "C1:gesamtmenge": {
+    "en": "total quantity",
+    "nl": "totale hoeveelheid"
+  },
+  "C1:geschwollen": {
+    "en": "swollen",
+    "nl": "gezwollen"
+  },
+  "C1:gewalttätig": {
+    "en": "violent",
+    "nl": "gewelddadig"
+  },
+  "C1:gewinnspiel": {
+    "en": "prize competition; sweepstake",
+    "nl": "prijsvraag; winactie"
+  },
+  "C1:glaubwürdig": {
+    "en": "credible; believable",
+    "nl": "geloofwaardig"
+  },
+  "C1:gottseidank": {
+    "en": "thank goodness; fortunately",
+    "nl": "goddank; gelukkig"
+  },
+  "C1:grammatisch": {
+    "en": "grammatical",
+    "nl": "grammaticaal"
+  },
+  "C1:grossflächig": {
+    "en": "over a wide area",
+    "nl": "op grote schaal; over een groot oppervlak"
+  },
+  "C1:handgemacht": {
+    "en": "handmade",
+    "nl": "handgemaakt"
+  },
+  "C1:handschrift": {
+    "en": "handwriting",
+    "nl": "handschrift"
+  },
+  "C1:hauptspeise": {
+    "en": "main course",
+    "nl": "hoofdgerecht"
+  },
+  "C1:heidenangst": {
+    "en": "terrible fright; intense fear",
+    "nl": "doodsangst; enorme angst"
+  },
+  "C1:heimatstadt": {
+    "en": "hometown",
+    "nl": "geboortestad; thuisstad"
+  },
+  "C1:heimsuchung": {
+    "en": "affliction; calamity",
+    "nl": "beproeving; bezoeking"
+  },
+  "C1:herumlaufen": {
+    "en": "walk around; wander",
+    "nl": "rondlopen"
+  },
+  "C1:hervorheben": {
+    "en": "emphasise; highlight",
+    "nl": "benadrukken; naar voren brengen"
+  },
+  "C1:hilfsbereit": {
+    "en": "helpful; willing to help",
+    "nl": "behulpzaam; hulpvaardig"
+  },
+  "C1:hilfsmittel": {
+    "en": "aid; assistive tool",
+    "nl": "hulpmiddel"
+  },
+  "C1:hinterlegen": {
+    "en": "deposit; leave for safekeeping",
+    "nl": "deponeren; in bewaring geven"
+  },
+  "C1:hirnschmalz": {
+    "en": "brainpower; mental effort",
+    "nl": "denkkracht; denkwerk"
+  },
+  "C1:hochpreisig": {
+    "en": "high-priced",
+    "nl": "hooggeprijsd; duur"
+  },
+  "C1:holländerin": {
+    "en": "Dutch woman",
+    "nl": "Nederlandse vrouw"
+  },
+  "C1:hundertfach": {
+    "en": "hundredfold; repeated a hundred times",
+    "nl": "honderdvoudig; honderd keer zo veel"
+  },
+  "C1:höchststand": {
+    "en": "highest level; peak",
+    "nl": "hoogste stand; piek"
+  },
+  "C1:höflichkeit": {
+    "en": "politeness; courtesy",
+    "nl": "beleefdheid; hoffelijkheid"
+  },
+  "C1:idiomatisch": {
+    "en": "idiomatically; in natural phrasing",
+    "nl": "idiomatisch; volgens het natuurlijke taalgebruik"
+  },
+  "C1:inbegriffen": {
+    "en": "included",
+    "nl": "inbegrepen"
+  },
+  "C1:inquisition": {
+    "en": "Inquisition; oppressive investigation",
+    "nl": "Inquisitie; onderdrukkend verhoor"
+  },
+  "C1:interlingua": {
+    "en": "Interlingua; constructed international language",
+    "nl": "Interlingua; internationale kunsttaal"
+  },
+  "C1:italienerin": {
+    "en": "Italian woman",
+    "nl": "Italiaanse vrouw"
+  },
+  "C1:kaminplatte": {
+    "en": "fireback; plate at the back of a fireplace",
+    "nl": "haardplaat"
+  },
+  "C1:kampfansage": {
+    "en": "declaration of a challenge; declaration of battle",
+    "nl": "uitdaging; strijdverklaring"
+  },
+  "C1:kategorisch": {
+    "en": "categorical; unequivocal",
+    "nl": "categorisch; stellig"
+  },
+  "C1:klatschbase": {
+    "en": "gossiping woman",
+    "nl": "roddeltante"
+  },
+  "C1:kohlenstoff": {
+    "en": "carbon",
+    "nl": "koolstof"
+  },
+  "C1:kommerziell": {
+    "en": "commercially",
+    "nl": "commercieel; op commerciële wijze"
+  },
+  "C1:kreisförmig": {
+    "en": "in a circle; in a circular shape",
+    "nl": "cirkelvormig; in een kring"
+  },
+  "C1:kreuzfahrer": {
+    "en": "crusader; cruise passenger",
+    "nl": "kruisvaarder; cruisepassagier"
+  },
+  "C1:kreuzritter": {
+    "en": "crusading knight",
+    "nl": "kruisridder"
+  },
+  "C1:kugelsicher": {
+    "en": "bulletproof",
+    "nl": "kogelvrij"
+  },
+  "C1:küstenlinie": {
+    "en": "coastline",
+    "nl": "kustlijn"
+  },
+  "C1:landeanflug": {
+    "en": "landing approach",
+    "nl": "landingsnadering"
+  },
+  "C1:leergewicht": {
+    "en": "unladen weight; empty weight",
+    "nl": "leeggewicht"
+  },
+  "C1:linkshänder": {
+    "en": "left-handed person",
+    "nl": "linkshandige"
+  },
+  "C1:lückenbüsser": {
+    "en": "stopgap; temporary substitute",
+    "nl": "noodoplossing; tijdelijke vervanger"
+  },
+  "C1:massenpanik": {
+    "en": "mass panic",
+    "nl": "massale paniek"
+  },
+  "C1:mechanismus": {
+    "en": "mechanism",
+    "nl": "mechanisme"
+  },
+  "C1:meilenstein": {
+    "en": "milestone",
+    "nl": "mijlpaal"
+  },
+  "C1:mexikanerin": {
+    "en": "Mexican woman",
+    "nl": "Mexicaanse vrouw"
+  },
+  "C1:nachweisbar": {
+    "en": "demonstrable; detectable",
+    "nl": "aantoonbaar"
+  },
+  "C1:neutralität": {
+    "en": "neutrality",
+    "nl": "neutraliteit"
+  },
+  "C1:paracetamol": {
+    "en": "paracetamol; pain and fever medicine",
+    "nl": "paracetamol; pijnstiller en koortsverlager"
+  },
+  "C1:pessimismus": {
+    "en": "pessimism",
+    "nl": "pessimisme"
+  },
+  "C1:pfifferling": {
+    "en": "chanterelle mushroom",
+    "nl": "cantharel; hanenkam"
+  },
+  "C1:philosophin": {
+    "en": "female philosopher",
+    "nl": "filosofe"
+  },
+  "C1:popularität": {
+    "en": "popularity",
+    "nl": "populariteit"
+  },
+  "C1:protektorat": {
+    "en": "protectorate",
+    "nl": "protectoraat"
+  },
+  "C1:provisorium": {
+    "en": "temporary arrangement; provisional solution",
+    "nl": "voorlopige regeling; tijdelijke oplossing"
+  },
+  "C1:psychologin": {
+    "en": "female psychologist",
+    "nl": "psychologe"
+  },
+  "C1:punktgleich": {
+    "en": "level on points",
+    "nl": "gelijk in punten"
+  },
+  "C1:redegewandt": {
+    "en": "eloquent; articulate",
+    "nl": "welbespraakt; welsprekend"
+  },
+  "C1:regulierung": {
+    "en": "regulation; adjustment",
+    "nl": "regulering; regeling"
+  },
+  "C1:renaissance": {
+    "en": "Renaissance",
+    "nl": "renaissance"
+  },
+  "C1:renovierung": {
+    "en": "renovation; refurbishment",
+    "nl": "renovatie; opknapbeurt"
+  },
+  "C1:resignation": {
+    "en": "resignation; acceptance without hope",
+    "nl": "berusting; gelatenheid"
+  },
+  "C1:richtigkeit": {
+    "en": "correctness",
+    "nl": "juistheid"
+  },
+  "C1:richtschnur": {
+    "en": "guideline; guiding principle",
+    "nl": "richtsnoer; leidraad"
+  },
+  "C1:rückantwort": {
+    "en": "reply; response",
+    "nl": "antwoord; reactie"
+  },
+  "C1:sackbahnhof": {
+    "en": "terminus station; dead-end railway station",
+    "nl": "kopstation"
+  },
+  "C1:schabernack": {
+    "en": "mischief; practical joke",
+    "nl": "kattenkwaad; poets"
+  },
+  "C1:schamgefühl": {
+    "en": "sense of shame; modesty",
+    "nl": "schaamtegevoel; zedigheid"
+  },
+  "C1:schandfleck": {
+    "en": "disgrace; stain on one's reputation",
+    "nl": "schandvlek"
+  },
+  "C1:scharmützel": {
+    "en": "skirmish",
+    "nl": "schermutseling"
+  },
+  "C1:schiedsmann": {
+    "en": "arbitrator; local conciliator",
+    "nl": "scheidsman; bemiddelaar"
+  },
+  "C1:schiffbruch": {
+    "en": "shipwreck",
+    "nl": "schipbreuk"
+  },
+  "C1:schilderung": {
+    "en": "description; detailed account",
+    "nl": "beschrijving; relaas"
+  },
+  "C1:schlafanzug": {
+    "en": "pyjamas",
+    "nl": "pyjama"
+  },
+  "C1:schlafmütze": {
+    "en": "nightcap; sleepy or sluggish person",
+    "nl": "slaapmuts; slome persoon"
+  },
+  "C1:schlagkraft": {
+    "en": "striking power; effectiveness",
+    "nl": "slagkracht"
+  },
+  "C1:schlechthin": {
+    "en": "simply; par excellence",
+    "nl": "zonder meer; bij uitstek"
+  },
+  "C1:schlichtweg": {
+    "en": "simply; plainly",
+    "nl": "doodgewoon; ronduit"
+  },
+  "C1:schmackhaft": {
+    "en": "tasty",
+    "nl": "smakelijk"
+  },
+  "C1:schmeichler": {
+    "en": "flatterer",
+    "nl": "vleier"
+  },
+  "C1:schreckhaft": {
+    "en": "easily startled",
+    "nl": "schrikachtig"
+  },
+  "C1:schriftbild": {
+    "en": "visual appearance of writing",
+    "nl": "schriftbeeld"
+  },
+  "C1:schweinchen": {
+    "en": "piglet",
+    "nl": "biggetje"
+  },
+  "C1:schweizerin": {
+    "en": "Swiss woman",
+    "nl": "Zwitserse vrouw"
+  },
+  "C1:schwerhörig": {
+    "en": "hard of hearing",
+    "nl": "slechthorend"
+  },
+  "C1:schäferhund": {
+    "en": "German shepherd dog",
+    "nl": "Duitse herdershond"
+  },
+  "C1:signifikant": {
+    "en": "significantly",
+    "nl": "significant; in betekenisvolle mate"
+  },
+  "C1:sonnenbrand": {
+    "en": "sunburn",
+    "nl": "zonnebrand"
+  },
+  "C1:sonnenlicht": {
+    "en": "sunlight",
+    "nl": "zonlicht"
+  },
+  "C1:sonnenstich": {
+    "en": "sunstroke",
+    "nl": "zonnesteek"
+  },
+  "C1:sparsamkeit": {
+    "en": "thrift; frugality",
+    "nl": "spaarzaamheid; zuinigheid"
+  },
+  "C1:spektakulär": {
+    "en": "spectacular",
+    "nl": "spectaculair"
+  },
+  "C1:sperrstunde": {
+    "en": "mandatory closing time; curfew",
+    "nl": "sluitingstijd; avondklok"
+  },
+  "C1:spezialität": {
+    "en": "speciality; distinctive dish",
+    "nl": "specialiteit"
+  },
+  "C1:spiegelbild": {
+    "en": "mirror image",
+    "nl": "spiegelbeeld"
+  },
+  "C1:steifigkeit": {
+    "en": "stiffness",
+    "nl": "stijfheid"
+  },
+  "C1:strumpfhose": {
+    "en": "tights",
+    "nl": "panty; maillot"
+  },
+  "C1:tiefgründig": {
+    "en": "profound; deep-thinking",
+    "nl": "diepzinnig"
+  },
+  "C1:trittleiter": {
+    "en": "stepladder",
+    "nl": "huishoudtrap; trapladder"
+  },
+  "C1:uferverlauf": {
+    "en": "course of a shoreline or riverbank",
+    "nl": "verloop van een oeverlijn"
+  },
+  "C1:ultraschall": {
+    "en": "ultrasound",
+    "nl": "ultrageluid; echografie"
+  },
+  "C1:unabdingbar": {
+    "en": "indispensable; essential",
+    "nl": "onontbeerlijk; noodzakelijk"
+  },
+  "C1:unabhängige": {
+    "en": "independent woman; independent people",
+    "nl": "onafhankelijke vrouw; onafhankelijken"
+  },
+  "C1:unantastbar": {
+    "en": "inviolable; untouchable",
+    "nl": "onaantastbaar"
+  },
+  "C1:unbegründet": {
+    "en": "unfounded; unjustified",
+    "nl": "ongegrond; onterecht"
+  },
+  "C1:unbehaglich": {
+    "en": "uncomfortable; uneasy",
+    "nl": "onbehaaglijk; ongemakkelijk"
+  },
+  "C1:unbezahlbar": {
+    "en": "priceless; unaffordable",
+    "nl": "onbetaalbaar"
+  },
+  "C1:unermüdlich": {
+    "en": "tirelessly",
+    "nl": "onvermoeibaar"
+  },
+  "C1:unerwünscht": {
+    "en": "unwanted",
+    "nl": "ongewenst"
+  },
+  "C1:ungebrochen": {
+    "en": "unbroken; unabated",
+    "nl": "ongebroken; onverminderd"
+  },
+  "C1:ungeniessbar": {
+    "en": "inedible",
+    "nl": "oneetbaar"
+  },
+  "C1:ungeschickt": {
+    "en": "clumsy; inept",
+    "nl": "onhandig; onbeholpen"
+  },
+  "C1:ungezwungen": {
+    "en": "natural; relaxed; unforced",
+    "nl": "ongedwongen"
+  },
+  "C1:unschlagbar": {
+    "en": "unbeatable",
+    "nl": "onverslaanbaar; ongeëvenaard"
+  },
+  "C1:unterfangen": {
+    "en": "undertaking; venture",
+    "nl": "onderneming; waagstuk"
+  },
+  "C1:unterteilen": {
+    "en": "subdivide",
+    "nl": "onderverdelen"
+  },
+  "C1:unvereinbar": {
+    "en": "incompatible",
+    "nl": "onverenigbaar"
+  },
+  "C1:veranlagung": {
+    "en": "natural disposition; tax assessment",
+    "nl": "aanleg; belastingaanslag"
+  },
+  "C1:vergesslich": {
+    "en": "forgetful",
+    "nl": "vergeetachtig"
+  },
+  "C1:vergänglich": {
+    "en": "transient; perishable",
+    "nl": "vergankelijk"
+  },
+  "C1:verkleidung": {
+    "en": "disguise; cladding",
+    "nl": "vermomming; bekleding"
+  },
+  "C1:verletzlich": {
+    "en": "vulnerable; easily hurt",
+    "nl": "kwetsbaar"
+  },
+  "C1:vernichtend": {
+    "en": "devastating; damning",
+    "nl": "vernietigend; verpletterend"
+  },
+  "C1:verschlagen": {
+    "en": "cunning; crafty",
+    "nl": "doortrapt; sluw"
+  },
+  "C1:verschmitzt": {
+    "en": "mischievous; impish",
+    "nl": "schalks; guitig"
+  },
+  "C1:verursacher": {
+    "en": "person or thing causing something",
+    "nl": "veroorzaker"
+  },
+  "C1:verwerflich": {
+    "en": "reprehensible",
+    "nl": "verwerpelijk; laakbaar"
+  },
+  "C1:viehbestand": {
+    "en": "livestock population",
+    "nl": "veestapel"
+  },
+  "C1:vorauskasse": {
+    "en": "payment in advance",
+    "nl": "vooruitbetaling"
+  },
+  "C1:vorrichtung": {
+    "en": "device; apparatus",
+    "nl": "inrichting; hulpmiddel"
+  },
+  "C1:vorsorglich": {
+    "en": "precautionary; preventive",
+    "nl": "uit voorzorg; preventief"
+  },
+  "C1:vorstellbar": {
+    "en": "imaginable; conceivable",
+    "nl": "voorstelbaar; denkbaar"
+  },
+  "C1:vorteilhaft": {
+    "en": "advantageous; beneficial",
+    "nl": "voordelig; gunstig"
+  },
+  "C1:wandmalerei": {
+    "en": "mural painting",
+    "nl": "muurschildering"
+  },
+  "C1:wasserdampf": {
+    "en": "water vapour",
+    "nl": "waterdamp"
+  },
+  "C1:wasserdicht": {
+    "en": "watertight; waterproof",
+    "nl": "waterdicht"
+  },
+  "C1:wasserstoff": {
+    "en": "hydrogen",
+    "nl": "waterstof"
+  },
+  "C1:wasserwaage": {
+    "en": "spirit level",
+    "nl": "waterpas"
+  },
+  "C1:wechselgeld": {
+    "en": "change; money returned after payment",
+    "nl": "wisselgeld"
+  },
+  "C1:wechselhaft": {
+    "en": "changeable; variable",
+    "nl": "wisselvallig"
+  },
+  "C1:wichtigkeit": {
+    "en": "importance",
+    "nl": "belang; belangrijkheid"
+  },
+  "C1:wunschtraum": {
+    "en": "cherished dream; wishful fantasy",
+    "nl": "wensdroom"
+  },
+  "C1:zahnmedizin": {
+    "en": "dentistry",
+    "nl": "tandheelkunde"
+  },
+  "C1:zielführend": {
+    "en": "effective; conducive to the goal",
+    "nl": "doeltreffend; doelmatig"
+  },
+  "C1:zielstrebig": {
+    "en": "purposefully; with determination",
+    "nl": "doelgericht; vastberaden"
+  },
+  "C1:zimmerdecke": {
+    "en": "ceiling",
+    "nl": "plafond"
+  },
+  "C1:zubereitung": {
+    "en": "preparation",
+    "nl": "bereiding; voorbereiding"
+  },
+  "C1:zuwanderung": {
+    "en": "immigration",
+    "nl": "immigratie"
+  },
+  "C1:zwangsjacke": {
+    "en": "straitjacket",
+    "nl": "dwangbuis"
+  },
+  "C1:zweitrangig": {
+    "en": "secondary; of lesser importance",
+    "nl": "ondergeschikt; van secundair belang"
+  },
+  "C1:zwiespältig": {
+    "en": "ambivalent; conflicted",
+    "nl": "ambivalent; tegenstrijdig"
+  },
+  "C1:übermitteln": {
+    "en": "transmit; convey",
+    "nl": "overbrengen; doorgeven"
+  },
+  "C1:übersteigen": {
+    "en": "exceed; surpass",
+    "nl": "overtreffen; te boven gaan"
+  },
+  "C1:überwindbar": {
+    "en": "surmountable; able to be overcome",
+    "nl": "overkomelijk; te overwinnen"
+  },
+  "C1:überwältigt": {
+    "en": "overwhelmed",
+    "nl": "overweldigd"
+  },
+  "C1:abgedroschen": {
+    "en": "hackneyed; overused",
+    "nl": "afgezaagd; versleten"
+  },
+  "C1:abgeschieden": {
+    "en": "secluded; remote",
+    "nl": "afgelegen; afgezonderd"
+  },
+  "C1:allesfresser": {
+    "en": "omnivore",
+    "nl": "alleseter"
+  },
+  "C1:altertümlich": {
+    "en": "antiquated; old-fashioned",
+    "nl": "ouderwets; archaïsch"
+  },
+  "C1:amerikanerin": {
+    "en": "American woman",
+    "nl": "Amerikaanse vrouw"
+  },
+  "C1:ammenmärchen": {
+    "en": "old wives' tale; unfounded story",
+    "nl": "bakerpraatje"
+  },
+  "C1:amüsierlokal": {
+    "en": "nightspot; entertainment venue",
+    "nl": "uitgaansgelegenheid; amusementszaak"
+  },
+  "C1:anerkenntnis": {
+    "en": "acknowledgement; legal admission",
+    "nl": "erkenning; juridische erkenning"
+  },
+  "C1:ausgebreitet": {
+    "en": "spread out; extended",
+    "nl": "uitgespreid; uitgebreid"
+  },
+  "C1:ausgeglichen": {
+    "en": "balanced; even-tempered",
+    "nl": "evenwichtig; rustig van aard"
+  },
+  "C1:ausgestattet": {
+    "en": "equipped",
+    "nl": "uitgerust; voorzien van"
+  },
+  "C1:ausgestorben": {
+    "en": "extinct",
+    "nl": "uitgestorven"
+  },
+  "C1:aussichtslos": {
+    "en": "hopelessly; without prospect of success",
+    "nl": "uitzichtloos; zonder kans op succes"
+  },
+  "C1:austauschbar": {
+    "en": "interchangeable; replaceable",
+    "nl": "uitwisselbaar; vervangbaar"
+  },
+  "C1:australierin": {
+    "en": "Australian woman",
+    "nl": "Australische vrouw"
+  },
+  "C1:bahnbrechend": {
+    "en": "groundbreaking; pioneering",
+    "nl": "baanbrekend"
+  },
+  "C1:befehlshaber": {
+    "en": "military commander",
+    "nl": "bevelhebber"
+  },
+  "C1:beherrschung": {
+    "en": "control; mastery",
+    "nl": "beheersing"
+  },
+  "C1:belarussisch": {
+    "en": "Belarusian language",
+    "nl": "Wit-Russisch; Belarussisch"
+  },
+  "C1:bereicherung": {
+    "en": "enrichment; valuable addition",
+    "nl": "verrijking"
+  },
+  "C1:bereithalten": {
+    "en": "keep ready; have available",
+    "nl": "gereedhouden; beschikbaar houden"
+  },
+  "C1:beschleunigt": {
+    "en": "accelerated; expedited",
+    "nl": "versneld"
+  },
+  "C1:besonderheit": {
+    "en": "distinctive feature; peculiarity",
+    "nl": "bijzonderheid"
+  },
+  "C1:besonnenheit": {
+    "en": "composure; prudence",
+    "nl": "bezonnenheid; kalm beraad"
+  },
+  "C1:beunruhigung": {
+    "en": "anxiety; unease",
+    "nl": "verontrusting; ongerustheid"
+  },
+  "C1:bildmaterial": {
+    "en": "visual material; images",
+    "nl": "beeldmateriaal"
+  },
+  "C1:briefkontakt": {
+    "en": "contact by letter",
+    "nl": "briefcontact"
+  },
+  "C1:briefwechsel": {
+    "en": "correspondence; exchange of letters",
+    "nl": "briefwisseling"
+  },
+  "C1:buchhalterin": {
+    "en": "female bookkeeper",
+    "nl": "boekhoudster"
+  },
+  "C1:donnerschlag": {
+    "en": "thunderclap; sudden shock",
+    "nl": "donderslag"
+  },
+  "C1:drückeberger": {
+    "en": "shirker",
+    "nl": "lijntrekker; plichtverzaker"
+  },
+  "C1:durchsichtig": {
+    "en": "transparent; easy to see through",
+    "nl": "doorzichtig"
+  },
+  "C1:effektivität": {
+    "en": "effectiveness",
+    "nl": "doeltreffendheid; effectiviteit"
+  },
+  "C1:eigentümlich": {
+    "en": "peculiar; distinctive",
+    "nl": "eigenaardig; kenmerkend"
+  },
+  "C1:einbeziehung": {
+    "en": "inclusion; involvement",
+    "nl": "opname; insluiting"
+  },
+  "C1:eindringlich": {
+    "en": "insistently; emphatically",
+    "nl": "nadrukkelijk; dringend"
+  },
+  "C1:einschreiten": {
+    "en": "intervene; step in",
+    "nl": "ingrijpen; tussenbeide komen"
+  },
+  "C1:einschränken": {
+    "en": "restrict; limit",
+    "nl": "beperken"
+  },
+  "C1:einwilligung": {
+    "en": "consent; permission",
+    "nl": "toestemming; instemming"
+  },
+  "C1:einzelgänger": {
+    "en": "loner",
+    "nl": "eenling; einzelgänger"
+  },
+  "C1:elektrizität": {
+    "en": "electricity",
+    "nl": "elektriciteit"
+  },
+  "C1:engelsgleich": {
+    "en": "angelic; like an angel",
+    "nl": "engelachtig"
+  },
+  "C1:erfinderisch": {
+    "en": "inventive; resourceful",
+    "nl": "vindingrijk"
+  },
+  "C1:erschreckend": {
+    "en": "frightening; alarming",
+    "nl": "schrikbarend; beangstigend"
+  },
+  "C1:fakturierung": {
+    "en": "invoicing",
+    "nl": "facturering"
+  },
+  "C1:fallenlassen": {
+    "en": "drop; abandon",
+    "nl": "laten vallen; opgeven"
+  },
+  "C1:fehlschlagen": {
+    "en": "fail",
+    "nl": "mislukken; falen"
+  },
+  "C1:gartenarbeit": {
+    "en": "gardening",
+    "nl": "tuinieren; tuinwerk"
+  },
+  "C1:gebräuchlich": {
+    "en": "in common use",
+    "nl": "gebruikelijk; gangbaar"
+  },
+  "C1:gebührenfrei": {
+    "en": "free of charge; exempt from fees",
+    "nl": "kosteloos; vrij van heffingen"
+  },
+  "C1:gegenangriff": {
+    "en": "counterattack",
+    "nl": "tegenaanval"
+  },
+  "C1:gehirnwäsche": {
+    "en": "brainwashing",
+    "nl": "hersenspoeling"
+  },
+  "C1:gerichtssaal": {
+    "en": "courtroom",
+    "nl": "rechtszaal"
+  },
+  "C1:gesetzeslage": {
+    "en": "legal situation; applicable laws",
+    "nl": "rechtstoestand; geldende wetgeving"
+  },
+  "C1:gleichsetzen": {
+    "en": "equate",
+    "nl": "gelijkstellen"
+  },
+  "C1:grösstenteils": {
+    "en": "largely; for the most part",
+    "nl": "grotendeels"
+  },
+  "C1:handelsplatz": {
+    "en": "trading centre; marketplace",
+    "nl": "handelsplaats; handelscentrum"
+  },
+  "C1:hemmschwelle": {
+    "en": "psychological barrier; inhibition",
+    "nl": "drempel; psychologische remming"
+  },
+  "C1:herausragend": {
+    "en": "outstanding; prominent",
+    "nl": "uitstekend; vooraanstaand"
+  },
+  "C1:herrlichkeit": {
+    "en": "glory; splendour",
+    "nl": "heerlijkheid; pracht"
+  },
+  "C1:hervorhebung": {
+    "en": "emphasis; highlighting",
+    "nl": "benadrukking; accentuering"
+  },
+  "C1:historikerin": {
+    "en": "female historian",
+    "nl": "historica"
+  },
+  "C1:idealerweise": {
+    "en": "ideally",
+    "nl": "idealiter"
+  },
+  "C1:illustrieren": {
+    "en": "illustrate",
+    "nl": "illustreren; met voorbeelden verduidelijken"
+  },
+  "C1:inakzeptabel": {
+    "en": "unacceptable",
+    "nl": "onaanvaardbaar"
+  },
+  "C1:inhaftierung": {
+    "en": "imprisonment; detention",
+    "nl": "gevangenzetting; detentie"
+  },
+  "C1:installateur": {
+    "en": "plumber; installation technician",
+    "nl": "loodgieter; installateur"
+  },
+  "C1:jugendlicher": {
+    "en": "young person; adolescent",
+    "nl": "jongere; adolescent"
+  },
+  "C1:jungfräulich": {
+    "en": "in a virgin or untouched state",
+    "nl": "maagdelijk; nog onaangeroerd"
+  },
+  "C1:kapitulation": {
+    "en": "surrender; capitulation",
+    "nl": "capitulatie; overgave"
+  },
+  "C1:keulenschlag": {
+    "en": "blow with a club",
+    "nl": "knuppelslag"
+  },
+  "C1:klarstellung": {
+    "en": "clarification",
+    "nl": "verduidelijking; rechtzetting"
+  },
+  "C1:konkurrieren": {
+    "en": "compete",
+    "nl": "concurreren; wedijveren"
+  },
+  "C1:konspiration": {
+    "en": "conspiracy",
+    "nl": "samenzwering"
+  },
+  "C1:konversation": {
+    "en": "conversation",
+    "nl": "conversatie; gesprek"
+  },
+  "C1:kraftaufwand": {
+    "en": "physical effort; exertion",
+    "nl": "krachtsinspanning"
+  },
+  "C1:körperpflege": {
+    "en": "personal hygiene; body care",
+    "nl": "lichaamsverzorging"
+  },
+  "C1:lagerbestand": {
+    "en": "stock on hand; inventory",
+    "nl": "voorraad"
+  },
+  "C1:lebensfreude": {
+    "en": "joy of life",
+    "nl": "levensvreugde"
+  },
+  "C1:leimsiederei": {
+    "en": "sluggish dawdling; glue manufacture",
+    "nl": "traag getreuzel; lijmproductie"
+  },
+  "C1:liebeskummer": {
+    "en": "heartache; lovesickness",
+    "nl": "liefdesverdriet"
+  },
+  "C1:marinesoldat": {
+    "en": "sailor; naval serviceman",
+    "nl": "marineman; militair bij de marine"
+  },
+  "C1:masturbation": {
+    "en": "masturbation",
+    "nl": "masturbatie"
+  },
+  "C1:menschenleer": {
+    "en": "deserted; empty of people",
+    "nl": "verlaten; zonder mensen"
+  },
+  "C1:missbrauchen": {
+    "en": "abuse; misuse",
+    "nl": "misbruiken"
+  },
+  "C1:multitasking": {
+    "en": "multitasking; doing several tasks at once",
+    "nl": "multitasken; meerdere taken tegelijk uitvoeren"
+  },
+  "C1:muntermacher": {
+    "en": "stimulant; pick-me-up",
+    "nl": "oppepper; stimulerend middel"
+  },
+  "C1:mustergültig": {
+    "en": "in an exemplary way",
+    "nl": "op voorbeeldige wijze"
+  },
+  "C1:nachweislich": {
+    "en": "provably; as demonstrated",
+    "nl": "aantoonbaar; bewezen"
+  },
+  "C1:namensschild": {
+    "en": "name badge; nameplate",
+    "nl": "naamplaatje; naambordje"
+  },
+  "C1:nebenprodukt": {
+    "en": "by-product",
+    "nl": "bijproduct"
+  },
+  "C1:pflanzenwelt": {
+    "en": "flora; plant life",
+    "nl": "flora; plantenwereld"
+  },
+  "C1:physikalisch": {
+    "en": "physical; relating to physics",
+    "nl": "natuurkundig; fysisch"
+  },
+  "C1:rechtsstreit": {
+    "en": "legal dispute; lawsuit",
+    "nl": "rechtsgeding; juridisch geschil"
+  },
+  "C1:republikaner": {
+    "en": "republican; supporter of a republic",
+    "nl": "republikein"
+  },
+  "C1:ressentiment": {
+    "en": "resentment; hidden grudge",
+    "nl": "wrok; ressentiment"
+  },
+  "C1:schnittpunkt": {
+    "en": "point of intersection",
+    "nl": "snijpunt"
+  },
+  "C1:schnittwunde": {
+    "en": "cut; incision wound",
+    "nl": "snijwond"
+  },
+  "C1:schnürsenkel": {
+    "en": "shoelace",
+    "nl": "schoenveter"
+  },
+  "C1:schrittweise": {
+    "en": "gradual; step-by-step",
+    "nl": "stapsgewijs; geleidelijk"
+  },
+  "C1:sensationell": {
+    "en": "sensational; extraordinary",
+    "nl": "sensationeel; spectaculair"
+  },
+  "C1:sonnenstrahl": {
+    "en": "ray of sunshine",
+    "nl": "zonnestraal"
+  },
+  "C1:souveränität": {
+    "en": "sovereignty",
+    "nl": "soevereiniteit"
+  },
+  "C1:staatsbürger": {
+    "en": "citizen; national",
+    "nl": "staatsburger"
+  },
+  "C1:stereoanlage": {
+    "en": "stereo system",
+    "nl": "stereo-installatie"
+  },
+  "C1:tagesgericht": {
+    "en": "dish of the day",
+    "nl": "dagschotel"
+  },
+  "C1:thailändisch": {
+    "en": "Thai; relating to Thailand or Thai",
+    "nl": "Thais"
+  },
+  "C1:theaterstück": {
+    "en": "play; theatrical work",
+    "nl": "toneelstuk"
+  },
+  "C1:trommelfeuer": {
+    "en": "continuous artillery barrage",
+    "nl": "trommelvuur; onafgebroken artilleriebeschieting"
+  },
+  "C1:unangemessen": {
+    "en": "inappropriate; disproportionate",
+    "nl": "ongepast; onevenredig"
+  },
+  "C1:unaufmerksam": {
+    "en": "inattentive",
+    "nl": "onoplettend"
+  },
+  "C1:unbarmherzig": {
+    "en": "merciless",
+    "nl": "onbarmhartig; meedogenloos"
+  },
+  "C1:unbearbeitet": {
+    "en": "unprocessed; unedited",
+    "nl": "onbewerkt"
+  },
+  "C1:unbestritten": {
+    "en": "undisputed",
+    "nl": "onbetwist"
+  },
+  "C1:unerlässlich": {
+    "en": "indispensable",
+    "nl": "onontbeerlijk; onmisbaar"
+  },
+  "C1:ungefährlich": {
+    "en": "harmless; safe",
+    "nl": "ongevaarlijk"
+  },
+  "C1:ungleichheit": {
+    "en": "inequality",
+    "nl": "ongelijkheid"
+  },
+  "C1:unmenschlich": {
+    "en": "inhumane",
+    "nl": "onmenselijk"
+  },
+  "C1:unnachgiebig": {
+    "en": "unyielding; uncompromising",
+    "nl": "onverzettelijk; onbuigzaam"
+  },
+  "C1:unregelmässig": {
+    "en": "irregular",
+    "nl": "onregelmatig"
+  },
+  "C1:unterbesetzt": {
+    "en": "understaffed",
+    "nl": "onderbezet"
+  },
+  "C1:unterhaltsam": {
+    "en": "entertaining; amusing",
+    "nl": "onderhoudend; vermakelijk"
+  },
+  "C1:unterirdisch": {
+    "en": "underground",
+    "nl": "ondergronds"
+  },
+  "C1:unvermeidbar": {
+    "en": "unavoidable",
+    "nl": "onvermijdbaar"
+  },
+  "C1:unvernünftig": {
+    "en": "unreasonable; unwise",
+    "nl": "onredelijk; onverstandig"
+  },
+  "C1:unverständig": {
+    "en": "uncomprehending; lacking understanding",
+    "nl": "onbegrijpend; weinig verstandig"
+  },
+  "C1:unweigerlich": {
+    "en": "inevitably",
+    "nl": "onvermijdelijk"
+  },
+  "C1:unwissenheit": {
+    "en": "ignorance",
+    "nl": "onwetendheid"
+  },
+  "C1:unzulänglich": {
+    "en": "inadequate; insufficient",
+    "nl": "ontoereikend; gebrekkig"
+  },
+  "C1:unübersehbar": {
+    "en": "impossible to overlook; conspicuous",
+    "nl": "onmiskenbaar; niet over het hoofd te zien"
+  },
+  "C1:verkörperung": {
+    "en": "embodiment",
+    "nl": "belichaming"
+  },
+  "C1:verlierertyp": {
+    "en": "person who habitually fails; loser",
+    "nl": "mislukkeling; verliezerstype"
+  },
+  "C1:verschwimmen": {
+    "en": "blur; merge into one another",
+    "nl": "vervagen; in elkaar overlopen"
+  },
+  "C1:verurteilung": {
+    "en": "conviction; condemnation",
+    "nl": "veroordeling"
+  },
+  "C1:vielsprachig": {
+    "en": "multilingual",
+    "nl": "meertalig"
+  },
+  "C1:vollgarantie": {
+    "en": "full warranty",
+    "nl": "volledige garantie"
+  },
+  "C1:vordringlich": {
+    "en": "urgent; taking priority",
+    "nl": "dringend; prioritair"
+  },
+  "C1:vorgetäuscht": {
+    "en": "feigned; simulated",
+    "nl": "geveinsd; voorgewend"
+  },
+  "C1:vorhersehbar": {
+    "en": "predictable; foreseeable",
+    "nl": "voorspelbaar; voorzienbaar"
+  },
+  "C1:vorwurfsvoll": {
+    "en": "reproachfully",
+    "nl": "verwijtend"
+  },
+  "C1:vorzugsweise": {
+    "en": "preferably; especially",
+    "nl": "bij voorkeur; vooral"
+  },
+  "C1:willenskraft": {
+    "en": "willpower",
+    "nl": "wilskracht"
+  },
+  "C1:winterschlaf": {
+    "en": "hibernation",
+    "nl": "winterslaap"
+  },
+  "C1:wohlweislich": {
+    "en": "deliberately and wisely; for good reason",
+    "nl": "welbewust; om een goede reden"
+  },
+  "C1:zerbrechlich": {
+    "en": "fragile; breakable",
+    "nl": "breekbaar; broos"
+  },
+  "C1:zweckbindung": {
+    "en": "earmarking for a specific purpose",
+    "nl": "doelbinding; bestemming voor een bepaald doel"
+  },
+  "C1:zärtlichkeit": {
+    "en": "tenderness",
+    "nl": "tederheid"
+  },
+  "C1:österreicher": {
+    "en": "Austrian man",
+    "nl": "Oostenrijkse man"
+  },
+  "C1:übereinkunft": {
+    "en": "agreement; mutual understanding",
+    "nl": "overeenkomst; afspraak"
+  },
+  "C1:überschätzen": {
+    "en": "overestimate",
+    "nl": "overschatten"
+  },
+  "C1:alkoholisches": {
+    "en": "alcoholic drinks",
+    "nl": "alcoholhoudende dranken"
+  },
+  "C1:angeschwollen": {
+    "en": "swollen; puffed up",
+    "nl": "opgezwollen"
+  },
+  "C1:arbeitsgebiet": {
+    "en": "field of work; work area",
+    "nl": "werkgebied; werkterrein"
+  },
+  "C1:arbeitsstätte": {
+    "en": "workplace",
+    "nl": "werkplek; arbeidsplaats"
+  },
+  "C1:atemberaubend": {
+    "en": "breathtaking",
+    "nl": "adembenemend"
+  },
+  "C1:aussertourlich": {
+    "en": "exceptional; outside the usual schedule",
+    "nl": "buitengewoon; buiten het gewone rooster"
+  },
+  "C1:authentizität": {
+    "en": "authenticity",
+    "nl": "authenticiteit; echtheid"
+  },
+  "C1:beabsichtigen": {
+    "en": "intend; plan",
+    "nl": "voornemens zijn; van plan zijn"
+  },
+  "C1:bedeutsamkeit": {
+    "en": "significance; importance",
+    "nl": "betekenis; belang"
+  },
+  "C1:bedeutungslos": {
+    "en": "meaningless; insignificant",
+    "nl": "betekenisloos; onbeduidend"
+  },
+  "C1:begleitperson": {
+    "en": "accompanying person",
+    "nl": "begeleider; begeleidende persoon"
+  },
+  "C1:beweisführung": {
+    "en": "demonstration of proof; argumentation",
+    "nl": "bewijsvoering"
+  },
+  "C1:beweiskräftig": {
+    "en": "convincing as evidence; probative",
+    "nl": "bewijskrachtig"
+  },
+  "C1:bombenangriff": {
+    "en": "bombing raid",
+    "nl": "bomaanval; bombardement"
+  },
+  "C1:brandstiftung": {
+    "en": "arson",
+    "nl": "brandstichting"
+  },
+  "C1:brasilianerin": {
+    "en": "Brazilian woman",
+    "nl": "Braziliaanse vrouw"
+  },
+  "C1:dampfkochtopf": {
+    "en": "pressure cooker",
+    "nl": "snelkookpan"
+  },
+  "C1:eingeständnis": {
+    "en": "admission; acknowledgement",
+    "nl": "bekentenis; erkenning"
+  },
+  "C1:fernschreiben": {
+    "en": "telex message",
+    "nl": "telexbericht"
+  },
+  "C1:flimmerkasten": {
+    "en": "telly; television set",
+    "nl": "beeldbuis; tv-toestel"
+  },
+  "C1:fortpflanzung": {
+    "en": "reproduction",
+    "nl": "voortplanting"
+  },
+  "C1:frühaufsteher": {
+    "en": "early riser",
+    "nl": "vroege vogel"
+  },
+  "C1:führungsrolle": {
+    "en": "leadership role",
+    "nl": "leidersrol"
+  },
+  "C1:gehirnschmalz": {
+    "en": "brainpower; mental effort",
+    "nl": "denkkracht; denkwerk"
+  },
+  "C1:geschmackvoll": {
+    "en": "tasteful; elegant",
+    "nl": "smaakvol; stijlvol"
+  },
+  "C1:gesetzentwurf": {
+    "en": "draft law; bill",
+    "nl": "wetsontwerp"
+  },
+  "C1:hierherkommen": {
+    "en": "come here",
+    "nl": "hierheen komen"
+  },
+  "C1:hilfsarbeiter": {
+    "en": "unskilled labourer",
+    "nl": "hulparbeider; ongeschoolde arbeider"
+  },
+  "C1:intransparent": {
+    "en": "opaque; lacking transparency",
+    "nl": "ondoorzichtig; niet transparant"
+  },
+  "C1:kameradschaft": {
+    "en": "camaraderie",
+    "nl": "kameraadschap"
+  },
+  "C1:kartoffelbrei": {
+    "en": "mashed potatoes",
+    "nl": "aardappelpuree"
+  },
+  "C1:kerzenständer": {
+    "en": "candlestick; candleholder",
+    "nl": "kandelaar"
+  },
+  "C1:klapperkasten": {
+    "en": "rattling old machine or vehicle",
+    "nl": "rammelkast; rammelende oude machine of auto"
+  },
+  "C1:kolonialismus": {
+    "en": "colonialism",
+    "nl": "kolonialisme"
+  },
+  "C1:kommunistisch": {
+    "en": "communist",
+    "nl": "communistisch"
+  },
+  "C1:körperhaltung": {
+    "en": "posture",
+    "nl": "lichaamshouding"
+  },
+  "C1:langgestreckt": {
+    "en": "elongated; stretched out",
+    "nl": "langgerekt"
+  },
+  "C1:lebensrettend": {
+    "en": "lifesaving",
+    "nl": "levensreddend"
+  },
+  "C1:mittelgebirge": {
+    "en": "low mountain range; uplands",
+    "nl": "middelgebergte"
+  },
+  "C1:modernisieren": {
+    "en": "modernise",
+    "nl": "moderniseren"
+  },
+  "C1:mundharmonika": {
+    "en": "harmonica",
+    "nl": "mondharmonica"
+  },
+  "C1:nachdrücklich": {
+    "en": "emphatically; insistently",
+    "nl": "nadrukkelijk; met klem"
+  },
+  "C1:nationalismus": {
+    "en": "nationalism",
+    "nl": "nationalisme"
+  },
+  "C1:nichtgenügend": {
+    "en": "failing grade",
+    "nl": "onvoldoende; onvoldoende beoordeling"
+  },
+  "C1:nächstenliebe": {
+    "en": "love of one's neighbour; charity",
+    "nl": "naastenliefde"
+  },
+  "C1:oberflächlich": {
+    "en": "superficial",
+    "nl": "oppervlakkig"
+  },
+  "C1:ordnungsgemäss": {
+    "en": "proper; in accordance with regulations",
+    "nl": "reglementair; volgens de voorschriften"
+  },
+  "C1:pessimistisch": {
+    "en": "pessimistic",
+    "nl": "pessimistisch"
+  },
+  "C1:positionieren": {
+    "en": "position; place",
+    "nl": "positioneren; op een plek zetten"
+  },
+  "C1:programmierer": {
+    "en": "programmer",
+    "nl": "programmeur"
+  },
+  "C1:prostituierte": {
+    "en": "female sex worker; prostitute",
+    "nl": "prostituee; vrouwelijke sekswerker"
+  },
+  "C1:präzedenzfall": {
+    "en": "precedent",
+    "nl": "precedent; eerdere richtinggevende zaak"
+  },
+  "C1:psychoanalyse": {
+    "en": "psychoanalysis",
+    "nl": "psychoanalyse"
+  },
+  "C1:pünktlichkeit": {
+    "en": "punctuality",
+    "nl": "stiptheid"
+  },
+  "C1:ratifizierung": {
+    "en": "ratification",
+    "nl": "ratificatie; bekrachtiging"
+  },
+  "C1:schadenfreude": {
+    "en": "pleasure at another's misfortune",
+    "nl": "leedvermaak"
+  },
+  "C1:schiedsspruch": {
+    "en": "arbitration award",
+    "nl": "arbitrale uitspraak"
+  },
+  "C1:schneebedeckt": {
+    "en": "snow-covered",
+    "nl": "met sneeuw bedekt"
+  },
+  "C1:schwergewicht": {
+    "en": "heavyweight; main focus",
+    "nl": "zwaargewicht; zwaartepunt"
+  },
+  "C1:schwesterherz": {
+    "en": "dear sister; affectionate address to a sister",
+    "nl": "lieve zus; zusjelief"
+  },
+  "C1:siegeszeichen": {
+    "en": "sign of victory",
+    "nl": "overwinningsteken"
+  },
+  "C1:sklavenhalter": {
+    "en": "slaveholder; slave owner",
+    "nl": "slavenhouder"
+  },
+  "C1:spektroskopie": {
+    "en": "spectroscopy",
+    "nl": "spectroscopie"
+  },
+  "C1:studiengebühr": {
+    "en": "tuition fee",
+    "nl": "collegegeld; studiegeld"
+  },
+  "C1:symptomatisch": {
+    "en": "symptomatic; indicative of a condition",
+    "nl": "symptomatisch; kenmerkend voor een aandoening"
+  },
+  "C1:unberechenbar": {
+    "en": "unpredictable",
+    "nl": "onberekenbaar"
+  },
+  "C1:unglaubwürdig": {
+    "en": "unbelievable; lacking credibility",
+    "nl": "ongeloofwaardig"
+  },
+  "C1:ungleichmässig": {
+    "en": "uneven; irregular",
+    "nl": "ongelijkmatig"
+  },
+  "C1:unrealistisch": {
+    "en": "unrealistic",
+    "nl": "onrealistisch"
+  },
+  "C1:unterstellung": {
+    "en": "allegation; assumption; sheltering someone",
+    "nl": "beschuldiging; veronderstelling; onderbrenging"
+  },
+  "C1:unverletzlich": {
+    "en": "inviolable; immune from violation",
+    "nl": "onschendbaar"
+  },
+  "C1:unvermeidlich": {
+    "en": "inevitable",
+    "nl": "onvermijdelijk"
+  },
+  "C1:unwiderlegbar": {
+    "en": "irrefutably",
+    "nl": "onweerlegbaar"
+  },
+  "C1:unzufriedener": {
+    "en": "dissatisfied person",
+    "nl": "ontevreden persoon"
+  },
+  "C1:verherrlichen": {
+    "en": "glorify",
+    "nl": "verheerlijken"
+  },
+  "C1:verpflichtend": {
+    "en": "binding; obligatory",
+    "nl": "verplichtend; bindend"
+  },
+  "C1:verständigung": {
+    "en": "mutual understanding; communication; notification",
+    "nl": "verstandhouding; communicatie; kennisgeving"
+  },
+  "C1:vogelscheuche": {
+    "en": "scarecrow",
+    "nl": "vogelverschrikker"
+  },
+  "C1:vorgeschichte": {
+    "en": "prehistory; previous history or background",
+    "nl": "voorgeschiedenis; prehistorie"
+  },
+  "C1:vorherrschaft": {
+    "en": "supremacy; dominance",
+    "nl": "overheersing; hegemonie"
+  },
+  "C1:wackelpudding": {
+    "en": "jelly dessert",
+    "nl": "drilpudding; geleipudding"
+  },
+  "C1:wasserspiegel": {
+    "en": "water surface; water level",
+    "nl": "waterspiegel"
+  },
+  "C1:weitschweifig": {
+    "en": "long-winded; rambling",
+    "nl": "langdradig; wijdlopig"
+  },
+  "C1:werkzeugkiste": {
+    "en": "toolbox",
+    "nl": "gereedschapskist"
+  },
+  "C1:zahlungsfähig": {
+    "en": "solvent; able to pay",
+    "nl": "solvabel; in staat te betalen"
+  },
+  "C1:zapfenstreich": {
+    "en": "military tattoo; evening military ceremony",
+    "nl": "taptoe; militaire avondceremonie"
+  },
+  "C1:zitronensäure": {
+    "en": "citric acid",
+    "nl": "citroenzuur"
+  },
+  "C1:zugeschrieben": {
+    "en": "attributed; ascribed",
+    "nl": "toegeschreven"
+  },
+  "C1:zurückbleiben": {
+    "en": "stay behind; lag behind",
+    "nl": "achterblijven"
+  },
+  "C1:zurückhaltend": {
+    "en": "reserved; restrained",
+    "nl": "terughoudend; gereserveerd"
+  },
+  "C1:zusammenlegen": {
+    "en": "put together; merge; fold",
+    "nl": "samenvoegen; samenleggen; opvouwen"
+  },
+  "C1:zweckdienlich": {
+    "en": "fit for purpose; useful",
+    "nl": "doelmatig; dienstig"
+  },
+  "C1:überarbeitung": {
+    "en": "revision; exhaustion from overwork",
+    "nl": "herziening; overbelasting door werk"
+  },
+  "C1:übergewichtig": {
+    "en": "overweight",
+    "nl": "te zwaar; met overgewicht"
+  },
+  "C1:überlieferung": {
+    "en": "tradition; transmission of historical accounts",
+    "nl": "overlevering"
+  },
+  "C1:überreagieren": {
+    "en": "overreact",
+    "nl": "overreageren"
+  },
+  "C1:übersichtlich": {
+    "en": "clearly arranged; easy to survey",
+    "nl": "overzichtelijk"
+  },
+  "C1:überwältigend": {
+    "en": "overwhelming",
+    "nl": "overweldigend"
+  },
+  "C1:üblicherweise": {
+    "en": "usually; normally",
+    "nl": "gewoonlijk; doorgaans"
+  },
+  "C1:abenddämmerung": {
+    "en": "dusk; evening twilight",
+    "nl": "avondschemering"
+  },
+  "C1:allgegenwärtig": {
+    "en": "omnipresent; ubiquitous",
+    "nl": "alomtegenwoordig"
+  },
+  "C1:augenblicklich": {
+    "en": "instantaneous; immediate; current",
+    "nl": "ogenblikkelijk; onmiddellijk; huidig"
+  },
+  "C1:ausdrucksweise": {
+    "en": "manner of expression",
+    "nl": "uitdrukkingswijze"
+  },
+  "C1:aussagekräftig": {
+    "en": "informative; revealing; meaningful",
+    "nl": "veelzeggend; informatief"
+  },
+  "C1:ausserplanmässig": {
+    "en": "unscheduled; outside the plan",
+    "nl": "ongepland; buiten het rooster"
+  },
+  "C1:bedeutungsvoll": {
+    "en": "significantly; meaningfully",
+    "nl": "betekenisvol; veelbetekenend"
+  },
+  "C1:beschleunigung": {
+    "en": "acceleration; speeding up",
+    "nl": "versnelling"
+  },
+  "C1:eingeschrieben": {
+    "en": "registered; enrolled",
+    "nl": "ingeschreven; aangetekend verzonden"
+  },
+  "C1:einverständnis": {
+    "en": "consent; agreement",
+    "nl": "instemming; toestemming"
+  },
+  "C1:erreichbarkeit": {
+    "en": "accessibility; availability for contact",
+    "nl": "bereikbaarheid"
+  },
+  "C1:fehlgeschlagen": {
+    "en": "failed; unsuccessful",
+    "nl": "mislukt"
+  },
+  "C1:furchterregend": {
+    "en": "terrifying",
+    "nl": "angstaanjagend"
+  },
+  "C1:fussballspieler": {
+    "en": "football player",
+    "nl": "voetballer"
+  },
+  "C1:geflissentlich": {
+    "en": "deliberate; studiously intentional",
+    "nl": "welbewust; opzettelijk"
+  },
+  "C1:gegenstandslos": {
+    "en": "irrelevant; no longer applicable",
+    "nl": "zonder voorwerp; niet meer ter zake"
+  },
+  "C1:geschmackssinn": {
+    "en": "sense of taste",
+    "nl": "smaakzin"
+  },
+  "C1:gleichbleibend": {
+    "en": "consistently; without change",
+    "nl": "gelijkblijvend; onveranderd"
+  },
+  "C1:hausbesitzerin": {
+    "en": "female homeowner",
+    "nl": "huiseigenares"
+  },
+  "C1:hintereinander": {
+    "en": "one after another; in succession",
+    "nl": "achter elkaar"
+  },
+  "C1:identifikation": {
+    "en": "identification; identification with someone",
+    "nl": "identificatie; vereenzelviging"
+  },
+  "C1:inbetriebnahme": {
+    "en": "commissioning; bringing into operation",
+    "nl": "ingebruikneming; inbedrijfstelling"
+  },
+  "C1:kaltblütigkeit": {
+    "en": "cool-headedness; cold-blooded cruelty",
+    "nl": "koelbloedigheid"
+  },
+  "C1:kleidungsstück": {
+    "en": "item of clothing",
+    "nl": "kledingstuk"
+  },
+  "C1:kreuzungspunkt": {
+    "en": "point of intersection",
+    "nl": "kruispunt; snijpunt"
+  },
+  "C1:lieblingsplatz": {
+    "en": "favourite spot",
+    "nl": "lievelingsplek"
+  },
+  "C1:momentaufnahme": {
+    "en": "snapshot; momentary impression",
+    "nl": "momentopname"
+  },
+  "C1:nachgiebigkeit": {
+    "en": "compliance; willingness to yield",
+    "nl": "toegeeflijkheid; inschikkelijkheid"
+  },
+  "C1:niederländerin": {
+    "en": "Dutch woman",
+    "nl": "Nederlandse vrouw"
+  },
+  "C1:notenschlüssel": {
+    "en": "musical clef",
+    "nl": "muzieksleutel"
+  },
+  "C1:originalgetreu": {
+    "en": "faithful to the original",
+    "nl": "getrouw aan het origineel"
+  },
+  "C1:philosophieren": {
+    "en": "philosophise",
+    "nl": "filosoferen"
+  },
+  "C1:prachtexemplar": {
+    "en": "splendid specimen",
+    "nl": "prachtexemplaar"
+  },
+  "C1:preistreiberei": {
+    "en": "price gouging; profiteering",
+    "nl": "prijsopdrijving; woekerprijzen"
+  },
+  "C1:prozessfreudig": {
+    "en": "litigious; prone to lawsuits",
+    "nl": "proceslustig; graag procederend"
+  },
+  "C1:rechtfertigung": {
+    "en": "justification",
+    "nl": "rechtvaardiging"
+  },
+  "C1:rechtsanwältin": {
+    "en": "female lawyer",
+    "nl": "advocate"
+  },
+  "C1:reissverschluss": {
+    "en": "zip; zipper",
+    "nl": "ritssluiting"
+  },
+  "C1:rückerstattung": {
+    "en": "refund; reimbursement",
+    "nl": "terugbetaling; restitutie"
+  },
+  "C1:schiedsrichter": {
+    "en": "referee; arbitrator",
+    "nl": "scheidsrechter; arbiter"
+  },
+  "C1:schlappschwanz": {
+    "en": "spineless weakling (vulgar insult)",
+    "nl": "slapjanus; lafaard (vulgair scheldwoord)"
+  },
+  "C1:schriftverkehr": {
+    "en": "written correspondence",
+    "nl": "briefwisseling; schriftelijk verkeer"
+  },
+  "C1:schuldenerlass": {
+    "en": "debt cancellation",
+    "nl": "kwijtschelding van schulden"
+  },
+  "C1:seitenstreifen": {
+    "en": "road shoulder",
+    "nl": "bermstrook; vluchtstrook"
+  },
+  "C1:selbstgefällig": {
+    "en": "smugly; complacently",
+    "nl": "zelfgenoegzaam"
+  },
+  "C1:spielverderber": {
+    "en": "spoilsport",
+    "nl": "spelbreker; pretbederver"
+  },
+  "C1:stockbetrunken": {
+    "en": "blind drunk; very drunk",
+    "nl": "stomdronken"
+  },
+  "C1:strafrechtlich": {
+    "en": "criminal; relating to criminal law",
+    "nl": "strafrechtelijk"
+  },
+  "C1:surrealistisch": {
+    "en": "surrealist",
+    "nl": "surrealistisch"
+  },
+  "C1:transportfirma": {
+    "en": "transport company",
+    "nl": "transportbedrijf"
+  },
+  "C1:unausweichlich": {
+    "en": "inescapable; inevitable",
+    "nl": "onontkoombaar"
+  },
+  "C1:unbeholfenheit": {
+    "en": "clumsiness; awkwardness",
+    "nl": "onbeholpenheid"
+  },
+  "C1:undurchsichtig": {
+    "en": "opaque; obscure",
+    "nl": "ondoorzichtig"
+  },
+  "C1:unerschöpflich": {
+    "en": "inexhaustible",
+    "nl": "onuitputtelijk"
+  },
+  "C1:ungebräuchlich": {
+    "en": "uncommon; rarely used",
+    "nl": "ongebruikelijk; zelden gebruikt"
+  },
+  "C1:unkalkulierbar": {
+    "en": "incalculable; unpredictable",
+    "nl": "onberekenbaar; niet te becijferen"
+  },
+  "C1:unnötigerweise": {
+    "en": "unnecessarily",
+    "nl": "onnodig; zonder noodzaak"
+  },
+  "C1:unterschlagung": {
+    "en": "embezzlement; misappropriation",
+    "nl": "verduistering; wederrechtelijke toe-eigening"
+  },
+  "C1:unvorhersehbar": {
+    "en": "unpredictable; unforeseeable",
+    "nl": "onvoorzienbaar; onvoorspelbaar"
+  },
+  "C1:unwiderruflich": {
+    "en": "irrevocably",
+    "nl": "onherroepelijk"
+  },
+  "C1:verballhornung": {
+    "en": "garbling; corruption of a word",
+    "nl": "verbastering; verminking van een woord"
+  },
+  "C1:verwestlichung": {
+    "en": "Westernisation",
+    "nl": "verwestersing"
+  },
+  "C1:voreingenommen": {
+    "en": "biased; prejudiced",
+    "nl": "vooringenomen; bevooroordeeld"
+  },
+  "C1:wahrheitsgemäss": {
+    "en": "truthfully",
+    "nl": "waarheidsgetrouw; naar waarheid"
+  },
+  "C1:wäschetrockner": {
+    "en": "tumble dryer",
+    "nl": "wasdroger"
+  },
+  "C1:zusammenbeissen": {
+    "en": "clench together; bite one's teeth together",
+    "nl": "op elkaar klemmen; de tanden op elkaar bijten"
+  },
+  "C1:zuversichtlich": {
+    "en": "confidently; optimistically",
+    "nl": "vol vertrouwen; optimistisch"
+  },
+  "C1:österreicherin": {
+    "en": "Austrian woman",
+    "nl": "Oostenrijkse vrouw"
+  },
+  "C1:übriggeblieben": {
+    "en": "left over; remaining",
+    "nl": "overgebleven"
+  },
+  "C1:anschlussstelle": {
+    "en": "connection point; motorway junction",
+    "nl": "aansluitpunt; afrit of oprit van een snelweg"
+  },
+  "C1:anziehungskraft": {
+    "en": "attraction; attractive force",
+    "nl": "aantrekkingskracht"
+  },
+  "C1:auffassungsgabe": {
+    "en": "power of comprehension",
+    "nl": "bevattingsvermogen"
+  },
+  "C1:bundeskanzlerin": {
+    "en": "female federal chancellor",
+    "nl": "vrouwelijke bondskanselier"
+  },
+  "C1:defragmentieren": {
+    "en": "defragment a computer drive",
+    "nl": "een computerschijf defragmenteren"
+  },
+  "C1:entgegenkommend": {
+    "en": "accommodating; cooperative",
+    "nl": "tegemoetkomend; behulpzaam"
+  },
+  "C1:fahrmöglichkeit": {
+    "en": "transport option; opportunity to travel",
+    "nl": "vervoersmogelijkheid; rijgelegenheid"
+  },
+  "C1:freiheitsentzug": {
+    "en": "deprivation of liberty; detention",
+    "nl": "vrijheidsbeneming; detentie"
+  },
+  "C1:frühaufsteherin": {
+    "en": "female early riser",
+    "nl": "vrouwelijke vroege vogel"
+  },
+  "C1:garderobenmarke": {
+    "en": "cloakroom ticket",
+    "nl": "garderobebon; garderobenummer"
+  },
+  "C1:gebärdensprache": {
+    "en": "sign language",
+    "nl": "gebarentaal"
+  },
+  "C1:gegenseitigkeit": {
+    "en": "reciprocity; mutuality",
+    "nl": "wederkerigheid"
+  },
+  "C1:gehaltserhöhung": {
+    "en": "pay rise",
+    "nl": "salarisverhoging"
+  },
+  "C1:geheimnistuerei": {
+    "en": "unnecessary secrecy; making a mystery of things",
+    "nl": "geheimzinnigdoenerij"
+  },
+  "C1:generaldirektor": {
+    "en": "director-general",
+    "nl": "directeur-generaal"
+  },
+  "C1:gesetzesentwurf": {
+    "en": "draft law; bill",
+    "nl": "wetsontwerp"
+  },
+  "C1:hinderungsgrund": {
+    "en": "obstacle; reason preventing something",
+    "nl": "beletsel; verhindering"
+  },
+  "C1:kostenpflichtig": {
+    "en": "subject to a charge; paid",
+    "nl": "betaald; tegen betaling"
+  },
+  "C1:lebenserwartung": {
+    "en": "life expectancy",
+    "nl": "levensverwachting"
+  },
+  "C1:lebensnotwendig": {
+    "en": "vital; essential for life",
+    "nl": "levensnoodzakelijk"
+  },
+  "C1:massgeschneidert": {
+    "en": "tailor-made",
+    "nl": "op maat gemaakt"
+  },
+  "C1:meerschweinchen": {
+    "en": "guinea pig",
+    "nl": "cavia"
+  },
+  "C1:mittelalterlich": {
+    "en": "medieval",
+    "nl": "middeleeuws"
+  },
+  "C1:mittelmässigkeit": {
+    "en": "mediocrity",
+    "nl": "middelmatigheid"
+  },
+  "C1:modeerscheinung": {
+    "en": "passing fashion; fad",
+    "nl": "modeverschijnsel"
+  },
+  "C1:nachhilfelehrer": {
+    "en": "private tutor; remedial tutor",
+    "nl": "bijlesleraar"
+  },
+  "C1:palästinenserin": {
+    "en": "Palestinian woman",
+    "nl": "Palestijnse vrouw"
+  },
+  "C1:pflanzenfresser": {
+    "en": "herbivore",
+    "nl": "planteneter"
+  },
+  "C1:rechtschreibung": {
+    "en": "spelling",
+    "nl": "spelling"
+  },
+  "C1:rollenbesetzung": {
+    "en": "casting; assignment of acting roles",
+    "nl": "rolbezetting"
+  },
+  "C1:schmerzlindernd": {
+    "en": "pain-relieving",
+    "nl": "pijnstillend"
+  },
+  "C1:schraubendreher": {
+    "en": "screwdriver",
+    "nl": "schroevendraaier"
+  },
+  "C1:schreibmaschine": {
+    "en": "typewriter",
+    "nl": "schrijfmachine"
+  },
+  "C1:schutzbedürftig": {
+    "en": "in need of protection",
+    "nl": "beschermingsbehoeftig; bescherming nodig hebbend"
+  },
+  "C1:schweinefleisch": {
+    "en": "pork",
+    "nl": "varkensvlees"
+  },
+  "C1:trichtermündung": {
+    "en": "funnel-shaped estuary",
+    "nl": "trechtermonding; estuarium"
+  },
+  "C1:unbeschreiblich": {
+    "en": "indescribable",
+    "nl": "onbeschrijfelijk"
+  },
+  "C1:unvergleichlich": {
+    "en": "incomparable; unmatched",
+    "nl": "onvergelijkbaar"
+  },
+  "C1:unzufriedenheit": {
+    "en": "dissatisfaction",
+    "nl": "ontevredenheid"
+  },
+  "C1:verbrecherbande": {
+    "en": "criminal gang",
+    "nl": "misdadigersbende"
+  },
+  "C1:verhältnismässig": {
+    "en": "proportional; relative",
+    "nl": "evenredig; betrekkelijk"
+  },
+  "C1:verschlagenheit": {
+    "en": "cunning; craftiness",
+    "nl": "sluwheid; doortraptheid"
+  },
+  "C1:vierteljährlich": {
+    "en": "quarterly",
+    "nl": "driemaandelijks; elk kwartaal"
+  },
+  "C1:vollständigkeit": {
+    "en": "completeness",
+    "nl": "volledigheid"
+  },
+  "C1:wahrheitsgetreu": {
+    "en": "true to the facts",
+    "nl": "waarheidsgetrouw"
+  },
+  "C1:widersprüchlich": {
+    "en": "contradictory",
+    "nl": "tegenstrijdig"
+  },
+  "C1:wundstarrkrampf": {
+    "en": "tetanus",
+    "nl": "tetanus; wondkramp"
+  },
+  "C1:zusammenbrechen": {
+    "en": "collapse",
+    "nl": "instorten; ineenstorten"
+  },
+  "C1:übereinstimmend": {
+    "en": "unanimously; in agreement",
+    "nl": "eensgezind; in overeenstemming"
+  },
+  "C1:arbeitslosengeld": {
+    "en": "unemployment benefit",
+    "nl": "werkloosheidsuitkering"
+  },
+  "C1:beeinträchtigung": {
+    "en": "impairment; adverse effect",
+    "nl": "belemmering; aantasting"
+  },
+  "C1:besitzverhältnis": {
+    "en": "ownership relationship; possession relationship",
+    "nl": "eigendomsverhouding; bezitsverhouding"
+  },
+  "C1:buchstabengetreu": {
+    "en": "literal; letter-for-letter",
+    "nl": "letterlijk; lettergetrouw"
+  },
+  "C1:einbildungskraft": {
+    "en": "imagination",
+    "nl": "verbeeldingskracht"
+  },
+  "C1:eisenbahnstrecke": {
+    "en": "railway line",
+    "nl": "spoorlijn"
+  },
+  "C1:fluggesellschaft": {
+    "en": "airline",
+    "nl": "luchtvaartmaatschappij"
+  },
+  "C1:fuchsteufelswild": {
+    "en": "furious; hopping mad",
+    "nl": "razend; woedend"
+  },
+  "C1:furchteinflössend": {
+    "en": "fearsome; frightening",
+    "nl": "angstaanjagend"
+  },
+  "C1:gedankenverloren": {
+    "en": "lost in thought",
+    "nl": "in gedachten verzonken"
+  },
+  "C1:gleichgültigkeit": {
+    "en": "indifference",
+    "nl": "onverschilligheid"
+  },
+  "C1:grundverständnis": {
+    "en": "basic understanding",
+    "nl": "basisbegrip; fundamenteel inzicht"
+  },
+  "C1:grössenwahnsinnig": {
+    "en": "megalomaniacal; delusional about one's greatness",
+    "nl": "grootheidswaanzinnig"
+  },
+  "C1:haltevorrichtung": {
+    "en": "holding device; fastener",
+    "nl": "bevestigingsmiddel; houder"
+  },
+  "C1:herrenbekleidung": {
+    "en": "menswear",
+    "nl": "herenkleding"
+  },
+  "C1:höchstpersönlich": {
+    "en": "in person; personally",
+    "nl": "hoogstpersoonlijk"
+  },
+  "C1:kosekansfunktion": {
+    "en": "cosecant function",
+    "nl": "cosecansfunctie"
+  },
+  "C1:krankenpflegerin": {
+    "en": "nurse; female nurse",
+    "nl": "verpleegkundige; verpleegster"
+  },
+  "C1:leichtfertigkeit": {
+    "en": "recklessness; frivolity",
+    "nl": "lichtvaardigheid; onbezonnenheid"
+  },
+  "C1:nachweisqualität": {
+    "en": "quality of evidence or detection",
+    "nl": "bewijskwaliteit; kwaliteit van detectie"
+  },
+  "C1:notwendigerweise": {
+    "en": "necessarily",
+    "nl": "noodzakelijkerwijs"
+  },
+  "C1:praktischerweise": {
+    "en": "conveniently",
+    "nl": "praktisch genoeg; heel handig"
+  },
+  "C1:reinigungsmittel": {
+    "en": "cleaning agent",
+    "nl": "reinigingsmiddel; schoonmaakmiddel"
+  },
+  "C1:respektlosigkeit": {
+    "en": "disrespect",
+    "nl": "respectloosheid; gebrek aan respect"
+  },
+  "C1:röntgenstrahlung": {
+    "en": "X-rays; X-radiation",
+    "nl": "röntgenstraling"
+  },
+  "C1:schirmherrschaft": {
+    "en": "patronage; official sponsorship",
+    "nl": "beschermheerschap; officiële steun"
+  },
+  "C1:unverantwortlich": {
+    "en": "irresponsible",
+    "nl": "onverantwoordelijk"
+  },
+  "C1:unvoreingenommen": {
+    "en": "unbiased; open-minded",
+    "nl": "onbevooroordeeld; onbevangen"
+  },
+  "C1:vernachlässigbar": {
+    "en": "negligible",
+    "nl": "verwaarloosbaar"
+  },
+  "C1:vertrauenswürdig": {
+    "en": "trustworthy",
+    "nl": "betrouwbaar"
+  },
+  "C1:wiederauffüllung": {
+    "en": "refill; replenishment",
+    "nl": "aanvulling; opnieuw vullen"
+  },
+  "C1:zufriedenstellen": {
+    "en": "satisfy; please",
+    "nl": "tevredenstellen"
+  },
+  "C1:zwischenmahlzeit": {
+    "en": "snack between meals",
+    "nl": "tussendoortje"
+  },
+  "C1:alarmbereitschaft": {
+    "en": "state of alert",
+    "nl": "alarmtoestand; paraatheid"
+  },
+  "C1:aneinanderreihung": {
+    "en": "sequence; stringing together",
+    "nl": "aaneenrijging; opeenvolging"
+  },
+  "C1:auseinandersetzen": {
+    "en": "discuss; examine critically; take apart",
+    "nl": "bespreken; zich verdiepen in; uiteenzetten"
+  },
+  "C1:betreuungstreffen": {
+    "en": "supervision meeting; support meeting",
+    "nl": "begeleidingsgesprek; overleg over zorg"
+  },
+  "C1:erfreulicherweise": {
+    "en": "fortunately; pleasingly",
+    "nl": "gelukkig; tot vreugde"
+  },
+  "C1:franziskanermönch": {
+    "en": "Franciscan friar",
+    "nl": "franciscaner monnik"
+  },
+  "C1:freundlicherweise": {
+    "en": "kindly; out of kindness",
+    "nl": "vriendelijk; uit vriendelijkheid"
+  },
+  "C1:gedankenlosigkeit": {
+    "en": "thoughtlessness",
+    "nl": "gedachteloosheid; ondoordachtheid"
+  },
+  "C1:geheimniskrämerei": {
+    "en": "excessive secrecy",
+    "nl": "geheimzinnigdoenerij"
+  },
+  "C1:geschäftsführerin": {
+    "en": "female managing director",
+    "nl": "directrice; vrouwelijke bedrijfsleider"
+  },
+  "C1:hinunterschlucken": {
+    "en": "swallow down",
+    "nl": "doorslikken; inslikken"
+  },
+  "C1:konsequenterweise": {
+    "en": "consequently; consistently",
+    "nl": "bijgevolg; consequent"
+  },
+  "C1:krankheitsbedingt": {
+    "en": "due to illness",
+    "nl": "door ziekte veroorzaakt"
+  },
+  "C1:mitgliederbeitrag": {
+    "en": "membership fee",
+    "nl": "contributie; ledenbijdrage"
+  },
+  "C1:nachrichtendienst": {
+    "en": "intelligence service; news service",
+    "nl": "inlichtingendienst; nieuwsdienst"
+  },
+  "C1:oberflächlichkeit": {
+    "en": "superficiality",
+    "nl": "oppervlakkigheid"
+  },
+  "C1:papiertaschentuch": {
+    "en": "paper tissue",
+    "nl": "papieren zakdoekje"
+  },
+  "C1:unwiederbringlich": {
+    "en": "irretrievable; lost forever",
+    "nl": "onherroepelijk verloren; niet terug te krijgen"
+  },
+  "C1:verantwortungslos": {
+    "en": "irresponsible",
+    "nl": "onverantwoordelijk"
+  },
+  "C1:vorstellungskraft": {
+    "en": "imagination; imaginative power",
+    "nl": "voorstellingsvermogen; verbeeldingskracht"
+  },
+  "C1:windschutzscheibe": {
+    "en": "windscreen",
+    "nl": "voorruit"
+  },
+  "C1:zigarettenstummel": {
+    "en": "cigarette butt",
+    "nl": "sigarettenpeuk"
+  },
+  "C1:zusammengebrochen": {
+    "en": "collapsed",
+    "nl": "ingestort"
+  },
+  "C1:computerbildschirm": {
+    "en": "computer monitor",
+    "nl": "computerscherm"
+  },
+  "C1:einbruchsdiebstahl": {
+    "en": "burglary",
+    "nl": "inbraakdiefstal"
+  },
+  "C1:industrialisierung": {
+    "en": "industrialisation",
+    "nl": "industrialisering"
+  },
+  "C1:menschenansammlung": {
+    "en": "crowd; gathering of people",
+    "nl": "mensenmenigte; samenscholing"
+  },
+  "C1:mitfahrgelegenheit": {
+    "en": "lift; car-sharing opportunity",
+    "nl": "meerijgelegenheid; gelegenheid om mee te rijden"
+  },
+  "C1:nachrichtenagentur": {
+    "en": "news agency",
+    "nl": "persbureau"
+  },
+  "C1:zugestandenermassen": {
+    "en": "admittedly",
+    "nl": "toegegeven; naar eigen zeggen"
+  },
+  "C1:überzeugungsarbeit": {
+    "en": "work of persuasion; efforts to convince others",
+    "nl": "overtuigingswerk; moeite om anderen te overtuigen"
+  },
+  "C1:ausnahmeerscheinung": {
+    "en": "exceptional phenomenon or person",
+    "nl": "uitzonderlijk verschijnsel; uitzonderlijk persoon"
+  },
+  "C1:traditionellerweise": {
+    "en": "traditionally",
+    "nl": "traditioneel; volgens de traditie"
+  },
+  "C1:geschichtsschreibung": {
+    "en": "historiography; writing history",
+    "nl": "geschiedschrijving"
+  },
+  "C1:geschirrspülmaschine": {
+    "en": "dishwasher",
+    "nl": "vaatwasmachine"
+  },
+  "C1:gesundheitsschädlich": {
+    "en": "harmful to health",
+    "nl": "schadelijk voor de gezondheid"
+  },
+  "C1:transportmöglichkeit": {
+    "en": "transport option",
+    "nl": "transportmogelijkheid; vervoersmogelijkheid"
+  },
+  "C1:verabscheuungswürdig": {
+    "en": "detestable; despicable",
+    "nl": "verachtelijk; verfoeilijk"
+  },
+  "C1:durchsetzungsvermögen": {
+    "en": "assertiveness; ability to get things done",
+    "nl": "doorzettingsvermogen; vermogen zich te laten gelden"
+  },
+  "C1:nachrichtensprecherin": {
+    "en": "female newsreader",
+    "nl": "nieuwslezeres"
+  },
+  "C1:aal": {
+    "en": "eel",
+    "nl": "aal; paling"
+  },
+  "C1:bit": {
+    "en": "bit; binary unit of information",
+    "nl": "bit; binaire informatie-eenheid"
+  },
+  "C1:bug": {
+    "en": "bow of a ship",
+    "nl": "boeg van een schip"
+  },
+  "C1:dur": {
+    "en": "major key; major scale",
+    "nl": "majeur; grote terts-toonsoort"
+  },
+  "C1:ion": {
+    "en": "ion",
+    "nl": "ion"
+  },
+  "C1:jus": {
+    "en": "meat juices; law studies in Austria",
+    "nl": "vleesjus; rechtenstudie in Oostenrijk"
+  },
+  "C1:jux": {
+    "en": "fun; joke",
+    "nl": "lol; grap"
+  },
+  "C1:lok": {
+    "en": "locomotive",
+    "nl": "locomotief; loc"
+  },
+  "C1:lot": {
+    "en": "plumb line; historical unit of weight",
+    "nl": "schietlood; oude gewichtseenheid"
+  },
+  "C1:pol": {
+    "en": "pole",
+    "nl": "pool"
+  },
+  "C1:pur": {
+    "en": "pure; unadulterated",
+    "nl": "puur; zuiver"
+  },
+  "C1:rar": {
+    "en": "rare; scarce",
+    "nl": "zeldzaam; schaars"
+  },
+  "C1:russ": {
+    "en": "soot",
+    "nl": "roet"
+  },
+  "C1:tau": {
+    "en": "thick rope",
+    "nl": "touw; dikke kabel"
+  },
+  "C1:zäh": {
+    "en": "tough; tenacious",
+    "nl": "taai; vasthoudend"
+  },
+  "C1:ader": {
+    "en": "vein",
+    "nl": "ader"
+  },
+  "C1:agio": {
+    "en": "premium; financial surcharge",
+    "nl": "agio; koersopslag"
+  },
+  "C1:atom": {
+    "en": "atom",
+    "nl": "atoom"
+  },
+  "C1:balg": {
+    "en": "animal hide; bellows",
+    "nl": "dierenhuid; blaasbalg"
+  },
+  "C1:bann": {
+    "en": "ban; banishment; captivating spell",
+    "nl": "ban; verbanning; betovering"
+  },
+  "C1:blei": {
+    "en": "lead; the metal",
+    "nl": "lood"
+  },
+  "C1:boje": {
+    "en": "buoy",
+    "nl": "boei"
+  },
+  "C1:brei": {
+    "en": "mash; porridge",
+    "nl": "pap; brij"
+  },
+  "C1:byte": {
+    "en": "byte; unit of eight bits",
+    "nl": "byte; eenheid van acht bits"
+  },
+  "C1:coup": {
+    "en": "coup; daring success",
+    "nl": "geslaagde zet; huzarenstuk"
+  },
+  "C1:dorn": {
+    "en": "thorn",
+    "nl": "doorn"
+  },
+  "C1:dutt": {
+    "en": "hair bun",
+    "nl": "haarknot"
+  },
+  "C1:egge": {
+    "en": "harrow",
+    "nl": "eg"
+  },
+  "C1:elan": {
+    "en": "enthusiasm; energy",
+    "nl": "elan; geestdrift"
+  },
+  "C1:exil": {
+    "en": "exile",
+    "nl": "ballingschap"
+  },
+  "C1:fete": {
+    "en": "party",
+    "nl": "feestje"
+  },
+  "C1:flor": {
+    "en": "pile of fabric; flourishing state",
+    "nl": "pool van weefsel; bloei"
+  },
+  "C1:fuge": {
+    "en": "joint; gap between fitted pieces",
+    "nl": "voeg; naad"
+  },
+  "C1:garn": {
+    "en": "yarn",
+    "nl": "garen"
+  },
+  "C1:gier": {
+    "en": "greed",
+    "nl": "hebzucht; begeerte"
+  },
+  "C1:hang": {
+    "en": "slope; inclination",
+    "nl": "helling; neiging"
+  },
+  "C1:haxe": {
+    "en": "knuckle or shank of meat",
+    "nl": "schenkel; varkensknokkel"
+  },
+  "C1:hohn": {
+    "en": "scorn; mockery",
+    "nl": "hoon; spot"
+  },
+  "C1:häme": {
+    "en": "malicious glee",
+    "nl": "leedvermaak; hatelijke spot"
+  },
+  "C1:hüne": {
+    "en": "huge, powerfully built man",
+    "nl": "reus; boom van een kerel"
+  },
+  "C1:joch": {
+    "en": "yoke; oppression",
+    "nl": "juk; onderdrukking"
+  },
+  "C1:kamm": {
+    "en": "comb; crest; mountain ridge",
+    "nl": "kam; bergkam"
+  },
+  "C1:kies": {
+    "en": "gravel",
+    "nl": "grind"
+  },
+  "C1:klee": {
+    "en": "clover",
+    "nl": "klaver"
+  },
+  "C1:kost": {
+    "en": "food; diet",
+    "nl": "kost; voeding"
+  },
+  "C1:leck": {
+    "en": "leak",
+    "nl": "lek"
+  },
+  "C1:lupe": {
+    "en": "magnifying glass",
+    "nl": "loep"
+  },
+  "C1:löss": {
+    "en": "loess; wind-deposited silty soil",
+    "nl": "löss"
+  },
+  "C1:muse": {
+    "en": "muse; source of inspiration",
+    "nl": "muze; inspiratiebron"
+  },
+  "C1:nabe": {
+    "en": "wheel hub",
+    "nl": "wielnaaf; naaf"
+  },
+  "C1:norm": {
+    "en": "standard; norm",
+    "nl": "norm"
+  },
+  "C1:omen": {
+    "en": "omen",
+    "nl": "voorteken"
+  },
+  "C1:pint": {
+    "en": "pint; unit of volume",
+    "nl": "pint; inhoudsmaat"
+  },
+  "C1:pomp": {
+    "en": "pomp; ostentation",
+    "nl": "pracht en praal; vertoon"
+  },
+  "C1:pute": {
+    "en": "female turkey",
+    "nl": "kalkoenhen"
+  },
+  "C1:rebe": {
+    "en": "grapevine",
+    "nl": "wijnstok"
+  },
+  "C1:ruin": {
+    "en": "ruin; financial collapse",
+    "nl": "ondergang; financieel failliet"
+  },
+  "C1:rübe": {
+    "en": "turnip; root crop",
+    "nl": "knol; biet"
+  },
+  "C1:sekt": {
+    "en": "sparkling wine",
+    "nl": "mousserende wijn"
+  },
+  "C1:sold": {
+    "en": "soldier's pay",
+    "nl": "soldij"
+  },
+  "C1:stoss": {
+    "en": "push; jolt; pile",
+    "nl": "stoot; schok; stapel"
+  },
+  "C1:suff": {
+    "en": "heavy drunkenness",
+    "nl": "dronkenschap; zuiperij"
+  },
+  "C1:sund": {
+    "en": "sound; narrow sea strait",
+    "nl": "zeestraat; zee-engte"
+  },
+  "C1:takt": {
+    "en": "rhythm; tact",
+    "nl": "maat; tact"
+  },
+  "C1:torf": {
+    "en": "peat",
+    "nl": "turf; veen"
+  },
+  "C1:trab": {
+    "en": "trot",
+    "nl": "draf"
+  },
+  "C1:tuff": {
+    "en": "tuff; porous volcanic rock",
+    "nl": "tufsteen"
+  },
+  "C1:urig": {
+    "en": "with rustic, traditional character",
+    "nl": "op een authentieke, rustieke manier"
+  },
+  "C1:vamp": {
+    "en": "seductive woman; femme fatale",
+    "nl": "femme fatale; verleidelijke vrouw"
+  },
+  "C1:verb": {
+    "en": "verb",
+    "nl": "werkwoord"
+  },
+  "C1:vers": {
+    "en": "line of poetry; verse",
+    "nl": "versregel"
+  },
+  "C1:veto": {
+    "en": "veto",
+    "nl": "veto; vetorecht"
+  },
+  "C1:wahn": {
+    "en": "delusion; mania",
+    "nl": "waan; waanvoorstelling"
+  },
+  "C1:wehr": {
+    "en": "weir",
+    "nl": "stuw"
+  },
+  "C1:wust": {
+    "en": "confused mass; jumble",
+    "nl": "warboel; onoverzichtelijke hoop"
+  },
+  "C1:yard": {
+    "en": "yard; unit of length",
+    "nl": "yard; lengtemaat"
+  },
+  "C1:zaum": {
+    "en": "bridle",
+    "nl": "hoofdstel; toom"
+  },
+  "C1:zopf": {
+    "en": "plait; braid",
+    "nl": "vlecht"
+  },
+  "C1:abruf": {
+    "en": "retrieval; call for delivery",
+    "nl": "oproep; opvraging"
+  },
+  "C1:abtun": {
+    "en": "dismiss; brush aside",
+    "nl": "afdoen; terzijde schuiven"
+  },
+  "C1:acker": {
+    "en": "arable field",
+    "nl": "akker"
+  },
+  "C1:alias": {
+    "en": "also known as",
+    "nl": "alias; ook bekend als"
+  },
+  "C1:allel": {
+    "en": "allele; variant of a gene",
+    "nl": "allel; variant van een gen"
+  },
+  "C1:atoll": {
+    "en": "atoll",
+    "nl": "atol"
+  },
+  "C1:berme": {
+    "en": "berm; earth ledge",
+    "nl": "berm; aarden richel"
+  },
+  "C1:beule": {
+    "en": "bump; dent; swelling",
+    "nl": "bult; deuk; zwelling"
+  },
+  "C1:bohei": {
+    "en": "fuss; commotion",
+    "nl": "ophef; drukte"
+  },
+  "C1:brüsk": {
+    "en": "brusquely; abruptly",
+    "nl": "bruusk; kortaf"
+  },
+  "C1:budel": {
+    "en": "sales counter; bar counter (Austrian)",
+    "nl": "toonbank; bar (Oostenrijks)"
+  },
+  "C1:buhne": {
+    "en": "groyne; structure extending into water",
+    "nl": "krib; golfbreker"
+  },
+  "C1:bulle": {
+    "en": "papal bull; papal decree",
+    "nl": "pauselijke bul"
+  },
+  "C1:bully": {
+    "en": "bully; face-off in hockey",
+    "nl": "pestkop; face-off bij hockey"
+  },
+  "C1:busen": {
+    "en": "bosom; woman's breasts",
+    "nl": "boezem; borsten"
+  },
+  "C1:bürge": {
+    "en": "guarantor; surety",
+    "nl": "borg; garantsteller"
+  },
+  "C1:chose": {
+    "en": "thing; matter",
+    "nl": "zaak; ding"
+  },
+  "C1:claim": {
+    "en": "claim to a right; advertising slogan",
+    "nl": "aanspraak; reclameslogan"
+  },
+  "C1:codec": {
+    "en": "codec; coder-decoder",
+    "nl": "codec; codeer- en decodeerprogramma"
+  },
+  "C1:deich": {
+    "en": "dike; flood embankment",
+    "nl": "dijk"
+  },
+  "C1:depot": {
+    "en": "depot; securities account",
+    "nl": "depot; effectenrekening"
+  },
+  "C1:diode": {
+    "en": "diode",
+    "nl": "diode"
+  },
+  "C1:dogma": {
+    "en": "dogma",
+    "nl": "dogma"
+  },
+  "C1:drall": {
+    "en": "spin; twist; rifling",
+    "nl": "draaiing; spiraalvormige draaiing"
+  },
+  "C1:duett": {
+    "en": "duet",
+    "nl": "duet"
+  },
+  "C1:eiter": {
+    "en": "pus",
+    "nl": "etter; pus"
+  },
+  "C1:ennet": {
+    "en": "beyond; on the other side of (Swiss)",
+    "nl": "aan de overkant van; voorbij (Zwitsers)"
+  },
+  "C1:enzym": {
+    "en": "enzyme",
+    "nl": "enzym"
+  },
+  "C1:erbin": {
+    "en": "heiress",
+    "nl": "erfgename"
+  },
+  "C1:erdöl": {
+    "en": "crude oil",
+    "nl": "aardolie"
+  },
+  "C1:fehde": {
+    "en": "feud",
+    "nl": "vete"
+  },
+  "C1:felge": {
+    "en": "wheel rim",
+    "nl": "velg"
+  },
+  "C1:flair": {
+    "en": "distinctive atmosphere; charm",
+    "nl": "uitstraling; bijzondere sfeer"
+  },
+  "C1:folie": {
+    "en": "foil; thin film",
+    "nl": "folie"
+  },
+  "C1:fonds": {
+    "en": "investment fund",
+    "nl": "beleggingsfonds"
+  },
+  "C1:frack": {
+    "en": "tailcoat",
+    "nl": "rokkostuum; rokjas"
+  },
+  "C1:fratz": {
+    "en": "mischievous child; little rascal",
+    "nl": "deugniet; bengel"
+  },
+  "C1:frost": {
+    "en": "frost",
+    "nl": "vorst"
+  },
+  "C1:frust": {
+    "en": "frustration",
+    "nl": "frustratie"
+  },
+  "C1:funke": {
+    "en": "spark",
+    "nl": "vonk"
+  },
+  "C1:geige": {
+    "en": "violin",
+    "nl": "viool"
+  },
+  "C1:gelee": {
+    "en": "jelly",
+    "nl": "gelei"
+  },
+  "C1:gicht": {
+    "en": "gout",
+    "nl": "jicht"
+  },
+  "C1:grell": {
+    "en": "glaringly; garishly",
+    "nl": "fel; schreeuwerig"
+  },
+  "C1:groll": {
+    "en": "grudge; suppressed anger",
+    "nl": "wrok"
+  },
+  "C1:grube": {
+    "en": "pit; mine",
+    "nl": "kuil; mijn"
+  },
+  "C1:harfe": {
+    "en": "harp",
+    "nl": "harp"
+  },
+  "C1:haube": {
+    "en": "bonnet; protective cover",
+    "nl": "muts; beschermkap"
+  },
+  "C1:heber": {
+    "en": "jack; lifting device",
+    "nl": "heffer; krik"
+  },
+  "C1:hecke": {
+    "en": "hedge",
+    "nl": "heg; haag"
+  },
+  "C1:hocke": {
+    "en": "squatting position",
+    "nl": "hurkhouding"
+  },
+  "C1:hoden": {
+    "en": "testicle",
+    "nl": "teelbal"
+  },
+  "C1:horde": {
+    "en": "horde; unruly crowd",
+    "nl": "horde; wilde menigte"
+  },
+  "C1:human": {
+    "en": "humane; compassionate",
+    "nl": "menslievend; humaan"
+  },
+  "C1:hürde": {
+    "en": "hurdle; obstacle",
+    "nl": "horde; hindernis"
+  },
+  "C1:ileus": {
+    "en": "ileus; intestinal obstruction",
+    "nl": "ileus; darmafsluiting"
+  },
+  "C1:kader": {
+    "en": "cadre; core team",
+    "nl": "kader; kernploeg"
+  },
+  "C1:kelch": {
+    "en": "chalice; flower calyx",
+    "nl": "kelk; bloemkelk"
+  },
+  "C1:klaps": {
+    "en": "light slap; pat",
+    "nl": "tik; klapje"
+  },
+  "C1:kluft": {
+    "en": "gap; chasm; outfit (colloquial)",
+    "nl": "kloof; kloffie"
+  },
+  "C1:knick": {
+    "en": "kink; sharp bend",
+    "nl": "knik"
+  },
+  "C1:kolik": {
+    "en": "colic",
+    "nl": "koliek"
+  },
+  "C1:komma": {
+    "en": "comma",
+    "nl": "komma"
+  },
+  "C1:kurie": {
+    "en": "curia; church administrative body",
+    "nl": "curie; kerkelijk bestuursorgaan"
+  },
+  "C1:köper": {
+    "en": "twill fabric",
+    "nl": "keper; keperweefsel"
+  },
+  "C1:lachs": {
+    "en": "salmon",
+    "nl": "zalm"
+  },
+  "C1:laser": {
+    "en": "laser",
+    "nl": "laser"
+  },
+  "C1:latte": {
+    "en": "slat; crossbar",
+    "nl": "lat; dwarslat"
+  },
+  "C1:lauch": {
+    "en": "leek",
+    "nl": "prei"
+  },
+  "C1:lauer": {
+    "en": "lying in wait; ambush",
+    "nl": "loer; het op de loer liggen"
+  },
+  "C1:linse": {
+    "en": "lens; lentil",
+    "nl": "lens; linze"
+  },
+  "C1:litze": {
+    "en": "stranded wire; decorative braid",
+    "nl": "soepele gevlochten draad; sierband"
+  },
+  "C1:lotto": {
+    "en": "lottery; lotto",
+    "nl": "lotto; loterij"
+  },
+  "C1:längs": {
+    "en": "along",
+    "nl": "langs"
+  },
+  "C1:meute": {
+    "en": "pack of hounds; hostile mob",
+    "nl": "meute"
+  },
+  "C1:miene": {
+    "en": "facial expression",
+    "nl": "gelaatsuitdrukking; gezicht"
+  },
+  "C1:mimen": {
+    "en": "act the part of; pretend to be",
+    "nl": "uitbeelden; doen alsof men iets is"
+  },
+  "C1:mucks": {
+    "en": "faint sound; slight movement",
+    "nl": "kik; piep"
+  },
+  "C1:niete": {
+    "en": "rivet; losing lottery ticket",
+    "nl": "klinknagel; niet in een loterij"
+  },
+  "C1:notar": {
+    "en": "notary",
+    "nl": "notaris"
+  },
+  "C1:nutte": {
+    "en": "whore (derogatory)",
+    "nl": "hoer (beledigend)"
+  },
+  "C1:pedal": {
+    "en": "pedal",
+    "nl": "pedaal"
+  },
+  "C1:pelle": {
+    "en": "skin; sausage casing",
+    "nl": "vel; worstvel"
+  },
+  "C1:pfahl": {
+    "en": "stake; post",
+    "nl": "paal; staak"
+  },
+  "C1:pfand": {
+    "en": "pledge; refundable deposit",
+    "nl": "pand; statiegeld"
+  },
+  "C1:pflug": {
+    "en": "plough",
+    "nl": "ploeg"
+  },
+  "C1:piste": {
+    "en": "ski run; airstrip",
+    "nl": "piste; landingsbaan"
+  },
+  "C1:polio": {
+    "en": "polio",
+    "nl": "polio; kinderverlamming"
+  },
+  "C1:porto": {
+    "en": "postage",
+    "nl": "portokosten; porto"
+  },
+  "C1:posse": {
+    "en": "farce; ridiculous affair",
+    "nl": "klucht; schertsvertoning"
+  },
+  "C1:prise": {
+    "en": "pinch; small amount",
+    "nl": "snufje"
+  },
+  "C1:quarz": {
+    "en": "quartz",
+    "nl": "kwarts"
+  },
+  "C1:queue": {
+    "en": "billiard cue",
+    "nl": "biljartkeu"
+  },
+  "C1:recte": {
+    "en": "correctly; properly speaking",
+    "nl": "correct; juister gezegd"
+  },
+  "C1:reife": {
+    "en": "maturity; ripeness",
+    "nl": "rijpheid; volwassenheid"
+  },
+  "C1:remix": {
+    "en": "musical remix",
+    "nl": "remix"
+  },
+  "C1:rohöl": {
+    "en": "crude oil",
+    "nl": "ruwe olie"
+  },
+  "C1:rumpf": {
+    "en": "torso; hull; fuselage",
+    "nl": "romp"
+  },
+  "C1:saldo": {
+    "en": "account balance",
+    "nl": "saldo"
+  },
+  "C1:salve": {
+    "en": "volley; salvo",
+    "nl": "salvo"
+  },
+  "C1:sauna": {
+    "en": "sauna",
+    "nl": "sauna"
+  },
+  "C1:sekte": {
+    "en": "sect; religious cult",
+    "nl": "sekte"
+  },
+  "C1:serum": {
+    "en": "serum",
+    "nl": "serum"
+  },
+  "C1:shunt": {
+    "en": "shunt; medical or electrical bypass",
+    "nl": "shunt; medische of elektrische omleiding"
+  },
+  "C1:silbe": {
+    "en": "syllable",
+    "nl": "lettergreep"
+  },
+  "C1:sinus": {
+    "en": "sine; anatomical sinus",
+    "nl": "sinus; bijholte"
+  },
+  "C1:skala": {
+    "en": "scale; graduated range",
+    "nl": "schaal"
+  },
+  "C1:sooft": {
+    "en": "whenever; every time that",
+    "nl": "telkens als; zo vaak als"
+  },
+  "C1:spalt": {
+    "en": "crack; narrow gap",
+    "nl": "spleet; kier"
+  },
+  "C1:spill": {
+    "en": "capstan; upright rope winch",
+    "nl": "kaapstander; verticale lier"
+  },
+  "C1:spreu": {
+    "en": "chaff",
+    "nl": "kaf"
+  },
+  "C1:stiel": {
+    "en": "stalk; handle",
+    "nl": "steel"
+  },
+  "C1:säbel": {
+    "en": "sabre",
+    "nl": "sabel"
+  },
+  "C1:säule": {
+    "en": "column; pillar",
+    "nl": "zuil; pijler"
+  },
+  "C1:sühne": {
+    "en": "atonement",
+    "nl": "boetedoening; verzoening"
+  },
+  "C1:tarif": {
+    "en": "tariff; rate",
+    "nl": "tarief"
+  },
+  "C1:tussi": {
+    "en": "bimbo; silly woman (derogatory)",
+    "nl": "trut; leeghoofdige vrouw (beledigend)"
+  },
+  "C1:tweed": {
+    "en": "tweed fabric",
+    "nl": "tweed"
+  },
+  "C1:umweg": {
+    "en": "detour",
+    "nl": "omweg"
+  },
+  "C1:visus": {
+    "en": "visual acuity",
+    "nl": "gezichtsscherpte; visus"
+  },
+  "C1:vokal": {
+    "en": "vowel",
+    "nl": "klinker"
+  },
+  "C1:wachs": {
+    "en": "wax",
+    "nl": "was"
+  },
+  "C1:wampe": {
+    "en": "pot belly; paunch",
+    "nl": "pens; dikke buik"
+  },
+  "C1:wanst": {
+    "en": "large belly; paunch",
+    "nl": "dikke buik; pens"
+  },
+  "C1:waten": {
+    "en": "wade",
+    "nl": "waden"
+  },
+  "C1:wonne": {
+    "en": "bliss; intense delight",
+    "nl": "wellust; grote verrukking"
+  },
+  "C1:zeche": {
+    "en": "restaurant bill; coal mine",
+    "nl": "rekening; kolenmijn"
+  },
+  "C1:zucht": {
+    "en": "breeding; cultivation; discipline",
+    "nl": "fokkerij; teelt; tucht"
+  },
+  "C1:zutun": {
+    "en": "contribution; intervention",
+    "nl": "toedoen; bijdrage"
+  },
+  "C1:zyste": {
+    "en": "cyst",
+    "nl": "cyste"
+  },
+  "C1:zügel": {
+    "en": "rein",
+    "nl": "teugel"
+  },
+  "C1:abfuhr": {
+    "en": "blunt rejection; refuse collection",
+    "nl": "afwijzing; afvalinzameling"
+  },
+  "C1:abgang": {
+    "en": "departure; loss or decrease",
+    "nl": "vertrek; afname"
+  },
+  "C1:abrieb": {
+    "en": "abrasion; wear particles",
+    "nl": "slijtage; slijpsel"
+  },
+  "C1:abriss": {
+    "en": "demolition; brief outline",
+    "nl": "sloop; beknopt overzicht"
+  },
+  "C1:absage": {
+    "en": "rejection; cancellation",
+    "nl": "afwijzing; afzegging"
+  },
+  "C1:affekt": {
+    "en": "intense emotion; emotional outburst",
+    "nl": "hevige emotie; affect"
+  },
+  "C1:affäre": {
+    "en": "controversial affair; love affair",
+    "nl": "affaire; liefdesverhouding"
+  },
+  "C1:akteur": {
+    "en": "actor; influential participant",
+    "nl": "actor; handelende partij; acteur"
+  },
+  "C1:akzept": {
+    "en": "acceptance of a bill of exchange",
+    "nl": "acceptatie van een wissel"
+  },
+  "C1:amboss": {
+    "en": "anvil",
+    "nl": "aambeeld"
+  },
+  "C1:anflug": {
+    "en": "flight approach; hint or touch",
+    "nl": "nadering per vliegtuig; zweem"
+  },
+  "C1:anhang": {
+    "en": "appendix; attachment; followers",
+    "nl": "bijlage; aanhang"
+  },
+  "C1:anlauf": {
+    "en": "run-up; initial attempt",
+    "nl": "aanloop; eerste poging"
+  },
+  "C1:anorak": {
+    "en": "anorak; weatherproof jacket",
+    "nl": "anorak"
+  },
+  "C1:anreiz": {
+    "en": "incentive; stimulus",
+    "nl": "prikkel; stimulans"
+  },
+  "C1:anämie": {
+    "en": "anaemia",
+    "nl": "bloedarmoede"
+  },
+  "C1:appell": {
+    "en": "appeal; urgent call",
+    "nl": "oproep; appel"
+  },
+  "C1:asbest": {
+    "en": "asbestos",
+    "nl": "asbest"
+  },
+  "C1:atmung": {
+    "en": "breathing",
+    "nl": "ademhaling"
+  },
+  "C1:ausruf": {
+    "en": "exclamation",
+    "nl": "uitroep"
+  },
+  "C1:auszug": {
+    "en": "excerpt; moving out",
+    "nl": "uittreksel; verhuizing uit een woning"
+  },
+  "C1:balken": {
+    "en": "beam; bar",
+    "nl": "balk"
+  },
+  "C1:bammel": {
+    "en": "fear; the jitters",
+    "nl": "bangigheid; zenuwen"
+  },
+  "C1:banner": {
+    "en": "banner; advertising banner",
+    "nl": "banier; reclamebanner"
+  },
+  "C1:bannig": {
+    "en": "very; extremely (northern German)",
+    "nl": "erg; heel erg (Noord-Duits)"
+  },
+  "C1:barett": {
+    "en": "beret",
+    "nl": "baret"
+  },
+  "C1:barren": {
+    "en": "ingot; metal bar",
+    "nl": "baar; metalen staaf"
+  },
+  "C1:becken": {
+    "en": "basin; pelvis",
+    "nl": "bekken"
+  },
+  "C1:bengel": {
+    "en": "mischievous boy; rascal",
+    "nl": "bengel"
+  },
+  "C1:blasen": {
+    "en": "blow; puff",
+    "nl": "blazen; waaien"
+  },
+  "C1:blende": {
+    "en": "shield; camera aperture",
+    "nl": "afscherming; diafragma"
+  },
+  "C1:bohrer": {
+    "en": "drill; drill bit",
+    "nl": "boor"
+  },
+  "C1:bolzen": {
+    "en": "bolt; metal pin",
+    "nl": "bout; pen"
+  },
+  "C1:bomber": {
+    "en": "bomber aircraft",
+    "nl": "bommenwerper"
+  },
+  "C1:brauer": {
+    "en": "brewer",
+    "nl": "bierbrouwer"
+  },
+  "C1:brunft": {
+    "en": "rutting season",
+    "nl": "bronsttijd"
+  },
+  "C1:brunst": {
+    "en": "rut; sexual heat",
+    "nl": "bronst"
+  },
+  "C1:brutal": {
+    "en": "brutally; violently",
+    "nl": "bruut; wreed"
+  },
+  "C1:brutto": {
+    "en": "gross; before deductions",
+    "nl": "bruto"
+  },
+  "C1:bräune": {
+    "en": "tan; brown colour",
+    "nl": "bruine huidskleur; bruining"
+  },
+  "C1:buchse": {
+    "en": "bushing; socket",
+    "nl": "bus; aansluitbus"
+  },
+  "C1:buckel": {
+    "en": "hump",
+    "nl": "bochel; bult"
+  },
+  "C1:bukett": {
+    "en": "bouquet of flowers; bouquet of wine",
+    "nl": "boeket; wijnaroma"
+  },
+  "C1:bummel": {
+    "en": "leisurely stroll",
+    "nl": "wandelingetje; rondslenteren"
+  },
+  "C1:bushel": {
+    "en": "bushel; dry measure",
+    "nl": "bushel; graanmaat"
+  },
+  "C1:bürgen": {
+    "en": "guarantee; stand surety for",
+    "nl": "borg staan; instaan voor"
+  },
+  "C1:dekret": {
+    "en": "decree",
+    "nl": "decreet"
+  },
+  "C1:demenz": {
+    "en": "dementia",
+    "nl": "dementie"
+  },
+  "C1:devise": {
+    "en": "motto; guiding principle",
+    "nl": "devies; leus"
+  },
+  "C1:diktat": {
+    "en": "dictation; imposed order",
+    "nl": "dictee; dictaat"
+  },
+  "C1:double": {
+    "en": "body double; lookalike",
+    "nl": "dubbelganger; stand-in"
+  },
+  "C1:duplik": {
+    "en": "rejoinder by a defendant",
+    "nl": "dupliek; antwoord van de verweerder op de repliek"
+  },
+  "C1:ehrung": {
+    "en": "tribute; honouring someone",
+    "nl": "huldiging; eerbetoon"
+  },
+  "C1:eisern": {
+    "en": "firmly; with unbending resolve",
+    "nl": "ijzeren vastberaden; onwrikbaar"
+  },
+  "C1:eiweiss": {
+    "en": "protein; egg white",
+    "nl": "eiwit"
+  },
+  "C1:embryo": {
+    "en": "embryo",
+    "nl": "embryo"
+  },
+  "C1:empore": {
+    "en": "gallery; raised indoor balcony",
+    "nl": "galerij; verhoogd binnenbalkon"
+  },
+  "C1:erlass": {
+    "en": "decree; remission of debt or punishment",
+    "nl": "besluit; kwijtschelding"
+  },
+  "C1:esprit": {
+    "en": "wit; lively intelligence",
+    "nl": "esprit; geestigheid"
+  },
+  "C1:etwaig": {
+    "en": "possible; potential",
+    "nl": "eventueel; mogelijk"
+  },
+  "C1:exkurs": {
+    "en": "digression",
+    "nl": "uitweiding"
+  },
+  "C1:fiasko": {
+    "en": "fiasco; complete failure",
+    "nl": "fiasco"
+  },
+  "C1:fieren": {
+    "en": "slacken a rope; lower using a rope",
+    "nl": "vieren; een touw laten schieten"
+  },
+  "C1:flachs": {
+    "en": "flax",
+    "nl": "vlas"
+  },
+  "C1:flaute": {
+    "en": "slump; lull in the wind",
+    "nl": "flauwte; windstilte"
+  },
+  "C1:fluten": {
+    "en": "flooding; flowing in",
+    "nl": "overstromen; onder water zetten"
+  },
+  "C1:folter": {
+    "en": "torture",
+    "nl": "marteling; foltering"
+  },
+  "C1:fracht": {
+    "en": "freight; cargo; freight charge",
+    "nl": "vracht; vrachtprijs"
+  },
+  "C1:fräsen": {
+    "en": "milling; machining with a milling cutter",
+    "nl": "frezen"
+  },
+  "C1:funken": {
+    "en": "spark; sparks",
+    "nl": "vonk; vonken"
+  },
+  "C1:fächer": {
+    "en": "hand fan; compartments",
+    "nl": "waaier; vakken"
+  },
+  "C1:fährte": {
+    "en": "animal track; scent trail",
+    "nl": "spoor van een dier; geurspoor"
+  },
+  "C1:färben": {
+    "en": "dyeing; colouring",
+    "nl": "verven; kleuren"
+  },
+  "C1:fünfer": {
+    "en": "a five; something worth five",
+    "nl": "vijf; iets ter waarde van vijf"
+  },
+  "C1:galgen": {
+    "en": "gallows",
+    "nl": "galg"
+  },
+  "C1:galopp": {
+    "en": "gallop",
+    "nl": "galop"
+  },
+  "C1:garant": {
+    "en": "guarantor",
+    "nl": "garant; waarborg"
+  },
+  "C1:gebiss": {
+    "en": "set of teeth; dentures",
+    "nl": "gebit; kunstgebit"
+  },
+  "C1:gedöns": {
+    "en": "clutter; unnecessary fuss",
+    "nl": "rommel; gedoe"
+  },
+  "C1:gefäss": {
+    "en": "container; blood vessel (Swiss spelling)",
+    "nl": "vat; bloedvat (Zwitserse spelling)"
+  },
+  "C1:geheiss": {
+    "en": "command; bidding",
+    "nl": "bevel"
+  },
+  "C1:gelenk": {
+    "en": "joint; articulation",
+    "nl": "gewricht"
+  },
+  "C1:geläut": {
+    "en": "ringing of bells",
+    "nl": "klokkengelui"
+  },
+  "C1:gelüst": {
+    "en": "craving; strong desire",
+    "nl": "begeerte; sterke trek"
+  },
+  "C1:genüge": {
+    "en": "sufficiency; satisfaction of a requirement",
+    "nl": "toereikendheid; voldoening aan een eis"
+  },
+  "C1:gerüst": {
+    "en": "scaffolding; supporting framework",
+    "nl": "steiger; geraamte"
+  },
+  "C1:gespür": {
+    "en": "instinct; intuitive sense",
+    "nl": "aanvoelingsvermogen; intuïtie"
+  },
+  "C1:gesuch": {
+    "en": "formal application; petition",
+    "nl": "verzoekschrift; aanvraag"
+  },
+  "C1:getöse": {
+    "en": "din; loud noise",
+    "nl": "gedruis; lawaai"
+  },
+  "C1:gewirr": {
+    "en": "tangle; confusion",
+    "nl": "warboel; wirwar"
+  },
+  "C1:gewähr": {
+    "en": "guarantee; assurance",
+    "nl": "waarborg; garantie"
+  },
+  "C1:gewühl": {
+    "en": "bustle; jostling crowd",
+    "nl": "gewoel; gedrang"
+  },
+  "C1:gigant": {
+    "en": "giant",
+    "nl": "gigant; reus"
+  },
+  "C1:gimpel": {
+    "en": "bullfinch; gullible person",
+    "nl": "goudvink; goedgelovige sukkel"
+  },
+  "C1:glasur": {
+    "en": "glaze; icing",
+    "nl": "glazuur"
+  },
+  "C1:glatze": {
+    "en": "bald head",
+    "nl": "kale schedel; kaal hoofd"
+  },
+  "C1:glotze": {
+    "en": "telly; television set",
+    "nl": "kijkkast; televisie"
+  },
+  "C1:glycin": {
+    "en": "glycine; an amino acid",
+    "nl": "glycine; aminozuur"
+  },
+  "C1:glühen": {
+    "en": "glowing; incandescence",
+    "nl": "gloeien; gloeiing"
+  },
+  "C1:halber": {
+    "en": "for the sake of; on account of",
+    "nl": "ter wille van; vanwege"
+  },
+  "C1:hebung": {
+    "en": "raising; uplift",
+    "nl": "heffing; verhoging"
+  },
+  "C1:heikel": {
+    "en": "delicate; sensitive",
+    "nl": "hachelijk; delicaat"
+  },
+  "C1:hemmen": {
+    "en": "hinder; inhibit",
+    "nl": "belemmeren; remmen"
+  },
+  "C1:henkel": {
+    "en": "handle of a container",
+    "nl": "oor; handvat van een beker of pan"
+  },
+  "C1:hinken": {
+    "en": "limping",
+    "nl": "hinken; mank lopen"
+  },
+  "C1:hissen": {
+    "en": "hoist a flag or sail",
+    "nl": "hijsen"
+  },
+  "C1:humpen": {
+    "en": "tankard",
+    "nl": "grote drinkbeker; bierpul"
+  },
+  "C1:infekt": {
+    "en": "infection",
+    "nl": "infectie"
+  },
+  "C1:ingwer": {
+    "en": "ginger",
+    "nl": "gember"
+  },
+  "C1:irrweg": {
+    "en": "wrong path; misguided course",
+    "nl": "dwaalweg; verkeerde weg"
+  },
+  "C1:isotop": {
+    "en": "isotope",
+    "nl": "isotoop"
+  },
+  "C1:kalkül": {
+    "en": "calculation; considered strategy",
+    "nl": "berekening; doordachte afweging"
+  },
+  "C1:karree": {
+    "en": "square; square formation; rack of meat",
+    "nl": "vierkant; carré; ribstuk"
+  },
+  "C1:kessel": {
+    "en": "cauldron; boiler",
+    "nl": "ketel"
+  },
+  "C1:klecks": {
+    "en": "blot; small blob",
+    "nl": "klodder; vlekje"
+  },
+  "C1:klerus": {
+    "en": "clergy",
+    "nl": "geestelijkheid; clerus"
+  },
+  "C1:klette": {
+    "en": "burdock; person who clings to others",
+    "nl": "klis; aankleverig persoon"
+  },
+  "C1:kolben": {
+    "en": "piston",
+    "nl": "zuiger"
+  },
+  "C1:konkav": {
+    "en": "concave",
+    "nl": "concaaf; hol"
+  },
+  "C1:kontur": {
+    "en": "outline; contour",
+    "nl": "contour; omtrek"
+  },
+  "C1:konvoi": {
+    "en": "convoy",
+    "nl": "konvooi"
+  },
+  "C1:korken": {
+    "en": "cork stopper",
+    "nl": "kurk"
+  },
+  "C1:korsar": {
+    "en": "corsair; pirate",
+    "nl": "kaper; zeerover"
+  },
+  "C1:krampf": {
+    "en": "cramp; spasm",
+    "nl": "kramp"
+  },
+  "C1:krüsch": {
+    "en": "fussy about food (regional)",
+    "nl": "kieskeurig met eten (regionaal)"
+  },
+  "C1:kulanz": {
+    "en": "commercial goodwill; discretionary concession",
+    "nl": "coulance"
+  },
+  "C1:kurios": {
+    "en": "curiously; oddly",
+    "nl": "opmerkelijk vreemd; merkwaardig"
+  },
+  "C1:kümmel": {
+    "en": "caraway",
+    "nl": "karwij"
+  },
+  "C1:labern": {
+    "en": "babble; talk rubbish",
+    "nl": "kletsen; zwammen"
+  },
+  "C1:lacher": {
+    "en": "laugh; something that raises a laugh",
+    "nl": "lach; lachwekkend voorval"
+  },
+  "C1:launig": {
+    "en": "jocular; humorous",
+    "nl": "luimig; grappig"
+  },
+  "C1:lawine": {
+    "en": "avalanche",
+    "nl": "lawine"
+  },
+  "C1:lenker": {
+    "en": "handlebar; steering control; leader",
+    "nl": "stuur; leider"
+  },
+  "C1:livree": {
+    "en": "livery; servant's uniform",
+    "nl": "livrei"
+  },
+  "C1:lochen": {
+    "en": "hole punching; perforation",
+    "nl": "perforeren; gaatjes maken"
+  },
+  "C1:lotion": {
+    "en": "lotion",
+    "nl": "lotion"
+  },
+  "C1:lupfer": {
+    "en": "lob; lofted ball",
+    "nl": "bogbal; lob"
+  },
+  "C1:mahnen": {
+    "en": "admonish; remind someone to pay",
+    "nl": "vermanen; aan betaling herinneren"
+  },
+  "C1:mandel": {
+    "en": "almond; tonsil",
+    "nl": "amandel; keelamandel"
+  },
+  "C1:marmor": {
+    "en": "marble",
+    "nl": "marmer"
+  },
+  "C1:matrix": {
+    "en": "matrix",
+    "nl": "matrix"
+  },
+  "C1:maurer": {
+    "en": "bricklayer",
+    "nl": "metselaar"
+  },
+  "C1:mauser": {
+    "en": "moulting",
+    "nl": "rui"
+  },
+  "C1:milieu": {
+    "en": "social environment; milieu",
+    "nl": "milieu; sociale omgeving"
+  },
+  "C1:murren": {
+    "en": "grumble",
+    "nl": "morren"
+  },
+  "C1:mörser": {
+    "en": "mortar for grinding; mortar weapon",
+    "nl": "vijzel; mortier"
+  },
+  "C1:mörtel": {
+    "en": "mortar for building",
+    "nl": "mortel; metselspecie"
+  },
+  "C1:neiden": {
+    "en": "envy someone something",
+    "nl": "iemand iets benijden"
+  },
+  "C1:neigen": {
+    "en": "tilting; inclination",
+    "nl": "kanteling; neiging"
+  },
+  "C1:nenner": {
+    "en": "denominator",
+    "nl": "noemer"
+  },
+  "C1:nieser": {
+    "en": "sneeze",
+    "nl": "nies"
+  },
+  "C1:obligo": {
+    "en": "financial liability; obligation",
+    "nl": "financiële verplichting; aansprakelijkheid"
+  },
+  "C1:okular": {
+    "en": "eyepiece",
+    "nl": "oculair"
+  },
+  "C1:orient": {
+    "en": "the Orient; the East",
+    "nl": "de Oriënt; het Oosten"
+  },
+  "C1:osmose": {
+    "en": "osmosis",
+    "nl": "osmose"
+  },
+  "C1:paffen": {
+    "en": "puff on a cigarette or pipe",
+    "nl": "paffen; korte rooktrekken nemen"
+  },
+  "C1:patent": {
+    "en": "patent",
+    "nl": "octrooi; patent"
+  },
+  "C1:pathos": {
+    "en": "pathos; lofty emotional rhetoric",
+    "nl": "pathos; verheven gevoelsuitdrukking"
+  },
+  "C1:pendel": {
+    "en": "pendulum",
+    "nl": "slinger; pendel"
+  },
+  "C1:pensum": {
+    "en": "set amount of work; quota",
+    "nl": "pensum; werktaak"
+  },
+  "C1:phobie": {
+    "en": "phobia",
+    "nl": "fobie"
+  },
+  "C1:pirsch": {
+    "en": "stalking game",
+    "nl": "besluiping van wild; jacht door besluiping"
+  },
+  "C1:plazet": {
+    "en": "official approval",
+    "nl": "officiële toestemming; fiat"
+  },
+  "C1:pomade": {
+    "en": "pomade; hair dressing",
+    "nl": "pommade; haarvet"
+  },
+  "C1:porree": {
+    "en": "leek",
+    "nl": "prei"
+  },
+  "C1:potenz": {
+    "en": "power; exponent; sexual potency",
+    "nl": "macht; exponent; seksuele potentie"
+  },
+  "C1:prisma": {
+    "en": "prism",
+    "nl": "prisma"
+  },
+  "C1:publik": {
+    "en": "public; publicly known",
+    "nl": "openbaar; algemeen bekend"
+  },
+  "C1:pudern": {
+    "en": "apply cosmetic powder",
+    "nl": "poederen; gezichtspoeder aanbrengen"
+  },
+  "C1:pulver": {
+    "en": "powder",
+    "nl": "poeder"
+  },
+  "C1:radius": {
+    "en": "radius; surrounding area",
+    "nl": "straal; omgeving"
+  },
+  "C1:ranken": {
+    "en": "climb and twine; become entwined",
+    "nl": "ranken; zich ergens omheen slingeren"
+  },
+  "C1:rausch": {
+    "en": "intoxication; euphoria",
+    "nl": "roes"
+  },
+  "C1:reggae": {
+    "en": "reggae music",
+    "nl": "reggae"
+  },
+  "C1:regler": {
+    "en": "regulator; control",
+    "nl": "regelaar"
+  },
+  "C1:regner": {
+    "en": "sprinkler",
+    "nl": "sproeier"
+  },
+  "C1:reigen": {
+    "en": "round dance; succession",
+    "nl": "rei; rondedans; reeks"
+  },
+  "C1:relais": {
+    "en": "electrical relay",
+    "nl": "relais"
+  },
+  "C1:relikt": {
+    "en": "relic; surviving remnant",
+    "nl": "overblijfsel; relict"
+  },
+  "C1:replik": {
+    "en": "reply; replica",
+    "nl": "repliek; replica"
+  },
+  "C1:riegel": {
+    "en": "bolt; small bar",
+    "nl": "grendel; reep"
+  },
+  "C1:ringen": {
+    "en": "wrestling; struggle",
+    "nl": "worstelen; strijd"
+  },
+  "C1:rubrik": {
+    "en": "section; column; category",
+    "nl": "rubriek"
+  },
+  "C1:schema": {
+    "en": "scheme; organisational pattern",
+    "nl": "schema"
+  },
+  "C1:schubs": {
+    "en": "shove",
+    "nl": "duw"
+  },
+  "C1:segeln": {
+    "en": "sail",
+    "nl": "zeilen"
+  },
+  "C1:serail": {
+    "en": "seraglio; sultan's palace or harem",
+    "nl": "serail; paleis of harem van een sultan"
+  },
+  "C1:sopran": {
+    "en": "soprano voice",
+    "nl": "sopraan"
+  },
+  "C1:sozius": {
+    "en": "pillion passenger",
+    "nl": "duopassagier op een motorfiets"
+  },
+  "C1:spagat": {
+    "en": "the splits; balancing conflicting demands",
+    "nl": "spagaat"
+  },
+  "C1:spalte": {
+    "en": "column of text; fissure",
+    "nl": "kolom; spleet"
+  },
+  "C1:sperre": {
+    "en": "barrier; ban",
+    "nl": "versperring; verbod"
+  },
+  "C1:spread": {
+    "en": "bid-ask spread; price difference",
+    "nl": "verschil tussen bied- en laatprijs"
+  },
+  "C1:spross": {
+    "en": "shoot; sprout; offspring",
+    "nl": "scheut; telg"
+  },
+  "C1:statik": {
+    "en": "statics; structural equilibrium",
+    "nl": "statica; constructieleer van krachten in evenwicht"
+  },
+  "C1:statur": {
+    "en": "stature; build",
+    "nl": "gestalte; lichaamsbouw"
+  },
+  "C1:stropp": {
+    "en": "short lashing rope; rope sling",
+    "nl": "strop; korte sjorlijn"
+  },
+  "C1:stätte": {
+    "en": "site; place",
+    "nl": "plaats; locatie"
+  },
+  "C1:stütze": {
+    "en": "support; prop",
+    "nl": "steun; stut"
+  },
+  "C1:surren": {
+    "en": "buzzing; whirring",
+    "nl": "gezoem"
+  },
+  "C1:sünder": {
+    "en": "sinner",
+    "nl": "zondaar"
+  },
+  "C1:taille": {
+    "en": "waist",
+    "nl": "taille"
+  },
+  "C1:tamtam": {
+    "en": "fuss; ostentatious display",
+    "nl": "tamtam; veel ophef"
+  },
+  "C1:tasten": {
+    "en": "feel; grope",
+    "nl": "tasten; betasten"
+  },
+  "C1:teiler": {
+    "en": "divisor; divider",
+    "nl": "deler"
+  },
+  "C1:terror": {
+    "en": "terror; intimidation",
+    "nl": "terreur"
+  },
+  "C1:tipser": {
+    "en": "tipster; person providing inside information",
+    "nl": "tipgever"
+  },
+  "C1:tonart": {
+    "en": "musical key",
+    "nl": "toonsoort"
+  },
+  "C1:trafik": {
+    "en": "tobacconist's kiosk (Austrian)",
+    "nl": "tabakswinkel (Oostenrijks)"
+  },
+  "C1:trance": {
+    "en": "trance",
+    "nl": "trance"
+  },
+  "C1:tratte": {
+    "en": "draft; bill of exchange",
+    "nl": "getrokken wissel; wisselbrief"
+  },
+  "C1:triage": {
+    "en": "triage; prioritising patients by urgency",
+    "nl": "triage; medische urgentieselectie"
+  },
+  "C1:tribut": {
+    "en": "tribute; payment of submission",
+    "nl": "tribuut; schatting; eerbetoon"
+  },
+  "C1:trosse": {
+    "en": "hawser; thick mooring rope",
+    "nl": "tros; dikke scheepskabel"
+  },
+  "C1:trubel": {
+    "en": "hustle and bustle",
+    "nl": "drukte; rumoer"
+  },
+  "C1:tupfer": {
+    "en": "swab; small pad",
+    "nl": "depper; wattenstaafje"
+  },
+  "C1:tötung": {
+    "en": "killing",
+    "nl": "doding"
+  },
+  "C1:umlauf": {
+    "en": "circulation; revolution; round",
+    "nl": "omloop; circulatie"
+  },
+  "C1:uneins": {
+    "en": "in disagreement; divided",
+    "nl": "oneens; verdeeld"
+  },
+  "C1:uterus": {
+    "en": "uterus",
+    "nl": "baarmoeder"
+  },
+  "C1:vektor": {
+    "en": "mathematical vector",
+    "nl": "vector"
+  },
+  "C1:ventil": {
+    "en": "valve",
+    "nl": "ventiel; klep"
+  },
+  "C1:verzug": {
+    "en": "delay; default; warping",
+    "nl": "vertraging; verzuim; kromtrekking"
+  },
+  "C1:vesper": {
+    "en": "vespers; light meal (regional)",
+    "nl": "vespers; lichte maaltijd (regionaal)"
+  },
+  "C1:vorbau": {
+    "en": "front extension of a building",
+    "nl": "voorbouw; vooruitspringend bouwdeel"
+  },
+  "C1:vorzug": {
+    "en": "advantage; preference",
+    "nl": "voordeel; voorkeur"
+  },
+  "C1:whisky": {
+    "en": "whisky",
+    "nl": "whisky"
+  },
+  "C1:wimper": {
+    "en": "eyelash",
+    "nl": "wimper"
+  },
+  "C1:winden": {
+    "en": "twist; wind; wring",
+    "nl": "winden; draaien; uitwringen"
+  },
+  "C1:zapfen": {
+    "en": "peg; stopper; cone",
+    "nl": "tap; stop; dennenappel"
+  },
+  "C1:zappen": {
+    "en": "zap between television channels",
+    "nl": "zappen"
+  },
+  "C1:zeitig": {
+    "en": "early; in good time",
+    "nl": "vroeg; tijdig"
+  },
+  "C1:zensur": {
+    "en": "censorship",
+    "nl": "censuur"
+  },
+  "C1:zepter": {
+    "en": "sceptre",
+    "nl": "scepter"
+  },
+  "C1:ziegel": {
+    "en": "brick; roof tile",
+    "nl": "baksteen; dakpan"
+  },
+  "C1:ziffer": {
+    "en": "digit; numeral",
+    "nl": "cijfer"
+  },
+  "C1:zoomen": {
+    "en": "zoom in or out",
+    "nl": "in- of uitzoomen"
+  },
+  "C1:zunder": {
+    "en": "tinder",
+    "nl": "tondel"
+  },
+  "C1:zusatz": {
+    "en": "addition; supplement",
+    "nl": "toevoeging; aanvulling"
+  },
+  "C1:zyanid": {
+    "en": "cyanide",
+    "nl": "cyanide"
+  },
+  "C1:ölbild": {
+    "en": "oil painting",
+    "nl": "olieverfschilderij"
+  },
+  "C1:abbitte": {
+    "en": "apology; request for forgiveness",
+    "nl": "verontschuldiging; verzoek om vergiffenis"
+  },
+  "C1:abdruck": {
+    "en": "imprint; impression; published reprint",
+    "nl": "afdruk; herdruk"
+  },
+  "C1:abfrage": {
+    "en": "query; request for data",
+    "nl": "opvraging; gegevensquery"
+  },
+  "C1:abkauen": {
+    "en": "chew off",
+    "nl": "afkauwen"
+  },
+  "C1:abnahme": {
+    "en": "decrease; formal acceptance inspection",
+    "nl": "afname; opleveringskeuring"
+  },
+  "C1:abreise": {
+    "en": "departure",
+    "nl": "vertrek; afreis"
+  },
+  "C1:abrufen": {
+    "en": "retrieval; calling up information",
+    "nl": "ophalen; opvragen"
+  },
+  "C1:abscheu": {
+    "en": "disgust; loathing",
+    "nl": "afschuw"
+  },
+  "C1:abseits": {
+    "en": "offside; remote position",
+    "nl": "buitenspel; afgelegen plek"
+  },
+  "C1:abstieg": {
+    "en": "descent; decline; relegation",
+    "nl": "afdaling; neergang; degradatie"
+  },
+  "C1:abwegig": {
+    "en": "absurdly; implausibly",
+    "nl": "op ongerijmde wijze; onterecht"
+  },
+  "C1:abwägen": {
+    "en": "weighing up alternatives",
+    "nl": "afweging"
+  },
+  "C1:achtlos": {
+    "en": "careless; inattentive",
+    "nl": "achteloos"
+  },
+  "C1:adelige": {
+    "en": "noblewoman",
+    "nl": "adellijke vrouw"
+  },
+  "C1:affront": {
+    "en": "affront; insult",
+    "nl": "affront; belediging"
+  },
+  "C1:akronym": {
+    "en": "acronym",
+    "nl": "acroniem"
+  },
+  "C1:anbruch": {
+    "en": "onset; dawn; initial crack",
+    "nl": "begin; aanbreken; eerste barst"
+  },
+  "C1:andrang": {
+    "en": "rush; large influx of people",
+    "nl": "toeloop; grote drukte"
+  },
+  "C1:anfahrt": {
+    "en": "journey to a destination; approach route",
+    "nl": "heenreis; aanrijroute"
+  },
+  "C1:anheben": {
+    "en": "lift; raise",
+    "nl": "optillen; verhogen"
+  },
+  "C1:anklang": {
+    "en": "favourable reception; approval",
+    "nl": "bijval; weerklank"
+  },
+  "C1:anleihe": {
+    "en": "bond; bond loan",
+    "nl": "obligatie; obligatielening"
+  },
+  "C1:anraten": {
+    "en": "advice; recommendation",
+    "nl": "advies; aanbeveling"
+  },
+  "C1:anrecht": {
+    "en": "entitlement",
+    "nl": "aanspraak; recht op iets"
+  },
+  "C1:ansagen": {
+    "en": "announce; declare; specify beforehand",
+    "nl": "aankondigen; van tevoren aangeven"
+  },
+  "C1:ansturm": {
+    "en": "onslaught; rush of people",
+    "nl": "stormloop; bestorming"
+  },
+  "C1:antenne": {
+    "en": "antenna",
+    "nl": "antenne"
+  },
+  "C1:antritt": {
+    "en": "taking office; starting service; initial acceleration",
+    "nl": "ambtsaanvaarding; aantreden; aanzet"
+  },
+  "C1:apertur": {
+    "en": "aperture",
+    "nl": "apertuur; lensopening"
+  },
+  "C1:aphasie": {
+    "en": "aphasia; language impairment",
+    "nl": "afasie; taalstoornis"
+  },
+  "C1:arterie": {
+    "en": "artery",
+    "nl": "slagader"
+  },
+  "C1:asphalt": {
+    "en": "asphalt",
+    "nl": "asfalt"
+  },
+  "C1:aufguss": {
+    "en": "infusion; steeping in water",
+    "nl": "aftreksel; opgieting"
+  },
+  "C1:aufriss": {
+    "en": "elevation drawing; detailed outline",
+    "nl": "aanzichttekening; opzet"
+  },
+  "C1:auktion": {
+    "en": "auction",
+    "nl": "veiling"
+  },
+  "C1:ausfall": {
+    "en": "failure; outage; loss",
+    "nl": "uitval; storing; verlies"
+  },
+  "C1:auslauf": {
+    "en": "outflow; gradual ending; space for movement",
+    "nl": "uitloop; afloop; bewegingsruimte"
+  },
+  "C1:aussäen": {
+    "en": "sow seeds",
+    "nl": "zaaien"
+  },
+  "C1:auswurf": {
+    "en": "ejection; sputum",
+    "nl": "uitwerping; opgehoest slijm"
+  },
+  "C1:ballast": {
+    "en": "ballast; unnecessary burden",
+    "nl": "ballast"
+  },
+  "C1:baumeln": {
+    "en": "dangle",
+    "nl": "bungelen"
+  },
+  "C1:beichte": {
+    "en": "confession of sins",
+    "nl": "biecht"
+  },
+  "C1:beisein": {
+    "en": "presence",
+    "nl": "aanwezigheid; bijzijn"
+  },
+  "C1:beleben": {
+    "en": "enliven; revive",
+    "nl": "verlevendigen; doen opleven"
+  },
+  "C1:bergbau": {
+    "en": "mining",
+    "nl": "mijnbouw"
+  },
+  "C1:bergung": {
+    "en": "rescue; salvage; recovery",
+    "nl": "berging"
+  },
+  "C1:besteck": {
+    "en": "cutlery",
+    "nl": "bestek"
+  },
+  "C1:betucht": {
+    "en": "well-off; affluent",
+    "nl": "welgesteld; vermogend"
+  },
+  "C1:bibbern": {
+    "en": "shivering; trembling",
+    "nl": "bibberen"
+  },
+  "C1:bindend": {
+    "en": "binding",
+    "nl": "bindend"
+  },
+  "C1:biopsie": {
+    "en": "biopsy",
+    "nl": "biopsie"
+  },
+  "C1:blutbad": {
+    "en": "bloodbath",
+    "nl": "bloedbad"
+  },
+  "C1:bosheit": {
+    "en": "malice",
+    "nl": "boosaardigheid; kwaadwilligheid"
+  },
+  "C1:bourbon": {
+    "en": "bourbon whiskey",
+    "nl": "bourbonwhisky"
+  },
+  "C1:brausen": {
+    "en": "roaring; rushing of water or air",
+    "nl": "gebruis; geraas"
+  },
+  "C1:brenner": {
+    "en": "burner",
+    "nl": "brander"
+  },
+  "C1:bresche": {
+    "en": "breach; gap in defences",
+    "nl": "bres"
+  },
+  "C1:brisanz": {
+    "en": "explosiveness; political sensitivity",
+    "nl": "explosiviteit; gevoeligheid van een kwestie"
+  },
+  "C1:brosche": {
+    "en": "brooch",
+    "nl": "broche"
+  },
+  "C1:buchung": {
+    "en": "booking; accounting entry",
+    "nl": "boeking; reservering"
+  },
+  "C1:buckeln": {
+    "en": "hunch one's back; grovel",
+    "nl": "de rug krommen; kruipen voor iemand"
+  },
+  "C1:buhmann": {
+    "en": "scapegoat; person blamed for everything",
+    "nl": "boeman; zondebok"
+  },
+  "C1:bussgeld": {
+    "en": "fine; monetary penalty",
+    "nl": "boete"
+  },
+  "C1:bürette": {
+    "en": "burette",
+    "nl": "buret"
+  },
+  "C1:cluster": {
+    "en": "cluster; linked group",
+    "nl": "cluster"
+  },
+  "C1:couleur": {
+    "en": "colour; affiliation or character",
+    "nl": "kleur; gezindte"
+  },
+  "C1:definit": {
+    "en": "definite; grammatically definite",
+    "nl": "definiet; bepaald"
+  },
+  "C1:dehnung": {
+    "en": "stretching; elongation",
+    "nl": "rekking; uitrekking"
+  },
+  "C1:dementi": {
+    "en": "official denial",
+    "nl": "dementi; officiële ontkenning"
+  },
+  "C1:dilemma": {
+    "en": "dilemma",
+    "nl": "dilemma"
+  },
+  "C1:diskurs": {
+    "en": "discourse; structured intellectual debate",
+    "nl": "discours; gedachtewisseling"
+  },
+  "C1:display": {
+    "en": "display screen",
+    "nl": "display; beeldscherm"
+  },
+  "C1:dormanz": {
+    "en": "dormancy",
+    "nl": "kiemrust; sluimertoestand"
+  },
+  "C1:dossier": {
+    "en": "dossier; file of documents",
+    "nl": "dossier"
+  },
+  "C1:drahtig": {
+    "en": "wiry; lean and muscular",
+    "nl": "pezig; draadachtig"
+  },
+  "C1:drehbar": {
+    "en": "rotatable; capable of rotating",
+    "nl": "draaibaar"
+  },
+  "C1:dreifuss": {
+    "en": "tripod",
+    "nl": "driepoot"
+  },
+  "C1:dyspnoe": {
+    "en": "dyspnoea; shortness of breath",
+    "nl": "dyspneu; benauwdheid"
+  },
+  "C1:dünsten": {
+    "en": "stew gently; cook with a little liquid",
+    "nl": "smoren; zachtjes stoven"
+  },
+  "C1:eckball": {
+    "en": "corner kick",
+    "nl": "hoekschop"
+  },
+  "C1:ehelich": {
+    "en": "marital; within marriage",
+    "nl": "echtelijk; binnen het huwelijk"
+  },
+  "C1:einband": {
+    "en": "book cover; binding",
+    "nl": "boekband; omslag"
+  },
+  "C1:einlauf": {
+    "en": "entry; finish; enema",
+    "nl": "binnenkomst; aankomst bij de finish; klysma"
+  },
+  "C1:einrede": {
+    "en": "legal defence; objection",
+    "nl": "exceptie; juridisch verweer"
+  },
+  "C1:eintopf": {
+    "en": "one-pot stew",
+    "nl": "eenpansgerecht"
+  },
+  "C1:einzahl": {
+    "en": "singular; singular number",
+    "nl": "enkelvoud"
+  },
+  "C1:elision": {
+    "en": "elision; omission of a speech sound",
+    "nl": "elisie; weglating van een klank"
+  },
+  "C1:embargo": {
+    "en": "trade embargo",
+    "nl": "embargo; handelsverbod"
+  },
+  "C1:embolie": {
+    "en": "embolism",
+    "nl": "embolie"
+  },
+  "C1:eminenz": {
+    "en": "Eminence; eminent figure",
+    "nl": "eminentie; vooraanstaand persoon"
+  },
+  "C1:endmast": {
+    "en": "final fattening phase",
+    "nl": "afmestfase; laatste mestperiode"
+  },
+  "C1:entchen": {
+    "en": "little duck; duckling",
+    "nl": "eendje"
+  },
+  "C1:erbeben": {
+    "en": "tremble; quake",
+    "nl": "beven; trillen"
+  },
+  "C1:erbgang": {
+    "en": "mode of inheritance",
+    "nl": "overervingspatroon"
+  },
+  "C1:estrich": {
+    "en": "floor screed",
+    "nl": "dekvloer"
+  },
+  "C1:ethanol": {
+    "en": "ethanol",
+    "nl": "ethanol"
+  },
+  "C1:farblos": {
+    "en": "colourlessly; without personality",
+    "nl": "kleurloos; zonder uitstraling"
+  },
+  "C1:fauxpas": {
+    "en": "social blunder; faux pas",
+    "nl": "faux pas; sociale blunder"
+  },
+  "C1:favorit": {
+    "en": "favourite; leading contender",
+    "nl": "favoriet"
+  },
+  "C1:fechten": {
+    "en": "fencing",
+    "nl": "schermen"
+  },
+  "C1:feldzug": {
+    "en": "military campaign",
+    "nl": "veldtocht"
+  },
+  "C1:finesse": {
+    "en": "finesse; clever stratagem",
+    "nl": "finesse; geraffineerde handigheid"
+  },
+  "C1:flirten": {
+    "en": "flirting",
+    "nl": "flirten"
+  },
+  "C1:fluchen": {
+    "en": "swear; curse",
+    "nl": "vloeken; verwensen"
+  },
+  "C1:fragend": {
+    "en": "questioningly",
+    "nl": "vragend"
+  },
+  "C1:fraktur": {
+    "en": "bone fracture; Fraktur typeface",
+    "nl": "botbreuk; gotisch lettertype"
+  },
+  "C1:frontal": {
+    "en": "head-on; from the front",
+    "nl": "frontaal"
+  },
+  "C1:fussnote": {
+    "en": "footnote",
+    "nl": "voetnoot"
+  },
+  "C1:gateway": {
+    "en": "network gateway",
+    "nl": "gateway; netwerkkoppeling"
+  },
+  "C1:gebinde": {
+    "en": "bundle; bunch; packaged unit",
+    "nl": "bundel; verpakkingseenheid"
+  },
+  "C1:gebläse": {
+    "en": "blower; air fan",
+    "nl": "blaasinstallatie; ventilator"
+  },
+  "C1:gefälle": {
+    "en": "gradient; difference in level",
+    "nl": "helling; niveauverschil"
+  },
+  "C1:gehilfe": {
+    "en": "assistant",
+    "nl": "helper; assistent"
+  },
+  "C1:gehäuse": {
+    "en": "housing; casing",
+    "nl": "behuizing"
+  },
+  "C1:gehörig": {
+    "en": "properly; considerably",
+    "nl": "behoorlijk; flink"
+  },
+  "C1:gelockt": {
+    "en": "curly-haired",
+    "nl": "met gekruld haar"
+  },
+  "C1:gemisch": {
+    "en": "mixture",
+    "nl": "mengsel"
+  },
+  "C1:genesen": {
+    "en": "recover; get well",
+    "nl": "genezen; herstellen"
+  },
+  "C1:genetik": {
+    "en": "genetics",
+    "nl": "genetica"
+  },
+  "C1:gerippe": {
+    "en": "skeleton",
+    "nl": "geraamte; skelet"
+  },
+  "C1:gespann": {
+    "en": "team of draught animals; working partnership",
+    "nl": "span; samenwerkend duo"
+  },
+  "C1:gestein": {
+    "en": "rock; rock material",
+    "nl": "gesteente"
+  },
+  "C1:gewerbe": {
+    "en": "trade; commercial activity",
+    "nl": "ambacht; bedrijfstak"
+  },
+  "C1:gewinde": {
+    "en": "screw thread",
+    "nl": "schroefdraad"
+  },
+  "C1:gewölbe": {
+    "en": "vault; vaulted ceiling",
+    "nl": "gewelf"
+  },
+  "C1:glamour": {
+    "en": "glamour",
+    "nl": "glamour; luxe uitstraling"
+  },
+  "C1:gottlos": {
+    "en": "godlessly; extremely (colloquial)",
+    "nl": "goddeloos; ontzettend (informeel)"
+  },
+  "C1:granate": {
+    "en": "grenade; shell",
+    "nl": "granaat"
+  },
+  "C1:grimmig": {
+    "en": "fierce; grim",
+    "nl": "grimmig; nors"
+  },
+  "C1:grubber": {
+    "en": "cultivator; soil-working machine",
+    "nl": "cultivator; grondbewerkingsmachine"
+  },
+  "C1:gütlich": {
+    "en": "amicably",
+    "nl": "in der minne; gemoedelijk"
+  },
+  "C1:hahnrei": {
+    "en": "cuckold (derogatory)",
+    "nl": "bedrogen echtgenoot; hoorndrager (beledigend)"
+  },
+  "C1:hebezug": {
+    "en": "hoist",
+    "nl": "hijstoestel; takel"
+  },
+  "C1:heillos": {
+    "en": "utterly; hopelessly",
+    "nl": "mateloos; hopeloos"
+  },
+  "C1:hemmung": {
+    "en": "inhibition; psychological restraint",
+    "nl": "remming; geremdheid"
+  },
+  "C1:holzweg": {
+    "en": "wrong track; fruitless course",
+    "nl": "dwaalweg; verkeerd spoor"
+  },
+  "C1:hommage": {
+    "en": "homage; artistic tribute",
+    "nl": "hommage; eerbetoon"
+  },
+  "C1:honorar": {
+    "en": "professional fee",
+    "nl": "honorarium"
+  },
+  "C1:hubwerk": {
+    "en": "lifting mechanism",
+    "nl": "hijswerk; hefmechanisme"
+  },
+  "C1:hydrant": {
+    "en": "fire hydrant",
+    "nl": "brandkraan"
+  },
+  "C1:härtung": {
+    "en": "hardening",
+    "nl": "harding; uitharding"
+  },
+  "C1:inaktiv": {
+    "en": "inactive",
+    "nl": "inactief"
+  },
+  "C1:inferno": {
+    "en": "inferno; huge fire",
+    "nl": "inferno; vuurzee"
+  },
+  "C1:inhaber": {
+    "en": "owner; holder",
+    "nl": "eigenaar; houder"
+  },
+  "C1:inkasso": {
+    "en": "debt collection",
+    "nl": "incasso"
+  },
+  "C1:invasiv": {
+    "en": "invasive",
+    "nl": "invasief"
+  },
+  "C1:jammern": {
+    "en": "complaining; whining",
+    "nl": "gejammer"
+  },
+  "C1:kaliber": {
+    "en": "calibre; bore diameter",
+    "nl": "kaliber"
+  },
+  "C1:kathode": {
+    "en": "cathode",
+    "nl": "kathode"
+  },
+  "C1:keramik": {
+    "en": "ceramics; ceramic material",
+    "nl": "keramiek"
+  },
+  "C1:klatsch": {
+    "en": "gossip",
+    "nl": "roddel; geklets"
+  },
+  "C1:klausel": {
+    "en": "legal clause; contractual provision",
+    "nl": "clausule; contractbepaling"
+  },
+  "C1:klärung": {
+    "en": "clarification; purification",
+    "nl": "opheldering; zuivering"
+  },
+  "C1:knobeln": {
+    "en": "puzzle over; play a dice game",
+    "nl": "puzzelen; een dobbelspel spelen"
+  },
+  "C1:kollaps": {
+    "en": "collapse; fainting",
+    "nl": "ineenstorting; collaps"
+  },
+  "C1:kompass": {
+    "en": "compass",
+    "nl": "kompas"
+  },
+  "C1:konkurs": {
+    "en": "bankruptcy",
+    "nl": "faillissement"
+  },
+  "C1:krüppel": {
+    "en": "cripple (derogatory term for a disabled person)",
+    "nl": "kreupele (beledigende aanduiding voor iemand met een lichamelijke beperking)"
+  },
+  "C1:kündbar": {
+    "en": "terminable; cancellable",
+    "nl": "opzegbaar"
+  },
+  "C1:landgut": {
+    "en": "country estate",
+    "nl": "landgoed"
+  },
+  "C1:lebhaft": {
+    "en": "lively; energetically",
+    "nl": "levendig; energiek"
+  },
+  "C1:leergut": {
+    "en": "returnable empty containers",
+    "nl": "leeggoed"
+  },
+  "C1:leugner": {
+    "en": "denier",
+    "nl": "ontkenner"
+  },
+  "C1:libelle": {
+    "en": "dragonfly; spirit-level vial",
+    "nl": "libel; libel van een waterpas"
+  },
+  "C1:lieblos": {
+    "en": "unloving; careless",
+    "nl": "liefdeloos; zonder zorg"
+  },
+  "C1:litanei": {
+    "en": "litany; monotonous complaint",
+    "nl": "litanie"
+  },
+  "C1:lochung": {
+    "en": "perforation; punched hole",
+    "nl": "perforatie"
+  },
+  "C1:lustlos": {
+    "en": "without enthusiasm; listlessly",
+    "nl": "lusteloos"
+  },
+  "C1:löslich": {
+    "en": "soluble; solvable",
+    "nl": "oplosbaar"
+  },
+  "C1:lüftung": {
+    "en": "ventilation",
+    "nl": "ventilatie"
+  },
+  "C1:manuell": {
+    "en": "manually",
+    "nl": "handmatig"
+  },
+  "C1:massgabe": {
+    "en": "stipulation; specified condition",
+    "nl": "maatstaf; voorwaarde"
+  },
+  "C1:massvoll": {
+    "en": "moderate; restrained",
+    "nl": "gematigd; matig"
+  },
+  "C1:mehltau": {
+    "en": "powdery mildew",
+    "nl": "meeldauw"
+  },
+  "C1:narkose": {
+    "en": "general anaesthesia",
+    "nl": "narcose"
+  },
+  "C1:notlage": {
+    "en": "plight; state of hardship",
+    "nl": "noodtoestand; benarde situatie"
+  },
+  "C1:offerte": {
+    "en": "commercial offer",
+    "nl": "offerte"
+  },
+  "C1:pfeiler": {
+    "en": "pillar; pier",
+    "nl": "pijler; steunpilaar"
+  },
+  "C1:raubbau": {
+    "en": "destructive exploitation of resources",
+    "nl": "roofbouw"
+  },
+  "C1:raubzug": {
+    "en": "plundering raid",
+    "nl": "plundertocht; rooftocht"
+  },
+  "C1:remedur": {
+    "en": "remedy; putting a fault right",
+    "nl": "herstel; verhelping van een gebrek"
+  },
+  "C1:rendite": {
+    "en": "return on investment",
+    "nl": "rendement"
+  },
+  "C1:schlund": {
+    "en": "throat; gullet",
+    "nl": "keel; keelholte"
+  },
+  "C1:schmach": {
+    "en": "disgrace; humiliation",
+    "nl": "smaad; schande"
+  },
+  "C1:senkung": {
+    "en": "reduction; subsidence",
+    "nl": "verlaging; verzakking"
+  },
+  "C1:tranche": {
+    "en": "tranche; instalment",
+    "nl": "tranche; deeluitgifte"
+  },
+  "C1:verfall": {
+    "en": "decay; expiry",
+    "nl": "verval"
+  },
+  "C1:vermerk": {
+    "en": "written note; annotation",
+    "nl": "aantekening; notitie"
+  },
+  "C1:wegfall": {
+    "en": "discontinuation; removal of an entitlement",
+    "nl": "vervallen; wegvallen"
+  },
+  "C1:weisung": {
+    "en": "instruction; directive",
+    "nl": "aanwijzing; instructie"
+  },
+  "C1:abbinden": {
+    "en": "tying off; stopping flow by tying",
+    "nl": "afbinden; afbinden om een stroom te stoppen"
+  },
+  "C1:abfangen": {
+    "en": "interception; catching",
+    "nl": "onderschepping; opvangen"
+  },
+  "C1:abflauen": {
+    "en": "subsiding; dying down",
+    "nl": "afname; wegebben"
+  },
+  "C1:abfohlen": {
+    "en": "foaling; birth of a foal",
+    "nl": "veulenen; geboorte van een veulen"
+  },
+  "C1:abhebung": {
+    "en": "cash withdrawal; lifting; highlighting",
+    "nl": "opname van geld; optilling; accentuering"
+  },
+  "C1:abholung": {
+    "en": "collection; picking someone up",
+    "nl": "afhaling; ophalen"
+  },
+  "C1:ablösung": {
+    "en": "replacement; removal; detachment",
+    "nl": "aflossing; vervanging; loslating"
+  },
+  "C1:abschaum": {
+    "en": "scum; surface froth",
+    "nl": "schuim; uitschot"
+  },
+  "C1:abschlag": {
+    "en": "discount; advance payment; stroke",
+    "nl": "korting; voorschot; afslag"
+  },
+  "C1:abschuss": {
+    "en": "launch; shooting down",
+    "nl": "afschot; neerschieten"
+  },
+  "C1:absehbar": {
+    "en": "foreseeable",
+    "nl": "afzienbaar; voorzienbaar"
+  },
+  "C1:abstrich": {
+    "en": "medical swab; concession on a demand",
+    "nl": "uitstrijkje; vermindering van een eis"
+  },
+  "C1:abwägung": {
+    "en": "weighing up considerations",
+    "nl": "afweging"
+  },
+  "C1:adaption": {
+    "en": "adaptation",
+    "nl": "bewerking; adaptatie"
+  },
+  "C1:adeliger": {
+    "en": "nobleman",
+    "nl": "edelman"
+  },
+  "C1:adoption": {
+    "en": "adoption",
+    "nl": "adoptie"
+  },
+  "C1:ambulanz": {
+    "en": "outpatient clinic; ambulance (regional)",
+    "nl": "polikliniek; ambulance (regionaal)"
+  },
+  "C1:amnestie": {
+    "en": "amnesty",
+    "nl": "amnestie"
+  },
+  "C1:amtszeit": {
+    "en": "term of office",
+    "nl": "ambtstermijn"
+  },
+  "C1:andocken": {
+    "en": "docking",
+    "nl": "aankoppeling; aanmeren"
+  },
+  "C1:anhebung": {
+    "en": "raising; increase",
+    "nl": "verhoging"
+  },
+  "C1:anlasser": {
+    "en": "starter motor",
+    "nl": "startmotor"
+  },
+  "C1:anmarsch": {
+    "en": "approach; advance of troops",
+    "nl": "opmars; nadering"
+  },
+  "C1:anmieter": {
+    "en": "tenant; hirer",
+    "nl": "huurder"
+  },
+  "C1:anmutung": {
+    "en": "impression; appearance",
+    "nl": "indruk; uitstraling"
+  },
+  "C1:anschein": {
+    "en": "appearance; semblance",
+    "nl": "schijn; ogenschijn"
+  },
+  "C1:anschiss": {
+    "en": "severe telling-off (coarse colloquial)",
+    "nl": "uitbrander (plat)"
+  },
+  "C1:ansinnen": {
+    "en": "request; proposal",
+    "nl": "verzoek; verlangen"
+  },
+  "C1:anwärter": {
+    "en": "candidate; trainee awaiting appointment",
+    "nl": "kandidaat; aspirant"
+  },
+  "C1:artefakt": {
+    "en": "artefact; procedure-induced effect",
+    "nl": "artefact; kunstmatig ontstaan verschijnsel"
+  },
+  "C1:aufbruch": {
+    "en": "departure; new beginning",
+    "nl": "vertrek; nieuw begin"
+  },
+  "C1:aufgebot": {
+    "en": "summons; mobilisation of people or resources",
+    "nl": "oproep; inzet van mensen of middelen"
+  },
+  "C1:auflager": {
+    "en": "structural support; bearing point",
+    "nl": "oplegging; steunpunt"
+  },
+  "C1:aufsehen": {
+    "en": "sensation; attention",
+    "nl": "ophef; opschudding"
+  },
+  "C1:augapfel": {
+    "en": "eyeball",
+    "nl": "oogbol"
+  },
+  "C1:augenlid": {
+    "en": "eyelid",
+    "nl": "ooglid"
+  },
+  "C1:ausklang": {
+    "en": "gentle conclusion; fading sound",
+    "nl": "afsluiting; naklank"
+  },
+  "C1:ausreise": {
+    "en": "departure from a country",
+    "nl": "uitreis"
+  },
+  "C1:austritt": {
+    "en": "exit; withdrawal from membership",
+    "nl": "uittreding; uitstroom"
+  },
+  "C1:backteig": {
+    "en": "batter; dough for frying",
+    "nl": "beslag; bakbeslag"
+  },
+  "C1:banknote": {
+    "en": "banknote",
+    "nl": "bankbiljet"
+  },
+  "C1:baukunst": {
+    "en": "architecture as an art",
+    "nl": "bouwkunst"
+  },
+  "C1:beatmung": {
+    "en": "artificial ventilation; assisted breathing",
+    "nl": "beademing"
+  },
+  "C1:befreier": {
+    "en": "liberator",
+    "nl": "bevrijder"
+  },
+  "C1:begehung": {
+    "en": "site inspection; commission of an offence",
+    "nl": "inspectieronde; het plegen van een misdrijf"
+  },
+  "C1:behebung": {
+    "en": "remedying; correcting a fault",
+    "nl": "verhelping; opheffing van een gebrek"
+  },
+  "C1:behälter": {
+    "en": "container",
+    "nl": "bak; houder; container"
+  },
+  "C1:belegung": {
+    "en": "occupancy; registration; substantiation",
+    "nl": "bezetting; inschrijving; onderbouwing"
+  },
+  "C1:beutezug": {
+    "en": "plundering raid",
+    "nl": "rooftocht"
+  },
+  "C1:bohrloch": {
+    "en": "drill hole; borehole",
+    "nl": "boorgat"
+  },
+  "C1:brauerei": {
+    "en": "brewery",
+    "nl": "brouwerij"
+  },
+  "C1:brüstung": {
+    "en": "parapet; low protective barrier",
+    "nl": "borstwering"
+  },
+  "C1:chenille": {
+    "en": "chenille yarn or fabric",
+    "nl": "chenille"
+  },
+  "C1:cocktail": {
+    "en": "cocktail; mixed drink",
+    "nl": "cocktail"
+  },
+  "C1:darlegen": {
+    "en": "explain; set out in detail",
+    "nl": "uiteenzetten; toelichten"
+  },
+  "C1:darmwind": {
+    "en": "intestinal gas",
+    "nl": "darmgas"
+  },
+  "C1:diagramm": {
+    "en": "diagram",
+    "nl": "diagram"
+  },
+  "C1:diastole": {
+    "en": "diastole; relaxation phase of the heart",
+    "nl": "diastole; ontspanningsfase van het hart"
+  },
+  "C1:dichtung": {
+    "en": "poetry; literary creation; seal",
+    "nl": "poëzie; dichtkunst; afdichting"
+  },
+  "C1:division": {
+    "en": "division; military division",
+    "nl": "deling; militaire divisie"
+  },
+  "C1:dominanz": {
+    "en": "dominance",
+    "nl": "dominantie"
+  },
+  "C1:dramatik": {
+    "en": "dramatic intensity; dramatic art",
+    "nl": "dramatiek"
+  },
+  "C1:drehbank": {
+    "en": "lathe",
+    "nl": "draaibank"
+  },
+  "C1:endstück": {
+    "en": "end piece",
+    "nl": "eindstuk"
+  },
+  "C1:ersuchen": {
+    "en": "formal request",
+    "nl": "verzoek; verzoekschrift"
+  },
+  "C1:getreide": {
+    "en": "cereal crops; grain",
+    "nl": "graan"
+  },
+  "C1:hypothek": {
+    "en": "mortgage",
+    "nl": "hypotheek"
+  },
+  "C1:laufbahn": {
+    "en": "career; running track",
+    "nl": "loopbaan; atletiekbaan"
+  },
+  "C1:mannjahr": {
+    "en": "person-year; one person's work for one year",
+    "nl": "mensjaar; arbeidsjaar"
+  },
+  "C1:objektiv": {
+    "en": "lens; objective lens",
+    "nl": "objectief; cameralens"
+  },
+  "C1:postulat": {
+    "en": "postulate",
+    "nl": "postulaat"
+  },
+  "C1:prägnant": {
+    "en": "concise and expressive",
+    "nl": "bondig; kernachtig"
+  },
+  "C1:prämisse": {
+    "en": "premise",
+    "nl": "premisse; uitgangspunt"
+  },
+  "C1:relation": {
+    "en": "relation; ratio",
+    "nl": "verhouding; relatie"
+  },
+  "C1:rückgabe": {
+    "en": "return of an item",
+    "nl": "teruggave"
+  },
+  "C1:spaltung": {
+    "en": "splitting; division",
+    "nl": "splitsing; scheuring"
+  },
+  "C1:verdruss": {
+    "en": "annoyance; vexation",
+    "nl": "ergernis; ongenoegen"
+  },
+  "C1:zuflucht": {
+    "en": "refuge; sanctuary",
+    "nl": "toevlucht; toevluchtsoord"
+  },
+  "C1:zwielaut": {
+    "en": "diphthong",
+    "nl": "tweeklank"
+  },
+  "C1:abdachung": {
+    "en": "roofing; roof slope",
+    "nl": "overkapping; dakhelling"
+  },
+  "C1:abdichten": {
+    "en": "sealing; waterproofing",
+    "nl": "afdichting; dichtmaken"
+  },
+  "C1:abendland": {
+    "en": "the West; Western civilisation",
+    "nl": "het Avondland; de westerse wereld"
+  },
+  "C1:abendmahl": {
+    "en": "Holy Communion; evening meal",
+    "nl": "avondmaal; Heilig Avondmaal"
+  },
+  "C1:abklemmen": {
+    "en": "disconnecting; clamping off",
+    "nl": "afkoppeling; afklemming"
+  },
+  "C1:ableitung": {
+    "en": "derivation; inference; drainage",
+    "nl": "afleiding; gevolgtrekking; afvoer"
+  },
+  "C1:abneigung": {
+    "en": "aversion; dislike",
+    "nl": "afkeer; tegenzin"
+  },
+  "C1:abreibung": {
+    "en": "rubbing; severe telling-off",
+    "nl": "afwrijving; uitbrander"
+  },
+  "C1:abrüstung": {
+    "en": "disarmament",
+    "nl": "ontwapening"
+  },
+  "C1:abschrift": {
+    "en": "written copy; transcript",
+    "nl": "afschrift"
+  },
+  "C1:abschwung": {
+    "en": "economic downturn",
+    "nl": "teruggang; economische neergang"
+  },
+  "C1:absetzung": {
+    "en": "dismissal from office; discontinuation; deduction",
+    "nl": "afzetting; stopzetting; aftrek"
+  },
+  "C1:absprache": {
+    "en": "verbal agreement; coordination",
+    "nl": "afspraak; onderling overleg"
+  },
+  "C1:absteller": {
+    "en": "damper; shut-off device",
+    "nl": "demper; afsluiter"
+  },
+  "C1:abstossung": {
+    "en": "repulsion; transplant rejection",
+    "nl": "afstoting"
+  },
+  "C1:abtastung": {
+    "en": "scanning; signal sampling",
+    "nl": "aftasting; bemonstering van een signaal"
+  },
+  "C1:abtretung": {
+    "en": "assignment of rights; cession",
+    "nl": "overdracht; cessie"
+  },
+  "C1:abverkauf": {
+    "en": "clearance sale; selling off stock",
+    "nl": "uitverkoop; voorraadverkoop"
+  },
+  "C1:affinität": {
+    "en": "affinity; attraction",
+    "nl": "affiniteit; verwantschap"
+  },
+  "C1:andeutung": {
+    "en": "hint; allusion",
+    "nl": "toespeling; aanwijzing"
+  },
+  "C1:anlandung": {
+    "en": "landing ashore; coastal sediment accumulation",
+    "nl": "aanlanding; aanwas van kustsediment"
+  },
+  "C1:anschrift": {
+    "en": "postal address",
+    "nl": "postadres"
+  },
+  "C1:ansteigen": {
+    "en": "rise; increase",
+    "nl": "stijging"
+  },
+  "C1:antarktis": {
+    "en": "Antarctica",
+    "nl": "Antarctica"
+  },
+  "C1:anzetteln": {
+    "en": "instigation; stirring up a conflict",
+    "nl": "aanstichting; het op touw zetten van een conflict"
+  },
+  "C1:arbitrage": {
+    "en": "financial arbitrage",
+    "nl": "arbitrage; benutting van koersverschillen"
+  },
+  "C1:assistenz": {
+    "en": "assistance; supporting staff",
+    "nl": "assistentie; ondersteuning"
+  },
+  "C1:aufblühen": {
+    "en": "blossoming; flourishing",
+    "nl": "opbloei"
+  },
+  "C1:auflaufen": {
+    "en": "running aground; accumulation",
+    "nl": "vastlopen; ophoping"
+  },
+  "C1:aufschrei": {
+    "en": "outcry; sudden loud cry",
+    "nl": "kreet; luide uitroep"
+  },
+  "C1:auftanken": {
+    "en": "refuelling",
+    "nl": "bijtanken"
+  },
+  "C1:augenmerk": {
+    "en": "focused attention",
+    "nl": "aandacht; gerichte aandacht"
+  },
+  "C1:auslaufen": {
+    "en": "departure of a ship; expiry; leaking",
+    "nl": "uitvaren; aflopen; leeglopen"
+  },
+  "C1:ausläufer": {
+    "en": "offshoot; foothill; last effects",
+    "nl": "uitloper; laatste gevolgen"
+  },
+  "C1:ausmerzen": {
+    "en": "eradication; weeding out",
+    "nl": "uitroeiing; verwijdering van ongewenste elementen"
+  },
+  "C1:ausreisser": {
+    "en": "runaway; outlier",
+    "nl": "wegloper; uitschieter"
+  },
+  "C1:aussetzer": {
+    "en": "brief failure; lapse",
+    "nl": "hapering; kortstondige uitval"
+  },
+  "C1:auswerfen": {
+    "en": "ejection; casting out",
+    "nl": "uitwerping; uitstoting"
+  },
+  "C1:auswerfer": {
+    "en": "ejector",
+    "nl": "uitwerper"
+  },
+  "C1:autopilot": {
+    "en": "autopilot",
+    "nl": "automatische piloot"
+  },
+  "C1:bankwesen": {
+    "en": "banking sector",
+    "nl": "bankwezen"
+  },
+  "C1:bannkreis": {
+    "en": "sphere of influence; captivating circle",
+    "nl": "ban; invloedssfeer"
+  },
+  "C1:baumwolle": {
+    "en": "cotton",
+    "nl": "katoen"
+  },
+  "C1:beilegung": {
+    "en": "settlement of a dispute; enclosure",
+    "nl": "bijlegging; bijsluiting"
+  },
+  "C1:bekehrung": {
+    "en": "religious conversion",
+    "nl": "bekering"
+  },
+  "C1:bemessung": {
+    "en": "assessment; determination of dimensions",
+    "nl": "vaststelling van de omvang; dimensionering"
+  },
+  "C1:benennung": {
+    "en": "naming; designation",
+    "nl": "benaming; naamgeving"
+  },
+  "C1:berserker": {
+    "en": "berserker; frenzied fighter",
+    "nl": "berserker; razende vechter"
+  },
+  "C1:besorgnis": {
+    "en": "concern; apprehension",
+    "nl": "bezorgdheid; ongerustheid"
+  },
+  "C1:betäubung": {
+    "en": "anaesthesia; numbing",
+    "nl": "verdoving"
+  },
+  "C1:bewachung": {
+    "en": "guarding; surveillance",
+    "nl": "bewaking"
+  },
+  "C1:bimsstein": {
+    "en": "pumice",
+    "nl": "puimsteen"
+  },
+  "C1:bindfaden": {
+    "en": "string; twine",
+    "nl": "bindtouw"
+  },
+  "C1:blickfeld": {
+    "en": "field of vision",
+    "nl": "blikveld"
+  },
+  "C1:blutrache": {
+    "en": "blood feud; blood vengeance",
+    "nl": "bloedwraak"
+  },
+  "C1:bordstein": {
+    "en": "kerb",
+    "nl": "stoeprand"
+  },
+  "C1:bruchteil": {
+    "en": "fraction; small part",
+    "nl": "fractie; klein deel"
+  },
+  "C1:bruststil": {
+    "en": "breaststroke style",
+    "nl": "schoolslagstijl"
+  },
+  "C1:bündelung": {
+    "en": "bundling; pooling",
+    "nl": "bundeling"
+  },
+  "C1:campieren": {
+    "en": "camping",
+    "nl": "kamperen"
+  },
+  "C1:chirurgie": {
+    "en": "surgery",
+    "nl": "chirurgie"
+  },
+  "C1:chronisch": {
+    "en": "chronically; persistently",
+    "nl": "chronisch; aanhoudend"
+  },
+  "C1:copyright": {
+    "en": "copyright",
+    "nl": "auteursrecht"
+  },
+  "C1:dachrinne": {
+    "en": "rain gutter",
+    "nl": "dakgoot"
+  },
+  "C1:datensatz": {
+    "en": "data record",
+    "nl": "gegevensrecord"
+  },
+  "C1:dehnsonde": {
+    "en": "medical dilator; expanding probe",
+    "nl": "dilatatiesonde; medisch verwijdingsinstrument"
+  },
+  "C1:denkweise": {
+    "en": "way of thinking",
+    "nl": "denkwijze"
+  },
+  "C1:dialektik": {
+    "en": "dialectics",
+    "nl": "dialectiek"
+  },
+  "C1:diphthong": {
+    "en": "diphthong",
+    "nl": "diftong; tweeklank"
+  },
+  "C1:dividende": {
+    "en": "dividend",
+    "nl": "dividend"
+  },
+  "C1:dobermann": {
+    "en": "Doberman dog",
+    "nl": "dobermann"
+  },
+  "C1:doktorhut": {
+    "en": "doctoral cap",
+    "nl": "doctorshoed"
+  },
+  "C1:doppelehe": {
+    "en": "bigamy",
+    "nl": "bigamie; dubbel huwelijk"
+  },
+  "C1:dosierung": {
+    "en": "dosage",
+    "nl": "dosering"
+  },
+  "C1:eingehend": {
+    "en": "in detail; thoroughly",
+    "nl": "uitvoerig; grondig"
+  },
+  "C1:erlöschen": {
+    "en": "extinguishing; expiry",
+    "nl": "uitdoving; verval van een recht"
+  },
+  "C1:fertigung": {
+    "en": "manufacturing",
+    "nl": "fabricage; productie"
+  },
+  "C1:festpunkt": {
+    "en": "fixed point; reference point",
+    "nl": "vast punt; referentiepunt"
+  },
+  "C1:gewinnung": {
+    "en": "extraction; acquisition; production",
+    "nl": "winning; verwerving"
+  },
+  "C1:gletscher": {
+    "en": "glacier",
+    "nl": "gletsjer"
+  },
+  "C1:immobilie": {
+    "en": "real estate property",
+    "nl": "onroerend goed; vastgoedobject"
+  },
+  "C1:inkubator": {
+    "en": "incubator",
+    "nl": "incubator; broedstoof"
+  },
+  "C1:kodierung": {
+    "en": "encoding; coding",
+    "nl": "codering"
+  },
+  "C1:konvertit": {
+    "en": "religious convert",
+    "nl": "bekeerling"
+  },
+  "C1:korrasion": {
+    "en": "abrasion; erosion by friction",
+    "nl": "corrasie; afslijting door schurende werking"
+  },
+  "C1:leitfaden": {
+    "en": "guide; manual",
+    "nl": "leidraad"
+  },
+  "C1:plausibel": {
+    "en": "plausible; credible",
+    "nl": "aannemelijk; plausibel"
+  },
+  "C1:punktuell": {
+    "en": "at specific points; locally",
+    "nl": "plaatselijk; op afzonderlijke punten"
+  },
+  "C1:räderwerk": {
+    "en": "gear mechanism; train of gears",
+    "nl": "raderwerk; tandwielmechanisme"
+  },
+  "C1:schaufeln": {
+    "en": "shovelling",
+    "nl": "scheppen; met een schop verplaatsen"
+  },
+  "C1:selektion": {
+    "en": "selection",
+    "nl": "selectie"
+  },
+  "C1:senkwaage": {
+    "en": "hydrometer; liquid-density instrument",
+    "nl": "hydrometer; areometer"
+  },
+  "C1:stammbaum": {
+    "en": "family tree",
+    "nl": "stamboom"
+  },
+  "C1:staumauer": {
+    "en": "dam wall",
+    "nl": "stuwmuur"
+  },
+  "C1:treibhaus": {
+    "en": "greenhouse",
+    "nl": "broeikas; kas"
+  },
+  "C1:täuschend": {
+    "en": "deceptively",
+    "nl": "bedrieglijk"
+  },
+  "C1:ökosystem": {
+    "en": "ecosystem",
+    "nl": "ecosysteem"
+  },
+  "C1:abblättern": {
+    "en": "peeling; flaking",
+    "nl": "afbladdering"
+  },
+  "C1:abflachung": {
+    "en": "flattening; easing off",
+    "nl": "afvlakking"
+  },
+  "C1:abgrenzung": {
+    "en": "demarcation; distinction",
+    "nl": "afbakening"
+  },
+  "C1:ablagerung": {
+    "en": "deposition; accumulation",
+    "nl": "afzetting; bezinking"
+  },
+  "C1:abrechnung": {
+    "en": "settlement of accounts; billing",
+    "nl": "afrekening"
+  },
+  "C1:abschäumer": {
+    "en": "foam skimmer",
+    "nl": "afschuimer"
+  },
+  "C1:absolution": {
+    "en": "absolution",
+    "nl": "absolutie; kerkelijke zondenvergeving"
+  },
+  "C1:absorption": {
+    "en": "absorption",
+    "nl": "absorptie"
+  },
+  "C1:abstammung": {
+    "en": "ancestry; descent",
+    "nl": "afstamming"
+  },
+  "C1:abweichung": {
+    "en": "deviation; difference",
+    "nl": "afwijking"
+  },
+  "C1:abwicklung": {
+    "en": "handling; completion; liquidation",
+    "nl": "afwikkeling"
+  },
+  "C1:achterbahn": {
+    "en": "roller coaster",
+    "nl": "achtbaan"
+  },
+  "C1:adelsstand": {
+    "en": "nobility; noble status",
+    "nl": "adelstand"
+  },
+  "C1:analysator": {
+    "en": "analyser; analytical instrument",
+    "nl": "analysator; analyseapparaat"
+  },
+  "C1:anfechtung": {
+    "en": "legal challenge; contesting validity",
+    "nl": "betwisting; juridische aanvechting"
+  },
+  "C1:annäherung": {
+    "en": "approach; approximation",
+    "nl": "toenadering; benadering"
+  },
+  "C1:anrechnung": {
+    "en": "crediting an amount or period",
+    "nl": "toerekening; het laten meetellen"
+  },
+  "C1:anschauung": {
+    "en": "view; conception",
+    "nl": "opvatting; zienswijze"
+  },
+  "C1:anspielung": {
+    "en": "allusion",
+    "nl": "toespeling"
+  },
+  "C1:ansteckung": {
+    "en": "infection; contagion",
+    "nl": "besmetting"
+  },
+  "C1:antikörper": {
+    "en": "antibody",
+    "nl": "antilichaam"
+  },
+  "C1:anwandlung": {
+    "en": "sudden impulse; passing bout of feeling",
+    "nl": "opwelling; plotselinge aanvechting"
+  },
+  "C1:arbeitstag": {
+    "en": "working day",
+    "nl": "werkdag"
+  },
+  "C1:arithmetik": {
+    "en": "arithmetic",
+    "nl": "rekenkunde"
+  },
+  "C1:armbanduhr": {
+    "en": "wristwatch",
+    "nl": "polshorloge"
+  },
+  "C1:aufdeckung": {
+    "en": "discovery; exposure",
+    "nl": "onthulling; blootlegging"
+  },
+  "C1:aufhängung": {
+    "en": "suspension; mounting",
+    "nl": "ophanging"
+  },
+  "C1:auflassung": {
+    "en": "closure; discontinuance; legal conveyance of property",
+    "nl": "sluiting; opheffing; juridische eigendomsoverdracht van vastgoed"
+  },
+  "C1:aufschluss": {
+    "en": "revealing information; clarification",
+    "nl": "uitsluitsel; opheldering"
+  },
+  "C1:aufschrift": {
+    "en": "inscription; wording on an object",
+    "nl": "opschrift"
+  },
+  "C1:aufschwung": {
+    "en": "upswing; recovery",
+    "nl": "opleving; opbloei"
+  },
+  "C1:aufwertung": {
+    "en": "revaluation; enhancement of status",
+    "nl": "opwaardering"
+  },
+  "C1:ausbeutung": {
+    "en": "exploitation",
+    "nl": "uitbuiting"
+  },
+  "C1:ausdehnung": {
+    "en": "expansion; extent",
+    "nl": "uitbreiding; uitzetting"
+  },
+  "C1:auslaugung": {
+    "en": "leaching",
+    "nl": "uitloging"
+  },
+  "C1:ausnutzung": {
+    "en": "utilisation; exploitation",
+    "nl": "benutting; uitbuiting"
+  },
+  "C1:ausrottung": {
+    "en": "extermination; eradication",
+    "nl": "uitroeiing"
+  },
+  "C1:aussenseite": {
+    "en": "exterior; outside",
+    "nl": "buitenkant"
+  },
+  "C1:aussetzung": {
+    "en": "suspension of enforcement; exposure",
+    "nl": "opschorting; blootstelling"
+  },
+  "C1:ausverkauf": {
+    "en": "clearance sale",
+    "nl": "uitverkoop"
+  },
+  "C1:ausweisung": {
+    "en": "expulsion from a country; designation of an area",
+    "nl": "uitzetting; aanwijzing van een gebied"
+  },
+  "C1:auswuchten": {
+    "en": "balancing a rotating mass",
+    "nl": "uitbalanceren"
+  },
+  "C1:auszahlung": {
+    "en": "payout; disbursement",
+    "nl": "uitbetaling"
+  },
+  "C1:autofahrer": {
+    "en": "motorist; car driver",
+    "nl": "automobilist"
+  },
+  "C1:backenbart": {
+    "en": "sideburns",
+    "nl": "bakkebaarden"
+  },
+  "C1:ballbesitz": {
+    "en": "ball possession",
+    "nl": "balbezit"
+  },
+  "C1:bauelement": {
+    "en": "building component; electronic component",
+    "nl": "bouwelement; elektronisch onderdeel"
+  },
+  "C1:bedrängnis": {
+    "en": "distress; difficult predicament",
+    "nl": "benauwenis; benarde positie"
+  },
+  "C1:befähigung": {
+    "en": "ability; qualification",
+    "nl": "bekwaamheid; geschiktheid"
+  },
+  "C1:begrenzung": {
+    "en": "limitation; boundary",
+    "nl": "beperking; begrenzing"
+  },
+  "C1:beisetzung": {
+    "en": "interment; burial",
+    "nl": "bijzetting; begrafenis"
+  },
+  "C1:berufsbild": {
+    "en": "occupational profile",
+    "nl": "beroepsprofiel"
+  },
+  "C1:bestattung": {
+    "en": "burial; funeral",
+    "nl": "teraardebestelling; uitvaart"
+  },
+  "C1:bestürzung": {
+    "en": "dismay; consternation",
+    "nl": "ontsteltenis"
+  },
+  "C1:betrachter": {
+    "en": "viewer; observer",
+    "nl": "toeschouwer; beschouwer"
+  },
+  "C1:bewaffnung": {
+    "en": "armament; weapons",
+    "nl": "bewapening"
+  },
+  "C1:bezugnahme": {
+    "en": "reference; referring to something",
+    "nl": "verwijzing"
+  },
+  "C1:bezugszahl": {
+    "en": "reference number; base value for comparison",
+    "nl": "referentiegetal; vergelijkingsbasis"
+  },
+  "C1:bissigkeit": {
+    "en": "biting sarcasm; tendency to bite",
+    "nl": "bijtendheid; bijtgedrag"
+  },
+  "C1:bitterkeit": {
+    "en": "bitterness",
+    "nl": "bitterheid"
+  },
+  "C1:blickpunkt": {
+    "en": "focal point; centre of attention",
+    "nl": "brandpunt; aandachtspunt"
+  },
+  "C1:blutplasma": {
+    "en": "blood plasma",
+    "nl": "bloedplasma"
+  },
+  "C1:bodenwelle": {
+    "en": "bump or undulation in a road",
+    "nl": "hobbel; golving in het wegdek"
+  },
+  "C1:bombierung": {
+    "en": "crowning; convex shaping of a surface",
+    "nl": "bolling; welving van een mechanisch oppervlak"
+  },
+  "C1:brennpunkt": {
+    "en": "focal point",
+    "nl": "brandpunt"
+  },
+  "C1:brennstoff": {
+    "en": "fuel",
+    "nl": "brandstof"
+  },
+  "C1:bruchstein": {
+    "en": "rubble stone; rough building stone",
+    "nl": "breuksteen"
+  },
+  "C1:brutalität": {
+    "en": "brutality",
+    "nl": "brutaliteit; wreedheid"
+  },
+  "C1:brutkasten": {
+    "en": "incubator for premature babies",
+    "nl": "couveuse"
+  },
+  "C1:buchbinder": {
+    "en": "bookbinder",
+    "nl": "boekbinder"
+  },
+  "C1:bürgschaft": {
+    "en": "surety; guarantee",
+    "nl": "borgstelling; garantie"
+  },
+  "C1:contenance": {
+    "en": "composure",
+    "nl": "contenance; zelfbeheersing"
+  },
+  "C1:dachtraufe": {
+    "en": "eaves",
+    "nl": "dakrand; druiprand"
+  },
+  "C1:datenkopie": {
+    "en": "copy of data",
+    "nl": "kopie van gegevens"
+  },
+  "C1:deckmantel": {
+    "en": "cover; pretext",
+    "nl": "dekmantel"
+  },
+  "C1:delegation": {
+    "en": "delegation; group of representatives",
+    "nl": "delegatie; afvaardiging"
+  },
+  "C1:diagnostik": {
+    "en": "diagnostics",
+    "nl": "diagnostiek"
+  },
+  "C1:dienstherr": {
+    "en": "public-service employer; employing authority",
+    "nl": "overheidswerkgever; bevoegd gezag"
+  },
+  "C1:dienstplan": {
+    "en": "duty roster; work schedule",
+    "nl": "dienstrooster"
+  },
+  "C1:eindämmung": {
+    "en": "containment; curbing",
+    "nl": "indamming"
+  },
+  "C1:einsenkung": {
+    "en": "depression; local lowering",
+    "nl": "inzinking; plaatselijke verlaging"
+  },
+  "C1:enthüllung": {
+    "en": "revelation; unveiling",
+    "nl": "onthulling"
+  },
+  "C1:informatik": {
+    "en": "computer science",
+    "nl": "informatica"
+  },
+  "C1:konjunktur": {
+    "en": "economic conditions; business cycle",
+    "nl": "conjunctuur"
+  },
+  "C1:kontrovers": {
+    "en": "controversially",
+    "nl": "op omstreden wijze; als twistpunt"
+  },
+  "C1:medikation": {
+    "en": "medication",
+    "nl": "medicatie"
+  },
+  "C1:obergrenze": {
+    "en": "upper limit",
+    "nl": "bovengrens"
+  },
+  "C1:obligation": {
+    "en": "bond; obligation",
+    "nl": "obligatie; verplichting"
+  },
+  "C1:okkupation": {
+    "en": "occupation; military occupation",
+    "nl": "bezetting; militaire bezetting"
+  },
+  "C1:schwellung": {
+    "en": "swelling",
+    "nl": "zwelling"
+  },
+  "C1:seitenhieb": {
+    "en": "indirect dig; snide remark",
+    "nl": "zijdelingse steek; sneer"
+  },
+  "C1:sichtweise": {
+    "en": "perspective; way of looking at something",
+    "nl": "zienswijze"
+  },
+  "C1:sperrmauer": {
+    "en": "barrier dam; retaining wall",
+    "nl": "stuwmuur; damwand"
+  },
+  "C1:stemmbogen": {
+    "en": "stem turn in skiing",
+    "nl": "stembocht bij het skiën"
+  },
+  "C1:trennlinie": {
+    "en": "dividing line",
+    "nl": "scheidingslijn"
+  },
+  "C1:turnusarzt": {
+    "en": "doctor in clinical rotation training",
+    "nl": "arts in klinische vervolgstage"
+  },
+  "C1:ungeachtet": {
+    "en": "regardless of; despite",
+    "nl": "ongeacht; ondanks"
+  },
+  "C1:verhängnis": {
+    "en": "doom; disastrous fate",
+    "nl": "noodlot; rampspoed"
+  },
+  "C1:verhängung": {
+    "en": "imposition of a penalty or measure",
+    "nl": "oplegging van een straf of maatregel"
+  },
+  "C1:vernehmung": {
+    "en": "formal questioning; interrogation",
+    "nl": "verhoor"
+  },
+  "C1:verschleiss": {
+    "en": "wear and tear",
+    "nl": "slijtage"
+  },
+  "C1:vorführung": {
+    "en": "demonstration; bringing before an authority",
+    "nl": "demonstratie; voorgeleiding"
+  },
+  "C1:aberkennung": {
+    "en": "revocation of a right or title",
+    "nl": "ontneming van een recht of titel"
+  },
+  "C1:abriegelung": {
+    "en": "sealing off; cordoning off",
+    "nl": "afsluiting; afgrendeling"
+  },
+  "C1:abschiebung": {
+    "en": "deportation",
+    "nl": "uitzetting; gedwongen verwijdering"
+  },
+  "C1:abschätzung": {
+    "en": "estimate; assessment",
+    "nl": "inschatting; raming"
+  },
+  "C1:absicherung": {
+    "en": "protection against risk; securing",
+    "nl": "zekerstelling; beveiliging"
+  },
+  "C1:absperrhahn": {
+    "en": "stopcock; shut-off valve",
+    "nl": "afsluitkraan"
+  },
+  "C1:abwanderung": {
+    "en": "emigration; migration away",
+    "nl": "vertrek uit een gebied; emigratie"
+  },
+  "C1:abzugsbügel": {
+    "en": "trigger guard",
+    "nl": "trekkerbeugel"
+  },
+  "C1:akklamation": {
+    "en": "acclamation; approval by applause",
+    "nl": "acclamatie; instemming door toejuiching"
+  },
+  "C1:aktivierung": {
+    "en": "activation",
+    "nl": "activering"
+  },
+  "C1:alkoholiker": {
+    "en": "person with alcohol addiction; alcoholic",
+    "nl": "alcoholist; persoon met alcoholverslaving"
+  },
+  "C1:angleichung": {
+    "en": "alignment; adjustment to make similar",
+    "nl": "aanpassing; gelijkmaking"
+  },
+  "C1:anklagebank": {
+    "en": "dock; defendants' bench",
+    "nl": "beklaagdenbank"
+  },
+  "C1:anschaulich": {
+    "en": "clearly; vividly; illustratively",
+    "nl": "aanschouwelijk; duidelijk"
+  },
+  "C1:anzeigefeld": {
+    "en": "display field; display area",
+    "nl": "weergaveveld; displayvak"
+  },
+  "C1:arbeitsheft": {
+    "en": "workbook",
+    "nl": "werkboek"
+  },
+  "C1:auferlegung": {
+    "en": "imposition of an obligation or burden",
+    "nl": "oplegging van een verplichting of last"
+  },
+  "C1:aufflackern": {
+    "en": "flare-up; sudden flicker",
+    "nl": "opflakkering"
+  },
+  "C1:aufstellung": {
+    "en": "setting up; arrangement; compilation of a list",
+    "nl": "opstelling; plaatsing; samenstelling van een lijst"
+  },
+  "C1:augenschein": {
+    "en": "direct observation; outward appearance",
+    "nl": "eigen waarneming; oogschijn"
+  },
+  "C1:ausbreitung": {
+    "en": "spread; expansion",
+    "nl": "verspreiding"
+  },
+  "C1:ausfallzeit": {
+    "en": "downtime",
+    "nl": "uitvaltijd"
+  },
+  "C1:ausgründung": {
+    "en": "creation of a spin-off company",
+    "nl": "verzelfstandiging tot een nieuw bedrijf; spin-off"
+  },
+  "C1:ausscheiden": {
+    "en": "departure; elimination; excretion",
+    "nl": "uittreding; uitschakeling; uitscheiding"
+  },
+  "C1:aussenposten": {
+    "en": "outpost",
+    "nl": "buitenpost"
+  },
+  "C1:aussenseiter": {
+    "en": "outsider; underdog",
+    "nl": "buitenstaander; outsider"
+  },
+  "C1:bauernopfer": {
+    "en": "pawn sacrifice; scapegoat",
+    "nl": "pionoffer; zondebok"
+  },
+  "C1:befestigung": {
+    "en": "fastening; fortification",
+    "nl": "bevestiging; versterking"
+  },
+  "C1:befrachtung": {
+    "en": "loading freight; chartering cargo space",
+    "nl": "bevrachting"
+  },
+  "C1:begleichung": {
+    "en": "settlement of an account or debt",
+    "nl": "vereffening; betaling"
+  },
+  "C1:bekanntheit": {
+    "en": "public recognition; degree of familiarity",
+    "nl": "bekendheid"
+  },
+  "C1:beleuchtung": {
+    "en": "lighting",
+    "nl": "verlichting"
+  },
+  "C1:bepflanzung": {
+    "en": "planting; vegetation planted",
+    "nl": "beplanting"
+  },
+  "C1:besteuerung": {
+    "en": "taxation",
+    "nl": "belastingheffing"
+  },
+  "C1:bevorzugung": {
+    "en": "preference; favouritism",
+    "nl": "bevoorrechting; voorkeur"
+  }
+}

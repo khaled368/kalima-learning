@@ -1,0 +1,1394 @@
+{
+  "A1:bös": {
+    "en": "evil; angry (shortened form)",
+    "nl": "kwaadaardig; boos (verkorte vorm)"
+  },
+  "A1:gradeaus": {
+    "en": "straight ahead (colloquial form)",
+    "nl": "rechtdoor (spreektaal)"
+  },
+  "A1:speisenkarte": {
+    "en": "menu; list of dishes",
+    "nl": "menukaart"
+  },
+  "A1:lieblingslied": {
+    "en": "favourite song",
+    "nl": "lievelingslied"
+  },
+  "A1:circus": {
+    "en": "circus; ancient Roman racecourse",
+    "nl": "circus; Romeinse renbaan"
+  },
+  "A1:händetuch": {
+    "en": "hand towel",
+    "nl": "handdoek voor de handen"
+  },
+  "A1:rentnerin": {
+    "en": "female pensioner",
+    "nl": "gepensioneerde vrouw"
+  },
+  "A1:zurücklaufen": {
+    "en": "to walk or run back",
+    "nl": "teruglopen; terugrennen"
+  },
+  "A1:worum": {
+    "en": "about what; on which subject",
+    "nl": "waarover; over welk onderwerp"
+  },
+  "A2:voneinander": {
+    "en": "from one another; from each other",
+    "nl": "van elkaar"
+  },
+  "A2:kriminalpolizei": {
+    "en": "criminal investigation department",
+    "nl": "recherche; afdeling strafrechtelijk onderzoek"
+  },
+  "A2:bio": {
+    "en": "organic; biological",
+    "nl": "biologisch; organisch"
+  },
+  "A2:glacé": {
+    "en": "glacé; lustrous finished fabric",
+    "nl": "glacé; glanzend afgewerkt weefsel"
+  },
+  "A2:billet": {
+    "en": "ticket; admission ticket",
+    "nl": "kaartje; toegangsbewijs"
+  },
+  "A2:färbig": {
+    "en": "coloured (Austrian usage)",
+    "nl": "gekleurd (Oostenrijks gebruik)"
+  },
+  "A2:hieher": {
+    "en": "to here; hither (regional)",
+    "nl": "hierheen (regionaal)"
+  },
+  "A2:poulet": {
+    "en": "chicken; chicken meat (Swiss usage)",
+    "nl": "kip; kippenvlees (Zwitsers gebruik)"
+  },
+  "A2:graphik": {
+    "en": "drawing; graphic art",
+    "nl": "grafiek; grafische kunst"
+  },
+  "A2:henderl": {
+    "en": "chicken; chicken meat (regional)",
+    "nl": "kip; kippenvlees (regionaal)"
+  },
+  "A2:abwartin": {
+    "en": "female building caretaker",
+    "nl": "conciërge; gebouwbeheerder (vrouw)"
+  },
+  "A2:fasnacht": {
+    "en": "carnival; Shrovetide",
+    "nl": "carnaval; vastenavond"
+  },
+  "A2:lernerin": {
+    "en": "female learner; female student",
+    "nl": "leerlinge; vrouwelijke cursist"
+  },
+  "A2:mobilbox": {
+    "en": "voicemail; voice mailbox",
+    "nl": "voicemail; voicemailbox"
+  },
+  "A2:coiffeuse": {
+    "en": "female hairdresser",
+    "nl": "kapster"
+  },
+  "A2:anderseits": {
+    "en": "on the other hand",
+    "nl": "anderzijds"
+  },
+  "A2:ordination": {
+    "en": "doctor's practice (Austria); religious ordination",
+    "nl": "artspraktijk (Oostenrijk); kerkelijke wijding"
+  },
+  "A2:andrerseits": {
+    "en": "on the other hand",
+    "nl": "anderzijds"
+  },
+  "A2:tagesablauf": {
+    "en": "daily routine; course of the day",
+    "nl": "dagindeling; dagelijkse routine"
+  },
+  "A2:allerschönst": {
+    "en": "the most beautiful of all",
+    "nl": "het allermooist"
+  },
+  "A2:entwickelung": {
+    "en": "development (older spelling)",
+    "nl": "ontwikkeling (oudere spelling)"
+  },
+  "A2:pensionistin": {
+    "en": "female retiree",
+    "nl": "gepensioneerde vrouw"
+  },
+  "A2:runterwerfen": {
+    "en": "to throw down",
+    "nl": "naar beneden gooien"
+  },
+  "A2:zweitsprache": {
+    "en": "second language",
+    "nl": "tweede taal"
+  },
+  "A2:betriebsrätin": {
+    "en": "female member of a works council",
+    "nl": "vrouwelijk lid van de ondernemingsraad"
+  },
+  "A2:profisportler": {
+    "en": "professional athlete",
+    "nl": "beroepssporter"
+  },
+  "A2:profisportlerin": {
+    "en": "female professional athlete",
+    "nl": "beroepssportster"
+  },
+  "A2:gleichberechtigt": {
+    "en": "having equal rights",
+    "nl": "gelijkberechtigd; met gelijke rechten"
+  },
+  "A2:sozialarbeiterin": {
+    "en": "female social worker",
+    "nl": "maatschappelijk werkster"
+  },
+  "A2:komm": {
+    "en": "come!",
+    "nl": "kom!"
+  },
+  "A2:willst": {
+    "en": "you want",
+    "nl": "je wilt"
+  },
+  "A2:musst": {
+    "en": "you must; you have to",
+    "nl": "je moet"
+  },
+  "A2:wirst": {
+    "en": "you become; you will (auxiliary)",
+    "nl": "je wordt; je zult (hulpwerkwoord)"
+  },
+  "A2:hör": {
+    "en": "listen!; hear!",
+    "nl": "luister!; hoor!"
+  },
+  "A2:sag": {
+    "en": "say!; tell!",
+    "nl": "zeg!; vertel!"
+  },
+  "A2:geh": {
+    "en": "go!",
+    "nl": "ga!"
+  },
+  "A2:warst": {
+    "en": "you were",
+    "nl": "je was"
+  },
+  "A2:gib": {
+    "en": "give!",
+    "nl": "geef!"
+  },
+  "A2:sieh": {
+    "en": "look!; see!",
+    "nl": "kijk!; zie!"
+  },
+  "A2:solltest": {
+    "en": "you should; you ought to",
+    "nl": "je zou moeten"
+  },
+  "A2:meinst": {
+    "en": "you mean; you think",
+    "nl": "je bedoelt; je denkt"
+  },
+  "A2:dm": {
+    "en": "Deutsche Mark; deathmatch game mode",
+    "nl": "Duitse mark; deathmatch-spelmodus"
+  },
+  "A2:eure": {
+    "en": "your; yours (plural, inflected)",
+    "nl": "jullie; van jullie (verbogen vorm)"
+  },
+  "A2:nimm": {
+    "en": "take!",
+    "nl": "neem!"
+  },
+  "A2:gehst": {
+    "en": "you go; you walk",
+    "nl": "je gaat; je loopt"
+  },
+  "A2:würdest": {
+    "en": "you would (conditional auxiliary)",
+    "nl": "je zou (voorwaardelijk hulpwerkwoord)"
+  },
+  "A2:hättest": {
+    "en": "you would have",
+    "nl": "je zou hebben"
+  },
+  "A2:tust": {
+    "en": "you do",
+    "nl": "je doet"
+  },
+  "A2:bleib": {
+    "en": "stay!",
+    "nl": "blijf!"
+  },
+  "A2:glaubst": {
+    "en": "you think; you believe",
+    "nl": "je denkt; je gelooft"
+  },
+  "A2:wolltest": {
+    "en": "you wanted",
+    "nl": "je wilde"
+  },
+  "A2:könntest": {
+    "en": "you could (polite or conditional)",
+    "nl": "je zou kunnen"
+  },
+  "A2:tu": {
+    "en": "do!",
+    "nl": "doe!"
+  },
+  "A2:seht": {
+    "en": "look!; see! (plural)",
+    "nl": "kijk!; zie! (meervoud)"
+  },
+  "A2:entschuldige": {
+    "en": "excuse me!; forgive me!",
+    "nl": "excuseer me!; vergeef me!"
+  },
+  "A2:redest": {
+    "en": "you talk; you speak",
+    "nl": "je praat; je spreekt"
+  },
+  "A2:vergiss": {
+    "en": "forget!",
+    "nl": "vergeet!"
+  },
+  "A2:bring": {
+    "en": "bring!",
+    "nl": "breng!"
+  },
+  "A2:unseren": {
+    "en": "our; ours (inflected)",
+    "nl": "ons; onze (verbogen vorm)"
+  },
+  "A2:wärst": {
+    "en": "you would be",
+    "nl": "je zou zijn"
+  },
+  "A2:wär": {
+    "en": "would be (shortened form)",
+    "nl": "zou zijn (verkorte vorm)"
+  },
+  "A2:glaub": {
+    "en": "believe!",
+    "nl": "geloof!"
+  },
+  "A2:hol": {
+    "en": "fetch!; get!",
+    "nl": "haal!"
+  },
+  "A2:setz": {
+    "en": "put!; seat!",
+    "nl": "zet!; plaats!"
+  },
+  "A2:darfst": {
+    "en": "you may; you are allowed to",
+    "nl": "je mag"
+  },
+  "A2:müsst": {
+    "en": "you must; you have to (plural)",
+    "nl": "jullie moeten"
+  },
+  "A2:fdp": {
+    "en": "Free Democratic Party of Germany",
+    "nl": "Vrije Democratische Partij van Duitsland"
+  },
+  "A2:möchtest": {
+    "en": "you would like",
+    "nl": "je zou graag willen"
+  },
+  "A2:findest": {
+    "en": "you find; you consider",
+    "nl": "je vindt"
+  },
+  "A2:hältst": {
+    "en": "you hold; you maintain; you stop",
+    "nl": "je houdt; je behoudt; je stopt"
+  },
+  "A2:magst": {
+    "en": "you like",
+    "nl": "je vindt leuk; je houdt van"
+  },
+  "A2:zeig": {
+    "en": "show!",
+    "nl": "laat zien!; toon!"
+  },
+  "A2:zieh": {
+    "en": "pull!; move away!; put on! (context-dependent)",
+    "nl": "trek!; vertrek!; trek aan! (afhankelijk van de context)"
+  },
+  "A2:erinnerst": {
+    "en": "you remember; you remind",
+    "nl": "je herinnert je; je herinnert iemand aan"
+  },
+  "A2:voller": {
+    "en": "full of",
+    "nl": "vol van; vol met"
+  },
+  "A2:kriegst": {
+    "en": "you get; you receive (colloquial)",
+    "nl": "je krijgt (spreektaal)"
+  },
+  "A2:hilf": {
+    "en": "help!",
+    "nl": "help!"
+  },
+  "A2:fahr": {
+    "en": "drive!; travel by vehicle!",
+    "nl": "rijd!; reis met een vervoermiddel!"
+  },
+  "A2:erzähl": {
+    "en": "tell!; relate!",
+    "nl": "vertel!"
+  },
+  "A2:sagtest": {
+    "en": "you said; you told",
+    "nl": "je zei; je vertelde"
+  },
+  "A2:stell": {
+    "en": "put!; place upright!",
+    "nl": "zet!; plaats!"
+  },
+  "A2:hab": {
+    "en": "I have; have! (shortened form)",
+    "nl": "ik heb; heb! (verkorte vorm)"
+  },
+  "A2:bleibst": {
+    "en": "you stay; you remain",
+    "nl": "je blijft"
+  },
+  "A2:steh": {
+    "en": "stand!",
+    "nl": "sta!"
+  },
+  "A2:monsieur": {
+    "en": "sir; French title of address",
+    "nl": "meneer; Franse aanspreektitel"
+  },
+  "A2:gegessen": {
+    "en": "eaten",
+    "nl": "gegeten"
+  },
+  "A2:liebst": {
+    "en": "you love",
+    "nl": "je houdt van"
+  },
+  "A2:leg": {
+    "en": "put!; lay!",
+    "nl": "leg!; plaats!"
+  },
+  "A2:seh": {
+    "en": "I see; look! (colloquial)",
+    "nl": "ik zie; kijk! (spreektaal)"
+  },
+  "A2:witze": {
+    "en": "jokes",
+    "nl": "grappen; moppen"
+  },
+  "A2:gibst": {
+    "en": "you give",
+    "nl": "je geeft"
+  },
+  "A2:fühlst": {
+    "en": "you feel",
+    "nl": "je voelt"
+  },
+  "A2:sergeant": {
+    "en": "sergeant; military rank",
+    "nl": "sergeant; militaire rang"
+  },
+  "A2:guck": {
+    "en": "look!; have a look!",
+    "nl": "kijk!; kijk eens!"
+  },
+  "A2:bobby": {
+    "en": "British police officer (informal)",
+    "nl": "Britse politieagent (informeel)"
+  },
+  "A2:frag": {
+    "en": "ask!",
+    "nl": "vraag!"
+  },
+  "A2:nehmt": {
+    "en": "take! (plural)",
+    "nl": "neem! (meervoud)"
+  },
+  "A2:konntest": {
+    "en": "you could; you were able to",
+    "nl": "je kon"
+  },
+  "A2:bringst": {
+    "en": "you bring",
+    "nl": "je brengt"
+  },
+  "A2:bekommst": {
+    "en": "you get; you receive",
+    "nl": "je krijgt; je ontvangt"
+  },
+  "A2:drüber": {
+    "en": "over it; over that (colloquial)",
+    "nl": "erover; daarover (spreektaal)"
+  },
+  "A2:sprichst": {
+    "en": "you speak; you talk",
+    "nl": "je spreekt; je praat"
+  },
+  "A2:hasst": {
+    "en": "you hate; he or she hates",
+    "nl": "je haat; hij of zij haat"
+  },
+  "A2:versteh": {
+    "en": "understand!; I understand (colloquial)",
+    "nl": "begrijp!; ik begrijp (spreektaal)"
+  },
+  "A2:wusstest": {
+    "en": "you knew",
+    "nl": "je wist"
+  },
+  "A2:sowas": {
+    "en": "something like that",
+    "nl": "zoiets"
+  },
+  "A2:drauf": {
+    "en": "on it; on that (colloquial)",
+    "nl": "erop; daarop (spreektaal)"
+  },
+  "A2:schwarzen": {
+    "en": "black (inflected form)",
+    "nl": "zwart (verbogen vorm)"
+  },
+  "A2:commander": {
+    "en": "commander; military officer in command",
+    "nl": "commandant; militaire bevelhebber"
+  },
+  "A2:wurdest": {
+    "en": "you became",
+    "nl": "je werd"
+  },
+  "A2:fragst": {
+    "en": "you ask",
+    "nl": "je vraagt"
+  },
+  "A2:sterbe": {
+    "en": "I die",
+    "nl": "ik sterf"
+  },
+  "A2:entschuldigt": {
+    "en": "excused; excuse me! (addressing several people)",
+    "nl": "verontschuldigd; excuseer me! (tot meerdere personen)"
+  },
+  "A2:netter": {
+    "en": "nice; nicer (context-dependent)",
+    "nl": "aardig; aardiger (afhankelijk van de context)"
+  },
+  "A2:suchst": {
+    "en": "you look for; you search",
+    "nl": "je zoekt"
+  },
+  "A2:geb": {
+    "en": "give! (colloquial shortened form)",
+    "nl": "geef! (verkorte spreektaalvorm)"
+  },
+  "A2:gentlemen": {
+    "en": "gentlemen",
+    "nl": "heren; gentlemen"
+  },
+  "A2:stuttgarter": {
+    "en": "person from Stuttgart",
+    "nl": "iemand uit Stuttgart"
+  },
+  "A2:fährst": {
+    "en": "you drive; you travel by vehicle",
+    "nl": "je rijdt; je reist met een vervoermiddel"
+  },
+  "A2:lebst": {
+    "en": "you live",
+    "nl": "je leeft; je woont"
+  },
+  "A2:beruhige": {
+    "en": "calm down!; calm someone!",
+    "nl": "kalmeer!; stel iemand gerust!"
+  },
+  "A2:spannende": {
+    "en": "something exciting; something interesting",
+    "nl": "iets spannends; iets interessants"
+  },
+  "A2:spielst": {
+    "en": "you play",
+    "nl": "je speelt"
+  },
+  "A2:freut": {
+    "en": "pleases; makes happy",
+    "nl": "verheugt; maakt blij"
+  },
+  "A2:bravo": {
+    "en": "bravo!; well done!",
+    "nl": "bravo!; goed gedaan!"
+  },
+  "A2:erzählst": {
+    "en": "you tell; you relate",
+    "nl": "je vertelt"
+  },
+  "A2:bundeswehr": {
+    "en": "the German armed forces",
+    "nl": "de Duitse krijgsmacht"
+  },
+  "A2:nehm": {
+    "en": "I take; take! (colloquial)",
+    "nl": "ik neem; neem! (spreektaal)"
+  },
+  "A2:hmm": {
+    "en": "hmm; sound expressing thought",
+    "nl": "hmm; geluid dat nadenken uitdrukt"
+  },
+  "A2:bzw": {
+    "en": "or rather; respectively (abbreviation)",
+    "nl": "ofwel; respectievelijk (afkorting)"
+  },
+  "A2:beeilung": {
+    "en": "hurry; haste",
+    "nl": "haast; spoed"
+  },
+  "A2:telekom": {
+    "en": "telecommunications company; Telekom company name",
+    "nl": "telecommunicatiebedrijf; Telekom als bedrijfsnaam"
+  },
+  "A2:landesregierung": {
+    "en": "state government; government of a federal state",
+    "nl": "deelstaatregering"
+  },
+  "A2:versuchst": {
+    "en": "you try; you attempt",
+    "nl": "je probeert"
+  },
+  "A2:helft": {
+    "en": "help! (plural)",
+    "nl": "help! (meervoud)"
+  },
+  "A2:wartest": {
+    "en": "you wait",
+    "nl": "je wacht"
+  },
+  "A2:bundesrat": {
+    "en": "Federal Council; Bundesrat",
+    "nl": "Bondsraad; Bundesrat"
+  },
+  "A2:such": {
+    "en": "search!; look for!",
+    "nl": "zoek!"
+  },
+  "A2:angeles": {
+    "en": "Angeles; proper name as in Los Angeles",
+    "nl": "Angeles; eigennaam zoals in Los Angeles"
+  },
+  "A2:holt": {
+    "en": "you fetch; fetch! (plural)",
+    "nl": "jullie halen; haal! (meervoud)"
+  },
+  "A2:bremer": {
+    "en": "person from Bremen",
+    "nl": "iemand uit Bremen"
+  },
+  "A2:cop": {
+    "en": "American police officer (informal)",
+    "nl": "Amerikaanse politieagent (informeel)"
+  },
+  "A2:dinger": {
+    "en": "things; objects",
+    "nl": "dingen; voorwerpen"
+  },
+  "A2:beweg": {
+    "en": "move!; move something!",
+    "nl": "beweeg!; verplaats!"
+  },
+  "A2:vertrau": {
+    "en": "trust!; entrust!",
+    "nl": "vertrouw!; vertrouw toe!"
+  },
+  "A2:herrgott": {
+    "en": "the Lord God; good Lord!",
+    "nl": "de Here God; mijn God!"
+  },
+  "A2:hinblick": {
+    "en": "with regard to; in view of",
+    "nl": "met betrekking tot; gezien"
+  },
+  "A2:cops": {
+    "en": "police officers; cops (informal)",
+    "nl": "politieagenten; smerissen (informeel)"
+  },
+  "A2:wichtigste": {
+    "en": "the most important thing",
+    "nl": "het belangrijkste"
+  },
+  "A2:schlafe": {
+    "en": "I sleep",
+    "nl": "ik slaap"
+  },
+  "A2:entspann": {
+    "en": "relax!",
+    "nl": "ontspan!"
+  },
+  "A2:rausfinden": {
+    "en": "to find out (colloquial)",
+    "nl": "erachter komen (spreektaal)"
+  },
+  "A2:fühl": {
+    "en": "feel!; touch to feel!",
+    "nl": "voel!; tast!"
+  },
+  "A2:donna": {
+    "en": "lady; Italian title of address",
+    "nl": "dame; Italiaanse aanspreektitel"
+  },
+  "A2:zustande": {
+    "en": "into being; to completion (in fixed expressions)",
+    "nl": "tot stand; voor elkaar (in vaste uitdrukkingen)"
+  },
+  "A2:nenn": {
+    "en": "name!; mention!",
+    "nl": "noem!; vermeld!"
+  },
+  "A2:musstest": {
+    "en": "you had to",
+    "nl": "je moest"
+  },
+  "A2:öffne": {
+    "en": "open!",
+    "nl": "open!; maak open!"
+  },
+  "A2:stop": {
+    "en": "stop!",
+    "nl": "stop!"
+  },
+  "A2:vergisst": {
+    "en": "forgets; you forget",
+    "nl": "vergeet; je vergeet"
+  },
+  "A2:schläfst": {
+    "en": "you sleep",
+    "nl": "je slaapt"
+  },
+  "A2:wirf": {
+    "en": "throw!",
+    "nl": "gooi!; werp!"
+  },
+  "A2:nennst": {
+    "en": "you call; you name; you mention",
+    "nl": "je noemt; je vermeldt"
+  },
+  "A2:angelogen": {
+    "en": "lied to someone",
+    "nl": "tegen iemand gelogen"
+  },
+  "A2:gehörst": {
+    "en": "you belong to",
+    "nl": "je hoort bij; je behoort toe aan"
+  },
+  "A2:schuldest": {
+    "en": "you owe",
+    "nl": "je bent verschuldigd"
+  },
+  "A2:nen": {
+    "en": "a; an (colloquial masculine accusative article)",
+    "nl": "een (informeel mannelijk lidwoord in de accusatief)"
+  },
+  "A2:lauft": {
+    "en": "run!; walk! (plural)",
+    "nl": "ren!; loop! (meervoud)"
+  },
+  "A2:rausholen": {
+    "en": "to take out; to get from inside",
+    "nl": "eruit halen; van binnen halen"
+  },
+  "A2:rufst": {
+    "en": "you call; you phone",
+    "nl": "je roept; je belt"
+  },
+  "A2:reingehen": {
+    "en": "to go inside (colloquial)",
+    "nl": "naar binnen gaan (spreektaal)"
+  },
+  "A2:verzeih": {
+    "en": "forgive!; excuse!",
+    "nl": "vergeef!; excuseer!"
+  },
+  "A2:zugrunde": {
+    "en": "at the basis; to ruin (in fixed expressions)",
+    "nl": "ten grondslag; ten onder (in vaste uitdrukkingen)"
+  },
+  "A2:stirbst": {
+    "en": "you die",
+    "nl": "je sterft"
+  },
+  "A2:dachtest": {
+    "en": "you thought",
+    "nl": "je dacht"
+  },
+  "A2:schnappt": {
+    "en": "grab!; seize! (plural)",
+    "nl": "grijp!; pak snel! (meervoud)"
+  },
+  "A2:normalen": {
+    "en": "normal; ordinary (inflected form)",
+    "nl": "normaal; gewoon (verbogen vorm)"
+  },
+  "A2:molly": {
+    "en": "molly; type of aquarium fish",
+    "nl": "molly; soort aquariumvis"
+  },
+  "A2:wofür": {
+    "en": "what for; for which purpose",
+    "nl": "waarvoor; met welk doel"
+  },
+  "A2:vampire": {
+    "en": "vampires",
+    "nl": "vampiers"
+  },
+  "A2:welch": {
+    "en": "which; what a (question or exclamation)",
+    "nl": "welk; wat een (vraag of uitroep)"
+  },
+  "A2:lies": {
+    "en": "read!",
+    "nl": "lees!"
+  },
+  "A2:laufenden": {
+    "en": "what is happening; the current state of affairs",
+    "nl": "wat er gaande is; de actuele stand van zaken"
+  },
+  "A2:spinnst": {
+    "en": "you are talking nonsense; you are acting crazy",
+    "nl": "je praat onzin; je doet gek"
+  },
+  "A2:schlimmes": {
+    "en": "something bad; something terrible",
+    "nl": "iets ergs; iets verschrikkelijks"
+  },
+  "A2:verrückten": {
+    "en": "crazy (inflected); moved out of place",
+    "nl": "gek (verbogen); verplaatsten"
+  },
+  "A2:ellen": {
+    "en": "ells; old units of length",
+    "nl": "ellen; oude lengtematen"
+  },
+  "B1:insofern": {
+    "en": "in that respect; to that extent",
+    "nl": "in zoverre; wat dat betreft"
+  },
+  "B1:blauen": {
+    "en": "blue (inflected); turn blue",
+    "nl": "blauw (verbogen); blauw worden"
+  },
+  "B1:wohnst": {
+    "en": "you live; you reside",
+    "nl": "je woont"
+  },
+  "B1:gibts": {
+    "en": "there is; there are (contraction of gibt es)",
+    "nl": "er is; er zijn (samentrekking van gibt es)"
+  },
+  "B1:riesigen": {
+    "en": "huge; enormous (inflected form)",
+    "nl": "enorm; reusachtig (verbogen vorm)"
+  },
+  "B1:vergesse": {
+    "en": "I forget",
+    "nl": "ik vergeet"
+  },
+  "B1:hübscher": {
+    "en": "prettier; pretty (context-dependent)",
+    "nl": "mooier; mooi (afhankelijk van de context)"
+  },
+  "B1:zweit": {
+    "en": "two together; as a pair",
+    "nl": "met zijn tweeën"
+  },
+  "B1:versprich": {
+    "en": "promise!; pledge!",
+    "nl": "beloof!; zeg toe!"
+  },
+  "B1:bekanntlich": {
+    "en": "as is well known",
+    "nl": "zoals bekend"
+  },
+  "B1:triffst": {
+    "en": "you meet; you hit a target",
+    "nl": "je ontmoet; je raakt"
+  },
+  "B1:scheinst": {
+    "en": "you seem; you shine",
+    "nl": "je lijkt; je schijnt"
+  },
+  "B1:bezweifle": {
+    "en": "I doubt",
+    "nl": "ik betwijfel"
+  },
+  "B1:wesentliche": {
+    "en": "the essential thing; the essence",
+    "nl": "het wezenlijke; de kern"
+  },
+  "B1:holst": {
+    "en": "you fetch; you get",
+    "nl": "je haalt"
+  },
+  "B1:spring": {
+    "en": "jump!",
+    "nl": "spring!"
+  },
+  "B1:besseres": {
+    "en": "something better",
+    "nl": "iets beters"
+  },
+  "B1:leb": {
+    "en": "live!",
+    "nl": "leef!"
+  },
+  "B1:schreib": {
+    "en": "write!",
+    "nl": "schrijf!"
+  },
+  "B1:freu": {
+    "en": "rejoice!; be glad!",
+    "nl": "verheug je!; wees blij!"
+  },
+  "B1:einzelfall": {
+    "en": "individual case; exceptional case",
+    "nl": "afzonderlijk geval; uitzonderingsgeval"
+  },
+  "B1:bundesverfassungsgericht": {
+    "en": "German Federal Constitutional Court",
+    "nl": "federaal constitutioneel hof van Duitsland"
+  },
+  "B1:verlierst": {
+    "en": "you lose",
+    "nl": "je verliest"
+  },
+  "B1:kekse": {
+    "en": "biscuits; cookies",
+    "nl": "koekjes"
+  },
+  "B1:red": {
+    "en": "speak!; talk!",
+    "nl": "praat!; spreek!"
+  },
+  "B1:atme": {
+    "en": "breathe!",
+    "nl": "adem!; haal adem!"
+  },
+  "B1:dummen": {
+    "en": "stupid; foolish (inflected form)",
+    "nl": "dom; dwaas (verbogen vorm)"
+  },
+  "B1:stirb": {
+    "en": "die!",
+    "nl": "sterf!"
+  },
+  "B1:dritt": {
+    "en": "three together; in a group of three",
+    "nl": "met zijn drieën"
+  },
+  "B1:fing": {
+    "en": "caught; began when used with an",
+    "nl": "ving; begon in combinatie met an"
+  },
+  "B1:eingeschlafen": {
+    "en": "fell asleep",
+    "nl": "in slaap gevallen"
+  },
+  "B1:mm": {
+    "en": "megametre; one million metres",
+    "nl": "megameter; een miljoen meter"
+  },
+  "B1:ladys": {
+    "en": "ladies",
+    "nl": "dames"
+  },
+  "B1:müsstest": {
+    "en": "you should; you would have to",
+    "nl": "je zou moeten"
+  },
+  "B1:vergass": {
+    "en": "forgot",
+    "nl": "vergat"
+  },
+  "B1:zurückkommt": {
+    "en": "comes back; returns",
+    "nl": "terugkomt"
+  },
+  "B1:einiger": {
+    "en": "some (inflected); agreed or united (inflected)",
+    "nl": "enkele; sommige (verbogen); eensgezind (verbogen)"
+  },
+  "B1:möge": {
+    "en": "may; let (expressing a wish)",
+    "nl": "moge (uitdrukking van een wens)"
+  },
+  "B1:hübschen": {
+    "en": "pretty; good-looking (inflected form)",
+    "nl": "mooi; knap (verbogen vorm)"
+  },
+  "B1:schreibst": {
+    "en": "you write",
+    "nl": "je schrijft"
+  },
+  "B1:schlief": {
+    "en": "slept",
+    "nl": "sliep"
+  },
+  "B1:vergesst": {
+    "en": "forget! (plural)",
+    "nl": "vergeet! (meervoud)"
+  },
+  "B1:draus": {
+    "en": "out of it; from that (colloquial)",
+    "nl": "eruit; daaruit (spreektaal)"
+  },
+  "B1:schnapp": {
+    "en": "grab!; seize!",
+    "nl": "grijp!; pak snel!"
+  },
+  "B1:kindes": {
+    "en": "of the child; child's (genitive form)",
+    "nl": "van het kind (genitiefvorm)"
+  },
+  "B1:ooh": {
+    "en": "ooh!; sound of surprise",
+    "nl": "ooh!; uitroep van verbazing"
+  },
+  "B1:bond": {
+    "en": "bond; debt security",
+    "nl": "obligatie; schuldbewijs"
+  },
+  "B1:lernst": {
+    "en": "you learn; you study",
+    "nl": "je leert; je studeert"
+  },
+  "B1:schrecklichen": {
+    "en": "terrible; frightening (inflected form)",
+    "nl": "verschrikkelijk; angstaanjagend (verbogen vorm)"
+  },
+  "B1:befohlen": {
+    "en": "ordered; commanded",
+    "nl": "bevolen"
+  },
+  "B1:drück": {
+    "en": "press!; push!",
+    "nl": "druk!; duw!"
+  },
+  "B1:zurecht": {
+    "en": "properly; rightly (context-dependent)",
+    "nl": "naar behoren; terecht (afhankelijk van de context)"
+  },
+  "B1:bgh": {
+    "en": "German Federal Court of Justice (BGH)",
+    "nl": "federaal gerechtshof van Duitsland (BGH)"
+  },
+  "B1:vornherein": {
+    "en": "from the outset; from the beginning",
+    "nl": "van meet af aan; vanaf het begin"
+  },
+  "B1:wiederzusehen": {
+    "en": "to see again; to meet again",
+    "nl": "weer te zien; opnieuw te ontmoeten"
+  },
+  "B1:fängst": {
+    "en": "you catch; you begin when used with an",
+    "nl": "je vangt; je begint in combinatie met an"
+  },
+  "B1:di": {
+    "en": "Tuesday (abbreviation)",
+    "nl": "dinsdag (afkorting)"
+  },
+  "B1:erstmal": {
+    "en": "first; for now; to begin with",
+    "nl": "eerst; om te beginnen"
+  },
+  "B1:steck": {
+    "en": "put in!; insert!",
+    "nl": "steek in!; stop erin!"
+  },
+  "B1:gebissen": {
+    "en": "bitten",
+    "nl": "gebeten"
+  },
+  "B1:do": {
+    "en": "do; musical note",
+    "nl": "do; muzieknoot"
+  },
+  "B1:ihrerseits": {
+    "en": "on her part; on their part",
+    "nl": "van haar kant; van hun kant"
+  },
+  "B1:schliess": {
+    "en": "close!; shut!",
+    "nl": "sluit!; doe dicht!"
+  },
+  "B1:königs": {
+    "en": "of the king; king's (genitive form)",
+    "nl": "van de koning (genitiefvorm)"
+  },
+  "B1:reiss": {
+    "en": "tear!; pull hard!",
+    "nl": "scheur!; ruk!"
+  },
+  "B1:bundestagswahl": {
+    "en": "election to the German federal parliament (Bundestag)",
+    "nl": "verkiezing voor het Duitse federale parlement (Bondsdag)"
+  },
+  "B1:zeigst": {
+    "en": "you show",
+    "nl": "je laat zien; je toont"
+  },
+  "B1:sohnes": {
+    "en": "of the son; son's (genitive form)",
+    "nl": "van de zoon (genitiefvorm)"
+  },
+  "B1:gloria": {
+    "en": "glory; Gloria hymn",
+    "nl": "glorie; Gloria-hymne"
+  },
+  "B1:tel": {
+    "en": "telephone; telephone-number abbreviation",
+    "nl": "telefoon; afkorting voor telefoonnummer"
+  },
+  "B1:küsst": {
+    "en": "kisses; you kiss; kiss! (plural)",
+    "nl": "kust; jullie kussen; kus! (meervoud)"
+  },
+  "B1:liegst": {
+    "en": "you lie down; you are situated",
+    "nl": "je ligt"
+  },
+  "B1:verzeiht": {
+    "en": "forgive!; excuse! (plural)",
+    "nl": "vergeef!; excuseer! (meervoud)"
+  },
+  "B1:king": {
+    "en": "king; domineering person (borrowed word)",
+    "nl": "koning; bazig persoon (leenwoord)"
+  },
+  "B1:usw": {
+    "en": "and so on; etc. (abbreviation)",
+    "nl": "enzovoort (afkorting)"
+  },
+  "B1:seufzt": {
+    "en": "sighs; you sigh; sigh! (plural)",
+    "nl": "zucht; jullie zuchten; zucht! (meervoud)"
+  },
+  "B1:heb": {
+    "en": "lift!; raise!",
+    "nl": "til op!; hef!"
+  },
+  "B1:psst": {
+    "en": "shh!; sound requesting silence",
+    "nl": "ssst!; verzoek om stilte"
+  },
+  "B1:vergib": {
+    "en": "forgive!",
+    "nl": "vergeef!"
+  },
+  "B1:out": {
+    "en": "out of fashion; outdated (informal)",
+    "nl": "uit de mode; achterhaald (informeel)"
+  },
+  "B1:lebensjahr": {
+    "en": "year of life; year of age",
+    "nl": "levensjaar"
+  },
+  "B1:bräuchte": {
+    "en": "would need; might need",
+    "nl": "zou nodig hebben"
+  },
+  "B1:hierhin": {
+    "en": "to here; this way",
+    "nl": "hierheen"
+  },
+  "B1:geschworen": {
+    "en": "sworn; vowed",
+    "nl": "gezworen"
+  },
+  "B1:treibst": {
+    "en": "you practise; you drive; you propel",
+    "nl": "je beoefent; je drijft; je stuwt voort"
+  },
+  "B1:aufeinander": {
+    "en": "on top of one another; onto each other",
+    "nl": "op elkaar; boven op elkaar"
+  },
+  "B1:anfing": {
+    "en": "began; started",
+    "nl": "begon"
+  },
+  "B1:läufst": {
+    "en": "you run; you walk",
+    "nl": "je rent; je loopt"
+  },
+  "B1:gefressen": {
+    "en": "eaten by an animal; devoured",
+    "nl": "door een dier opgegeten; verslonden"
+  },
+  "B1:gene": {
+    "en": "genes; units of heredity",
+    "nl": "genen; erfelijke factoren"
+  },
+  "B1:gemocht": {
+    "en": "liked",
+    "nl": "gemogen; aardig gevonden"
+  },
+  "B1:fette": {
+    "en": "fat; fatty (inflected form)",
+    "nl": "dik; vet (verbogen vorm)"
+  },
+  "B1:ernstes": {
+    "en": "seriousness; in earnest (allen Ernstes)",
+    "nl": "ernst; in alle ernst (allen Ernstes)"
+  },
+  "B1:frisst": {
+    "en": "eats; an animal eats",
+    "nl": "eet; een dier eet"
+  },
+  "B1:bla": {
+    "en": "blah; meaningless talk",
+    "nl": "bla; onbelangrijk gepraat"
+  },
+  "B1:küss": {
+    "en": "kiss!",
+    "nl": "kus!"
+  },
+  "B1:amüsiert": {
+    "en": "amused; enjoying oneself",
+    "nl": "geamuseerd; zich vermakend"
+  },
+  "B1:probier": {
+    "en": "try!; taste!",
+    "nl": "probeer!; proef!"
+  },
+  "B1:scotch": {
+    "en": "Scotch whisky",
+    "nl": "Schotse whisky"
+  },
+  "B1:ehemaligen": {
+    "en": "former; previous (inflected form)",
+    "nl": "voormalig; vroeger (verbogen vorm)"
+  },
+  "B1:oje": {
+    "en": "oh dear!; oh no!",
+    "nl": "o jee!; helaas!"
+  },
+  "B1:üblichen": {
+    "en": "usual; customary (inflected form)",
+    "nl": "gebruikelijk; gewoon (verbogen vorm)"
+  },
+  "B1:hühner": {
+    "en": "chickens",
+    "nl": "kippen"
+  },
+  "B1:kümmerst": {
+    "en": "you take care of; you concern yourself with",
+    "nl": "je zorgt voor; je bekommert je om"
+  },
+  "B1:grand": {
+    "en": "coarse gravel; grand game in skat",
+    "nl": "grof grind; grandspel bij skat"
+  },
+  "B1:reingekommen": {
+    "en": "came in; entered",
+    "nl": "binnengekomen"
+  },
+  "B1:sing": {
+    "en": "sing!",
+    "nl": "zing!"
+  },
+  "B1:anruft": {
+    "en": "phones; calls by telephone",
+    "nl": "belt op"
+  },
+  "B1:täte": {
+    "en": "would do (conditional form)",
+    "nl": "zou doen (voorwaardelijke vorm)"
+  },
+  "B1:wüsstest": {
+    "en": "you would know",
+    "nl": "je zou weten"
+  },
+  "B1:partys": {
+    "en": "parties",
+    "nl": "feestjes"
+  },
+  "B1:besorg": {
+    "en": "get!; arrange!; take care of!",
+    "nl": "haal!; regel!; zorg voor!"
+  },
+  "B1:les": {
+    "en": "I read (colloquial shortened form)",
+    "nl": "ik lees (verkorte spreektaalvorm)"
+  },
+  "B1:grüss": {
+    "en": "greet!; say hello!",
+    "nl": "groet!; zeg gedag!"
+  },
+  "B1:beruhig": {
+    "en": "calm down!; calm someone! (short imperative)",
+    "nl": "kalmeer!; stel gerust! (verkorte gebiedende wijs)"
+  },
+  "B1:nich": {
+    "en": "not (colloquial form of nicht)",
+    "nl": "niet (spreektaalvorm van nicht)"
+  },
+  "B1:beschloss": {
+    "en": "decided; resolved",
+    "nl": "besloot"
+  },
+  "B1:normaler": {
+    "en": "normal; more normal (context-dependent)",
+    "nl": "normaal; normaler (afhankelijk van de context)"
+  },
+  "B1:schlauer": {
+    "en": "clever; cleverer (context-dependent)",
+    "nl": "slim; slimmer (afhankelijk van de context)"
+  },
+  "B1:gewinnst": {
+    "en": "you win; you gain",
+    "nl": "je wint"
+  },
+  "B1:aussiehst": {
+    "en": "you look; you appear (in appearance)",
+    "nl": "je ziet eruit"
+  },
+  "B1:wars": {
+    "en": "it was (contraction of war es)",
+    "nl": "het was (samentrekking van war es)"
+  },
+  "B1:grant": {
+    "en": "bad temper; grumpiness",
+    "nl": "slecht humeur; knorrigheid"
+  },
+  "B1:dax": {
+    "en": "DAX German share index; conifer branch (regional)",
+    "nl": "DAX-aandelenindex; naaldboomtak (regionaal)"
+  },
+  "B1:buddy": {
+    "en": "friend; buddy",
+    "nl": "vriend; maat"
+  },
+  "B1:führst": {
+    "en": "you lead; you manage",
+    "nl": "je leidt; je beheert"
+  },
+  "B1:erkennst": {
+    "en": "you recognise; you realise",
+    "nl": "je herkent; je beseft"
+  },
+  "B1:duke": {
+    "en": "duke; title of nobility",
+    "nl": "hertog; adellijke titel"
+  },
+  "B1:stevens": {
+    "en": "of the ship's stempost (genitive form)",
+    "nl": "van de scheepssteven (genitiefvorm)"
+  },
+  "B1:abzuholen": {
+    "en": "to collect; to pick up a person or thing",
+    "nl": "op te halen; in ontvangst te nemen"
+  },
+  "B1:weinst": {
+    "en": "you cry; you weep",
+    "nl": "je huilt"
+  },
+  "B1:anfühlt": {
+    "en": "feels to the touch; is felt",
+    "nl": "voelt aan; wordt gevoeld"
+  },
+  "B1:klingst": {
+    "en": "you sound; you ring",
+    "nl": "je klinkt"
+  },
+  "B1:herzens": {
+    "en": "of the heart; heart's (genitive form)",
+    "nl": "van het hart (genitiefvorm)"
+  },
+  "B1:lachst": {
+    "en": "you laugh",
+    "nl": "je lacht"
+  },
+  "B1:worin": {
+    "en": "in what; in which",
+    "nl": "waarin; in welk(e)"
+  },
+  "B1:fangt": {
+    "en": "catch!; begin! when used with an (plural)",
+    "nl": "vang!; begin! in combinatie met an (meervoud)"
+  },
+  "B1:andermal": {
+    "en": "another time; some other time",
+    "nl": "een andere keer"
+  },
+  "B1:marines": {
+    "en": "marines; naval infantry",
+    "nl": "mariniers"
+  },
+  "B1:handschuhe": {
+    "en": "gloves",
+    "nl": "handschoenen"
+  },
+  "B1:schwachen": {
+    "en": "weak; frail (inflected form)",
+    "nl": "zwak; broos (verbogen vorm)"
+  },
+  "B1:bell": {
+    "en": "bark!",
+    "nl": "blaf!"
+  },
+  "B1:blake": {
+    "en": "shout! (dialectal sense in this entry)",
+    "nl": "schreeuw! (dialectale betekenis in dit lemma)"
+  },
+  "B1:fliegst": {
+    "en": "you fly; you travel by plane",
+    "nl": "je vliegt; je reist per vliegtuig"
+  },
+  "B1:bedaure": {
+    "en": "I regret; I am sorry",
+    "nl": "ik betreur; het spijt me"
+  },
+  "B1:gate": {
+    "en": "airport boarding gate",
+    "nl": "gate; instapgate op een luchthaven"
+  },
+  "B1:schreckliches": {
+    "en": "something terrible; something frightening",
+    "nl": "iets verschrikkelijks; iets angstaanjagends"
+  },
+  "B1:coole": {
+    "en": "cool; calm (inflected form)",
+    "nl": "tof; kalm (verbogen vorm)"
+  },
+  "B1:heiratest": {
+    "en": "you marry; you get married",
+    "nl": "je trouwt"
+  },
+  "B1:hing": {
+    "en": "hung; was hanging",
+    "nl": "hing"
+  },
+  "B1:heisser": {
+    "en": "hotter; hot (context-dependent)",
+    "nl": "heter; heet (afhankelijk van de context)"
+  },
+  "B1:oberen": {
+    "en": "upper; higher (inflected form)",
+    "nl": "bovenste; hoger (verbogen vorm)"
+  }
+}

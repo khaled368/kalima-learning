@@ -1,7 +1,7 @@
 /* First-learning history. Legacy undated totals remain undated rather than invented. */
 (function(global){
  'use strict';
- const KEY='wort-learning-history-v1',LEVELS=['A1','A2','B1','B2','C1'];
+ const KEY=global.WORT_COURSE?.key?.('wort-learning-history-v1')||'wort-learning-history-v1',LEVELS=['A1','A2','B1','B2','C1'];
  let state=null,known=new Map(),persistent=true;
  const idKey=id=>String(id);
  function dayKey(value=new Date()){const date=value instanceof Date?value:new Date(value);return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}

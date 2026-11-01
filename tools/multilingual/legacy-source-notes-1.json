@@ -1,0 +1,20 @@
+[
+  {
+    "id": "A1:morgen",
+    "german": "Morgen",
+    "arabic": "غداً",
+    "issue": "Capitalised noun Morgen normally means morning; current Arabic says tomorrow, which corresponds to lowercase adverb morgen. Both are supplied with the adverb sense labelled; the original POS/example should determine the intended meaning."
+  },
+  {
+    "id": "A1:stellen",
+    "german": "stellen",
+    "arabic": "وضع رئيسياً",
+    "issue": "Arabic وضع رئيسياً is unidiomatic and likely a typo. Authored EN/NL reflect stellen: put/place upright, contrasting with legen."
+  },
+  {
+    "id": "A1:fliegen",
+    "german": "fliegen",
+    "arabic": "طار / يسافر بالطباطرة",
+    "issue": "Arabic يسافر بالطباطرة appears to be a typo for يسافر بالطائرة. EN/NL correctly give fly/travel by plane."
+  }
+]

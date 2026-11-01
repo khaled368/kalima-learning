@@ -1,0 +1,51 @@
+/* Native interface direction and the four-language curriculum selector. */
+.course-switch{display:flex;align-items:center;gap:12px;width:100%;min-height:66px;padding:11px 14px;margin:12px 0 7px;border:1px solid #386b79;border-radius:15px;background:linear-gradient(125deg,#103b4a,#0b2d40);color:#e7f7f8;text-align:start}
+.course-switch-icon{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;background:#1b5a65;color:#91f2e2}
+.course-switch-icon svg{width:23px;height:23px}
+.course-switch-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:1px}
+.course-switch-copy>small{font-size:13px;color:#a6cbd4;line-height:1.5}
+.course-pair{display:flex;align-items:center;gap:8px;flex-wrap:wrap;line-height:1.7}
+.course-pair>bdi{unicode-bidi:isolate}
+.course-switch-copy>strong{font-size:18px;font-weight:700}
+.course-switch-chevron{font-size:24px;color:#85dcd7}
+#course-dialog{width:min(92vw,500px);max-height:90dvh;padding:20px;border:1px solid #3c6a7e;border-radius:22px;background:linear-gradient(145deg,#0c3446,#081e30);color:#ecf8fb;overflow-y:auto;box-shadow:0 24px 100px #0008;text-align:start}
+#course-dialog::backdrop{background:#00111dc7;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.course-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 7px}
+#course-title{margin:0;font-size:26px;line-height:1.5}
+#course-close{flex:0 0 44px;width:44px;height:44px;min-height:44px;min-width:44px;padding:0;border:1px solid #2c5c70;border-radius:12px;background:#103748;color:#bedfe9;font-size:27px;line-height:1}
+.course-dialog-intro{font-size:16px;line-height:1.8;color:#adcbd7;margin:0 0 20px}
+.course-fields{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}
+.course-field{display:grid;gap:7px;min-width:0}
+.course-field>span{font-size:17px;font-weight:600;line-height:1.6;color:#daf2f5}
+.course-field>select{width:100%;min-width:0;min-height:54px;padding:10px 12px;border:1px solid #40758a;border-radius:12px;background:#0d3044;color:#f2fbff;font-size:18px;line-height:1.5}
+.course-field>select:focus-visible{outline:2px solid #76e8d5;outline-offset:3px}
+#course-swap{display:flex;align-items:center;justify-content:center;gap:8px;justify-self:center;min-height:44px;padding:7px 15px;border:1px solid #376a7c;border-radius:12px;background:#113d4c;color:#b7eee8;font-size:15px;line-height:1.7}
+.course-preview{margin:18px 0 0;padding:12px 14px;border:1px solid #316779;border-radius:13px;background:#0b293b}
+.course-preview>small{font-size:13px;line-height:1.6;color:#a4c6d1}
+#course-preview{font-size:20px;font-weight:700;justify-content:center;color:#a1f5e6;margin-top:3px}
+.course-progress-note{font-size:14px;line-height:1.8;color:#a4c8d5;margin:12px 0 0}
+#course-error{font-size:15px;line-height:1.8;color:#ffb3ba;margin:9px 0 0}
+#course-error:empty{display:none}
+#course-apply{display:block;width:100%;min-height:52px;margin-top:18px;border-radius:13px;font-size:19px;font-weight:700}
+html[dir='ltr'] #library-panel>.welcome>.hero-title,html[dir='ltr'] #library-panel>.level-summary{text-align:left}
+html[dir='ltr'] .bottom-nav,html[dir='ltr'] #library-panel #level-tabs{direction:ltr}
+html[dir='ltr'] .welcome,html[dir='ltr'] .learning-panel,html[dir='ltr'] .panel-note,html[dir='ltr'] .section-heading{text-align:start}
+html[dir='ltr'] .reference-dialog-title{text-align:center}
+html[dir='ltr'] .library-controls>summary,html[dir='ltr'] .toolbar,html[dir='ltr'] .library-viewbar{direction:ltr}
+html[dir='ltr'] .bottom-nav button small{font-size:11px;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.35}
+html[dir='ltr'] .bottom-nav button{gap:4px}
+html[dir='ltr'] .course-pair{direction:ltr}
+html[dir='rtl'] .course-pair{direction:rtl}
+[data-native-dir='rtl']{direction:rtl}
+[data-native-dir='ltr']{direction:ltr}
+@media(min-width:760px){.course-switch{max-width:100%}.course-fields{grid-template-columns:minmax(0,1fr) 44px minmax(0,1fr);gap:10px;align-items:end}#course-swap{width:44px;min-width:44px;height:54px;padding:0}#course-swap .course-swap-label{display:none}}
+@media(max-width:359px){#course-dialog{padding:16px;width:94vw}#course-title{font-size:23px}.course-switch{padding:10px;gap:9px}.course-switch-copy>strong{font-size:16px}.course-switch-copy>small{font-size:12px}.course-field>select{font-size:17px}}
+
+/* Vocabulary and explanations follow their own language, independently of the interface. */
+#word-dialog .definition[dir="ltr"],#word-dialog .example-ar[dir="ltr"]{direction:ltr;text-align:center}
+#word-dialog .example-ar[dir="ltr"]{text-align:left}
+#word-dialog .definition[dir="rtl"]{direction:rtl;text-align:center}
+#word-dialog .example-de[dir="rtl"]{direction:rtl;text-align:right}
+#word-dialog .example-de[dir="ltr"]{direction:ltr;text-align:left}
+.word-head[dir="rtl"],.translation[dir="rtl"],.review-word[dir="rtl"]{direction:rtl}
+.word-head[dir="ltr"],.translation[dir="ltr"],.review-word[dir="ltr"]{direction:ltr}

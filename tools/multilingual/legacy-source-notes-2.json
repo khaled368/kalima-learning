@@ -1,0 +1,52 @@
+[
+  {
+    "id": "A2:mach",
+    "german": "Mach",
+    "note": "Interpreted Mach as the Mach number, following the noun POS and current Arabic, not the imperative mach."
+  },
+  {
+    "id": "A2:hi",
+    "german": "Hi",
+    "note": "Hi is a greeting although the existing POS is adjective; translated the greeting without changing source metadata."
+  },
+  {
+    "id": "A2:brauch",
+    "german": "brauch",
+    "note": "Interpreted lower-case brauch as colloquial ich brauche, following the verb POS; not the noun Brauch."
+  },
+  {
+    "id": "A2:arme",
+    "german": "Arme",
+    "note": "Interpreted Arme as nominalised poor person/people, following the Arabic; not the homographic plural arms."
+  },
+  {
+    "id": "A2:anna",
+    "german": "Anna",
+    "note": "Interpreted Anna as the former Indian monetary unit specified by the Arabic, not a personal name."
+  },
+  {
+    "id": "A2:vertraut",
+    "german": "vertraut",
+    "note": "Retained both trust (verb) and familiar (adjective) readings because current Arabic includes both."
+  },
+  {
+    "id": "A2:la",
+    "german": "LA",
+    "note": "LA translated as local anaesthesia per the explicit medical Arabic sense; not the city abbreviation."
+  },
+  {
+    "id": "A2:anschlag",
+    "german": "Anschlag",
+    "note": "The notice sense of Anschlag is a posted notice/announcement, not the physical noticeboard; glosses reflect the German sense."
+  },
+  {
+    "id": "A2:krebs",
+    "german": "Krebs",
+    "note": "Krebs can denote cancer or a crustacean; used the broad zoological description rather than forcing a species."
+  },
+  {
+    "id": "A2:kohle",
+    "german": "Kohle",
+    "note": "Translated the colloquial money sense of Kohle specified by current Arabic, not the literal coal sense."
+  }
+]

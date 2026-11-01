@@ -1,0 +1,717 @@
+[
+  {
+    "id": "reviewed:0",
+    "originalSourceId": "wn:02609764-v",
+    "texts": {
+      "en": "stop",
+      "de": "aufhören",
+      "nl": "stoppen",
+      "ar": "يتوقّف"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:1",
+    "originalSourceId": "wn:01494310-v",
+    "texts": {
+      "en": "put",
+      "de": "stellen",
+      "nl": "zetten",
+      "ar": "يضع"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:2",
+    "originalSourceId": "wn:01494310-v",
+    "texts": {
+      "en": "place",
+      "de": "stellen",
+      "nl": "plaatsen",
+      "ar": "يضع"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:3",
+    "originalSourceId": "wn:02730471-v",
+    "texts": {
+      "en": "feel",
+      "de": "fühlen",
+      "nl": "voelen",
+      "ar": "يشعر"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:4",
+    "originalSourceId": "wn:00897746-v",
+    "texts": {
+      "en": "ask",
+      "de": "fragen",
+      "nl": "vragen",
+      "ar": "يسأل"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:5",
+    "originalSourceId": "wn:02137132-v",
+    "texts": {
+      "en": "show",
+      "de": "zeigen",
+      "nl": "tonen",
+      "ar": "يُظهر؛ يعرض"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:6",
+    "originalSourceId": "wn:05611302-n",
+    "texts": {
+      "en": "mind",
+      "de": "Geist",
+      "nl": "geest",
+      "ar": "عقل؛ ذهن"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:7",
+    "originalSourceId": "ding:schlagen.13",
+    "texts": {
+      "en": "best",
+      "de": "besiegen; übertreffen",
+      "nl": "verslaan; overtreffen",
+      "ar": "يهزم؛ يتفوّق على"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:8",
+    "originalSourceId": "wn:03119790-n",
+    "texts": {
+      "en": "course",
+      "de": "Bahn",
+      "nl": "baan",
+      "ar": "مسار"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:9",
+    "originalSourceId": "wn:02881397-n",
+    "texts": {
+      "en": "bowl",
+      "de": "Schüssel",
+      "nl": "kom",
+      "ar": "وعاء؛ زبدية"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:10",
+    "originalSourceId": "wn:01621555-v",
+    "texts": {
+      "en": "produce",
+      "de": "herstellen",
+      "nl": "maken",
+      "ar": "يصنع؛ ينتج"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:11",
+    "originalSourceId": "wn:01543123-v",
+    "texts": {
+      "en": "sit",
+      "de": "sitzen",
+      "nl": "zitten",
+      "ar": "يجلس"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:12",
+    "originalSourceId": "ding:bezüglich.1",
+    "texts": {
+      "en": "regarding",
+      "de": "bezüglich",
+      "nl": "betreffende",
+      "ar": "بخصوص؛ فيما يخص"
+    },
+    "pos": "preposition"
+  },
+  {
+    "id": "reviewed:13",
+    "originalSourceId": "wn:02681795-v",
+    "texts": {
+      "en": "hold",
+      "de": "halten",
+      "nl": "houden",
+      "ar": "يمسك؛ يحمل"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:14",
+    "originalSourceId": "wn:02844714-n",
+    "texts": {
+      "en": "bit",
+      "de": "Häppchen",
+      "nl": "beetje",
+      "ar": "قليل؛ جزء صغير"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:15",
+    "originalSourceId": "authored:A2:verrückten",
+    "texts": {
+      "en": "crazy",
+      "de": "verrückt",
+      "nl": "gek",
+      "ar": "مجنون"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:16",
+    "originalSourceId": "ding:letztere.1",
+    "texts": {
+      "en": "latter",
+      "de": "letztere",
+      "nl": "laatstgenoemde",
+      "ar": "الأخير من المذكورين"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:17",
+    "originalSourceId": "wn:05849040-n",
+    "texts": {
+      "en": "property",
+      "de": "Eigenschaft",
+      "nl": "eigenschap",
+      "ar": "خاصية"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:18",
+    "originalSourceId": "wn:05637558-n",
+    "texts": {
+      "en": "skill",
+      "de": "Fähigkeit",
+      "nl": "bekwaamheid",
+      "ar": "مهارة؛ قدرة"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:19",
+    "originalSourceId": "wn:01654628-v",
+    "texts": {
+      "en": "construct",
+      "de": "bauen",
+      "nl": "bouwen",
+      "ar": "يبني"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:20",
+    "originalSourceId": "ding:eben.6",
+    "texts": {
+      "en": "level",
+      "de": "eben",
+      "nl": "vlak",
+      "ar": "مستوٍ"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:21",
+    "originalSourceId": "ding:psychisch.3",
+    "texts": {
+      "en": "psychological",
+      "de": "psychisch",
+      "nl": "psychisch",
+      "ar": "نفسيّ"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:22",
+    "originalSourceId": "wn:14562960-n",
+    "texts": {
+      "en": "death",
+      "de": "Tod",
+      "nl": "dood",
+      "ar": "موت"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:23",
+    "originalSourceId": "wn:14649775-n",
+    "texts": {
+      "en": "but",
+      "de": "aber",
+      "nl": "maar",
+      "ar": "بل"
+    },
+    "pos": "conjunction"
+  },
+  {
+    "id": "reviewed:24",
+    "originalSourceId": "ding:abfahrend.9",
+    "texts": {
+      "en": "expenses",
+      "de": "Ausgaben",
+      "nl": "uitgaven",
+      "ar": "النفقات"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:25",
+    "originalSourceId": "ding:zentral.6",
+    "texts": {
+      "en": "central",
+      "de": "zentral",
+      "nl": "centraal",
+      "ar": "مركزي؛ محوري"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:26",
+    "originalSourceId": "wn:15152817-n",
+    "texts": {
+      "en": "adulthood",
+      "de": "Erwachsensein",
+      "nl": "volwassenheid",
+      "ar": "سنّ الرشد؛ البلوغ"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:27",
+    "originalSourceId": "ding:Zinn.1",
+    "texts": {
+      "en": "tin",
+      "de": "Zinn",
+      "nl": "tin",
+      "ar": "قصدير"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:28",
+    "originalSourceId": "wn:00352826-v",
+    "texts": {
+      "en": "terminate",
+      "de": "beenden",
+      "nl": "beëindigen",
+      "ar": "يُنهي"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:29",
+    "originalSourceId": "ding:verfolgen.3",
+    "texts": {
+      "en": "persecute",
+      "de": "verfolgen",
+      "nl": "vervolgen",
+      "ar": "يضطهد"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed:30",
+    "originalSourceId": "ding:angeboren.7",
+    "texts": {
+      "en": "innate",
+      "de": "angeboren",
+      "nl": "aangeboren",
+      "ar": "فطريّ"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:31",
+    "originalSourceId": "ding:Hörer.8",
+    "texts": {
+      "en": "receiver (telephone handset)",
+      "de": "Telefonhörer",
+      "nl": "telefoonhoorn",
+      "ar": "سمّاعة الهاتف"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:32",
+    "originalSourceId": "ding:Ale.1",
+    "texts": {
+      "en": "ale",
+      "de": "Ale",
+      "nl": "ale; bovengistend bier",
+      "ar": "بيرة إيل"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:33",
+    "originalSourceId": "ding:Temperament.2",
+    "texts": {
+      "en": "temperament",
+      "de": "Temperament",
+      "nl": "temperament",
+      "ar": "طبع؛ مزاج"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:34",
+    "originalSourceId": "ding:Mehrzahl.2",
+    "texts": {
+      "en": "plural",
+      "de": "Mehrzahl",
+      "nl": "meervoud",
+      "ar": "جمع (نحوي)"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:35",
+    "originalSourceId": "ding:Kanten.1",
+    "texts": {
+      "en": "heel (end of a loaf)",
+      "de": "Brotkanten",
+      "nl": "kapje van een brood",
+      "ar": "طرف رغيف الخبز"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:36",
+    "originalSourceId": "ding:Leichenwagen.1",
+    "texts": {
+      "en": "hearse",
+      "de": "Leichenwagen",
+      "nl": "lijkwagen",
+      "ar": "عربة نقل الموتى"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:37",
+    "originalSourceId": "ding:Schafott.1",
+    "texts": {
+      "en": "scaffold (execution platform)",
+      "de": "Schafott",
+      "nl": "schavot",
+      "ar": "منصّة الإعدام"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:38",
+    "originalSourceId": "ding:Blende.2",
+    "texts": {
+      "en": "diaphragm (camera aperture)",
+      "de": "Blende",
+      "nl": "diafragma",
+      "ar": "حجاب العدسة؛ فتحة العدسة"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:39",
+    "originalSourceId": "ding:heidnisch.2",
+    "texts": {
+      "en": "pagan",
+      "de": "heidnisch",
+      "nl": "heidens",
+      "ar": "وثنيّ"
+    },
+    "pos": "adjective"
+  },
+  {
+    "id": "reviewed:40",
+    "originalSourceId": "ding:Dachdecker.3",
+    "texts": {
+      "en": "roofer",
+      "de": "Dachdecker",
+      "nl": "dakdekker",
+      "ar": "مُسقِف"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:41",
+    "originalSourceId": "ding:Panorama.1",
+    "texts": {
+      "en": "panorama",
+      "de": "Panorama",
+      "nl": "panorama",
+      "ar": "مشهد بانورامي؛ منظر شامل"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:42",
+    "originalSourceId": "ding:Wachtraum.1",
+    "texts": {
+      "en": "daydream",
+      "de": "Wachtraum",
+      "nl": "dagdroom",
+      "ar": "حلم اليقظة"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:43",
+    "originalSourceId": "ding:Füllwort.1",
+    "texts": {
+      "en": "filler word",
+      "de": "Füllwort",
+      "nl": "stopwoord",
+      "ar": "كلمة حشو؛ لازمة لفظية"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:44",
+    "originalSourceId": "wn:03894379-n",
+    "texts": {
+      "en": "partition wall",
+      "de": "Trennwand",
+      "nl": "scheidingswand",
+      "ar": "حاجز؛ جدار فاصل"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:45",
+    "originalSourceId": "ding:Spelz.1",
+    "texts": {
+      "en": "spelt",
+      "de": "Spelz",
+      "nl": "spelt",
+      "ar": "قمح الإسبلت"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:46",
+    "originalSourceId": "ding:Krematorium.1",
+    "texts": {
+      "en": "crematorium",
+      "de": "Krematorium",
+      "nl": "crematorium",
+      "ar": "محرقة الجثث"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:47",
+    "originalSourceId": "ding:Flechtwerk.2",
+    "texts": {
+      "en": "wickerwork",
+      "de": "Flechtwerk",
+      "nl": "vlechtwerk",
+      "ar": "أعمال خوص؛ خوص مجدول"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed:48",
+    "originalSourceId": "ding:Hochheben.1",
+    "texts": {
+      "en": "lifting",
+      "de": "Hochheben",
+      "nl": "het heffen",
+      "ar": "رفع"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:authored:A2:graphik",
+    "originalSourceId": "authored:A2:graphik",
+    "texts": {
+      "en": "graphic; drawing",
+      "de": "Grafik",
+      "nl": "tekening; grafische voorstelling",
+      "ar": "رسم؛ تمثيل بياني"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:01156899-n",
+    "originalSourceId": "strict-wn:01156899-n",
+    "texts": {
+      "en": "arming; equipping with weapons",
+      "de": "Bewaffnung",
+      "nl": "bewapening",
+      "ar": "تسليح"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:01629958-v",
+    "originalSourceId": "strict-wn:01629958-v",
+    "texts": {
+      "en": "perform magic; conjure",
+      "de": "zaubern",
+      "nl": "goochelen",
+      "ar": "يمارس السحر"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed-source:authored:B1:les",
+    "originalSourceId": "authored:B1:les",
+    "texts": {
+      "en": "I read",
+      "de": "les",
+      "nl": "ik lees",
+      "ar": "أقرأ"
+    },
+    "pos": "verb"
+  },
+  {
+    "id": "reviewed-source:strict-wn:05397333-n",
+    "originalSourceId": "strict-wn:05397333-n",
+    "texts": {
+      "en": "vessel; container",
+      "de": "Gefäß",
+      "nl": "vat",
+      "ar": "وعاء"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:14997012-n",
+    "originalSourceId": "strict-wn:14997012-n",
+    "texts": {
+      "en": "powder",
+      "de": "Pulver",
+      "nl": "poeder",
+      "ar": "مسحوق"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:07028373-n",
+    "originalSourceId": "strict-wn:07028373-n",
+    "texts": {
+      "en": "melody; melodic line",
+      "de": "Melodie",
+      "nl": "melodie",
+      "ar": "لحن"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:08654360-n",
+    "originalSourceId": "strict-wn:08654360-n",
+    "texts": {
+      "en": "province",
+      "de": "Provinz",
+      "nl": "provincie",
+      "ar": "إقليم"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:00067707-n",
+    "originalSourceId": "strict-wn:00067707-n",
+    "texts": {
+      "en": "surrender; capitulation",
+      "de": "Kapitulation",
+      "nl": "capitulatie",
+      "ar": "استسلام"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:07085375-n",
+    "originalSourceId": "strict-wn:07085375-n",
+    "texts": {
+      "en": "stress; word accent",
+      "de": "Betonung",
+      "nl": "klemtoon",
+      "ar": "نبر؛ توكيد لفظي"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:04675314-n",
+    "originalSourceId": "strict-wn:04675314-n",
+    "texts": {
+      "en": "impression",
+      "de": "Eindruck",
+      "nl": "impressie",
+      "ar": "انطباع"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:10533013-n",
+    "originalSourceId": "strict-wn:10533013-n",
+    "texts": {
+      "en": "competitor",
+      "de": "Konkurrent",
+      "nl": "concurrent",
+      "ar": "منافس"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:06693198-n",
+    "originalSourceId": "strict-wn:06693198-n",
+    "texts": {
+      "en": "praise",
+      "de": "Lob",
+      "nl": "lof",
+      "ar": "مدح"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:07138085-n",
+    "originalSourceId": "strict-wn:07138085-n",
+    "texts": {
+      "en": "discussion",
+      "de": "Diskussion",
+      "nl": "discussie",
+      "ar": "نقاش"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:05682570-n",
+    "originalSourceId": "strict-wn:05682570-n",
+    "texts": {
+      "en": "curiosity",
+      "de": "Neugier",
+      "nl": "nieuwsgierigheid",
+      "ar": "فضول"
+    },
+    "pos": "noun"
+  },
+  {
+    "id": "reviewed-source:strict-wn:02713594-n",
+    "originalSourceId": "strict-wn:02713594-n",
+    "texts": {
+      "en": "appendix; annex",
+      "de": "Anhang",
+      "nl": "bijlage",
+      "ar": "ملحق"
+    },
+    "pos": "noun"
+  }
+]

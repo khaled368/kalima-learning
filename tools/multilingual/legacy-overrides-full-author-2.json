@@ -1,0 +1,7302 @@
+{
+  "A1:lecker": {
+    "en": "delicious; tasty",
+    "nl": "lekker; smakelijk"
+  },
+  "A1:nochmal": {
+    "en": "again; once more",
+    "nl": "nogmaals; opnieuw"
+  },
+  "A1:politisch": {
+    "en": "political",
+    "nl": "politiek"
+  },
+  "A1:geschmack": {
+    "en": "taste; sense of taste",
+    "nl": "smaak"
+  },
+  "A1:fahrzeug": {
+    "en": "vehicle",
+    "nl": "voertuig"
+  },
+  "A1:parallel": {
+    "en": "parallel",
+    "nl": "evenwijdig; parallel"
+  },
+  "A1:umweltschutz": {
+    "en": "environmental protection",
+    "nl": "milieubescherming"
+  },
+  "A1:verbinden": {
+    "en": "to connect; to combine",
+    "nl": "verbinden; combineren"
+  },
+  "A1:einrichtung": {
+    "en": "furnishings; institution",
+    "nl": "inrichting; instelling"
+  },
+  "A1:alltäglich": {
+    "en": "everyday; ordinary",
+    "nl": "alledaags; dagelijks"
+  },
+  "A1:innen": {
+    "en": "inside; on the inside",
+    "nl": "binnen; aan de binnenkant"
+  },
+  "A1:stammen": {
+    "en": "to originate from; to descend from",
+    "nl": "stammen uit; afstammen van"
+  },
+  "A1:katastrophe": {
+    "en": "disaster; catastrophe",
+    "nl": "ramp; catastrofe"
+  },
+  "A1:anlage": {
+    "en": "installation; investment",
+    "nl": "installatie; belegging"
+  },
+  "A1:menschlich": {
+    "en": "human; humane",
+    "nl": "menselijk; menslievend"
+  },
+  "A1:faktor": {
+    "en": "factor",
+    "nl": "factor"
+  },
+  "A1:personal": {
+    "en": "staff; personnel",
+    "nl": "personeel"
+  },
+  "A1:zugänglich": {
+    "en": "accessible; approachable",
+    "nl": "toegankelijk; benaderbaar"
+  },
+  "A1:zusätzlich": {
+    "en": "additional; extra",
+    "nl": "aanvullend; extra"
+  },
+  "A1:seltsam": {
+    "en": "strange; peculiar",
+    "nl": "vreemd; eigenaardig"
+  },
+  "A1:fressen": {
+    "en": "to eat (of animals); to devour",
+    "nl": "eten (van dieren); verslinden"
+  },
+  "A1:rechner": {
+    "en": "computer; calculator",
+    "nl": "computer; rekenmachine"
+  },
+  "A1:aufführen": {
+    "en": "to perform; to list",
+    "nl": "opvoeren; vermelden"
+  },
+  "A1:fordern": {
+    "en": "to demand; to require",
+    "nl": "eisen; vereisen"
+  },
+  "A1:nachdenken": {
+    "en": "to think about; to reflect",
+    "nl": "nadenken; overdenken"
+  },
+  "A1:anzahl": {
+    "en": "number; quantity",
+    "nl": "aantal"
+  },
+  "A1:statistisch": {
+    "en": "statistical",
+    "nl": "statistisch"
+  },
+  "A1:häufig": {
+    "en": "frequent; often",
+    "nl": "veelvuldig; vaak"
+  },
+  "A1:mündlich": {
+    "en": "oral; spoken",
+    "nl": "mondeling"
+  },
+  "A1:entspannen": {
+    "en": "to relax; to relieve tension",
+    "nl": "ontspannen"
+  },
+  "A1:zeug": {
+    "en": "stuff; things",
+    "nl": "spullen; dingen"
+  },
+  "A1:virus": {
+    "en": "virus",
+    "nl": "virus"
+  },
+  "A1:knopf": {
+    "en": "button; knob",
+    "nl": "knoop; knop"
+  },
+  "A1:riesig": {
+    "en": "huge; enormous",
+    "nl": "reusachtig; enorm"
+  },
+  "A1:produktion": {
+    "en": "production",
+    "nl": "productie"
+  },
+  "A1:neugierig": {
+    "en": "curious; inquisitive",
+    "nl": "nieuwsgierig"
+  },
+  "A1:beschliessen": {
+    "en": "to decide; to resolve",
+    "nl": "besluiten; beslissen"
+  },
+  "A1:bedarf": {
+    "en": "need; demand",
+    "nl": "behoefte; benodigde hoeveelheid"
+  },
+  "A1:unterhaltung": {
+    "en": "conversation; entertainment",
+    "nl": "gesprek; vermaak"
+  },
+  "A1:beschränken": {
+    "en": "to restrict; to limit",
+    "nl": "beperken; begrenzen"
+  },
+  "A1:enthalten": {
+    "en": "to contain; to include",
+    "nl": "bevatten; inhouden"
+  },
+  "A1:gelten": {
+    "en": "to apply; to be regarded as",
+    "nl": "gelden; worden beschouwd als"
+  },
+  "A1:erhöhen": {
+    "en": "to increase; to raise",
+    "nl": "verhogen; doen toenemen"
+  },
+  "A1:betrieb": {
+    "en": "business; plant; operation",
+    "nl": "bedrijf; bedrijfsvoering"
+  },
+  "A1:einschliesslich": {
+    "en": "including",
+    "nl": "inclusief; met inbegrip van"
+  },
+  "A1:historisch": {
+    "en": "historical",
+    "nl": "historisch"
+  },
+  "A1:zahlung": {
+    "en": "payment",
+    "nl": "betaling"
+  },
+  "A1:abenteuer": {
+    "en": "adventure",
+    "nl": "avontuur"
+  },
+  "A1:kindheit": {
+    "en": "childhood",
+    "nl": "kindertijd; jeugd"
+  },
+  "A1:negativ": {
+    "en": "negative",
+    "nl": "negatief"
+  },
+  "A1:leiten": {
+    "en": "to lead; to manage",
+    "nl": "leiden; besturen"
+  },
+  "A1:mieter": {
+    "en": "tenant",
+    "nl": "huurder"
+  },
+  "A1:endgültig": {
+    "en": "final; definitive",
+    "nl": "definitief; uiteindelijk"
+  },
+  "A1:anzeigen": {
+    "en": "to display; to report",
+    "nl": "aangeven; weergeven"
+  },
+  "A1:religion": {
+    "en": "religion",
+    "nl": "godsdienst; religie"
+  },
+  "A1:sand": {
+    "en": "sand",
+    "nl": "zand"
+  },
+  "A1:hafen": {
+    "en": "harbour; port",
+    "nl": "haven"
+  },
+  "A1:höchstens": {
+    "en": "at most",
+    "nl": "hoogstens; maximaal"
+  },
+  "A1:anspruch": {
+    "en": "entitlement; claim",
+    "nl": "aanspraak; recht"
+  },
+  "A1:unterstreichen": {
+    "en": "to underline; to emphasise",
+    "nl": "onderstrepen; benadrukken"
+  },
+  "A1:geschwindigkeit": {
+    "en": "speed",
+    "nl": "snelheid"
+  },
+  "A1:einzelheit": {
+    "en": "detail",
+    "nl": "bijzonderheid; detail"
+  },
+  "A1:verstecken": {
+    "en": "to hide; to conceal",
+    "nl": "verstoppen; verbergen"
+  },
+  "A1:steuer": {
+    "en": "tax",
+    "nl": "belasting"
+  },
+  "A1:entdecken": {
+    "en": "to discover",
+    "nl": "ontdekken"
+  },
+  "A1:aufwachen": {
+    "en": "to wake up",
+    "nl": "wakker worden"
+  },
+  "A1:kreuz": {
+    "en": "cross; intersection",
+    "nl": "kruis; kruising"
+  },
+  "A1:bürgerin": {
+    "en": "female citizen",
+    "nl": "burgeres"
+  },
+  "A1:möglichst": {
+    "en": "as much as possible",
+    "nl": "zo veel mogelijk"
+  },
+  "A1:umsonst": {
+    "en": "free of charge; in vain",
+    "nl": "gratis; tevergeefs"
+  },
+  "A1:überraschen": {
+    "en": "to surprise",
+    "nl": "verrassen"
+  },
+  "A1:abschluss": {
+    "en": "completion; qualification",
+    "nl": "afsluiting; diploma"
+  },
+  "A1:export": {
+    "en": "export",
+    "nl": "uitvoer; export"
+  },
+  "A1:dankbar": {
+    "en": "grateful; thankful",
+    "nl": "dankbaar"
+  },
+  "A1:vertreter": {
+    "en": "representative; deputy",
+    "nl": "vertegenwoordiger; plaatsvervanger"
+  },
+  "A1:unglück": {
+    "en": "misfortune; accident",
+    "nl": "ongeluk; tegenspoed"
+  },
+  "A1:teilweise": {
+    "en": "partly; partially",
+    "nl": "gedeeltelijk; deels"
+  },
+  "A1:festhalten": {
+    "en": "to hold firmly; to record",
+    "nl": "vasthouden; vastleggen"
+  },
+  "A1:geduld": {
+    "en": "patience",
+    "nl": "geduld"
+  },
+  "A1:mittlerweile": {
+    "en": "meanwhile; by now",
+    "nl": "inmiddels; ondertussen"
+  },
+  "A1:autorin": {
+    "en": "female author",
+    "nl": "schrijfster; auteur"
+  },
+  "A1:schulter": {
+    "en": "shoulder",
+    "nl": "schouder"
+  },
+  "A1:summe": {
+    "en": "sum; amount",
+    "nl": "som; bedrag"
+  },
+  "A1:eile": {
+    "en": "haste; hurry",
+    "nl": "haast"
+  },
+  "A1:symbol": {
+    "en": "symbol",
+    "nl": "symbool"
+  },
+  "A1:gewerkschaft": {
+    "en": "trade union",
+    "nl": "vakbond"
+  },
+  "A1:dialog": {
+    "en": "dialogue",
+    "nl": "dialoog; gesprek"
+  },
+  "A1:abnehmen": {
+    "en": "to decrease; to lose weight",
+    "nl": "afnemen; afvallen"
+  },
+  "A1:erleichtern": {
+    "en": "to make easier; to relieve",
+    "nl": "vergemakkelijken; verlichten"
+  },
+  "A1:verabschieden": {
+    "en": "to say goodbye; to pass a law",
+    "nl": "afscheid nemen; een wet aannemen"
+  },
+  "A1:kritisieren": {
+    "en": "to criticise",
+    "nl": "bekritiseren"
+  },
+  "A1:talent": {
+    "en": "talent",
+    "nl": "talent"
+  },
+  "A1:stufe": {
+    "en": "step; stage; level",
+    "nl": "trede; fase; niveau"
+  },
+  "A1:rand": {
+    "en": "edge; margin",
+    "nl": "rand; kant"
+  },
+  "A1:ungewöhnlich": {
+    "en": "unusual; uncommon",
+    "nl": "ongewoon; ongebruikelijk"
+  },
+  "A1:unterscheiden": {
+    "en": "to distinguish; to differentiate",
+    "nl": "onderscheiden; verschil maken"
+  },
+  "A1:korrekt": {
+    "en": "correct; accurate",
+    "nl": "correct; juist"
+  },
+  "A1:puppe": {
+    "en": "doll; pupa",
+    "nl": "pop; insectenpop"
+  },
+  "A1:hierher": {
+    "en": "to here",
+    "nl": "hierheen"
+  },
+  "A1:therapie": {
+    "en": "therapy; treatment",
+    "nl": "therapie; behandeling"
+  },
+  "A1:darstellung": {
+    "en": "presentation; depiction",
+    "nl": "weergave; voorstelling"
+  },
+  "A2:kompliziert": {
+    "en": "complicated; complex",
+    "nl": "ingewikkeld; gecompliceerd"
+  },
+  "A2:gerecht": {
+    "en": "fair; just",
+    "nl": "rechtvaardig; eerlijk"
+  },
+  "A2:wild": {
+    "en": "wild; untamed",
+    "nl": "wild; ongetemd"
+  },
+  "A2:fernseher": {
+    "en": "television set",
+    "nl": "televisietoestel"
+  },
+  "A2:knochen": {
+    "en": "bone",
+    "nl": "bot; been"
+  },
+  "A2:klingen": {
+    "en": "to sound; to ring",
+    "nl": "klinken; weerklinken"
+  },
+  "A2:loben": {
+    "en": "to praise",
+    "nl": "prijzen; loven"
+  },
+  "A2:fabrik": {
+    "en": "factory",
+    "nl": "fabriek"
+  },
+  "A2:behindern": {
+    "en": "to hinder; to obstruct",
+    "nl": "belemmeren; hinderen"
+  },
+  "A2:anstellen": {
+    "en": "to employ; to switch on",
+    "nl": "iin dienst nemen; aanzetten"
+  },
+  "A2:nähern": {
+    "en": "to approach; to bring closer",
+    "nl": "naderen; dichterbij brengen"
+  },
+  "A2:nochmals": {
+    "en": "again; once more",
+    "nl": "nogmaals; opnieuw"
+  },
+  "A2:gewöhnen": {
+    "en": "to accustom; to get used to",
+    "nl": "wennen; laten wennen"
+  },
+  "A2:verbrennen": {
+    "en": "to burn; to incinerate",
+    "nl": "verbranden"
+  },
+  "A2:verpflichten": {
+    "en": "to oblige; to commit",
+    "nl": "verplichten; zich verbinden"
+  },
+  "A2:decke": {
+    "en": "blanket; ceiling",
+    "nl": "deken; plafond"
+  },
+  "A2:extra": {
+    "en": "extra; separately; deliberately",
+    "nl": "extra; apart; met opzet"
+  },
+  "A2:peinlich": {
+    "en": "embarrassing",
+    "nl": "gênant; pijnlijk"
+  },
+  "A2:brennen": {
+    "en": "to burn; to be alight",
+    "nl": "branden"
+  },
+  "A2:konkurrenz": {
+    "en": "competition; competitors",
+    "nl": "concurrentie; concurrenten"
+  },
+  "A2:ereignis": {
+    "en": "event; occurrence",
+    "nl": "gebeurtenis"
+  },
+  "A2:kommunikation": {
+    "en": "communication",
+    "nl": "communicatie"
+  },
+  "A2:ausfallen": {
+    "en": "to be cancelled; to break down",
+    "nl": "uitvallen; vervallen"
+  },
+  "A2:taub": {
+    "en": "deaf; numb",
+    "nl": "doof; gevoelloos"
+  },
+  "A2:sowohl": {
+    "en": "both (in both … and)",
+    "nl": "zowel (in zowel … als)"
+  },
+  "A2:ökologisch": {
+    "en": "ecological",
+    "nl": "ecologisch"
+  },
+  "A2:versicherung": {
+    "en": "insurance; assurance",
+    "nl": "verzekering; nadrukkelijke bevestiging"
+  },
+  "A2:alternative": {
+    "en": "alternative",
+    "nl": "alternatief"
+  },
+  "A2:ergänzen": {
+    "en": "to supplement; to complete",
+    "nl": "aanvullen; vervolledigen"
+  },
+  "A2:katalog": {
+    "en": "catalogue",
+    "nl": "catalogus"
+  },
+  "A2:auswahl": {
+    "en": "selection; choice",
+    "nl": "selectie; keuze"
+  },
+  "A2:schriftsteller": {
+    "en": "writer; author",
+    "nl": "schrijver; auteur"
+  },
+  "A2:entschlossen": {
+    "en": "determined; resolute",
+    "nl": "vastbesloten; resoluut"
+  },
+  "A2:mutig": {
+    "en": "brave; courageous",
+    "nl": "moedig; dapper"
+  },
+  "A2:koch": {
+    "en": "cook; chef",
+    "nl": "kok"
+  },
+  "A2:küste": {
+    "en": "coast; coastline",
+    "nl": "kust"
+  },
+  "A2:vorhaben": {
+    "en": "to intend; to plan",
+    "nl": "van plan zijn; voorhebben"
+  },
+  "A2:eröffnen": {
+    "en": "to open; to inaugurate",
+    "nl": "openen; inwijden"
+  },
+  "A2:eilen": {
+    "en": "to hurry",
+    "nl": "haasten; zich haasten"
+  },
+  "A2:studio": {
+    "en": "studio",
+    "nl": "studio; atelier"
+  },
+  "A2:frist": {
+    "en": "deadline; time limit",
+    "nl": "termijn; uiterste datum"
+  },
+  "A2:sieger": {
+    "en": "winner",
+    "nl": "winnaar"
+  },
+  "A2:insgesamt": {
+    "en": "altogether; in total",
+    "nl": "in totaal; alles bij elkaar"
+  },
+  "A2:verwaltung": {
+    "en": "administration",
+    "nl": "bestuur; administratie"
+  },
+  "A2:abschied": {
+    "en": "farewell; parting",
+    "nl": "afscheid"
+  },
+  "A2:tempo": {
+    "en": "speed; pace",
+    "nl": "tempo; snelheid"
+  },
+  "A2:benötigen": {
+    "en": "to need; to require",
+    "nl": "nodig hebben; vereisen"
+  },
+  "A2:üblich": {
+    "en": "usual; customary",
+    "nl": "gebruikelijk; gangbaar"
+  },
+  "A2:fliehen": {
+    "en": "to flee; to escape",
+    "nl": "vluchten; ontvluchten"
+  },
+  "A2:saison": {
+    "en": "season",
+    "nl": "seizoen"
+  },
+  "A2:regelmässig": {
+    "en": "regular; regularly",
+    "nl": "regelmatig"
+  },
+  "A2:unterbrechen": {
+    "en": "to interrupt; to break off",
+    "nl": "onderbreken"
+  },
+  "A2:passiv": {
+    "en": "passive; inactive",
+    "nl": "passief; lijdend"
+  },
+  "A2:individuell": {
+    "en": "individual; personal",
+    "nl": "individueel; persoonlijk"
+  },
+  "A2:pflanzen": {
+    "en": "to plant",
+    "nl": "planten; aanplanten"
+  },
+  "A2:wirtschaft": {
+    "en": "economy; business",
+    "nl": "economie; bedrijfsleven"
+  },
+  "A2:illegal": {
+    "en": "illegal",
+    "nl": "illegaal; onwettig"
+  },
+  "A2:verlaufen": {
+    "en": "to proceed; to get lost",
+    "nl": "verlopen; verdwalen"
+  },
+  "A2:pech": {
+    "en": "bad luck; pitch",
+    "nl": "pech; pek"
+  },
+  "A2:ausrichten": {
+    "en": "to pass on a message; to organise",
+    "nl": "overbrengen; organiseren"
+  },
+  "A2:nachfrage": {
+    "en": "demand (in a market)",
+    "nl": "vraag (op de markt)"
+  },
+  "A2:weltweit": {
+    "en": "worldwide",
+    "nl": "wereldwijd"
+  },
+  "A2:teilnehmer": {
+    "en": "participant",
+    "nl": "deelnemer"
+  },
+  "A2:sinnlos": {
+    "en": "pointless; senseless",
+    "nl": "zinloos"
+  },
+  "A2:realisieren": {
+    "en": "to realise; to implement",
+    "nl": "beseffen; verwezenlijken"
+  },
+  "A2:steil": {
+    "en": "steep",
+    "nl": "steil"
+  },
+  "A2:beschäftigen": {
+    "en": "to occupy; to employ",
+    "nl": "bezighouden; in dienst hebben"
+  },
+  "A2:ursprünglich": {
+    "en": "original; originally",
+    "nl": "oorspronkelijk"
+  },
+  "A2:behörde": {
+    "en": "public authority; government agency",
+    "nl": "overheidsinstantie"
+  },
+  "A2:empfang": {
+    "en": "reception; receipt",
+    "nl": "ontvangst"
+  },
+  "A2:schlange": {
+    "en": "snake; queue",
+    "nl": "slang; rij"
+  },
+  "A2:fantasie": {
+    "en": "imagination",
+    "nl": "fantasie; verbeelding"
+  },
+  "A2:trennung": {
+    "en": "separation; division",
+    "nl": "scheiding; splitsing"
+  },
+  "A2:bemerken": {
+    "en": "to notice; to remark",
+    "nl": "opmerken; bemerken"
+  },
+  "A2:humor": {
+    "en": "humour; sense of humour",
+    "nl": "humor; gevoel voor humor"
+  },
+  "A2:gewöhnlich": {
+    "en": "ordinary; usual",
+    "nl": "gewoon; gebruikelijk"
+  },
+  "A2:anleitung": {
+    "en": "instructions; guidance",
+    "nl": "handleiding; instructies"
+  },
+  "A2:begrüssen": {
+    "en": "to greet; to welcome",
+    "nl": "begroeten; verwelkomen"
+  },
+  "A2:änderung": {
+    "en": "change; modification",
+    "nl": "verandering; wijziging"
+  },
+  "A2:tante": {
+    "en": "aunt",
+    "nl": "tante"
+  },
+  "A2:löschen": {
+    "en": "to delete; to extinguish",
+    "nl": "wissen; blussen"
+  },
+  "A2:qualifikation": {
+    "en": "qualification",
+    "nl": "kwalificatie; bevoegdheid"
+  },
+  "A2:entfernen": {
+    "en": "to remove; to distance",
+    "nl": "verwijderen"
+  },
+  "A2:testen": {
+    "en": "to test; to try out",
+    "nl": "testen; uitproberen"
+  },
+  "A2:musiker": {
+    "en": "musician",
+    "nl": "musicus; muzikant"
+  },
+  "A2:recherche": {
+    "en": "research; investigation",
+    "nl": "onderzoek; naspeuring"
+  },
+  "A2:entstehen": {
+    "en": "to arise; to come into being",
+    "nl": "ontstaan"
+  },
+  "A2:produzieren": {
+    "en": "to produce; to manufacture",
+    "nl": "produceren; vervaardigen"
+  },
+  "A2:irren": {
+    "en": "to be mistaken; to go astray",
+    "nl": "zich vergissen; dwalen"
+  },
+  "A2:motorrad": {
+    "en": "motorcycle",
+    "nl": "motorfiets"
+  },
+  "A2:wohnort": {
+    "en": "place of residence",
+    "nl": "woonplaats"
+  },
+  "A2:lohn": {
+    "en": "wage; pay",
+    "nl": "loon"
+  },
+  "A2:zustimmen": {
+    "en": "to agree; to approve",
+    "nl": "instemmen; goedkeuren"
+  },
+  "A2:lieferung": {
+    "en": "delivery; consignment",
+    "nl": "levering; zending"
+  },
+  "A2:architekt": {
+    "en": "architect",
+    "nl": "architect"
+  },
+  "A2:bewohner": {
+    "en": "resident; inhabitant",
+    "nl": "bewoner; inwoner"
+  },
+  "A2:meinetwegen": {
+    "en": "because of me; as far as I am concerned",
+    "nl": "vanwege mij; wat mij betreft"
+  },
+  "A2:zustimmung": {
+    "en": "agreement; consent",
+    "nl": "instemming; toestemming"
+  },
+  "A2:optimistisch": {
+    "en": "optimistic",
+    "nl": "optimistisch"
+  },
+  "A2:stürzen": {
+    "en": "to fall; to overthrow",
+    "nl": "vallen; ten val brengen"
+  },
+  "A2:auftreten": {
+    "en": "to appear; to occur",
+    "nl": "optreden; voorkomen"
+  },
+  "A2:begegnen": {
+    "en": "to meet; to encounter",
+    "nl": "ontmoeten; tegenkomen"
+  },
+  "A2:tourismus": {
+    "en": "tourism",
+    "nl": "toerisme"
+  },
+  "A2:spielzeug": {
+    "en": "toy; toys",
+    "nl": "speelgoed"
+  },
+  "A2:blind": {
+    "en": "blind",
+    "nl": "blind"
+  },
+  "A2:detail": {
+    "en": "detail",
+    "nl": "detail; bijzonderheid"
+  },
+  "A2:zukünftig": {
+    "en": "future; forthcoming",
+    "nl": "toekomstig"
+  },
+  "A2:feststellen": {
+    "en": "to establish; to determine",
+    "nl": "vaststellen; constateren"
+  },
+  "A2:vernünftig": {
+    "en": "sensible; reasonable",
+    "nl": "verstandig; redelijk"
+  },
+  "A2:entfernung": {
+    "en": "distance; removal",
+    "nl": "afstand; verwijdering"
+  },
+  "A2:andererseits": {
+    "en": "on the other hand",
+    "nl": "anderzijds"
+  },
+  "A2:meldung": {
+    "en": "report; announcement",
+    "nl": "melding; bericht"
+  },
+  "A2:auswählen": {
+    "en": "to select; to choose",
+    "nl": "uitkiezen; selecteren"
+  },
+  "A2:beitrag": {
+    "en": "contribution; article",
+    "nl": "bijdrage; artikel"
+  },
+  "A2:abhängig": {
+    "en": "dependent; addicted",
+    "nl": "afhankelijk; verslaafd"
+  },
+  "A2:kritik": {
+    "en": "criticism",
+    "nl": "kritiek"
+  },
+  "A2:nachwuchs": {
+    "en": "offspring; young talent",
+    "nl": "nageslacht; jong talent"
+  },
+  "A2:lärm": {
+    "en": "noise; din",
+    "nl": "lawaai; herrie"
+  },
+  "A2:vorwurf": {
+    "en": "reproach; accusation",
+    "nl": "verwijt; beschuldiging"
+  },
+  "A2:nirgendwo": {
+    "en": "nowhere",
+    "nl": "nergens"
+  },
+  "A2:markieren": {
+    "en": "to mark; to highlight",
+    "nl": "markeren; aanduiden"
+  },
+  "A2:couch": {
+    "en": "sofa; couch",
+    "nl": "bank; sofa"
+  },
+  "A2:vorschlagen": {
+    "en": "to suggest; to propose",
+    "nl": "voorstellen"
+  },
+  "A2:heben": {
+    "en": "to lift; to raise",
+    "nl": "optillen; heffen"
+  },
+  "A2:beeinflussen": {
+    "en": "to influence",
+    "nl": "beïnvloeden"
+  },
+  "A2:flur": {
+    "en": "hallway; corridor",
+    "nl": "gang; hal"
+  },
+  "A2:einfügen": {
+    "en": "to insert; to add",
+    "nl": "invoegen; toevoegen"
+  },
+  "A2:amüsieren": {
+    "en": "to amuse; to entertain",
+    "nl": "amuseren; vermaken"
+  },
+  "A2:beruhigen": {
+    "en": "to calm; to reassure",
+    "nl": "kalmeren; geruststellen"
+  },
+  "A2:zone": {
+    "en": "zone; area",
+    "nl": "zone; gebied"
+  },
+  "A2:dreck": {
+    "en": "dirt; filth",
+    "nl": "vuil; viezigheid"
+  },
+  "A2:besetzen": {
+    "en": "to occupy; to fill a position",
+    "nl": "bezetten; een functie invullen"
+  },
+  "A2:verteilen": {
+    "en": "to distribute; to divide up",
+    "nl": "verdelen; uitdelen"
+  },
+  "A2:ärztin": {
+    "en": "female doctor",
+    "nl": "arts (vrouw)"
+  },
+  "A2:konferenz": {
+    "en": "conference",
+    "nl": "conferentie; congres"
+  },
+  "A2:laster": {
+    "en": "lorry; truck",
+    "nl": "vrachtwagen"
+  },
+  "A2:ordentlich": {
+    "en": "tidy; orderly",
+    "nl": "netjes; ordelijk"
+  },
+  "A2:präsentieren": {
+    "en": "to present",
+    "nl": "presenteren; voorstellen"
+  },
+  "A2:seminar": {
+    "en": "seminar",
+    "nl": "seminar; werkcollege"
+  },
+  "A2:verletzung": {
+    "en": "injury; infringement",
+    "nl": "verwonding; schending"
+  },
+  "A2:sichtbar": {
+    "en": "visible",
+    "nl": "zichtbaar"
+  },
+  "A2:einfluss": {
+    "en": "influence",
+    "nl": "invloed"
+  },
+  "A2:original": {
+    "en": "original; original version",
+    "nl": "origineel; oorspronkelijke versie"
+  },
+  "A2:einsam": {
+    "en": "lonely; isolated",
+    "nl": "eenzaam; afgelegen"
+  },
+  "A2:bestrafen": {
+    "en": "to punish",
+    "nl": "straffen; bestraffen"
+  },
+  "A2:gift": {
+    "en": "poison",
+    "nl": "gif"
+  },
+  "A2:tal": {
+    "en": "valley",
+    "nl": "dal; vallei"
+  },
+  "A2:gemütlich": {
+    "en": "cosy; comfortable",
+    "nl": "gezellig; behaaglijk"
+  },
+  "A2:beschreibung": {
+    "en": "description",
+    "nl": "beschrijving"
+  },
+  "A2:inhalt": {
+    "en": "content; contents",
+    "nl": "inhoud"
+  },
+  "A2:benzin": {
+    "en": "petrol; gasoline",
+    "nl": "benzine"
+  },
+  "A2:lehrerin": {
+    "en": "female teacher",
+    "nl": "lerares; onderwijzeres"
+  },
+  "A2:sportler": {
+    "en": "athlete; sportsperson",
+    "nl": "sporter; atleet"
+  },
+  "A2:ausschliesslich": {
+    "en": "exclusively; solely",
+    "nl": "uitsluitend; alleen"
+  },
+  "A2:verlierer": {
+    "en": "loser",
+    "nl": "verliezer"
+  },
+  "A2:klagen": {
+    "en": "to complain; to sue",
+    "nl": "klagen; een rechtszaak aanspannen"
+  },
+  "A2:reporter": {
+    "en": "reporter",
+    "nl": "verslaggever; reporter"
+  },
+  "A2:fleck": {
+    "en": "spot; stain",
+    "nl": "vlek"
+  },
+  "A2:schieben": {
+    "en": "to push; to slide",
+    "nl": "duwen; schuiven"
+  },
+  "A2:referat": {
+    "en": "presentation; report",
+    "nl": "spreekbeurt; verslag"
+  },
+  "A2:kräftig": {
+    "en": "strong; sturdy",
+    "nl": "krachtig; stevig"
+  },
+  "A2:gras": {
+    "en": "grass",
+    "nl": "gras"
+  },
+  "A2:bedingung": {
+    "en": "condition; requirement",
+    "nl": "voorwaarde"
+  },
+  "A2:transport": {
+    "en": "transport",
+    "nl": "vervoer; transport"
+  },
+  "A2:staub": {
+    "en": "dust",
+    "nl": "stof"
+  },
+  "A2:einführen": {
+    "en": "to introduce; to import",
+    "nl": "invoeren; importeren"
+  },
+  "A2:senden": {
+    "en": "to send; to broadcast",
+    "nl": "zenden; versturen"
+  },
+  "A2:gelingen": {
+    "en": "to succeed; to turn out well",
+    "nl": "lukken; slagen"
+  },
+  "A2:kritisch": {
+    "en": "critical",
+    "nl": "kritisch; kritiek"
+  },
+  "A2:senior": {
+    "en": "senior citizen; older person",
+    "nl": "oudere; senior"
+  },
+  "A2:kanal": {
+    "en": "canal; channel",
+    "nl": "kanaal"
+  },
+  "A2:märchen": {
+    "en": "fairy tale",
+    "nl": "sprookje"
+  },
+  "A2:erschrecken": {
+    "en": "to frighten; to be startled",
+    "nl": "laten schrikken; schrikken"
+  },
+  "A2:golf": {
+    "en": "golf (sport)",
+    "nl": "golf (sport)"
+  },
+  "A2:patientin": {
+    "en": "female patient",
+    "nl": "patiënte"
+  },
+  "A2:atem": {
+    "en": "breath",
+    "nl": "adem"
+  },
+  "A2:treu": {
+    "en": "faithful; loyal",
+    "nl": "trouw; loyaal"
+  },
+  "A2:hinweisen": {
+    "en": "to point out; to draw attention to",
+    "nl": "wijzen op; attenderen op"
+  },
+  "A2:störung": {
+    "en": "fault; disturbance",
+    "nl": "storing; verstoring"
+  },
+  "A2:eventuell": {
+    "en": "possible; possibly",
+    "nl": "mogelijk; eventueel"
+  },
+  "A2:finanzieren": {
+    "en": "to finance",
+    "nl": "financieren"
+  },
+  "A2:ausstellen": {
+    "en": "to exhibit; to issue",
+    "nl": "tentoonstellen; afgeven"
+  },
+  "A2:galerie": {
+    "en": "art gallery",
+    "nl": "galerie; kunstgalerij"
+  },
+  "A2:betriebsrat": {
+    "en": "works council",
+    "nl": "ondernemingsraad"
+  },
+  "A2:blitz": {
+    "en": "lightning; flash",
+    "nl": "bliksem; flits"
+  },
+  "A2:sekretärin": {
+    "en": "female secretary",
+    "nl": "secretaresse"
+  },
+  "A2:käufer": {
+    "en": "buyer",
+    "nl": "koper"
+  },
+  "A2:spezialist": {
+    "en": "specialist",
+    "nl": "specialist; deskundige"
+  },
+  "A2:übung": {
+    "en": "exercise; practice",
+    "nl": "oefening"
+  },
+  "A2:erziehung": {
+    "en": "upbringing; education",
+    "nl": "opvoeding"
+  },
+  "A2:enttäuschen": {
+    "en": "to disappoint",
+    "nl": "teleurstellen"
+  },
+  "A2:klingeln": {
+    "en": "to ring a bell",
+    "nl": "aanbellen; rinkelen"
+  },
+  "A2:angenehm": {
+    "en": "pleasant; comfortable",
+    "nl": "aangenaam; prettig"
+  },
+  "A2:unterrichten": {
+    "en": "to teach; to inform",
+    "nl": "onderwijzen; informeren"
+  },
+  "A2:äusserlich": {
+    "en": "external; outward",
+    "nl": "uiterlijk; uitwendig"
+  },
+  "A2:beleg": {
+    "en": "evidence; documented proof",
+    "nl": "bewijs; bewijsstuk"
+  },
+  "A2:dokument": {
+    "en": "document",
+    "nl": "document; stuk"
+  },
+  "A2:hitze": {
+    "en": "heat; intense heat",
+    "nl": "hitte"
+  },
+  "A2:gedicht": {
+    "en": "poem",
+    "nl": "gedicht"
+  },
+  "A2:erstellen": {
+    "en": "to create; to draw up",
+    "nl": "opstellen; maken"
+  },
+  "A2:beruflich": {
+    "en": "professional; work-related",
+    "nl": "beroepsmatig; werkgerelateerd"
+  },
+  "A2:überzeugung": {
+    "en": "conviction; belief",
+    "nl": "overtuiging"
+  },
+  "A2:händler": {
+    "en": "trader; dealer",
+    "nl": "handelaar"
+  },
+  "A2:satt": {
+    "en": "full after eating; saturated",
+    "nl": "verzadigd; volgegeten"
+  },
+  "A2:heimlich": {
+    "en": "secret; secretly",
+    "nl": "heimelijk; stiekem"
+  },
+  "A2:erkundigen": {
+    "en": "to inquire; to ask for information",
+    "nl": "informeren; navraag doen"
+  },
+  "A2:schalten": {
+    "en": "to switch; to change gear",
+    "nl": "schakelen"
+  },
+  "A2:alarm": {
+    "en": "alarm",
+    "nl": "alarm"
+  },
+  "A2:beantragen": {
+    "en": "to apply for; to request formally",
+    "nl": "aanvragen"
+  },
+  "A2:brieftasche": {
+    "en": "wallet",
+    "nl": "portemonnee"
+  },
+  "A2:gebühr": {
+    "en": "fee; charge",
+    "nl": "vergoeding; tarief"
+  },
+  "A2:vortrag": {
+    "en": "lecture; presentation",
+    "nl": "lezing; voordracht"
+  },
+  "A2:oper": {
+    "en": "opera",
+    "nl": "opera"
+  },
+  "A2:kostüm": {
+    "en": "costume; women's suit",
+    "nl": "kostuum; mantelpak"
+  },
+  "A2:niedrig": {
+    "en": "low",
+    "nl": "laag"
+  },
+  "A2:schauspielerin": {
+    "en": "actress",
+    "nl": "actrice"
+  },
+  "A2:cousine": {
+    "en": "female cousin",
+    "nl": "nicht (dochter van oom of tante)"
+  },
+  "A2:erziehen": {
+    "en": "to bring up; to raise a child",
+    "nl": "opvoeden; grootbrengen"
+  },
+  "A2:ausgabe": {
+    "en": "edition; expenditure",
+    "nl": "uitgave; editie"
+  },
+  "A2:vermuten": {
+    "en": "to suppose; to suspect",
+    "nl": "vermoeden; veronderstellen"
+  },
+  "A2:mild": {
+    "en": "mild; gentle",
+    "nl": "mild; zacht"
+  },
+  "A2:rente": {
+    "en": "retirement pension",
+    "nl": "pensioen"
+  },
+  "A2:scheidung": {
+    "en": "divorce",
+    "nl": "echtscheiding"
+  },
+  "A2:relativ": {
+    "en": "relative; comparatively",
+    "nl": "relatief; betrekkelijk"
+  },
+  "A2:konflikt": {
+    "en": "conflict",
+    "nl": "conflict; strijd"
+  },
+  "A2:gründlich": {
+    "en": "thorough; meticulous",
+    "nl": "grondig; nauwgezet"
+  },
+  "A2:wertvoll": {
+    "en": "valuable",
+    "nl": "waardevol"
+  },
+  "A2:fortschritt": {
+    "en": "progress; advancement",
+    "nl": "vooruitgang"
+  },
+  "A2:experte": {
+    "en": "expert",
+    "nl": "expert; deskundige"
+  },
+  "A2:einwohner": {
+    "en": "inhabitant; resident",
+    "nl": "inwoner"
+  },
+  "A2:betrag": {
+    "en": "amount; numerical value",
+    "nl": "bedrag; getalswaarde"
+  },
+  "A2:mangel": {
+    "en": "shortage; defect",
+    "nl": "tekort; gebrek"
+  },
+  "A2:ideal": {
+    "en": "ideal",
+    "nl": "ideaal"
+  },
+  "A2:ernährung": {
+    "en": "nutrition; diet",
+    "nl": "voeding"
+  },
+  "A2:kopie": {
+    "en": "copy",
+    "nl": "kopie"
+  },
+  "A2:turm": {
+    "en": "tower; rook in chess",
+    "nl": "toren"
+  },
+  "A2:umgekehrt": {
+    "en": "reversed; the other way round",
+    "nl": "omgekeerd; andersom"
+  },
+  "A2:laune": {
+    "en": "mood; humour",
+    "nl": "bui; stemming"
+  },
+  "A2:kandidat": {
+    "en": "candidate",
+    "nl": "kandidaat"
+  },
+  "A2:zuhörer": {
+    "en": "listener",
+    "nl": "toehoorder; luisteraar"
+  },
+  "A2:frisur": {
+    "en": "hairstyle",
+    "nl": "kapsel"
+  },
+  "A2:speziell": {
+    "en": "special; specific",
+    "nl": "speciaal; specifiek"
+  },
+  "A2:technisch": {
+    "en": "technical",
+    "nl": "technisch"
+  },
+  "A2:bedienen": {
+    "en": "to serve; to operate a device",
+    "nl": "bedienen"
+  },
+  "A2:wiese": {
+    "en": "meadow",
+    "nl": "weide; grasland"
+  },
+  "A2:herkunft": {
+    "en": "origin; background",
+    "nl": "herkomst; afkomst"
+  },
+  "A2:kabel": {
+    "en": "cable",
+    "nl": "kabel"
+  },
+  "A2:broschüre": {
+    "en": "brochure",
+    "nl": "brochure"
+  },
+  "A2:eröffnung": {
+    "en": "opening; inauguration",
+    "nl": "opening"
+  },
+  "A2:aufforderung": {
+    "en": "request; call to act",
+    "nl": "verzoek; oproep"
+  },
+  "A2:ersatz": {
+    "en": "replacement; substitute",
+    "nl": "vervanging; vervangmiddel"
+  },
+  "A2:hammer": {
+    "en": "hammer",
+    "nl": "hamer"
+  },
+  "A2:beissen": {
+    "en": "to bite",
+    "nl": "bijten"
+  },
+  "A2:ansprechen": {
+    "en": "to address someone; to raise a topic",
+    "nl": "aanspreken; ter sprake brengen"
+  },
+  "A2:hütte": {
+    "en": "hut; cottage",
+    "nl": "hut"
+  },
+  "A2:tropfen": {
+    "en": "drop; droplet",
+    "nl": "druppel"
+  },
+  "A2:mitteilen": {
+    "en": "to inform; to communicate",
+    "nl": "meedelen; informeren"
+  },
+  "A2:empfehlung": {
+    "en": "recommendation",
+    "nl": "aanbeveling"
+  },
+  "A2:verlängern": {
+    "en": "to extend; to lengthen",
+    "nl": "verlengen"
+  },
+  "A2:kissen": {
+    "en": "pillow; cushion",
+    "nl": "kussen"
+  },
+  "A2:magazin": {
+    "en": "magazine; storage depot",
+    "nl": "tijdschrift; magazijn"
+  },
+  "A2:lehre": {
+    "en": "teaching; apprenticeship",
+    "nl": "leer; beroepsopleiding"
+  },
+  "A2:sodass": {
+    "en": "so that; with the result that",
+    "nl": "zodat"
+  },
+  "A2:einfallen": {
+    "en": "to occur to someone; to collapse",
+    "nl": "te binnen schieten; instorten"
+  },
+  "A2:einbruch": {
+    "en": "burglary; sudden decline",
+    "nl": "inbraak; plotselinge daling"
+  },
+  "A2:krankenschwester": {
+    "en": "nurse",
+    "nl": "verpleegkundige"
+  },
+  "A2:versammlung": {
+    "en": "meeting; assembly",
+    "nl": "vergadering; bijeenkomst"
+  },
+  "A2:dauer": {
+    "en": "duration",
+    "nl": "duur"
+  },
+  "A2:abschnitt": {
+    "en": "section; passage",
+    "nl": "gedeelte; paragraaf"
+  },
+  "A2:unheimlich": {
+    "en": "eerie; frightening",
+    "nl": "griezelig; onheilspellend"
+  },
+  "A2:nebenbei": {
+    "en": "incidentally; on the side",
+    "nl": "terloops; daarnaast"
+  },
+  "A2:angeben": {
+    "en": "to state; to boast",
+    "nl": "aangeven; opscheppen"
+  },
+  "A2:feuerwehr": {
+    "en": "fire brigade",
+    "nl": "brandweer"
+  },
+  "A2:national": {
+    "en": "national",
+    "nl": "nationaal"
+  },
+  "A2:ordnen": {
+    "en": "to arrange; to organise",
+    "nl": "ordenen; rangschikken"
+  },
+  "A2:höflich": {
+    "en": "polite",
+    "nl": "hoffelijk; beleefd"
+  },
+  "A2:tödlich": {
+    "en": "fatal; deadly",
+    "nl": "dodelijk"
+  },
+  "A2:zentral": {
+    "en": "central; key",
+    "nl": "centraal; voornaam"
+  },
+  "A2:künstlich": {
+    "en": "artificial",
+    "nl": "kunstmatig"
+  },
+  "A2:schachtel": {
+    "en": "box; small carton",
+    "nl": "doos; doosje"
+  },
+  "A2:aussuchen": {
+    "en": "to choose; to select",
+    "nl": "uitzoeken; kiezen"
+  },
+  "A2:bemühen": {
+    "en": "to make an effort",
+    "nl": "moeite doen; zich inspannen"
+  },
+  "A2:integrieren": {
+    "en": "to integrate",
+    "nl": "integreren"
+  },
+  "A2:überfahren": {
+    "en": "to run over; to drive past",
+    "nl": "overrijden; voorbijrijden"
+  },
+  "A2:hupen": {
+    "en": "to sound the horn",
+    "nl": "claxonneren"
+  },
+  "A2:vorkommen": {
+    "en": "to occur; to seem",
+    "nl": "voorkomen; lijken"
+  },
+  "A2:messen": {
+    "en": "to measure",
+    "nl": "meten"
+  },
+  "A2:zeile": {
+    "en": "line of text",
+    "nl": "regel tekst"
+  },
+  "A2:glatt": {
+    "en": "smooth; slippery",
+    "nl": "glad; effen"
+  },
+  "A2:nebel": {
+    "en": "fog",
+    "nl": "mist"
+  },
+  "A2:etage": {
+    "en": "floor; storey",
+    "nl": "verdieping; etage"
+  },
+  "A2:verursachen": {
+    "en": "to cause",
+    "nl": "veroorzaken"
+  },
+  "A2:veröffentlichen": {
+    "en": "to publish",
+    "nl": "publiceren; uitgeven"
+  },
+  "A2:garantieren": {
+    "en": "to guarantee",
+    "nl": "garanderen"
+  },
+  "A2:profi": {
+    "en": "professional",
+    "nl": "professional; beroepsbeoefenaar"
+  },
+  "A2:zunehmen": {
+    "en": "to increase; to gain weight",
+    "nl": "toenemen; aankomen"
+  },
+  "A2:enkel": {
+    "en": "grandson",
+    "nl": "kleinzoon"
+  },
+  "A2:gegenstand": {
+    "en": "subject; object of study",
+    "nl": "onderwerp; studieobject"
+  },
+  "A2:grundstück": {
+    "en": "plot of land; property",
+    "nl": "perceel; stuk grond"
+  },
+  "A2:verurteilen": {
+    "en": "to condemn; to sentence",
+    "nl": "veroordelen"
+  },
+  "A2:uniform": {
+    "en": "uniform",
+    "nl": "uniform"
+  },
+  "A2:schrift": {
+    "en": "writing; script",
+    "nl": "schrift; geschreven werk"
+  },
+  "A2:tauchen": {
+    "en": "to dive",
+    "nl": "duiken"
+  },
+  "A2:denkmal": {
+    "en": "monument; memorial",
+    "nl": "monument; gedenkteken"
+  },
+  "A2:erholung": {
+    "en": "rest; recovery",
+    "nl": "rust; herstel"
+  },
+  "A2:digital": {
+    "en": "digital",
+    "nl": "digitaal"
+  },
+  "A2:fliessen": {
+    "en": "to flow",
+    "nl": "stromen; vloeien"
+  },
+  "A2:temperatur": {
+    "en": "temperature",
+    "nl": "temperatuur"
+  },
+  "A2:einnehmen": {
+    "en": "to take medicine; to occupy",
+    "nl": "innemen"
+  },
+  "A2:theoretisch": {
+    "en": "theoretical",
+    "nl": "theoretisch"
+  },
+  "A2:bildschirm": {
+    "en": "screen; monitor",
+    "nl": "beeldscherm"
+  },
+  "A2:hügel": {
+    "en": "hill",
+    "nl": "heuvel"
+  },
+  "A2:infektion": {
+    "en": "infection",
+    "nl": "infectie"
+  },
+  "A2:gespannt": {
+    "en": "tense; eager",
+    "nl": "gespannen; benieuwd"
+  },
+  "A2:ofen": {
+    "en": "oven; stove",
+    "nl": "oven; kachel"
+  },
+  "A2:protestieren": {
+    "en": "to protest",
+    "nl": "protesteren"
+  },
+  "A2:ablehnen": {
+    "en": "to reject; to refuse",
+    "nl": "afwijzen; weigeren"
+  },
+  "A2:pflegen": {
+    "en": "to care for; to maintain",
+    "nl": "verzorgen; onderhouden"
+  },
+  "A2:nadel": {
+    "en": "needle",
+    "nl": "naald"
+  },
+  "A2:notaufnahme": {
+    "en": "emergency department",
+    "nl": "spoedeisende hulp"
+  },
+  "A2:ober": {
+    "en": "waiter; head waiter",
+    "nl": "ober; hoofdkelner"
+  },
+  "A2:reif": {
+    "en": "ripe; mature",
+    "nl": "rijp; volwassen"
+  },
+  "A2:ehepaar": {
+    "en": "married couple",
+    "nl": "echtpaar"
+  },
+  "A2:verständlich": {
+    "en": "understandable; clear",
+    "nl": "begrijpelijk; duidelijk"
+  },
+  "A2:ausschliessen": {
+    "en": "to exclude; to rule out",
+    "nl": "uitsluiten"
+  },
+  "A2:erfinden": {
+    "en": "to invent",
+    "nl": "uitvinden; bedenken"
+  },
+  "A2:aktivität": {
+    "en": "activity",
+    "nl": "activiteit"
+  },
+  "A2:vorläufig": {
+    "en": "temporary; provisional",
+    "nl": "voorlopig; tijdelijk"
+  },
+  "A2:umso": {
+    "en": "the more; all the more",
+    "nl": "des te; zoveel te meer"
+  },
+  "A2:erfindung": {
+    "en": "invention",
+    "nl": "uitvinding"
+  },
+  "A2:trinkgeld": {
+    "en": "tip; gratuity",
+    "nl": "fooi"
+  },
+  "A2:anfangs": {
+    "en": "at first; initially",
+    "nl": "aanvankelijk; in het begin"
+  },
+  "A2:schmuck": {
+    "en": "jewellery; adornment",
+    "nl": "sieraden; versiering"
+  },
+  "A2:füttern": {
+    "en": "to feed",
+    "nl": "voeren; voeden"
+  },
+  "A2:vorbereitung": {
+    "en": "preparation",
+    "nl": "voorbereiding"
+  },
+  "A2:abbildung": {
+    "en": "illustration; depiction",
+    "nl": "afbeelding; weergave"
+  },
+  "A2:aufheben": {
+    "en": "to pick up; to abolish",
+    "nl": "oprapen; opheffen"
+  },
+  "A2:burg": {
+    "en": "castle; fortress",
+    "nl": "burcht; kasteel"
+  },
+  "A2:überreden": {
+    "en": "to persuade",
+    "nl": "overhalen; overreden"
+  },
+  "A2:maler": {
+    "en": "painter",
+    "nl": "schilder"
+  },
+  "A2:bestätigung": {
+    "en": "confirmation",
+    "nl": "bevestiging"
+  },
+  "A2:musikalisch": {
+    "en": "musical",
+    "nl": "muzikaal"
+  },
+  "A2:tüte": {
+    "en": "bag (paper or plastic)",
+    "nl": "zak (van papier of plastic)"
+  },
+  "A2:kälte": {
+    "en": "cold; coldness",
+    "nl": "kou; koude"
+  },
+  "A2:darstellen": {
+    "en": "to depict; to represent",
+    "nl": "weergeven; voorstellen"
+  },
+  "A2:umarmen": {
+    "en": "to embrace; to hug",
+    "nl": "omhelzen"
+  },
+  "A2:hauptbahnhof": {
+    "en": "main railway station",
+    "nl": "centraal station"
+  },
+  "A2:grüssen": {
+    "en": "to greet",
+    "nl": "groeten"
+  },
+  "A2:sinken": {
+    "en": "to sink; to fall",
+    "nl": "dalen; zinken"
+  },
+  "A2:kennzeichen": {
+    "en": "distinguishing mark; number plate",
+    "nl": "kenmerk; kenteken"
+  },
+  "A2:spritze": {
+    "en": "syringe; injection",
+    "nl": "spuit; injectie"
+  },
+  "A2:genügen": {
+    "en": "to suffice",
+    "nl": "voldoende zijn; volstaan"
+  },
+  "A2:distanz": {
+    "en": "distance",
+    "nl": "afstand; distantie"
+  },
+  "A2:anwenden": {
+    "en": "to apply; to use",
+    "nl": "toepassen; gebruiken"
+  },
+  "A2:wiederholung": {
+    "en": "repetition; repeat",
+    "nl": "herhaling"
+  },
+  "A2:intelligenz": {
+    "en": "intelligence",
+    "nl": "intelligentie"
+  },
+  "A2:vermittlung": {
+    "en": "mediation; imparting knowledge",
+    "nl": "bemiddeling; kennisoverdracht"
+  },
+  "A2:journalist": {
+    "en": "journalist",
+    "nl": "journalist"
+  },
+  "A2:ausreichen": {
+    "en": "to be sufficient; to suffice",
+    "nl": "toereikend zijn; volstaan"
+  },
+  "A2:metall": {
+    "en": "metal",
+    "nl": "metaal"
+  },
+  "A2:leiterin": {
+    "en": "female manager; female leader",
+    "nl": "leidster; directrice"
+  },
+  "A2:mitarbeiterin": {
+    "en": "female employee; female colleague",
+    "nl": "medewerkster; collega"
+  },
+  "A2:kündigung": {
+    "en": "termination; notice of dismissal",
+    "nl": "opzegging; ontslag"
+  },
+  "A2:rückwärts": {
+    "en": "backwards",
+    "nl": "achteruit; achterwaarts"
+  },
+  "A2:verdächtig": {
+    "en": "suspicious",
+    "nl": "verdacht"
+  },
+  "A2:flexibel": {
+    "en": "flexible",
+    "nl": "flexibel; soepel"
+  },
+  "A2:lautsprecher": {
+    "en": "loudspeaker",
+    "nl": "luidspreker"
+  },
+  "A2:kellner": {
+    "en": "waiter",
+    "nl": "kelner; ober"
+  },
+  "A2:fahrbahn": {
+    "en": "carriageway; roadway",
+    "nl": "rijbaan"
+  },
+  "A2:operieren": {
+    "en": "to operate surgically",
+    "nl": "opereren"
+  },
+  "A2:länge": {
+    "en": "length",
+    "nl": "lengte"
+  },
+  "A2:verwandt": {
+    "en": "related; akin",
+    "nl": "verwant; verwant van aard"
+  },
+  "A2:droge": {
+    "en": "drug; narcotic",
+    "nl": "drug; verdovend middel"
+  },
+  "A2:ozean": {
+    "en": "ocean",
+    "nl": "oceaan"
+  },
+  "A2:kopieren": {
+    "en": "to copy",
+    "nl": "kopiëren"
+  },
+  "A2:anstrengend": {
+    "en": "tiring; strenuous",
+    "nl": "vermoeiend; inspannend"
+  },
+  "A2:schein": {
+    "en": "appearance; certificate; banknote",
+    "nl": "schijn; bewijs; bankbiljet"
+  },
+  "A2:werkzeug": {
+    "en": "tool; tools",
+    "nl": "gereedschap; werktuig"
+  },
+  "A2:zweifeln": {
+    "en": "to doubt",
+    "nl": "twijfelen"
+  },
+  "A2:wärme": {
+    "en": "warmth; heat",
+    "nl": "warmte"
+  },
+  "A2:ufer": {
+    "en": "bank; shore",
+    "nl": "oever"
+  },
+  "A2:aufenthalt": {
+    "en": "stay; stopover",
+    "nl": "verblijf; oponthoud"
+  },
+  "A2:konsum": {
+    "en": "consumption",
+    "nl": "consumptie; verbruik"
+  },
+  "A2:orchester": {
+    "en": "orchestra",
+    "nl": "orkest"
+  },
+  "A2:inklusive": {
+    "en": "including; inclusive of",
+    "nl": "inclusief"
+  },
+  "A2:münze": {
+    "en": "coin",
+    "nl": "munt; muntstuk"
+  },
+  "A2:fröhlich": {
+    "en": "cheerful; happy",
+    "nl": "vrolijk; opgewekt"
+  },
+  "A2:betreuen": {
+    "en": "to care for; to supervise",
+    "nl": "begeleiden; verzorgen"
+  },
+  "A2:netzwerk": {
+    "en": "network",
+    "nl": "netwerk"
+  },
+  "A2:vertretung": {
+    "en": "representation; substitution",
+    "nl": "vertegenwoordiging; vervanging"
+  },
+  "A2:bargeld": {
+    "en": "cash",
+    "nl": "contant geld"
+  },
+  "A2:quer": {
+    "en": "across; crosswise",
+    "nl": "dwars; overdwars"
+  },
+  "A2:wundern": {
+    "en": "to surprise; to wonder",
+    "nl": "verbazen; zich verwonderen"
+  },
+  "A2:grafik": {
+    "en": "graphic; chart",
+    "nl": "grafiek; grafische afbeelding"
+  },
+  "A2:besprechung": {
+    "en": "meeting; discussion",
+    "nl": "bespreking; overleg"
+  },
+  "A2:mehrwertsteuer": {
+    "en": "value-added tax; VAT",
+    "nl": "belasting over de toegevoegde waarde; btw"
+  },
+  "A2:eintreten": {
+    "en": "to enter; to occur",
+    "nl": "binnentreden; plaatsvinden"
+  },
+  "A2:fortsetzung": {
+    "en": "continuation; sequel",
+    "nl": "voortzetting; vervolg"
+  },
+  "A2:fortsetzen": {
+    "en": "to continue; to resume",
+    "nl": "voortzetten; hervatten"
+  },
+  "A2:beleidigen": {
+    "en": "to insult; to offend",
+    "nl": "beledigen"
+  },
+  "A2:anschliessen": {
+    "en": "to connect; to join",
+    "nl": "aansluiten; zich aansluiten"
+  },
+  "A2:standpunkt": {
+    "en": "viewpoint; position",
+    "nl": "standpunt"
+  },
+  "A2:abitur": {
+    "en": "German university entrance qualification",
+    "nl": "Duits diploma dat toegang geeft tot de universiteit"
+  },
+  "A2:zuschlag": {
+    "en": "surcharge; award of a contract",
+    "nl": "toeslag; gunning"
+  },
+  "A2:präsentation": {
+    "en": "presentation",
+    "nl": "presentatie"
+  },
+  "A2:asyl": {
+    "en": "asylum; refuge",
+    "nl": "asiel; toevluchtsoord"
+  },
+  "A2:einnahme": {
+    "en": "revenue; taking medicine",
+    "nl": "inkomsten; inname van medicijnen"
+  },
+  "A2:frucht": {
+    "en": "fruit; produce",
+    "nl": "vrucht; fruit"
+  },
+  "A2:frech": {
+    "en": "cheeky; rude",
+    "nl": "brutaal; onbeschoft"
+  },
+  "A2:treffpunkt": {
+    "en": "meeting point",
+    "nl": "ontmoetingsplaats; trefpunt"
+  },
+  "A2:schrecken": {
+    "en": "terror; fright",
+    "nl": "schrik; ontzetting"
+  },
+  "A2:rasen": {
+    "en": "lawn",
+    "nl": "gazon; grasveld"
+  },
+  "A2:einrichten": {
+    "en": "to furnish; to set up",
+    "nl": "inrichten; instellen"
+  },
+  "A2:intensiv": {
+    "en": "intensive; intense",
+    "nl": "intensief; hevig"
+  },
+  "A2:sänger": {
+    "en": "singer",
+    "nl": "zanger"
+  },
+  "A2:versichern": {
+    "en": "to insure; to assure",
+    "nl": "verzekeren"
+  },
+  "A2:realistisch": {
+    "en": "realistic",
+    "nl": "realistisch"
+  },
+  "A2:erlebnis": {
+    "en": "experience; memorable event",
+    "nl": "belevenis; ervaring"
+  },
+  "A2:abhängen": {
+    "en": "to depend on; to take down",
+    "nl": "afhangen van; afnemen"
+  },
+  "A2:nützen": {
+    "en": "to benefit; to be useful",
+    "nl": "baten; van nut zijn"
+  },
+  "A2:anwesend": {
+    "en": "present; in attendance",
+    "nl": "aanwezig"
+  },
+  "A2:teppich": {
+    "en": "carpet; rug",
+    "nl": "tapijt; vloerkleed"
+  },
+  "A2:beachten": {
+    "en": "to observe; to pay attention to",
+    "nl": "in acht nemen; letten op"
+  },
+  "A2:gaststätte": {
+    "en": "restaurant; pub",
+    "nl": "restaurant; eetgelegenheid"
+  },
+  "A2:gratis": {
+    "en": "free of charge",
+    "nl": "gratis"
+  },
+  "A2:hausmeister": {
+    "en": "caretaker; building superintendent",
+    "nl": "conciërge; huismeester"
+  },
+  "A2:erholen": {
+    "en": "to recover; to recuperate",
+    "nl": "herstellen; tot rust komen"
+  },
+  "A2:metropole": {
+    "en": "metropolis",
+    "nl": "metropool; wereldstad"
+  },
+  "A2:auffallen": {
+    "en": "to stand out; to be noticed",
+    "nl": "opvallen"
+  },
+  "A2:mischen": {
+    "en": "to mix",
+    "nl": "mengen"
+  },
+  "A2:flach": {
+    "en": "flat; shallow",
+    "nl": "vlak; ondiep"
+  },
+  "A2:absagen": {
+    "en": "to cancel; to decline an invitation",
+    "nl": "afzeggen"
+  },
+  "A2:menü": {
+    "en": "set menu; computer menu",
+    "nl": "menu"
+  },
+  "A2:streik": {
+    "en": "strike; industrial action",
+    "nl": "staking"
+  },
+  "A2:notruf": {
+    "en": "emergency call",
+    "nl": "noodoproep"
+  },
+  "A2:friede": {
+    "en": "peace",
+    "nl": "vrede"
+  },
+  "A2:enttäuschung": {
+    "en": "disappointment",
+    "nl": "teleurstelling"
+  },
+  "A2:handwerker": {
+    "en": "craftsperson; tradesperson",
+    "nl": "vakman; ambachtsman"
+  },
+  "A2:kabine": {
+    "en": "cabin; cubicle",
+    "nl": "cabine; hokje"
+  },
+  "A2:überschrift": {
+    "en": "heading; headline",
+    "nl": "kop; opschrift"
+  },
+  "A2:vergrössern": {
+    "en": "to enlarge; to increase",
+    "nl": "vergroten"
+  },
+  "A2:ernähren": {
+    "en": "to feed; to support",
+    "nl": "voeden; onderhouden"
+  },
+  "A2:entlassung": {
+    "en": "dismissal; discharge",
+    "nl": "ontslag"
+  },
+  "A2:geschlecht": {
+    "en": "sex; gender",
+    "nl": "geslacht"
+  },
+  "A2:übertreiben": {
+    "en": "to exaggerate",
+    "nl": "overdrijven"
+  },
+  "A2:direktorin": {
+    "en": "female director",
+    "nl": "directrice"
+  },
+  "A2:einkauf": {
+    "en": "shopping; purchases",
+    "nl": "inkoop; boodschappen"
+  },
+  "A2:populär": {
+    "en": "popular",
+    "nl": "populair"
+  },
+  "A2:abstimmen": {
+    "en": "to vote; to coordinate",
+    "nl": "stemmen; afstemmen"
+  },
+  "A2:weigern": {
+    "en": "to refuse",
+    "nl": "weigeren"
+  },
+  "A2:ernte": {
+    "en": "harvest; crop",
+    "nl": "oogst"
+  },
+  "A2:vorlesen": {
+    "en": "to read aloud",
+    "nl": "voorlezen"
+  },
+  "A2:gewohnheit": {
+    "en": "habit",
+    "nl": "gewoonte"
+  },
+  "A2:korrigieren": {
+    "en": "to correct",
+    "nl": "corrigeren; verbeteren"
+  },
+  "A2:semester": {
+    "en": "semester",
+    "nl": "semester"
+  },
+  "A2:transportieren": {
+    "en": "to transport",
+    "nl": "vervoeren; transporteren"
+  },
+  "A2:donner": {
+    "en": "thunder",
+    "nl": "donder"
+  },
+  "A2:schreck": {
+    "en": "fright; scare",
+    "nl": "schrik"
+  },
+  "A2:kranke": {
+    "en": "sick person; sick people",
+    "nl": "zieke; zieken"
+  },
+  "A2:zeugin": {
+    "en": "female witness",
+    "nl": "getuige (vrouw)"
+  },
+  "A2:pille": {
+    "en": "pill; contraceptive pill",
+    "nl": "pil; anticonceptiepil"
+  },
+  "A2:reihenfolge": {
+    "en": "order; sequence",
+    "nl": "volgorde"
+  },
+  "A2:ingenieur": {
+    "en": "engineer",
+    "nl": "ingenieur"
+  },
+  "A2:kellnerin": {
+    "en": "waitress",
+    "nl": "serveerster; kelnerin"
+  },
+  "A2:siegen": {
+    "en": "to win; to triumph",
+    "nl": "zegevieren; winnen"
+  },
+  "A2:anwältin": {
+    "en": "female lawyer",
+    "nl": "advocate"
+  },
+  "A2:salon": {
+    "en": "salon; drawing room",
+    "nl": "salon; ontvangkamer"
+  },
+  "A2:körperlich": {
+    "en": "physical; bodily",
+    "nl": "lichamelijk; fysiek"
+  },
+  "A2:widersprechen": {
+    "en": "to contradict; to disagree with",
+    "nl": "tegenspreken; weerspreken"
+  },
+  "A2:stadion": {
+    "en": "stadium",
+    "nl": "stadion"
+  },
+  "A2:schütteln": {
+    "en": "to shake",
+    "nl": "schudden"
+  },
+  "A2:fussgänger": {
+    "en": "pedestrian",
+    "nl": "voetganger"
+  },
+  "A2:mahlzeit": {
+    "en": "meal; lunchtime greeting",
+    "nl": "maaltijd; eet smakelijk (groet)"
+  },
+  "A2:garantie": {
+    "en": "guarantee; warranty",
+    "nl": "garantie"
+  },
+  "A2:dose": {
+    "en": "tin; can",
+    "nl": "blik; bus"
+  },
+  "A2:picknick": {
+    "en": "picnic",
+    "nl": "picknick"
+  },
+  "A2:konsulat": {
+    "en": "consulate",
+    "nl": "consulaat"
+  },
+  "A2:rekord": {
+    "en": "record; best achievement",
+    "nl": "record"
+  },
+  "A2:quartier": {
+    "en": "quarter; temporary lodgings",
+    "nl": "wijk; tijdelijk onderkomen"
+  },
+  "A2:festplatte": {
+    "en": "hard disk",
+    "nl": "harde schijf"
+  },
+  "A2:vorschrift": {
+    "en": "regulation; rule",
+    "nl": "voorschrift; regel"
+  },
+  "A2:rohr": {
+    "en": "pipe; tube",
+    "nl": "buis; pijp"
+  },
+  "A2:scheibe": {
+    "en": "slice; pane of glass",
+    "nl": "schijf; ruit"
+  },
+  "A2:bluten": {
+    "en": "to bleed",
+    "nl": "bloeden"
+  },
+  "A2:analysieren": {
+    "en": "to analyse",
+    "nl": "analyseren"
+  },
+  "A2:badewanne": {
+    "en": "bathtub",
+    "nl": "badkuip"
+  },
+  "A2:schwangerschaft": {
+    "en": "pregnancy",
+    "nl": "zwangerschap"
+  },
+  "A2:honig": {
+    "en": "honey",
+    "nl": "honing"
+  },
+  "A2:klettern": {
+    "en": "to climb",
+    "nl": "klimmen"
+  },
+  "A2:tankstelle": {
+    "en": "petrol station; gas station",
+    "nl": "benzinestation"
+  },
+  "A2:schüssel": {
+    "en": "bowl",
+    "nl": "schaal; kom"
+  },
+  "A2:ängstlich": {
+    "en": "anxious; fearful",
+    "nl": "angstig; bang"
+  },
+  "A2:flüssigkeit": {
+    "en": "liquid",
+    "nl": "vloeistof"
+  },
+  "A2:stehenbleiben": {
+    "en": "to stop; to remain standing",
+    "nl": "blijven staan; stilstaan"
+  },
+  "A2:klimaanlage": {
+    "en": "air conditioning",
+    "nl": "airconditioning; klimaatregeling"
+  },
+  "A2:enkelin": {
+    "en": "granddaughter",
+    "nl": "kleindochter"
+  },
+  "A2:feucht": {
+    "en": "damp; moist",
+    "nl": "vochtig"
+  },
+  "A2:kerze": {
+    "en": "candle",
+    "nl": "kaars"
+  },
+  "A2:radfahrer": {
+    "en": "cyclist",
+    "nl": "fietser"
+  },
+  "A2:reinigen": {
+    "en": "to clean; to purify",
+    "nl": "reinigen; schoonmaken"
+  },
+  "A2:künstlerin": {
+    "en": "female artist",
+    "nl": "kunstenares"
+  },
+  "A2:hörer": {
+    "en": "listener; telephone receiver",
+    "nl": "luisteraar; telefoonhoorn"
+  },
+  "A2:bremsen": {
+    "en": "to brake; to slow down",
+    "nl": "remmen; afremmen"
+  },
+  "A2:fällig": {
+    "en": "due; payable",
+    "nl": "verschuldigd; opeisbaar"
+  },
+  "A2:batterie": {
+    "en": "battery",
+    "nl": "batterij"
+  },
+  "A2:wirt": {
+    "en": "innkeeper; host",
+    "nl": "waard; gastheer"
+  },
+  "A2:nerv": {
+    "en": "nerve",
+    "nl": "zenuw"
+  },
+  "A2:kassette": {
+    "en": "cassette; small case",
+    "nl": "cassette; doosje"
+  },
+  "A2:landung": {
+    "en": "landing",
+    "nl": "landing"
+  },
+  "A2:friseur": {
+    "en": "hairdresser",
+    "nl": "kapper"
+  },
+  "A2:nagel": {
+    "en": "nail (fastener or fingernail)",
+    "nl": "spijker; nagel"
+  },
+  "A2:giessen": {
+    "en": "to pour; to water",
+    "nl": "gieten; begieten"
+  },
+  "A2:garderobe": {
+    "en": "wardrobe; cloakroom",
+    "nl": "garderobe; garderoberuimte"
+  },
+  "A2:nähen": {
+    "en": "to sew",
+    "nl": "naaien"
+  },
+  "A2:stumm": {
+    "en": "mute; silent",
+    "nl": "stom; zwijgend"
+  },
+  "A2:zeichnung": {
+    "en": "drawing",
+    "nl": "tekening"
+  },
+  "A2:wertlos": {
+    "en": "worthless",
+    "nl": "waardeloos"
+  },
+  "A2:diät": {
+    "en": "diet",
+    "nl": "dieet"
+  },
+  "A2:gleichfalls": {
+    "en": "likewise; the same to you",
+    "nl": "eveneens; insgelijks"
+  },
+  "A2:rasieren": {
+    "en": "to shave",
+    "nl": "scheren"
+  },
+  "A2:süchtig": {
+    "en": "addicted",
+    "nl": "verslaafd"
+  },
+  "A2:limonade": {
+    "en": "lemonade; soft drink",
+    "nl": "limonade; frisdrank"
+  },
+  "A2:einbrecher": {
+    "en": "burglar",
+    "nl": "inbreker"
+  },
+  "A2:langweilen": {
+    "en": "to bore; to be bored",
+    "nl": "vervelen; zich vervelen"
+  },
+  "A2:mechaniker": {
+    "en": "mechanic",
+    "nl": "monteur; mecanicien"
+  },
+  "A2:elegant": {
+    "en": "elegant",
+    "nl": "elegant"
+  },
+  "A2:sängerin": {
+    "en": "female singer",
+    "nl": "zangeres"
+  },
+  "A2:kasten": {
+    "en": "box; cabinet",
+    "nl": "kast; kist"
+  },
+  "A2:monitor": {
+    "en": "monitor; screen",
+    "nl": "monitor; beeldscherm"
+  },
+  "A2:stechen": {
+    "en": "to sting; to stab",
+    "nl": "steken; prikken"
+  },
+  "A2:dessert": {
+    "en": "dessert",
+    "nl": "dessert; nagerecht"
+  },
+  "A2:import": {
+    "en": "import",
+    "nl": "import; invoer"
+  },
+  "A2:kneipe": {
+    "en": "pub; bar",
+    "nl": "kroeg; café"
+  },
+  "A2:tuch": {
+    "en": "cloth; piece of fabric",
+    "nl": "doek"
+  },
+  "A2:abfall": {
+    "en": "waste; rubbish",
+    "nl": "afval"
+  },
+  "A2:stau": {
+    "en": "traffic jam",
+    "nl": "file"
+  },
+  "A2:sosse": {
+    "en": "sauce",
+    "nl": "saus"
+  },
+  "A2:überqueren": {
+    "en": "to cross",
+    "nl": "oversteken; doorkruisen"
+  },
+  "A2:reporterin": {
+    "en": "female reporter",
+    "nl": "verslaggeefster"
+  },
+  "A2:durstig": {
+    "en": "thirsty",
+    "nl": "dorstig"
+  },
+  "A2:blass": {
+    "en": "pale; pallid",
+    "nl": "bleek; vaal"
+  },
+  "A2:polizistin": {
+    "en": "female police officer",
+    "nl": "politieagente"
+  },
+  "A2:lebenslauf": {
+    "en": "curriculum vitae; CV",
+    "nl": "cv; levensloop"
+  },
+  "A2:nahrungsmittel": {
+    "en": "foodstuff; food",
+    "nl": "voedingsmiddel"
+  },
+  "A2:kurve": {
+    "en": "bend; curve",
+    "nl": "bocht; kromme"
+  },
+  "A2:neuigkeit": {
+    "en": "piece of news; novelty",
+    "nl": "nieuwtje; nieuwigheid"
+  },
+  "A2:erkältung": {
+    "en": "cold; common cold",
+    "nl": "verkoudheid"
+  },
+  "A2:fotograf": {
+    "en": "photographer",
+    "nl": "fotograaf"
+  },
+  "A2:pension": {
+    "en": "pension; guesthouse",
+    "nl": "pensioen; pension"
+  },
+  "A2:regal": {
+    "en": "shelf; shelving unit",
+    "nl": "plank; stellingkast"
+  },
+  "A2:nordsee": {
+    "en": "North Sea",
+    "nl": "Noordzee"
+  },
+  "A2:plastik": {
+    "en": "plastic",
+    "nl": "plastic; kunststof"
+  },
+  "A2:feuerzeug": {
+    "en": "lighter",
+    "nl": "aansteker"
+  },
+  "A2:aufschreiben": {
+    "en": "to write down",
+    "nl": "opschrijven; noteren"
+  },
+  "A2:schmutz": {
+    "en": "dirt; grime",
+    "nl": "vuil; smerigheid"
+  },
+  "A2:einschalten": {
+    "en": "to switch on",
+    "nl": "inschakelen; aanzetten"
+  },
+  "A2:strafzettel": {
+    "en": "penalty notice; parking ticket",
+    "nl": "bekeuring; parkeerbon"
+  },
+  "A2:betreuer": {
+    "en": "supervisor; carer",
+    "nl": "begeleider; verzorger"
+  },
+  "A2:ostsee": {
+    "en": "Baltic Sea",
+    "nl": "Oostzee"
+  },
+  "A2:köchin": {
+    "en": "female cook",
+    "nl": "kokkin"
+  },
+  "A2:fernbedienung": {
+    "en": "remote control",
+    "nl": "afstandsbediening"
+  },
+  "A2:anhaben": {
+    "en": "to be wearing; to have switched on",
+    "nl": "aanhebben"
+  },
+  "A2:quittung": {
+    "en": "receipt",
+    "nl": "kwitantie; betaalbewijs"
+  },
+  "A2:passagier": {
+    "en": "passenger",
+    "nl": "passagier; reiziger"
+  },
+  "A2:kleben": {
+    "en": "to stick; to glue",
+    "nl": "plakken; kleven"
+  },
+  "A2:wecker": {
+    "en": "alarm clock",
+    "nl": "wekker"
+  },
+  "A2:taschentuch": {
+    "en": "handkerchief; tissue",
+    "nl": "zakdoek"
+  },
+  "A2:schwitzen": {
+    "en": "to sweat",
+    "nl": "zweten"
+  },
+  "A2:sahne": {
+    "en": "cream",
+    "nl": "room"
+  },
+  "A2:leder": {
+    "en": "leather",
+    "nl": "leer"
+  },
+  "A2:kunststoff": {
+    "en": "plastic; synthetic material",
+    "nl": "kunststof"
+  },
+  "A2:sessel": {
+    "en": "armchair",
+    "nl": "fauteuil; leunstoel"
+  },
+  "A2:klingel": {
+    "en": "bell; doorbell",
+    "nl": "bel; deurbel"
+  },
+  "A2:besserung": {
+    "en": "improvement; recovery",
+    "nl": "beterschap; verbetering"
+  },
+  "A2:blühen": {
+    "en": "to bloom; to blossom",
+    "nl": "bloeien"
+  },
+  "A2:stecker": {
+    "en": "electrical plug",
+    "nl": "stekker"
+  },
+  "A2:rufnummer": {
+    "en": "telephone number",
+    "nl": "telefoonnummer"
+  },
+  "A2:ballett": {
+    "en": "ballet",
+    "nl": "ballet"
+  },
+  "A2:verwechseln": {
+    "en": "to confuse; to mix up",
+    "nl": "verwisselen; verwarren"
+  },
+  "A2:langeweile": {
+    "en": "boredom",
+    "nl": "verveling"
+  },
+  "A2:eisenbahn": {
+    "en": "railway",
+    "nl": "spoorweg; spoor"
+  },
+  "A2:flöte": {
+    "en": "flute",
+    "nl": "fluit"
+  },
+  "A2:ratschlag": {
+    "en": "piece of advice",
+    "nl": "raad; advies"
+  },
+  "A2:grill": {
+    "en": "grill; barbecue",
+    "nl": "grill; barbecue"
+  },
+  "A2:mobilität": {
+    "en": "mobility",
+    "nl": "mobiliteit"
+  },
+  "A2:zahnbürste": {
+    "en": "toothbrush",
+    "nl": "tandenborstel"
+  },
+  "A2:heldin": {
+    "en": "heroine",
+    "nl": "heldin"
+  },
+  "A2:haustier": {
+    "en": "pet",
+    "nl": "huisdier"
+  },
+  "A2:sekretär": {
+    "en": "secretary",
+    "nl": "secretaris"
+  },
+  "A2:briefkasten": {
+    "en": "letterbox; mailbox",
+    "nl": "brievenbus"
+  },
+  "A2:vase": {
+    "en": "vase",
+    "nl": "vaas"
+  },
+  "A2:abt": {
+    "en": "abbot",
+    "nl": "abt"
+  },
+  "A2:bub": {
+    "en": "boy (southern German usage)",
+    "nl": "jongen (Zuid-Duits gebruik)"
+  },
+  "A2:roh": {
+    "en": "raw; uncooked",
+    "nl": "rauw; onbewerkt"
+  },
+  "A2:ski": {
+    "en": "ski",
+    "nl": "ski"
+  },
+  "A2:chic": {
+    "en": "chic; stylish",
+    "nl": "chic; stijlvol"
+  },
+  "A2:kloss": {
+    "en": "dumpling; lump in the throat",
+    "nl": "deegbal; brok in de keel"
+  },
+  "A2:kuli": {
+    "en": "ballpoint pen (informal)",
+    "nl": "balpen (informeel)"
+  },
+  "A2:lift": {
+    "en": "lift; elevator",
+    "nl": "lift"
+  },
+  "A2:rahm": {
+    "en": "cream",
+    "nl": "room"
+  },
+  "A2:schi": {
+    "en": "ski (Austrian spelling)",
+    "nl": "ski (Oostenrijkse spelling)"
+  },
+  "A2:tram": {
+    "en": "tram",
+    "nl": "tram"
+  },
+  "A2:velo": {
+    "en": "bicycle (Swiss usage)",
+    "nl": "fiets (Zwitsers gebruik)"
+  },
+  "A2:abgas": {
+    "en": "exhaust gas",
+    "nl": "uitlaatgas"
+  },
+  "A2:duzen": {
+    "en": "to address informally with du",
+    "nl": "tutoyeren"
+  },
+  "A2:eckig": {
+    "en": "angular; with corners",
+    "nl": "hoekig"
+  },
+  "A2:essig": {
+    "en": "vinegar",
+    "nl": "azijn"
+  },
+  "A2:hendl": {
+    "en": "chicken; roast chicken (Austrian usage)",
+    "nl": "kip; gebraden kip (Oostenrijks gebruik)"
+  },
+  "A2:jause": {
+    "en": "snack (Austrian usage)",
+    "nl": "tussendoortje (Oostenrijks gebruik)"
+  },
+  "A2:kakao": {
+    "en": "cocoa; hot cocoa",
+    "nl": "cacao; chocolademelk"
+  },
+  "A2:kanne": {
+    "en": "jug; pot",
+    "nl": "kan"
+  },
+  "A2:klick": {
+    "en": "click",
+    "nl": "klik"
+  },
+  "A2:mager": {
+    "en": "lean; low-fat",
+    "nl": "mager; vetarm"
+  },
+  "A2:mappe": {
+    "en": "folder; portfolio",
+    "nl": "map; dossiermap"
+  },
+  "A2:mensa": {
+    "en": "university canteen",
+    "nl": "studentenrestaurant; universiteitskantine"
+  },
+  "A2:müsli": {
+    "en": "muesli",
+    "nl": "muesli"
+  },
+  "A2:panne": {
+    "en": "breakdown; mishap",
+    "nl": "pech; storing"
+  },
+  "A2:salbe": {
+    "en": "ointment",
+    "nl": "zalf"
+  },
+  "A2:sauce": {
+    "en": "sauce",
+    "nl": "saus"
+  },
+  "A2:socke": {
+    "en": "sock",
+    "nl": "sok"
+  },
+  "A2:taste": {
+    "en": "key; push button",
+    "nl": "toets; drukknop"
+  },
+  "A2:visum": {
+    "en": "visa",
+    "nl": "visum"
+  },
+  "A2:zange": {
+    "en": "pliers; tongs",
+    "nl": "tang"
+  },
+  "A2:znüni": {
+    "en": "mid-morning snack (Swiss usage)",
+    "nl": "ochtendtussendoortje (Zwitsers gebruik)"
+  },
+  "A2:zutat": {
+    "en": "ingredient",
+    "nl": "ingrediënt"
+  },
+  "A2:beinah": {
+    "en": "almost; nearly",
+    "nl": "bijna"
+  },
+  "A2:bremse": {
+    "en": "brake; horsefly",
+    "nl": "rem; daas"
+  },
+  "A2:brötli": {
+    "en": "bread roll (Swiss usage)",
+    "nl": "broodje (Zwitsers gebruik)"
+  },
+  "A2:buffet": {
+    "en": "buffet; sideboard",
+    "nl": "buffet; dressoir"
+  },
+  "A2:büchse": {
+    "en": "tin; rifle",
+    "nl": "blik; geweer"
+  },
+  "A2:büfett": {
+    "en": "buffet meal",
+    "nl": "buffetmaaltijd"
+  },
+  "A2:bürste": {
+    "en": "brush",
+    "nl": "borstel"
+  },
+  "A2:diplom": {
+    "en": "diploma",
+    "nl": "diploma"
+  },
+  "A2:farbig": {
+    "en": "coloured; colourful",
+    "nl": "gekleurd; kleurrijk"
+  },
+  "A2:frisör": {
+    "en": "hairdresser",
+    "nl": "kapper"
+  },
+  "A2:gebäck": {
+    "en": "pastries; baked goods",
+    "nl": "gebak; bakwaren"
+  },
+  "A2:gewürz": {
+    "en": "spice; seasoning",
+    "nl": "kruid; specerij"
+  },
+  "A2:giftig": {
+    "en": "poisonous; toxic",
+    "nl": "giftig"
+  },
+  "A2:hageln": {
+    "en": "to hail",
+    "nl": "hagelen"
+  },
+  "A2:heizen": {
+    "en": "to heat; to turn on the heating",
+    "nl": "verwarmen; stoken"
+  },
+  "A2:imbiss": {
+    "en": "snack; snack bar",
+    "nl": "snack; snackbar"
+  },
+  "A2:knödel": {
+    "en": "dumpling",
+    "nl": "deeg- of aardappelbal"
+  },
+  "A2:kuvert": {
+    "en": "envelope",
+    "nl": "envelop"
+  },
+  "A2:lerner": {
+    "en": "learner",
+    "nl": "leerder; leerling"
+  },
+  "A2:matura": {
+    "en": "university entrance qualification (Austria/Switzerland)",
+    "nl": "eindexamendiploma voor toegang tot de universiteit (Oostenrijk/Zwitserland)"
+  },
+  "A2:muskel": {
+    "en": "muscle",
+    "nl": "spier"
+  },
+  "A2:müesli": {
+    "en": "muesli",
+    "nl": "muesli"
+  },
+  "A2:perron": {
+    "en": "railway platform (Swiss usage)",
+    "nl": "perron (Zwitsers gebruik)"
+  },
+  "A2:rabatt": {
+    "en": "discount",
+    "nl": "korting"
+  },
+  "A2:salzig": {
+    "en": "salty",
+    "nl": "zout; zoutig"
+  },
+  "A2:semmel": {
+    "en": "bread roll",
+    "nl": "broodje"
+  },
+  "A2:siezen": {
+    "en": "to address formally with Sie",
+    "nl": "iemand met u aanspreken"
+  },
+  "A2:speise": {
+    "en": "food; dish",
+    "nl": "spijs; gerecht"
+  },
+  "A2:spülen": {
+    "en": "to rinse; to wash dishes",
+    "nl": "spoelen; afwassen"
+  },
+  "A2:tanken": {
+    "en": "to refuel",
+    "nl": "tanken"
+  },
+  "A2:tippen": {
+    "en": "to type; to tap",
+    "nl": "typen; tikken"
+  },
+  "A2:vorder": {
+    "en": "front; foremost",
+    "nl": "voorste"
+  },
+  "A2:vorort": {
+    "en": "suburb",
+    "nl": "voorstad"
+  },
+  "A2:wiegen": {
+    "en": "to weigh; to rock gently",
+    "nl": "wegen; wiegen"
+  },
+  "A2:winken": {
+    "en": "to wave",
+    "nl": "zwaaien; wenken"
+  },
+  "A2:wirtin": {
+    "en": "female innkeeper; hostess",
+    "nl": "waardin; gastvrouw"
+  },
+  "A2:zünder": {
+    "en": "igniter; detonator",
+    "nl": "ontsteker; slaghoedje"
+  },
+  "A2:abheben": {
+    "en": "to withdraw money; to take off",
+    "nl": "geld opnemen; opstijgen"
+  },
+  "A2:abwärts": {
+    "en": "downwards",
+    "nl": "naar beneden; neerwaarts"
+  },
+  "A2:annonce": {
+    "en": "advertisement",
+    "nl": "advertentie"
+  },
+  "A2:beamtin": {
+    "en": "female civil servant",
+    "nl": "ambtenares"
+  },
+  "A2:billett": {
+    "en": "ticket",
+    "nl": "biljet; kaartje"
+  },
+  "A2:blitzen": {
+    "en": "to flash; to produce lightning",
+    "nl": "flitsen; bliksemen"
+  },
+  "A2:couvert": {
+    "en": "envelope; cover",
+    "nl": "envelop; omslag"
+  },
+  "A2:dialekt": {
+    "en": "dialect",
+    "nl": "dialect"
+  },
+  "A2:donnern": {
+    "en": "to thunder; to boom",
+    "nl": "donderen; dreunen"
+  },
+  "A2:einfall": {
+    "en": "idea; sudden inspiration",
+    "nl": "inval; ingeving"
+  },
+  "A2:frieren": {
+    "en": "to feel cold; to freeze",
+    "nl": "het koud hebben; bevriezen"
+  },
+  "A2:gebirge": {
+    "en": "mountain range",
+    "nl": "gebergte"
+  },
+  "A2:haltbar": {
+    "en": "durable; keeping well",
+    "nl": "houdbaar; duurzaam"
+  },
+  "A2:heimweh": {
+    "en": "homesickness",
+    "nl": "heimwee"
+  },
+  "A2:hörerin": {
+    "en": "female listener",
+    "nl": "luisteraar (vrouw)"
+  },
+  "A2:inserat": {
+    "en": "advertisement",
+    "nl": "advertentie"
+  },
+  "A2:kantine": {
+    "en": "canteen",
+    "nl": "kantine"
+  },
+  "A2:karotte": {
+    "en": "carrot",
+    "nl": "wortel"
+  },
+  "A2:leserin": {
+    "en": "female reader",
+    "nl": "lezeres"
+  },
+  "A2:lexikon": {
+    "en": "encyclopaedia; reference dictionary",
+    "nl": "encyclopedie; naslagwoordenboek"
+  },
+  "A2:mahnung": {
+    "en": "payment reminder; warning",
+    "nl": "betalingsherinnering; aanmaning"
+  },
+  "A2:malerin": {
+    "en": "female painter",
+    "nl": "schilderes"
+  },
+  "A2:marille": {
+    "en": "apricot (Austrian usage)",
+    "nl": "abrikoos (Oostenrijks gebruik)"
+  },
+  "A2:metzger": {
+    "en": "butcher",
+    "nl": "slager"
+  },
+  "A2:migrant": {
+    "en": "migrant",
+    "nl": "migrant"
+  },
+  "A2:minimal": {
+    "en": "minimal; very small",
+    "nl": "minimaal; zeer klein"
+  },
+  "A2:pfeffer": {
+    "en": "pepper",
+    "nl": "peper"
+  },
+  "A2:pflaume": {
+    "en": "plum",
+    "nl": "pruim"
+  },
+  "A2:pfleger": {
+    "en": "male nurse; carer",
+    "nl": "verpleger; verzorger"
+  },
+  "A2:raucher": {
+    "en": "smoker",
+    "nl": "roker"
+  },
+  "A2:reklame": {
+    "en": "advertising",
+    "nl": "reclame"
+  },
+  "A2:schlank": {
+    "en": "slim; slender",
+    "nl": "slank"
+  },
+  "A2:sparsam": {
+    "en": "frugal; economical",
+    "nl": "zuinig; spaarzaam"
+  },
+  "A2:stempel": {
+    "en": "stamp; rubber stamp",
+    "nl": "stempel"
+  },
+  "A2:steward": {
+    "en": "steward; cabin attendant",
+    "nl": "steward"
+  },
+  "A2:stinken": {
+    "en": "to stink",
+    "nl": "stinken"
+  },
+  "A2:strumpf": {
+    "en": "stocking",
+    "nl": "kous"
+  },
+  "A2:täterin": {
+    "en": "female perpetrator",
+    "nl": "dader (vrouw)"
+  },
+  "A2:urkunde": {
+    "en": "official document; certificate",
+    "nl": "oorkonde; akte"
+  },
+  "A2:vitamin": {
+    "en": "vitamin",
+    "nl": "vitamine"
+  },
+  "A2:zugehen": {
+    "en": "to approach; to close",
+    "nl": "op iemand afgaan; dichtgaan"
+  },
+  "A2:zwiebel": {
+    "en": "onion",
+    "nl": "ui"
+  },
+  "A2:abmachen": {
+    "en": "to agree on; to remove",
+    "nl": "afspreken; losmaken"
+  },
+  "A2:abwesend": {
+    "en": "absent",
+    "nl": "afwezig"
+  },
+  "A2:alphabet": {
+    "en": "alphabet",
+    "nl": "alfabet"
+  },
+  "A2:aprikose": {
+    "en": "apricot",
+    "nl": "abrikoos"
+  },
+  "A2:aufladen": {
+    "en": "to recharge; to load",
+    "nl": "opladen"
+  },
+  "A2:aufwärts": {
+    "en": "upwards",
+    "nl": "omhoog; opwaarts"
+  },
+  "A2:ausfahrt": {
+    "en": "road exit; driveway exit",
+    "nl": "uitrit; afrit"
+  },
+  "A2:aushilfe": {
+    "en": "temporary help; substitute worker",
+    "nl": "invalkracht; tijdelijke hulp"
+  },
+  "A2:backrohr": {
+    "en": "oven (Austrian usage)",
+    "nl": "oven (Oostenrijks gebruik)"
+  },
+  "A2:bancomat": {
+    "en": "cash machine; ATM",
+    "nl": "geldautomaat"
+  },
+  "A2:bankomat": {
+    "en": "cash machine; ATM",
+    "nl": "geldautomaat"
+  },
+  "A2:biologie": {
+    "en": "biology",
+    "nl": "biologie"
+  },
+  "A2:coiffeur": {
+    "en": "hairdresser",
+    "nl": "kapper"
+  },
+  "A2:doktorin": {
+    "en": "female doctor; woman with a doctorate",
+    "nl": "arts (vrouw); doctor (vrouw)"
+  },
+  "A2:drogerie": {
+    "en": "drugstore; toiletries shop",
+    "nl": "drogisterij"
+  },
+  "A2:einfahrt": {
+    "en": "driveway; vehicle entrance",
+    "nl": "inrit; oprijlaan"
+  },
+  "A2:erdapfel": {
+    "en": "potato (Austrian usage)",
+    "nl": "aardappel (Oostenrijks gebruik)"
+  },
+  "A2:ereignen": {
+    "en": "to happen; to occur",
+    "nl": "gebeuren; plaatsvinden"
+  },
+  "A2:fachfrau": {
+    "en": "female specialist",
+    "nl": "vakvrouw; deskundige"
+  },
+  "A2:fachmann": {
+    "en": "specialist; expert",
+    "nl": "vakman; deskundige"
+  },
+  "A2:fasching": {
+    "en": "carnival",
+    "nl": "carnaval"
+  },
+  "A2:fauteuil": {
+    "en": "armchair",
+    "nl": "fauteuil; leunstoel"
+  },
+  "A2:fliessend": {
+    "en": "flowing; fluent",
+    "nl": "vloeiend"
+  },
+  "A2:fundbüro": {
+    "en": "lost-property office",
+    "nl": "bureau voor gevonden voorwerpen"
+  },
+  "A2:gasthaus": {
+    "en": "inn; traditional restaurant",
+    "nl": "herberg; eethuis"
+  },
+  "A2:gehsteig": {
+    "en": "pavement; sidewalk",
+    "nl": "stoep; trottoir"
+  },
+  "A2:halbtags": {
+    "en": "for half a day; part-time",
+    "nl": "een halve dag; halftijds"
+  },
+  "A2:karneval": {
+    "en": "carnival",
+    "nl": "carnaval"
+  },
+  "A2:kopierer": {
+    "en": "photocopier",
+    "nl": "kopieerapparaat"
+  },
+  "A2:korridor": {
+    "en": "corridor",
+    "nl": "gang; corridor"
+  },
+  "A2:käuferin": {
+    "en": "female buyer",
+    "nl": "koopster"
+  },
+  "A2:laufwerk": {
+    "en": "disk drive",
+    "nl": "schijfstation"
+  },
+  "A2:lehrling": {
+    "en": "apprentice",
+    "nl": "leerling in een beroepsopleiding"
+  },
+  "A2:mieterin": {
+    "en": "female tenant",
+    "nl": "huurster"
+  },
+  "A2:pauschal": {
+    "en": "all-inclusive; flat-rate",
+    "nl": "forfaitair; alles inbegrepen"
+  },
+  "A2:pflaster": {
+    "en": "sticking plaster; paving",
+    "nl": "pleister; bestrating"
+  },
+  "A2:seniorin": {
+    "en": "older woman; senior citizen",
+    "nl": "oudere vrouw; senior"
+  },
+  "A2:siegerin": {
+    "en": "female winner",
+    "nl": "winnares"
+  },
+  "A2:souvenir": {
+    "en": "souvenir",
+    "nl": "souvenir; aandenken"
+  },
+  "A2:sportart": {
+    "en": "type of sport",
+    "nl": "sport; sporttak"
+  },
+  "A2:strafbar": {
+    "en": "punishable by law",
+    "nl": "strafbaar"
+  },
+  "A2:streiken": {
+    "en": "to go on strike",
+    "nl": "staken"
+  },
+  "A2:tastatur": {
+    "en": "keyboard",
+    "nl": "toetsenbord"
+  },
+  "A2:teilzeit": {
+    "en": "part-time work",
+    "nl": "deeltijdwerk"
+  },
+  "A2:tierpark": {
+    "en": "zoo; wildlife park",
+    "nl": "dierenpark"
+  },
+  "A2:tolerant": {
+    "en": "tolerant",
+    "nl": "tolerant; verdraagzaam"
+  },
+  "A2:trottoir": {
+    "en": "pavement; sidewalk",
+    "nl": "trottoir; stoep"
+  },
+  "A2:twittern": {
+    "en": "to tweet; to chirp",
+    "nl": "tweeten; tjilpen"
+  },
+  "A2:umtausch": {
+    "en": "exchange of goods",
+    "nl": "omruiling; inruil"
+  },
+  "A2:vollzeit": {
+    "en": "full-time work",
+    "nl": "voltijdwerk"
+  },
+  "A2:vorfahrt": {
+    "en": "right of way",
+    "nl": "voorrang"
+  },
+  "A2:wohnsitz": {
+    "en": "residence; domicile",
+    "nl": "woonplaats; domicilie"
+  },
+  "A2:zündholz": {
+    "en": "match; matchstick",
+    "nl": "lucifer"
+  },
+  "A2:abwaschen": {
+    "en": "to wash off; to wash dishes",
+    "nl": "afwas doen; afwassen"
+  },
+  "A2:altenheim": {
+    "en": "residential home for older people",
+    "nl": "verzorgingshuis; bejaardentehuis"
+  },
+  "A2:bauernhof": {
+    "en": "farm",
+    "nl": "boerderij"
+  },
+  "A2:diskothek": {
+    "en": "discotheque; nightclub",
+    "nl": "discotheek"
+  },
+  "A2:einzahlen": {
+    "en": "to pay in; to deposit money",
+    "nl": "storten; geld inleggen"
+  },
+  "A2:entsorgen": {
+    "en": "to dispose of waste properly",
+    "nl": "afvoeren; als afval verwerken"
+  },
+  "A2:girokonto": {
+    "en": "current account; checking account",
+    "nl": "betaalrekening"
+  },
+  "A2:gymnastik": {
+    "en": "gymnastics; physical exercises",
+    "nl": "gymnastiek"
+  },
+  "A2:hallenbad": {
+    "en": "indoor swimming pool",
+    "nl": "overdekt zwembad"
+  },
+  "A2:hochladen": {
+    "en": "to upload",
+    "nl": "uploaden"
+  },
+  "A2:händlerin": {
+    "en": "female trader",
+    "nl": "handelaarster"
+  },
+  "A2:konfitüre": {
+    "en": "jam",
+    "nl": "jam; confituur"
+  },
+  "A2:kraftwerk": {
+    "en": "power station",
+    "nl": "elektriciteitscentrale"
+  },
+  "A2:losfahren": {
+    "en": "to set off in a vehicle",
+    "nl": "wegrijden; vertrekken"
+  },
+  "A2:margarine": {
+    "en": "margarine",
+    "nl": "margarine"
+  },
+  "A2:marmelade": {
+    "en": "jam",
+    "nl": "jam; confituur"
+  },
+  "A2:migration": {
+    "en": "migration",
+    "nl": "migratie"
+  },
+  "A2:musikerin": {
+    "en": "female musician",
+    "nl": "musicus (vrouw); muzikante"
+  },
+  "A2:mülltonne": {
+    "en": "rubbish bin; wheelie bin",
+    "nl": "vuilnisbak; afvalcontainer"
+  },
+  "A2:nachhilfe": {
+    "en": "extra tuition; tutoring",
+    "nl": "bijles"
+  },
+  "A2:parkieren": {
+    "en": "to park (Swiss usage)",
+    "nl": "parkeren (Zwitsers gebruik)"
+  },
+  "A2:pflegerin": {
+    "en": "female nurse; female carer",
+    "nl": "verpleegster; verzorgster"
+  },
+  "A2:portmonee": {
+    "en": "wallet; purse",
+    "nl": "portemonnee"
+  },
+  "A2:raucherin": {
+    "en": "female smoker",
+    "nl": "rookster"
+  },
+  "A2:reportage": {
+    "en": "reportage; on-site report",
+    "nl": "reportage"
+  },
+  "A2:richterin": {
+    "en": "female judge",
+    "nl": "rechter (vrouw)"
+  },
+  "A2:rundfahrt": {
+    "en": "sightseeing tour",
+    "nl": "rondrit"
+  },
+  "A2:rückfahrt": {
+    "en": "return journey",
+    "nl": "terugreis"
+  },
+  "A2:schminken": {
+    "en": "to apply make-up",
+    "nl": "opmaken; schminken"
+  },
+  "A2:spielerin": {
+    "en": "female player",
+    "nl": "speelster"
+  },
+  "A2:steckdose": {
+    "en": "power socket",
+    "nl": "stopcontact"
+  },
+  "A2:trainerin": {
+    "en": "female coach",
+    "nl": "trainster"
+  },
+  "A2:umleitung": {
+    "en": "diversion; detour",
+    "nl": "omleiding"
+  },
+  "A2:verpacken": {
+    "en": "to pack; to wrap",
+    "nl": "inpakken; verpakken"
+  },
+  "A2:versäumen": {
+    "en": "to miss; to neglect",
+    "nl": "verzuimen; missen"
+  },
+  "A2:waagrecht": {
+    "en": "horizontal",
+    "nl": "horizontaal"
+  },
+  "A2:wanderung": {
+    "en": "hike; walk",
+    "nl": "wandeling; trektocht"
+  },
+  "A2:zahnpasta": {
+    "en": "toothpaste",
+    "nl": "tandpasta"
+  },
+  "A2:zuhörerin": {
+    "en": "female listener",
+    "nl": "toehoorder (vrouw)"
+  },
+  "A2:zuschauen": {
+    "en": "to watch; to look on",
+    "nl": "toekijken; kijken naar"
+  },
+  "A2:ärgerlich": {
+    "en": "annoying; annoyed",
+    "nl": "ergerlijk; boos"
+  },
+  "A2:überholen": {
+    "en": "to overtake; to overhaul",
+    "nl": "inhalen; reviseren"
+  },
+  "A2:abonnement": {
+    "en": "subscription",
+    "nl": "abonnement"
+  },
+  "A2:abonnieren": {
+    "en": "to subscribe",
+    "nl": "zich abonneren"
+  },
+  "A2:absenderin": {
+    "en": "female sender",
+    "nl": "afzendster"
+  },
+  "A2:altersheim": {
+    "en": "home for older people",
+    "nl": "verzorgingshuis; bejaardentehuis"
+  },
+  "A2:anschaffen": {
+    "en": "to acquire; to purchase",
+    "nl": "aanschaffen"
+  },
+  "A2:arbeiterin": {
+    "en": "female worker",
+    "nl": "arbeidster; werkneemster"
+  },
+  "A2:ausdrucken": {
+    "en": "to print out",
+    "nl": "afdrukken; uitprinten"
+  },
+  "A2:aussprache": {
+    "en": "pronunciation",
+    "nl": "uitspraak"
+  },
+  "A2:betreuerin": {
+    "en": "female supervisor; female carer",
+    "nl": "begeleidster; verzorgster"
+  },
+  "A2:bewohnerin": {
+    "en": "female resident",
+    "nl": "bewoonster"
+  },
+  "A2:dekorieren": {
+    "en": "to decorate",
+    "nl": "versieren; decoreren"
+  },
+  "A2:einbrechen": {
+    "en": "to break in; to collapse",
+    "nl": "inbreken; instorten"
+  },
+  "A2:festsetzen": {
+    "en": "to set; to detain",
+    "nl": "vaststellen; vasthouden"
+  },
+  "A2:feststehen": {
+    "en": "to be certain; to be established",
+    "nl": "vaststaan"
+  },
+  "A2:fotografie": {
+    "en": "photography; photograph",
+    "nl": "fotografie; foto"
+  },
+  "A2:grillieren": {
+    "en": "to grill (Swiss usage)",
+    "nl": "grillen (Zwitsers gebruik)"
+  },
+  "A2:kaffeehaus": {
+    "en": "coffee house",
+    "nl": "koffiehuis"
+  },
+  "A2:kompromiss": {
+    "en": "compromise",
+    "nl": "compromis"
+  },
+  "A2:kursleiter": {
+    "en": "course instructor",
+    "nl": "cursusleider; cursusdocent"
+  },
+  "A2:lehrstelle": {
+    "en": "apprenticeship position",
+    "nl": "leerwerkplek; opleidingsplaats"
+  },
+  "A2:müllabfuhr": {
+    "en": "rubbish collection",
+    "nl": "afvalinzameling; vuilnisophaaldienst"
+  },
+  "A2:nachspeise": {
+    "en": "dessert",
+    "nl": "nagerecht"
+  },
+  "A2:notausgang": {
+    "en": "emergency exit",
+    "nl": "nooduitgang"
+  },
+  "A2:pensionist": {
+    "en": "pensioner",
+    "nl": "gepensioneerde"
+  },
+  "A2:personalie": {
+    "en": "personal detail",
+    "nl": "persoonsgegeven"
+  },
+  "A2:photograph": {
+    "en": "photographer",
+    "nl": "fotograaf"
+  },
+  "A2:praktikant": {
+    "en": "trainee; intern",
+    "nl": "stagiair"
+  },
+  "A2:schlagrahm": {
+    "en": "whipped cream",
+    "nl": "slagroom"
+  },
+  "A2:schwammerl": {
+    "en": "mushroom (Austrian/southern German usage)",
+    "nl": "paddenstoel (Oostenrijks/Zuid-Duits gebruik)"
+  },
+  "A2:spielplatz": {
+    "en": "playground",
+    "nl": "speelplaats; speeltuin"
+  },
+  "A2:sportlerin": {
+    "en": "female athlete",
+    "nl": "sportster; atlete"
+  },
+  "A2:stewardess": {
+    "en": "female flight attendant",
+    "nl": "stewardess"
+  },
+  "A2:umtauschen": {
+    "en": "to exchange goods; to exchange currency",
+    "nl": "omruilen; geld wisselen"
+  },
+  "A2:vermietung": {
+    "en": "letting; rental",
+    "nl": "verhuur"
+  },
+  "A2:verpflegen": {
+    "en": "to provide food; to cater for",
+    "nl": "van eten voorzien; verzorgen"
+  },
+  "A2:wörterbuch": {
+    "en": "dictionary",
+    "nl": "woordenboek"
+  },
+  "A2:zertifikat": {
+    "en": "certificate",
+    "nl": "certificaat"
+  },
+  "A2:zivilstand": {
+    "en": "marital status; civil status",
+    "nl": "burgerlijke staat"
+  },
+  "A2:übersetzer": {
+    "en": "translator",
+    "nl": "vertaler"
+  },
+  "A2:abfalleimer": {
+    "en": "waste bin",
+    "nl": "prullenbak; afvalemmer"
+  },
+  "A2:abschreiben": {
+    "en": "to copy; to write off",
+    "nl": "afschrijven; overschrijven"
+  },
+  "A2:architektin": {
+    "en": "female architect",
+    "nl": "architecte"
+  },
+  "A2:berufstätig": {
+    "en": "employed; working",
+    "nl": "werkend; beroepsactief"
+  },
+  "A2:beschädigen": {
+    "en": "to damage",
+    "nl": "beschadigen"
+  },
+  "A2:briefträger": {
+    "en": "postman; postal worker",
+    "nl": "postbode"
+  },
+  "A2:einwohnerin": {
+    "en": "female inhabitant",
+    "nl": "inwoonster"
+  },
+  "A2:fortbildung": {
+    "en": "continuing professional training",
+    "nl": "bijscholing; nascholing"
+  },
+  "A2:fussgängerin": {
+    "en": "female pedestrian",
+    "nl": "voetgangster"
+  },
+  "A2:geldautomat": {
+    "en": "cash machine; ATM",
+    "nl": "geldautomaat"
+  },
+  "A2:gratulation": {
+    "en": "congratulation",
+    "nl": "gelukwens; felicitatie"
+  },
+  "A2:hackfleisch": {
+    "en": "minced meat",
+    "nl": "gehakt"
+  },
+  "A2:konsumieren": {
+    "en": "to consume",
+    "nl": "consumeren; verbruiken"
+  },
+  "A2:passagierin": {
+    "en": "female passenger",
+    "nl": "passagiere"
+  },
+  "A2:politikerin": {
+    "en": "female politician",
+    "nl": "politica"
+  },
+  "A2:professorin": {
+    "en": "female professor",
+    "nl": "hoogleraar (vrouw); professor (vrouw)"
+  },
+  "A2:radfahrerin": {
+    "en": "female cyclist",
+    "nl": "fietsster"
+  },
+  "A2:schlagsahne": {
+    "en": "whipping cream; whipped cream",
+    "nl": "slagroom"
+  },
+  "A2:schularbeit": {
+    "en": "schoolwork; written school test",
+    "nl": "schoolwerk; proefwerk"
+  },
+  "A2:staubsaugen": {
+    "en": "to vacuum",
+    "nl": "stofzuigen"
+  },
+  "A2:stiegenhaus": {
+    "en": "stairwell (Austrian usage)",
+    "nl": "trappenhuis (Oostenrijks gebruik)"
+  },
+  "A2:stilistisch": {
+    "en": "stylistic",
+    "nl": "stilistisch"
+  },
+  "A2:streichholz": {
+    "en": "match; matchstick",
+    "nl": "lucifer"
+  },
+  "A2:suchtmittel": {
+    "en": "addictive substance",
+    "nl": "verslavend middel"
+  },
+  "A2:treppenhaus": {
+    "en": "stairwell",
+    "nl": "trappenhuis"
+  },
+  "A2:unterlassen": {
+    "en": "to refrain from; to omit",
+    "nl": "nalaten; achterwege laten"
+  },
+  "A2:vegetarisch": {
+    "en": "vegetarian",
+    "nl": "vegetarisch"
+  },
+  "A2:verbrauchen": {
+    "en": "to consume; to use up",
+    "nl": "verbruiken; opgebruiken"
+  },
+  "A2:verkäuferin": {
+    "en": "female shop assistant",
+    "nl": "verkoopster"
+  },
+  "A2:vertreterin": {
+    "en": "female representative",
+    "nl": "vertegenwoordigster"
+  },
+  "A2:waschmittel": {
+    "en": "laundry detergent",
+    "nl": "wasmiddel"
+  },
+  "A2:zuschauerin": {
+    "en": "female spectator",
+    "nl": "toeschouwster"
+  },
+  "A2:überweisung": {
+    "en": "bank transfer; medical referral",
+    "nl": "overschrijving; medische verwijzing"
+  },
+  "A2:bankleitzahl": {
+    "en": "bank identification code",
+    "nl": "bankcode"
+  },
+  "A2:befriedigend": {
+    "en": "satisfactory",
+    "nl": "bevredigend; voldoende"
+  },
+  "A2:bekanntgeben": {
+    "en": "to announce; to make known",
+    "nl": "bekendmaken"
+  },
+  "A2:buchhandlung": {
+    "en": "bookshop",
+    "nl": "boekhandel"
+  },
+  "A2:einbrecherin": {
+    "en": "female burglar",
+    "nl": "inbreekster"
+  },
+  "A2:einschreiben": {
+    "en": "registered mail",
+    "nl": "aangetekende post"
+  },
+  "A2:fleischhauer": {
+    "en": "butcher (Austrian usage)",
+    "nl": "slager (Oostenrijks gebruik)"
+  },
+  "A2:fremdsprache": {
+    "en": "foreign language",
+    "nl": "vreemde taal"
+  },
+  "A2:intensivkurs": {
+    "en": "intensive course",
+    "nl": "intensieve cursus"
+  },
+  "A2:journalistin": {
+    "en": "female journalist",
+    "nl": "journaliste"
+  },
+  "A2:kursleiterin": {
+    "en": "female course instructor",
+    "nl": "cursusleidster; cursusdocente"
+  },
+  "A2:mechanikerin": {
+    "en": "female mechanic",
+    "nl": "monteur (vrouw); mecanicien (vrouw)"
+  },
+  "A2:nachschlagen": {
+    "en": "to look up in a reference work",
+    "nl": "opzoeken; naslaan"
+  },
+  "A2:nichtraucher": {
+    "en": "non-smoker",
+    "nl": "niet-roker"
+  },
+  "A2:pensionieren": {
+    "en": "to retire someone",
+    "nl": "met pensioen sturen"
+  },
+  "A2:photographie": {
+    "en": "photography",
+    "nl": "fotografie"
+  },
+  "A2:portemonnaie": {
+    "en": "wallet; purse",
+    "nl": "portemonnee"
+  },
+  "A2:praktikantin": {
+    "en": "female trainee; female intern",
+    "nl": "stagiaire"
+  },
+  "A2:reservierung": {
+    "en": "reservation; booking",
+    "nl": "reservering"
+  },
+  "A2:schaufenster": {
+    "en": "shop window",
+    "nl": "etalage"
+  },
+  "A2:spezialistin": {
+    "en": "female specialist",
+    "nl": "specialiste; deskundige"
+  },
+  "A2:teilnehmerin": {
+    "en": "female participant",
+    "nl": "deelneemster"
+  },
+  "A2:verbrecherin": {
+    "en": "female criminal",
+    "nl": "misdadigster"
+  },
+  "A2:verschmutzen": {
+    "en": "to pollute; to dirty",
+    "nl": "vervuilen; vuilmaken"
+  },
+  "A2:visitenkarte": {
+    "en": "business card",
+    "nl": "visitekaartje"
+  },
+  "A2:übernachtung": {
+    "en": "overnight stay",
+    "nl": "overnachting"
+  },
+  "A2:übersetzerin": {
+    "en": "female translator",
+    "nl": "vertaalster"
+  },
+  "A2:arbeitsstelle": {
+    "en": "job; workplace",
+    "nl": "baan; arbeidsplaats"
+  },
+  "A2:bankomatkarte": {
+    "en": "ATM card",
+    "nl": "bankpas; pinpas"
+  },
+  "A2:briefträgerin": {
+    "en": "female postal worker",
+    "nl": "postbode (vrouw)"
+  },
+  "A2:briefumschlag": {
+    "en": "envelope",
+    "nl": "envelop"
+  },
+  "A2:einbahnstrasse": {
+    "en": "one-way street",
+    "nl": "eenrichtingsstraat"
+  },
+  "A2:fussgängerzone": {
+    "en": "pedestrian zone",
+    "nl": "voetgangersgebied"
+  },
+  "A2:führerausweis": {
+    "en": "driving licence (Swiss usage)",
+    "nl": "rijbewijs (Zwitsers gebruik)"
+  },
+  "A2:hausmeisterin": {
+    "en": "female building caretaker",
+    "nl": "conciërge (vrouw); huismeesteres"
+  },
+  "A2:klassenarbeit": {
+    "en": "written classroom test",
+    "nl": "proefwerk; schriftelijke toets"
+  },
+  "A2:kraftfahrzeug": {
+    "en": "motor vehicle",
+    "nl": "motorvoertuig"
+  },
+  "A2:muttersprache": {
+    "en": "mother tongue; native language",
+    "nl": "moedertaal"
+  },
+  "A2:personenstand": {
+    "en": "civil status; marital status",
+    "nl": "burgerlijke staat"
+  },
+  "A2:schmerzmittel": {
+    "en": "painkiller",
+    "nl": "pijnstiller"
+  },
+  "A2:sonderangebot": {
+    "en": "special offer",
+    "nl": "aanbieding"
+  },
+  "A2:unentschieden": {
+    "en": "undecided; tied",
+    "nl": "onbeslist; gelijkstaand"
+  },
+  "A2:unternehmerin": {
+    "en": "female entrepreneur",
+    "nl": "onderneemster"
+  },
+  "A2:wetterbericht": {
+    "en": "weather report",
+    "nl": "weerbericht"
+  },
+  "A2:zurechtkommen": {
+    "en": "to cope; to manage",
+    "nl": "zich redden; overweg kunnen"
+  },
+  "A2:entgegenkommen": {
+    "en": "to approach; to accommodate",
+    "nl": "tegemoetkomen"
+  },
+  "A2:herunterfahren": {
+    "en": "to drive down; to shut down",
+    "nl": "naar beneden rijden; afsluiten"
+  },
+  "A2:interkulturell": {
+    "en": "intercultural",
+    "nl": "intercultureel"
+  },
+  "A2:krankenpfleger": {
+    "en": "male nurse",
+    "nl": "verpleger"
+  },
+  "A2:nichtraucherin": {
+    "en": "female non-smoker",
+    "nl": "niet-rookster"
+  },
+  "A2:sozialarbeiter": {
+    "en": "social worker",
+    "nl": "maatschappelijk werker"
+  },
+  "A2:terminkalender": {
+    "en": "appointment diary; planner",
+    "nl": "agenda"
+  },
+  "A2:verkehrszeichen": {
+    "en": "traffic sign",
+    "nl": "verkeersbord"
+  },
+  "A2:arbeitserlaubnis": {
+    "en": "work permit",
+    "nl": "werkvergunning"
+  },
+  "A2:schriftstellerin": {
+    "en": "female writer",
+    "nl": "schrijfster"
+  },
+  "A2:wettervorhersage": {
+    "en": "weather forecast",
+    "nl": "weersvoorspelling"
+  },
+  "A2:wissenschaftlerin": {
+    "en": "female scientist",
+    "nl": "wetenschapper (vrouw)"
+  },
+  "A2:gebrauchsanweisung": {
+    "en": "instructions for use",
+    "nl": "gebruiksaanwijzing"
+  },
+  "A2:bedienungsanleitung": {
+    "en": "operating manual",
+    "nl": "bedieningshandleiding"
+  },
+  "A2:umweltverschmutzung": {
+    "en": "environmental pollution",
+    "nl": "milieuvervuiling"
+  },
+  "A2:vorstellungsgespräch": {
+    "en": "job interview",
+    "nl": "sollicitatiegesprek"
+  },
+  "A2:geschwindigkeitsbeschränkung": {
+    "en": "speed limit",
+    "nl": "snelheidsbeperking"
+  },
+  "A2:uns": {
+    "en": "us; to us",
+    "nl": "ons; aan ons"
+  },
+  "A2:einer": {
+    "en": "one; someone",
+    "nl": "een; iemand"
+  },
+  "A2:mich": {
+    "en": "me (direct object)",
+    "nl": "mij; me (lijdend voorwerp)"
+  },
+  "A2:mir": {
+    "en": "to me; for me",
+    "nl": "mij; aan mij"
+  },
+  "A2:hey": {
+    "en": "hey!; hello!",
+    "nl": "hé!; hallo!"
+  },
+  "A2:ihnen": {
+    "en": "to you (formal)",
+    "nl": "u; aan u (beleefd)"
+  },
+  "A2:okay": {
+    "en": "okay; all right",
+    "nl": "oké; in orde"
+  },
+  "A2:du": {
+    "en": "you (singular informal)",
+    "nl": "jij; je"
+  },
+  "A2:lass": {
+    "en": "let!; leave! (singular command)",
+    "nl": "laat! (enkelvoudig bevel)"
+  },
+  "A2:davon": {
+    "en": "of that; about that",
+    "nl": "daarvan; daarover"
+  },
+  "A2:deinen": {
+    "en": "your (inflected, informal singular)",
+    "nl": "jouw; je (verbogen vorm)"
+  },
+  "A2:mach": {
+    "en": "Mach number",
+    "nl": "machgetal"
+  },
+  "A2:dazu": {
+    "en": "in addition; to that",
+    "nl": "daarbij; daartoe"
+  },
+  "A2:daran": {
+    "en": "on it; about it",
+    "nl": "daaraan; eraan"
+  },
+  "A2:hi": {
+    "en": "hi; hello",
+    "nl": "hoi; hallo"
+  },
+  "A2:siehst": {
+    "en": "you see",
+    "nl": "jij ziet; je ziet"
+  },
+  "A2:vielen": {
+    "en": "many (inflected form)",
+    "nl": "veel; vele (verbogen vorm)"
+  },
+  "A2:sagst": {
+    "en": "you say",
+    "nl": "jij zegt; je zegt"
+  },
+  "A2:kommst": {
+    "en": "you come",
+    "nl": "jij komt; je komt"
+  },
+  "A2:beispielsweise": {
+    "en": "for example",
+    "nl": "bijvoorbeeld"
+  },
+  "A2:denkst": {
+    "en": "you think",
+    "nl": "jij denkt; je denkt"
+  },
+  "A2:ganzen": {
+    "en": "whole; entire (inflected)",
+    "nl": "heel; gehele (verbogen vorm)"
+  },
+  "A2:miss": {
+    "en": "Miss; beauty queen",
+    "nl": "juffrouw; miss"
+  },
+  "A2:weniger": {
+    "en": "less; fewer",
+    "nl": "minder"
+  },
+  "A2:berliner": {
+    "en": "from Berlin; Berlin-related",
+    "nl": "Berlijns; uit Berlijn"
+  },
+  "A2:künftig": {
+    "en": "in future; henceforth",
+    "nl": "voortaan; in de toekomst"
+  },
+  "A2:darum": {
+    "en": "therefore; about that",
+    "nl": "daarom; daaromheen"
+  },
+  "A2:irgendwas": {
+    "en": "something (informal)",
+    "nl": "iets (informeel)"
+  },
+  "A2:keiner": {
+    "en": "no one; none",
+    "nl": "niemand; geen enkele"
+  },
+  "A2:äh": {
+    "en": "um; er",
+    "nl": "uh; eh"
+  },
+  "A2:dollar": {
+    "en": "dollar",
+    "nl": "dollar"
+  },
+  "A2:kumpel": {
+    "en": "mate; buddy",
+    "nl": "maat; kameraad"
+  },
+  "A2:kennst": {
+    "en": "you know; you are acquainted with",
+    "nl": "jij kent; je kent"
+  },
+  "A2:gesicht": {
+    "en": "face",
+    "nl": "gezicht"
+  },
+  "A2:regierung": {
+    "en": "government",
+    "nl": "regering"
+  },
+  "A2:präsident": {
+    "en": "president",
+    "nl": "president"
+  },
+  "A2:wow": {
+    "en": "wow!",
+    "nl": "wauw!"
+  },
+  "A2:ag": {
+    "en": "public limited company; local court (abbreviation)",
+    "nl": "naamloze vennootschap; kantongerecht (afkorting)"
+  },
+  "A2:boss": {
+    "en": "boss",
+    "nl": "baas"
+  },
+  "A2:mist": {
+    "en": "manure; rubbish (informal)",
+    "nl": "mest; onzin (informeel)"
+  },
+  "A2:erstmals": {
+    "en": "for the first time",
+    "nl": "voor het eerst"
+  },
+  "A2:monat": {
+    "en": "month",
+    "nl": "maand"
+  },
+  "A2:weise": {
+    "en": "way; tune",
+    "nl": "wijze; melodie"
+  },
+  "A2:hasse": {
+    "en": "I hate",
+    "nl": "ik haat"
+  },
+  "A2:darin": {
+    "en": "in it; therein",
+    "nl": "daarin; erin"
+  },
+  "A2:oh": {
+    "en": "oh!",
+    "nl": "oh!"
+  },
+  "A2:eu": {
+    "en": "European Union",
+    "nl": "Europese Unie"
+  },
+  "A2:bundesregierung": {
+    "en": "federal government",
+    "nl": "federale regering"
+  },
+  "A2:bewegung": {
+    "en": "movement",
+    "nl": "beweging"
+  },
+  "A2:liebling": {
+    "en": "darling; favourite",
+    "nl": "lieveling; favoriet"
+  },
+  "A2:weiss": {
+    "en": "white (Swiss spelling)",
+    "nl": "wit (Zwitserse spelling)"
+  },
+  "A2:daddy": {
+    "en": "daddy; dad",
+    "nl": "papa; pappie"
+  },
+  "A2:passt": {
+    "en": "fits; suits",
+    "nl": "past; is geschikt"
+  },
+  "A2:hm": {
+    "en": "hmm",
+    "nl": "hmm"
+  },
+  "A2:parlament": {
+    "en": "parliament",
+    "nl": "parlement"
+  },
+  "A2:suche": {
+    "en": "I search; I look for",
+    "nl": "ik zoek"
+  },
+  "A2:klappe": {
+    "en": "flap; opening; mouth (informal)",
+    "nl": "klep; opening; mond (informeel)"
+  },
+  "A2:jährlich": {
+    "en": "annual; yearly",
+    "nl": "jaarlijks"
+  },
+  "A2:hingegen": {
+    "en": "in contrast; on the other hand",
+    "nl": "daarentegen"
+  },
+  "A2:rum": {
+    "en": "around; over (informal)",
+    "nl": "rond; om (informeel)"
+  },
+  "A2:hole": {
+    "en": "I fetch; I get",
+    "nl": "ik haal"
+  },
+  "A2:rüber": {
+    "en": "across; over to the other side",
+    "nl": "naar de overkant; hierheen"
+  },
+  "A2:freilich": {
+    "en": "of course; admittedly",
+    "nl": "uiteraard; weliswaar"
+  },
+  "A2:zuvor": {
+    "en": "previously; before that",
+    "nl": "eerder; daarvoor"
+  },
+  "A2:zunehmend": {
+    "en": "increasing; increasingly",
+    "nl": "toenemend; steeds meer"
+  },
+  "A2:mark": {
+    "en": "mark (former German currency)",
+    "nl": "mark (voormalige Duitse munt)"
+  },
+  "A2:ddr": {
+    "en": "former German Democratic Republic",
+    "nl": "voormalige Duitse Democratische Republiek"
+  },
+  "A2:jedenfalls": {
+    "en": "in any case; anyway",
+    "nl": "in ieder geval; hoe dan ook"
+  },
+  "A2:position": {
+    "en": "position; post; stance",
+    "nl": "positie; functie; standpunt"
+  },
+  "A2:bundesrepublik": {
+    "en": "federal republic",
+    "nl": "bondsrepubliek"
+  },
+  "A2:wisst": {
+    "en": "you know (plural)",
+    "nl": "jullie weten"
+  },
+  "A2:tolle": {
+    "en": "great; fantastic",
+    "nl": "geweldig; fantastisch"
+  },
+  "A2:volk": {
+    "en": "people; nation",
+    "nl": "volk"
+  },
+  "A2:weitgehend": {
+    "en": "largely; to a great extent",
+    "nl": "grotendeels; in hoge mate"
+  },
+  "A2:erheblich": {
+    "en": "considerable; significant",
+    "nl": "aanzienlijk; beduidend"
+  },
+  "A2:hörst": {
+    "en": "you hear; you listen",
+    "nl": "jij hoort; je luistert"
+  },
+  "A2:anderer": {
+    "en": "another; someone else",
+    "nl": "een ander; iemand anders"
+  },
+  "A2:niemals": {
+    "en": "never",
+    "nl": "nooit"
+  },
+  "A2:frankfurter": {
+    "en": "from Frankfurt; Frankfurt sausage",
+    "nl": "Frankfurts; frankfurter worst"
+  },
+  "A2:vorhanden": {
+    "en": "present; available",
+    "nl": "aanwezig; beschikbaar"
+  },
+  "A2:beschützen": {
+    "en": "to protect",
+    "nl": "beschermen"
+  },
+  "A2:entfernt": {
+    "en": "distant; removed",
+    "nl": "verwijderd; ver weg"
+  },
+  "A2:möchten": {
+    "en": "would like",
+    "nl": "zouden willen; graag willen"
+  },
+  "A2:schlagen": {
+    "en": "to hit; to beat",
+    "nl": "slaan; verslaan"
+  },
+  "A2:kommission": {
+    "en": "committee; commission",
+    "nl": "commissie"
+  },
+  "A2:armee": {
+    "en": "army",
+    "nl": "leger"
+  },
+  "A2:grundsätzlich": {
+    "en": "fundamental; in principle",
+    "nl": "fundamenteel; principieel"
+  },
+  "A2:irgendetwas": {
+    "en": "something",
+    "nl": "iets"
+  },
+  "A2:bewegen": {
+    "en": "to move; to set in motion",
+    "nl": "bewegen; in beweging brengen"
+  },
+  "A2:sheriff": {
+    "en": "sheriff",
+    "nl": "sheriff"
+  },
+  "A2:hinaus": {
+    "en": "out; to the outside",
+    "nl": "naar buiten"
+  },
+  "A2:gebären": {
+    "en": "to give birth",
+    "nl": "baren; bevallen van"
+  },
+  "A2:umsatz": {
+    "en": "turnover; sales",
+    "nl": "omzet"
+  },
+  "A2:geist": {
+    "en": "spirit; ghost; mind",
+    "nl": "geest; spook"
+  },
+  "A2:herum": {
+    "en": "around; all about",
+    "nl": "rondom; rond"
+  },
+  "A2:irgendwie": {
+    "en": "somehow; in some way",
+    "nl": "op de een of andere manier"
+  },
+  "A2:untertitel": {
+    "en": "subtitle; subtitles",
+    "nl": "ondertitel; ondertiteling"
+  },
+  "A2:ran": {
+    "en": "up to; towards (informal)",
+    "nl": "erheen; naar iets toe (informeel)"
+  },
+  "A2:unmittelbar": {
+    "en": "immediate; direct",
+    "nl": "onmiddellijk; direct"
+  },
+  "A2:offensichtlich": {
+    "en": "obvious; evident",
+    "nl": "overduidelijk; klaarblijkelijk"
+  },
+  "A2:lady": {
+    "en": "lady",
+    "nl": "dame"
+  },
+  "A2:wachstum": {
+    "en": "growth",
+    "nl": "groei"
+  },
+  "A2:fort": {
+    "en": "away; onward",
+    "nl": "weg; voort"
+  },
+  "A2:fahre": {
+    "en": "I drive; I travel by vehicle",
+    "nl": "ik rijd; ik ga met een voertuig"
+  },
+  "A2:vermisst": {
+    "en": "misses; surveys land",
+    "nl": "mist; meet land op"
+  },
+  "A2:einsatz": {
+    "en": "use; deployment; stake",
+    "nl": "inzet; toepassing"
+  },
+  "A2:regelung": {
+    "en": "arrangement; regulation",
+    "nl": "regeling"
+  },
+  "A2:schreit": {
+    "en": "shouts; you shout (plural)",
+    "nl": "schreeuwt; jullie schreeuwen"
+  },
+  "A2:ruf": {
+    "en": "call; reputation",
+    "nl": "roep; reputatie"
+  },
+  "A2:koalition": {
+    "en": "coalition",
+    "nl": "coalitie"
+  },
+  "A2:schicksal": {
+    "en": "fate; destiny",
+    "nl": "lot; noodlot"
+  },
+  "A2:förderung": {
+    "en": "support; promotion",
+    "nl": "bevordering; steun"
+  },
+  "A2:brauch": {
+    "en": "I need (informal)",
+    "nl": "ik heb nodig (informeel)"
+  },
+  "A2:ministerpräsident": {
+    "en": "state premier; prime minister",
+    "nl": "minister-president; deelstaatpremier"
+  },
+  "A2:dadurch": {
+    "en": "through that; thereby",
+    "nl": "daardoor"
+  },
+  "A2:weiterhin": {
+    "en": "still; furthermore",
+    "nl": "nog steeds; verder"
+  },
+  "A2:jawohl": {
+    "en": "yes indeed; certainly!",
+    "nl": "jawel; zeker!"
+  },
+  "A2:opposition": {
+    "en": "opposition",
+    "nl": "oppositie"
+  },
+  "A2:nick": {
+    "en": "nickname; username",
+    "nl": "schuilnaam; gebruikersnaam"
+  },
+  "A2:euren": {
+    "en": "your (plural, inflected)",
+    "nl": "jullie; van jullie"
+  },
+  "A2:majestät": {
+    "en": "majesty",
+    "nl": "majesteit"
+  },
+  "A2:seele": {
+    "en": "soul",
+    "nl": "ziel"
+  },
+  "A2:monster": {
+    "en": "monster",
+    "nl": "monster"
+  },
+  "A2:general": {
+    "en": "general (military rank)",
+    "nl": "generaal"
+  },
+  "A2:aufbau": {
+    "en": "construction; structure",
+    "nl": "opbouw; structuur"
+  },
+  "A2:maul": {
+    "en": "animal's mouth; mouth (coarse)",
+    "nl": "bek; muil"
+  },
+  "A2:erfolgen": {
+    "en": "to occur; to take place",
+    "nl": "plaatsvinden; gebeuren"
+  },
+  "A2:auffassung": {
+    "en": "view; understanding",
+    "nl": "opvatting; begrip"
+  },
+  "A2:daraus": {
+    "en": "from it; from that",
+    "nl": "daaruit; eruit"
+  },
+  "A2:nimmst": {
+    "en": "you take",
+    "nl": "jij neemt; je neemt"
+  },
+  "A2:bundestag": {
+    "en": "German federal parliament",
+    "nl": "Duitse Bondsdag"
+  },
+  "A2:süsse": {
+    "en": "sweetness; sweetheart",
+    "nl": "zoetheid; lieverd"
+  },
+  "A2:euch": {
+    "en": "you; to you (plural informal)",
+    "nl": "jullie; aan jullie"
+  },
+  "A2:beteiligung": {
+    "en": "participation; ownership stake",
+    "nl": "deelname; belang in een onderneming"
+  },
+  "A2:ok": {
+    "en": "okay; acceptable",
+    "nl": "oké; aanvaardbaar"
+  },
+  "A2:definieren": {
+    "en": "to define",
+    "nl": "definiëren"
+  },
+  "A2:dan": {
+    "en": "dan (martial-arts rank)",
+    "nl": "dan (graad in een vechtsport)"
+  },
+  "A2:schatz": {
+    "en": "treasure; darling",
+    "nl": "schat; lieverd"
+  },
+  "A2:sorry": {
+    "en": "sorry; excuse me",
+    "nl": "sorry; pardon"
+  },
+  "A2:abendessen": {
+    "en": "dinner; evening meal",
+    "nl": "avondeten"
+  },
+  "A2:engagement": {
+    "en": "commitment; active involvement",
+    "nl": "betrokkenheid; inzet"
+  },
+  "A2:nutzung": {
+    "en": "use; utilisation",
+    "nl": "gebruik; benutting"
+  },
+  "A2:erster": {
+    "en": "first",
+    "nl": "eerste"
+  },
+  "A2:unmöglich": {
+    "en": "impossible",
+    "nl": "onmogelijk"
+  },
+  "A2:nahezu": {
+    "en": "almost; nearly",
+    "nl": "bijna; nagenoeg"
+  },
+  "A2:angriff": {
+    "en": "attack; assault",
+    "nl": "aanval"
+  },
+  "A2:bürgermeister": {
+    "en": "mayor",
+    "nl": "burgemeester"
+  },
+  "A2:konzern": {
+    "en": "corporate group; conglomerate",
+    "nl": "concern; bedrijvengroep"
+  },
+  "A2:arbeitnehmer": {
+    "en": "employee; wage earner",
+    "nl": "werknemer"
+  },
+  "A2:anwendung": {
+    "en": "application; use",
+    "nl": "toepassing; gebruik"
+  },
+  "A2:madame": {
+    "en": "Madam (French form of address)",
+    "nl": "mevrouw (Franse aanspreekvorm)"
+  },
+  "A2:hintern": {
+    "en": "bottom; buttocks",
+    "nl": "achterwerk; billen"
+  },
+  "A2:soweit": {
+    "en": "as far as; insofar as",
+    "nl": "voor zover"
+  },
+  "A2:gewusst": {
+    "en": "known (past participle)",
+    "nl": "geweten (voltooid deelwoord)"
+  },
+  "A2:vorjahr": {
+    "en": "previous year",
+    "nl": "vorig jaar; voorgaand jaar"
+  },
+  "A2:hau": {
+    "en": "heavy blow",
+    "nl": "harde klap"
+  },
+  "A2:staat": {
+    "en": "state; country",
+    "nl": "staat; land"
+  },
+  "A2:aktie": {
+    "en": "share; stock",
+    "nl": "aandeel"
+  },
+  "A2:grossartig": {
+    "en": "great; magnificent",
+    "nl": "geweldig; groots"
+  },
+  "A2:kohl": {
+    "en": "cabbage",
+    "nl": "kool"
+  },
+  "A2:drink": {
+    "en": "drink; alcoholic drink",
+    "nl": "drankje; alcoholisch drankje"
+  },
+  "A2:beschluss": {
+    "en": "decision; resolution (old spelling)",
+    "nl": "besluit (oude spelling)"
+  },
+  "A2:verpasst": {
+    "en": "missed; failed to catch",
+    "nl": "gemist; misgelopen"
+  },
+  "A2:lieutenant": {
+    "en": "lieutenant",
+    "nl": "luitenant"
+  },
+  "A2:lauf": {
+    "en": "run; running",
+    "nl": "loop; het rennen"
+  },
+  "A2:kerl": {
+    "en": "guy; fellow",
+    "nl": "kerel; vent"
+  },
+  "A2:münchner": {
+    "en": "from Munich; Munich-related",
+    "nl": "uit München"
+  },
+  "A2:waffe": {
+    "en": "weapon",
+    "nl": "wapen"
+  },
+  "A2:irgendwo": {
+    "en": "somewhere",
+    "nl": "ergens"
+  },
+  "A2:schönen": {
+    "en": "to embellish; to make look better",
+    "nl": "verfraaien; mooier voorstellen"
+  },
+  "A2:gegenwärtig": {
+    "en": "current; present",
+    "nl": "huidig; tegenwoordig"
+  },
+  "A2:ma": {
+    "en": "mum; mom (informal)",
+    "nl": "ma; mama"
+  },
+  "A2:quatsch": {
+    "en": "nonsense; rubbish",
+    "nl": "onzin; flauwekul"
+  },
+  "A2:fräulein": {
+    "en": "Miss (traditional title for an unmarried woman)",
+    "nl": "juffrouw (traditionele aanspreektitel)"
+  },
+  "A2:schau": {
+    "en": "show; exhibition",
+    "nl": "voorstelling; tentoonstelling"
+  },
+  "A2:amerikaner": {
+    "en": "American person",
+    "nl": "Amerikaan"
+  },
+  "A2:date": {
+    "en": "romantic date",
+    "nl": "afspraakje; date"
+  },
+  "A2:zumal": {
+    "en": "especially since",
+    "nl": "vooral omdat; temeer daar"
+  },
+  "A2:tommy": {
+    "en": "British soldier (historical informal term)",
+    "nl": "Britse soldaat (historisch informeel)"
+  },
+  "A2:cool": {
+    "en": "cool; relaxed",
+    "nl": "cool; ontspannen"
+  },
+  "A2:mami": {
+    "en": "mummy; mommy",
+    "nl": "mama; mammie"
+  },
+  "A2:einzigen": {
+    "en": "only; sole (inflected)",
+    "nl": "enige (verbogen vorm)"
+  },
+  "A2:umfang": {
+    "en": "scope; extent; circumference",
+    "nl": "omvang; reikwijdte; omtrek"
+  },
+  "A2:lord": {
+    "en": "lord (British noble title)",
+    "nl": "lord (Britse adellijke titel)"
+  },
+  "A2:geraten": {
+    "en": "to get into a situation; to turn out",
+    "nl": "terechtkomen; lukken"
+  },
+  "A2:aha": {
+    "en": "aha!; I see!",
+    "nl": "aha!; ik begrijp het!"
+  },
+  "A2:dennoch": {
+    "en": "nevertheless; despite that",
+    "nl": "desondanks; niettemin"
+  },
+  "A2:davor": {
+    "en": "before it; in front of it",
+    "nl": "daarvoor; ervoor"
+  },
+  "A2:ha": {
+    "en": "ha! (surprise or laughter)",
+    "nl": "ha! (verbazing of gelach)"
+  },
+  "A2:kapital": {
+    "en": "capital; financial assets",
+    "nl": "kapitaal"
+  },
+  "A2:verfügen": {
+    "en": "to have at one's disposal; to order",
+    "nl": "beschikken over; verordenen"
+  },
+  "A2:verbrechen": {
+    "en": "crime",
+    "nl": "misdaad"
+  },
+  "A2:stopp": {
+    "en": "stop; halt",
+    "nl": "stop; stilstand"
+  },
+  "A2:schaffst": {
+    "en": "you manage; you accomplish",
+    "nl": "jij slaagt erin; je krijgt het voor elkaar"
+  },
+  "A2:ressource": {
+    "en": "resource",
+    "nl": "hulpbron; middel"
+  },
+  "A2:einheit": {
+    "en": "unit; unity",
+    "nl": "eenheid"
+  },
+  "A2:dran": {
+    "en": "on it; one's turn (informal)",
+    "nl": "eraan; aan de beurt (informeel)"
+  },
+  "A2:verwendung": {
+    "en": "use; utilisation",
+    "nl": "gebruik; toepassing"
+  },
+  "A2:zeitraum": {
+    "en": "period of time",
+    "nl": "tijdvak; periode"
+  },
+  "A2:weihnachten": {
+    "en": "Christmas",
+    "nl": "Kerstmis"
+  },
+  "A2:überwiegend": {
+    "en": "predominantly; mainly",
+    "nl": "overwegend; voornamelijk"
+  },
+  "A2:weisst": {
+    "en": "you know (Swiss spelling)",
+    "nl": "jij weet (Zwitserse spelling)"
+  },
+  "A2:durchsetzen": {
+    "en": "to enforce; to assert oneself",
+    "nl": "doorzetten; zich doen gelden"
+  },
+  "A2:übernahme": {
+    "en": "takeover; assumption of responsibility",
+    "nl": "overname; aanvaarding van verantwoordelijkheid"
+  },
+  "A2:trend": {
+    "en": "trend",
+    "nl": "trend; tendens"
+  },
+  "A2:wirtschaftlich": {
+    "en": "economic; economical",
+    "nl": "economisch; rendabel"
+  },
+  "A2:einschätzung": {
+    "en": "assessment; estimate",
+    "nl": "inschatting; beoordeling"
+  },
+  "A2:umsetzung": {
+    "en": "implementation",
+    "nl": "uitvoering; omzetting"
+  },
+  "A2:ross": {
+    "en": "horse (literary)",
+    "nl": "paard; ros (literair)"
+  },
+  "A2:isst": {
+    "en": "eats; you eat (singular)",
+    "nl": "eet; jij eet"
+  },
+  "A2:ach": {
+    "en": "ah!; alas!",
+    "nl": "ach!; helaas!"
+  },
+  "A2:finanzierung": {
+    "en": "financing",
+    "nl": "financiering"
+  },
+  "A2:verfügung": {
+    "en": "administrative order; disposal",
+    "nl": "beschikking; verordening"
+  },
+  "A2:steig": {
+    "en": "steep path; narrow trail",
+    "nl": "bergpad; smal voetpad"
+  },
+  "A2:bundeskanzler": {
+    "en": "German federal chancellor",
+    "nl": "Duitse bondskanselier"
+  },
+  "A2:irre": {
+    "en": "mad; amazing (informal)",
+    "nl": "gek; waanzinnig"
+  },
+  "A2:verlauf": {
+    "en": "course; progression",
+    "nl": "verloop"
+  },
+  "A2:college": {
+    "en": "college; higher-education institution",
+    "nl": "college; instelling voor hoger onderwijs"
+  },
+  "A2:scherz": {
+    "en": "joke",
+    "nl": "grap; scherts"
+  },
+  "A2:eurer": {
+    "en": "your (plural, inflected)",
+    "nl": "jullie; van jullie"
+  },
+  "A2:wart": {
+    "en": "you were (plural); wait!",
+    "nl": "jullie waren; wacht!"
+  },
+  "A2:fahrt": {
+    "en": "journey by vehicle; drive",
+    "nl": "rit; tocht"
+  },
+  "A2:herstellung": {
+    "en": "manufacture; production",
+    "nl": "productie; vervaardiging"
+  },
+  "A2:luke": {
+    "en": "hatch; closable opening",
+    "nl": "luik"
+  },
+  "A2:fang": {
+    "en": "catch; capture",
+    "nl": "vangst"
+  },
+  "A2:vorgang": {
+    "en": "process; procedure",
+    "nl": "proces; handeling"
+  },
+  "A2:ergeben": {
+    "en": "to result in; to surrender",
+    "nl": "opleveren; zich overgeven"
+  },
+  "A2:ausdrücklich": {
+    "en": "express; explicit",
+    "nl": "uitdrukkelijk; expliciet"
+  },
+  "A2:vorsichtig": {
+    "en": "careful; cautious",
+    "nl": "voorzichtig"
+  },
+  "A2:tritt": {
+    "en": "step; kick",
+    "nl": "trede; trap"
+  },
+  "A2:täglich": {
+    "en": "daily; every day",
+    "nl": "dagelijks; elke dag"
+  },
+  "A2:stehst": {
+    "en": "you stand",
+    "nl": "jij staat; je staat"
+  },
+  "A2:halbe": {
+    "en": "half (inflected)",
+    "nl": "halve"
+  },
+  "A2:anteil": {
+    "en": "share; proportion",
+    "nl": "aandeel; deel"
+  },
+  "A2:doc": {
+    "en": "doc; doctor (informal)",
+    "nl": "dokter; doc (informeel)"
+  },
+  "A2:namens": {
+    "en": "named; by the name of",
+    "nl": "genaamd; met de naam"
+  },
+  "A2:töten": {
+    "en": "to kill",
+    "nl": "doden"
+  },
+  "A2:heilige": {
+    "en": "female saint; saints",
+    "nl": "heilige; heiligen"
+  },
+  "A2:quartal": {
+    "en": "quarter of a year",
+    "nl": "kwartaal"
+  },
+  "A2:mehrfach": {
+    "en": "multiple; repeated",
+    "nl": "meervoudig; herhaald"
+  },
+  "A2:sicht": {
+    "en": "view; visibility",
+    "nl": "zicht; gezichtspunt"
+  },
+  "A2:gründung": {
+    "en": "founding; establishment",
+    "nl": "oprichting; stichting"
+  },
+  "A2:schande": {
+    "en": "shame; disgrace",
+    "nl": "schande"
+  },
+  "A2:earl": {
+    "en": "earl (British noble title)",
+    "nl": "graaf (Britse adellijke titel)"
+  },
+  "A2:ausbau": {
+    "en": "expansion; development",
+    "nl": "uitbreiding; uitbouw"
+  },
+  "A2:bord": {
+    "en": "side of a ship; aboard in an Bord",
+    "nl": "boord; aan boord in an Bord"
+  },
+  "A2:übel": {
+    "en": "bad; nauseating",
+    "nl": "slecht; misselijkmakend"
+  },
+  "A2:hintergrund": {
+    "en": "background; context",
+    "nl": "achtergrond"
+  },
+  "A2:verfolgen": {
+    "en": "to follow; to pursue",
+    "nl": "volgen; achtervolgen"
+  },
+  "A2:betragen": {
+    "en": "to amount to; to behave",
+    "nl": "bedragen; zich gedragen"
+  },
+  "A2:naja": {
+    "en": "well; oh well",
+    "nl": "nou ja; tja"
+  },
+  "A2:matt": {
+    "en": "checkmate",
+    "nl": "schaakmat"
+  },
+  "A2:arme": {
+    "en": "poor person; poor people",
+    "nl": "arme; armen"
+  },
+  "A2:ehre": {
+    "en": "honour; esteem",
+    "nl": "eer"
+  },
+  "A2:braut": {
+    "en": "bride",
+    "nl": "bruid"
+  },
+  "A2:hinein": {
+    "en": "in; into the inside",
+    "nl": "naar binnen"
+  },
+  "A2:bewertung": {
+    "en": "evaluation; valuation",
+    "nl": "beoordeling; waardering"
+  },
+  "A2:presse": {
+    "en": "press; mechanical press",
+    "nl": "pers; drukpers"
+  },
+  "A2:vereinigung": {
+    "en": "association; unification",
+    "nl": "vereniging; eenwording"
+  },
+  "A2:derjenige": {
+    "en": "the one who; that person",
+    "nl": "degene; diegene"
+  },
+  "A2:ton": {
+    "en": "tone; sound; clay",
+    "nl": "toon; geluid; klei"
+  },
+  "A2:wesen": {
+    "en": "being; nature; essence",
+    "nl": "wezen; aard"
+  },
+  "A2:erscheinen": {
+    "en": "to appear; to be published",
+    "nl": "verschijnen"
+  },
+  "A2:absicht": {
+    "en": "intention; purpose",
+    "nl": "bedoeling; voornemen"
+  },
+  "A2:angesichts": {
+    "en": "in view of; faced with",
+    "nl": "gezien; met het oog op"
+  },
+  "A2:aufmerksamkeit": {
+    "en": "attention",
+    "nl": "aandacht"
+  },
+  "A2:entsprechen": {
+    "en": "to correspond to; to meet requirements",
+    "nl": "beantwoorden aan; overeenkomen met"
+  },
+  "A2:langfristig": {
+    "en": "long-term",
+    "nl": "langdurig; op lange termijn"
+  },
+  "A2:anna": {
+    "en": "anna (former Indian monetary unit)",
+    "nl": "anna (voormalige Indiase munteenheid)"
+  },
+  "A2:zugunsten": {
+    "en": "in favour of; for the benefit of",
+    "nl": "ten gunste van"
+  },
+  "A2:stets": {
+    "en": "always; continually",
+    "nl": "steeds; altijd"
+  },
+  "A2:woanders": {
+    "en": "somewhere else",
+    "nl": "ergens anders"
+  },
+  "A2:jahrhundert": {
+    "en": "century",
+    "nl": "eeuw"
+  },
+  "A2:basis": {
+    "en": "basis; foundation",
+    "nl": "basis; grondslag"
+  },
+  "A2:zweimal": {
+    "en": "twice",
+    "nl": "tweemaal; twee keer"
+  },
+  "A2:sowjetunion": {
+    "en": "Soviet Union",
+    "nl": "Sovjet-Unie"
+  },
+  "A2:vergeben": {
+    "en": "to forgive; to allocate",
+    "nl": "vergeven; toekennen"
+  },
+  "A2:mister": {
+    "en": "Mister; Mr",
+    "nl": "meneer; de heer"
+  },
+  "A2:arbeitest": {
+    "en": "you work",
+    "nl": "jij werkt; je werkt"
+  },
+  "A2:erzielen": {
+    "en": "to achieve; to obtain",
+    "nl": "behalen; bereiken"
+  },
+  "A2:hochschule": {
+    "en": "institution of higher education",
+    "nl": "hogeschool; hogeronderwijsinstelling"
+  },
+  "A2:wiener": {
+    "en": "Viennese; from Vienna",
+    "nl": "Weens; uit Wenen"
+  },
+  "A2:agent": {
+    "en": "agent; intelligence operative",
+    "nl": "agent; geheim agent"
+  },
+  "A2:kritiker": {
+    "en": "critic",
+    "nl": "criticus"
+  },
+  "A2:wissenschaft": {
+    "en": "science; scholarship",
+    "nl": "wetenschap"
+  },
+  "A2:schicke": {
+    "en": "chic; stylish (inflected)",
+    "nl": "chique; stijlvolle"
+  },
+  "A2:esse": {
+    "en": "I eat",
+    "nl": "ik eet"
+  },
+  "A2:notwendigkeit": {
+    "en": "necessity; need",
+    "nl": "noodzaak"
+  },
+  "A2:aufgrund": {
+    "en": "because of; on the basis of",
+    "nl": "op grond van; wegens"
+  },
+  "A2:fraktion": {
+    "en": "parliamentary group; faction",
+    "nl": "fractie"
+  },
+  "A2:immerhin": {
+    "en": "at least; after all",
+    "nl": "in ieder geval; toch"
+  },
+  "A2:hexe": {
+    "en": "witch",
+    "nl": "heks"
+  },
+  "A2:weissen": {
+    "en": "to whitewash; to paint white",
+    "nl": "witten; wit verven"
+  },
+  "A2:nette": {
+    "en": "nice; kind (inflected)",
+    "nl": "aardige; vriendelijke"
+  },
+  "A2:verlässt": {
+    "en": "leaves; abandons",
+    "nl": "verlaat; laat achter"
+  },
+  "A2:aussenminister": {
+    "en": "foreign minister",
+    "nl": "minister van Buitenlandse Zaken"
+  },
+  "A2:wem": {
+    "en": "to whom; whom (dative)",
+    "nl": "wie; aan wie"
+  },
+  "A2:irgendjemand": {
+    "en": "someone; anyone",
+    "nl": "iemand; wie dan ook"
+  },
+  "A2:derzeit": {
+    "en": "currently; at present",
+    "nl": "momenteel; op dit moment"
+  },
+  "A2:tendenz": {
+    "en": "tendency; trend",
+    "nl": "tendens; neiging"
+  },
+  "A2:bewusst": {
+    "en": "conscious; deliberate",
+    "nl": "bewust; opzettelijk"
+  },
+  "A2:umfeld": {
+    "en": "surroundings; environment",
+    "nl": "omgeving"
+  },
+  "A2:benutzer": {
+    "en": "user",
+    "nl": "gebruiker"
+  },
+  "A2:selben": {
+    "en": "same (inflected)",
+    "nl": "dezelfde; hetzelfde"
+  },
+  "A2:beitragen": {
+    "en": "to contribute",
+    "nl": "bijdragen"
+  },
+  "A2:spitze": {
+    "en": "top; tip",
+    "nl": "spits; top"
+  },
+  "A2:gehirn": {
+    "en": "brain",
+    "nl": "hersenen; brein"
+  },
+  "A2:aufklärung": {
+    "en": "enlightenment; public education",
+    "nl": "Verlichting; voorlichting"
+  },
+  "A2:weitermachen": {
+    "en": "to carry on; to continue",
+    "nl": "verdergaan; doorgaan"
+  },
+  "A2:nachts": {
+    "en": "at night",
+    "nl": "'s nachts"
+  },
+  "A2:wachen": {
+    "en": "to stay awake; to keep watch",
+    "nl": "waken; de wacht houden"
+  },
+  "A2:aufgeregt": {
+    "en": "excited; agitated",
+    "nl": "opgewonden; nerveus"
+  },
+  "A2:behandlung": {
+    "en": "treatment; handling",
+    "nl": "behandeling"
+  },
+  "A2:schwert": {
+    "en": "sword",
+    "nl": "zwaard"
+  },
+  "A2:indes": {
+    "en": "meanwhile; however",
+    "nl": "intussen; echter"
+  },
+  "A2:verräter": {
+    "en": "traitor",
+    "nl": "verrader"
+  },
+  "A2:angeblich": {
+    "en": "alleged; supposedly",
+    "nl": "vermeend; naar verluidt"
+  },
+  "A2:reinkommen": {
+    "en": "to come in",
+    "nl": "binnenkomen"
+  },
+  "A2:schwerpunkt": {
+    "en": "main focus; centre of gravity",
+    "nl": "zwaartepunt; aandachtspunt"
+  },
+  "A2:code": {
+    "en": "code",
+    "nl": "code"
+  },
+  "A2:einst": {
+    "en": "once; formerly",
+    "nl": "eens; ooit"
+  },
+  "A2:äusserst": {
+    "en": "extremely",
+    "nl": "uiterst; buitengewoon"
+  },
+  "A2:schlau": {
+    "en": "clever; cunning",
+    "nl": "slim; sluw"
+  },
+  "A2:show": {
+    "en": "show; entertainment programme",
+    "nl": "show"
+  },
+  "A2:anfrage": {
+    "en": "enquiry; request for information",
+    "nl": "aanvraag; informatieverzoek"
+  },
+  "A2:dreh": {
+    "en": "turn; filming; trick",
+    "nl": "draai; filmopname; truc"
+  },
+  "A2:äussern": {
+    "en": "to express; to voice",
+    "nl": "uiten; uitspreken"
+  },
+  "A2:bündnis": {
+    "en": "alliance",
+    "nl": "bondgenootschap"
+  },
+  "A2:wähler": {
+    "en": "voter",
+    "nl": "kiezer"
+  },
+  "A2:gewehr": {
+    "en": "rifle",
+    "nl": "geweer"
+  },
+  "A2:signal": {
+    "en": "signal",
+    "nl": "signaal"
+  },
+  "A2:erneut": {
+    "en": "again; once more",
+    "nl": "opnieuw; wederom"
+  },
+  "A2:antun": {
+    "en": "to do something to someone; to inflict",
+    "nl": "iemand iets aandoen"
+  },
+  "A2:variante": {
+    "en": "variant; alternative version",
+    "nl": "variant"
+  },
+  "A2:wache": {
+    "en": "guard; police station",
+    "nl": "wacht; politiebureau"
+  },
+  "A2:minister": {
+    "en": "minister",
+    "nl": "minister"
+  },
+  "A2:hoheit": {
+    "en": "highness; sovereignty",
+    "nl": "hoogheid; soevereiniteit"
+  },
+  "A2:sowie": {
+    "en": "as well as; and also",
+    "nl": "evenals; alsook"
+  },
+  "A2:anstieg": {
+    "en": "rise; increase",
+    "nl": "stijging; toename"
+  },
+  "A2:quelle": {
+    "en": "source; spring",
+    "nl": "bron"
+  },
+  "A2:penny": {
+    "en": "penny (British currency unit)",
+    "nl": "penny (Britse munteenheid)"
+  },
+  "A2:wen": {
+    "en": "whom; who (direct object)",
+    "nl": "wie (lijdend voorwerp)"
+  },
+  "A2:nunmehr": {
+    "en": "now; henceforth",
+    "nl": "nu; voortaan"
+  },
+  "A2:schnauze": {
+    "en": "animal's muzzle; mouth (coarse)",
+    "nl": "snuit; bek"
+  },
+  "A2:vollkommen": {
+    "en": "complete; perfect",
+    "nl": "volkomen; volledig"
+  },
+  "A2:manager": {
+    "en": "manager",
+    "nl": "manager; leidinggevende"
+  },
+  "A2:gemeinde": {
+    "en": "municipality; congregation",
+    "nl": "gemeente"
+  },
+  "A2:widerstand": {
+    "en": "resistance; opposition",
+    "nl": "weerstand; verzet"
+  },
+  "A2:jagen": {
+    "en": "to hunt; to chase",
+    "nl": "jagen; achtervolgen"
+  },
+  "A2:house": {
+    "en": "house music",
+    "nl": "housemuziek"
+  },
+  "A2:feind": {
+    "en": "enemy",
+    "nl": "vijand"
+  },
+  "A2:bilden": {
+    "en": "to form; to educate",
+    "nl": "vormen; opleiden"
+  },
+  "A2:bilanz": {
+    "en": "balance sheet; overall result",
+    "nl": "balans; eindresultaat"
+  },
+  "A2:richten": {
+    "en": "to direct; to judge",
+    "nl": "richten; oordelen"
+  },
+  "A2:senken": {
+    "en": "to lower; to reduce",
+    "nl": "verlagen; laten zakken"
+  },
+  "A2:bezeichnung": {
+    "en": "designation; description",
+    "nl": "benaming; aanduiding"
+  },
+  "A2:lügner": {
+    "en": "liar",
+    "nl": "leugenaar"
+  },
+  "A2:verwirrt": {
+    "en": "confused",
+    "nl": "verward"
+  },
+  "A2:gestaltung": {
+    "en": "design; shaping",
+    "nl": "vormgeving; inrichting"
+  },
+  "A2:fass": {
+    "en": "barrel",
+    "nl": "vat"
+  },
+  "A2:steigern": {
+    "en": "to increase; to intensify",
+    "nl": "verhogen; opvoeren"
+  },
+  "A2:ansatz": {
+    "en": "approach; initial outline",
+    "nl": "aanpak; aanzet"
+  },
+  "A2:leid": {
+    "en": "suffering; sorrow",
+    "nl": "leed; verdriet"
+  },
+  "A2:stärke": {
+    "en": "strength; starch",
+    "nl": "sterkte; zetmeel"
+  },
+  "A2:high": {
+    "en": "high; intoxicated",
+    "nl": "high; onder invloed"
+  },
+  "A2:kenn": {
+    "en": "I know (informal)",
+    "nl": "ik ken (informeel)"
+  },
+  "A2:gegenseitig": {
+    "en": "mutual; reciprocal",
+    "nl": "wederzijds; onderling"
+  },
+  "A2:mörder": {
+    "en": "murderer",
+    "nl": "moordenaar"
+  },
+  "A2:mittels": {
+    "en": "by means of",
+    "nl": "middels; door middel van"
+  },
+  "A2:absatz": {
+    "en": "paragraph; heel; sales",
+    "nl": "alinea; hak; afzet"
+  },
+  "A2:riskieren": {
+    "en": "to risk",
+    "nl": "riskeren; wagen"
+  },
+  "A2:darunter": {
+    "en": "underneath; among them",
+    "nl": "daaronder; onder meer"
+  },
+  "A2:überleben": {
+    "en": "to survive",
+    "nl": "overleven"
+  },
+  "A2:morgens": {
+    "en": "in the morning; every morning",
+    "nl": "'s morgens; elke ochtend"
+  },
+  "A2:eifersüchtig": {
+    "en": "jealous",
+    "nl": "jaloers"
+  },
+  "A2:konsequenz": {
+    "en": "consequence; consistency",
+    "nl": "gevolg; consequentheid"
+  },
+  "A2:standard": {
+    "en": "standard",
+    "nl": "standaard; norm"
+  },
+  "A2:einstellung": {
+    "en": "attitude; setting",
+    "nl": "instelling; houding"
+  },
+  "A2:genie": {
+    "en": "genius",
+    "nl": "genie"
+  },
+  "A2:erweiterung": {
+    "en": "expansion; extension",
+    "nl": "uitbreiding"
+  },
+  "A2:gerechtigkeit": {
+    "en": "justice",
+    "nl": "rechtvaardigheid"
+  },
+  "A2:belegen": {
+    "en": "to prove; to take a course",
+    "nl": "bewijzen; een cursus volgen"
+  },
+  "A2:wundervoll": {
+    "en": "wonderful",
+    "nl": "prachtig; wonderbaarlijk"
+  },
+  "A2:stellung": {
+    "en": "position; post",
+    "nl": "positie; standpunt"
+  },
+  "A2:stellungnahme": {
+    "en": "statement of position; official comment",
+    "nl": "standpuntbepaling; officiële verklaring"
+  },
+  "A2:kölner": {
+    "en": "person from Cologne",
+    "nl": "Keulenaar"
+  },
+  "A2:vorlage": {
+    "en": "template; draft proposal",
+    "nl": "sjabloon; ontwerpvoorstel"
+  },
+  "A2:arbeitsmarkt": {
+    "en": "labour market",
+    "nl": "arbeidsmarkt"
+  },
+  "A2:führer": {
+    "en": "leader; guide",
+    "nl": "leider; gids"
+  },
+  "A2:wahlkampf": {
+    "en": "election campaign",
+    "nl": "verkiezingscampagne"
+  },
+  "A2:lebend": {
+    "en": "living; alive",
+    "nl": "levend"
+  },
+  "A2:bundesweit": {
+    "en": "nationwide; across the federation",
+    "nl": "landelijk; in de hele bondsstaat"
+  },
+  "A2:gutachten": {
+    "en": "expert report; expert opinion",
+    "nl": "deskundigenrapport; deskundigenadvies"
+  },
+  "A2:letzter": {
+    "en": "last; previous",
+    "nl": "laatste; vorige"
+  },
+  "A2:vertraut": {
+    "en": "trusts; familiar",
+    "nl": "vertrouwt; vertrouwd"
+  },
+  "A2:trägst": {
+    "en": "you carry; you wear",
+    "nl": "jij draagt; je draagt"
+  },
+  "A2:verbraucher": {
+    "en": "consumer",
+    "nl": "consument"
+  },
+  "A2:landtag": {
+    "en": "state parliament",
+    "nl": "deelstaatparlement"
+  },
+  "A2:fern": {
+    "en": "far; distant",
+    "nl": "ver; verafgelegen"
+  },
+  "A2:besucher": {
+    "en": "visitor",
+    "nl": "bezoeker"
+  },
+  "A2:einander": {
+    "en": "each other; one another",
+    "nl": "elkaar"
+  },
+  "A2:beerdigung": {
+    "en": "burial; funeral",
+    "nl": "begrafenis"
+  },
+  "A2:madam": {
+    "en": "madam",
+    "nl": "mevrouw; madam"
+  },
+  "A2:besitz": {
+    "en": "possession; property",
+    "nl": "bezit"
+  },
+  "A2:englisch": {
+    "en": "English language",
+    "nl": "Engels (taal)"
+  },
+  "A2:vernichten": {
+    "en": "to destroy; to annihilate",
+    "nl": "vernietigen"
+  },
+  "A2:unabhängigkeit": {
+    "en": "independence",
+    "nl": "onafhankelijkheid"
+  },
+  "A2:wünsche": {
+    "en": "I wish; wish!",
+    "nl": "ik wens; wens!"
+  },
+  "A2:entgegen": {
+    "en": "contrary to; towards",
+    "nl": "tegen; tegemoet"
+  },
+  "A2:engel": {
+    "en": "angel",
+    "nl": "engel"
+  },
+  "A2:hierzu": {
+    "en": "for this purpose; on this matter",
+    "nl": "hiertoe; hierover"
+  },
+  "A2:mission": {
+    "en": "mission",
+    "nl": "missie; opdracht"
+  },
+  "A2:nenne": {
+    "en": "I name; I mention",
+    "nl": "ik noem"
+  },
+  "A2:la": {
+    "en": "local anaesthesia (medical abbreviation)",
+    "nl": "lokale verdoving (medische afkorting)"
+  },
+  "A2:übergeben": {
+    "en": "to hand over; to deliver",
+    "nl": "overhandigen; overdragen"
+  },
+  "A2:besorgt": {
+    "en": "worried; concerned",
+    "nl": "bezorgd"
+  },
+  "A2:gebrauch": {
+    "en": "use; usage",
+    "nl": "gebruik"
+  },
+  "A2:befehl": {
+    "en": "command; order",
+    "nl": "bevel"
+  },
+  "A2:schlicht": {
+    "en": "simple; plain",
+    "nl": "eenvoudig; sober"
+  },
+  "A2:lediglich": {
+    "en": "only; merely",
+    "nl": "slechts; alleen"
+  },
+  "A2:angreifen": {
+    "en": "to attack",
+    "nl": "aanvallen"
+  },
+  "A2:besitzen": {
+    "en": "to own; to possess",
+    "nl": "bezitten"
+  },
+  "A2:versorgung": {
+    "en": "supply; provision of care",
+    "nl": "voorziening; verzorging"
+  },
+  "A2:überlassen": {
+    "en": "to leave to someone; to entrust",
+    "nl": "overlaten; toevertrouwen"
+  },
+  "A2:dämon": {
+    "en": "demon",
+    "nl": "demon"
+  },
+  "A2:mitteilung": {
+    "en": "message; notification",
+    "nl": "mededeling; bericht"
+  },
+  "A2:veranstalter": {
+    "en": "event organiser",
+    "nl": "organisator"
+  },
+  "A2:magie": {
+    "en": "magic",
+    "nl": "magie"
+  },
+  "A2:ebene": {
+    "en": "level; plain; plane",
+    "nl": "niveau; vlakte; vlak"
+  },
+  "A2:klo": {
+    "en": "toilet (informal)",
+    "nl": "wc (informeel)"
+  },
+  "A2:version": {
+    "en": "version",
+    "nl": "versie"
+  },
+  "A2:wolf": {
+    "en": "wolf",
+    "nl": "wolf"
+  },
+  "A2:auflage": {
+    "en": "edition; imposed condition",
+    "nl": "oplage; opgelegde voorwaarde"
+  },
+  "A2:these": {
+    "en": "thesis; proposition",
+    "nl": "stelling; these"
+  },
+  "A2:inspektor": {
+    "en": "inspector",
+    "nl": "inspecteur"
+  },
+  "A2:kaiser": {
+    "en": "emperor",
+    "nl": "keizer"
+  },
+  "A2:kapitän": {
+    "en": "captain",
+    "nl": "kapitein; aanvoerder"
+  },
+  "A2:demonstration": {
+    "en": "demonstration; protest",
+    "nl": "betoging; demonstratie"
+  },
+  "A2:ablauf": {
+    "en": "course; sequence; expiry",
+    "nl": "verloop; volgorde; afloop"
+  },
+  "A2:beziehungsweise": {
+    "en": "or rather; respectively",
+    "nl": "ofwel; respectievelijk"
+  },
+  "A2:soldat": {
+    "en": "soldier",
+    "nl": "soldaat"
+  },
+  "A2:erwähnen": {
+    "en": "to mention",
+    "nl": "vermelden; noemen"
+  },
+  "A2:crew": {
+    "en": "crew",
+    "nl": "bemanning; ploeg"
+  },
+  "A2:planet": {
+    "en": "planet",
+    "nl": "planeet"
+  },
+  "A2:kannst": {
+    "en": "you can; you are able to",
+    "nl": "jij kunt; je kunt"
+  },
+  "A2:durchaus": {
+    "en": "entirely; certainly",
+    "nl": "volkomen; zeker"
+  },
+  "A2:feuern": {
+    "en": "to fire a gun; to dismiss",
+    "nl": "vuren; ontslaan"
+  },
+  "A2:schönheit": {
+    "en": "beauty",
+    "nl": "schoonheid"
+  },
+  "A2:menschheit": {
+    "en": "humanity; humankind",
+    "nl": "mensheid"
+  },
+  "A2:auflösung": {
+    "en": "dissolution; image resolution",
+    "nl": "ontbinding; beeldresolutie"
+  },
+  "A2:begriff": {
+    "en": "concept; term",
+    "nl": "begrip; term"
+  },
+  "A2:verkauf": {
+    "en": "sale; selling",
+    "nl": "verkoop"
+  },
+  "A2:wahren": {
+    "en": "to preserve; to safeguard",
+    "nl": "bewaren; waarborgen"
+  },
+  "A2:abbau": {
+    "en": "dismantling; reduction; mining",
+    "nl": "afbouw; ontmanteling; winning"
+  },
+  "A2:konkret": {
+    "en": "concrete; specific",
+    "nl": "concreet; specifiek"
+  },
+  "A2:ablehnung": {
+    "en": "rejection; refusal",
+    "nl": "afwijzing; weigering"
+  },
+  "A2:vordergrund": {
+    "en": "foreground",
+    "nl": "voorgrond"
+  },
+  "A2:hergekommen": {
+    "en": "came here; has come here",
+    "nl": "hierheen gekomen"
+  },
+  "A2:aspekt": {
+    "en": "aspect; facet",
+    "nl": "aspect; gezichtspunt"
+  },
+  "A2:solidarität": {
+    "en": "solidarity",
+    "nl": "solidariteit"
+  },
+  "A2:sir": {
+    "en": "sir (form of address or British title)",
+    "nl": "sir; mijnheer (aanspreekvorm of Britse titel)"
+  },
+  "A2:herkommen": {
+    "en": "to come here; to originate from",
+    "nl": "hierheen komen; afkomstig zijn"
+  },
+  "A2:bestandteil": {
+    "en": "component; constituent",
+    "nl": "bestanddeel; onderdeel"
+  },
+  "A2:sicherlich": {
+    "en": "certainly; surely",
+    "nl": "zeker; stellig"
+  },
+  "A2:city": {
+    "en": "city centre; business district",
+    "nl": "binnenstad; zakencentrum"
+  },
+  "A2:ausschuss": {
+    "en": "committee (old spelling)",
+    "nl": "commissie (oude spelling)"
+  },
+  "A2:nation": {
+    "en": "nation",
+    "nl": "natie; volk"
+  },
+  "A2:dokumentation": {
+    "en": "documentation; documentary",
+    "nl": "documentatie; documentaire"
+  },
+  "A2:lauter": {
+    "en": "nothing but; louder",
+    "nl": "louter; luider"
+  },
+  "A2:revolution": {
+    "en": "revolution",
+    "nl": "revolutie"
+  },
+  "A2:partei": {
+    "en": "political party",
+    "nl": "politieke partij"
+  },
+  "A2:identität": {
+    "en": "identity",
+    "nl": "identiteit"
+  },
+  "A2:hauen": {
+    "en": "to hit; to chop",
+    "nl": "slaan; hakken"
+  },
+  "A2:phänomen": {
+    "en": "phenomenon",
+    "nl": "fenomeen; verschijnsel"
+  },
+  "A2:loswerden": {
+    "en": "to get rid of",
+    "nl": "kwijtraken; zich ontdoen van"
+  },
+  "A2:versteck": {
+    "en": "hiding place",
+    "nl": "schuilplaats; verstopplek"
+  },
+  "A2:zurückkehren": {
+    "en": "to return",
+    "nl": "terugkeren"
+  },
+  "A2:nieder": {
+    "en": "down; downwards",
+    "nl": "neer; omlaag"
+  },
+  "A2:rückgang": {
+    "en": "decline; decrease",
+    "nl": "daling; teruggang"
+  },
+  "A2:posten": {
+    "en": "item; post; position",
+    "nl": "post; functie"
+  },
+  "A2:teils": {
+    "en": "partly; in part",
+    "nl": "deels; gedeeltelijk"
+  },
+  "A2:aufwand": {
+    "en": "effort; expenditure",
+    "nl": "inspanning; kosten"
+  },
+  "A2:befreien": {
+    "en": "to free; to liberate",
+    "nl": "bevrijden"
+  },
+  "A2:kennenzulernen": {
+    "en": "to get to know",
+    "nl": "te leren kennen"
+  },
+  "A2:gezielt": {
+    "en": "targeted; deliberate",
+    "nl": "gericht; doelgericht"
+  },
+  "A2:griff": {
+    "en": "grip; handle",
+    "nl": "greep; handvat"
+  },
+  "A2:aufregend": {
+    "en": "exciting",
+    "nl": "spannend; opwindend"
+  },
+  "A2:beten": {
+    "en": "to pray",
+    "nl": "bidden"
+  },
+  "A2:schädel": {
+    "en": "skull",
+    "nl": "schedel"
+  },
+  "A2:tollen": {
+    "en": "to romp; to frolic",
+    "nl": "dartelen; stoeien"
+  },
+  "A2:anfassen": {
+    "en": "to touch; to take hold of",
+    "nl": "aanraken; vastpakken"
+  },
+  "A2:demnach": {
+    "en": "accordingly; consequently",
+    "nl": "dienovereenkomstig; dus"
+  },
+  "A2:phase": {
+    "en": "phase; stage",
+    "nl": "fase"
+  },
+  "A2:hölle": {
+    "en": "hell",
+    "nl": "hel"
+  },
+  "A2:anleger": {
+    "en": "investor; mooring place",
+    "nl": "belegger; aanlegplaats"
+  },
+  "A2:champagner": {
+    "en": "champagne",
+    "nl": "champagne"
+  },
+  "A2:vertrieb": {
+    "en": "sales; distribution",
+    "nl": "verkoop; distributie"
+  },
+  "A2:definition": {
+    "en": "definition",
+    "nl": "definitie"
+  },
+  "A2:angelegenheit": {
+    "en": "matter; affair",
+    "nl": "aangelegenheid; zaak"
+  },
+  "A2:zumeist": {
+    "en": "mostly; usually",
+    "nl": "meestal; doorgaans"
+  },
+  "A2:amen": {
+    "en": "amen",
+    "nl": "amen"
+  },
+  "A2:generell": {
+    "en": "general; overall",
+    "nl": "algemeen"
+  },
+  "A2:weile": {
+    "en": "a while; a short time",
+    "nl": "een poos; een tijdje"
+  },
+  "A2:verteidigen": {
+    "en": "to defend",
+    "nl": "verdedigen"
+  },
+  "A2:stich": {
+    "en": "prick; stab; stitch",
+    "nl": "prik; steek"
+  },
+  "A2:konsequent": {
+    "en": "consistent; resolute",
+    "nl": "consequent; vastberaden"
+  },
+  "A2:roboter": {
+    "en": "robot",
+    "nl": "robot"
+  },
+  "A2:verteidigung": {
+    "en": "defence",
+    "nl": "verdediging"
+  },
+  "A2:bombe": {
+    "en": "bomb",
+    "nl": "bom"
+  },
+  "A2:beobachter": {
+    "en": "observer",
+    "nl": "waarnemer"
+  },
+  "A2:chaos": {
+    "en": "chaos",
+    "nl": "chaos"
+  },
+  "A2:hilfst": {
+    "en": "you help",
+    "nl": "jij helpt; je helpt"
+  },
+  "A2:denkbar": {
+    "en": "conceivable; imaginable",
+    "nl": "denkbaar"
+  },
+  "A2:zusehen": {
+    "en": "to watch; to look on",
+    "nl": "toekijken; toezien"
+  },
+  "A2:bestimmen": {
+    "en": "to determine; to decide",
+    "nl": "bepalen; vaststellen"
+  },
+  "A2:erwerben": {
+    "en": "to acquire; to purchase",
+    "nl": "verwerven; aanschaffen"
+  },
+  "A2:pc": {
+    "en": "personal computer; PC",
+    "nl": "personal computer; pc"
+  },
+  "A2:vampir": {
+    "en": "vampire",
+    "nl": "vampier"
+  },
+  "A2:schnitt": {
+    "en": "cut; incision; average",
+    "nl": "snede; doorsnede; gemiddelde"
+  },
+  "A2:melde": {
+    "en": "I report; I register",
+    "nl": "ik meld; ik schrijf in"
+  },
+  "A2:sitzung": {
+    "en": "session; meeting",
+    "nl": "zitting; vergadering"
+  },
+  "A2:hunde": {
+    "en": "dogs",
+    "nl": "honden"
+  },
+  "A2:erschaffen": {
+    "en": "to create",
+    "nl": "scheppen; creëren"
+  },
+  "A2:krieger": {
+    "en": "warrior",
+    "nl": "krijger"
+  },
+  "A2:echten": {
+    "en": "genuine; real (inflected)",
+    "nl": "echte; authentieke"
+  },
+  "A2:erschreckt": {
+    "en": "frightened; startles",
+    "nl": "geschrokken; laat schrikken"
+  },
+  "A2:anhalten": {
+    "en": "to stop; to continue",
+    "nl": "stoppen; aanhouden"
+  },
+  "A2:geräusch": {
+    "en": "sound; noise",
+    "nl": "geluid"
+  },
+  "A2:universum": {
+    "en": "universe",
+    "nl": "heelal; universum"
+  },
+  "A2:hinsichtlich": {
+    "en": "concerning; with regard to",
+    "nl": "met betrekking tot; aangaande"
+  },
+  "A2:übertragen": {
+    "en": "to transfer; to broadcast",
+    "nl": "overdragen; uitzenden"
+  },
+  "A2:veröffentlichung": {
+    "en": "publication",
+    "nl": "publicatie"
+  },
+  "A2:gesetzlich": {
+    "en": "statutory; prescribed by law",
+    "nl": "wettelijk"
+  },
+  "A2:vielzahl": {
+    "en": "large number; multitude",
+    "nl": "veelheid; groot aantal"
+  },
+  "A2:massiv": {
+    "en": "massive; substantial",
+    "nl": "massief; aanzienlijk"
+  },
+  "A2:regisseur": {
+    "en": "film or theatre director",
+    "nl": "regisseur"
+  },
+  "A2:zudem": {
+    "en": "furthermore; in addition",
+    "nl": "bovendien"
+  },
+  "A2:zugeben": {
+    "en": "to admit; to add",
+    "nl": "toegeven; toevoegen"
+  },
+  "A2:berühren": {
+    "en": "to touch",
+    "nl": "aanraken; beroeren"
+  },
+  "A2:allenfalls": {
+    "en": "at most; possibly",
+    "nl": "hooguit; eventueel"
+  },
+  "A2:wonach": {
+    "en": "what … for; according to what",
+    "nl": "waarnaar; volgens welk criterium"
+  },
+  "A2:abends": {
+    "en": "in the evening",
+    "nl": "'s avonds"
+  },
+  "A2:scheck": {
+    "en": "cheque; check",
+    "nl": "cheque"
+  },
+  "A2:monatlich": {
+    "en": "monthly",
+    "nl": "maandelijks"
+  },
+  "A2:wandel": {
+    "en": "change; transformation",
+    "nl": "verandering; omwenteling"
+  },
+  "A2:kosovo": {
+    "en": "Kosovo",
+    "nl": "Kosovo"
+  },
+  "A2:rücktritt": {
+    "en": "resignation; withdrawal",
+    "nl": "aftreden; terugtrekking"
+  },
+  "A2:königin": {
+    "en": "queen",
+    "nl": "koningin"
+  },
+  "A2:vorlegen": {
+    "en": "to submit; to present",
+    "nl": "voorleggen; overleggen"
+  },
+  "A2:charakter": {
+    "en": "character; personality",
+    "nl": "karakter"
+  },
+  "A2:einigung": {
+    "en": "agreement; consensus",
+    "nl": "overeenstemming; akkoord"
+  },
+  "A2:iss": {
+    "en": "eat! (singular command)",
+    "nl": "eet! (enkelvoudig bevel)"
+  },
+  "A2:durchführung": {
+    "en": "implementation; carrying out",
+    "nl": "uitvoering"
+  },
+  "A2:zugleich": {
+    "en": "at the same time; simultaneously",
+    "nl": "tegelijkertijd"
+  },
+  "A2:unschuldig": {
+    "en": "innocent",
+    "nl": "onschuldig"
+  },
+  "A2:verfahren": {
+    "en": "procedure; proceedings",
+    "nl": "procedure; werkwijze"
+  },
+  "A2:gelangen": {
+    "en": "to reach; to arrive at",
+    "nl": "bereiken; geraken"
+  },
+  "A2:rauskommen": {
+    "en": "to come out; to become clear",
+    "nl": "uitkomen; duidelijk worden"
+  },
+  "A2:fluch": {
+    "en": "curse",
+    "nl": "vloek"
+  },
+  "A2:explosion": {
+    "en": "explosion",
+    "nl": "explosie; ontploffing"
+  },
+  "A2:zelle": {
+    "en": "cell; prison cell",
+    "nl": "cel"
+  },
+  "A2:van": {
+    "en": "van; minibus",
+    "nl": "busje; minibus"
+  },
+  "A2:institution": {
+    "en": "institution",
+    "nl": "instelling; instituut"
+  },
+  "A2:währung": {
+    "en": "currency",
+    "nl": "valuta; munteenheid"
+  },
+  "A2:gegenwart": {
+    "en": "present time; presence",
+    "nl": "het heden; aanwezigheid"
+  },
+  "A2:besitzer": {
+    "en": "owner",
+    "nl": "bezitter; eigenaar"
+  },
+  "A2:ausgleich": {
+    "en": "compensation; balancing",
+    "nl": "compensatie; evenwicht"
+  },
+  "A2:steckst": {
+    "en": "you put in; you are stuck",
+    "nl": "jij steekt; je zit vast"
+  },
+  "A2:steigerung": {
+    "en": "increase; comparison of adjectives",
+    "nl": "verhoging; trappen van vergelijking"
+  },
+  "A2:sicherung": {
+    "en": "security; electrical fuse",
+    "nl": "beveiliging; zekering"
+  },
+  "A2:durchgemacht": {
+    "en": "gone through; endured",
+    "nl": "doorgemaakt; doorstaan"
+  },
+  "A2:linken": {
+    "en": "to con; to trick (informal)",
+    "nl": "bedotten; belazeren"
+  },
+  "A2:ansicht": {
+    "en": "opinion; view",
+    "nl": "mening; aanzicht"
+  },
+  "A2:major": {
+    "en": "major (military rank)",
+    "nl": "majoor"
+  },
+  "A2:keinerlei": {
+    "en": "none whatsoever; no kind of",
+    "nl": "geen enkele; geen enkele soort"
+  },
+  "A2:geltend": {
+    "en": "valid; in force",
+    "nl": "geldig; van kracht"
+  },
+  "A2:architektur": {
+    "en": "architecture",
+    "nl": "architectuur; bouwkunst"
+  },
+  "A2:hä": {
+    "en": "huh?; what? (informal)",
+    "nl": "hè?; wat? (informeel)"
+  },
+  "A2:verfassung": {
+    "en": "constitution; physical condition",
+    "nl": "grondwet; gesteldheid"
+  },
+  "A2:hass": {
+    "en": "hatred",
+    "nl": "haat"
+  },
+  "A2:ratte": {
+    "en": "rat",
+    "nl": "rat"
+  },
+  "A2:wirksam": {
+    "en": "effective",
+    "nl": "doeltreffend; werkzaam"
+  },
+  "A2:definitiv": {
+    "en": "definitive; certain",
+    "nl": "definitief; zeker"
+  },
+  "A2:betrachten": {
+    "en": "to consider; to look at",
+    "nl": "beschouwen; bekijken"
+  },
+  "A2:unverändert": {
+    "en": "unchanged",
+    "nl": "onveranderd"
+  },
+  "A2:lügst": {
+    "en": "you lie",
+    "nl": "jij liegt; je liegt"
+  },
+  "A2:prinz": {
+    "en": "prince",
+    "nl": "prins"
+  },
+  "A2:voran": {
+    "en": "forward; ahead",
+    "nl": "vooruit; vooraan"
+  },
+  "A2:vermögen": {
+    "en": "wealth; ability",
+    "nl": "vermogen; rijkdom"
+  },
+  "A2:stadtteil": {
+    "en": "district of a city",
+    "nl": "stadsdeel; wijk"
+  },
+  "A2:veränderung": {
+    "en": "change; alteration",
+    "nl": "verandering"
+  },
+  "A2:allzu": {
+    "en": "too; excessively",
+    "nl": "al te; te zeer"
+  },
+  "A2:infrastruktur": {
+    "en": "infrastructure",
+    "nl": "infrastructuur"
+  },
+  "A2:bewerber": {
+    "en": "applicant; candidate",
+    "nl": "sollicitant; kandidaat"
+  },
+  "A2:wieviel": {
+    "en": "how much; how many",
+    "nl": "hoeveel"
+  },
+  "A2:plus": {
+    "en": "plus; in addition to",
+    "nl": "plus; daarbij"
+  },
+  "A2:ziehst": {
+    "en": "you pull; you move house",
+    "nl": "jij trekt; je verhuist"
+  },
+  "A2:vollständig": {
+    "en": "complete; entire",
+    "nl": "volledig; compleet"
+  },
+  "A2:ausmass": {
+    "en": "extent; magnitude",
+    "nl": "omvang; mate"
+  },
+  "A2:truck": {
+    "en": "truck; lorry",
+    "nl": "truck; vrachtwagen"
+  },
+  "A2:ausgerechnet": {
+    "en": "of all things; precisely",
+    "nl": "uitgerekend; juist"
+  },
+  "A2:kuh": {
+    "en": "cow",
+    "nl": "koe"
+  },
+  "A2:bewahren": {
+    "en": "to preserve; to keep",
+    "nl": "bewaren; behoeden"
+  },
+  "A2:zulassen": {
+    "en": "to permit; to approve",
+    "nl": "toelaten; toestaan"
+  },
+  "A2:anlässlich": {
+    "en": "on the occasion of",
+    "nl": "ter gelegenheid van"
+  },
+  "A2:schaffung": {
+    "en": "creation; establishment",
+    "nl": "schepping; totstandbrenging"
+  },
+  "A2:wovon": {
+    "en": "of what; about what",
+    "nl": "waarvan; waarover"
+  },
+  "A2:flotte": {
+    "en": "fleet",
+    "nl": "vloot"
+  },
+  "A2:gefangen": {
+    "en": "captive; captured",
+    "nl": "gevangen"
+  },
+  "A2:besessen": {
+    "en": "obsessed; owned (past participle)",
+    "nl": "bezeten; in bezit gehad"
+  },
+  "A2:lege": {
+    "en": "I lay; I put down",
+    "nl": "ik leg"
+  },
+  "A2:schweizer": {
+    "en": "Swiss man; Swiss person",
+    "nl": "Zwitser"
+  },
+  "A2:pfarrer": {
+    "en": "parish priest; pastor",
+    "nl": "pastoor; predikant"
+  },
+  "A2:unterdessen": {
+    "en": "meanwhile",
+    "nl": "intussen; ondertussen"
+  },
+  "A2:erkennbar": {
+    "en": "recognisable; discernible",
+    "nl": "herkenbaar; waarneembaar"
+  },
+  "A2:verweisen": {
+    "en": "to refer to; to expel",
+    "nl": "verwijzen; wegsturen"
+  },
+  "A2:existenz": {
+    "en": "existence",
+    "nl": "bestaan; existentie"
+  },
+  "A2:bislang": {
+    "en": "so far; up to now",
+    "nl": "tot dusver; tot nu toe"
+  },
+  "A2:palästinenser": {
+    "en": "Palestinian person",
+    "nl": "Palestijn"
+  },
+  "A2:merkmal": {
+    "en": "feature; characteristic",
+    "nl": "kenmerk"
+  },
+  "A2:existieren": {
+    "en": "to exist",
+    "nl": "bestaan"
+  },
+  "A2:vielfalt": {
+    "en": "diversity; variety",
+    "nl": "verscheidenheid; diversiteit"
+  },
+  "A2:kompetenz": {
+    "en": "competence; area of responsibility",
+    "nl": "bekwaamheid; bevoegdheid"
+  },
+  "A2:vorfeld": {
+    "en": "preliminary stage; area in front",
+    "nl": "voortraject; voorveld"
+  },
+  "A2:wozu": {
+    "en": "what for; for what purpose",
+    "nl": "waartoe; waarvoor"
+  },
+  "A2:militär": {
+    "en": "the military; armed forces",
+    "nl": "het leger; de strijdkrachten"
+  },
+  "A2:keineswegs": {
+    "en": "by no means; not at all",
+    "nl": "geenszins; helemaal niet"
+  },
+  "A2:hauptmann": {
+    "en": "captain (military rank)",
+    "nl": "kapitein"
+  },
+  "A2:einig": {
+    "en": "in agreement; united",
+    "nl": "eensgezind; het eens"
+  },
+  "A2:dahinter": {
+    "en": "behind it; behind that",
+    "nl": "daarachter; erachter"
+  },
+  "A2:landkreis": {
+    "en": "administrative district",
+    "nl": "bestuurlijk district; landkreis"
+  },
+  "A2:vorliegen": {
+    "en": "to be available; to be present",
+    "nl": "voorliggen; aanwezig zijn"
+  },
+  "A2:worauf": {
+    "en": "on what; what … at",
+    "nl": "waarop"
+  },
+  "A2:vorwiegend": {
+    "en": "predominantly; chiefly",
+    "nl": "voornamelijk; overwegend"
+  },
+  "A2:scheinbar": {
+    "en": "seeming; apparent only",
+    "nl": "schijnbaar"
+  },
+  "A2:einsicht": {
+    "en": "insight; inspection",
+    "nl": "inzicht; inzage"
+  },
+  "A2:verteilung": {
+    "en": "distribution",
+    "nl": "verdeling; distributie"
+  },
+  "A2:dutzend": {
+    "en": "dozen",
+    "nl": "dozijn"
+  },
+  "A2:landgericht": {
+    "en": "regional court",
+    "nl": "regionale rechtbank"
+  },
+  "A2:vielfach": {
+    "en": "multiple; frequently",
+    "nl": "veelvuldig; meervoudig"
+  },
+  "A2:innenminister": {
+    "en": "interior minister",
+    "nl": "minister van Binnenlandse Zaken"
+  },
+  "A2:hiermit": {
+    "en": "hereby; hereby",
+    "nl": "hierbij; hiermee"
+  },
+  "A2:prinzip": {
+    "en": "principle",
+    "nl": "principe; beginsel"
+  },
+  "A2:tschüs": {
+    "en": "bye!; goodbye!",
+    "nl": "doeg!; tot ziens!"
+  },
+  "A2:abstand": {
+    "en": "distance; gap",
+    "nl": "afstand; verschil"
+  },
+  "A2:insbesondere": {
+    "en": "in particular; especially",
+    "nl": "in het bijzonder; vooral"
+  },
+  "A2:hirn": {
+    "en": "brain",
+    "nl": "hersenen; brein"
+  },
+  "A2:anklage": {
+    "en": "accusation; indictment",
+    "nl": "aanklacht; beschuldiging"
+  },
+  "A2:privatisierung": {
+    "en": "privatisation",
+    "nl": "privatisering"
+  },
+  "A2:clever": {
+    "en": "clever; smart",
+    "nl": "slim; pienter"
+  },
+  "A2:anschauen": {
+    "en": "to look at; to watch",
+    "nl": "bekijken; aankijken"
+  },
+  "A2:prinzessin": {
+    "en": "princess",
+    "nl": "prinses"
+  },
+  "A2:zufolge": {
+    "en": "according to",
+    "nl": "volgens; naar luid van"
+  },
+  "A2:hinweg": {
+    "en": "across; over",
+    "nl": "overheen; voorbij"
+  },
+  "A2:real": {
+    "en": "real; actual",
+    "nl": "reëel; werkelijk"
+  },
+  "A2:republik": {
+    "en": "republic",
+    "nl": "republiek"
+  },
+  "A2:angel": {
+    "en": "fishing rod",
+    "nl": "hengel"
+  },
+  "A2:albern": {
+    "en": "silly; foolish",
+    "nl": "flauw; dwaas"
+  },
+  "A2:abmachung": {
+    "en": "agreement; arrangement",
+    "nl": "afspraak; overeenkomst"
+  },
+  "A2:farm": {
+    "en": "farm",
+    "nl": "boerderij; landbouwbedrijf"
+  },
+  "A2:öffnung": {
+    "en": "opening; aperture",
+    "nl": "opening"
+  },
+  "A2:verzicht": {
+    "en": "renunciation; waiving",
+    "nl": "afzien van; afstand doen"
+  },
+  "A2:verschwenden": {
+    "en": "to waste",
+    "nl": "verspillen"
+  },
+  "A2:aussicht": {
+    "en": "view; prospect",
+    "nl": "uitzicht; vooruitzicht"
+  },
+  "A2:osteuropa": {
+    "en": "Eastern Europe",
+    "nl": "Oost-Europa"
+  },
+  "A2:priester": {
+    "en": "priest",
+    "nl": "priester"
+  },
+  "A2:womit": {
+    "en": "with what; by what means",
+    "nl": "waarmee"
+  },
+  "A2:woran": {
+    "en": "at what; on what",
+    "nl": "waaraan"
+  },
+  "A2:grundsatz": {
+    "en": "fundamental principle",
+    "nl": "grondbeginsel; basisprincipe"
+  },
+  "A2:überblick": {
+    "en": "overview",
+    "nl": "overzicht"
+  },
+  "A2:west": {
+    "en": "the west; west wind",
+    "nl": "het westen; westenwind"
+  },
+  "A2:anstatt": {
+    "en": "instead of",
+    "nl": "in plaats van"
+  },
+  "A2:besiegen": {
+    "en": "to defeat",
+    "nl": "verslaan"
+  },
+  "A2:aufruf": {
+    "en": "call; appeal",
+    "nl": "oproep"
+  },
+  "A2:uni": {
+    "en": "university (informal)",
+    "nl": "universiteit (informeel)"
+  },
+  "A2:bedrohung": {
+    "en": "threat",
+    "nl": "bedreiging"
+  },
+  "A2:senator": {
+    "en": "senator",
+    "nl": "senator"
+  },
+  "A2:lebendig": {
+    "en": "alive; lively",
+    "nl": "levend; levendig"
+  },
+  "A2:zuviel": {
+    "en": "too much (old spelling)",
+    "nl": "te veel (oude spelling)"
+  },
+  "A2:umstritten": {
+    "en": "controversial; disputed",
+    "nl": "omstreden"
+  },
+  "A2:befassen": {
+    "en": "to deal with; to concern oneself with",
+    "nl": "zich bezighouden met; behandelen"
+  },
+  "A2:gemeinderat": {
+    "en": "municipal council; councillor",
+    "nl": "gemeenteraad; gemeenteraadslid"
+  },
+  "A2:übergang": {
+    "en": "transition; crossing",
+    "nl": "overgang"
+  },
+  "A2:tagung": {
+    "en": "conference; meeting",
+    "nl": "conferentie; bijeenkomst"
+  },
+  "A2:unrecht": {
+    "en": "injustice; wrongdoing",
+    "nl": "onrecht; ongelijk"
+  },
+  "A2:runter": {
+    "en": "down (informal)",
+    "nl": "naar beneden (informeel)"
+  },
+  "A2:ewigkeit": {
+    "en": "eternity",
+    "nl": "eeuwigheid"
+  },
+  "A2:verstand": {
+    "en": "mind; understanding",
+    "nl": "verstand"
+  },
+  "A2:verzeichnis": {
+    "en": "list; index; directory",
+    "nl": "register; lijst; adresboek"
+  },
+  "A2:zentrale": {
+    "en": "headquarters; central office",
+    "nl": "hoofdkantoor; centrale"
+  },
+  "A2:grab": {
+    "en": "grave",
+    "nl": "graf"
+  },
+  "A2:objekt": {
+    "en": "object; item",
+    "nl": "object; voorwerp"
+  },
+  "A2:verband": {
+    "en": "association; bandage",
+    "nl": "vereniging; verband"
+  },
+  "A2:mama": {
+    "en": "mum; mom",
+    "nl": "mama"
+  },
+  "A2:explizit": {
+    "en": "explicit",
+    "nl": "uitdrukkelijk; expliciet"
+  },
+  "A2:admiral": {
+    "en": "admiral",
+    "nl": "admiraal"
+  },
+  "A2:samt": {
+    "en": "together with; including",
+    "nl": "met; samen met"
+  },
+  "A2:auffällig": {
+    "en": "noticeable; conspicuous",
+    "nl": "opvallend"
+  },
+  "A2:heftig": {
+    "en": "violent; intense",
+    "nl": "hevig; heftig"
+  },
+  "A2:einstieg": {
+    "en": "entry; introduction",
+    "nl": "opstap; begin"
+  },
+  "A2:panik": {
+    "en": "panic",
+    "nl": "paniek"
+  },
+  "A2:redaktion": {
+    "en": "editorial team; editorial office",
+    "nl": "redactie"
+  },
+  "A2:lektion": {
+    "en": "lesson",
+    "nl": "les"
+  },
+  "A2:gremium": {
+    "en": "committee; panel",
+    "nl": "commissie; college"
+  },
+  "A2:erweitern": {
+    "en": "to expand; to extend",
+    "nl": "uitbreiden; verruimen"
+  },
+  "A2:dementsprechend": {
+    "en": "accordingly",
+    "nl": "dienovereenkomstig"
+  },
+  "A2:fazit": {
+    "en": "conclusion; overall result",
+    "nl": "conclusie; slotsom"
+  },
+  "A2:junior": {
+    "en": "junior; younger person",
+    "nl": "junior; jongere"
+  },
+  "A2:ausführung": {
+    "en": "execution; performance; version",
+    "nl": "uitvoering; versie"
+  },
+  "A2:anlegen": {
+    "en": "to set up; to invest",
+    "nl": "aanleggen; beleggen"
+  },
+  "A2:genügend": {
+    "en": "sufficient; enough",
+    "nl": "voldoende; genoeg"
+  },
+  "A2:erhältlich": {
+    "en": "available; obtainable",
+    "nl": "verkrijgbaar; beschikbaar"
+  },
+  "A2:stabilität": {
+    "en": "stability",
+    "nl": "stabiliteit"
+  },
+  "A2:orientieren": {
+    "en": "to orient; to guide",
+    "nl": "oriënteren; richting geven"
+  },
+  "A2:bekämpfung": {
+    "en": "combating; control",
+    "nl": "bestrijding"
+  },
+  "A2:rächen": {
+    "en": "to avenge; to take revenge",
+    "nl": "wreken; wraak nemen"
+  },
+  "A2:unsinn": {
+    "en": "nonsense",
+    "nl": "onzin; onzinnigheid"
+  },
+  "A2:eintrag": {
+    "en": "entry in a record",
+    "nl": "inschrijving; vermelding"
+  },
+  "A2:schlacht": {
+    "en": "battle",
+    "nl": "slag; veldslag"
+  },
+  "A2:befreiung": {
+    "en": "liberation; exemption",
+    "nl": "bevrijding; vrijstelling"
+  },
+  "A2:wut": {
+    "en": "rage; fury",
+    "nl": "woede"
+  },
+  "A2:kommentar": {
+    "en": "comment",
+    "nl": "commentaar"
+  },
+  "A2:höhle": {
+    "en": "cave; cavern",
+    "nl": "grot; hol"
+  },
+  "A2:spanisch": {
+    "en": "Spanish language",
+    "nl": "Spaans (taal)"
+  },
+  "A2:erstaunlich": {
+    "en": "astonishing; surprising",
+    "nl": "verbazingwekkend"
+  },
+  "A2:jungfrau": {
+    "en": "virgin",
+    "nl": "maagd"
+  },
+  "A2:armer": {
+    "en": "poor person",
+    "nl": "arme; behoeftige"
+  },
+  "A2:weh": {
+    "en": "sore; painful",
+    "nl": "pijnlijk; zeer"
+  },
+  "A2:komponente": {
+    "en": "component",
+    "nl": "component; onderdeel"
+  },
+  "A2:regierungschef": {
+    "en": "head of government",
+    "nl": "regeringsleider"
+  },
+  "A2:aufwendig": {
+    "en": "costly; requiring much effort",
+    "nl": "arbeidsintensief; kostbaar"
+  },
+  "A2:pariser": {
+    "en": "Parisian; from Paris",
+    "nl": "Parijse; uit Parijs"
+  },
+  "A2:rache": {
+    "en": "revenge",
+    "nl": "wraak"
+  },
+  "A2:momentan": {
+    "en": "current; at present",
+    "nl": "momenteel; huidig"
+  },
+  "A2:nachsehen": {
+    "en": "to check; to forgive",
+    "nl": "nakijken; door de vingers zien"
+  },
+  "A2:islam": {
+    "en": "Islam",
+    "nl": "islam"
+  },
+  "A2:wobei": {
+    "en": "while; in which",
+    "nl": "waarbij; terwijl"
+  },
+  "A2:atmosphäre": {
+    "en": "atmosphere",
+    "nl": "atmosfeer; sfeer"
+  },
+  "A2:anschlag": {
+    "en": "attack; posted notice",
+    "nl": "aanslag; aanplakbiljet"
+  },
+  "A2:krebs": {
+    "en": "cancer; crustacean",
+    "nl": "kanker; kreeftachtige"
+  },
+  "A2:behauptung": {
+    "en": "claim; assertion",
+    "nl": "bewering"
+  },
+  "A2:hierzulande": {
+    "en": "in this country",
+    "nl": "hier te lande; in dit land"
+  },
+  "A2:regime": {
+    "en": "regime",
+    "nl": "regime"
+  },
+  "A2:bereuen": {
+    "en": "to regret",
+    "nl": "betreuren; spijt hebben van"
+  },
+  "A2:irgend": {
+    "en": "any; some (in indefinite compounds)",
+    "nl": "enig; zomaar (in onbepaalde samenstellingen)"
+  },
+  "A2:klauen": {
+    "en": "to steal (informal)",
+    "nl": "jatten; stelen"
+  },
+  "A2:ignorieren": {
+    "en": "to ignore",
+    "nl": "negeren"
+  },
+  "A2:sozialismus": {
+    "en": "socialism",
+    "nl": "socialisme"
+  },
+  "A2:badezimmer": {
+    "en": "bathroom",
+    "nl": "badkamer"
+  },
+  "A2:entziehen": {
+    "en": "to withdraw; to deprive of",
+    "nl": "onttrekken; onthouden"
+  },
+  "A2:seil": {
+    "en": "rope",
+    "nl": "touw"
+  },
+  "A2:eingehen": {
+    "en": "to enter into; to respond to; to wither",
+    "nl": "aangaan; ingaan op; verdorren"
+  },
+  "A2:jahrzehnt": {
+    "en": "decade",
+    "nl": "decennium"
+  },
+  "A2:last": {
+    "en": "load; burden",
+    "nl": "last"
+  },
+  "A2:bezug": {
+    "en": "reference; connection; cover",
+    "nl": "betrekking; verwijzing; bekleding"
+  },
+  "A2:vielmehr": {
+    "en": "rather; on the contrary",
+    "nl": "veeleer; integendeel"
+  },
+  "A2:episode": {
+    "en": "episode; incident",
+    "nl": "aflevering; voorval"
+  },
+  "A2:wider": {
+    "en": "against",
+    "nl": "tegen"
+  },
+  "A2:bereiten": {
+    "en": "to prepare; to cause",
+    "nl": "bereiden; bezorgen"
+  },
+  "A2:entkommen": {
+    "en": "to escape; to get away",
+    "nl": "ontkomen; ontsnappen"
+  },
+  "A2:bearbeitung": {
+    "en": "processing; editing",
+    "nl": "bewerking; verwerking"
+  },
+  "A2:song": {
+    "en": "song",
+    "nl": "lied; song"
+  },
+  "A2:reine": {
+    "en": "pure; sheer (inflected)",
+    "nl": "zuivere; loutere"
+  },
+  "A2:verlasse": {
+    "en": "I leave; I abandon",
+    "nl": "ik verlaat; ik laat achter"
+  },
+  "A2:mitternacht": {
+    "en": "midnight",
+    "nl": "middernacht"
+  },
+  "A2:rate": {
+    "en": "instalment; rate",
+    "nl": "termijnbedrag; percentage"
+  },
+  "A2:haufen": {
+    "en": "heap; large number",
+    "nl": "hoop; stapel"
+  },
+  "A2:vergehen": {
+    "en": "to pass; to fade away",
+    "nl": "verstrijken; vergaan"
+  },
+  "A2:historiker": {
+    "en": "historian",
+    "nl": "historicus"
+  },
+  "A2:abhängigkeit": {
+    "en": "dependence; addiction",
+    "nl": "afhankelijkheid; verslaving"
+  },
+  "A2:abschaffung": {
+    "en": "abolition; elimination",
+    "nl": "afschaffing"
+  },
+  "A2:zurückgekommen": {
+    "en": "returned; come back",
+    "nl": "teruggekomen"
+  },
+  "A2:kohle": {
+    "en": "money; cash (informal)",
+    "nl": "poen; geld (informeel)"
+  },
+  "A2:werben": {
+    "en": "to advertise; to recruit",
+    "nl": "reclame maken; werven"
+  },
+  "A2:knarre": {
+    "en": "gun (informal)",
+    "nl": "geweer; pistool (informeel)"
+  },
+  "A2:grundlage": {
+    "en": "basis; foundation",
+    "nl": "grondslag; basis"
+  },
+  "A2:anscheinend": {
+    "en": "apparently; seemingly",
+    "nl": "blijkbaar; naar het schijnt"
+  },
+  "A2:wissenschaftlich": {
+    "en": "scientific",
+    "nl": "wetenschappelijk"
+  },
+  "A2:ohnehin": {
+    "en": "anyway; in any case",
+    "nl": "toch al; hoe dan ook"
+  },
+  "A2:erwischen": {
+    "en": "to catch; to hit",
+    "nl": "betrappen; te pakken krijgen"
+  },
+  "A2:schrei": {
+    "en": "scream; cry",
+    "nl": "schreeuw; kreet"
+  },
+  "A2:schaff": {
+    "en": "accomplish!; get it done!",
+    "nl": "krijg het voor elkaar!; werk!"
+  },
+  "A2:verhandeln": {
+    "en": "to negotiate",
+    "nl": "onderhandelen"
+  },
+  "A2:unangenehm": {
+    "en": "unpleasant",
+    "nl": "onaangenaam"
+  },
+  "A2:benehmen": {
+    "en": "to behave",
+    "nl": "zich gedragen"
+  },
+  "A2:abgemacht": {
+    "en": "agreed; settled",
+    "nl": "afgesproken; akkoord"
+  },
+  "A2:flügel": {
+    "en": "wing",
+    "nl": "vleugel"
+  },
+  "A2:graf": {
+    "en": "count (noble title)",
+    "nl": "graaf (adellijke titel)"
+  },
+  "A2:diener": {
+    "en": "servant",
+    "nl": "dienaar; bediende"
+  },
+  "A2:oberst": {
+    "en": "colonel",
+    "nl": "kolonel"
+  },
+  "A2:stellst": {
+    "en": "you put upright; you pose a question",
+    "nl": "jij zet; je stelt"
+  }
+}
