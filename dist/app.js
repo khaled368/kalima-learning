@@ -13,6 +13,7 @@ const POS = {noun:'اسم',verb:'فعل',adjective:'صفة',adverb:'ظرف',pron
 const cache = new Map();
 const wordMap = new Map();
 let manifest = null, activeLevel = 'A1', panel = 'library', pageSize = 24, currentWord = null, wordTab = 'meaning';
+let badgesReturnPanel = 'library';
 let session = null, toastTimer, loadRequest = 0;
 const safeRead = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string').map(id=>typeof id==='string'&&/^\d+$/.test(id)&&Number(id)<90?Number(id):id):[]); };
@@ -97,8 +98,10 @@ function renderCards() {
  $('#load-more').hidden=pageSize>=list.length;
 }
 async function showPanel(name) {
+ if(name==='badges'&&panel!=='badges')badgesReturnPanel=panel;
  if(name!==panel)stopSpeech();
  panel=name;document.querySelectorAll('main > .panel').forEach(p=>p.hidden=p.id!==`${name}-panel`);document.querySelectorAll('[data-panel]').forEach(b=>{b.classList.toggle('active',b.dataset.panel===name);if(b.dataset.panel===name)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ $('#home-shield-button').setAttribute('aria-expanded',String(name==='badges'));updateOwnedShield();
  status('');window.scrollTo({top:0,behavior:'instant'});
  if(name==='training')updateReviewAvailability();
  if(name==='saved')await renderSaved();if(name==='progress')renderProgress();if(name==='badges')renderBadges();
@@ -251,7 +254,8 @@ function updateOwnedShield(){
  const owned=ownedShields(),highest=owned.at(-1),button=$('#home-shield-button');
  $('#stats-shields').textContent=`${owned.length} / ${manifest?.shields?.length||10}`;
  $('#home-shield-art').innerHTML=highest?shieldMarkup(highest.index,highest.name):'<span class="shield-empty-symbol">♢</span>';
- $('#home-shield-label').textContent=highest?highest.name:'دروعي';button.setAttribute('aria-label',highest?`درعك الحالي ${highest.name}؛ افتح دروعك المكتسبة`:'لم تكتسب درعًا بعد؛ افتح صفحة الدروع');button.title=highest?`درعك الحالي: ${highest.name}`:'التقدّم نحو درعك الأول';
+ const action=panel==='badges'?'أغلق دروعك المكتسبة':'افتح دروعك المكتسبة';
+ $('#home-shield-label').textContent=highest?highest.name:'دروعي';button.setAttribute('aria-label',highest?`درعك الحالي ${highest.name}؛ ${action}`:`لم تكتسب درعًا بعد؛ ${action}`);button.title=action;
 }
 function renderBadges(){
  if(!manifest)return;
@@ -296,7 +300,7 @@ document.querySelectorAll('[data-card-view]').forEach(button=>button.onclick=()=
 setCardView(cardView);
 $('#search').oninput=()=>{pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};
-document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
+document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.id==='home-shield-button'&&panel==='badges'?badgesReturnPanel:b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
 $('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
 $('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?2:(index+(e.key==='ArrowLeft'?1:-1)+3)%3;buttons[next].click();buttons[next].focus();};
