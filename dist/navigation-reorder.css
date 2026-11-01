@@ -53,7 +53,7 @@ html[data-theme='dark'] body .topbar #top-saved-button:is(.active,[aria-current=
 }
 /* Grid uses RTL so last item remains at the physical left edge, even when
    German, English or Dutch is selected as the native language. */
-html body .bottom-nav { direction: rtl; }
+html body .bottom-nav, html[dir='ltr'] body .bottom-nav { direction: rtl !important; }
 html[dir='ltr'] body .bottom-nav button {direction: ltr;}
 body .bottom-nav #account-button {
   min-width: 0;
