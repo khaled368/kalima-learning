@@ -344,5 +344,19 @@ html[data-theme='dark'] body :is(#open-sources,.reference-word-audio,[data-speak
 body #word-dialog .word-content .example-card [data-example-speak] {
   border-radius:12px !important;
 }
+/* Clear keyboard focus and coherent icon tones on the selected pill. */
+body :is(.primary,.secondary,#course-apply,#review-level,#word-previous,#word-skip):focus-visible {
+  outline:3px solid #458de1 !important;
+  outline-offset:3px;
+}
+html[data-theme='dark'] body :is(.primary,.secondary,#course-apply,#review-level,#word-previous,#word-skip):focus-visible {
+  outline-color:#a9d7ff !important;
+}
+html:not([data-theme='dark']) body .bottom-nav button:is(.active,[aria-current='page']) > :is(span:first-child,small) {
+  color:inherit !important;
+}
+html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page']) > :is(span:first-child,small) {
+  color:inherit !important;
+}
 /* Do not restyle answer feedback, individual word cards, the night-mode
    switch, the medal images, or the target button as action pills. */
