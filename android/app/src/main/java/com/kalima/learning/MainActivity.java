@@ -17,6 +17,11 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
+import android.speech.tts.Voice;
+import java.util.Locale;
+import java.util.Set;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -31,6 +36,8 @@ public final class MainActivity extends Activity {
   private WebView webView;
   private ProgressBar progress;
   private LinearLayout networkError;
+  private TextToSpeech androidTts;
+  private volatile boolean ttsReady = false;
 
   private int dp(float amount) {
     return Math.round(amount * getResources().getDisplayMetrics().density);
@@ -77,6 +84,11 @@ public final class MainActivity extends Activity {
     settings.setSafeBrowsingEnabled(true);
     CookieManager.getInstance().setAcceptCookie(true);
     CookieManager.getInstance().setAcceptThirdPartyCookies(webView, false);
+
+    // Minimal speech-only bridge. No filesystem, account or device-data methods.
+    // External navigation never loads inside this WebView.
+    webView.addJavascriptInterface(new KalimaSpeechBridge(), "KalimaAndroidTTS");
+    initializeSystemSpeech();
 
     // Remote debugging is deliberately not enabled, even in this test APK,
     // because WebView may contain an authenticated learning account.
@@ -198,6 +210,107 @@ public final class MainActivity extends Activity {
     webView.loadUrl(uri != null && isAppUrl(uri) ? current : HOME);
   }
 
+  private void initializeSystemSpeech() {
+    androidTts = new TextToSpeech(this, status -> {
+      ttsReady = status == TextToSpeech.SUCCESS;
+      if (ttsReady && androidTts != null) {
+        androidTts.setSpeechRate(0.96f);
+        androidTts.setPitch(1.0f);
+      }
+    });
+  }
+
+  private Locale speechLocale(String language) {
+    switch (language) {
+      case "de": return Locale.GERMANY;
+      case "en": return Locale.US;
+      case "nl": return new Locale("nl", "NL");
+      case "ar": return new Locale("ar", "SA");
+      default: return null;
+    }
+  }
+
+  private boolean configureSpeechVoice(Locale locale) {
+    if (androidTts == null) return false;
+    int support = androidTts.isLanguageAvailable(locale);
+    if (support == TextToSpeech.LANG_MISSING_DATA
+        || support == TextToSpeech.LANG_NOT_SUPPORTED) return false;
+    Voice best = null;
+    int bestScore = Integer.MIN_VALUE;
+    Set<Voice> voices = androidTts.getVoices();
+    if (voices != null) {
+      for (Voice voice : voices) {
+        if (voice.getLocale() == null
+            || !locale.getLanguage().equals(voice.getLocale().getLanguage())) continue;
+        int score = voice.getQuality();
+        if (locale.getCountry().equals(voice.getLocale().getCountry())) score += 100;
+        if (voice.isNetworkConnectionRequired()) score += 25;
+        if (score > bestScore) {
+          best = voice;
+          bestScore = score;
+        }
+      }
+    }
+    if (best != null && androidTts.setVoice(best) == TextToSpeech.SUCCESS) return true;
+    return androidTts.setLanguage(locale) != TextToSpeech.LANG_NOT_SUPPORTED;
+  }
+
+  private void sendSpeechStatus(int requestId, String status) {
+    runOnUiThread(() -> {
+      if (webView == null) return;
+      String code = "window.dispatchEvent(new CustomEvent('kalima-tts-status',"
+          + "{detail:{id:" + requestId + ",status:'" + status + "'}}))";
+      webView.evaluateJavascript(code, null);
+    });
+  }
+
+  public final class KalimaSpeechBridge {
+    @android.webkit.JavascriptInterface
+    public void speak(String text, String language, int requestId) {
+      if (text == null || text.trim().length() == 0 || text.length() > 2500
+          || requestId < 0 || requestId > 100000000
+          || language == null) {
+        sendSpeechStatus(requestId, "error");
+        return;
+      }
+      final Locale locale = speechLocale(language);
+      if (locale == null) {
+        sendSpeechStatus(requestId, "error");
+        return;
+      }
+      runOnUiThread(() -> {
+        if (!ttsReady || androidTts == null || !configureSpeechVoice(locale)) {
+          sendSpeechStatus(requestId, "error");
+          return;
+        }
+        final String id = Integer.toString(requestId);
+        androidTts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+          @Override public void onStart(String utteranceId) {
+            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "playing");
+          }
+          @Override public void onDone(String utteranceId) {
+            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "finished");
+          }
+          @Override public void onError(String utteranceId) {
+            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "error");
+          }
+          @Override public void onStop(String utteranceId, boolean interrupted) {
+            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "stopped");
+          }
+        });
+        int result = androidTts.speak(text, TextToSpeech.QUEUE_FLUSH, null, id);
+        if (result == TextToSpeech.ERROR) sendSpeechStatus(requestId, "error");
+      });
+    }
+
+    @android.webkit.JavascriptInterface
+    public void stop() {
+      runOnUiThread(() -> {
+        if (androidTts != null) androidTts.stop();
+      });
+    }
+  }
+
   @Override
   public void onBackPressed() {
     if (webView == null) {
@@ -231,6 +344,11 @@ public final class MainActivity extends Activity {
 
   @Override
   protected void onDestroy() {
+    if (androidTts != null) {
+      androidTts.stop();
+      androidTts.shutdown();
+      androidTts = null;
+    }
     if (webView != null) {
       webView.stopLoading();
       webView.destroy();
