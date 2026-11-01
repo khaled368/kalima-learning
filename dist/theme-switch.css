@@ -1,12 +1,15 @@
-/* Sun / moon switch based on the supplied split day-night reference.
-   The toggle always shows both icons; a sliding outlined ring marks the choice. */
+/* A tactile, animated sun/moon slider inspired by the supplied reference.
+   The solid thumb physically slides; sun and moon react to the chosen mode. */
 #theme-toggle {
+  --toggle-travel: 54px;
+  appearance: none;
   display: inline-grid;
   place-items: center;
-  flex: 0 0 72px;
-  width: 72px;
-  height: 40px;
-  min-height: 40px;
+  flex: 0 0 108px;
+  width: 108px;
+  height: 56px;
+  min-width: 108px;
+  min-height: 56px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -14,67 +17,104 @@
   background: transparent;
   cursor: pointer;
   direction: ltr;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
 #theme-toggle .theme-toggle-track {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  position: relative;
-  isolation: isolate;
   box-sizing: border-box;
-  width: 72px;
-  height: 40px;
+  width: 108px;
+  height: 54px;
   padding: 0;
-  border: 2px solid #d5e0e6;
+  border: 2px solid #cddde4;
   border-radius: 999px;
-  background: linear-gradient(90deg, #fbfbfa 0 50%, #1e3047 50% 100%);
-  box-shadow: 0 2px 5px #071b2d23;
+  background: linear-gradient(90deg, #fff8dc 0%, #fff8dc 50%, #1d2c46 50%, #1d2c46 100%);
+  box-shadow: 0 3px 10px #102f4626, inset 0 1px 2px #0000001a;
   overflow: hidden;
+  transition: border-color 260ms ease, box-shadow 260ms ease;
 }
 #theme-toggle .theme-toggle-sun,
 #theme-toggle .theme-toggle-moon {
   display: grid;
   place-items: center;
-  z-index: 1;
-  width: 31px;
-  height: 31px;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 48px;
+  pointer-events: none;
 }
 #theme-toggle svg {
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: transform 440ms cubic-bezier(.2, .8, .2, 1), opacity 300ms ease;
 }
-#theme-toggle .theme-toggle-sun {color: #f0ad17;}
-#theme-toggle .theme-toggle-moon {color: #f5dfb7;}
+#theme-toggle .theme-toggle-sun {color: #d89509;}
+#theme-toggle .theme-toggle-moon {color: #f4dfbc;}
+#theme-toggle .theme-toggle-sun svg {transform: rotate(0) scale(1.05); opacity: 1;}
+#theme-toggle .theme-toggle-moon svg {transform: rotate(-20deg) scale(.86); opacity: .76;}
 #theme-toggle .theme-toggle-thumb {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
-  left: 1px;
-  top: 1px;
-  width: 34px;
-  height: 34px;
+  top: 2px;
+  left: 2px;
   box-sizing: border-box;
-  border: 2.5px solid #10a99e;
+  width: 48px;
+  height: 46px;
+  border: 2px solid #fff;
   border-radius: 50%;
-  background: #ffffff10;
-  box-shadow: inset 0 0 0 1px #fff9;
-  transition: transform 180ms ease, border-color 180ms ease;
+  background: radial-gradient(circle at 32% 28%, #fff, #ffe9af 85%);
+  box-shadow: 0 2px 7px #0b223640, inset 0 0 0 1px #f4c965;
+  transform: translateX(0);
+  transition:
+    transform 480ms cubic-bezier(.24, 1.32, .35, 1),
+    background 280ms ease,
+    box-shadow 280ms ease,
+    border-color 280ms ease;
+  will-change: transform;
 }
 html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {
-  transform: translateX(32px);
-  border-color: #c4d5f0;
+  transform: translateX(var(--toggle-travel));
+  border-color: #c3d4ef;
+  background: radial-gradient(circle at 30% 24%, #4a5c80, #253650 85%);
+  box-shadow: 0 3px 9px #050d1e69, inset 0 0 0 1px #97a9cb;
+}
+html[data-theme='dark'] #theme-toggle .theme-toggle-sun svg {
+  transform: rotate(52deg) scale(.84);
+  opacity: .66;
+}
+html[data-theme='dark'] #theme-toggle .theme-toggle-moon svg {
+  transform: rotate(0deg) scale(1.09);
+  opacity: 1;
+}
+html[data-theme='dark'] #theme-toggle .theme-toggle-track {
+  border-color: #6683a3;
+}
+#theme-toggle:not(:disabled):active .theme-toggle-thumb {
+  scale: .91;
+  box-shadow: 0 1px 3px #102f4659, inset 0 0 0 1px #f4c965;
 }
 #theme-toggle:focus-visible {
-  outline: 3px solid #1ba7a0;
-  outline-offset: 3px;
+  outline: 3px solid #0f9e9c;
+  outline-offset: 4px;
 }
-#theme-toggle:hover .theme-toggle-track {border-color: #58b8b7;}
-
+#theme-toggle:hover .theme-toggle-track {
+  box-shadow: 0 3px 12px #102f4640, inset 0 1px 2px #0000001a;
+}
+#theme-toggle.is-dragging .theme-toggle-thumb {
+  transition: background 220ms ease, box-shadow 220ms ease;
+  scale: .96;
+}
 /* Account settings: use the same sun/moon switch without occupying header space. */
 #account-dialog .account-appearance {
   display: flex;
@@ -97,10 +137,10 @@ html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {
   color: inherit;
 }
 #account-dialog #theme-toggle {
-  flex: 0 0 72px;
-  width: 72px;
-  height: 44px;
-  min-height: 44px;
+  flex: 0 0 108px;
+  width: 108px;
+  height: 56px;
+  min-height: 56px;
 }
 html[data-theme='dark'] #account-dialog .account-appearance {
   border-color: #476279;
@@ -110,9 +150,12 @@ html[data-theme='dark'] #account-dialog .account-appearance {
 @media (max-width: 359px) {
   #account-dialog .account-appearance {padding: 12px; gap: 9px;}
   #account-dialog .account-appearance-label {font-size: 16px;}
+  #account-dialog .account-appearance {flex-wrap: wrap;}
 }
 @media (prefers-reduced-motion: reduce) {
-  #theme-toggle .theme-toggle-thumb {transition: none;}
+  #theme-toggle .theme-toggle-thumb,
+  #theme-toggle .theme-toggle-track,
+  #theme-toggle svg {transition: none;}
 }
 
 /* Shields layout is a structural sheet shared by both themes.
