@@ -20,9 +20,11 @@
 <link rel="stylesheet" href="word-motion.css">
 <link rel="stylesheet" href="languages.css">
 <link rel="stylesheet" href="account.css">
-<link rel="stylesheet" href="light-theme.css?v=20261101">
+<link rel="stylesheet" href="light-theme.css?v=20261101" data-kalima-light>
 <link rel="stylesheet" href="shields-layout.css?v=20261101b">
-<link rel="stylesheet" href="legibility.css?v=20261101d">
+<link rel="stylesheet" href="legibility.css?v=20261101d" data-kalima-light>
+<link rel="stylesheet" href="theme-switch.css?v=20261101a">
+<script src="theme-switch.js?v=20261101a"></script>
 <script src="backend-config.js"></script>
 <script src="assets/vendor/supabase-2.118.0.js"></script>
 <script src="backend-client.js"></script>
@@ -34,7 +36,7 @@
 </head>
 <body>
 <div class="app-shell">
-<header class="topbar"><a class="brand" href="#library" aria-label="Wort — مكتبة المفردات" data-i18n-aria-label="Wort — مكتبة المفردات"><img class="brand-logo" src="assets/brand-book.png" width="52" height="52" alt=""><span class="brand-name" lang="ar" dir="rtl">كلمة</span></a><div class="top-actions"><button id="account-button" type="button" aria-controls="account-dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><span data-account-label>حسابي</span></button><button class="home-shield-button" id="home-shield-button" data-panel="badges" aria-controls="badges-panel" aria-expanded="false" aria-label="افتح صفحة دروع مكتسبة" data-i18n-aria-label="افتح صفحة دروع مكتسبة"><span id="home-shield-art" aria-hidden="true">♢</span><span id="home-shield-label" data-i18n="دروعي">دروعي</span></button></div></header>
+<header class="topbar"><a class="brand" href="#library" aria-label="Wort — مكتبة المفردات" data-i18n-aria-label="Wort — مكتبة المفردات"><img class="brand-logo" src="assets/brand-book.png" width="52" height="52" alt=""><span class="brand-name" lang="ar" dir="rtl">كلمة</span></a><div class="top-actions"><button id="account-button" type="button" aria-controls="account-dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg><span data-account-label>حسابي</span></button><button class="home-shield-button" id="home-shield-button" data-panel="badges" aria-controls="badges-panel" aria-expanded="false" aria-label="افتح صفحة دروع مكتسبة" data-i18n-aria-label="افتح صفحة دروع مكتسبة"><span id="home-shield-art" aria-hidden="true">♢</span><span id="home-shield-label" data-i18n="دروعي">دروعي</span></button><button id="theme-toggle" type="button" role="switch" aria-label="الوضع الليلي" aria-checked="false" title="تفعيل الوضع الليلي"><span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><circle cx="12" cy="12" r="4" fill="#f8ce57" stroke="#ecad17"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span><span class="theme-toggle-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" focusable="false"><path fill="#f4dfbc" stroke="#f4dfbc" d="M18.5 15.7A8.8 8.8 0 0 1 8.3 5.5a8.5 8.5 0 1 0 10.2 10.2Z"/><path d="M18 4.5v4m-2-2h4M20 12v2m-1-1h2" stroke="#fdf0d7"/></svg></span><span class="theme-toggle-thumb"></span></span></button></div></header>
 <main id="main-content">
 <section id="library-panel" class="panel">
 <div class="welcome"><p class="eyebrow" data-i18n="مفرداتك اليومية.">مفرداتك اليومية.</p><h1 class="hero-title" data-i18n="لغتك الجديدة تبدأ من هنا">لغتك الجديدة تبدأ من هنا</h1><p class="hero-subtitle" data-i18n="اختر مستواك، وافتح كلمة جديدة كل يوم.">اختر مستواك، وافتح كلمة جديدة كل يوم.</p></div>
