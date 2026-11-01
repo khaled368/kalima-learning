@@ -12,7 +12,8 @@
 <link rel="stylesheet" href="journey-lessons.css">
 <link rel="stylesheet" href="reference-match.css">
 <link rel="stylesheet" href="readability.css">
-<link rel="stylesheet" href="home-classic.css">
+<link rel="stylesheet" href="home-steps.css">
+<link rel="stylesheet" href="button-colors.css">
 </head>
 <body>
 <div class="app-shell">
@@ -25,7 +26,7 @@
 <nav class="level-tabs" id="level-tabs" aria-label="أقسام المستويات"></nav>
 <section class="level-summary" aria-labelledby="level-title"><div class="section-heading"><div><p class="eyebrow" id="level-caption"></p><h2 id="level-title"></h2></div><span id="level-count"></span></div><p id="level-description" class="hero-subtitle"></p><div class="track level-progress" role="progressbar" aria-label="تقدم المستوى" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="level-bar"></i></div><div class="progress-label"><small id="level-learned"></small></div></section>
 <div id="journey-content"></div>
-<details class="library-controls" open><summary aria-label="البحث والتدريب والإعدادات">⌕ <span>بحث وتدريب</span></summary><div class="journey-study-actions"><button class="secondary" data-expand-journey>كل أقسام المستوى</button><button class="secondary" data-all-journey>كل المفردات</button><button class="secondary" id="review-level">راجع ما تعلّمت ↻</button><button class="secondary" id="quiz-level">اختبر نفسك ◈</button></div>
+<details class="library-controls"><summary aria-label="البحث والتدريب والإعدادات">⌕ <span>بحث وتدريب</span></summary><div class="journey-study-actions"><button class="secondary" data-expand-journey>كل خطوات المستوى</button><button class="secondary" data-all-journey>كل المفردات</button><button class="secondary" id="review-level">راجع ما تعلّمت ↻</button><button class="secondary" id="quiz-level">اختبر نفسك ◈</button></div>
 <p class="library-learning-note">تظهر هنا الكلمات التي لم تتعلّمها بعد. <button class="text-button" data-review-learned>راجع ما تعلّمته ←</button></p><div class="toolbar"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث بالألمانية أو العربية…" aria-label="ابحث في الكلمات غير المتعلّمة للمستوى"></label><select id="pos-filter" class="filter-select" aria-label="نوع الكلمة"><option value="all">كل الكلمات</option><option value="noun">أسماء</option><option value="verb">أفعال</option><option value="adjective">صفات</option><option value="other">أخرى</option></select></div>
 <div class="library-viewbar"><p id="results-count" class="eyebrow" aria-live="polite"></p><div class="view-switch" role="group" aria-label="طريقة عرض الكلمات"><button data-card-view="compact" aria-pressed="true" title="عرض مختصر">☷ <span>مختصر</span></button><button data-card-view="grid" aria-pressed="false" title="بطاقات">▦ <span>بطاقات</span></button></div></div><button class="icon-button" id="open-sources" aria-label="مصادر المفردات">ⓘ</button></details><h2 id="vocabulary-title">مفرداتك التالية</h2><div class="cards" id="cards"></div><button class="load-more secondary" id="load-more" hidden>اعرض المزيد من البطاقات</button><p class="source-note" id="level-note">تقسيم المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.</p>
 </section>
@@ -54,7 +55,6 @@
 <script src="verbs.js"></script>
 <script src="sentences.js"></script>
 <script src="writing.js"></script>
-<script src="journey-topics.js"></script>
 <script src="journey.js"></script>
 <script src="journey-calendar.js"></script>
 <script src="app.js"></script>
