@@ -93,6 +93,16 @@
    }
    p.values[key]=JSON.stringify(h);
   }
+  // Today's goal is derived from learned words. Do not resurrect a removed
+  // word through the legacy union-based daily counter during cloud merges.
+  for(const key of Object.keys(p.values))if(type(key)==='today'){
+   const data=parse(p.values[key]);if(!data||!Array.isArray(data.ids))continue;
+   const learnedKey='wort-learned'+key.slice('wort-today'.length);
+   if(!Object.prototype.hasOwnProperty.call(p.values,learnedKey))continue;
+   const active=new Set(union(parse(p.values[learnedKey],[])).map(id=>String(id)));
+   data.ids=union(data.ids).filter(id=>active.has(String(id)));
+   p.values[key]=JSON.stringify(data);
+  }
   p.conflicts.sort((a,b)=>a.key.localeCompare(b.key)||a.value.localeCompare(b.value));return p;
  }
  function mergePayload(left,right,owner=left?.owner||right?.owner){
