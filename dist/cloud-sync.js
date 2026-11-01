@@ -20,15 +20,36 @@
  function dominates(a,b){const keys=new Set([...Object.keys(a||{}),...Object.keys(b||{})]);return [...keys].every(k=>(a?.[k]||0)>=(b?.[k]||0))&&[...keys].some(k=>(a?.[k]||0)>(b?.[k]||0));}
  function normalize(input,owner){
   if(input?.owner&&input.owner!==owner)throw new Error('Cloud snapshot owner mismatch.');
-  const p={version:1,owner,clock:Math.max(0,Number.isSafeInteger(input?.clock)?input.clock:0),values:object(),stamps:object(),saved:object(),conflicts:[]};
+  const p={version:1,owner,clock:Math.max(0,Number.isSafeInteger(input?.clock)?input.clock:0),values:object(),stamps:object(),saved:object(),learned:object(),conflicts:[]};
   for(const [key,value] of Object.entries(input?.values||{}))if(allowed(key)&&typeof value==='string')p.values[key]=value;
   for(const [key,value] of Object.entries(input?.stamps||{}))if(allowed(key)){p.stamps[key]=stamp(value);p.clock=Math.max(p.clock,p.stamps[key].n);}
   for(const [key,items] of Object.entries(input?.saved||{}))if(allowed(key)&&type(key)==='saved'){const out=p.saved[key]=object();for(const [k,item] of Object.entries(items||{}))if(item&&['number','string'].includes(typeof item.id)&&String(item.id)===k&&typeof item.present==='boolean'){out[k]={id:item.id,present:item.present,stamp:stamp(item.stamp)};p.clock=Math.max(p.clock,out[k].stamp.n);}}
+  // Reversible learning uses per-word presence stamps (like saved favorites).
+  // Existing progress snapshots without this map are migrated from their arrays
+  // and dated/undated first-learning history without losing earlier learning.
+  for(const [key,items] of Object.entries(input?.learned||{}))if(allowed(key)&&type(key)==='learned'){
+   const out=p.learned[key]=object();
+   for(const [k,item] of Object.entries(items||{}))if(item&&['number','string'].includes(typeof item.id)&&String(item.id)===k&&typeof item.present==='boolean'){
+    out[k]={id:item.id,present:item.present,stamp:stamp(item.stamp)};
+    p.clock=Math.max(p.clock,out[k].stamp.n);
+   }
+  }
+  const legacyKeys=new Set(Object.keys(p.values).filter(key=>type(key)==='learned'));
+  for(const key of Object.keys(p.values))if(type(key)==='history')legacyKeys.add('wort-learned'+key.slice('wort-learning-history-v1'.length));
+  for(const key of legacyKeys)if(!Object.prototype.hasOwnProperty.call(p.learned,key)){
+   const oldIds=union(parse(p.values[key],[]));
+   const historyKey='wort-learning-history-v1'+key.slice('wort-learned'.length);
+   const oldHistory=parse(p.values[historyKey],{});
+   const baseline=union(oldIds,oldHistory?.undatedIds,(oldHistory?.events||[]).map(event=>event.id));
+   const baseStamp=p.stamps[key]||p.stamps[historyKey]||{n:0,actor:'import',vector:{import:0}};
+   const items=p.learned[key]=object();
+   for(const id of baseline)items[String(id)]={id,present:true,stamp:copy(baseStamp)};
+  }
   for(const item of Array.isArray(input?.conflicts)?input.conflicts:[])if(allowed(item?.key)&&type(item.key)==='draft'&&typeof item.value==='string')p.conflicts.push({key:item.key,value:item.value,stamp:stamp(item.stamp)});
   return p;
  }
  function fromRaw(raw,owner,actor='import'){
-  const p=normalize(null,owner);for(const [key,value] of Object.entries(raw||{}))if(allowed(key)&&typeof value==='string'){p.values[key]=value;p.stamps[key]={n:1,actor,vector:{[actor]:1}};p.clock=1;if(type(key)==='saved'){p.saved[key]=object();for(const id of union(ids(parse(value,[]))))p.saved[key][String(id)]={id,present:true,stamp:copy(p.stamps[key])};}}return p;
+  const p=normalize(null,owner);for(const [key,value] of Object.entries(raw||{}))if(allowed(key)&&typeof value==='string'){p.values[key]=value;p.stamps[key]={n:1,actor,vector:{[actor]:1}};p.clock=1;if(type(key)==='saved'||type(key)==='learned'){const items=(type(key)==='saved'?p.saved:p.learned)[key]=object();for(const id of union(ids(parse(value,[]))))items[String(id)]={id,present:true,stamp:copy(p.stamps[key])};}}return p;
  }
  function history(a,b){
   const rows=new Map(),undated=union(a?.undatedIds,b?.undatedIds),started=[a?.startedAt,b?.startedAt].filter(day).sort();
@@ -52,15 +73,34 @@
  function archive(p,key,value,s){if(typeof value!=='string'||!parse(value,{})?.text)return;const token=key+'\u0000'+value;if(!p.conflicts.some(x=>x.key+'\u0000'+x.value===token))p.conflicts.push({key,value,stamp:stamp(s)});}
  function reconcile(p){
   for(const [key,items] of Object.entries(p.saved))p.values[key]=JSON.stringify(union(Object.values(items).filter(item=>item.present).map(item=>item.id)));
-  for(const key of Object.keys(p.values))if(type(key)==='history'){const h=parse(p.values[key]);if(!h)continue;const suffix=key.slice('wort-learning-history-v1'.length),learnedKey='wort-learned'+suffix,learned=union(parse(p.values[learnedKey],[]),h.undatedIds,(h.events||[]).map(e=>e.id)),dated=new Set((h.events||[]).map(e=>String(e.id)));h.undatedIds=learned.filter(id=>!dated.has(String(id)));p.values[learnedKey]=JSON.stringify(learned);p.values[key]=JSON.stringify(h);}
+  for(const [key,items] of Object.entries(p.learned))p.values[key]=JSON.stringify(union(Object.values(items).filter(item=>item.present).map(item=>item.id)));
+  for(const key of Object.keys(p.values))if(type(key)==='history'){
+   const h=parse(p.values[key]);if(!h)continue;
+   const suffix=key.slice('wort-learning-history-v1'.length),learnedKey='wort-learned'+suffix;
+   const items=p.learned[learnedKey];
+   if(items){
+    const learned=union(Object.values(items).filter(item=>item.present).map(item=>item.id));
+    const active=new Set(learned.map(id=>String(id)));
+    h.events=(h.events||[]).filter(event=>active.has(String(event.id)));
+    const dated=new Set(h.events.map(event=>String(event.id)));
+    h.undatedIds=learned.filter(id=>!dated.has(String(id)));
+    p.values[learnedKey]=JSON.stringify(learned);
+   }else{
+    const learned=union(parse(p.values[learnedKey],[]),h.undatedIds,(h.events||[]).map(e=>e.id));
+    const dated=new Set((h.events||[]).map(e=>String(e.id)));
+    h.undatedIds=learned.filter(id=>!dated.has(String(id)));
+    p.values[learnedKey]=JSON.stringify(learned);
+   }
+   p.values[key]=JSON.stringify(h);
+  }
   p.conflicts.sort((a,b)=>a.key.localeCompare(b.key)||a.value.localeCompare(b.value));return p;
  }
  function mergePayload(left,right,owner=left?.owner||right?.owner){
   if(!owner)throw new Error('A snapshot owner is required.');const a=normalize(left,owner),b=normalize(right,owner),out=normalize(null,owner);out.clock=Math.max(a.clock,b.clock);out.conflicts=[...a.conflicts];for(const c of b.conflicts)archive(out,c.key,c.value,c.stamp);
-  const keys=new Set([...Object.keys(a.values),...Object.keys(b.values),...Object.keys(a.stamps),...Object.keys(b.stamps),...Object.keys(a.saved),...Object.keys(b.saved)]);
+  const keys=new Set([...Object.keys(a.values),...Object.keys(b.values),...Object.keys(a.stamps),...Object.keys(b.stamps),...Object.keys(a.saved),...Object.keys(b.saved),...Object.keys(a.learned),...Object.keys(b.learned)]);
   for(const key of keys){const sa=stamp(a.stamps[key]),sb=stamp(b.stamps[key]),comparison=compare(sa,sb);let chooseA=comparison>0||comparison===0&&String(a.values[key]??'')>=String(b.values[key]??'');const win=chooseA?sa:sb,raw=chooseA?a.values[key]:b.values[key];out.stamps[key]={...win,vector:vectors(sa.vector,sb.vector)};
    const kind=type(key);
-   if(kind==='saved'){const all=out.saved[key]=object();for(const source of [a,b]){const incoming=source.saved[key]||Object.fromEntries(union(parse(source.values[key],[])).map(id=>[String(id),{id,present:true,stamp:source.stamps[key]}]));for(const [id,item] of Object.entries(incoming)){const old=all[id],c=old?compare(item.stamp,old.stamp):1;if(!old||c>0||c===0&&(!item.present||old.present===item.present&&typeof item.id==='number'&&typeof old.id!=='number'))all[id]=copy(item);}}continue;}
+   if(kind==='saved'||kind==='learned'){const all=(kind==='saved'?out.saved:out.learned)[key]=object();for(const source of [a,b]){const incoming=(kind==='saved'?source.saved:source.learned)[key]||Object.fromEntries(union(parse(source.values[key],[])).map(id=>[String(id),{id,present:true,stamp:source.stamps[key]}]));for(const [id,item] of Object.entries(incoming)){const old=all[id],c=old?compare(item.stamp,old.stamp):1;if(!old||c>0||c===0&&(!item.present||old.present===item.present&&typeof item.id==='number'&&typeof old.id!=='number'))all[id]=copy(item);}}continue;}
    if(kind==='draft'&&a.values[key]!==b.values[key]&&!dominates(sa.vector,sb.vector)&&!dominates(sb.vector,sa.vector)){if(chooseA)archive(out,key,b.values[key],sb);else archive(out,key,a.values[key],sa);}
    if(['learned','history','usage','sentences','today'].includes(kind)){const value=semantic(kind,a.values[key],b.values[key],raw);if(value!==undefined)out.values[key]=value;}
    else if(!win.deleted&&raw!==undefined)out.values[key]=raw;
@@ -70,7 +110,7 @@
  function applyChanges(input,before,after,actor,observedStamps={}){
   const p=normalize(input,input.owner),versions=copy(observedStamps)||{};
   for(const key of new Set([...Object.keys(before||{}),...Object.keys(after||{})])){if(!allowed(key)||before?.[key]===after?.[key])continue;const n=++p.clock,base=stamp(versions[key]||(before?.[key]===undefined?{n:0,actor:'empty',vector:{}}:p.stamps[key])),s={n,actor,vector:{...base.vector,[actor]:n},...(after?.[key]===undefined?{deleted:true}:{})},kind=type(key);p.stamps[key]=s;versions[key]=copy(s);
-   if(kind==='saved'){const old=new Map(union(parse(before?.[key],[])).map(id=>[String(id),id])),next=new Map(union(parse(after?.[key],[])).map(id=>[String(id),id])),items=p.saved[key]||=(object());for(const id of new Set([...old.keys(),...next.keys()]))if(old.has(id)!==next.has(id))items[id]={id:next.get(id)??old.get(id),present:next.has(id),stamp:copy(s)};}
+   if(kind==='saved'||kind==='learned'){const old=new Map(union(parse(before?.[key],[])).map(id=>[String(id),id])),next=new Map(union(parse(after?.[key],[])).map(id=>[String(id),id])),items=(kind==='saved'?p.saved:p.learned)[key]||=(object());for(const id of new Set([...old.keys(),...next.keys()]))if(old.has(id)!==next.has(id))items[id]={id:next.get(id)??old.get(id),present:next.has(id),stamp:copy(s)};}
    else if(['learned','history','usage','sentences','today'].includes(kind)){const value=semantic(kind,p.values[key],after?.[key],after?.[key]);if(value!==undefined)p.values[key]=value;}
    else{if(kind==='draft'&&before?.[key]!==p.values[key])archive(p,key,p.values[key],input.stamps?.[key]);if(after?.[key]===undefined)delete p.values[key];else p.values[key]=after[key];}
   }
