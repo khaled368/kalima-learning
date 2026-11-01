@@ -360,3 +360,33 @@ html[data-theme='dark'] body .bottom-nav button:is(.active,[aria-current='page']
 }
 /* Do not restyle answer feedback, individual word cards, the night-mode
    switch, the medal images, or the target button as action pills. */
+
+/* Review CTA contrast correction: description must stay readable on purple. */
+html:not([data-theme='dark']) #training-panel #start-review,
+html:not([data-theme='dark']) #training-panel #start-review :is(span,small,strong),
+html[data-theme='dark'] #training-panel #start-review,
+html[data-theme='dark'] #training-panel #start-review :is(span,small,strong) {
+  color:#fff !important;
+  opacity:1 !important;
+  text-shadow:0 1px 2px #342063a8 !important;
+}
+#training-panel #start-review small {
+  font-size:clamp(12px,3.2vw,15px) !important;
+  line-height:1.65 !important;
+  font-weight:650 !important;
+}
+html:not([data-theme='dark']) #training-panel #start-review {
+  background:linear-gradient(135deg,#8654dc,#5830b3) !important;
+  background-image:linear-gradient(135deg,#8654dc,#5830b3) !important;
+  border-color:#6940bd !important;
+}
+html[data-theme='dark'] #training-panel #start-review {
+  background:linear-gradient(135deg,#7148c4,#45258d) !important;
+  background-image:linear-gradient(135deg,#7148c4,#45258d) !important;
+  border-color:#a689ec !important;
+}
+/* All small explanatory text within gradient actions must have sufficient contrast. */
+body .primary :is(small,span,p),body .assessment-widget .primary :is(small,span,p) {
+  color:inherit !important;
+  opacity:1 !important;
+}
