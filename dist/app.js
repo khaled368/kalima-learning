@@ -109,7 +109,7 @@ function refreshToday() {
   today.ids = (WORT_HISTORY.snapshot()?.events || []).filter(event => event.day === current).map(event => event.id);
 }
 function remember() {
-  for (const id of storedSet(storageKey('wort-learned'))) learned.add(id);
+  // Preserve explicit removal of learned words; do not re-add stale storage IDs.
   WORT_HISTORY.sync([...learned]);
   refreshToday();
   try {
@@ -349,7 +349,20 @@ function cancelWordAdvance() {
 function markCurrentWord() {
   const word = currentWord,
     dialog = $('#word-dialog');
-  if (!word || !dialog.open || learned.has(word.id) || wordAdvanceTimer !== null) return;
+  if (!word || !dialog.open) return;
+  if (learned.has(word.id)) {
+    // Tapping the green button (including during the auto-advance animation)
+    // reverses learning. History and today's goal are reconciled in remember().
+    cancelWordAdvance();
+    learned.delete(word.id);
+    remember();
+    renderCards();
+    if (panel === 'saved') renderSaved();
+    updateWordControls();
+    toast(t("أُعيدت الكلمة إلى غير المتعلّمة"));
+    return;
+  }
+  if (wordAdvanceTimer !== null) return;
   cancelWordAdvance();
   const version = wordAdvanceVersion;
   learnWord(word);
@@ -413,9 +426,11 @@ function updateWordControls() {
   $('#word-save').setAttribute('aria-pressed', String(isSaved));
   $('#word-save').setAttribute('aria-label', isSaved ? t("إزالة من المحفوظات") : t("حفظ الكلمة"));
   const isLearned = learned.has(currentWord.id);
-  $('#mark-word').disabled = isLearned;
+  // The green learned state is a reversible action, not a disabled button.
+  $('#mark-word').disabled = false;
   $('#mark-word').classList.toggle('is-learned', isLearned);
-  $('#mark-word').textContent = t("تعلّمتها \u2713");
+  $('#mark-word').setAttribute('aria-pressed', String(isLearned));
+  $('#mark-word').textContent = isLearned ? t("إلغاء تعلّمها ↶") : t("تعلّمتها \u2713");
 }
 function openWord(word, recordVisit = true) {
   const dialog = $('#word-dialog');
