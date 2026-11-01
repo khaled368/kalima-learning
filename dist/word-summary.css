@@ -1,0 +1,63 @@
+/* Centered word details with a distinct indigo card. */
+#word-summary{
+ display:block;
+ padding:18px 12px 16px;
+ border:1px solid #666184;
+ border-radius:16px;
+ background:linear-gradient(135deg,#2c2b46,#1e2439);
+ box-shadow:0 6px 20px #00000024;
+ text-align:center;
+}
+#word-summary .reference-word-copy{width:100%;min-width:0;direction:ltr;text-align:center}
+#word-summary .reference-word-heading{
+ display:grid;
+ grid-template-columns:44px minmax(0,1fr) 44px;
+ align-items:center;
+ justify-content:normal;
+ gap:6px;
+ direction:ltr;
+}
+#word-summary .reference-word-heading h2{
+ grid-column:2;
+ grid-row:1;
+ min-width:0;
+ margin:0;
+ font-size:32px;
+ line-height:1.5;
+ color:#f4f1ff;
+ text-align:center;
+ overflow-wrap:anywhere;
+}
+#word-summary .reference-word-audio{
+ grid-column:3;
+ grid-row:1;
+ width:44px;
+ min-width:44px;
+ height:44px;
+ min-height:44px;
+ padding:10px;
+ border:1px solid #7a739b;
+ border-radius:50%;
+ background:#393653;
+ color:#e9dfff;
+}
+#word-summary .reference-word-audio svg{display:block;width:22px;height:22px;max-width:100%}
+#word-summary .reference-word-copy>.definition{
+ margin:7px 0 12px;
+ font-size:32px;
+ line-height:1.5;
+ color:#e5e1f3;
+ text-align:center;
+ overflow-wrap:anywhere;
+}
+#word-summary .reference-word-chips{justify-content:center;gap:8px;margin-top:8px}
+#word-summary .reference-word-chips>span{
+ border-color:#625b7d;
+ background:#38354f;
+ color:#e1dcef;
+ font-size:15px;
+}
+@media(max-width:359px){
+ #word-summary{padding:15px 9px 14px}
+ #word-summary .reference-word-heading{gap:4px}
+}
