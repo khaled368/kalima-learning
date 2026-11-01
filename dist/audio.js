@@ -101,8 +101,8 @@
  }
  function prepare(options={}){
   let lang;try{lang=language(options);}catch(error){return Promise.reject(error);}
-  if(LANGUAGES[lang].voice)return loadVoice(lang);
-  return waitForVoice(lang).then(voice=>{if(!voice)throw failure('unsupported');return {voice,native:true};});
+  if(androidAvailable())return Promise.resolve({native:true,engine:'android'});
+  return waitForVoice(lang).then(voice=>voice ? {voice,native:true} : LANGUAGES[lang].voice ? loadVoice(lang) : Promise.reject(failure('unsupported')));
  }
  function asBuffer(stream){
   if(stream instanceof ArrayBuffer)return stream;
@@ -198,7 +198,10 @@
     const status=event.detail.status;
     if(status==='playing'){announce(job,'playing',messages().playing,'android');}
     else if(status==='finished')finish(true);
-    else if(status==='error'||status==='stopped')finish(false);
+    else if(status==='no-voice'||status==='engine-unavailable'){
+     job.androidVoiceUnavailable=true;
+     finish(false);
+    }else if(status==='error'||status==='stopped')finish(false);
    }
    global.addEventListener('kalima-tts-status',onStatus);
    job.cancel=()=>{
@@ -226,12 +229,15 @@
   });
  }
  async function nativeSpeech(job){
-  const voice=await waitForVoice(job.lang);if(!voice||!current(job))return false;
+  if(!nativeAvailable())return false;
+  const voice=await waitForVoice(job.lang);if(!current(job))return false;
+  // getVoices() can be empty while the phone still has a default TTS voice.
+  // Let the browser resolve utterance.lang in that case.
   job.engine='device';
   return new Promise((resolve,reject)=>{
    let started=false,finished=false;const synth=global.speechSynthesis;
    const utterance=new SpeechSynthesisUtterance(job.text);nativeUtterance=utterance;
-   utterance.lang=voice.lang||LANGUAGES[job.lang].locale;utterance.voice=voice;utterance.rate=.94;utterance.pitch=1;utterance.volume=1;
+   utterance.lang=voice?.lang||LANGUAGES[job.lang].locale;if(voice)utterance.voice=voice;utterance.rate=.94;utterance.pitch=1;utterance.volume=1;
    const maxTime=setTimeout(()=>fail(),Math.min(90000,job.text.length*180+12000));
    const startTime=setTimeout(()=>{if(!started)fail();},6000);
    const keepAlive=setInterval(()=>{if(current(job)&&synth.paused)try{synth.resume();}catch{}},7000);
@@ -266,6 +272,7 @@
      try{played=await localSpeech(job,ctx);}catch(error){localError=error;}
     }
     if(!current(job))return;
+    if(!played&&job.androidVoiceUnavailable)throw failure('unsupported');
     if(!played)throw localError||failure('unsupported');
     if(!current(job))return;
     announce(job,'finished',messages().finished,job.engine);complete(job,Boolean(played));
@@ -274,5 +281,5 @@
   return promise;
  }
  if(typeof document!=='undefined')document.addEventListener('visibilitychange',()=>{if(document.hidden){stop();if(context?.state==='running')context.suspend().catch(()=>{});}});
- global.WORT_AUDIO=Object.freeze({speak,stop,synthesize,prepare,get state(){return{...phase};},get supported(){return Boolean(global.AudioContext||global.webkitAudioContext||global.Audio||nativeAvailable());}});
+ global.WORT_AUDIO=Object.freeze({speak,stop,synthesize,prepare,get state(){return{...phase};},get supported(){return Boolean(androidAvailable()||global.AudioContext||global.webkitAudioContext||global.Audio||nativeAvailable());}});
 })(globalThis);
