@@ -130,3 +130,138 @@ body .bottom-nav button:is(.active,[aria-current='page']) {color: #352e64 !impor
 }
 
 html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: start; }
+
+
+/* Strong contrast for light word-details screen.
+   Earlier dark-mode rules have more specific selectors, and some examples
+   carried an !important pastel yellow. Override those at the end of the cascade.
+   Keep the white surface and preserve distinguishable grammatical gender hues. */
+:root {
+  --example-yellow: #805000;
+  --detail-ink: #152f3c;
+  --detail-secondary: #274653;
+  --detail-link: #075e66;
+}
+
+/* Core word, translation, source, and chapter heading. */
+#word-dialog #word-summary .reference-word-heading h2,
+#word-dialog #word-summary .reference-word-heading .reference-word-german {
+  color: #152b37 !important;
+  opacity: 1;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+}
+#word-dialog #word-summary .reference-word-copy > .definition,
+#word-dialog #word-summary .reference-word-translation {
+  color: #203e4d !important;
+  opacity: 1;
+  -webkit-text-fill-color: currentColor;
+  text-shadow: none;
+}
+#word-dialog .word-topbar .reference-dialog-title,
+#word-dialog .word-content .section-heading h2,
+#word-dialog .word-content .section-heading h3,
+#word-dialog .word-content .reference-meaning .section-heading h3 {
+  color: #193642 !important;
+}
+#word-dialog .word-topbar .reference-word-brand,
+#word-dialog .word-topbar #word-back,
+#word-dialog .word-topbar #word-save {
+  color: #096d71 !important;
+}
+#word-dialog .word-topbar #word-save.saved { color: #946213 !important; }
+
+/* Grammatical gender: saturated dark blue/pink/ochre instead of pastels.
+   The h2's general color rule above must not swallow the article-specific hue. */
+#word-dialog #word-summary .reference-word-heading [data-article='der'],
+#word-dialog [data-article='der'],
+#library-panel [data-article='der'] { color: #155a99 !important; -webkit-text-fill-color: #155a99; }
+#word-dialog #word-summary .reference-word-heading [data-article='die'],
+#word-dialog [data-article='die'],
+#library-panel [data-article='die'] { color: #a32059 !important; -webkit-text-fill-color: #a32059; }
+#word-dialog #word-summary .reference-word-heading [data-article='das'],
+#word-dialog [data-article='das'],
+#library-panel [data-article='das'] { color: #78602c !important; -webkit-text-fill-color: #78602c; }
+
+/* The selected word is readable even if CSS for original dark cards remains. */
+#word-dialog #word-summary {
+  background: #f0f8fa;
+  border: 1px solid #b5d8de;
+}
+#word-dialog #word-summary .reference-word-chips > span,
+#word-dialog #word-summary .reference-word-chip {
+  background: #e1eef3;
+  border-color: #abcbd3;
+  color: #224556 !important;
+}
+#word-dialog #word-summary .reference-word-audio {
+  background: #1c3450;
+  border-color: #263f5f;
+  color: #fff;
+}
+
+/* Both the German example and its Arabic translation used an extremely
+   light !important yellow. Use contrasting dark warm tones instead. */
+#word-dialog .example-card {
+  background: #f7fafc;
+  border-color: #d0e0e7;
+}
+#word-dialog .word-content .example-card .example-de,
+#word-dialog .word-content .example-card .example-ar {
+  color: #68420c !important;
+  -webkit-text-fill-color: currentColor;
+  opacity: 1;
+  text-shadow: none;
+}
+#word-dialog .word-content .example-card .example-ar {
+  color: #293f4e !important;
+}
+#word-dialog .word-content .example-card [lang],
+#word-dialog .word-content .example-card p {
+  opacity: 1;
+}
+#word-dialog .word-content .example-card .source-note,
+#word-dialog .word-content .example-card .translation-note,
+#word-dialog .word-content .source-note,
+#word-dialog .word-content .translation-note {
+  color: #3a5968 !important;
+}
+#word-dialog .word-content .example-card .source-note a,
+#word-dialog .word-content .source-note a {
+  color: #075c65 !important;
+  text-decoration-color: #075c65;
+  text-underline-offset: 3px;
+}
+#word-dialog .word-content .example-card button {
+  color: #145761;
+  background: #e6f4f1;
+  border-color: #a6d0d0;
+}
+#word-dialog .word-content .example-card button:hover {
+  color: #0b3f49;
+  background: #d8efeb;
+}
+#word-dialog .word-tabs button:not(.active) { color: #345663; }
+#word-dialog .word-tabs button.active { color: #085d61; }
+#word-dialog .reference-word-copy .word-pos,
+#word-dialog .reference-word-copy .word-level { color: #24505c; }
+
+/* More readable chapter examples beyond the word dialog on white views.
+   Avoid coloring badges, which have intentionally dark backgrounds. */
+.learning-panel .sentence-meaning,
+.learning-panel .sentence-feedback .sentence-result,
+.learning-panel .sentence-alternatives p[lang='de'],
+.learning-panel .writing-sample-part .lesson-de,
+.learning-panel .writing-outline .lesson-de {
+  color: #65400a !important;
+}
+.learning-panel .sentence-token,
+.learning-panel .lesson-card p,
+.learning-panel .lesson-card li,
+.learning-panel .writing-step p,
+.learning-panel .sentence-instruction {
+  color: #253f4c;
+}
+#word-dialog .grammar-block,
+#word-dialog .grammar-table,
+#word-dialog .verb-table { color: #243f4b; }
