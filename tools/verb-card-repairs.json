@@ -1,0 +1,508 @@
+{
+  "A1:fett": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:betrunken": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:wütend": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:begeistert": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:fliessend": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:befriedigend": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:tolle": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:geltend": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:einig": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A2:gefangen": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:detailliert": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:bewaffnet": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:geschnitten": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:verschlossen": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:bedingt": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:tätig": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:gerissen": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:zwingend": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:benommen": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:erstaunt": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:auserwählt": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:erschrocken": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:fahl": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:lose": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:bange": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:knusprig": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:angstvoll": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:geschockt": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:standhaft": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:aufgerissen": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:blutverschmiert": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:plump": {
+    "pos": "adjective",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:dauernd": {
+    "pos": "adverb",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B1:überein": {
+    "pos": "adverb",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:darein": {
+    "pos": "adverb",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:schleunigst": {
+    "pos": "adverb",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:gegeneinander": {
+    "pos": "adverb",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:prost": {
+    "pos": "interjection",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:schwupp": {
+    "pos": "interjection",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "B2:schwups": {
+    "pos": "interjection",
+    "article": "",
+    "removeVerbForms": true
+  },
+  "A1:leben": {
+    "pos": "noun",
+    "article": "das",
+    "removeVerbForms": true
+  },
+  "B2:u-bahn": {
+    "pos": "noun",
+    "article": "die",
+    "removeVerbForms": true
+  },
+  "A1:essen": {
+    "german": "essen"
+  },
+  "A2:komm": {
+    "german": "komm"
+  },
+  "A2:lass": {
+    "german": "lass"
+  },
+  "A2:hör": {
+    "german": "hör"
+  },
+  "A2:sag": {
+    "german": "sag"
+  },
+  "A2:geh": {
+    "german": "geh"
+  },
+  "A2:gib": {
+    "german": "gib"
+  },
+  "A2:sieh": {
+    "german": "sieh"
+  },
+  "A2:nimm": {
+    "german": "nimm"
+  },
+  "A2:bleib": {
+    "german": "bleib"
+  },
+  "A2:tu": {
+    "german": "tu"
+  },
+  "A2:seht": {
+    "german": "seht"
+  },
+  "A2:entschuldige": {
+    "german": "entschuldige"
+  },
+  "A2:vergiss": {
+    "german": "vergiss"
+  },
+  "A2:bring": {
+    "german": "bring"
+  },
+  "A2:setz": {
+    "german": "setz"
+  },
+  "A2:zeig": {
+    "german": "zeig"
+  },
+  "A2:zieh": {
+    "german": "zieh"
+  },
+  "A2:erinnerst": {
+    "german": "erinnerst"
+  },
+  "A2:hilf": {
+    "german": "hilf"
+  },
+  "A2:fahr": {
+    "german": "fahr"
+  },
+  "A2:erzähl": {
+    "german": "erzähl"
+  },
+  "A2:stell": {
+    "german": "stell"
+  },
+  "A2:steh": {
+    "german": "steh"
+  },
+  "A2:leg": {
+    "german": "leg"
+  },
+  "A2:guck": {
+    "german": "guck"
+  },
+  "A2:frag": {
+    "german": "frag"
+  },
+  "A2:nehmt": {
+    "german": "nehmt"
+  },
+  "A2:entschuldigt": {
+    "german": "entschuldigt"
+  },
+  "A2:beruhige": {
+    "german": "beruhige"
+  },
+  "A2:freut": {
+    "german": "freut"
+  },
+  "A2:helft": {
+    "german": "helft"
+  },
+  "A2:such": {
+    "german": "such"
+  },
+  "A2:holt": {
+    "german": "holt"
+  },
+  "A2:beweg": {
+    "german": "beweg"
+  },
+  "A2:entspann": {
+    "german": "entspann"
+  },
+  "A2:nenn": {
+    "german": "nenn"
+  },
+  "A2:iss": {
+    "german": "iss"
+  },
+  "A2:öffne": {
+    "german": "öffne"
+  },
+  "A2:wirf": {
+    "german": "wirf"
+  },
+  "A2:lauft": {
+    "german": "lauft"
+  },
+  "A2:verzeih": {
+    "german": "verzeih"
+  },
+  "A2:schnappt": {
+    "german": "schnappt"
+  },
+  "A2:lies": {
+    "german": "lies"
+  },
+  "A2:spinnst": {
+    "german": "spinnst"
+  },
+  "B1:versprich": {
+    "german": "versprich"
+  },
+  "B1:spring": {
+    "german": "spring"
+  },
+  "B1:leb": {
+    "german": "leb"
+  },
+  "B1:schreib": {
+    "german": "schreib"
+  },
+  "B1:sprich": {
+    "german": "sprich"
+  },
+  "B1:red": {
+    "german": "red"
+  },
+  "B1:atme": {
+    "german": "atme"
+  },
+  "B1:stirb": {
+    "german": "stirb"
+  },
+  "B1:möge": {
+    "german": "möge"
+  },
+  "B1:vergesst": {
+    "german": "vergesst"
+  },
+  "B1:schnapp": {
+    "german": "schnapp"
+  },
+  "B1:drück": {
+    "german": "drück"
+  },
+  "B1:steck": {
+    "german": "steck"
+  },
+  "B1:schliess": {
+    "german": "schließ"
+  },
+  "B1:reiss": {
+    "german": "reiß"
+  },
+  "B1:verzeiht": {
+    "german": "verzeiht"
+  },
+  "B1:heb": {
+    "german": "heb"
+  },
+  "B1:vergib": {
+    "german": "vergib"
+  },
+  "B1:küss": {
+    "german": "küss"
+  },
+  "B1:probier": {
+    "german": "probier"
+  },
+  "B1:sing": {
+    "german": "sing"
+  },
+  "B1:besorg": {
+    "german": "besorg"
+  },
+  "B1:grüss": {
+    "german": "grüß"
+  },
+  "B1:beruhig": {
+    "german": "beruhig"
+  },
+  "B1:betracht": {
+    "german": "betracht"
+  },
+  "B1:erkennst": {
+    "german": "erkennst"
+  },
+  "B1:fangt": {
+    "german": "fangt"
+  },
+  "B1:bell": {
+    "german": "bell"
+  },
+  "B1:blake": {
+    "german": "blake"
+  },
+  "B1:behalt": {
+    "german": "behalt"
+  },
+  "B1:überleg": {
+    "german": "überleg"
+  },
+  "B1:roll": {
+    "german": "roll"
+  },
+  "B1:lüg": {
+    "german": "lüg"
+  },
+  "B1:schalt": {
+    "german": "schalt"
+  },
+  "B1:spar": {
+    "german": "spar"
+  },
+  "B1:rühr": {
+    "german": "rühr"
+  },
+  "B1:überlass": {
+    "german": "überlass"
+  },
+  "B1:schmeiss": {
+    "german": "schmeiß"
+  },
+  "B1:lach": {
+    "german": "lach"
+  },
+  "B2:renn": {
+    "german": "renn"
+  },
+  "B2:schweig": {
+    "german": "schweig"
+  },
+  "A1:unternehmen": {
+    "arabic": "يشرع؛ يقوم بعمل",
+    "examples": [
+      {
+        "de": "Wir unternehmen am Wochenende einen Ausflug.",
+        "ar": "نقوم برحلة في عطلة نهاية الأسبوع."
+      }
+    ]
+  },
+  "B1:schoss": {
+    "arabic": "أطلق النار؛ ماضٍ من schießen"
+  },
+  "B1:out": {
+    "pos": "adjective",
+    "article": "",
+    "arabic": "خارج الموضة؛ قديم في الاستعمال الدارج",
+    "removeVerbForms": true
+  },
+  "B1:les": {
+    "arabic": "أقرأ؛ صيغة محكية من lese",
+    "note": "في الكتابة القياسية: ich lese. أمر الفعل هو: lies!"
+  },
+  "B2:helf": {
+    "arabic": "أساعد؛ صيغة محكية من helfe",
+    "note": "في الكتابة القياسية: ich helfe. أمر الفعل هو: hilf!"
+  },
+  "C1:autofahren": {
+    "german": "Auto fahren",
+    "lemma": "Auto fahren",
+    "note": "المصدر القياسي يُكتب كلمتين: Auto fahren.",
+    "examples": [
+      {
+        "de": "Ich kann schon Auto fahren.",
+        "ar": "أستطيع قيادة السيارة بالفعل.",
+        "source": "مثال تعليمي مُعدّ لهذا الموقع"
+      }
+    ]
+  }
+}
