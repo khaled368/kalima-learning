@@ -246,22 +246,5 @@ html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: st
 #word-dialog .reference-word-copy .word-pos,
 #word-dialog .reference-word-copy .word-level { color: #24505c; }
 
-/* More readable chapter examples beyond the word dialog on white views.
-   Avoid coloring badges, which have intentionally dark backgrounds. */
-.learning-panel .sentence-meaning,
-.learning-panel .sentence-feedback .sentence-result,
-.learning-panel .sentence-alternatives p[lang='de'],
-.learning-panel .writing-sample-part .lesson-de,
-.learning-panel .writing-outline .lesson-de {
-  color: #65400a !important;
-}
-.learning-panel .sentence-token,
-.learning-panel .lesson-card p,
-.learning-panel .lesson-card li,
-.learning-panel .writing-step p,
-.learning-panel .sentence-instruction {
-  color: #253f4c;
-}
-#word-dialog .grammar-block,
-#word-dialog .grammar-table,
-#word-dialog .verb-table { color: #243f4b; }
+/* Lesson and grammar cards elsewhere still use dark backgrounds. Their text
+   colors are intentionally unchanged so this fix cannot reduce their contrast. */
