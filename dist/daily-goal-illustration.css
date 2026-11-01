@@ -7,7 +7,7 @@
   direction: rtl;
   align-items: center;
   width: 100%;
-  min-height: 160px;
+  min-height: 145px;
   gap: clamp(5px, 1.4vw, 12px);
   margin: 15px 0 18px;
   padding: 14px clamp(10px, 2.4vw, 18px);
@@ -41,17 +41,17 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: min(100%, 94px);
-  height: 94px;
+  width: min(100%, 88px);
+  height: 88px;
   isolation: isolate;
 }
 #library-panel #daily-goal-button .daily-goal-illustration {
   display: block;
   position: relative;
   z-index: 0;
-  width: 94px;
+  width: 88px;
   max-width: 100%;
-  height: 94px;
+  height: 88px;
   object-fit: contain;
   border: 0;
   margin: 0;
@@ -59,20 +59,6 @@
   background: transparent;
   pointer-events: none;
   image-rendering: auto;
-}
-/* A crisp dark base line makes the target stand easy to distinguish at
-   mobile resolutions without changing the uploaded illustration. */
-#library-panel #daily-goal-button .daily-goal-art::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  bottom: 7px;
-  left: 13%;
-  right: 13%;
-  height: 2px;
-  border-radius: 2px;
-  background: #254b67;
-  pointer-events: none;
 }
 #library-panel #daily-goal-button > .daily-goal-copy {
   grid-column: 2;
@@ -97,7 +83,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 5px;
   min-width: 0;
   direction: ltr;
   text-align: center;
@@ -119,17 +105,17 @@
 #library-panel #daily-goal-button .daily-goal-check {
   display: none;
   place-items: center;
-  flex: 0 0 39px;
-  width: 39px;
-  height: 39px;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
   background: #16843f;
   color: #ffffff;
   border-radius: 50%;
   font-family: system-ui, sans-serif;
-  font-size: 27px;
+  font-size: 18px;
   font-weight: 900;
   line-height: 1;
-  box-shadow: 0 2px 9px #0b643034;
+  box-shadow: 0 1px 4px #0b64302b;
 }
 /* The app already sets is-complete when today's learned count >=20. */
 #library-panel #daily-goal-button.is-complete .daily-goal-check {display: grid;}
@@ -155,9 +141,6 @@ html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-count {
 html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-copy > small {
   color: #d6eefa;
 }
-html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-art::after {
-  background: #92bfd6;
-}
 html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-check {
   background: #0c924b;
   color: #ffffff;
@@ -167,17 +150,16 @@ html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-check {
     grid-template-columns: minmax(88px,1fr) minmax(98px,1fr) minmax(68px,auto);
     padding-inline: 9px;
     gap: 5px;
-    min-height: 142px;
+    min-height: 132px;
     border-radius: 20px;
   }
   #library-panel #daily-goal-button .daily-goal-title {font-size: 18px;}
-  #library-panel #daily-goal-button .daily-goal-art {height: 80px;width: 80px;}
-  #library-panel #daily-goal-button .daily-goal-illustration {height: 80px;width: 80px;}
-  #library-panel #daily-goal-button .daily-goal-art::after {bottom: 6px;}
+  #library-panel #daily-goal-button .daily-goal-art {height: 78px;width: 78px;}
+  #library-panel #daily-goal-button .daily-goal-illustration {height: 78px;width: 78px;}
   #library-panel #daily-goal-button .daily-goal-copy > small {font-size: 12px;}
   #library-panel #daily-goal-button .daily-goal-count {font-size: 16px;}
   #library-panel #daily-goal-button .daily-goal-arrow {font-size: 22px;}
-  #library-panel #daily-goal-button .daily-goal-check {width: 34px;height:34px;flex-basis:34px;font-size:24px;}
+  #library-panel #daily-goal-button .daily-goal-check {width: 25px;height:25px;flex-basis:25px;font-size:17px;}
 }
 @media(max-width: 340px) {
   #library-panel #daily-goal-button {grid-template-columns: minmax(75px,1fr) minmax(80px,1fr) minmax(60px,auto);gap:3px;padding-inline:6px;}
