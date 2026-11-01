@@ -225,6 +225,21 @@
  }
  function mount(){
   dialog=document.createElement('dialog');dialog.id='account-dialog';dialog.setAttribute('aria-labelledby','account-title');dialog.innerHTML=`<div class="account-heading"><div><p class="account-kicker">${lockIcon}<span>${esc(t('حسابي'))}</span></p><h2 id="account-title">${esc(t('حسابي'))}</h2></div><button type="button" id="account-close" aria-label="${esc(t('إغلاق نافذة الحساب'))}">×</button></div><div id="account-body"></div><p id="account-error" role="alert"></p><p id="account-notice" role="status" aria-live="polite"></p>`;document.body.append(dialog);body=dialog.querySelector('#account-body');
+  // Move the existing real sun/moon switch out of the header and into Account.
+  // Moving (rather than cloning) preserves its ID, click listener and saved state.
+  const appearanceToggle=document.querySelector('#theme-toggle');
+  if(appearanceToggle){
+   const names={ar:'المظهر',en:'Appearance',de:'Darstellung',nl:'Weergave'};
+   const appearance=document.createElement('div');
+   appearance.className='account-appearance';
+   const title=document.createElement('span');
+   title.className='account-appearance-label';
+   title.id='account-appearance-label';
+   title.textContent=names[global.WORT_COURSE?.native]||names.ar;
+   appearanceToggle.setAttribute('aria-labelledby','account-appearance-label');
+   appearance.append(title,appearanceToggle);
+   body.after(appearance);
+  }
   dialog.addEventListener('cancel',event=>{if(busy()||state.authFailure)event.preventDefault();});dialog.addEventListener('close',()=>{clearPasswordFields();state.error='';state.notice='';});
   dialog.addEventListener('click',event=>{
    const button=event.target.closest('button');if(!button||busy())return;
