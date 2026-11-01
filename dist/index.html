@@ -1,7 +1,44 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="kalima-booting">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffffff">
+
+<style id="kalima-boot-style">
+/* Hide the uninitialized 0 / 0 page while account, curriculum and cards load. */
+html.kalima-booting .app-shell { visibility: hidden !important; }
+#kalima-boot-screen {
+  position: fixed; z-index: 2147483640; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  box-sizing: border-box;
+  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
+  background: #ffffff; color: #173c48;
+  text-align: center; font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  opacity: 1; transition: opacity 180ms ease;
+}
+#kalima-boot-screen .kalima-boot-inner {display:flex;flex-direction:column;align-items:center;gap:16px;max-width:300px}
+#kalima-boot-screen img {width:76px;height:76px;object-fit:contain;display:block}
+#kalima-boot-screen strong {font-size:25px;font-weight:800;color:inherit}
+#kalima-boot-screen p {margin:0;font-size:15px;line-height:1.7;color:#365763}
+#kalima-boot-screen .kalima-boot-spinner {
+  width:26px;height:26px;box-sizing:border-box;
+  border:3px solid #d5ece9;border-top-color:#158d86;
+  border-radius:50%;animation:kalima-boot-rotate .9s linear infinite;
+}
+@keyframes kalima-boot-rotate {to {transform:rotate(360deg)}}
+#kalima-boot-retry {
+  margin-top:6px;padding:11px 20px;border:1px solid #0b867e;
+  border-radius:12px;background:#087e78;color:#ffffff;
+  font:700 15px/1.5 inherit;cursor:pointer;
+}
+#kalima-boot-retry[hidden] {display:none}
+html.kalima-boot-finished #kalima-boot-screen {opacity:0;pointer-events:none}
+html[data-theme="dark"] #kalima-boot-screen {background:#071b2a;color:#f0f8fb}
+html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
+@media (prefers-reduced-motion:reduce) {
+  #kalima-boot-screen {transition:none}
+  #kalima-boot-screen .kalima-boot-spinner {animation:none;border-top-color:#158d86}
+}
+</style>
 <title data-i18n="Wort — تعلّم اللغات من A1 إلى C1">كلمة — تعلّم اللغات من A1 إلى C1</title><meta name="description" content="تعلّم المفردات وتركيب الجمل وكتابة المواضيع، مع أمثلة ونطق وتتبّع التقدّم." data-i18n-content="تعلّم المفردات وتركيب الجمل وكتابة المواضيع، مع أمثلة ونطق وتتبّع التقدّم.">
 <link rel="icon" type="image/png" href="assets/brand-book.png">
 <link rel="apple-touch-icon" href="assets/brand-book.png">
@@ -38,6 +75,15 @@
 <script src="word-navigation-labels.js?v=20261101-undo-learned"></script>
 </head>
 <body>
+<div id="kalima-boot-screen" role="status" aria-live="polite" aria-label="جارٍ فتح تطبيق كلمة">
+  <div class="kalima-boot-inner">
+    <img src="assets/brand-book.png" alt="" width="76" height="76">
+    <strong>كلمة</strong>
+    <span class="kalima-boot-spinner" aria-hidden="true"></span>
+    <p id="kalima-boot-message">جارٍ تجهيز كلماتك وتقدّمك…</p>
+    <button id="kalima-boot-retry" type="button" hidden>إعادة المحاولة</button>
+  </div>
+</div>
 <div class="app-shell">
 <header class="topbar"><a class="brand" href="#library" aria-label="Wort — مكتبة المفردات" data-i18n-aria-label="Wort — مكتبة المفردات"><img class="brand-logo" src="assets/brand-book.png" width="52" height="52" alt=""><span class="brand-name" lang="ar" dir="rtl">كلمة</span></a><div class="top-actions"><button type="button" class="top-saved-button" id="top-saved-button" data-panel="saved" aria-label="محفوظاتي" title="محفوظاتي" data-i18n-aria-label="محفوظاتي" data-i18n-title="محفوظاتي"><span aria-hidden="true"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"></path></svg></span></button><button class="home-shield-button" id="home-shield-button" data-panel="badges" aria-controls="badges-panel" aria-expanded="false" aria-label="افتح صفحة دروع مكتسبة" data-i18n-aria-label="افتح صفحة دروع مكتسبة"><span id="home-shield-art" aria-hidden="true">♢</span><span id="home-shield-label" data-i18n="دروعي">دروعي</span></button><button id="theme-toggle" type="button" role="switch" aria-label="الوضع الليلي" aria-checked="false" title="تفعيل الوضع الليلي"><span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" focusable="false"><circle cx="12" cy="12" r="4" fill="#f8ce57" stroke="#ecad17"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span><span class="theme-toggle-moon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" focusable="false"><path fill="#f4dfbc" stroke="#f4dfbc" d="M18.5 15.7A8.8 8.8 0 0 1 8.3 5.5a8.5 8.5 0 1 0 10.2 10.2Z"/><path d="M18 4.5v4m-2-2h4M20 12v2m-1-1h2" stroke="#fdf0d7"/></svg></span><span class="theme-toggle-thumb"></span></span></button></div></header>
 <main id="main-content">
@@ -80,5 +126,5 @@
 <dialog id="sources-dialog" class="training-dialog" aria-labelledby="sources-title"><button class="dialog-close icon-button" aria-label="إغلاق" id="sources-close" data-i18n-aria-label="إغلاق">×</button><h2 id="sources-title" data-i18n="عن المفردات ومصادرها">عن المفردات ومصادرها</h2><div id="sources-content"></div></dialog>
 <div id="toast" role="status" hidden></div>
 <script src="account.js?v=20261101-appearance"></script>
-<script src="app-bootstrap.js?v=20261101-tts-repair-v4"></script>
+<script src="app-bootstrap.js?v=20261101-stable-loading"></script>
 </body></html>
