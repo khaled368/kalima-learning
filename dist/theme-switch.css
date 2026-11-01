@@ -1,0 +1,177 @@
+/* Sun / moon switch based on the supplied split day-night reference.
+   The toggle always shows both icons; a sliding outlined ring marks the choice. */
+#theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  direction: ltr;
+  -webkit-tap-highlight-color: transparent;
+}
+#theme-toggle .theme-toggle-track {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 72px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid #d5e0e6;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fbfbfa 0 50%, #1e3047 50% 100%);
+  box-shadow: 0 2px 5px #071b2d23;
+  overflow: hidden;
+}
+#theme-toggle .theme-toggle-sun,
+#theme-toggle .theme-toggle-moon {
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  width: 31px;
+  height: 31px;
+}
+#theme-toggle svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#theme-toggle .theme-toggle-sun {color: #f0ad17;}
+#theme-toggle .theme-toggle-moon {color: #f5dfb7;}
+#theme-toggle .theme-toggle-thumb {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  left: 1px;
+  top: 1px;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  border: 2.5px solid #10a99e;
+  border-radius: 50%;
+  background: #ffffff10;
+  box-shadow: inset 0 0 0 1px #fff9;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {
+  transform: translateX(32px);
+  border-color: #c4d5f0;
+}
+#theme-toggle:focus-visible {
+  outline: 3px solid #1ba7a0;
+  outline-offset: 3px;
+}
+#theme-toggle:hover .theme-toggle-track {border-color: #58b8b7;}
+
+/* Fit the additional real switch on narrow phone screens without clipping
+   the brand, account, or the earned-shield action. */
+@media (max-width: 600px) {
+  .topbar {
+    gap: 5px;
+    min-height: 60px;
+    padding-block: 8px;
+  }
+  .topbar .brand {
+    gap: 3px;
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+  .topbar .brand-logo {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+  }
+  .topbar .brand-name {
+    font-size: 21px;
+    white-space: nowrap;
+  }
+  .topbar .top-actions { gap: 4px; flex: 0 1 auto; min-width: 0; }
+  .topbar #account-button {
+    min-width: 0;
+    min-height: 36px;
+    padding: 5px 6px;
+    gap: 3px;
+    font-size: 12px;
+    border-radius: 11px;
+  }
+  .topbar #account-button > svg {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+  .topbar .home-shield-button {
+    min-height: 36px;
+    max-width: 96px;
+    padding: 2px 5px;
+    gap: 3px;
+    font-size: 11px;
+    border-radius: 11px;
+  }
+  .topbar #home-shield-art,
+  .topbar #home-shield-art .shield-sprite,
+  .topbar .shield-empty-symbol {
+    width: 29px;
+    height: 29px;
+    flex: 0 0 29px;
+  }
+  #theme-toggle {flex: 0 0 62px; width: 62px; height: 36px; min-height: 36px;}
+  #theme-toggle .theme-toggle-track {width: 62px; height: 36px;}
+  #theme-toggle .theme-toggle-sun, #theme-toggle .theme-toggle-moon {width: 28px; height: 28px;}
+  #theme-toggle svg {width: 19px; height: 19px;}
+  #theme-toggle .theme-toggle-thumb {width: 30px; height: 30px;}
+  html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {transform: translateX(26px);}
+}
+@media (max-width: 359px) {
+  .topbar {gap: 3px; flex-wrap: wrap;}
+  .topbar .brand-logo {width: 30px; height: 30px; flex-basis: 30px;}
+  .topbar .brand-name {font-size: 19px;}
+  .topbar .top-actions {gap: 3px;}
+  .topbar .home-shield-button {max-width: 80px;}
+  .topbar #account-button {padding-inline: 4px; font-size: 11px;}
+  #theme-toggle {flex-basis: 58px; width: 58px; height: 34px; min-height: 34px;}
+  #theme-toggle .theme-toggle-track {width: 58px; height: 34px;}
+  #theme-toggle .theme-toggle-sun,#theme-toggle .theme-toggle-moon {width: 26px; height: 26px;}
+  #theme-toggle .theme-toggle-thumb {width: 28px; height: 28px;}
+  html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {transform: translateX(24px);}
+}
+@media (prefers-reduced-motion: reduce) {
+  #theme-toggle .theme-toggle-thumb {transition: none;}
+}
+
+/* Shields layout is a structural sheet shared by both themes.
+   Restore dark foregrounds for its otherwise light-colored wrappers. */
+html[data-theme='dark'] #badges-panel .badge-page-meta,
+html[data-theme='dark'] #badges-panel .future-shields-count {color: #aecbd6;}
+html[data-theme='dark'] #badges-panel .badge-page-meta > strong {color: #e1bf79;}
+html[data-theme='dark'] #badges-panel .future-shields-section {
+  background: #0a2939;
+  border-color: #30566b;
+}
+html[data-theme='dark'] #badges-panel .future-shields-section > summary,
+html[data-theme='dark'] #badges-panel .earned-shields-heading {color: #e2f2f5;}
+html[data-theme='dark'] #badges-panel .future-shields-chevron {color: #61e1d8;}
+html[data-theme='dark'] #badges-panel .shields-grid > .empty {
+  background: #0c2c3d;
+  border-color: #345767;
+  color: #dcebf2;
+}
+html[data-theme='dark'] #badges-panel .future-shields-row:focus-visible {
+  outline-color: #63eee0;
+}
+
+/* Make the requested grammar colors remain recognizable on dark backgrounds. */
+html[data-theme='dark'] [data-article='der'] {color: #82baff !important;}
+html[data-theme='dark'] [data-article='die'] {color: #f390bd !important;}
+html[data-theme='dark'] [data-article='das'] {color: #e1c9a6 !important;}
