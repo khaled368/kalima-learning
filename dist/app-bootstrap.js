@@ -1,7 +1,7 @@
 /* Restore the signed-in workspace before the learning modules read local progress. */
 (function (global) {
   'use strict';
-  const scripts = ['feedback.js','history.js','usage.js','audio.js','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','content.js','grammar.js','app.js?v=20261101-history-skip','course-ui.js'];
+  const scripts = ['feedback.js','history.js','usage.js','audio.js','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','content.js','grammar.js','app.js?v=20261101-undo-learned','course-ui.js'];
   const messages = {
     ar: ['جارٍ تجهيز مكتبتك…','تعذّر فتح الموقع. أعد تحميل الصفحة.'],
     en: ['Preparing your library…','Could not open the app. Reload the page.'],
