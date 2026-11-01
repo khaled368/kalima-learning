@@ -15,6 +15,35 @@ Live site: https://wort-arabic-lernen-1031.hsiihsii142.chatgpt.site/
 
 Sections are approximate study bands, not certified CEFR exam inventories. Bilingual example coverage varies by selected language pair. The original German data and card IDs remain unchanged. Source licences, authorship and provenance are documented in [tools/SOURCES.md](tools/SOURCES.md).
 
+## GitHub Pages (Codex-free deployment)
+
+This repository contains an automated GitHub Pages workflow at
+[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+It serves the contents of `dist/` without a build step.
+
+One-time setup by a repository administrator:
+
+1. Open [GitHub Pages settings](https://github.com/khaled368/kalima-learning/settings/pages).
+   Under **Build and deployment → Source**, select **GitHub Actions**.
+   The workflow is already in the repository; do not generate a replacement workflow.
+2. Open [Actions](https://github.com/khaled368/kalima-learning/actions/workflows/deploy-pages.yml).
+   If the initial run failed before Pages was enabled, select **Run workflow**
+   on `main`. Check that the deployment job succeeds.
+3. The new site address will be
+   **https://khaled368.github.io/kalima-learning/** after the first successful deploy.
+4. Open [Supabase Authentication → URL Configuration](https://supabase.com/dashboard/project/uewvccgriojmpngxufev/auth/url-configuration)
+   and **add** `https://khaled368.github.io/kalima-learning/` as an
+   allowed **Redirect URL**. Keep the existing Site URL and redirect entry
+   for the original deployment until the migration is completed.
+
+Any later push to `dist/` on `main` triggers automatic publishing through
+GitHub Actions. The site's scripts/styles/data use relative paths, so they can
+be hosted beneath `/kalima-learning/`. Account sign-up and password recovery
+use the currently visited page as their callback URL, so both origins need
+to be in the Supabase redirect allowlist. New origins have separate local
+browser storage; sign in with the **same Supabase account** on the new site to
+recover cloud-synced progress. Do not delete the old site during migration.
+
 ## Run locally
 
 The published app is buildless. Serve the static files over HTTP:
