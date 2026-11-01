@@ -1,0 +1,116 @@
+/* German declension: genuine case names, readable full words, helpful Arabic notes.
+   Keep the four grammatical columns (masculine, feminine, neuter, plural).
+   Single-column cards on phones eliminate collisions with "Akkusativ". */
+#word-dialog .word-content .grammar-case-name {
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -.15px;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  text-align: left;
+}
+#word-dialog .word-content .grammar-case-help {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  direction: rtl;
+  text-align: left;
+}
+#word-dialog .word-content .grammar-table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+#word-dialog .word-content .grammar-table th {
+  width: 45%;
+  min-width: 95px;
+  padding-inline-end: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+#word-dialog .word-content .grammar-table td {
+  width: 55%;
+  min-width: 0;
+  text-align: left;
+  vertical-align: middle;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+#word-dialog .word-content .grammar-table tr + tr {
+  border-top: 1px solid rgba(89, 120, 134, .18);
+}
+#word-dialog .word-content .grammar-table tr > * {padding-block: 9px;}
+#word-dialog .word-content .grammar-block {
+  padding: 13px 14px;
+  border-radius: 15px;
+}
+#word-dialog .word-content .grammar-block > h4 {
+  margin: 0 0 7px;
+  font-size: 20px;
+  font-weight: 800;
+}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-block {
+  background: #f7fafc;
+  border: 1px solid #ccdee7;
+}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-table td {
+  color: #1b3646 !important;
+  font-weight: 700;
+}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-table th,
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-case-name {
+  color: #173a4e !important;
+}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-case-help {color:#456270 !important;}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-block.gender-m > h4,
+html:not([data-theme='dark']) #word-dialog .word-content .gender-m .ending {color:#185c9a !important;}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-block.gender-f > h4,
+html:not([data-theme='dark']) #word-dialog .word-content .gender-f .ending {color:#af2469 !important;}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-block.gender-n > h4,
+html:not([data-theme='dark']) #word-dialog .word-content .gender-n .ending {color:#80612b !important;}
+html:not([data-theme='dark']) #word-dialog .word-content .grammar-block.gender-pl > h4,
+html:not([data-theme='dark']) #word-dialog .word-content .gender-pl .ending {color:#916311 !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-block {
+  background: #102b3d;
+  border: 1px solid #31546a;
+}
+html[data-theme='dark'] #word-dialog .word-content .grammar-table td {color:#eff8fd !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-table th,
+html[data-theme='dark'] #word-dialog .word-content .grammar-case-name {color:#dcecf5 !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-case-help {color:#b5d0dd !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-block.gender-m > h4,
+html[data-theme='dark'] #word-dialog .word-content .gender-m .ending {color:#7db7f4 !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-block.gender-f > h4,
+html[data-theme='dark'] #word-dialog .word-content .gender-f .ending {color:#f38dbc !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-block.gender-n > h4,
+html[data-theme='dark'] #word-dialog .word-content .gender-n .ending {color:#ead0a3 !important;}
+html[data-theme='dark'] #word-dialog .word-content .grammar-block.gender-pl > h4,
+html[data-theme='dark'] #word-dialog .word-content .gender-pl .ending {color:#ffcc72 !important;}
+
+/* Starter shield replaces the empty diamond until 100 learned words. */
+#home-shield-art .shield-starter {
+  display: block;
+  width: 39px;
+  height: 39px;
+  opacity: 1;
+  flex-shrink: 0;
+}
+html[data-theme='dark'] #home-shield-art .shield-starter {filter:brightness(1.1) saturate(.85);}
+
+@media (max-width: 649px) {
+  #word-dialog .word-content .grammar-grid {
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    gap: 12px;
+  }
+  #word-dialog .word-content .grammar-block {padding:12px 14px;}
+  #word-dialog .word-content .grammar-case-name {font-size:14px;}
+  #word-dialog .word-content .grammar-table td {font-size:17px;line-height:1.55;}
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  #word-dialog .word-content .grammar-grid {grid-template-columns:minmax(0,1fr);}
+}
