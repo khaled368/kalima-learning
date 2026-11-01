@@ -1,0 +1,130 @@
+/* Higher-contrast light UI and a readable, non-overlapping review-level picker.
+   This file is deliberately loaded last to override the older dark styles. */
+:root {
+  --text: #112e3d;
+  --muted: #365565;
+  --blue: #006c73;
+  --border: #c7dbe3;
+}
+body { color: #112e3d; }
+.hero-subtitle,
+#library-panel>.welcome>.hero-subtitle,
+#training-panel>.welcome>.hero-subtitle,
+#badges-panel>.welcome>.hero-subtitle,
+#progress-panel>.welcome>.hero-subtitle,
+.progress-label, .progress-label small,
+.section-heading p, .section-heading small,
+.library-learning-note, .source-note, .panel-note, .review-empty-note {
+  color: #3b5a6a;
+}
+#library-panel #level-count, #library-panel #level-learned,
+#library-panel #level-tabs .level-tab small,
+.level-tab small,
+#badges-panel #shields-caption,
+#badges-panel .future-shields-count,
+#badges-panel .badge-page-meta,
+#badges-panel .badge-page-meta > span {
+  color: #365565;
+}
+#library-panel>.overall-progress .progress-label,
+#library-panel>.overall-progress .progress-label small,
+#library-panel>.overall-progress .progress-label span,
+#library-panel>.overall-progress .progress-label strong {
+  color: #244956;
+}
+#library-panel>.overall-progress .progress-label strong {color:#006c73;}
+#library-panel #daily-goal-button .daily-goal-copy > small {color:#355864;}
+#library-panel #daily-goal-button .daily-goal-copy > strong,
+#library-panel #daily-goal-button .daily-goal-count {color:#006b6c;}
+#vocabulary-disclosure > summary, #vocabulary-disclosure #vocabulary-title {color: #1b3e4d;}
+#vocabulary-disclosure > summary .vocabulary-chevron {color: #365e6d;}
+#library-panel .library-controls > summary {color: #2a5060;}
+.search-wrap input::placeholder {color:#536e7a;}
+.word-pair .translation, .translation,
+.word-pos, .word-card .word-pos, .word-level,
+.word-card .article {color: #375767;}
+.word-pair .word-head, .word-head {color: #173747;}
+#progress-panel .stat span, .reference-kpis small,
+.analytics-heading p, .analytics-chart-title p,
+.analytics-legend, .analytics-level,
+.analytics-chart-total, .analytics-chart-help,
+.analytics-day-controls, .analytics-stat>span,
+.analytics-stat>small {color: #405f6f;}
+.journey-calendar-heading p:not(.eyebrow),
+.journey-calendar-weekdays, .journey-calendar-note {
+  color: #415f6c;
+}
+.course-switch-copy > small,
+.course-dialog-intro,
+.course-preview > small {
+  color: #3c5d6c;
+}
+#account-dialog .account-intro, #account-dialog .account-help,
+#account-dialog .account-kicker, #account-dialog .account-local-note,
+#account-dialog .account-sync {color: #3e5c69;}
+#account-dialog .account-field>span {color:#15394b;}
+body .bottom-nav button {color: #3e5167 !important;}
+body .bottom-nav button:is(.active,[aria-current='page']) {color: #352e64 !important;}
+#badges-panel .future-shields-row {color:#fff;}
+#badges-panel .future-shield-card > small,
+#badges-panel .future-shield-card > span:last-child {color: #e0f1ed;}
+#badges-panel .shield-card small {color:#dcecf0;}
+#badges-panel .badge-next-card p:not(.eyebrow) {color: #e0edf0;}
+
+/* Keep the review selector independent of older .filter-select compact rules.
+   A single-line native select is preferable to overlapping multiline option text on iOS. */
+#training-panel > label[for='training-level'] {
+  display: block;
+  width: fit-content;
+  margin: 16px 0 9px;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  font-weight: 700;
+  color: #1e4656 !important;
+}
+#training-panel #training-level,
+#training-panel select#training-level.filter-select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 58px;
+  min-height: 58px;
+  margin: 0 0 12px;
+  padding-block: 10px;
+  padding-inline: 15px 45px;
+  border: 1.5px solid #99c4cb;
+  border-radius: 13px;
+  background-color: #fff;
+  color: #143e50;
+  font-family: var(--reading-font, var(--font, sans-serif));
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 700;
+  text-align: start;
+  direction: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+#training-panel #training-level option {
+  color: #153e4e;
+  background: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: normal;
+}
+#training-panel #training-level:focus-visible {
+  outline: 2px solid #008b86;
+  outline-offset: 2px;
+  border-color: #008b86;
+}
+#training-panel .training-options {margin-top: 14px;}
+#training-panel .review-empty-note {color: #385968;}
+#training-panel .training-options > button {color:#194a50;}
+#training-panel .training-options > button small {color:#40636c;}
+@media (max-width: 359px) {
+  #training-panel #training-level {font-size: 17px; padding-inline: 10px 40px;}
+}
