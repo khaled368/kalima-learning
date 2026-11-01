@@ -75,76 +75,41 @@ html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {
 }
 #theme-toggle:hover .theme-toggle-track {border-color: #58b8b7;}
 
-/* Fit the additional real switch on narrow phone screens without clipping
-   the brand, account, or the earned-shield action. */
-@media (max-width: 600px) {
-  .topbar {
-    gap: 5px;
-    min-height: 60px;
-    padding-block: 8px;
-  }
-  .topbar .brand {
-    gap: 3px;
-    flex: 0 0 auto;
-    min-width: 0;
-  }
-  .topbar .brand-logo {
-    width: 34px;
-    height: 34px;
-    flex: 0 0 34px;
-  }
-  .topbar .brand-name {
-    font-size: 21px;
-    white-space: nowrap;
-  }
-  .topbar .top-actions { gap: 4px; flex: 0 1 auto; min-width: 0; }
-  .topbar #account-button {
-    min-width: 0;
-    min-height: 36px;
-    padding: 5px 6px;
-    gap: 3px;
-    font-size: 12px;
-    border-radius: 11px;
-  }
-  .topbar #account-button > svg {
-    width: 16px;
-    height: 16px;
-    flex: 0 0 16px;
-  }
-  .topbar .home-shield-button {
-    min-height: 36px;
-    max-width: 96px;
-    padding: 2px 5px;
-    gap: 3px;
-    font-size: 11px;
-    border-radius: 11px;
-  }
-  .topbar #home-shield-art,
-  .topbar #home-shield-art .shield-sprite,
-  .topbar .shield-empty-symbol {
-    width: 29px;
-    height: 29px;
-    flex: 0 0 29px;
-  }
-  #theme-toggle {flex: 0 0 62px; width: 62px; height: 36px; min-height: 36px;}
-  #theme-toggle .theme-toggle-track {width: 62px; height: 36px;}
-  #theme-toggle .theme-toggle-sun, #theme-toggle .theme-toggle-moon {width: 28px; height: 28px;}
-  #theme-toggle svg {width: 19px; height: 19px;}
-  #theme-toggle .theme-toggle-thumb {width: 30px; height: 30px;}
-  html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {transform: translateX(26px);}
+/* Account settings: use the same sun/moon switch without occupying header space. */
+#account-dialog .account-appearance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 16px 0 4px;
+  padding: 14px 16px;
+  border: 1px solid #d3e2e9;
+  border-radius: 14px;
+  background: #f1f8fb;
+  color: #193d50;
+  direction: inherit;
+}
+#account-dialog .account-appearance-label {
+  flex: 1 1 auto;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: inherit;
+}
+#account-dialog #theme-toggle {
+  flex: 0 0 72px;
+  width: 72px;
+  height: 44px;
+  min-height: 44px;
+}
+html[data-theme='dark'] #account-dialog .account-appearance {
+  border-color: #476279;
+  background: #172c43;
+  color: #f0f5fd;
 }
 @media (max-width: 359px) {
-  .topbar {gap: 3px; flex-wrap: wrap;}
-  .topbar .brand-logo {width: 30px; height: 30px; flex-basis: 30px;}
-  .topbar .brand-name {font-size: 19px;}
-  .topbar .top-actions {gap: 3px;}
-  .topbar .home-shield-button {max-width: 80px;}
-  .topbar #account-button {padding-inline: 4px; font-size: 11px;}
-  #theme-toggle {flex-basis: 58px; width: 58px; height: 34px; min-height: 34px;}
-  #theme-toggle .theme-toggle-track {width: 58px; height: 34px;}
-  #theme-toggle .theme-toggle-sun,#theme-toggle .theme-toggle-moon {width: 26px; height: 26px;}
-  #theme-toggle .theme-toggle-thumb {width: 28px; height: 28px;}
-  html[data-theme='dark'] #theme-toggle .theme-toggle-thumb {transform: translateX(24px);}
+  #account-dialog .account-appearance {padding: 12px; gap: 9px;}
+  #account-dialog .account-appearance-label {font-size: 16px;}
 }
 @media (prefers-reduced-motion: reduce) {
   #theme-toggle .theme-toggle-thumb {transition: none;}
