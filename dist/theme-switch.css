@@ -112,6 +112,7 @@ html[data-theme='dark'] #theme-toggle .theme-toggle-track {
   box-shadow: 0 3px 12px #102f4640, inset 0 1px 2px #0000001a;
 }
 #theme-toggle.is-dragging .theme-toggle-thumb {
+  transform: translateX(var(--drag-x, 0px)) !important;
   transition: background 220ms ease, box-shadow 220ms ease;
   scale: .96;
 }
