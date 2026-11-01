@@ -697,19 +697,45 @@ function updateOwnedShield() {
 }
 function renderBadges() {
   if (!manifest) return;
-  const owned = ownedShields(),
-    next = (manifest.shields || []).map((shield, index) => ({
-      ...shield,
-      index
-    })).find(shield => learned.size < shield.threshold);
+  // Use the actual curriculum shield thresholds and the current learner's progress.
+  const shields = (manifest.shields || []).map((shield, index) => ({ ...shield, index }));
+  const owned = ownedShields();
+  const future = shields.filter(shield => learned.size < shield.threshold);
+  const next = future[0];
   updateOwnedShield();
-  $('#shields-caption').textContent = t("{v0} دروع مكتسبة", {
-    v0: owned.length
-  });
+
+  $('#shields-caption').textContent = t("{v0} دروع مكتسبة", { v0: owned.length });
   $('#shield-note').textContent = t("هذه الدروع التي فتحتها بتعلّم كلمات جديدة. يظهر أعلى درع مكتسب بجانب اسم الموقع.");
-  $('#shields').innerHTML = uiHtml(owned.length ? owned.map(shield => `<article class="shield-card unlocked"><div class="shield-art">${shieldMarkup(shield.index, shield.name)}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString(LOCALE)} كلمة</small><span class="shield-lock">✓ مكتسب</span></article>`).join('') : '<div class="empty"><h2>درعك الأول ينتظرك</h2><p>لم تكتسب درعًا بعد. كل كلمة جديدة تقرّبك منه.</p></div>');
-  $('#badge-next').innerHTML = uiHtml(next ? `<article class="badge-next-card"><div class="badge-next-art">${shieldMarkup(next.index, next.name)}</div><div><p class="eyebrow">الدرع القادم</p><h2>${esc(next.name)}</h2><p>باقي ${Math.max(0, next.threshold - learned.size).toLocaleString(LOCALE)} كلمة جديدة</p><div class="track"><i style="width:${Math.min(100, learned.size / next.threshold * 100)}%"></i></div><small dir="ltr">${learned.size.toLocaleString(LOCALE)} / ${next.threshold.toLocaleString(LOCALE)}</small></div></article>` : '<div class="badge-complete">اكتملت الدروع العشرة! إنجاز جميل يستحق أن تواصل استخدام كلماتك في الجمل والكتابة.</div>');
+  $('#shields').innerHTML = uiHtml(owned.length
+    ? owned.map(shield => `<article class="shield-card unlocked"><div class="shield-art">${shieldMarkup(shield.index, shield.name)}</div><strong>${esc(shield.name)}</strong><small>${shield.threshold.toLocaleString(LOCALE)} كلمة</small><span class="shield-lock">✓ مكتسب</span></article>`).join('')
+    : '<div class="empty"><h2>درعك الأول ينتظرك</h2><p>لم تكتسب درعًا بعد. كل كلمة جديدة تقرّبك منه.</p></div>');
+
+  $('#badge-next').innerHTML = uiHtml(next
+    ? `<article class="badge-next-card"><div class="badge-next-art">${shieldMarkup(next.index, next.name)}</div><div><p class="eyebrow">الدرع القادم</p><h2>${esc(next.name)}</h2><p>باقي ${Math.max(0, next.threshold - learned.size).toLocaleString(LOCALE)} كلمة جديدة</p><div class="track"><i style="width:${Math.min(100, learned.size / next.threshold * 100)}%"></i></div><small dir="ltr">${learned.size.toLocaleString(LOCALE)} / ${next.threshold.toLocaleString(LOCALE)}</small></div></article>`
+    : '<div class="badge-complete">اكتملت الدروع العشرة! إنجاز جميل يستحق أن تواصل استخدام كلماتك في الجمل والكتابة.</div>');
+
+  // The native details element retains its open/closed state across progress updates.
+  const details = $('#future-shields-section');
+  const row = $('#future-shields');
+  const previousScroll = row.scrollLeft;
+  details.hidden = future.length === 0;
+  $('#future-shields-title').textContent = t("الدروع القادمة");
+  $('#earned-shields-heading').textContent = t("دروعي المكتسبة");
+  $('#future-shields-count').textContent = t("{v0} دروع متبقية", { v0: future.length.toLocaleString(LOCALE) });
+  row.setAttribute('aria-label', t("الدروع القادمة"));
+  row.innerHTML = uiHtml(future.map((shield, index) => {
+    const left = Math.max(0, shield.threshold - learned.size).toLocaleString(LOCALE);
+    const goal = shield.threshold.toLocaleString(LOCALE);
+    return `<article role="listitem" class="future-shield-card${index === 0 ? ' is-next' : ''}">
+      <div class="future-shield-art">${shieldMarkup(shield.index, shield.name)}</div>
+      <strong>${esc(shield.name)}</strong>
+      <small>${goal} ${esc(t("كلمة"))}</small>
+      <span>${esc(t("باقي {v0} كلمة", { v0: left }))}</span>
+    </article>`;
+  }).join(''));
+  row.scrollLeft = previousScroll;
 }
+
 function shuffled(list) {
   const out = [...list];
   for (let i = out.length - 1; i > 0; i--) {
