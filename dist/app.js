@@ -503,12 +503,19 @@ function degreeHtml(word) {
   const degrees = [[t("الصفة"), word.german], [t("المقارنة"), word.comparative], [t("التفضيل"), word.superlative]].filter(d => d[1]);
   return `<div class="degree-row">${degrees.map(([label, value]) => `<div class="degree-item"><small>${label}</small><strong lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(value)}</strong></div>`).join('')}</div>`;
 }
-const CASES = [t("رفع"), t("جر"), t("داتيف"), t("نصب")];
+// German case names are the learning terms; Arabic explanations are optional
+// and never replace the actual grammatical name.
+const CASES = [
+  ['Nominativ', 'حالة الفاعل'],
+  ['Genitiv', 'حالة الإضافة'],
+  ['Dativ', 'حالة المفعول غير المباشر'],
+  ['Akkusativ', 'حالة المفعول المباشر']
+];
 function adjectiveTables(word) {
   const stem = word.declensionStem;
   const genders = [[t("المذكر"), 'gender-m'], [t("المؤنث"), 'gender-f'], [t("محايد"), 'gender-n'], [t("جمع"), 'gender-pl']];
   const sets = [[t("تصريف قوي \u2014 بدون أداة"), [['er', 'en', 'em', 'en'], ['e', 'er', 'er', 'e'], ['es', 'en', 'em', 'es'], ['e', 'er', 'en', 'e']], null], [t("تصريف ضعيف \u2014 مع أداة التعريف"), [['e', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['e', 'en', 'en', 'e'], ['en', 'en', 'en', 'en']], [['der', 'des', 'dem', 'den'], ['die', 'der', 'der', 'die'], ['das', 'des', 'dem', 'das'], ['die', 'der', 'den', 'die']]], [t("تصريف مختلط \u2014 مع أداة التنكير"), [['er', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['es', 'en', 'en', 'es'], ['en', 'en', 'en', 'en']], [['ein', 'eines', 'einem', 'einen'], ['eine', 'einer', 'einer', 'eine'], ['ein', 'eines', 'einem', 'ein'], ['keine', 'keiner', 'keinen', 'keine']]]];
-  return sets.map(([title, endings, articles]) => `<section class="grammar-section"><h3>${title}</h3><div class="grammar-grid">${genders.map(([label, color], gender) => `<div class="grammar-block ${color}"><h4>${label}</h4><table class="grammar-table"><tbody>${CASES.map((name, index) => `<tr><th scope="row">${name}</th><td lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${articles ? esc(articles[gender][index]) + ' ' : ''}${esc(stem)}<span class="ending">${endings[gender][index]}</span></td></tr>`).join('')}</tbody></table></div>`).join('')}</div></section>`).join('') + `<section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3><div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div></section>`;
+  return sets.map(([title, endings, articles]) => `<section class="grammar-section"><h3>${title}</h3><div class="grammar-grid">${genders.map(([label, color], gender) => `<div class="grammar-block ${color}"><h4>${label}</h4><table class="grammar-table"><tbody>${CASES.map(([name, explanation], index) => `<tr><th scope="row"><span class="grammar-case-name" lang="de" dir="ltr">${name}</span>${NATIVE === "ar" ? `<small class="grammar-case-help">${explanation}</small>` : ""}</th><td lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${articles ? esc(articles[gender][index]) + ' ' : ''}${esc(stem)}<span class="ending">${endings[gender][index]}</span></td></tr>`).join('')}</tbody></table></div>`).join('')}</div></section>`).join('') + `<section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3><div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div></section>`;
 }
 function addedLetters(base, text) {
   const a = Array.from(base.toLocaleLowerCase()),
@@ -727,7 +734,7 @@ function updateOwnedShield() {
     highest = owned.at(-1),
     button = $('#home-shield-button');
   $('#stats-shields').textContent = `${owned.length} / ${manifest?.shields?.length || 10}`;
-  $('#home-shield-art').innerHTML = uiHtml(highest ? shieldMarkup(highest.index, highest.name) : '<span class="shield-empty-symbol">♢</span>');
+  $('#home-shield-art').innerHTML = uiHtml(highest ? shieldMarkup(highest.index, highest.name) : '<svg class="shield-empty-symbol shield-starter" viewBox="0 0 48 48" width="40" height="40" role="img" aria-label="درع البداية"><path d="M24 3 40 9v13c0 11-6 17-16 23C14 39 8 33 8 22V9L24 3Z" fill="#d5f0ed" stroke="#21857e" stroke-width="2.5"/><path d="M24 16c-3-3-7-3-10-2v15c4-1 7 0 10 2 3-2 6-3 10-2V14c-4-1-7-1-10 2Z" fill="#fffaf1" stroke="#256778" stroke-width="1.5"/><path d="M24 16v15" stroke="#256778" stroke-width="1.5"/><path d="m24 7 1.3 2.6 2.8.4-2 2 .5 2.8-2.6-1.3-2.6 1.3.5-2.8-2-2 2.8-.4Z" fill="#e3a83f"/></svg>');
   const action = panel === 'badges' ? t("أغلق دروعك المكتسبة") : t("افتح دروعك المكتسبة");
   $('#home-shield-label').textContent = highest ? highest.name : t("دروعي");
   button.setAttribute('aria-label', highest ? t("درعك الحالي {v0}؛ {v1}", {
