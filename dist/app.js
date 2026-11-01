@@ -14,6 +14,7 @@ const cache = new Map();
 const wordMap = new Map();
 let manifest = null, activeLevel = 'A1', panel = 'library', pageSize = 24, currentWord = null, wordTab = 'meaning';
 let badgesReturnPanel = 'library';
+let journeyView=null,calendarView=null,selectedUnit=null;
 let session = null, toastTimer, loadRequest = 0;
 const safeRead = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string').map(id=>typeof id==='string'&&/^\d+$/.test(id)&&Number(id)<90?Number(id):id):[]); };
@@ -65,23 +66,32 @@ function updateProgress() {
  $('#level-bar').parentElement.setAttribute('aria-valuenow',String(levelCount?Math.round(levelDone/levelCount*100):0));
  $('#stats-learned').textContent=done.toLocaleString('ar');$('#stats-today').textContent=today.ids.length.toLocaleString('ar');$('#stats-saved').textContent=saved.size.toLocaleString('ar');updateOwnedShield();if(panel==='badges')renderBadges();
  updateReviewAvailability();
+ renderJourney();
  if(panel==='progress')renderProgress();
 }
 async function selectLevel(code) {
- activeLevel=code;pageSize=24;const request=++loadRequest;
+ activeLevel=code;pageSize=24;selectedUnit=null;const request=++loadRequest;
  document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===code);b.setAttribute('aria-pressed',String(b.dataset.level===code));});
  const level=LEVELS.find(level=>level.code===code);
  $('#level-title').textContent=`${code} · ${level.name}`;$('#level-caption').textContent='قسم المستوى';$('#level-description').textContent=level.description;
  $('#level-count').textContent=`${manifest?.levels.find(l=>l.code===code)?.count||0} كلمة`;
  $('#training-level').value=code;$('#search').value='';$('#pos-filter').value='all';
  $('#cards').innerHTML='<p class="empty">جارٍ تحميل البطاقات…</p>';$('#load-more').hidden=true;status('');updateProgress();
- try { await loadLevel(code);if(request!==loadRequest)return;renderCards(); }
+ try { await loadLevel(code);if(request!==loadRequest)return;renderJourney();renderCards(); }
  catch(error){if(request!==loadRequest)return;$('#cards').innerHTML='<div class="empty">تعذّر تحميل الكلمات. <button class="secondary" id="retry-level">حاول مرة أخرى</button></div>';$('#retry-level').onclick=()=>selectLevel(code);status(error.message);}
 }
 function normalizeSearch(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ß/g,'ss'); }
+function renderJourney(){
+ refreshToday();
+ const model={level:activeLevel,words:cache.get(activeLevel)||[],learnedIds:[...learned],todayCount:today.ids.length,selectedUnit,onUnitChange:selectJourneyUnit,onContinue:continueJourney};
+ if(journeyView)journeyView.update(model);else journeyView=WORT_JOURNEY.mount($('#journey-content'),model);
+}
+function selectJourneyUnit(index){selectedUnit=index;pageSize=24;$('#search').value='';$('#pos-filter').value='all';renderJourney();renderCards();}
+function continueJourney(id){const list=cache.get(activeLevel)||[],index=list.findIndex(word=>String(word.id)===String(id));if(index<0)return;selectJourneyUnit(Math.floor(index/WORT_JOURNEY.unitSize));openWord(list[index]);}
+function journeyWords(){const words=cache.get(activeLevel)||[];return selectedUnit===null?words:words.slice(selectedUnit*WORT_JOURNEY.unitSize,(selectedUnit+1)*WORT_JOURNEY.unitSize);}
 function matchingWords() {
  const query=normalizeSearch($('#search').value.trim()),pos=$('#pos-filter').value;
- return (cache.get(activeLevel)||[]).filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
+ return journeyWords().filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
 }
 function setCardView(view) {
  cardView=view;document.body.dataset.cardView=view;
@@ -93,8 +103,8 @@ function card(word) {
  return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos]||POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id)?'<span class="learned-badge" aria-label="تعلّمتها">✓</span>':'<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="de" dir="ltr">${word.article?`${articleHtml(word.article)} `:''}${esc(word.german)}</span><span class="translation" lang="ar" dir="rtl">${esc(word.arabic)}</span></span></button><div class="card-actions"><button class="save-button ${saved.has(word.id)?'saved':''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id)?'إزالة من المحفوظات':'حفظ الكلمة'}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id)?'★':'☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">♬</button></div></article>`;
 }
 function renderCards() {
- const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة غير متعلّمة · ${Math.min(pageSize,list.length)} معروضة`;
- $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):(($('#search').value||$('#pos-filter').value!=='all')?'<div class="empty">لم نجد كلمات غير متعلّمة تطابق البحث. تجد الكلمات السابقة في المراجعة.</div>':'<div class="empty"><h3>أكملت كلمات هذا المستوى 🌿</h3><p>يمكنك مراجعتها أو الانتقال إلى مستوى آخر.</p><button class="secondary" data-review-learned>مراجعة ما تعلّمته</button></div>');
+ const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة غير متعلّمة${selectedUnit===null?'':` · الخطوة ${(selectedUnit+1).toLocaleString('ar')}`} · ${Math.min(pageSize,list.length)} معروضة`;
+ $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):(($('#search').value||$('#pos-filter').value!=='all')?'<div class="empty">لم نجد كلمات غير متعلّمة تطابق البحث. تجد الكلمات السابقة في المراجعة.</div>':selectedUnit!==null?'<div class="empty"><h3>أكملت كلمات هذه الخطوة ✓</h3><p>اختر خطوتك التالية من المسار، أو اعرض كل مفردات المستوى.</p><button class="secondary" data-all-journey>كل مفردات المستوى ←</button></div>':'<div class="empty"><h3>أكملت كلمات هذا المستوى 🌿</h3><p>يمكنك مراجعتها أو الانتقال إلى مستوى آخر.</p><button class="secondary" data-review-learned>مراجعة ما تعلّمته</button></div>');
  $('#load-more').hidden=pageSize>=list.length;
 }
 async function showPanel(name) {
@@ -233,7 +243,7 @@ function grammarHtml(word) {
  if(!word.declensionStem&&!word.forms?.length&&!word.verbForms&&!word.plural)html+='<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
  return html;
 }
-function nextWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم التدرّب.');}
+function nextWord(){const list=panel==='library'&&currentWord.level===activeLevel?journeyWords():cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast(selectedUnit===null?'أكملت كلمات المستوى. يمكنك مراجعتها في قسم التدرّب.':'أكملت هذه الخطوة! اختر الخطوة التالية من المسار.');}
 function progressModel(){const history=WORT_HISTORY.snapshot();return {history,learnedIds:[...learned],savedIds:[...saved],total:totalWords(),levelCounts:Object.fromEntries(LEVELS.map(level=>[level.code,manifest?.levels.find(item=>item.code===level.code)?.count||0])),unknownCount:history?.undatedIds.length||0,loadLevel,speak};}
 function formatDuration(ms){const sec=Math.floor(Math.max(0,ms||0)/1000);return [Math.floor(sec/3600),Math.floor(sec/60)%60,sec%60].map(value=>String(value).padStart(2,'0')).join(':');}
 function updateUsageStats(snapshot){if(!snapshot)return;$('#usage-total').textContent=formatDuration(snapshot.activeMs);$('#usage-days').textContent=snapshot.totalDays.toLocaleString('ar');const current=WORT_HISTORY.dayKey();$('#usage-today').textContent=formatDuration(snapshot.days.find(day=>day.day===current)?.activeMs||0);$('#usage-start').textContent=`بدأ التسجيل: ${snapshot.startedAt}`;$('#usage-live').textContent=snapshot.isIdle?'متوقف مؤقتًا لعدم التفاعل':snapshot.isActive?'● يُحتسب وقتك الآن':'متوقف مؤقتًا';$('#usage-live').classList.toggle('is-active',snapshot.isActive&&!snapshot.isIdle);if(snapshot.persistent===false)$('#usage-note').textContent='التخزين غير متاح في هذا المتصفح؛ الوقت الحالي محسوب لهذه الجلسة فقط. الوقت السابق لتفعيل الميزة لم يكن مسجّلًا.';}
@@ -243,6 +253,7 @@ function renderProgress() {
  if(!manifest)return;
  const model=progressModel();
  if(analyticsView)analyticsView.update(model);else analyticsView=WORT_ANALYTICS.mount($('#analytics-content'),model);
+ if(calendarView)calendarView.update(model);else calendarView=WORT_CALENDAR.mount($('#calendar-content'),model);
  if(assessmentView)assessmentView.update(model);else assessmentView=WORT_ASSESSMENT.mount($('#assessment-content'),model);
  updateUsageStats(WORT_USAGE.snapshot());
  $('#progress-levels').innerHTML=LEVELS.map(level=>{const count=manifest.levels.find(l=>l.code===level.code)?.count||0,done=Math.min(count,countLearned(level.code));return `<div class="overall-progress"><div class="progress-label"><strong>${level.code} · ${level.name}</strong><span dir="ltr">${done} / ${count}</span></div><div class="track"><i style="width:${count?done/count*100:0}%"></i></div></div>`;}).join('');
@@ -298,13 +309,14 @@ function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.le
 
 document.querySelectorAll('[data-card-view]').forEach(button=>button.onclick=()=>setCardView(button.dataset.cardView));
 setCardView(cardView);
-$('#search').oninput=()=>{pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
+$('#search').oninput=()=>{if(selectedUnit!==null){selectedUnit=null;renderJourney();}pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};
 document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.id==='home-shield-button'&&panel==='badges'?badgesReturnPanel:b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
 $('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
 $('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?2:(index+(e.key==='ArrowLeft'?1:-1)+3)%3;buttons[next].click();buttons[next].focus();};
 document.body.addEventListener('click',e=>{
+ if(e.target.closest('[data-all-journey]')){selectJourneyUnit(null);return;}
  if(e.target.closest('[data-review-learned]')){reviewLearned();return;}
  const tenseButton=e.target.closest('[data-verb-tense]');if(tenseButton){verbTense=tenseButton.dataset.verbTense;renderWord();document.querySelector(`[data-verb-tense="${verbTense}"]`)?.focus({preventScroll:true});return;}
  const open=e.target.closest('[data-open]'),save=e.target.closest('[data-save]'),audio=e.target.closest('[data-speak]'),example=e.target.closest('[data-example-speak]');
@@ -316,7 +328,7 @@ $('#open-sources').onclick=()=>{renderSources();$('#sources-dialog').showModal()
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('close',stopSpeech));
 document.addEventListener('wort:speak',event=>{if(event.detail?.text)speak(event.detail.text,event.detail.button||null);});
 WORT_USAGE.start();WORT_USAGE.subscribe(updateUsageStats);
-setInterval(()=>{if(panel==='progress'&&!document.hidden)updateUsageStats(WORT_USAGE.snapshot());},1000);
+setInterval(()=>{if(!document.hidden){if(today.day!==WORT_HISTORY.dayKey())updateProgress();if(panel==='progress')updateUsageStats(WORT_USAGE.snapshot());}},1000);
 window.addEventListener('storage',event=>{if(event.key==='wort-learned'||event.key===WORT_HISTORY.key){for(const id of storedSet('wort-learned'))learned.add(id);WORT_HISTORY.sync([...learned]);renderCards();if(currentWord)updateWordControls();if(manifest)updateProgress();}});
 async function init(){try{const response=await fetch('data/manifest.json');if(!response.ok)throw new Error('تعذّر تحميل بيانات الموقع. أعد المحاولة.');manifest=await response.json();$('#level-note').textContent=manifest.levelNote||$('#level-note').textContent;buildLevels();await selectLevel('A1');updateProgress();}catch(error){status(error.message);$('#cards').innerHTML='<div class="empty">تعذّر بدء الموقع. <button class="secondary" id="retry-app">أعد المحاولة</button></div>';$('#retry-app').onclick=init;}}
 init();

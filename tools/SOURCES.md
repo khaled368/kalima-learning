@@ -39,3 +39,12 @@ Sources: `german-verbs-dict`3.4.0 and `german-verbs`5.4.0 (RosaeNLG/LanguageTool
 `dist/history.js` records first-learning local dates while retaining stable IDs. Old known words without recoverable dates remain undated; repeat review does not add new learning events. `dist/analytics.js` presents 7/30/90-day daily/cumulative charts and level filters, explicitly distinguishing unrecorded history from zero. `dist/usage.js` counts focused, visible time with a five-minute idle allowance, local-day splits, and multi-tab deduplication; previous unrecorded time cannot be reconstructed. All learner data stays in localStorage. `check-history.cjs` and `check-usage.cjs` exercise migration, deduplication, hidden/blur/idle, clocks and DST.
 
 `dist/assessment.js` samples 25 vocabulary recognition questions across A1–C1, preferring learned words without treating saved words as mastered. Its result is an approximate vocabulary indicator, not a full CEFR proficiency assessment. It does not change learned or saved state. Learned-only review appears once a selected level has at least one learned word. Earned shields have a separate page and the highest earned shield appears in the header.
+
+
+## Journey interface
+
+The journey redesign adds a navy/turquoise interface across vocabulary, lessons, training, saved words, shields, Sources, analytics and assessment. `journey-theme.css` contains global styling; the component styles remain scoped in `journey.css`, `journey-calendar.css` and `journey-lessons.css`.
+
+`journey.js` groups each existing 2,000-word level into forty steps of fifty cards using their stable original order. These are numbered study steps, not invented subject categories or official CEFR units. All steps remain accessible. Selecting a step filters the unlearned card list; searching restores the full-level list. Continue opens the first unlearned word in the chosen step. Daily goal counts are real newly learned words across levels; no learning or saved records are changed by navigation.
+
+`journey-calendar.js` shows the last28localdays using deduplicated first-learning events. It distinguishes unrecorded days and partial recovered history; undated legacy words are not assigned to invented dates. This calendar measures new-word learning, while the separate usage panel measures foreground time.

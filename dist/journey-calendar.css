@@ -1,0 +1,36 @@
+.journey-calendar{margin:28px 0;padding:22px;border:1px solid #225269;border-radius:22px;background:linear-gradient(145deg,#0a2b3d,#082130);box-shadow:0 10px 32px #020f191c}
+.journey-calendar-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:20px}
+.journey-calendar-heading .eyebrow{color:#60dfd2;margin-bottom:4px;font-size:12px}
+.journey-calendar-heading h2{font-size:22px;line-height:1.7;margin:0 0 3px;color:#eaf9fc}
+.journey-calendar-heading p:not(.eyebrow){margin:0;font-size:12px;color:#91b5c5;line-height:1.8}
+.journey-calendar-summary{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:100px;padding:10px 12px;border:1px solid #246174;border-radius:15px;background:#103747;text-align:center}
+.journey-calendar-summary strong{font-size:28px;line-height:1.2;color:#57e2d2}
+.journey-calendar-summary span{color:#b6d3df;font-size:11px;line-height:1.6;margin-top:6px}
+.journey-calendar-weekdays,.journey-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.journey-calendar-weekdays{margin-bottom:8px;color:#91b6c7;font-size:11px;text-align:center;line-height:1.7}
+.journey-calendar-weekdays span{direction:rtl;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.journey-calendar-day{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:0;min-height:49px;padding:6px 2px;border:1px solid #285164;border-radius:10px;background:#123344;color:#d1e5ed;font-size:13px;font-family:var(--font);line-height:1.4;box-shadow:none;transition:background .15s,border-color .15s,transform .15s}
+.journey-calendar-day i{width:4px;height:4px;border-radius:50%;background:currentColor;opacity:.8}
+.journey-calendar-day[data-intensity="1"]{background:#124e59;border-color:#267780;color:#d9f7f2}
+.journey-calendar-day[data-intensity="2"]{background:#197d7f;border-color:#37a8a6;color:#edfffc}
+.journey-calendar-day[data-intensity="3"]{background:#24aa9f;border-color:#66dfd1;color:#032f35}
+.journey-calendar-day[data-intensity="4"]{background:#4bdac5;border-color:#8ef2df;color:#04313a}
+.journey-calendar-day.is-unknown{color:#7c9cab;border-color:#204050;background:repeating-linear-gradient(135deg,#0a2434,#0a2434 4px,#153344 4px,#153344 5px)}
+.journey-calendar-day.is-partial{background-image:repeating-linear-gradient(135deg,transparent,transparent 5px,#06213230 5px,#06213230 6px);border-style:dashed}
+.journey-calendar-day.is-today span{font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.journey-calendar-day[aria-pressed="true"]{border-color:#a9fff1;box-shadow:0 0 0 2px #7ff4dd55}
+.journey-calendar-day:hover{border-color:#86ddda;transform:translateY(-1px)}
+.journey-calendar-day:focus-visible{outline:2px solid #c3fff5;outline-offset:3px}
+.journey-calendar-legend{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin:15px 0;color:#a9c6d2;font-size:11px}
+.journey-calendar-legend>span{display:flex;align-items:center;gap:5px}
+.journey-calendar-legend i{display:inline-block;width:12px;height:12px;border:1px solid #3b6371;border-radius:3px;background:#123344}
+.journey-calendar-legend i.is-unknown{background:repeating-linear-gradient(135deg,#0a2434,#0a2434 3px,#2a4858 3px,#2a4858 4px)}
+.journey-calendar-legend i[data-intensity="1"]{background:#124e59}.journey-calendar-legend i[data-intensity="2"]{background:#197d7f}.journey-calendar-legend i[data-intensity="3"]{background:#24aa9f}.journey-calendar-legend i[data-intensity="4"]{background:#4bdac5}
+.journey-calendar-selection{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px;border:1px solid #24566a;border-radius:13px;background:#0d3143}
+.journey-calendar-selection strong{color:#e3f6fa;font-size:13px;line-height:1.8}
+.journey-calendar-selection p{margin:4px 0 0;color:#a5c9d7;font-size:12px;line-height:1.8}
+.journey-calendar-selection>span{flex-shrink:0;min-width:36px;color:#5be0d1;font-size:28px;line-height:1.3;text-align:center}
+.journey-calendar-note{margin:13px 0 0;color:#8fb2c3;font-size:11px;line-height:1.9}
+@media(min-width:760px){.journey-calendar-grid,.journey-calendar-weekdays{gap:10px}.journey-calendar-day{min-height:56px}.journey-calendar{padding:26px}}
+@media(max-width:399px){.journey-calendar{padding:15px;border-radius:18px}.journey-calendar-heading{gap:10px;margin-bottom:16px}.journey-calendar-heading h2{font-size:20px}.journey-calendar-summary{min-width:78px;padding:9px 6px}.journey-calendar-summary strong{font-size:25px}.journey-calendar-summary span{font-size:10px}.journey-calendar-weekdays,.journey-calendar-grid{gap:5px}.journey-calendar-weekdays{font-size:9px}.journey-calendar-day{min-height:44px;border-radius:8px;font-size:12px}.journey-calendar-selection{padding:12px;gap:10px}.journey-calendar-selection strong{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.journey-calendar-day{transition:none}.journey-calendar-day:hover{transform:none}}
