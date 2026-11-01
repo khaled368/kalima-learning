@@ -35,7 +35,7 @@ body[data-card-view='grid'] .translation{font-size:20px;line-height:1.65;overflo
  color:var(--example-yellow)!important;font-size:22px!important;line-height:1.9;overflow-wrap:anywhere
 }
 .word-content .source-note,.word-content .translation-note{font-size:14px}
-.example-card button,.word-detail-footer>#word-save,.word-detail-footer>#mark-word,
+.example-card button,.word-detail-footer>#word-next,.word-detail-footer>#mark-word,
 .reference-word-next,.verb-tense-tabs button{font-size:16px;min-height:42px}
 .verb-base-heading h2,.verb-base-heading [lang='de']{font-size:21px}
 .verb-table th,.verb-table td,.grammar-table th,.grammar-table td{font-size:19px;line-height:1.8}
@@ -74,3 +74,11 @@ body[data-card-view='grid'] .translation{font-size:20px;line-height:1.65;overflo
  .verb-table th,.verb-table td,.grammar-table th,.grammar-table td{font-size:18px}
  .analytics-toolbar{flex-wrap:wrap}.analytics-level{min-width:0}
 }
+
+/* Saving stays a single header star; the two footer actions stay together. */
+.word-topbar{grid-template-columns:44px minmax(0,1fr) 44px 62px}
+.word-topbar #word-save{display:inline-grid;place-items:center;width:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:8px;background:transparent;color:#9bd7d8;font:400 29px/1 Arial,sans-serif}
+.word-topbar #word-save.saved{color:#f3cb70}
+.word-detail-footer #word-next{grid-column:1;min-height:45px;padding:9px 10px;border:1px solid #29bcb8;border-radius:9px;background:#073449;color:#b6ebe7;font-size:16px;line-height:1.6;box-shadow:none}
+.word-detail-footer #mark-word{grid-column:2}
+@media(max-width:359px){.word-topbar{grid-template-columns:40px minmax(0,1fr) 40px 57px;gap:4px}.word-topbar .reference-dialog-title{font-size:16px}.word-topbar #word-save{min-width:40px;width:40px}.word-detail-footer>#word-next,.word-detail-footer>#mark-word{font-size:15px;padding-inline:6px}}

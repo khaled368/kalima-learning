@@ -94,7 +94,6 @@ function journeyWords(){const words=cache.get(activeLevel)||[];if(selectedUnit==
 function matchingWords() {
  const query=normalizeSearch($('#search').value.trim()),pos=$('#pos-filter').value;
  const list=journeyWords().filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
- if(selectedUnit===null&&!query&&pos==='all'){const priority=['Tisch','Schule','Buch','lernen'];list.sort((a,b)=>(priority.indexOf(a.german)<0?99:priority.indexOf(a.german))-(priority.indexOf(b.german)<0?99:priority.indexOf(b.german)));}
  return list;
 }
 function setCardView(view) {
@@ -149,7 +148,7 @@ function speak(text,button=null) {
  });
 }
 function stopSpeech(){audioRequest++;if(audioButton){audioButton.removeAttribute('aria-busy');audioButton.classList.remove('audio-playing');audioButton=null;}WORT_AUDIO.stop();}
-function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★ محفوظة':'☆ حفظ';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent=learned.has(currentWord.id)?'تعلّمتها ✓':'تعلّمت هذه الكلمة ✓';}
+function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').classList.toggle('saved',isSaved);$('#word-save').title=isSaved?'إزالة من المحفوظات':'حفظ الكلمة';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent=learned.has(currentWord.id)?'تعلّمتها ✓':'تعلّمت هذه الكلمة ✓';}
 function openWord(word) {
  currentWord=word;wordTab='meaning';verbTense='present';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
