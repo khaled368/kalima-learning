@@ -1,0 +1,66 @@
+/* A brief card turn follows the green learned confirmation. */
+#word-dialog:is(.word-turn-out,.word-turn-in) #word-summary{
+ transform-origin:50% 50%;
+ backface-visibility:hidden;
+ -webkit-backface-visibility:hidden;
+ will-change:transform,opacity;
+ pointer-events:none;
+}
+#word-dialog.word-turn-out #word-summary{
+ animation:word-card-exit var(--word-turn-duration,650ms) cubic-bezier(.4,0,.2,1) forwards;
+}
+#word-dialog.word-turn-in #word-summary{
+ animation:word-card-enter 320ms cubic-bezier(.2,.7,.2,1);
+}
+#word-dialog.word-turn-out #word-content{
+ animation:word-content-exit var(--word-turn-duration,650ms) ease forwards;
+}
+#word-dialog.word-turn-in #word-content{
+ animation:word-content-enter 260ms ease;
+}
+@keyframes word-card-exit{
+ 0%,35%{transform:perspective(900px) rotateY(0deg) scale(1);opacity:1}
+ 100%{transform:perspective(900px) rotateY(-82deg) scale(.98);opacity:.15}
+}
+@keyframes word-card-enter{
+ 0%{transform:perspective(900px) rotateY(82deg) scale(.98);opacity:.15}
+ 100%{transform:perspective(900px) rotateY(0deg) scale(1);opacity:1}
+}
+@keyframes word-content-exit{
+ 0%,35%{opacity:1}
+ 100%{opacity:.2}
+}
+@keyframes word-content-enter{
+ 0%{opacity:.2}
+ 100%{opacity:1}
+}
+@media(prefers-reduced-motion:reduce){
+ #word-dialog.word-turn-out #word-summary{
+  animation-name:word-card-exit-reduced;
+ }
+ #word-dialog.word-turn-in #word-summary{
+  animation-name:word-card-enter-reduced;
+ }
+ #word-dialog.word-turn-out #word-content{
+  animation-name:word-content-exit-reduced;
+ }
+ #word-dialog.word-turn-in #word-content{
+  animation-name:word-content-enter-reduced;
+ }
+}
+@keyframes word-card-exit-reduced{
+ 0%,35%{transform:none;opacity:1}
+ 100%{transform:none;opacity:.8}
+}
+@keyframes word-card-enter-reduced{
+ 0%{transform:none;opacity:.8}
+ 100%{transform:none;opacity:1}
+}
+@keyframes word-content-exit-reduced{
+ 0%,35%{opacity:1}
+ 100%{opacity:.8}
+}
+@keyframes word-content-enter-reduced{
+ 0%{opacity:.8}
+ 100%{opacity:1}
+}

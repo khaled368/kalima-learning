@@ -138,16 +138,19 @@ async function renderSaved() {
 function findWord(value) { return wordMap.get(value)||wordMap.get(Number(value)); }
 function toggleSave(word) { if(saved.has(word.id)){saved.delete(word.id);toast('أُزيلت من المحفوظات');}else{saved.add(word.id);toast('حُفظت الكلمة');}remember();renderCards();if(panel==='saved')renderSaved();if(currentWord?.id===word.id)updateWordControls(); }
 function learnWord(word) { if(learned.has(word.id))return;learned.add(word.id);WORT_HISTORY.record(word);remember();renderCards();if(panel==='saved')renderSaved();toast('كلمة جديدة في رصيدك ✨');if(currentWord?.id===word.id)updateWordControls(); }
-function cancelWordAdvance(){clearTimeout(wordAdvanceTimer);wordAdvanceTimer=null;wordAdvanceVersion++;}
+function cancelWordAdvance(){clearTimeout(wordAdvanceTimer);wordAdvanceTimer=null;wordAdvanceVersion++;$('#word-dialog').classList.remove('word-turn-out','word-turn-in');}
 function markCurrentWord(){
  const word=currentWord,dialog=$('#word-dialog');
  if(!word||!dialog.open||learned.has(word.id)||wordAdvanceTimer!==null)return;
  cancelWordAdvance();const version=wordAdvanceVersion;
  learnWord(word);
+ dialog.style.setProperty('--word-turn-duration',WORD_ADVANCE_DELAY+'ms');
+ dialog.classList.add('word-turn-out');
  wordAdvanceTimer=setTimeout(()=>{
   wordAdvanceTimer=null;
   if(version!==wordAdvanceVersion||!dialog.open||currentWord?.id!==word.id)return;
   nextWord();
+  if(dialog.open)dialog.classList.add('word-turn-in');
  },WORD_ADVANCE_DELAY);
 }
 function speak(text,button=null) {
@@ -363,6 +366,9 @@ $('#open-sources').onclick=()=>{renderSources();$('#sources-dialog').showModal()
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('close',stopSpeech));
 $('#word-dialog').addEventListener('close',cancelWordAdvance);
 $('#word-dialog').addEventListener('cancel',cancelWordAdvance);
+$('#word-summary').addEventListener('animationend',event=>{
+ if(event.target===event.currentTarget&&['word-card-enter','word-card-enter-reduced'].includes(event.animationName))$('#word-dialog').classList.remove('word-turn-in');
+});
 document.addEventListener('wort:speak',event=>{if(event.detail?.text)speak(event.detail.text,event.detail.button||null);});
 WORT_USAGE.start();WORT_USAGE.subscribe(updateUsageStats);
 setInterval(()=>{if(!document.hidden){if(today.day!==WORT_HISTORY.dayKey())updateProgress();if(panel==='progress')updateUsageStats(WORT_USAGE.snapshot());}},1000);
