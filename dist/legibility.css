@@ -102,7 +102,7 @@ body .bottom-nav button:is(.active,[aria-current='page']) {color: #352e64 !impor
   line-height: normal;
   font-weight: 700;
   text-align: start;
-  direction: auto;
+  direction: rtl;
   white-space: nowrap;
   text-overflow: ellipsis;
   box-sizing: border-box;
@@ -128,3 +128,5 @@ body .bottom-nav button:is(.active,[aria-current='page']) {color: #352e64 !impor
 @media (max-width: 359px) {
   #training-panel #training-level {font-size: 17px; padding-inline: 10px 40px;}
 }
+
+html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: start; }
