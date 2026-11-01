@@ -4,6 +4,11 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.os.Handler;
+import android.os.Looper;
+import java.util.concurrent.atomic.AtomicBoolean;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -38,6 +43,21 @@ public final class MainActivity extends Activity {
   private LinearLayout networkError;
   private TextToSpeech androidTts;
   private volatile boolean ttsReady = false;
+  private volatile boolean ttsInitFailed = false;
+  private final Handler speechHandler = new Handler(Looper.getMainLooper());
+  private SpeechRequest waitingSpeech;
+  private int activeSpeechId = -1;
+
+  private static final class SpeechRequest {
+    final String text;
+    final String language;
+    final int id;
+    SpeechRequest(String text, String language, int id) {
+      this.text = text;
+      this.language = language;
+      this.id = id;
+    }
+  }
 
   private int dp(float amount) {
     return Math.round(amount * getResources().getDisplayMetrics().density);
@@ -46,6 +66,7 @@ public final class MainActivity extends Activity {
   @Override
   protected void onCreate(Bundle state) {
     super.onCreate(state);
+    setVolumeControlStream(AudioManager.STREAM_MUSIC);
     getWindow().setStatusBarColor(Color.WHITE);
     getWindow().setNavigationBarColor(Color.WHITE);
     getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -211,13 +232,26 @@ public final class MainActivity extends Activity {
   }
 
   private void initializeSystemSpeech() {
-    androidTts = new TextToSpeech(this, status -> {
-      ttsReady = status == TextToSpeech.SUCCESS;
-      if (ttsReady && androidTts != null) {
+    // TextToSpeech initializes asynchronously. The old build discarded taps
+    // before initialization completed and silently fell back to WebView audio.
+    androidTts = new TextToSpeech(this, status -> runOnUiThread(() -> {
+      ttsReady = status == TextToSpeech.SUCCESS && androidTts != null;
+      ttsInitFailed = !ttsReady;
+      if (ttsReady) {
         androidTts.setSpeechRate(0.96f);
         androidTts.setPitch(1.0f);
+        androidTts.setAudioAttributes(new AudioAttributes.Builder()
+            .setUsage(AudioAttributes.USAGE_MEDIA)
+            .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
+            .build());
       }
-    });
+      if (waitingSpeech != null) {
+        SpeechRequest request = waitingSpeech;
+        waitingSpeech = null;
+        if (ttsReady) playSpeech(request);
+        else sendSpeechStatus(request.id, "engine-unavailable");
+      }
+    }));
   }
 
   private Locale speechLocale(String language) {
@@ -237,22 +271,28 @@ public final class MainActivity extends Activity {
         || support == TextToSpeech.LANG_NOT_SUPPORTED) return false;
     Voice best = null;
     int bestScore = Integer.MIN_VALUE;
-    Set<Voice> voices = androidTts.getVoices();
-    if (voices != null) {
-      for (Voice voice : voices) {
-        if (voice.getLocale() == null
-            || !locale.getLanguage().equals(voice.getLocale().getLanguage())) continue;
-        int score = voice.getQuality();
-        if (locale.getCountry().equals(voice.getLocale().getCountry())) score += 100;
-        if (voice.isNetworkConnectionRequired()) score += 25;
-        if (score > bestScore) {
-          best = voice;
-          bestScore = score;
+    try {
+      Set<Voice> voices = androidTts.getVoices();
+      if (voices != null) {
+        for (Voice voice : voices) {
+          if (voice.getLocale() == null
+              || !locale.getLanguage().equals(voice.getLocale().getLanguage())) continue;
+          int score = voice.getQuality();
+          if (locale.getCountry().equals(voice.getLocale().getCountry())) score += 100;
+          if (!voice.isNetworkConnectionRequired()) score += 50;
+          if (score > bestScore) {
+            best = voice;
+            bestScore = score;
+          }
         }
       }
+    } catch (RuntimeException ignored) {
+      // Some speech engines do not enumerate installed voices.
     }
     if (best != null && androidTts.setVoice(best) == TextToSpeech.SUCCESS) return true;
-    return androidTts.setLanguage(locale) != TextToSpeech.LANG_NOT_SUPPORTED;
+    int fallback = androidTts.setLanguage(locale);
+    return fallback != TextToSpeech.LANG_MISSING_DATA
+        && fallback != TextToSpeech.LANG_NOT_SUPPORTED;
   }
 
   private void sendSpeechStatus(int requestId, String status) {
@@ -264,48 +304,103 @@ public final class MainActivity extends Activity {
     });
   }
 
+  private void playSpeech(SpeechRequest request) {
+    if (androidTts == null || !ttsReady) {
+      sendSpeechStatus(request.id, "engine-unavailable");
+      return;
+    }
+    Locale locale = speechLocale(request.language);
+    if (locale == null || !configureSpeechVoice(locale)) {
+      sendSpeechStatus(request.id, "no-voice");
+      return;
+    }
+    activeSpeechId = request.id;
+    final String requestId = Integer.toString(request.id);
+    final AtomicBoolean retriedDefault = new AtomicBoolean(false);
+    androidTts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+      @Override public void onStart(String id) {
+        if (requestId.equals(id) && activeSpeechId == request.id) {
+          sendSpeechStatus(request.id, "playing");
+        }
+      }
+
+      @Override public void onDone(String id) {
+        if (requestId.equals(id) && activeSpeechId == request.id) {
+          sendSpeechStatus(request.id, "finished");
+        }
+      }
+
+      @Override public void onError(String id) { recoverVoiceOrReport(id); }
+
+      @Override public void onError(String id, int errorCode) { recoverVoiceOrReport(id); }
+
+      @Override public void onStop(String id, boolean interrupted) {
+        if (requestId.equals(id) && activeSpeechId == request.id) {
+          sendSpeechStatus(request.id, "stopped");
+        }
+      }
+
+      private void recoverVoiceOrReport(String id) {
+        if (!requestId.equals(id)) return;
+        speechHandler.post(() -> {
+          if (activeSpeechId != request.id || androidTts == null) return;
+          if (retriedDefault.compareAndSet(false, true)) {
+            // An enhanced/network voice can fail when its data is unavailable.
+            // Retry the default installed locale voice once before giving up.
+            int available = androidTts.setLanguage(locale);
+            if (available != TextToSpeech.LANG_MISSING_DATA
+                && available != TextToSpeech.LANG_NOT_SUPPORTED) {
+              if (androidTts.speak(request.text, TextToSpeech.QUEUE_FLUSH,
+                  null, requestId) == TextToSpeech.SUCCESS) return;
+            }
+          }
+          sendSpeechStatus(request.id, "error");
+        });
+      }
+    });
+    if (androidTts.speak(request.text, TextToSpeech.QUEUE_FLUSH,
+        null, requestId) == TextToSpeech.ERROR) {
+      sendSpeechStatus(request.id, "error");
+    }
+  }
+
   public final class KalimaSpeechBridge {
     @android.webkit.JavascriptInterface
     public void speak(String text, String language, int requestId) {
       if (text == null || text.trim().length() == 0 || text.length() > 2500
-          || requestId < 0 || requestId > 100000000
-          || language == null) {
+          || requestId < 0 || requestId > 100000000 || language == null) {
         sendSpeechStatus(requestId, "error");
         return;
       }
-      final Locale locale = speechLocale(language);
-      if (locale == null) {
-        sendSpeechStatus(requestId, "error");
+      if (speechLocale(language) == null) {
+        sendSpeechStatus(requestId, "no-voice");
         return;
       }
+      final SpeechRequest request = new SpeechRequest(text, language, requestId);
       runOnUiThread(() -> {
-        if (!ttsReady || androidTts == null || !configureSpeechVoice(locale)) {
-          sendSpeechStatus(requestId, "error");
-          return;
+        if (ttsInitFailed) {
+          sendSpeechStatus(request.id, "engine-unavailable");
+        } else if (ttsReady && androidTts != null) {
+          waitingSpeech = null;
+          playSpeech(request);
+        } else {
+          waitingSpeech = request;
+          // Do not silently hang forever if the OS voice engine is missing.
+          speechHandler.postDelayed(() -> {
+            if (waitingSpeech == request) {
+              waitingSpeech = null;
+              sendSpeechStatus(request.id, "engine-unavailable");
+            }
+          }, 8000);
         }
-        final String id = Integer.toString(requestId);
-        androidTts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
-          @Override public void onStart(String utteranceId) {
-            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "playing");
-          }
-          @Override public void onDone(String utteranceId) {
-            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "finished");
-          }
-          @Override public void onError(String utteranceId) {
-            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "error");
-          }
-          @Override public void onStop(String utteranceId, boolean interrupted) {
-            if (id.equals(utteranceId)) sendSpeechStatus(requestId, "stopped");
-          }
-        });
-        int result = androidTts.speak(text, TextToSpeech.QUEUE_FLUSH, null, id);
-        if (result == TextToSpeech.ERROR) sendSpeechStatus(requestId, "error");
       });
     }
 
     @android.webkit.JavascriptInterface
     public void stop() {
       runOnUiThread(() -> {
+        waitingSpeech = null;
+        activeSpeechId = -1;
         if (androidTts != null) androidTts.stop();
       });
     }
@@ -344,6 +439,9 @@ public final class MainActivity extends Activity {
 
   @Override
   protected void onDestroy() {
+    waitingSpeech = null;
+    activeSpeechId = -1;
+    speechHandler.removeCallbacksAndMessages(null);
     if (androidTts != null) {
       androidTts.stop();
       androidTts.shutdown();
