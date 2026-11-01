@@ -1,8 +1,48 @@
-/* Word navigation alone retains the requested black and white palette. */
-.word-detail-footer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));direction:ltr;align-items:stretch;gap:6px;padding:10px 10px calc(10px + env(safe-area-inset-bottom,0px))}
-.word-detail-footer>button{grid-row:1;min-width:0;min-height:48px;padding:7px 5px;font-size:16px;line-height:1.4;white-space:normal;overflow-wrap:anywhere}
-.word-detail-footer>#mark-word{grid-column:1;min-height:48px;padding:7px 5px;font-size:16px;line-height:1.4;border-radius:9px}
-.word-detail-footer>#word-previous{grid-column:2;min-height:48px;padding:7px 5px;font-size:16px;line-height:1.4;border-radius:9px}
+/* Three consistent footer actions: Previous, Learned, Skip.
+   RTL places Previous on the right and Skip on the left. */
+#word-dialog .word-detail-footer {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr);
+  direction: rtl;
+  align-items: stretch;
+  gap: 6px;
+  padding: 10px 10px calc(10px + env(safe-area-inset-bottom,0px));
+}
+#word-dialog .word-detail-footer > button {
+  grid-row: 1;
+  min-width: 0;
+  min-height: 48px;
+  padding: 8px 4px;
+  font-size: 14px;
+  line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  border-radius: 10px;
+}
+#word-dialog .word-detail-footer > #word-previous {grid-column:1; font-size:13px;}
+#word-dialog .word-detail-footer > #mark-word {grid-column:2;}
+#word-dialog .word-detail-footer > #word-skip {
+  grid-column:3;
+  background:#e7f2f4;
+  color:#125762;
+  border:1px solid #88c4ca;
+  font-weight:700;
+}
+html[data-theme='dark'] #word-dialog .word-detail-footer > #word-skip {
+  background:#1c3b4e;
+  color:#e1f7f6;
+  border-color:#438691;
+}
+#word-dialog .word-detail-footer > #word-skip:not(:disabled):active {
+  background:#b7e9e4;
+  color:#133d48;
+  transform:scale(.97);
+}
+@media (max-width:359px) {
+  #word-dialog .word-detail-footer {gap:4px;padding-inline:6px;}
+  #word-dialog .word-detail-footer > button {font-size:12px;padding-inline:3px;}
+  #word-dialog .word-detail-footer > #word-previous {font-size:12px;}
+}
 body button.word-navigation-button{background:#101010!important;background-image:none!important;color:#fff!important;border:1px solid #b0b0b0!important;box-shadow:none!important}
 body button.word-navigation-button:not(:disabled):is(:hover,:focus-visible){border-color:#fff!important}
 body button.word-navigation-button:focus-visible{outline:2px solid #fff!important;outline-offset:3px}
