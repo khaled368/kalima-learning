@@ -1,6 +1,7 @@
 package com.kalima.learning;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
@@ -46,7 +47,8 @@ public final class MainActivity extends Activity {
   private volatile boolean ttsInitFailed = false;
   private final Handler speechHandler = new Handler(Looper.getMainLooper());
   private SpeechRequest waitingSpeech;
-  private int activeSpeechId = -1;
+  private volatile int activeSpeechId = -1;
+  private boolean speechHelpShown = false;
 
   private static final class SpeechRequest {
     final String text;
@@ -295,12 +297,34 @@ public final class MainActivity extends Activity {
         && fallback != TextToSpeech.LANG_NOT_SUPPORTED;
   }
 
+  private void openSpeechSettings() {
+    try {
+      startActivity(new Intent("com.android.settings.TTS_SETTINGS"));
+    } catch (ActivityNotFoundException notFound) {
+      try {
+        startActivity(new Intent(TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA));
+      } catch (ActivityNotFoundException unavailable) {
+        startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS));
+      }
+    }
+  }
+
   private void sendSpeechStatus(int requestId, String status) {
     runOnUiThread(() -> {
       if (webView == null) return;
       String code = "window.dispatchEvent(new CustomEvent('kalima-tts-status',"
           + "{detail:{id:" + requestId + ",status:'" + status + "'}}))";
       webView.evaluateJavascript(code, null);
+      if (!speechHelpShown
+          && ("no-voice".equals(status) || "engine-unavailable".equals(status))) {
+        speechHelpShown = true;
+        new AlertDialog.Builder(this)
+            .setTitle("إعداد الصوت في كلمة")
+            .setMessage("لم يعثر أندرويد على صوت نطق جاهز. افتح إعدادات تحويل النص إلى كلام، واختر محرك النطق وثبّت الصوت الألماني (Deutsch). وتأكد أيضًا من رفع مستوى صوت الوسائط.")
+            .setPositiveButton("إعدادات الصوت", (dialog, which) -> openSpeechSettings())
+            .setNegativeButton("لاحقًا", null)
+            .show();
+      }
     });
   }
 
@@ -335,7 +359,8 @@ public final class MainActivity extends Activity {
       @Override public void onError(String id, int errorCode) { recoverVoiceOrReport(id); }
 
       @Override public void onStop(String id, boolean interrupted) {
-        if (requestId.equals(id) && activeSpeechId == request.id) {
+        if (requestId.equals(id) && activeSpeechId == request.id
+            && !retriedDefault.get()) {
           sendSpeechStatus(request.id, "stopped");
         }
       }
