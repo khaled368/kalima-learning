@@ -1,0 +1,23 @@
+# Kalima Android test APK
+
+This is a small Java Android WebView wrapper around
+https://khaled368.github.io/kalima-learning/ .
+
+* Purpose: test the existing Kalima website in an installable Android APK
+* Internet connection: required for the initial load and most features
+* Android support: API 26 (Android 8) or newer
+* Login: sign in with the existing Supabase account. WebView app storage is
+  separate from Safari/Chrome; cloud-synced progress follows the account.
+* App package: `com.kalima.learning`, version `0.1.0-test`
+* Source: `android/` (Gradle Android application, Java, no extra app libraries)
+* Security: HTTPS only; external links are opened in the phone browser.
+  JavaScript and DOM storage are enabled for the application.
+
+The GitHub Actions workflow `.github/workflows/build-android-apk.yml`
+compiles a debug-signed APK, uploads an Actions artifact, and publishes
+`Kalima-Android-Test.apk` in a public **pre-release** on GitHub.
+
+The APK is for testing and is not a Google Play production release.
+Future builds use ephemeral debug keys, so when installing a newly built
+APK over an older one you may need to uninstall the previous test version.
+To retain progress, use the account sync and confirm it is complete first.
