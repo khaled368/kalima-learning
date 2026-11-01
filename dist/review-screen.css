@@ -1,0 +1,29 @@
+/* Learned-word review: readable headword with pronunciation beside it. */
+#training-panel .training-options{grid-template-columns:minmax(0,1fr)}
+#training-panel .training-options>#start-review{min-height:108px}
+#training-dialog{width:min(94vw,540px);padding:18px 18px 24px;max-height:90dvh;scrollbar-gutter:stable}
+#training-dialog #training-content{min-width:0}
+#training-dialog #training-title{font-size:25px;line-height:1.6;margin:12px 0 17px;color:#ecf8fb}
+#training-dialog .review-session-meta{font-size:16px;line-height:1.8;margin:8px 0 0;color:#a8c9d4}
+#training-dialog .review-session-track{height:7px;margin-bottom:22px}
+#training-dialog .review-word-heading{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0;margin:22px 0 12px;padding:20px 14px;border:1px solid #2b6071;border-radius:17px;background:#0b3041}
+#training-dialog .review-word{min-width:0;max-width:100%;font:700 clamp(36px,8vw,44px)/1.4 var(--latin);color:#f4fbfd;overflow-wrap:anywhere;text-align:center}
+#training-dialog .review-word .article{font-weight:500}
+#training-dialog .review-speak{display:inline-grid;place-items:center;flex:0 0 46px;width:46px;height:46px;min-width:46px;min-height:46px;padding:10px;border-radius:50%;line-height:1}
+#training-dialog .review-speak svg{width:24px;height:24px;display:block}
+#training-dialog .review-question{font-size:21px;line-height:1.7;margin:15px 0 8px;color:#d7eaf0}
+#training-dialog .quiz-options{gap:11px;margin:17px 0 10px}
+#training-dialog .quiz-options>button{min-height:76px;padding:13px 11px;font-size:20px;line-height:1.7;border-radius:14px;overflow-wrap:anywhere}
+#training-dialog .feedback{min-height:34px;margin:15px 0;font-size:18px;line-height:1.8;color:#d7ebef}
+#training-dialog #session-next{width:100%;min-height:52px;font-size:19px;border-radius:13px}
+#training-dialog .review-summary{padding:24px 16px;margin:20px 0;border:1px solid #2b6071;border-radius:17px;background:#0b3041}
+#training-dialog .review-summary>strong{display:block;font-size:44px;line-height:1.5;color:#effffc}
+#training-dialog .review-summary>p,#training-dialog .review-summary-note{font-size:18px;line-height:1.9;color:#b7d2dc;margin:10px 0}
+#training-dialog .review-summary-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+#training-dialog .review-summary-actions>button{flex:1;min-width:140px;min-height:50px;font-size:18px}
+@media(max-width:359px){
+ #training-dialog{padding-inline:12px}
+ #training-dialog .review-word-heading{gap:9px;padding-inline:10px}
+ #training-dialog .quiz-options{gap:9px}
+ #training-dialog .quiz-options>button{padding:11px 8px;font-size:18px}
+}

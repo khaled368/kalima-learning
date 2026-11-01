@@ -16,7 +16,8 @@ const cache = new Map();
 const wordMap = new Map();
 let manifest = null, activeLevel = 'A1', panel = 'library', pageSize = 24, currentWord = null, wordTab = 'meaning';
 let badgesReturnPanel = 'library';
-let journeyView=null,calendarView=null,selectedUnit=null;
+let calendarView=null;
+const DAILY_GOAL=20;
 let session = null, toastTimer, loadRequest = 0;
 const safeRead = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const storedSet = key => { const value=safeRead(key,[]); return new Set(Array.isArray(value)?value.filter(id=>typeof id==='number'||typeof id==='string').map(id=>typeof id==='string'&&/^\d+$/.test(id)&&Number(id)<90?Number(id):id):[]); };
@@ -66,21 +67,20 @@ function updateProgress() {
  $('#level-learned').textContent=`${levelDone} من ${levelCount} كلمة تعلّمتها`;
  $('#level-bar').style.width=`${levelCount?levelDone/levelCount*100:0}%`;
  $('#level-bar').parentElement.setAttribute('aria-valuenow',String(levelCount?Math.round(levelDone/levelCount*100):0));
- $('#daily-goal-count').textContent=`${today.ids.length.toLocaleString('ar')} / ${WORT_JOURNEY.dailyGoal.toLocaleString('ar')}`;$('#daily-goal-status').textContent=today.ids.length>=WORT_JOURNEY.dailyGoal?'اكتمل الهدف · واصل بكلمة جديدة':'افتح كلمة جديدة وابدأ التعلّم';$('#daily-goal-button').classList.toggle('is-complete',today.ids.length>=WORT_JOURNEY.dailyGoal);
+ $('#daily-goal-count').textContent=`${today.ids.length.toLocaleString('ar')} / ${DAILY_GOAL.toLocaleString('ar')}`;$('#daily-goal-status').textContent=today.ids.length>=DAILY_GOAL?'اكتمل الهدف · واصل بكلمة جديدة':'افتح كلمة جديدة وابدأ التعلّم';$('#daily-goal-button').classList.toggle('is-complete',today.ids.length>=DAILY_GOAL);
  $('#stats-learned').textContent=done.toLocaleString('ar');$('#stats-today').textContent=today.ids.length.toLocaleString('ar');$('#stats-saved').textContent=saved.size.toLocaleString('ar');updateOwnedShield();if(panel==='badges')renderBadges();
  updateReviewAvailability();
- renderJourney();
  if(panel==='progress')renderProgress();
 }
 async function selectLevel(code) {
- activeLevel=code;pageSize=24;selectedUnit=null;const request=++loadRequest;
+ activeLevel=code;pageSize=24;const request=++loadRequest;
  document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===code);b.setAttribute('aria-pressed',String(b.dataset.level===code));});
  const level=LEVELS.find(level=>level.code===code);
  $('#level-title').textContent=`${code} · ${level.name}`;$('#level-caption').textContent='قسم المستوى';$('#level-description').textContent=level.description;
  $('#level-count').textContent=`${manifest?.levels.find(l=>l.code===code)?.count||0} كلمة`;
  $('#training-level').value=code;$('#search').value='';$('#pos-filter').value='all';
  $('#cards').innerHTML='<p class="empty">جارٍ تحميل البطاقات…</p>';$('#load-more').hidden=true;status('');updateProgress();
- try { await loadLevel(code);if(request!==loadRequest)return;renderJourney();renderCards(); }
+ try { await loadLevel(code);if(request!==loadRequest)return;renderCards(); }
  catch(error){if(request!==loadRequest)return;$('#cards').innerHTML='<div class="empty">تعذّر تحميل الكلمات. <button class="secondary" id="retry-level">حاول مرة أخرى</button></div>';$('#retry-level').onclick=()=>selectLevel(code);status(error.message);}
 }
 async function startDailyGoal(){
@@ -90,22 +90,14 @@ async function startDailyGoal(){
   const words=await loadLevel(code);if(panel!=='library'||activeLevel!==code)return;
   const word=words.find(word=>!learned.has(word.id));
   if(!word){toast('أكملت كلمات هذا المستوى. اختر مستوى آخر أو راجع ما تعلّمته.');return;}
-  selectJourneyUnit(null);openWord(word);
+  pageSize=24;$('#search').value='';$('#pos-filter').value='all';renderCards();openWord(word);
  }catch(error){toast(error.message||'تعذّر فتح كلمات الهدف. حاول مجددًا.');}
  finally{button.disabled=false;button.removeAttribute('aria-busy');}
 }
 function normalizeSearch(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ß/g,'ss'); }
-function renderJourney(){
- refreshToday();
- const model={level:activeLevel,words:cache.get(activeLevel)||[],learnedIds:[...learned],todayCount:today.ids.length,selectedUnit,onUnitChange:selectJourneyUnit,onContinue:continueJourney};
- if(journeyView)journeyView.update(model);else journeyView=WORT_JOURNEY.mount($('#journey-content'),model);
-}
-function selectJourneyUnit(index){selectedUnit=index;pageSize=24;$('#search').value='';$('#pos-filter').value='all';renderJourney();renderCards();}
-function continueJourney(id){const words=cache.get(activeLevel)||[],stats=WORT_JOURNEY.calculate({level:activeLevel,words,learnedIds:[...learned],selectedUnit});const unit=stats.units.find(unit=>unit.wordIds.some(wordId=>String(wordId)===String(id)));if(!unit)return;selectJourneyUnit(unit.index);openWord(findWord(id));}
-function journeyWords(){const words=cache.get(activeLevel)||[];if(selectedUnit===null)return words;const unit=WORT_JOURNEY.calculate({level:activeLevel,words,learnedIds:[...learned],selectedUnit}).units[selectedUnit];return (unit?.wordIds||[]).map(findWord).filter(Boolean);}
 function matchingWords() {
  const query=normalizeSearch($('#search').value.trim()),pos=$('#pos-filter').value;
- const list=journeyWords().filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
+ const list=(cache.get(activeLevel)||[]).filter(word=>!learned.has(word.id)&&(pos==='all'||(pos==='other'?!['noun','verb','adjective'].includes(word.pos):word.pos===pos))&&(!query||normalizeSearch(`${word.article||''} ${word.german} ${word.arabic}`).includes(query)));
  return list;
 }
 function setCardView(view) {
@@ -118,8 +110,8 @@ function card(word) {
  return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos]||POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id)?'<span class="learned-badge" aria-label="تعلّمتها">✓</span>':'<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="de" dir="ltr">${word.article?`${articleHtml(word.article)} `:''}${esc(word.german)}</span><span class="translation" lang="ar" dir="rtl">${esc(word.arabic)}</span></span><span class="reference-card-icon" aria-hidden="true">${wordArtwork(word)}</span></button><div class="card-actions"><button class="save-button ${saved.has(word.id)?'saved':''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id)?'إزالة من المحفوظات':'حفظ الكلمة'}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id)?'★':'☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">${SPEAKER_ICON}</button></div></article>`;
 }
 function renderCards() {
- const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة غير متعلّمة${selectedUnit===null?'':` · الخطوة ${(selectedUnit+1).toLocaleString('ar')}`} · ${Math.min(pageSize,list.length)} معروضة`;
- $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):(($('#search').value||$('#pos-filter').value!=='all')?'<div class="empty">لم نجد كلمات غير متعلّمة تطابق البحث. تجد الكلمات السابقة في المراجعة.</div>':selectedUnit!==null?'<div class="empty"><h3>أكملت كلمات هذه الخطوة ✓</h3><p>اختر خطوتك التالية من المسار، أو اعرض كل مفردات المستوى.</p><button class="secondary" data-all-journey>كل مفردات المستوى ←</button></div>':'<div class="empty"><h3>أكملت كلمات هذا المستوى 🌿</h3><p>يمكنك مراجعتها أو الانتقال إلى مستوى آخر.</p><button class="secondary" data-review-learned>مراجعة ما تعلّمته</button></div>');
+ const list=matchingWords();$('#results-count').textContent=`${list.length.toLocaleString('ar')} كلمة غير متعلّمة · ${Math.min(pageSize,list.length)} معروضة`;
+ $('#cards').innerHTML=list.length?list.slice(0,pageSize).map(card).join(''):(($('#search').value||$('#pos-filter').value!=='all')?'<div class="empty">لم نجد كلمات غير متعلّمة تطابق البحث. تجد الكلمات السابقة في المراجعة.</div>':'<div class="empty"><h3>أكملت كلمات هذا المستوى 🌿</h3><p>يمكنك مراجعتها أو الانتقال إلى مستوى آخر.</p><button class="secondary" data-review-learned>مراجعة الكلمات</button></div>');
  $('#load-more').hidden=pageSize>=list.length;
 }
 async function showPanel(name) {
@@ -160,7 +152,7 @@ function speak(text,button=null) {
  });
 }
 function stopSpeech(){audioRequest++;if(audioButton){audioButton.removeAttribute('aria-busy');audioButton.classList.remove('audio-playing');audioButton=null;}WORT_AUDIO.stop();}
-function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').classList.toggle('saved',isSaved);$('#word-save').title=isSaved?'إزالة من المحفوظات':'حفظ الكلمة';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent=learned.has(currentWord.id)?'تعلّمتها ✓':'تعلّمت هذه الكلمة ✓';}
+function updateWordControls() {const isSaved=saved.has(currentWord.id);$('#word-save').textContent=isSaved?'★':'☆';$('#word-save').classList.toggle('saved',isSaved);$('#word-save').title=isSaved?'إزالة من المحفوظات':'حفظ الكلمة';$('#word-save').setAttribute('aria-pressed',String(isSaved));$('#word-save').setAttribute('aria-label',isSaved?'إزالة من المحفوظات':'حفظ الكلمة');$('#mark-word').disabled=learned.has(currentWord.id);$('#mark-word').textContent='تعلّمتها ✓';}
 function openWord(word) {
  currentWord=word;wordTab='meaning';verbTense='present';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
@@ -262,12 +254,13 @@ function grammarHtml(word) {
  if(!word.declensionStem&&!word.forms?.length&&!word.verbForms&&!word.plural)html+='<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
  return html;
 }
-function nextWord(){const list=panel==='library'&&currentWord.level===activeLevel?journeyWords():cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast(selectedUnit===null?'أكملت كلمات المستوى. يمكنك مراجعتها في قسم التدرّب.':'أكملت هذه الخطوة! اختر الخطوة التالية من المسار.');}
+function nextWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index+offset)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة.');}
+function previousWord(){const list=cache.get(currentWord.level)||[],index=list.findIndex(word=>word.id===currentWord.id);for(let offset=1;offset<=list.length;offset++){const word=list[(index-offset+list.length)%list.length];if(panel!=='library'||!learned.has(word.id)){openWord(word);return;}}$('#word-dialog').close();toast('أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة.');}
 function progressModel(){const history=WORT_HISTORY.snapshot();return {history,learnedIds:[...learned],savedIds:[...saved],total:totalWords(),levelCounts:Object.fromEntries(LEVELS.map(level=>[level.code,manifest?.levels.find(item=>item.code===level.code)?.count||0])),unknownCount:history?.undatedIds.length||0,loadLevel,speak};}
 function formatHours(ms){return (Math.max(0,Number(ms)||0)/3600000).toLocaleString('ar',{maximumFractionDigits:2});}
 function updateUsageStats(snapshot){if(!snapshot)return;$('#journey-hours').textContent=formatHours(snapshot.activeMs);$('#journey-active-days').textContent=snapshot.totalDays.toLocaleString('ar');$('#usage-total').textContent=formatHours(snapshot.activeMs);$('#usage-days').textContent=snapshot.totalDays.toLocaleString('ar');const current=WORT_HISTORY.dayKey();$('#usage-today').textContent=formatHours(snapshot.days.find(day=>day.day===current)?.activeMs||0);$('#usage-start').textContent=`بدأ التسجيل: ${snapshot.startedAt}`;$('#usage-live').textContent=snapshot.isIdle?'متوقف مؤقتًا لعدم التفاعل':snapshot.isActive?'● يُحتسب وقتك الآن':'متوقف مؤقتًا';$('#usage-live').classList.toggle('is-active',snapshot.isActive&&!snapshot.isIdle);if(snapshot.persistent===false)$('#usage-note').textContent='التخزين غير متاح في هذا المتصفح؛ الوقت الحالي محسوب لهذه الجلسة فقط. الوقت السابق لتفعيل الميزة لم يكن مسجّلًا.';}
 function updateReviewAvailability(){const current=countLearned(activeLevel),training=countLearned($('#training-level').value||activeLevel);$('#review-level').hidden=current===0;$('#start-review').hidden=training===0;$('#review-empty-note').hidden=training>0;$('.training-options').dataset.reviewAvailable=String(training>0);document.querySelectorAll('[data-review-learned]').forEach(button=>button.hidden=current===0);}
-function reviewLearned(){showPanel('training');$('#training-level').value=activeLevel;$('#training-scope').value='learned';updateReviewAvailability();}
+function reviewLearned(){showPanel('training');$('#training-level').value=activeLevel;updateReviewAvailability();}
 function renderProgress() {
  if(!manifest)return;
  const model=progressModel();
@@ -297,55 +290,60 @@ function renderBadges(){
 }
 
 function shuffled(list) {const out=[...list];for(let i=out.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+let reviewRequest = 0;
 async function startSession(type,code) {
+ const request=++reviewRequest,originPanel=panel;
  status('');try {
-  const allWords=await loadLevel(code),scope=type==='review'?'learned':$('#training-scope').value;const pool=allWords.filter(word=>scope==='all'||(scope==='learned'?learned.has(word.id):!learned.has(word.id)));if(pool.length<(type==='review'?1:4)){toast(type==='review'?'تعلّم كلمة في هذا المستوى أولًا لتظهر في المراجعة.':scope==='learned'?'تحتاج أربع كلمات متعلّمة على الأقل لهذا الاختبار.':'لا توجد كلمات كافية لهذا التدريب.');return;}
-  session={type,code,pool,words:shuffled(pool).slice(0,10),index:0,score:0,answered:false};renderSession();$('#training-dialog').showModal();
- }catch(error){status(error.message);toast(error.message);}
+  const allWords=await loadLevel(code);
+  if(request!==reviewRequest||panel!==originPanel||(originPanel==='training'&&$('#training-level').value!==code)||(originPanel==='library'&&activeLevel!==code))return;
+  const pool=allWords.filter(word=>learned.has(word.id));
+  if(!pool.length){toast('تعلّم كلمة في هذا المستوى أولًا لتظهر في المراجعة.');return;}
+  session={type:'review',code,pool,allWords,words:shuffled(pool).slice(0,10),index:0,score:0,answered:false};
+  renderSession();if(!$('#training-dialog').open)$('#training-dialog').showModal();
+ }catch(error){if(request!==reviewRequest)return;status(error.message);toast(error.message);}
 }
 function renderSession() {
- const s=session,done=s.index===s.words.length;
- if(done){$('#training-content').innerHTML=`<p class="eyebrow">المستوى ${s.code}</p><h2 id="training-title">${s.type==='quiz'?'أكملت الاختبار 🎉':'أكملت المراجعة 🌱'}</h2><p class="quiz-word">${s.type==='quiz'?`${s.score} / ${s.words.length}`:`${s.words.length} كلمات`}</p><p>كل محاولة تجعل الكلمات أقرب إليك.</p><button class="primary" id="session-again">جلسة جديدة</button>`;$('#session-again').onclick=()=>{$('#training-dialog').close();startSession(s.type,s.code);};return;}
- const word=s.words[s.index];s.answered=false;
- let html=`<p class="eyebrow">${s.code} · ${s.index+1} من ${s.words.length}</p><h2 id="training-title">${s.type==='quiz'?'ما معنى هذه الكلمة؟':'بطاقات المراجعة'}</h2><div class="track"><i style="width:${s.index/s.words.length*100}%"></i></div><p class="quiz-word" lang="de" dir="ltr">${word.article?articleHtml(word.article)+' ':''}${esc(word.german)}</p><button class="secondary" id="session-speak">استمع ♬</button>`;
- if(s.type==='quiz'){
-  const distractors=shuffled([...new Map(s.pool.filter(w=>w.id!==word.id&&w.arabic!==word.arabic).map(w=>[w.arabic,w])).values()]).slice(0,3);s.options=shuffled([word,...distractors]);
-  html+=`<div class="quiz-options">${s.options.map((w,i)=>`<button data-answer="${i}">${esc(w.arabic)}</button>`).join('')}</div><p class="feedback" aria-live="polite"></p><button class="primary" id="session-next" hidden>التالي ←</button>`;
- }else html+='<div id="review-answer" aria-live="polite"></div><div class="review-controls"><button class="secondary" id="review-reveal">أظهر المعنى والمثال</button><button class="primary" id="session-next" hidden>تعلّمتها ←</button><button class="secondary" id="review-skip">راجعها لاحقًا</button></div>';
- $('#training-content').innerHTML=html;$('#session-speak').onclick=()=>speak(`${word.article||''} ${word.german}`,$('#session-speak'));
- if(s.type==='quiz')document.querySelectorAll('[data-answer]').forEach(button=>button.onclick=()=>{
-  if(s.answered)return;s.answered=true;const correct=s.options[+button.dataset.answer].id===word.id;
-  document.querySelectorAll('[data-answer]').forEach(b=>{b.disabled=true;if(s.options[+b.dataset.answer].id===word.id)b.classList.add('correct');});
-  if(correct){s.score++;learnWord(word);}else button.classList.add('incorrect');
-  $('.feedback').textContent=correct?'إجابة صحيحة! ✨':`المعنى الصحيح: ${word.arabic}`;$('#session-next').hidden=false;
- });else{
-  $('#review-reveal').onclick=()=>{$('#review-answer').innerHTML=`<p class="definition">${esc(word.arabic)}</p>${word.examples?.length?exampleHtml(word.examples[0]):''}`;$('#review-reveal').hidden=true;$('#session-next').hidden=false;};
-  $('#review-skip').onclick=()=>{s.index++;renderSession();};
+ const s=session;if(!s)return;
+ if(s.index===s.words.length){
+  $('#training-content').innerHTML=`<p class="eyebrow">مراجعة ${esc(s.code)}</p><h2 id="training-title">أكملت مراجعتك ✓</h2><div class="review-summary"><strong dir="ltr">${s.score} / ${s.words.length}</strong><p>إجابات صحيحة من الكلمات التي راجعتها</p></div><p class="review-summary-note">المراجعة تثبّت كلماتك المتعلّمة، ولا تضيف كلمات جديدة إلى تقدّمك.</p><div class="review-summary-actions"><button class="primary" id="session-again" type="button">مراجعة جديدة ↻</button><button class="secondary" id="session-finish" type="button">العودة للمراجعة</button></div>`;
+  $('#session-again').onclick=()=>{$('#training-dialog').close();startSession('review',s.code);};
+  $('#session-finish').onclick=()=>$('#training-dialog').close();return;
  }
- $('#session-next').onclick=()=>{if(s.type==='review')learnWord(word);s.index++;renderSession();};
+ const word=s.words[s.index];s.answered=false;
+ const distractors=shuffled([...new Map(s.allWords.filter(candidate=>candidate.id!==word.id&&candidate.arabic!==word.arabic).map(candidate=>[candidate.arabic,candidate])).values()]).slice(0,3);
+ s.options=shuffled([word,...distractors]);
+ $('#training-content').innerHTML=`<p class="eyebrow review-session-meta">مراجعة ${esc(s.code)} · ${s.index+1} من ${s.words.length}</p><h2 id="training-title">مراجعة كلماتك</h2><div class="track review-session-track" role="progressbar" aria-label="تقدّم جلسة المراجعة" aria-valuemin="0" aria-valuemax="${s.words.length}" aria-valuenow="${s.index}"><i style="width:${s.index/s.words.length*100}%"></i></div><div class="review-word-heading" dir="ltr"><span class="review-word" lang="de">${word.article?articleHtml(word.article)+' ':''}${esc(word.german)}</span><button class="icon-button review-speak" id="session-speak" type="button" aria-label="استمع إلى ${esc((word.article?word.article+' ':'')+word.german)}" title="استمع إلى الكلمة">${SPEAKER_ICON}</button></div><p class="review-question">ما معنى هذه الكلمة؟</p><div class="quiz-options" role="group" aria-label="اختر معنى الكلمة">${s.options.map((candidate,index)=>`<button type="button" data-answer="${index}">${esc(candidate.arabic)}</button>`).join('')}</div><p class="feedback" role="status" aria-live="polite"></p><button class="primary${s.index===s.words.length-1?'':' word-navigation-button'}" id="session-next" type="button" hidden>${s.index===s.words.length-1?'نتيجة المراجعة':'الكلمة التالية'} ←</button>`;
+ $('#session-speak').onclick=()=>speak(`${word.article||''} ${word.german}`,$('#session-speak'));
+ $('#training-content').querySelectorAll('[data-answer]').forEach(button=>button.onclick=()=>{
+  if(s.answered)return;s.answered=true;
+  const correct=s.options[Number(button.dataset.answer)].id===word.id;
+  $('#training-content').querySelectorAll('[data-answer]').forEach(option=>{option.disabled=true;if(s.options[Number(option.dataset.answer)].id===word.id)option.classList.add('correct');});
+  if(correct)s.score++;else button.classList.add('incorrect');
+  $('#training-content .feedback').textContent=correct?'✓ إجابة صحيحة':'المعنى الصحيح: '+word.arabic;
+  $('#session-next').hidden=false;
+ });
+ $('#session-next').onclick=()=>{if(!s.answered)return;s.index++;renderSession();};
 }
 function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.levelNote||'تصنيف المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.')}</p>${(manifest?.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)}</a><p class="source-note">${esc(source.license||'')}</p>${source.note?`<p>${esc(source.note)}</p>`:''}</div>`).join('')}<h3>تنزيل بيانات المفردات</h3><div class="data-downloads">${LEVELS.map(level=>`<a href="data/${level.code}.json" download="Wort-${level.code}.json">${level.code} · 2000 مفردة</a>`).join('')}<a href="data/verbs.json" download="Wort-Verbs.json">جداول تصريف الأفعال</a></div><p class="source-note">التقدّم والمحفوظات ونتائج التقييم ووقت الاستخدام محفوظة محليًا في هذا المتصفح. حذف بيانات المتصفح يمحوها. يعمل النطق بمحرك ألماني مضمّن يُحمّل عند أول استخدام. يبدأ تسجيل تواريخ التعلّم ووقت الاستخدام من تفعيل الميزة؛ الكلمات القديمة غير المؤرّخة لا تُوزَّع على أيام تخمينية.</p>`;}
 
 document.querySelectorAll('[data-card-view]').forEach(button=>button.onclick=()=>setCardView(button.dataset.cardView));
 setCardView(cardView);
 $('#daily-goal-button').onclick=startDailyGoal;
-$('#search').oninput=()=>{if(selectedUnit!==null){selectedUnit=null;renderJourney();}pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
+$('#search').oninput=()=>{pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};
 document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.id==='home-shield-button'&&panel==='badges'?badgesReturnPanel:b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
-$('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;
+$('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;$('#word-previous').onclick=previousWord;
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
 $('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?buttons.length-1:(index+(e.key==='ArrowLeft'?1:-1)+buttons.length)%buttons.length;buttons[next].click();buttons[next].focus();};
 document.body.addEventListener('click',e=>{
  if(e.target.closest('[data-retry-verbs]')){renderWord();return;}
- if(e.target.closest('[data-expand-journey]')){$('#journey-content [data-journey-action="expand"]').click();return;}
- if(e.target.closest('[data-all-journey]')){selectJourneyUnit(null);return;}
  if(e.target.closest('[data-review-learned]')){reviewLearned();return;}
  const tenseButton=e.target.closest('[data-verb-tense]');if(tenseButton){verbTense=tenseButton.dataset.verbTense;renderWord();document.querySelector(`[data-verb-tense="${verbTense}"]`)?.focus({preventScroll:true});return;}
  const open=e.target.closest('[data-open]'),save=e.target.closest('[data-save]'),audio=e.target.closest('[data-speak]'),example=e.target.closest('[data-example-speak]');
  if(open){const word=findWord(open.dataset.open);if(word)openWord(word);}if(save){const word=findWord(save.dataset.save);if(word)toggleSave(word);}if(audio){const word=findWord(audio.dataset.speak);if(word)speak(`${word.article||''} ${word.german}`,audio);}if(example)speak(example.dataset.exampleSpeak,example);if(e.target.closest('[data-pronounce]'))speak(`${currentWord.article||''} ${currentWord.german}`,e.target.closest('[data-pronounce]'));if(e.target.closest('[data-detail-examples]')){wordTab='examples';renderWord();}
 });
 $('#training-level').onchange=updateReviewAvailability;
-$('#review-level').onclick=()=>startSession('review',activeLevel);$('#quiz-level').onclick=()=>startSession('quiz',activeLevel);$('#start-review').onclick=()=>startSession('review',$('#training-level').value);$('#start-quiz').onclick=()=>startSession('quiz',$('#training-level').value);$('#training-close').onclick=()=>$('#training-dialog').close();
+$('#review-level').onclick=()=>startSession('review',activeLevel);$('#start-review').onclick=()=>startSession('review',$('#training-level').value);$('#training-close').onclick=()=>{$('#training-dialog').close();reviewRequest++;};
 $('#open-sources').onclick=()=>{renderSources();$('#sources-dialog').showModal();};$('#sources-close').onclick=()=>$('#sources-dialog').close();
 document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('close',stopSpeech));
 document.addEventListener('wort:speak',event=>{if(event.detail?.text)speak(event.detail.text,event.detail.button||null);});

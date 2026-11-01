@@ -1,0 +1,50 @@
+/* Direct vocabulary homepage, level progress and search disclosure. */
+#library-panel>.welcome{padding:22px 0 16px}
+#library-panel>.welcome>.hero-title{text-align:right}
+#library-panel>.welcome>.hero-subtitle{display:block;margin:7px 0 0}
+#library-panel>.overall-progress{display:block;padding:15px 17px;margin:0 0 17px;border:1px solid #1d5a6a;border-radius:17px;background:linear-gradient(125deg,#0b394a,#062b3d);box-shadow:0 8px 24px #00131f24}
+#library-panel>.overall-progress .progress-label{font-size:15px;line-height:1.7;gap:12px}
+#library-panel>.overall-progress .progress-label small{font-size:14px;line-height:1.7}
+#library-panel>.overall-progress .progress-label strong{font-size:18px;color:#72eadc;white-space:nowrap}
+#library-panel>.overall-progress .track{height:7px;margin:8px 0}
+#library-panel #level-tabs{direction:rtl;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin:17px 0 13px;padding:4px;border:1px solid #17495b;border-radius:14px;background:#062536}
+#library-panel #level-tabs .level-tab{min-width:0;min-height:64px;padding:7px 2px;border:1px solid transparent;border-radius:10px;gap:2px;background:transparent;color:#dbedf4}
+#library-panel #level-tabs .level-tab strong{font-size:20px;line-height:1.4}
+#library-panel #level-tabs .level-tab small{display:block;color:#a3c3cf;font-size:11px;line-height:1.6;white-space:normal}
+#library-panel #level-tabs .level-tab.active{border-color:#57ebdb;background:linear-gradient(140deg,#28cfc0,#5ce6d1);color:#06313a;box-shadow:0 3px 12px #13b6af1c}
+#library-panel #level-tabs .level-tab.active small{color:#0a4b53}
+#library-panel>.level-summary{display:block;margin:13px 0 14px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;text-align:right}
+#library-panel>.level-summary .section-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 9px;padding:0}
+#library-panel>.level-summary .section-heading>div{display:block;min-width:0}
+#library-panel>.level-summary h2{font-size:23px;line-height:1.6;margin:0}
+#library-panel>.level-summary #level-caption,#library-panel>.level-summary>#level-description{display:none}
+#library-panel>.level-summary>.track{display:block;height:7px}
+#library-panel>.level-summary>.progress-label{display:flex;margin:7px 0 0}
+#library-panel #level-count{display:block;margin:0;font-size:16px;line-height:1.7;color:#b3cfdb;white-space:nowrap}
+#library-panel #level-learned{font-size:15px;line-height:1.8;color:#b3cfdb}
+#library-panel #daily-goal-button{margin:16px 0}
+#library-panel .library-controls,#library-panel .library-controls:not([open]),#library-panel .library-controls[open]{float:none;clear:both;width:100%;min-width:0;min-height:0;margin:12px 0;padding:0 13px;border:1px solid #20566a;border-radius:12px;background:#06293b}
+#library-panel .library-controls>summary,#library-panel .library-controls:not([open])>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:46px;margin:0;color:#b8d8e2;font-size:17px;line-height:1.7}
+#library-panel .library-controls>summary>span,#library-panel .library-controls:not([open])>summary>span{display:inline}
+#library-panel .library-controls>summary::after,#library-panel .library-controls:not([open])>summary::after{display:inline;content:'+';color:#75e5d8;font-size:23px;line-height:1}
+#library-panel .library-controls[open]>summary::after{content:'−'}
+#library-panel .library-controls .library-study-actions{margin:10px 0 13px}
+#library-panel .library-controls .toolbar{grid-template-columns:minmax(0,1fr) minmax(94px,.42fr)}
+#library-panel .library-controls .toolbar>*{min-width:0}
+@media(max-width:359px){
+ #library-panel>.welcome{padding-top:17px}
+ #library-panel>.overall-progress{padding:13px}
+ #library-panel>.overall-progress .progress-label{font-size:14px;gap:8px}
+ #library-panel>.overall-progress .progress-label strong{font-size:17px}
+ #library-panel #level-tabs{gap:2px;padding:3px}
+ #library-panel #level-tabs .level-tab{min-height:60px;padding-inline:1px}
+ #library-panel #level-tabs .level-tab small{font-size:10px}
+ #library-panel>.level-summary .section-heading{gap:8px}
+ #library-panel>.level-summary h2{font-size:21px}
+ #library-panel #level-count{font-size:15px}
+ #library-panel .library-controls{padding-inline:10px}
+}
+
+
+#library-panel .library-study-actions{display:grid;grid-template-columns:minmax(0,1fr);margin:10px 0 13px}
+#library-panel .library-study-actions:has(#review-level[hidden]){display:none}

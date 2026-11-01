@@ -1,0 +1,137 @@
+/* Floating navigation with clear turquoise selection and safe-area spacing. */
+body .app-shell {
+  padding-bottom: calc(122px + env(safe-area-inset-bottom, 0px));
+}
+body .bottom-nav {
+  position: fixed;
+  z-index: 40;
+  inset-inline: 0;
+  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch;
+  direction: rtl;
+  width: min(calc(100% - 24px), 680px);
+  max-width: 680px;
+  margin-inline: auto;
+  padding: 6px;
+  gap: 2px;
+  border: 1px solid #2a5667;
+  border-radius: 25px;
+  background: #052334f5;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 12px 34px #0006, 0 2px 8px #0004, inset 0 1px 0 #ffffff0a;
+}
+body .bottom-nav button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 64px;
+  margin: 0;
+  padding: 8px 1px 7px;
+  gap: 5px;
+  border: 0 !important;
+  border-radius: 18px;
+  background: transparent !important;
+  background-image: none !important;
+  color: #a5c3ce !important;
+  box-shadow: none !important;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+body .bottom-nav button > span:first-child {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  line-height: 1;
+  color: inherit !important;
+}
+body .bottom-nav button svg {
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin: 0;
+  stroke-width: 1.8;
+  color: inherit !important;
+}
+body .bottom-nav button small {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: inherit !important;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+body .bottom-nav button::after {
+  display: none !important;
+  content: none;
+}
+body .bottom-nav button:is(.active, [aria-current="page"]) {
+  background: linear-gradient(125deg,#29cfc0,#5ae3d0) !important;
+  color: #052c36 !important;
+  box-shadow: 0 2px 8px #0003 !important;
+}
+body .bottom-nav button:is(.active, [aria-current="page"]) small {
+  font-weight: 700;
+}
+@media (hover: hover) {
+  body .bottom-nav button:not(.active):not([aria-current="page"]):not(:disabled):hover {
+    background: #123d4b !important;
+    color: #fff !important;
+  }
+}
+body .bottom-nav button:not(:disabled):not([aria-disabled="true"]):is(:active, .is-pressed) {
+  background: linear-gradient(125deg,#29cfc0,#5ae3d0) !important;
+  color: #052c36 !important;
+  box-shadow: none !important;
+  transform: scale(.96);
+}
+body .bottom-nav button:is(.active, [aria-current="page"]):not(:disabled):not([aria-disabled="true"]):is(:active, .is-pressed) {
+  background: #123d4b !important;
+  color: #fff !important;
+  box-shadow: inset 0 0 0 1px #76e6d5 !important;
+}
+body .bottom-nav button:focus-visible {
+  outline: 2px solid #83f4e3 !important;
+  outline-offset: 3px;
+}
+body .bottom-nav button:disabled,
+body .bottom-nav button[aria-disabled="true"] {
+  background: transparent !important;
+  color: #7396a6 !important;
+  opacity: .5 !important;
+  box-shadow: none !important;
+  transform: none;
+}
+body #toast {
+  bottom: calc(106px + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 390px) {
+  body .bottom-nav button small { font-size: 12px; }
+}
+@media (min-width: 760px) {
+  body .bottom-nav { padding: 7px; gap: 5px; border-radius: 26px; }
+  body .bottom-nav button { min-height: 66px; gap: 6px; }
+}
+@media (max-width: 359px) {
+  body .bottom-nav { width: calc(100% - 16px); padding: 5px; border-radius: 23px; }
+  body .bottom-nav button { border-radius: 17px; min-height: 62px; gap: 5px; }
+  body .bottom-nav button svg { width: 22px; height: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body .bottom-nav button { transition: none; }
+  body .bottom-nav button:not(:disabled):is(:active, .is-pressed) { transform: none; }
+}
