@@ -1,36 +1,36 @@
-/* Restore the direct vocabulary home without changing the other pages. */
-body:has(#library-panel:not([hidden])){background:#080a0e}
-body:has(#library-panel:not([hidden])) .topbar{background:#080a0ef2;border-color:#29313e}
-body:has(#library-panel:not([hidden])) .brand{color:#f4f6fa;gap:10px}
-body:has(#library-panel:not([hidden])) .brand-mark{display:grid;background:linear-gradient(140deg,#4188ed,#235aa7);color:#fff}
-body:has(#library-panel:not([hidden])) .home-shield-button{background:#141d29;border-color:#2c3b50}
-body:has(#library-panel:not([hidden])) .bottom-nav{background:#11151df7;border-color:#2a313d}
-body:has(#library-panel:not([hidden])) .bottom-nav button.active{color:#7db3ff}
+/* Direct vocabulary layout with the same navy and turquoise as word details. */
+body:has(#library-panel:not([hidden])){background:#001c2b}
+body:has(#library-panel:not([hidden])) .topbar{background:#001c2bf2;border-color:#155066}
+body:has(#library-panel:not([hidden])) .brand{color:#41e4d7;gap:0}
+body:has(#library-panel:not([hidden])) .brand-mark{display:none;background:linear-gradient(140deg,#38dfce,#24b8b3);color:#003138}
+body:has(#library-panel:not([hidden])) .home-shield-button{background:#123449;border-color:#2a536c}
+body:has(#library-panel:not([hidden])) .bottom-nav{background:#001b2bf7;border-color:#15465b}
+body:has(#library-panel:not([hidden])) .bottom-nav button.active{color:#32e0d1}
 #library-panel>.welcome{padding:26px 0 19px}
 #library-panel>.welcome>.hero-title{text-align:right}
 #library-panel>.welcome>.hero-subtitle{display:block;margin-top:8px}
-#library-panel>.overall-progress{display:block;padding:16px 18px;margin-bottom:20px;background:linear-gradient(120deg,#141c2b,#11151c);border-color:#29374d}
-#library-panel .track{background:#282e39}
-#library-panel .track>i{background:linear-gradient(90deg,#3f83f1,#79b8ff)}
+#library-panel>.overall-progress{display:block;padding:16px 18px;margin-bottom:20px;background:linear-gradient(120deg,#06364a,#03283b);border-color:#145065}
+#library-panel .track{background:#1a4151}
+#library-panel .track>i{background:linear-gradient(90deg,#16a7aa,#50ecd6)}
 #library-panel #level-tabs{direction:rtl;gap:7px;margin-block:18px;padding:0;border:0;border-radius:0;background:none}
-#library-panel #level-tabs .level-tab{min-height:76px;padding:10px 3px;border:1px solid #29313e;border-radius:12px;background:#11151c;color:#e2e9f4;gap:3px}
-#library-panel #level-tabs .level-tab small{display:block;color:#a2adbd;font-size:11px;white-space:nowrap}
-#library-panel #level-tabs .level-tab.active{border-color:#487db8;background:#17263e;color:#8cbdff;box-shadow:inset 0 -2px 0 #4b94ff}
+#library-panel #level-tabs .level-tab{min-height:76px;padding:10px 3px;border:1px solid #155066;border-radius:12px;background:#03283b;color:#e2f5f7;gap:3px}
+#library-panel #level-tabs .level-tab small{display:block;color:#a3c6d1;font-size:11px;white-space:nowrap}
+#library-panel #level-tabs .level-tab.active{border-color:#5cebdd;background:#37dfd0;color:#002f38;box-shadow:inset 0 -2px 0 #25b8b0}
 #library-panel>.level-summary{padding:13px 0;margin-block:12px;text-align:right;background:none}
 #library-panel>.level-summary .section-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 #library-panel>.level-summary .section-heading>div{display:block}
 #library-panel>.level-summary>.track,#library-panel>.level-summary>.progress-label{display:flex}
-#library-panel #level-count{margin:0;font-size:15px;color:#a8b8cb}
-#library-panel #level-learned{font-size:15px;color:#a8b8cb}
+#library-panel #level-count{margin:0;font-size:15px;color:#bad2dc}
+#library-panel #level-learned{font-size:15px;color:#bad2dc}
 #library-panel #journey-content,#library-panel .library-controls>summary,
 #library-panel [data-expand-journey],#library-panel [data-all-journey]{display:none!important}
 #library-panel .library-controls,#library-panel .library-controls[open]{float:none;clear:both;width:100%;margin:0;padding:0;border:0;background:none}
 #library-panel .journey-study-actions{margin:10px 0 16px}
-#library-panel .secondary,#library-panel .view-switch button[aria-pressed='true']{background:#19263b;border-color:#354c6c;color:#d2e5ff}
-#library-panel .search-wrap input,#library-panel .filter-select,#library-panel .view-switch{background:#11151c;border-color:#2c3544;color:#e4edf8}
-#library-panel .text-button{color:#82b8ff}
-#library-panel .word-card{background:linear-gradient(120deg,#151c28,#11151c);border-color:#2b3545}
-#library-panel .word-card .card-actions{background:#17213655}
-#library-panel .word-card .icon-button{background:#1b3859;border-color:#315777;color:#a6ceff}
-#library-panel .library-learning-note,#library-panel .source-note{color:#a7b5c8}
+#library-panel .secondary,#library-panel .view-switch button[aria-pressed='true']{background:#073449;border-color:#24596b;color:#b6ebe7}
+#library-panel .search-wrap input,#library-panel .filter-select,#library-panel .view-switch{background:#03283b;border-color:#245469;color:#e5f6fa}
+#library-panel .text-button{color:#70e7dc}
+#library-panel .word-card{background:linear-gradient(120deg,#062e41,#03283b);border-color:#16495d}
+#library-panel .word-card .card-actions{background:#08374a33}
+#library-panel .word-card .icon-button{background:#12647766;border-color:#1a687c;color:#81ded7}
+#library-panel .library-learning-note,#library-panel .source-note{color:#a5c5d3}
 @media(max-width:359px){#library-panel #level-tabs{gap:5px}#library-panel #level-tabs .level-tab{min-height:70px}#library-panel #level-tabs .level-tab small{font-size:10px}}
