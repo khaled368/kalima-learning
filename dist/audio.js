@@ -166,15 +166,34 @@
    const playing=htmlAudio.play();playing?.then(()=>announce(job,'playing',messages().playing,'local')).catch(()=>reject(failure('activate')));
   });
  }
+ /* Choose the most natural installed/device voice, not the first local voice.
+    Some browsers return compact/legacy voices before enhanced ones. */
+ function voiceRank(voice,lang){
+  const name=String(voice.name||'')+' '+String(voice.voiceURI||'');
+  const locale=String(voice.lang||'').toLowerCase().replace('_','-');
+  const profile=LANGUAGES[lang].locale.toLowerCase();
+  let score=locale===profile?25:0;
+  if(/enhanced|premium|neural|natural|high.quality|google|microsoft|siri|online/i.test(name))score+=40;
+  if(/compact|legacy|espeak|festival|robot|basic|low.quality/i.test(name))score-=65;
+  if(voice.default)score+=8;
+  if(voice.localService===false)score+=5;
+  return score;
+ }
  function deviceVoice(lang){
   if(!nativeAvailable())return null;
-  try{const voices=global.speechSynthesis.getVoices().filter(voice=>String(voice.lang).toLowerCase().split(/[-_]/)[0]===lang);return voices.find(voice=>voice.localService)||voices[0]||null;}catch{return null;}
+  try{
+   const voices=global.speechSynthesis.getVoices().filter(voice=>String(voice.lang).toLowerCase().split(/[-_]/)[0]===lang);
+   return voices.sort((a,b)=>voiceRank(b,lang)-voiceRank(a,lang))[0]||null;
+  }catch{return null;}
  }
  function waitForVoice(lang){
   if(!nativeAvailable())return Promise.resolve(null);
   const voice=deviceVoice(lang);if(voice)return Promise.resolve(voice);
   return new Promise(resolve=>{
-   let elapsed=0;const timer=setInterval(()=>{elapsed+=50;const found=deviceVoice(lang);if(found||elapsed>=500){clearInterval(timer);resolve(found);}},50);
+   let elapsed=0;const timer=setInterval(()=>{
+    elapsed+=100;const found=deviceVoice(lang);
+    if(found||elapsed>=1600){clearInterval(timer);resolve(found);}
+   },100);
   });
  }
  async function nativeSpeech(job){
@@ -183,9 +202,9 @@
   return new Promise((resolve,reject)=>{
    let started=false,finished=false;const synth=global.speechSynthesis;
    const utterance=new SpeechSynthesisUtterance(job.text);nativeUtterance=utterance;
-   utterance.lang=voice.lang||LANGUAGES[job.lang].locale;utterance.voice=voice;utterance.rate=.85;utterance.pitch=1;utterance.volume=1;
+   utterance.lang=voice.lang||LANGUAGES[job.lang].locale;utterance.voice=voice;utterance.rate=.94;utterance.pitch=1;utterance.volume=1;
    const maxTime=setTimeout(()=>fail(),Math.min(90000,job.text.length*180+12000));
-   const startTime=setTimeout(()=>{if(!started)fail();},1800);
+   const startTime=setTimeout(()=>{if(!started)fail();},6000);
    const keepAlive=setInterval(()=>{if(current(job)&&synth.paused)try{synth.resume();}catch{}},7000);
    function finish(value){if(finished)return;finished=true;clearTimeout(maxTime);clearTimeout(startTime);clearInterval(keepAlive);if(nativeUtterance===utterance)nativeUtterance=null;resolve(value);}
    job.cancel=()=>finish(false);
@@ -205,15 +224,14 @@
    const job={id,text,lang,resolve,reject,onStatus:options.onStatus,done:false,engine:null};active=job;
    announce(job,'loading',messages().loading);
    (async()=>{
-    // Preserve bundled German playback; Arabic uses an explicitly matching device voice.
-    let played=false,nativeTried=false,localError=null;
-    if(options.engine==='native'||options.engine==='auto'||!LANGUAGES[lang].voice){nativeTried=true;played=await nativeSpeech(job);}
+    // The bundled meSpeak/eSpeak voice sounds robotic. Prefer natural TTS
+    // from the actual phone/browser, with meSpeak only as a last resort.
+    let played=false,localError=null;
+    played=await nativeSpeech(job);
     if(!current(job))return;
-    if(!played&&LANGUAGES[lang].voice){
+    if(!played&&LANGUAGES[lang].voice&&options.engine!=='native'){
      try{played=await localSpeech(job,ctx);}catch(error){localError=error;}
     }
-    if(!current(job))return;
-    if(!played&&!nativeTried)played=await nativeSpeech(job);
     if(!current(job))return;
     if(!played)throw localError||failure('unsupported');
     if(!current(job))return;
