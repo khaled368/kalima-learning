@@ -1,0 +1,9 @@
+{
+  "name": "kalima-browser-vendor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pinned source package for the checked-in official Supabase browser bundle",
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  }
+}

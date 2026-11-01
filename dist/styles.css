@@ -346,7 +346,7 @@ button[aria-busy='true'] { cursor: progress; }
 }
 
 /* Original Sanad shields, extracted from the supplied transparent sheet. */
-.shield-sprite{width:100%;aspect-ratio:1;background-image:url('assets/sanad-shields.png');background-size:500% 200%;background-repeat:no-repeat}.shield-art{overflow:hidden}.shield-card .shield-art{filter:saturate(.65);opacity:.6}.shield-card.unlocked .shield-art{filter:none;opacity:1}.shield-card{position:relative}.shield-art img{width:100%;object-fit:contain}
+.shield-sprite{width:100%;aspect-ratio:1;background-image:url('assets/kalima-shields.png');background-size:500% 200%;background-repeat:no-repeat}.shield-art{overflow:hidden}.shield-card .shield-art{filter:saturate(.65);opacity:.6}.shield-card.unlocked .shield-art{filter:none;opacity:1}.shield-card{position:relative}.shield-art img{width:100%;object-fit:contain}
 
 .german-definition{color:var(--muted);font-size:14px;line-height:1.8;overflow-wrap:anywhere}.data-downloads{display:flex;flex-wrap:wrap;gap:12px}.data-downloads a{border:1px solid var(--border);border-radius:8px;padding:10px;min-height:44px}.example-card .source-note{font-size:10px;line-height:1.7}.track i{max-width:100%}
 /* Keep the vocabulary itself within easy reach on small screens. */

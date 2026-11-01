@@ -103,3 +103,17 @@ The progress page now keeps the activity chart, three SVG metric badges, calenda
 
 
 The selected open-book/conversation logo in `assets/brand-book.png` is an AI-generated transparent asset, selected by the owner from the second visual proposal. The proposed “Leen” name was declined; the owner selected the Arabic product name “كلمة” (Kalima). Visible branding, document titles, download names and the browser icon use the selected identity. Original upstream source names and attributions remain intact.
+
+The owner-requested Kalima book logo replaces the plant emblem in all ten shields via an AI-assisted transparent sprite edit. The generated asset is `assets/kalima-shields.png`; the five-by-two sprite layout, rank colours and numbers remain.
+
+## Account-backed progress
+
+The Kalima Supabase project in `db/project.json` stores one owned progress envelope per authenticated user. `db/schema.sql` enables row-level security, explicit authenticated-only grants and an invoker-security compare-and-swap RPC. Payloads require version 1, their authenticated owner and a maximum serialized size of 10 MiB. Native security and performance advisors returned no findings. The rollback-only SQL verification passed ownership, privileges, stale revisions, payload guards and anonymous-access denial.
+
+The official Supabase JavaScript 2.118.0 UMD bundle is vendored with its licence and pinned npm source lockfile. `backend-config.js` contains only the public API URL and publishable key. Auth sessions, refresh tokens and passwords are excluded from progress snapshots and repository backups. `account.js` localizes login, signup, confirmation, recovery and logout; mail-provider delivery errors are reported truthfully.
+
+`cloud-sync.js` preserves the existing app keys and their target-language scoping. Learned words and first-learning history merge without inventing dates; saved removals have per-word tombstones; time contributions merge by maximum rather than repeated addition; concurrent writing drafts retain alternatives. Account workspaces are banked before a clean reload; stale tabs route late writes to their original owner. `app-bootstrap.js` waits for account workspace readiness before loading the learning modules.
+
+Fifteen pure sync checks and four-language account form checks passed. A real-service test used the official browser SDK with two temporary confirmed Auth fixtures and two separate browser contexts: password sign-in, local legacy import, REST/RPC writes, second-device restore, saved-word deletion convergence, B-account isolation and logout recovery all passed. The exact temporary fixture accounts and snapshots were deleted and zero remaining fixture rows verified. No confirmation or recovery emails were sent by the tests; real email delivery depends on the configured provider and URL settings.
+
+Browser storage remains bounded. Synthetic histories for four complete 10,000-word courses exceed a typical localStorage quota even in the original format; account banks add overhead. Quota failure checks preserve the active workspace and prevent an incomplete account swap. Progress snapshots are not a replacement for platform database backups.

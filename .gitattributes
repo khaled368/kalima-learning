@@ -1,0 +1,2 @@
+# Preserve whitespace embedded in the official minified SDK's template literals.
+dist/assets/vendor/supabase-2.118.0.js whitespace=-blank-at-eol

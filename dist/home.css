@@ -68,3 +68,10 @@ body[data-card-view='compact'] .word-open{grid-template-columns:minmax(0,1fr)}
 
 .topbar .brand-name{font-family:var(--reading-font);font-size:28px;line-height:1.5;letter-spacing:0}
 .word-topbar .reference-word-brand{font-family:var(--reading-font);letter-spacing:0;direction:rtl}
+
+/* Keep level codes aligned when translated labels need more than one line. */
+#library-panel #level-tabs{align-items:stretch;grid-auto-rows:1fr}
+#library-panel #level-tabs .level-tab{display:grid;grid-template-rows:28px minmax(0,1fr);align-content:start;align-items:start;justify-items:center;justify-content:stretch;align-self:stretch;min-height:64px;height:100%;text-align:center;transform:none}
+#library-panel #level-tabs .level-tab strong{display:block;width:100%;margin:0;line-height:28px;white-space:nowrap}
+#library-panel #level-tabs .level-tab small{display:block;align-self:start;width:100%;min-width:0;min-height:3.2em;margin:0;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
+#library-panel #level-tabs .level-tab:not(:disabled):is(:active,.is-pressed){transform:none}
