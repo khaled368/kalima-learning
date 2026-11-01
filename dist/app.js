@@ -1007,4 +1007,5 @@ async function init() {
     $('#retry-app').onclick = init;
   }
 }
-init();
+// Bootstrap waits for both manifest and first vocabulary level before showing UI.
+globalThis.WORT_APP_INIT = init();
