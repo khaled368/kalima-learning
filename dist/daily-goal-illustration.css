@@ -1,0 +1,82 @@
+/* The uploaded target has its sky-blue background removed. */
+#library-panel #daily-goal-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-inline: 12px;
+}
+#library-panel #daily-goal-button > .daily-goal-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+#library-panel #daily-goal-button .daily-goal-heading {
+  display: inline-flex;
+  flex-direction: row;
+  direction: rtl;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  min-width: 0;
+  max-width: 100%;
+}
+#library-panel #daily-goal-button .daily-goal-heading > strong {
+  min-width: 0;
+  display: inline-block;
+  color: #086d6b;
+  font-weight: 800;
+  font-size: clamp(16px, 4.5vw, 21px);
+  line-height: 1.45;
+  text-align: start;
+}
+#library-panel #daily-goal-button .daily-goal-illustration {
+  display: block;
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  object-fit: contain;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+#library-panel #daily-goal-button .daily-goal-copy > small {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3c5c65;
+  overflow-wrap: break-word;
+}
+#library-panel #daily-goal-button .daily-goal-count {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 18px;
+}
+#library-panel #daily-goal-button > span:last-child {
+  flex: 0 0 auto;
+  font-size: 22px;
+}
+html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-heading > strong {
+  color: #76eee2;
+}
+html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-copy > small {
+  color: #b7d6dd;
+}
+@media(max-width: 390px) {
+  #library-panel #daily-goal-button {gap: 6px;padding-inline: 10px;}
+  #library-panel #daily-goal-button .daily-goal-illustration {flex-basis: 44px;width:44px;height:44px;min-width:44px;max-width:44px;}
+  #library-panel #daily-goal-button .daily-goal-heading {gap: 5px;}
+  #library-panel #daily-goal-button .daily-goal-count {font-size:16px;}
+  #library-panel #daily-goal-button .daily-goal-copy > small {font-size:12px;}
+}
+@media(max-width: 339px) {
+  #library-panel #daily-goal-button .daily-goal-illustration {flex-basis: 38px;width:38px;height:38px;min-width:38px;max-width:38px;}
+  #library-panel #daily-goal-button .daily-goal-heading > strong {font-size: 15px;}
+  #library-panel #daily-goal-button .daily-goal-count {font-size:14px;}
+}

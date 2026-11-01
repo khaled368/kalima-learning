@@ -64,6 +64,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <link rel="stylesheet" href="navigation-reorder.css?v=20261101b">
 <link rel="stylesheet" href="grammar-contrast.css?v=20261101-case-names">
 <link rel="stylesheet" href="word-header-fix.css?v=20261101b">
+<link rel="stylesheet" href="daily-goal-illustration.css?v=20261101a">
 <script src="theme-switch.js?v=20261101-drag"></script>
 <script src="backend-config.js"></script>
 <script src="assets/vendor/supabase-2.118.0.js"></script>
@@ -91,7 +92,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <section id="library-panel" class="panel">
 <div class="welcome"><p class="eyebrow" data-i18n="مفرداتك اليومية.">مفرداتك اليومية.</p><h1 class="hero-title" data-i18n="لغتك الجديدة تبدأ من هنا">لغتك الجديدة تبدأ من هنا</h1><p class="hero-subtitle" data-i18n="اختر مستواك، وافتح كلمة جديدة كل يوم.">اختر مستواك، وافتح كلمة جديدة كل يوم.</p></div>
 <div class="overall-progress"><div class="progress-label"><span data-i18n="رحلتك مع الكلمات">رحلتك مع الكلمات</span><strong id="overall-count" dir="ltr">0 / 0</strong></div><div class="track" role="progressbar" aria-label="التقدم الكلي" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria-label="التقدم الكلي"><i id="overall-bar"></i></div><div class="progress-label"><small id="overall-percent">0%</small><small data-i18n="كل كلمة خطوة جديدة">كل كلمة خطوة جديدة</small></div></div>
-<button class="daily-goal-button" id="daily-goal-button" type="button"><span class="daily-goal-copy"><strong data-i18n="هدف اليوم ◎">هدف اليوم ◎</strong><small id="daily-goal-status" data-i18n="تعلّم 20 كلمة جديدة">تعلّم 20 كلمة جديدة</small></span><span class="daily-goal-count" id="daily-goal-count" dir="ltr">0 / 20</span><span aria-hidden="true">←</span></button>
+<button class="daily-goal-button" id="daily-goal-button" type="button"><span class="daily-goal-copy"><span class="daily-goal-heading"><img class="daily-goal-illustration" src="assets/daily-goal-target.png?v=20261101a" alt="" width="52" height="52" decoding="async"><strong data-i18n="هدف اليوم ◎">هدف اليوم</strong></span><small id="daily-goal-status" data-i18n="تعلّم 20 كلمة جديدة">تعلّم 20 كلمة جديدة</small></span><span class="daily-goal-count" id="daily-goal-count" dir="ltr">0 / 20</span><span aria-hidden="true">←</span></button>
 <nav class="level-tabs" id="level-tabs" aria-label="أقسام المستويات" data-i18n-aria-label="أقسام المستويات"></nav>
 <section class="level-summary" aria-labelledby="level-title"><div class="section-heading"><div><p class="eyebrow" id="level-caption"></p><h2 id="level-title"></h2></div><span id="level-count"></span></div><p id="level-description" class="hero-subtitle"></p><div class="track level-progress" role="progressbar" aria-label="تقدم المستوى" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria-label="تقدم المستوى"><i id="level-bar"></i></div><div class="progress-label"><small id="level-learned"></small></div></section>
 <details class="library-controls"><summary aria-label="البحث والمراجعة والإعدادات" data-i18n-aria-label="البحث والمراجعة والإعدادات">⌕ <span data-i18n="بحث ومراجعة">بحث ومراجعة</span></summary><div class="library-study-actions"><button class="secondary" id="review-level" data-i18n="مراجعة الكلمات ↻">مراجعة الكلمات ↻</button></div>
