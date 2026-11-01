@@ -1,0 +1,111 @@
+/* Account in the final (far-left) navigation slot; Saved is a header star. */
+body .topbar .top-actions { display: flex; align-items: center; gap: 7px; min-width: 0; }
+body .topbar #top-saved-button {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid #c4d1e9;
+  border-radius: 13px;
+  background: #f1edf9;
+  color: #75649f;
+  box-shadow: 0 2px 8px #1b3a5112;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+body .topbar #top-saved-button svg {
+  display: block;
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+}
+body .topbar #top-saved-button:is(.active,[aria-current="page"]) {
+  color: #91621b;
+  background: #fff1ca;
+  border-color: #e9bf68;
+}
+body .topbar #top-saved-button:is(.active,[aria-current="page"]) svg {
+  fill: #f7c95e;
+}
+body .topbar #top-saved-button:focus-visible {
+  outline: 3px solid #199eaa;
+  outline-offset: 3px;
+}
+html[data-theme='dark'] body .topbar #top-saved-button {
+  border-color: #435b75;
+  background: #173448;
+  color: #c3d2e8;
+  box-shadow: none;
+}
+html[data-theme='dark'] body .topbar #top-saved-button:is(.active,[aria-current="page"]) {
+  background: #3b3a42;
+  color: #f6d98a;
+  border-color: #ad8645;
+}
+html[data-theme='dark'] body .topbar #top-saved-button:is(.active,[aria-current="page"]) svg {
+  fill: #d5a754;
+}
+/* Grid uses RTL so last item remains at the physical left edge, even when
+   German, English or Dutch is selected as the native language. */
+html body .bottom-nav { direction: rtl; }
+html[dir='ltr'] body .bottom-nav button {direction: ltr;}
+body .bottom-nav #account-button {
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 1px 7px;
+  gap: 5px;
+  flex-direction: column;
+  border: 0 !important;
+  border-radius: 18px;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-size: inherit;
+}
+body .bottom-nav #account-button > span:first-child {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  color: inherit !important;
+}
+body .bottom-nav #account-button svg {
+  display: block;
+  flex: 0 0 auto;
+  width: 23px;
+  height: 23px;
+  margin: 0;
+  color: inherit !important;
+}
+body .bottom-nav #account-button small {
+  margin: 0;
+  padding: 0;
+  color: inherit !important;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+body .bottom-nav #account-button.is-authenticated {opacity: 1;}
+@media (min-width: 390px) {
+  body .bottom-nav #account-button small {font-size: 12px;}
+}
+@media (max-width: 359px) {
+  body .topbar .top-actions {gap: 3px;}
+  body .topbar #top-saved-button {width: 39px;min-width:39px;flex-basis:39px;height:40px;min-height:40px;}
+  body .topbar #top-saved-button svg {width:22px;height:22px;}
+  body .topbar .brand-logo {width:40px;height:40px;flex-basis:40px;}
+  body .topbar .brand-name {font-size:22px;}
+  body .bottom-nav #account-button {min-height:62px;gap:5px;}
+  body .bottom-nav #account-button svg {width:22px;height:22px;}
+}
