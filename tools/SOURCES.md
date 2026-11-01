@@ -95,3 +95,11 @@ Original German grammar remains mapped through `verbs.json`. `grammar.js` adds e
 German, English and Dutch pronunciation use compatible bundled meSpeak voice data; real non-silent WAV synthesis is checked for all three. Arabic uses an available Arabic device voice and reports a localized unavailable error if none exists, without falling back to a different language. Source URLs and licence notices are in `assets/audio-engine/README-LICENSE.txt`.
 
 Run `python tools/check-multilingual.py --require-authored` to check complete native-language supplements, actual counts, stable IDs, pairwise examples and byte-identical preservation of the original German files against the last single-course publication.
+
+
+## Progress and home display update
+
+The progress page now keeps the activity chart, three SVG metric badges, calendar and time details while removing the vocabulary-level indicator and its assessment entry point. Existing assessment storage is left intact; the inactive source module is no longer loaded. The bottom dock uses an indigo background with a lavender active state. The upcoming vocabulary list has a native keyboard-accessible disclosure; choosing a level or searching opens it. Decorative card artwork is removed while save and pronunciation controls remain functional.
+
+
+The selected open-book/conversation logo in `assets/brand-book.png` is an AI-generated transparent asset, selected by the owner from the second visual proposal. The proposed “Leen” name was declined; the owner selected the Arabic product name “كلمة” (Kalima). Visible branding, document titles, download names and the browser icon use the selected identity. Original upstream source names and attributions remain intact.

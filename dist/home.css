@@ -48,3 +48,23 @@
 
 #library-panel .library-study-actions{display:grid;grid-template-columns:minmax(0,1fr);margin:10px 0 13px}
 #library-panel .library-study-actions:has(#review-level[hidden]){display:none}
+
+/* A compact native disclosure keeps the upcoming word list within easy reach. */
+#vocabulary-disclosure{margin:14px 0 0;border:0;background:none;padding:0}
+#vocabulary-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:4px 0;margin-bottom:9px;cursor:pointer;list-style:none;border-bottom:1px solid #1b4354;border-radius:0;color:#dceef4;-webkit-tap-highlight-color:transparent}
+#vocabulary-disclosure>summary::-webkit-details-marker{display:none}
+#vocabulary-disclosure>summary::marker{content:''}
+#vocabulary-disclosure #vocabulary-title{font-size:21px;line-height:1.6;min-height:0;margin:0;text-align:start}
+.vocabulary-chevron{flex:0 0 20px;width:20px;height:20px;margin-inline:3px;color:#a5c8d6;transition:transform 180ms ease}
+#vocabulary-disclosure:not([open]) .vocabulary-chevron{transform:rotate(-90deg)}
+html[dir='ltr'] #vocabulary-disclosure:not([open]) .vocabulary-chevron{transform:rotate(-90deg)}
+#vocabulary-disclosure>summary:focus-visible{outline:2px solid #b6a3ee;outline-offset:4px;border-radius:7px}
+#vocabulary-disclosure>summary:active{color:#b9a6ef;background:#132e43}
+body[data-card-view='compact'] .word-open{grid-template-columns:minmax(0,1fr)}
+@media(prefers-reduced-motion:reduce){.vocabulary-chevron{transition:none}}
+
+.topbar .brand{gap:7px}
+.topbar .brand-logo{display:block;flex:0 0 52px;width:52px;height:52px;object-fit:contain}
+
+.topbar .brand-name{font-family:var(--reading-font);font-size:28px;line-height:1.5;letter-spacing:0}
+.word-topbar .reference-word-brand{font-family:var(--reading-font);letter-spacing:0;direction:rtl}

@@ -1,4 +1,4 @@
-/* Floating navigation with clear turquoise selection and safe-area spacing. */
+/* Floating indigo navigation with a restrained lavender active state. */
 body .app-shell {
   padding-bottom: calc(122px + env(safe-area-inset-bottom, 0px));
 }
@@ -16,9 +16,9 @@ body .bottom-nav {
   margin-inline: auto;
   padding: 6px;
   gap: 2px;
-  border: 1px solid #2a5667;
+  border: 1px solid #474d70;
   border-radius: 25px;
-  background: #052334f5;
+  background: #171c36;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 12px 34px #0006, 0 2px 8px #0004, inset 0 1px 0 #ffffff0a;
@@ -38,7 +38,7 @@ body .bottom-nav button {
   border-radius: 18px;
   background: transparent !important;
   background-image: none !important;
-  color: #a5c3ce !important;
+  color: #b8bdd4 !important;
   box-shadow: none !important;
   line-height: 1;
   -webkit-tap-highlight-color: transparent;
@@ -80,38 +80,44 @@ body .bottom-nav button::after {
   content: none;
 }
 body .bottom-nav button:is(.active, [aria-current="page"]) {
-  background: linear-gradient(125deg,#29cfc0,#5ae3d0) !important;
-  color: #052c36 !important;
-  box-shadow: 0 2px 8px #0003 !important;
+  background: #393c5c !important;
+  color: #f2edff !important;
+  box-shadow: inset 0 0 0 1px #77718f66, 0 2px 8px #0003 !important;
+}
+body .bottom-nav button:is(.active, [aria-current="page"]) > span:first-child {
+  color: #d5c7ff !important;
 }
 body .bottom-nav button:is(.active, [aria-current="page"]) small {
   font-weight: 700;
 }
 @media (hover: hover) {
   body .bottom-nav button:not(.active):not([aria-current="page"]):not(:disabled):hover {
-    background: #123d4b !important;
+    background: #292f4c !important;
     color: #fff !important;
   }
 }
 body .bottom-nav button:not(:disabled):not([aria-disabled="true"]):is(:active, .is-pressed) {
-  background: linear-gradient(125deg,#29cfc0,#5ae3d0) !important;
-  color: #052c36 !important;
+  background: #53516f !important;
+  color: #fff !important;
   box-shadow: none !important;
   transform: scale(.96);
 }
 body .bottom-nav button:is(.active, [aria-current="page"]):not(:disabled):not([aria-disabled="true"]):is(:active, .is-pressed) {
-  background: #123d4b !important;
-  color: #fff !important;
-  box-shadow: inset 0 0 0 1px #76e6d5 !important;
+  background: #d9cff1 !important;
+  color: #24223a !important;
+  box-shadow: inset 0 0 0 1px #eee7ff !important;
+}
+body .bottom-nav button:is(.active, [aria-current="page"]):not(:disabled):not([aria-disabled="true"]):is(:active, .is-pressed) > span:first-child {
+  color: #393051 !important;
 }
 body .bottom-nav button:focus-visible {
-  outline: 2px solid #83f4e3 !important;
+  outline: 2px solid #d1c3f5 !important;
   outline-offset: 3px;
 }
 body .bottom-nav button:disabled,
 body .bottom-nav button[aria-disabled="true"] {
   background: transparent !important;
-  color: #7396a6 !important;
+  color: #858da9 !important;
   opacity: .5 !important;
   box-shadow: none !important;
   transform: none;

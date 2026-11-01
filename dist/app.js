@@ -16,22 +16,6 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({
   "'": '&#39;'
 })[c]);
 const SPEAKER_ICON = '<svg class="reference-speaker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4V9Z"/><path d="M17 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>';
-function wordArtwork(word) {
-  return {
-    Tisch: '🪑',
-    Schule: '🏫',
-    Buch: '📖',
-    Haus: '🏠',
-    Apfel: '🍎',
-    Brot: '🍞',
-    Wasser: '💧',
-    Kaffee: '☕',
-    lernen: '🏃',
-    Zug: '🚆',
-    Katze: '🐈',
-    Hund: '🐕'
-  }[word.german] || (word.pos === 'verb' ? '↗' : '◈');
-}
 const articleHtml = article => `<span class="article" data-article="${esc(String(article).toLocaleLowerCase())}">${esc(article)}</span>`;
 const LEVELS = [{
   code: 'A1',
@@ -104,7 +88,6 @@ const today = {
 WORT_HISTORY.init([...learned], oldToday);
 let storageAvailable = true;
 let analyticsView = null,
-  assessmentView = null,
   audioRequest = 0,
   audioButton = null;
 let verbDataReady = false,
@@ -192,6 +175,7 @@ function updateProgress() {
   if (panel === 'progress') renderProgress();
 }
 async function selectLevel(code) {
+  $('#vocabulary-disclosure').open = true;
   activeLevel = code;
   pageSize = 24;
   const request = ++loadRequest;
@@ -268,7 +252,7 @@ function setCardView(view) {
 }
 function card(word) {
   const full = `${word.article ? word.article + ' ' : ''}${word.german}`;
-  return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos] || POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id) ? '<span class="learned-badge" aria-label="تعلّمتها">✓</span>' : '<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${word.article ? `${articleHtml(word.article)} ` : ''}${esc(word.german)}</span><span class="translation" lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${esc(word.arabic)}</span></span><span class="reference-card-icon" aria-hidden="true">${wordArtwork(word)}</span></button><div class="card-actions"><button class="save-button ${saved.has(word.id) ? 'saved' : ''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id) ? t("إزالة من المحفوظات") : t("حفظ الكلمة")}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id) ? '★' : '☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">${SPEAKER_ICON}</button></div></article>`;
+  return `<article class="word-card" data-card-id="${esc(word.id)}"><button class="word-open" data-open="${esc(word.id)}" aria-label="تفاصيل ${esc(full)}"><span class="word-pos"><span>${POS[word.pos] || POS.other} <span class="word-level">${word.level}</span></span>${learned.has(word.id) ? '<span class="learned-badge" aria-label="تعلّمتها">✓</span>' : '<span class="card-hint" aria-hidden="true">التفاصيل ←</span>'}</span><span class="word-pair"><span class="word-head" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${word.article ? `${articleHtml(word.article)} ` : ''}${esc(word.german)}</span><span class="translation" lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${esc(word.arabic)}</span></span></button><div class="card-actions"><button class="save-button ${saved.has(word.id) ? 'saved' : ''}" data-save="${esc(word.id)}" aria-label="${saved.has(word.id) ? t("إزالة من المحفوظات") : t("حفظ الكلمة")}" aria-pressed="${saved.has(word.id)}">${saved.has(word.id) ? '★' : '☆'}</button><button class="icon-button" data-speak="${esc(word.id)}" aria-label="استمع إلى ${esc(word.german)}">${SPEAKER_ICON}</button></div></article>`;
 }
 function renderCards() {
   const list = matchingWords();
@@ -678,7 +662,6 @@ function renderProgress() {
   const model = progressModel();
   if (analyticsView) analyticsView.update(model);else analyticsView = WORT_ANALYTICS.mount($('#analytics-content'), model);
   if (calendarView) calendarView.update(model);else calendarView = WORT_CALENDAR.mount($('#calendar-content'), model);
-  if (assessmentView) assessmentView.update(model);else assessmentView = WORT_ASSESSMENT.mount($('#assessment-content'), model);
   updateUsageStats(WORT_USAGE.snapshot());
   $('#progress-levels').innerHTML = uiHtml(LEVELS.map(level => {
     const count = manifest.levels.find(l => l.code === level.code)?.count || 0,
@@ -803,18 +786,20 @@ function renderSession() {
   };
 }
 function renderSources() {
- const downloads=manifest.levels.map(level=>`<a href="${esc(level.data||'data/'+level.code+'.json')}" download="Wort-${TARGET}-${level.code}.json">${esc(t('{level} · {count} مفردة',{level:level.code,count:level.count.toLocaleString(LOCALE)}))}</a>`).join('');
+ const downloads=manifest.levels.map(level=>`<a href="${esc(level.data||'data/'+level.code+'.json')}" download="كلمة-${TARGET}-${level.code}.json">${esc(t('{level} · {count} مفردة',{level:level.code,count:level.count.toLocaleString(LOCALE)}))}</a>`).join('');
  const sources=(manifest.sources||[]).map(source=>`<div class="example-card"><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(t(source.names?.[NATIVE]||source.name))}</a><p class="source-note">${esc(t(source.license||''))}</p>${source.note||source.notes?`<p>${esc(t(source.notes?.[NATIVE]||source.note||''))}</p>`:''}</div>`).join('');
- $('#sources-content').innerHTML=uiHtml(`<p>${esc(manifest.levelNote)}</p>${sources}<h3>${esc(t('تنزيل بيانات المفردات'))}</h3><div class="data-downloads">${downloads}${TARGET==='de'?`<a href="data/verbs.json" download="Wort-Verbs.json">${esc(t('جداول تصريف الأفعال'))}</a>`:''}</div><p class="source-note">${esc(t('النطق متاح باللغة التي تتعلّمها. التقدّم والمحفوظات محفوظة محليًا لكل لغة؛ وقت الاستخدام إجمالي للموقع.'))}</p>`);
+ $('#sources-content').innerHTML=uiHtml(`<p>${esc(manifest.levelNote)}</p>${sources}<h3>${esc(t('تنزيل بيانات المفردات'))}</h3><div class="data-downloads">${downloads}${TARGET==='de'?`<a href="data/verbs.json" download="كلمة-Verbs.json">${esc(t('جداول تصريف الأفعال'))}</a>`:''}</div><p class="source-note">${esc(t('النطق متاح باللغة التي تتعلّمها. التقدّم والمحفوظات محفوظة محليًا لكل لغة؛ وقت الاستخدام إجمالي للموقع.'))}</p>`);
 }
 document.querySelectorAll('[data-card-view]').forEach(button => button.onclick = () => setCardView(button.dataset.cardView));
 setCardView(cardView);
 $('#daily-goal-button').onclick = startDailyGoal;
 $('#search').oninput = () => {
+  $('#vocabulary-disclosure').open = true;
   pageSize = 24;
   renderCards();
 };
 $('#pos-filter').onchange = () => {
+  $('#vocabulary-disclosure').open = true;
   pageSize = 24;
   renderCards();
 };

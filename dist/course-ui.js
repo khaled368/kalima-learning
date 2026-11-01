@@ -51,7 +51,8 @@
  });
  i18n.apply(document);
  renderPair($('#course-current'),course.native,course.target);
- document.title=t('Wort — {language} من A1 إلى C1',{language:i18n.languageName(course.target)});
+ document.title=t('Wort — {language} من A1 إلى C1',{language:i18n.languageName(course.target)}).replace('Wort','كلمة');
+ $('.brand').setAttribute('aria-label',t('Wort — مكتبة المفردات').replace('Wort','كلمة'));
  $('#course-open').setAttribute('aria-label',t('اختيار المنهاج')+': '+i18n.languageName(course.native)+' / '+i18n.languageName(course.target));
  document.documentElement.dataset.targetDirection=course.dir(course.target);
  document.documentElement.dataset.nativeDirection=course.dir(course.native);
