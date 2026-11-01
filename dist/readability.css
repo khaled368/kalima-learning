@@ -1,0 +1,76 @@
+/* Larger, balanced reading sizes; examples have their own warm yellow. */
+:root{--paired-word-size:20px;--paired-detail-size:32px;--example-yellow:#ffe078}
+body{font-size:18px;line-height:1.85}
+.hero-title,#library-panel>.welcome>.hero-title,#progress-panel>.welcome>.hero-title{font-size:29px}
+.hero-subtitle,.library-learning-note,.panel-note p{font-size:16px!important;line-height:1.9}
+.eyebrow,.source-note,.translation-note,.usage-note{font-size:14px!important;line-height:1.85}
+.home-shield-button{font-size:14px;min-height:42px}
+#level-tabs .level-tab strong{font-size:20px}
+#library-panel #level-count{font-size:16px}
+#journey-content .journey-unit-heading strong{font-size:20px}
+#journey-content .journey-unit-detail{font-size:16px}
+#journey-content .journey-daily-heading>span{font-size:19px!important}
+#journey-content .journey-daily-heading strong{font-size:18px}
+#journey-content .journey-daily small,#journey-content .journey-text-button{font-size:14px!important}
+.library-controls>summary{font-size:16px}
+#vocabulary-title{font-size:21px}
+body[data-card-view='compact'] .word-pair .word-head,
+body[data-card-view='compact'] .word-pair .translation,
+body[data-card-view='grid'] .word-head,
+body[data-card-view='grid'] .translation{font-size:20px;line-height:1.65;overflow-wrap:anywhere}
+.word-pair .article,.reference-word-heading .article{font-size:1em}
+.reference-word-heading h2,.reference-word-heading .reference-word-german,
+.reference-word-copy>.definition,.reference-word-translation{font-size:32px;line-height:1.6}
+.reference-word-chip,.reference-word-chips>span{font-size:15px}
+.word-topbar .reference-dialog-title{font-size:18px}
+.word-tabs button{font-size:17px;min-height:46px}
+.word-content>.section-heading h2,.word-content .section-heading h3{font-size:21px}
+.example-card .example-de,.example-card .example-ar,
+.grammar-section>.example-card[lang='de'],
+.learning-panel .sentence-meaning,
+.learning-panel .sentence-feedback .sentence-result,
+.learning-panel .sentence-alternatives p[lang='de'],
+.learning-panel .writing-sample-part .lesson-de,
+.learning-panel .writing-outline .lesson-de{
+ color:var(--example-yellow)!important;font-size:22px!important;line-height:1.9;overflow-wrap:anywhere
+}
+.word-content .source-note,.word-content .translation-note{font-size:14px}
+.example-card button,.word-detail-footer>#word-save,.word-detail-footer>#mark-word,
+.reference-word-next,.verb-tense-tabs button{font-size:16px;min-height:42px}
+.verb-base-heading h2,.verb-base-heading [lang='de']{font-size:21px}
+.verb-table th,.verb-table td,.grammar-table th,.grammar-table td{font-size:19px;line-height:1.8}
+.verb-legend,.verb-note{font-size:15px}
+.primary,.secondary,.filter-select,.search-wrap input,.learning-panel .primary,
+.learning-panel .secondary,.learning-panel select,.learning-panel textarea{font-size:18px}
+.search-wrap input::placeholder{font-size:16px}
+.learning-panel .lesson-card h2,.learning-panel .lesson-card h3{font-size:21px!important}
+.learning-panel .lesson-card p,.learning-panel .lesson-card li,
+.learning-panel .sentence-instruction,.learning-panel .writing-textarea,
+.learning-panel .writing-checklist label{font-size:18px;line-height:1.9}
+.learning-panel .lesson-note,.learning-panel .writing-step p,
+.learning-panel .sentence-help,.learning-panel .writing-connector p{font-size:16px!important}
+.learning-panel .sentence-token,.learning-panel .lesson-level b{font-size:20px}
+.learning-panel .lesson-level span,.learning-panel .lesson-progress,
+.learning-panel .lesson-toolbar label{font-size:15px}
+.reference-kpis strong{font-size:29px;overflow-wrap:anywhere}
+.reference-kpis small,.analytics-history-note,.analytics-history-gap,
+.analytics-tooltip-text>strong,.analytics-tooltip-text>span{font-size:14px}
+.analytics-period>span{font-size:16px}
+.analytics-level,.analytics-level select,.analytics-toolbar select,.analytics-modes button{font-size:15px}
+#assessment-content .assessment-heading h2,#calendar-content .journey-calendar-heading h2{font-size:22px!important}
+#assessment-content .assessment-no-result,#assessment-content .assessment-hint,
+#assessment-content .assessment-last-result>p,#assessment-content .assessment-limit,
+#calendar-content .journey-calendar-note,#calendar-content .journey-calendar-selection p{font-size:15px!important}
+#assessment-content .assessment-start,#assessment-content .assessment-coverage summary,
+#calendar-content .journey-calendar-selection strong{font-size:17px}
+.assessment-word,.assessment-word>span,.assessment-options button{font-size:22px}
+.badge-next-card p,.shield-card small,.badge-page-meta,.usage-card>span{font-size:16px}
+.bottom-nav button small{font-size:11px;white-space:nowrap}
+@media(min-width:390px){.bottom-nav button small{font-size:12px}}
+@media(max-width:359px){
+ .hero-title,#library-panel>.welcome>.hero-title,#progress-panel>.welcome>.hero-title{font-size:27px}
+ .reference-word-symbol{min-width:42px;flex-basis:42px}.reference-word-symbol svg{width:42px;height:42px}
+ .word-tabs button{font-size:16px}
+ .verb-table th,.verb-table td,.grammar-table th,.grammar-table td{font-size:18px}
+ .analytics-toolbar{flex-wrap:wrap}.analytics-level{min-width:0}
+}
