@@ -137,7 +137,7 @@ html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: st
    carried an !important pastel yellow. Override those at the end of the cascade.
    Keep the white surface and preserve distinguishable grammatical gender hues. */
 :root {
-  --example-yellow: #805000;
+  --example-yellow: #ffd34f;
   --detail-ink: #152f3c;
   --detail-secondary: #274653;
   --detail-link: #075e66;
@@ -175,13 +175,13 @@ html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: st
    The h2's general color rule above must not swallow the article-specific hue. */
 #word-dialog #word-summary .reference-word-heading [data-article='der'],
 #word-dialog [data-article='der'],
-#library-panel [data-article='der'] { color: #155a99 !important; -webkit-text-fill-color: #155a99; }
+#library-panel [data-article='der'] { color: #176dbc !important; -webkit-text-fill-color: #176dbc; }
 #word-dialog #word-summary .reference-word-heading [data-article='die'],
 #word-dialog [data-article='die'],
-#library-panel [data-article='die'] { color: #a32059 !important; -webkit-text-fill-color: #a32059; }
+#library-panel [data-article='die'] { color: #c13177 !important; -webkit-text-fill-color: #c13177; }
 #word-dialog #word-summary .reference-word-heading [data-article='das'],
 #word-dialog [data-article='das'],
-#library-panel [data-article='das'] { color: #78602c !important; -webkit-text-fill-color: #78602c; }
+#library-panel [data-article='das'] { color: #866945 !important; -webkit-text-fill-color: #866945; }
 
 /* The selected word is readable even if CSS for original dark cards remains. */
 #word-dialog #word-summary {
@@ -200,46 +200,52 @@ html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: st
   color: #fff;
 }
 
-/* Both the German example and its Arabic translation used an extremely
-   light !important yellow. Use contrasting dark warm tones instead. */
+/* Make yellow example text legible on a high-contrast navy example card,
+   while keeping the main app and word summary light. */
 #word-dialog .example-card {
-  background: #f7fafc;
-  border-color: #d0e0e7;
+  background: #122f40;
+  border-color: #355a69;
 }
 #word-dialog .word-content .example-card .example-de,
 #word-dialog .word-content .example-card .example-ar {
-  color: #68420c !important;
-  -webkit-text-fill-color: currentColor;
+  color: #ffd34f !important;
+  -webkit-text-fill-color: #ffd34f;
   opacity: 1;
   text-shadow: none;
 }
 #word-dialog .word-content .example-card .example-ar {
-  color: #293f4e !important;
+  color: #ffd34f !important;
+  -webkit-text-fill-color: #ffd34f;
 }
 #word-dialog .word-content .example-card [lang],
 #word-dialog .word-content .example-card p {
   opacity: 1;
 }
-#word-dialog .word-content .example-card .source-note,
-#word-dialog .word-content .example-card .translation-note,
 #word-dialog .word-content .source-note,
 #word-dialog .word-content .translation-note {
   color: #3a5968 !important;
 }
-#word-dialog .word-content .example-card .source-note a,
+#word-dialog .word-content .example-card .source-note,
+#word-dialog .word-content .example-card .translation-note {
+  color: #d7e7eb !important;
+}
 #word-dialog .word-content .source-note a {
   color: #075c65 !important;
   text-decoration-color: #075c65;
   text-underline-offset: 3px;
 }
+#word-dialog .word-content .example-card .source-note a {
+  color: #83e4e2 !important;
+  text-decoration-color: #83e4e2;
+}
 #word-dialog .word-content .example-card button {
-  color: #145761;
-  background: #e6f4f1;
-  border-color: #a6d0d0;
+  color: #e9fcfa;
+  background: #225363;
+  border-color: #4c8792;
 }
 #word-dialog .word-content .example-card button:hover {
-  color: #0b3f49;
-  background: #d8efeb;
+  color: #fff;
+  background: #2e6674;
 }
 #word-dialog .word-tabs button:not(.active) { color: #345663; }
 #word-dialog .word-tabs button.active { color: #085d61; }
@@ -248,3 +254,10 @@ html[dir='ltr'] #training-panel #training-level { direction: ltr; text-align: st
 
 /* Lesson and grammar cards elsewhere still use dark backgrounds. Their text
    colors are intentionally unchanged so this fix cannot reduce their contrast. */
+
+/* Grammar examples are standalone .example-card elements (without .example-de).
+   Keep their yellow text visible on the same navy background. */
+#word-dialog .word-content .grammar-section > .example-card[lang] {
+  color: #ffd34f !important;
+  -webkit-text-fill-color: #ffd34f;
+}
