@@ -65,6 +65,7 @@ let session = null,
   loadRequest = 0;
 let wordAdvanceTimer = null,
   wordAdvanceVersion = 0;
+let wordVisitHistory = [];
 const WORD_ADVANCE_DELAY = 650;
 const safeRead = (key, fallback) => {
   try {
@@ -416,7 +417,13 @@ function updateWordControls() {
   $('#mark-word').classList.toggle('is-learned', isLearned);
   $('#mark-word').textContent = t("تعلّمتها \u2713");
 }
-function openWord(word) {
+function openWord(word, recordVisit = true) {
+  const dialog = $('#word-dialog');
+  if (!dialog.open) wordVisitHistory = [];
+  else if (recordVisit && currentWord && currentWord.id !== word.id) {
+    wordVisitHistory.push(currentWord);
+    if (wordVisitHistory.length > 250) wordVisitHistory.shift();
+  }
   cancelWordAdvance();
   currentWord = word;
   wordTab = 'meaning';
@@ -586,32 +593,51 @@ function grammarHtml(word) {
   if (!word.declensionStem && !word.forms?.length && !word.verbForms && !word.plural) html += '<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
   return html;
 }
-function nextWord() {
-  const list = cache.get(currentWord.level) || [],
-    index = list.findIndex(word => word.id === currentWord.id);
-  for (let offset = 1; offset <= list.length; offset++) {
+function nextWord(options = {}) {
+  const skip = Boolean(options.skip);
+  if (!currentWord) return false;
+  const list = cache.get(currentWord.level) || [];
+  const index = list.findIndex(word => word.id === currentWord.id);
+  if (index === -1 || !list.length) return false;
+  // Do not cycle back to the very same word if it is the only unlearned one.
+  for (let offset = 1; offset < list.length; offset++) {
     const word = list[(index + offset) % list.length];
     if (!learned.has(word.id)) {
       openWord(word);
-      return;
+      return true;
     }
+  }
+  if (skip) {
+    toast(t("لا توجد كلمة أخرى لتخطيها في هذا المستوى."));
+    return false;
   }
   $('#word-dialog').close();
   toast(t("أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة."));
+  return false;
+}
+function skipWord() {
+  // No learning event or progress update: just advance to an unseen word.
+  if (wordAdvanceTimer !== null) cancelWordAdvance();
+  nextWord({ skip: true });
 }
 function previousWord() {
-  const list = cache.get(currentWord.level) || [],
-    index = list.findIndex(word => word.id === currentWord.id);
-  for (let offset = 1; offset <= list.length; offset++) {
-    const word = list[(index - offset + list.length) % list.length];
-    if (panel !== 'library' || !learned.has(word.id)) {
-      openWord(word);
-      return;
-    }
+  if (!currentWord) return;
+  // Go back to the word the learner actually viewed, including if it was
+  // just marked as learned and is now hidden from the ordinary vocabulary list.
+  if (wordVisitHistory.length) {
+    const word = wordVisitHistory.pop();
+    openWord(word, false);
+    return;
   }
-  $('#word-dialog').close();
-  toast(t("أكملت كلمات المستوى. يمكنك مراجعتها في قسم المراجعة."));
+  const list = cache.get(currentWord.level) || [];
+  const index = list.findIndex(word => word.id === currentWord.id);
+  if (index > 0) {
+    openWord(list[index - 1], false);
+  } else {
+    toast(t("لا توجد كلمة سابقة."));
+  }
 }
+
 function progressModel() {
   const history = WORT_HISTORY.snapshot();
   return {
@@ -851,6 +877,7 @@ $('#word-back').onclick = () => {
 $('#word-save').onclick = () => toggleSave(currentWord);
 $('#mark-word').onclick = markCurrentWord;
 $('#word-previous').onclick = previousWord;
+$('#word-skip').onclick = skipWord;
 document.querySelectorAll('[data-word-tab]').forEach(b => b.onclick = () => {
   wordTab = b.dataset.wordTab;
   renderWord();
