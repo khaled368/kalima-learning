@@ -56,10 +56,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v3
+          TAG: android-preview-v4
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Test APK v0.3" --notes "Android v0.3: higher-quality Android system speech with German voice selection, network retry, Back navigation. Internet required. If signature mismatch, uninstall previous debug APK after syncing your progress." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Test APK v0.4" --notes "Android v0.4: repairs speech start-up, uses media volume, falls back to installed voices, and guides users to install German TTS data. Internet required. Sync progress before uninstalling older debug APK." --prerelease
           fi
