@@ -8,7 +8,7 @@ https://khaled368.github.io/kalima-learning/ .
 * Android support: API 26 (Android 8) or newer
 * Login: sign in with the existing Supabase account. WebView app storage is
   separate from Safari/Chrome; cloud-synced progress follows the account.
-* App package: `com.kalima.learning`, version `0.1.0-test`
+* App package: `com.kalima.learning`, version `0.2.0-test`
 * Source: `android/` (Gradle Android application, Java, no extra app libraries)
 * Security: HTTPS only; external links are opened in the phone browser.
   JavaScript and DOM storage are enabled for the application.
@@ -16,6 +16,9 @@ https://khaled368.github.io/kalima-learning/ .
 The GitHub Actions workflow `.github/workflows/build-android-apk.yml`
 compiles a debug-signed APK, uploads an Actions artifact, and publishes
 `Kalima-Android-Test.apk` in a public **pre-release** on GitHub.
+
+v0.2 adds an Arabic retry screen for network failures, safer external links,
+Android Back handling for open word dialogs and tabs, and disables WebView remote debugging.
 
 The APK is for testing and is not a Google Play production release.
 Future builds use ephemeral debug keys, so when installing a newly built
