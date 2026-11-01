@@ -44,22 +44,34 @@
   margin: 0 !important;
   padding: 0 !important;
   font-family: inherit;
-  font-size: 25px !important;
-  font-weight: 600;
+  font-size: 37px !important;
+  font-weight: 700;
   line-height: 1 !important;
   text-align: center;
   color: #116c76 !important;
-  border: 1px solid #bed9df !important;
-  border-radius: 12px !important;
-  background: #f0f8fa !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
   box-shadow: none !important;
-  overflow: hidden;
+  overflow: visible;
   transform: none !important;
   -webkit-appearance: none;
   appearance: none;
 }
+#word-dialog .word-topbar > #word-back svg {
+  display: block;
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
 #word-dialog .word-topbar > #word-back:active {
-  background: #d5efed !important;
+  opacity: .65;
+  background: transparent !important;
 }
 #word-dialog .word-topbar > #word-back:focus-visible {
   outline: 2px solid #087f83;
@@ -135,11 +147,11 @@ html[data-theme='dark'] #word-dialog .word-topbar {
 }
 html[data-theme='dark'] #word-dialog .word-topbar > #word-back {
   color: #b7f4eb !important;
-  background: #123b4a !important;
-  border-color: #3e7381 !important;
+  background: transparent !important;
+  border: 0 !important;
 }
 html[data-theme='dark'] #word-dialog .word-topbar > #word-back:active {
-  background: #1b5462 !important;
+  background: transparent !important;
 }
 html[data-theme='dark'] #word-dialog .word-topbar > .reference-dialog-title {
   color: #edf9fa !important;
