@@ -154,10 +154,7 @@ html:not([data-theme='dark']) body .bottom-nav #account-button:is(.active,[aria-
   content:"▶";font:800 15px/1 system-ui,sans-serif;display:inline-block;
   margin-inline-end:5px;direction:ltr;
 }
-#review-level::before {
-  content:"↻";font:800 20px/1 system-ui,sans-serif;display:inline-block;
-  margin-inline-end:4px;
-}
+/* The existing review text already includes ↻; do not add another icon. */
 /* Dark theme has luminous gradients over dark surfaces, never pale text on pale fill. */
 html[data-theme='dark'] body .primary,
 html[data-theme='dark'] #course-apply,
@@ -300,3 +297,52 @@ body :is(.primary,.secondary):disabled {
   body .primary:not(:disabled):is(:active,.is-pressed),
   body .secondary:not(:disabled):is(:active,.is-pressed) {transform:none !important;}
 }
+
+/* Other real actions represented on the user-supplied palette. */
+html:not([data-theme='dark']) #library-panel .level-tab.active {
+  background:linear-gradient(145deg,#fff4dd,#ffd89b) !important;
+  background-image:linear-gradient(145deg,#fff4dd,#ffd89b) !important;
+  border:1.5px solid #efaa47 !important;
+  color:#834716 !important;
+  box-shadow:0 3px 8px #b274211b !important;
+}
+html[data-theme='dark'] #library-panel .level-tab.active {
+  background:linear-gradient(145deg,#584022,#382c21) !important;
+  background-image:linear-gradient(145deg,#584022,#382c21) !important;
+  border:1.5px solid #d19a54 !important;
+  color:#ffe4b8 !important;
+}
+html:not([data-theme='dark']) body :is(#retry-level,#retry-saved,#retry-app,[data-retry-verbs]) {
+  background:linear-gradient(135deg,#fff,#edf2f8) !important;
+  background-image:linear-gradient(135deg,#fff,#edf2f8) !important;
+  border:1.5px solid #a6bad2 !important;
+  color:#345371 !important;
+  border-radius:16px !important;
+}
+html[data-theme='dark'] body :is(#retry-level,#retry-saved,#retry-app,[data-retry-verbs]) {
+  background:linear-gradient(135deg,#354254,#1a2b3c) !important;
+  background-image:linear-gradient(135deg,#354254,#1a2b3c) !important;
+  border:1.5px solid #7993b0 !important;
+  color:#dbeaff !important;
+  border-radius:16px !important;
+}
+html:not([data-theme='dark']) body :is(#open-sources,.reference-word-audio,[data-speak],[data-example-speak],#session-speak) {
+  color:#167c75 !important;
+  border:1px solid #8ed8c5 !important;
+  background:linear-gradient(145deg,#fff,#d9faf0) !important;
+  background-image:linear-gradient(145deg,#fff,#d9faf0) !important;
+  border-radius:50% !important;
+  box-shadow:0 2px 7px #17866c1b !important;
+}
+html[data-theme='dark'] body :is(#open-sources,.reference-word-audio,[data-speak],[data-example-speak],#session-speak) {
+  color:#a4f6e1 !important;
+  border:1px solid #4cafa0 !important;
+  background:linear-gradient(145deg,#23564e,#15383b) !important;
+  background-image:linear-gradient(145deg,#23564e,#15383b) !important;
+  border-radius:50% !important;
+}
+body #word-dialog .word-content .example-card [data-example-speak] {
+  border-radius:12px !important;
+}
+/* Do not restyle answer feedback, individual word cards, the night-mode
+   switch, the medal images, or the target button as action pills. */
