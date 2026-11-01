@@ -45,6 +45,28 @@ Sources: `german-verbs-dict`3.4.0 and `german-verbs`5.4.0 (RosaeNLG/LanguageTool
 
 The journey redesign adds a navy/turquoise interface across vocabulary, lessons, training, saved words, shields, Sources, analytics and assessment. `journey-theme.css` contains global styling; the component styles remain scoped in `journey.css`, `journey-calendar.css` and `journey-lessons.css`.
 
-`journey.js` groups each existing 2,000-word level into forty steps of fifty cards using their stable original order. These are numbered study steps, not invented subject categories or official CEFR units. All steps remain accessible. Selecting a step filters the unlearned card list; searching restores the full-level list. Continue opens the first unlearned word in the chosen step. Daily goal counts are real newly learned words across levels; no learning or saved records are changed by navigation.
+`journey.js` groups each existing 2,000-word level into three curated 60-word A1 topics followed by 60-word numbered steps (other levels use numbered steps). These are numbered study steps, not invented subject categories or official CEFR units. All steps remain accessible. Selecting a step filters the unlearned card list; searching restores the full-level list. Continue opens the first unlearned word in the chosen step. Daily goal counts are real newly learned words across levels; no learning or saved records are changed by navigation.
 
 `journey-calendar.js` shows the last28localdays using deduplicated first-learning events. It distinguishes unrecorded days and partial recovered history; undated legacy words are not assigned to invented dates. This calendar measures new-word learning, while the separate usage panel measures foreground time.
+
+
+## Contextual Arabic example translations (current, November 2026)
+
+This section supersedes the earlier machine-translation preparation notes above. All 14,069 formerly machine-backed unique German examples were freshly translated by the assistant from the German sentence and its associated headword context, without displaying the previous machine translation during authorship or using an external translation service. The catalogue retains the 334 earlier assistant entries and 157 original Arabic entries exactly. The published corpus now has 17,427 assistant-translated occurrences and 157 original Arabic occurrences (17,584 total; 14,560 unique German examples).
+
+ترجمات عربية صيغت بمساعدة الذكاء الاصطناعي مع مراعاة سياق الأمثلة؛ ليست ترجمة بشرية معتمدة
+
+The preparation method is `contextual-authored-with-targeted-review`. It records AI-assisted authorship and targeted assistant checks, not certified human translation or independent specialist review of every sentence. Ambiguous or imperfect upstream German is preserved in this translation pass. Translation provenance does not replace the original example source, source URL or licence.
+
+`python tools/import-contextual-translations.py --input-dir /path/to/parts` requires all six complete source/context JSONL and authored Arabic TSV pairs. It verifies exact coverage against the former machine-backed catalogue at commit `42508d99d5fb6d16f9eb4941d2a2b1095907d397`, rejects incomplete, duplicate, non-Arabic, mismatched-source and copied-catalogue inputs, and records input/output SHA-256 hashes in `dist/data/example-translations.json`. The previous `--prepare-catalog` pipeline has been removed. Missing authored files cannot fall back to relabelling previous machine translations.
+
+Run `python tools/apply-example-translations.py` after regeneration, then `python tools/apply-example-translations.py --check-only` and `node tools/check-data.mjs --target`. Validation requires zero machine/Google example provenance, exact preservation of all 10,000 card IDs, order, glosses and other card fields, exact German/source fields, and exact original Arabic against the pinned publication. The current provider counts and preparation details are published in `dist/data/example-translations.json` and the Sources dialog.
+
+### Approved source-example repairs
+
+After the translation-only pass, the explicit whitelist in `tools/translations/source-example-repairs.json` replaced 60 defective upstream German sentences in 64 occurrences with newly authored German/Arabic learning examples. These examples are attributed to `Wort — مثال تعليمي مُعدّ للموقع`, marked as assistant-authored source repairs, and carry an honest original-learning-example licence note. Their exact previous German, source, URL, licence and other upstream fields remain nested under `originalSource`; the new sentences are not attributed to Tatoeba or another upstream author.
+
+Source repairs are activated explicitly with `python tools/apply-example-translations.py --apply-source-repairs tools/translations/source-example-repairs.json`. The active map's SHA-256 and repaired unique/occurrence counts are recorded in `dist/data/example-translations.json`. Later application and import retain that approved map, and validation accepts only those exact German/source changes. Card IDs, headwords, glosses, morphology and the 157 original Arabic occurrences remain unchanged. These are AI-assisted educational examples and do not claim certified human translation or review.
+
+
+The reference-layout correction uses real A1 topic memberships in `journey-topics.js` for daily life, food and travel (60 distinct words each). All remaining cards stay reachable and all levels retain2,000cards. Search, filters, review, quiz and Sources are grouped in the library control disclosure. Word details share a persistent summary above tabs and keep conjugation and Arabic/German text available. Progress shows the chart first, real hours and distinct active days, assessment and calendar; usage durations are displayed only as fractional hours, without minutes/seconds clocks. Existing duration storage remains milliseconds for accuracy.

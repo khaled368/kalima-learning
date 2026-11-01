@@ -1,0 +1,302 @@
+{
+  "Bürokratie mag Tom sehr.": {
+    "de": "Tom mag die Bürokratie nicht.",
+    "ar": "توم لا يحبّ البيروقراطية.",
+    "reason": "Replace unintended personification with a natural context."
+  },
+  "Das Angesicht macht die Rechnung.": {
+    "de": "Sein Angesicht strahlte vor Freude.",
+    "ar": "أشرق وجهه فرحًا.",
+    "reason": "Replace an unclear saying with a clear facial-expression example."
+  },
+  "Das ist mein Schiffes.": {
+    "de": "Der Name des Schiffes ist gut zu lesen.",
+    "ar": "اسم السفينة واضح وسهل القراءة.",
+    "reason": "Use the genitive form Schiffes grammatically."
+  },
+  "Das ist schön anbetracht.": {
+    "de": "In Anbetracht des Wetters bleiben wir zu Hause.",
+    "ar": "نظرًا إلى الطقس، سنبقى في المنزل.",
+    "reason": "Supply the required in Anbetracht construction."
+  },
+  "Daten sind eine organische Substanz.": {
+    "de": "Zucker ist eine organische Substanz.",
+    "ar": "السكر مادّة عضوية.",
+    "reason": "Replace the false claim that data is organic matter."
+  },
+  "Der Dreckspatz ist ein kleiner Vogel.": {
+    "de": "Nach dem Spielen im Matsch war der kleine Dreckspatz ganz schmutzig.",
+    "ar": "بعد اللعب في الوحل، كان الطفل الصغير المتّسخ مغطّى بالأوساخ.",
+    "reason": "Use Dreckspatz as a familiar term for a dirty child rather than a bird."
+  },
+  "Der Dreckspatz singt schön.": {
+    "de": "Du kleiner Dreckspatz, wasch dir bitte die Hände!",
+    "ar": "يا صغيري المتّسخ، اغسل يديك من فضلك!",
+    "reason": "Use the actual figurative meaning of Dreckspatz."
+  },
+  "Der Drum macht Musik": {
+    "de": "Ich bin müde, drum gehe ich früh ins Bett.",
+    "ar": "أنا متعب، لذلك سأنام مبكرًا.",
+    "reason": "Use colloquial drum as therefore rather than an invented noun."
+  },
+  "Der Fels kann nicht zerschmettern.": {
+    "de": "Der herabfallende Fels kann das Auto zerschmettern.",
+    "ar": "قد تحطّم الصخرة المتساقطة السيارة تحطيمًا.",
+    "reason": "Supply the object required by transitive zerschmettern."
+  },
+  "Der Hall ist leer.": {
+    "de": "Der Hall in dieser Kirche ist deutlich zu hören.",
+    "ar": "يمكن سماع الصدى في هذه الكنيسة بوضوح.",
+    "reason": "Use Hall as reverberation rather than confusing it with a hall."
+  },
+  "Der Riesenschreck ist grün.": {
+    "de": "Der plötzliche Knall hat mir einen Riesenschreck eingejagt.",
+    "ar": "أصابني الدويّ المفاجئ بفزع شديد.",
+    "reason": "Use Riesenschreck as a severe fright rather than an insect."
+  },
+  "Der Staubmann kommt, um zu stauben.": {
+    "de": "Beim Kehren kann es stark stauben.",
+    "ar": "قد يتصاعد غبار كثيف أثناء الكنس.",
+    "reason": "Remove the unclear Staubmann and demonstrate stauben naturally."
+  },
+  "Der Stein kann nicht zerschmettern.": {
+    "de": "Der schwere Stein kann das Fenster zerschmettern.",
+    "ar": "يمكن للحجر الثقيل أن يحطّم النافذة تحطيمًا.",
+    "reason": "Supply the missing object of zerschmettern."
+  },
+  "Der plump gefallene Schnee war tief": {
+    "de": "Er bewegte sich plump und stieß gegen den Tisch.",
+    "ar": "تحرّك بخرق واصطدم بالطاولة.",
+    "reason": "Demonstrate plump through clumsy movement rather than snowfall."
+  },
+  "Die Direktorin hat den Schülern nachgesagt, dass sie sich um Pünktlichkeit bemühen sollen.": {
+    "de": "Die Direktorin erinnerte die Schüler an die Bedeutung von Pünktlichkeit.",
+    "ar": "ذكّرت المديرة التلاميذ بأهمية الالتزام بالمواعيد.",
+    "reason": "Replace the incorrect nachsagen construction while retaining Pünktlichkeit."
+  },
+  "Die Farbe ist färbig.": {
+    "de": "Sie trägt ein färbiges Kleid.",
+    "ar": "ترتدي فستانًا ملوّنًا.",
+    "reason": "Use the Austrian adjective färbig in a natural phrase."
+  },
+  "Die Farben sind stilistisch.": {
+    "de": "Der Text ist stilistisch gut gelungen.",
+    "ar": "أسلوب النصّ جيّد.",
+    "reason": "Provide a complete stylistic assessment."
+  },
+  "Die Katze hat die Maus eingejagt.": {
+    "de": "Die Katze hat der Maus einen Schrecken eingejagt.",
+    "ar": "أفزعت القطة الفأر.",
+    "reason": "Supply the required jemandem einen Schrecken einjagen construction."
+  },
+  "Die Kinder schleudern ihre Fahrräder um die Ecke.": {
+    "de": "Die Kinder schleudern die Bälle über die Wiese.",
+    "ar": "يقذف الأطفال الكرات عبر المرج.",
+    "reason": "Use schleudern naturally with thrown objects."
+  },
+  "Die Komikerin hat das Publikum mit ihren Witzen ausgelacht.": {
+    "de": "Die Komikerin wurde wegen ihres schlechten Witzes ausgelacht.",
+    "ar": "سخر الناس من الممثلة الكوميدية بسبب نكتتها السيئة.",
+    "reason": "Distinguish ausgelacht from bringing an audience to laughter."
+  },
+  "Die Personalie spricht.": {
+    "de": "Das Geburtsdatum ist eine wichtige Personalie.",
+    "ar": "تاريخ الميلاد من البيانات الشخصية المهمة.",
+    "reason": "Use Personalie as a personal detail rather than a speaking person."
+  },
+  "Die Police ist ein Auto.": {
+    "de": "Die Police enthält die Bedingungen der Versicherung.",
+    "ar": "تتضمّن وثيقة التأمين شروط التأمين.",
+    "reason": "Use Police as an insurance policy rather than an automobile."
+  },
+  "Die Reise wird weiterfahren, wenn wir die Karte lesen.": {
+    "de": "Wir können weiterfahren, sobald wir die Karte gelesen haben.",
+    "ar": "يمكننا متابعة السير ما إن ننتهي من قراءة الخريطة.",
+    "reason": "Use travellers as the subject of weiterfahren."
+  },
+  "Die Schüler rappeln am Seil zum Spielplatz.": {
+    "de": "Die Fenster rappeln im Wind.",
+    "ar": "تُصدر النوافذ خشخشة مع هبوب الريح.",
+    "reason": "Use rappeln for rattling rather than confusing it with rappelling."
+  },
+  "Die Steuerung muss alle 50.000 Kilometer gewechselt werden.": {
+    "de": "Die Steuerung der Maschine funktioniert automatisch.",
+    "ar": "يعمل نظام التحكّم في الآلة تلقائيًّا.",
+    "reason": "Remove an unsupported maintenance interval and illustrate Steuerung."
+  },
+  "Du bist respektive.": {
+    "de": "Mia und Paul sind acht respektive zehn Jahre alt.",
+    "ar": "تبلغ أعمار ميا وباول ثماني سنوات وعشر سنوات على التوالي.",
+    "reason": "Use respektive as respectively rather than a predicate adjective."
+  },
+  "Er bzw. er liebt sie bzw. sie.": {
+    "de": "Bitte geben Sie Ihre Telefonnummer bzw. Ihre E-Mail-Adresse an.",
+    "ar": "يرجى إدخال رقم هاتفك أو عنوان بريدك الإلكتروني.",
+    "reason": "Use bzw. to connect meaningful alternatives."
+  },
+  "Er ist respektive.": {
+    "de": "Anna und Tom wohnen in Berlin respektive Hamburg.",
+    "ar": "يقيم كلٌّ من آنا وتوم في برلين وهامبورغ على التوالي.",
+    "reason": "Use respektive to pair people with their cities."
+  },
+  "Er ist statistisch.": {
+    "de": "Die Ergebnisse werden statistisch ausgewertet.",
+    "ar": "تُحلَّل النتائج إحصائيًّا.",
+    "reason": "Demonstrate statistically through an actual statistical analysis."
+  },
+  "Er war kein Einbruch.": {
+    "de": "Die Polizei untersucht den Einbruch in das Geschäft.",
+    "ar": "تحقّق الشرطة في اقتحام المتجر للسرقة.",
+    "reason": "Use Einbruch as a burglary rather than equating it with a person."
+  },
+  "Erkenne sich selbst!": {
+    "de": "Er versucht, sich selbst besser zu verstehen.",
+    "ar": "يحاول أن يفهم نفسه على نحو أفضل.",
+    "reason": "Correct the mismatched imperative reflexive while preserving sich."
+  },
+  "Ich bin gekuschelt.": {
+    "de": "Das Kind hat mit seiner Mutter gekuschelt.",
+    "ar": "احتضن الطفل أمّه بحنان.",
+    "reason": "Use haben and a grammatical cuddle construction."
+  },
+  "Ich bin geltend.": {
+    "de": "Das geltende Recht muss beachtet werden.",
+    "ar": "يجب الالتزام بالقانون الساري.",
+    "reason": "Use geltend attributively in its valid legal sense."
+  },
+  "Ich bin im Jahrgang.": {
+    "de": "Ich bin Jahrgang 2000.",
+    "ar": "أنا من مواليد عام 2000.",
+    "reason": "Complete the birth-year construction."
+  },
+  "Ich bin vorsichtshalber.": {
+    "de": "Ich nehme vorsichtshalber einen Regenschirm mit.",
+    "ar": "آخذ معي مظلّة احتياطًا.",
+    "reason": "Provide the action required by adverb vorsichtshalber."
+  },
+  "Ich brauche eine Durchsetzung.": {
+    "de": "Die Durchsetzung der neuen Regeln braucht Zeit.",
+    "ar": "يحتاج فرض القواعد الجديدة إلى وقت.",
+    "reason": "Use Durchsetzung with the rules being enforced."
+  },
+  "Ich esse ein Cal als Snack.": {
+    "de": "Ich esse einen Apfel als Snack.",
+    "ar": "آكل تفاحةً وجبةً خفيفة.",
+    "reason": "Replace the undefined food Cal with a clear snack."
+  },
+  "Ich fühle mich Disco.": {
+    "de": "Ich gehe heute Abend in die Disco.",
+    "ar": "سأذهب إلى ملهى الرقص هذا المساء.",
+    "reason": "Use Disco as a venue rather than a feeling."
+  },
+  "Ich gehe in die Schulzeit.": {
+    "de": "Ich erinnere mich gern an meine Schulzeit.",
+    "ar": "أتذكّر سنوات دراستي بسرور.",
+    "reason": "Use Schulzeit as a period rather than a destination."
+  },
+  "Ich gehe laufend.": {
+    "de": "Wir erhalten laufend neue Informationen.",
+    "ar": "نتلقّى معلومات جديدة باستمرار.",
+    "reason": "Use the continuous sense of laufend clearly."
+  },
+  "Ich habe einen Walker.": {
+    "de": "Der Walker trainiert jeden Morgen im Park.",
+    "ar": "يتدرّب ممارس المشي الرياضي كل صباح في الحديقة.",
+    "reason": "Demonstrate the athlete sense of Walker explicitly."
+  },
+  "Ich hasse redundant.": {
+    "de": "Diese Information ist redundant.",
+    "ar": "هذه المعلومة زائدة عن الحاجة.",
+    "reason": "Use redundant as a grammatical adjective."
+  },
+  "Ich mag Rocks.": {
+    "de": "Ich höre gern Rock.",
+    "ar": "أحبّ الاستماع إلى موسيقى الروك.",
+    "reason": "Use the uncountable music sense of Rock correctly."
+  },
+  "Ich soll meiner Schwester nachsagen, dass sie ihre Hausaufgaben machen soll, bevor sie fernsieht.": {
+    "de": "Man darf anderen nichts Falsches nachsagen.",
+    "ar": "لا يجوز افتراء الأكاذيب على الآخرين.",
+    "reason": "Use nachsagen as attributing claims about someone rather than telling them instructions."
+  },
+  "Ich spanne den Ballon auf.": {
+    "de": "Ich blase den Ballon auf.",
+    "ar": "أنفخ البالون.",
+    "reason": "Use aufblasen as the natural verb for inflating a balloon."
+  },
+  "Ich spiele Pillepalle.": {
+    "de": "Diese Aufgabe ist Pillepalle.",
+    "ar": "هذه المهمّة سهلة جدًّا.",
+    "reason": "Use Pillepalle for something trivial rather than an invented game."
+  },
+  "Insel, Insel, Heuinsel.": {
+    "de": "Die Insel liegt mitten im See.",
+    "ar": "تقع الجزيرة وسط البحيرة.",
+    "reason": "Replace an unclear repetition with a geographical example."
+  },
+  "Ist Auszeit schon Rauszeit?": {
+    "de": "Ich brauche eine Auszeit vom Alltag.",
+    "ar": "أحتاج إلى استراحة من روتين الحياة اليومية.",
+    "reason": "Replace an unclear rhyme with the actual meaning of Auszeit."
+  },
+  "Klanglos ist der Dialekt des Geistes.": {
+    "de": "Der Vortrag über die Kraft des Geistes endete klanglos.",
+    "ar": "انتهت المحاضرة عن قوّة العقل دون أن تترك صدى.",
+    "reason": "Retain both Geistes and klanglos in an intelligible context."
+  },
+  "Kostenlose Kinder!": {
+    "de": "Der Eintritt ist für Kinder kostenlos.",
+    "ar": "الدخول مجّاني للأطفال.",
+    "reason": "State what is free rather than describing children as free merchandise."
+  },
+  "Kritik kann kritisch sein.": {
+    "de": "Sachliche Kritik kann uns helfen, besser zu werden.",
+    "ar": "يمكن للنقد الموضوعي أن يساعدنا على التطوّر.",
+    "reason": "Replace an uninformative tautology with a useful criticism example."
+  },
+  "Menschlichkeit ist das Antonym zu Menschheit.": {
+    "de": "Unmenschlichkeit ist das Antonym von Menschlichkeit.",
+    "ar": "«اللاإنسانية» ضدّ «الإنسانية».",
+    "reason": "Correct the false antonym pair while retaining both target terms."
+  },
+  "Mir ist immer nich schwindlig.": {
+    "de": "Mir ist nich schwindlig.",
+    "ar": "لا أشعر بالدوار.",
+    "reason": "Retain colloquial nich but remove the unclear immer wording."
+  },
+  "Mit Toleranz ist es egal, wie vermessen eine kleine Differenz ist!": {
+    "de": "Es ist vermessen, sich für besser als alle anderen zu halten.",
+    "ar": "من الغرور أن يعدّ المرء نفسه أفضل من الجميع.",
+    "reason": "Use vermessen as presumptuous rather than confusing it with measuring."
+  },
+  "Offen war Polen.": {
+    "de": "Das Fenster ist offen.",
+    "ar": "النافذة مفتوحة.",
+    "reason": "Provide a clear everyday context for offen."
+  },
+  "Sie braucht eine Durchsetzung.": {
+    "de": "Die Durchsetzung ihrer Rechte ist ihr wichtig.",
+    "ar": "تهتمّ بضمان حصولها على حقوقها.",
+    "reason": "Specify what is being asserted or enforced."
+  },
+  "Sie gab uns eine Gegenwart.": {
+    "de": "Ich lebe in der Gegenwart, nicht in der Vergangenheit.",
+    "ar": "أعيش في الحاضر، لا في الماضي.",
+    "reason": "Distinguish Gegenwart from a gift."
+  },
+  "Trotz mir ist TEJO cool.": {
+    "de": "Trotz des Regens gehen wir spazieren.",
+    "ar": "رغم المطر، سنخرج للتنزّه.",
+    "reason": "Use a clear standard trotz construction."
+  },
+  "Wir sind Kaiserin.": {
+    "de": "Der Kaiser und die Kaiserin wohnen im Schloss.",
+    "ar": "يسكن الإمبراطور والإمبراطورة في القصر.",
+    "reason": "Correct number and retain both Kaiser and Kaiserin."
+  },
+  "im Ermessen vor jdm.": {
+    "de": "Die Entscheidung liegt im Ermessen der Behörde.",
+    "ar": "يخضع القرار لتقدير السلطة المختصّة.",
+    "reason": "Correct the Ermessen construction."
+  }
+}
