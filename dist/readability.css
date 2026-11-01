@@ -82,3 +82,12 @@ body[data-card-view='grid'] .translation{font-size:20px;line-height:1.65;overflo
 .word-detail-footer #word-next{grid-column:1;min-height:45px;padding:9px 10px;border:1px solid #29bcb8;border-radius:9px;background:#073449;color:#b6ebe7;font-size:16px;line-height:1.6;box-shadow:none}
 .word-detail-footer #mark-word{grid-column:2}
 @media(max-width:359px){.word-topbar{grid-template-columns:40px minmax(0,1fr) 40px 57px;gap:4px}.word-topbar .reference-dialog-title{font-size:16px}.word-topbar #word-save{min-width:40px;width:40px}.word-detail-footer>#word-next,.word-detail-footer>#mark-word{font-size:15px;padding-inline:6px}}
+
+/* Meaning includes inflections; only meaning and examples need tabs. */
+.word-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.word-content .degree-row,.word-content .grammar-section>h3{margin-inline:0}
+
+/* One tap starts a new word from the selected level; progress is recorded learning only. */
+.daily-goal-button{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:13px 16px;margin:0 0 18px;border:1px solid #2a8d91;border-radius:13px;background:linear-gradient(115deg,#0a4655,#073246);color:#dffff7;text-align:start;min-height:70px}
+.daily-goal-copy{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}.daily-goal-copy>strong{font-size:20px;line-height:1.6;color:#70f0dd}.daily-goal-copy>small{font-size:14px;line-height:1.7;color:#b2d6df}.daily-goal-count{font-size:19px;font-weight:700;white-space:nowrap;color:#93f5e7}.daily-goal-button>span:last-child{font-size:24px;line-height:1}.daily-goal-button.is-complete{border-color:#45bfa9}.daily-goal-button:disabled{opacity:.7}
+@media(max-width:359px){.daily-goal-button{padding:12px;gap:9px}.daily-goal-copy>strong{font-size:19px}.daily-goal-copy>small{font-size:13px}.daily-goal-count{font-size:18px}}

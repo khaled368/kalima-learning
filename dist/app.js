@@ -66,6 +66,7 @@ function updateProgress() {
  $('#level-learned').textContent=`${levelDone} من ${levelCount} كلمة تعلّمتها`;
  $('#level-bar').style.width=`${levelCount?levelDone/levelCount*100:0}%`;
  $('#level-bar').parentElement.setAttribute('aria-valuenow',String(levelCount?Math.round(levelDone/levelCount*100):0));
+ $('#daily-goal-count').textContent=`${today.ids.length.toLocaleString('ar')} / ${WORT_JOURNEY.dailyGoal.toLocaleString('ar')}`;$('#daily-goal-status').textContent=today.ids.length>=WORT_JOURNEY.dailyGoal?'اكتمل الهدف · واصل بكلمة جديدة':'افتح كلمة جديدة وابدأ التعلّم';$('#daily-goal-button').classList.toggle('is-complete',today.ids.length>=WORT_JOURNEY.dailyGoal);
  $('#stats-learned').textContent=done.toLocaleString('ar');$('#stats-today').textContent=today.ids.length.toLocaleString('ar');$('#stats-saved').textContent=saved.size.toLocaleString('ar');updateOwnedShield();if(panel==='badges')renderBadges();
  updateReviewAvailability();
  renderJourney();
@@ -81,6 +82,17 @@ async function selectLevel(code) {
  $('#cards').innerHTML='<p class="empty">جارٍ تحميل البطاقات…</p>';$('#load-more').hidden=true;status('');updateProgress();
  try { await loadLevel(code);if(request!==loadRequest)return;renderJourney();renderCards(); }
  catch(error){if(request!==loadRequest)return;$('#cards').innerHTML='<div class="empty">تعذّر تحميل الكلمات. <button class="secondary" id="retry-level">حاول مرة أخرى</button></div>';$('#retry-level').onclick=()=>selectLevel(code);status(error.message);}
+}
+async function startDailyGoal(){
+ const button=$('#daily-goal-button'),code=activeLevel;
+ button.disabled=true;button.setAttribute('aria-busy','true');
+ try{
+  const words=await loadLevel(code);if(panel!=='library'||activeLevel!==code)return;
+  const word=words.find(word=>!learned.has(word.id));
+  if(!word){toast('أكملت كلمات هذا المستوى. اختر مستوى آخر أو راجع ما تعلّمته.');return;}
+  selectJourneyUnit(null);openWord(word);
+ }catch(error){toast(error.message||'تعذّر فتح كلمات الهدف. حاول مجددًا.');}
+ finally{button.disabled=false;button.removeAttribute('aria-busy');}
 }
 function normalizeSearch(value) { return String(value).normalize('NFC').toLocaleLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,'').replace(/[أإآ]/g,'ا').replace(/ß/g,'ss'); }
 function renderJourney(){
@@ -153,27 +165,25 @@ function openWord(word) {
  currentWord=word;wordTab='meaning';verbTense='present';$('#word-title').textContent=word.german;updateWordControls();renderWord();if(!$('#word-dialog').open)$('#word-dialog').showModal();$('#word-dialog').scrollTop=0;
 }
 function exampleHtml(example) {return `<article class="example-card"><div class="example-de" lang="de" dir="ltr">${esc(example.de)}</div>${example.ar?`<p class="example-ar" lang="ar" dir="rtl">${esc(example.ar)}</p>`:''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source?`<p class="source-note">${example.generated?'مثال تعليمي مولَّد في المصدر · ':''}${example.sourceUrl?`<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>`:esc(example.source)}${example.license?' · '+esc(example.license):''}</p>`:''}</article>`;}
+function renderInlineVerb(word){
+ const current=()=>currentWord?.id===word.id&&wordTab==='meaning'&&$('#inline-conjugation');
+ if(verbDataReady){if(current())$('#inline-conjugation').innerHTML=verbGrammarHtml(word);return;}
+ if(current())$('#inline-conjugation').innerHTML='<p class="source-note">جارٍ تحميل تصريف الأفعال…</p>';
+ if(!verbLoading)verbLoading=WORT_VERBS.load().then(()=>{verbDataReady=true;}).catch(error=>{verbLoading=null;throw error;});
+ verbLoading.then(()=>{if(current())$('#inline-conjugation').innerHTML=verbGrammarHtml(word);}).catch(()=>{if(current())$('#inline-conjugation').innerHTML='<div class="empty">تعذّر تحميل التصريف. <button class="secondary" data-retry-verbs>حاول مجددًا</button></div>';});
+}
 function renderWord() {
  const word=currentWord;
  document.querySelectorAll('[data-word-tab]').forEach(b=>{const active=b.dataset.wordTab===wordTab;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});$('#word-content').setAttribute('aria-labelledby',`${wordTab}-tab`);
  const heroIcon=word.pos==='verb'?'<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="38" cy="10" r="5" fill="currentColor" stroke="none"/><path d="m21 27 9-8 12 7 10-2M31 22l-7 17 12 5 4 13M25 39l-6 13-12 4"/></svg>':wordArtwork(word);
  $('#word-summary').innerHTML=`<div class="reference-word-copy"><div class="reference-word-heading"><h2 lang="de" dir="ltr">${word.article?articleHtml(word.article)+' ':''}${esc(word.german)}</h2><button class="icon-button reference-word-audio" data-pronounce aria-label="نطق الكلمة">${SPEAKER_ICON}</button></div><p class="definition" lang="ar" dir="rtl">${esc(word.arabic)}</p><div class="reference-word-chips"><span>${POS[word.pos]||POS.other}</span><span lang="de" dir="ltr">${word.level}</span></div></div><span class="reference-word-symbol" aria-hidden="true">${heroIcon}</span>`;
- const examples=word.examples||[];
+ const examples=word.examples||[],hasExtraGrammar=word.pos!=='verb'&&Boolean(word.declensionStem||word.forms?.length||word.verbForms);
  if(wordTab==='meaning') {
-  $('#word-content').innerHTML=`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة.</p>'}${degreeHtml(word)}${word.plural?`<p class="source-note">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section>${word.pos==='verb'?'<div id="inline-conjugation"></div>':''}${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
-  if(word.pos==='verb'){
-   const renderInline=()=>{if(currentWord?.id===word.id&&wordTab==='meaning'&&$('#inline-conjugation'))$('#inline-conjugation').innerHTML=verbGrammarHtml(word);};
-   if(verbDataReady)renderInline();else{if(!verbLoading)verbLoading=WORT_VERBS.load().then(()=>{verbDataReady=true;}).catch(error=>{verbLoading=null;throw error;});verbLoading.then(renderInline).catch(()=>{if($('#inline-conjugation'))$('#inline-conjugation').textContent='افتح التصريفات للمحاولة مجددًا.';});}
-  }
+  $('#word-content').innerHTML=`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length?exampleHtml(examples[0]):'<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة.</p>'}${hasExtraGrammar?'':degreeHtml(word)}${!hasExtraGrammar&&word.plural?`<p class="source-note">الجمع: <b lang="de" dir="ltr">${esc(word.plural)}</b></p>`:''}</section>${word.pos==='verb'?'<div id="inline-conjugation"></div>':hasExtraGrammar?grammarHtml(word):''}${word.note?`<p class="source-note">${esc(word.note)}</p>`:''}`;
+  if(word.pos==='verb')renderInlineVerb(word);
  }else if(wordTab==='examples') {
   $('#word-content').innerHTML=`<div class="section-heading"><h2>أمثلة على <b lang="de">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length?examples.map(exampleHtml).join(''):'<div class="empty">لا تتوفر أمثلة في المصدر الحالي لهذه الكلمة.</div>'}`;
- }else if(word.pos==='verb'&&!verbDataReady){
-  $('#word-content').innerHTML='<p class="empty">جارٍ تحميل تصريف الأفعال…</p>';
-  if(!verbLoading)verbLoading=WORT_VERBS.load().then(()=>{verbDataReady=true;}).catch(error=>{verbLoading=null;throw error;});
-  verbLoading.then(()=>{if(currentWord?.id===word.id&&wordTab==='grammar')renderWord();}).catch(()=>{
-   if(currentWord?.id===word.id&&wordTab==='grammar'){$('#word-content').innerHTML='<div class="empty">تعذّر تحميل التصريف. <button class="secondary" id="retry-verbs">حاول مجددًا</button></div>';$('#retry-verbs').onclick=renderWord;}
-  });
- }else $('#word-content').innerHTML=grammarHtml(word);
+ }
  $('#word-content').scrollTop=0;
 }
 function degreeHtml(word) {
@@ -318,13 +328,15 @@ function renderSources() {$('#sources-content').innerHTML=`<p>${esc(manifest?.le
 
 document.querySelectorAll('[data-card-view]').forEach(button=>button.onclick=()=>setCardView(button.dataset.cardView));
 setCardView(cardView);
+$('#daily-goal-button').onclick=startDailyGoal;
 $('#search').oninput=()=>{if(selectedUnit!==null){selectedUnit=null;renderJourney();}pageSize=24;renderCards();};$('#pos-filter').onchange=()=>{pageSize=24;renderCards();};$('#load-more').onclick=()=>{pageSize+=24;renderCards();};
 $('#level-tabs').onclick=e=>{const b=e.target.closest('[data-level]');if(b)selectLevel(b.dataset.level);};
 document.querySelectorAll('[data-panel]').forEach(b=>b.onclick=()=>showPanel(b.id==='home-shield-button'&&panel==='badges'?badgesReturnPanel:b.dataset.panel));$('.brand').onclick=e=>{e.preventDefault();showPanel('library');};
 $('#word-back').onclick=()=>$('#word-dialog').close();$('#word-save').onclick=()=>toggleSave(currentWord);$('#mark-word').onclick=()=>learnWord(currentWord);$('#word-next').onclick=nextWord;
 document.querySelectorAll('[data-word-tab]').forEach(b=>b.onclick=()=>{wordTab=b.dataset.wordTab;renderWord();});
-$('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?2:(index+(e.key==='ArrowLeft'?1:-1)+3)%3;buttons[next].click();buttons[next].focus();};
+$('.word-tabs').onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const buttons=[...document.querySelectorAll('[data-word-tab]')],index=buttons.findIndex(b=>b.dataset.wordTab===wordTab);const next=e.key==='Home'?0:e.key==='End'?buttons.length-1:(index+(e.key==='ArrowLeft'?1:-1)+buttons.length)%buttons.length;buttons[next].click();buttons[next].focus();};
 document.body.addEventListener('click',e=>{
+ if(e.target.closest('[data-retry-verbs]')){renderWord();return;}
  if(e.target.closest('[data-expand-journey]')){$('#journey-content [data-journey-action="expand"]').click();return;}
  if(e.target.closest('[data-all-journey]')){selectJourneyUnit(null);return;}
  if(e.target.closest('[data-review-learned]')){reviewLearned();return;}
