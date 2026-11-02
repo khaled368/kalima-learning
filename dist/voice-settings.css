@@ -1,0 +1,31 @@
+/* Compact pronunciation preference dialog; does not change the lesson layout. */
+.kalima-voice-trigger[hidden]{display:none!important}
+#topics-panel .topics-voice-trigger{margin:10px 0 15px;min-height:42px;font-size:14px}
+.kalima-voice-trigger{white-space:normal}
+.kalima-voice-dialog{
+ box-sizing:border-box;position:fixed;max-width:min(440px,calc(100% - 28px));width:100%;
+ max-height:calc(100dvh - 50px);overflow:auto;margin:auto;padding:22px;
+ border:1px solid #86b8b5;border-radius:20px;background:#f7fcfb;color:#123b4a;
+ box-shadow:0 14px 60px #041d2c70;font-family:inherit;line-height:1.6;
+}
+.kalima-voice-dialog::backdrop{background:#051c2aa8}
+.kalima-voice-dialog h2{margin:0 0 15px;font-size:21px;line-height:1.4;font-weight:800}
+.kalima-voice-dialog>label:not(.kalima-voice-fallback){display:block;font-weight:700;margin:14px 0 6px}
+.kalima-voice-dialog select{
+ appearance:auto;display:block;box-sizing:border-box;width:100%;min-height:46px;
+ border:1px solid #8fbdb8;border-radius:12px;background:#fff;color:#173e4a;
+ padding:8px 11px;font:inherit;font-size:15px;direction:auto;
+}
+.kalima-voice-fallback{display:flex;align-items:start;gap:10px;margin:17px 0 8px;font-size:14px}
+.kalima-voice-fallback input{width:19px;height:19px;accent-color:#087d78;flex:none;margin-top:4px}
+.kalima-voice-dialog p{font-size:13px;line-height:1.7;color:#526a72;margin:12px 0}
+.kalima-voice-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.kalima-voice-actions button{min-height:44px;font-size:14px}
+html[data-theme='dark'] .kalima-voice-dialog{
+ background:#112b3b;color:#e5f4f5;border-color:#416e7a;
+}
+html[data-theme='dark'] .kalima-voice-dialog select{
+ background:#183749;color:#f2ffff;border-color:#4b8690;
+}
+html[data-theme='dark'] .kalima-voice-dialog p{color:#bed4de}
+@media(max-width:390px){.kalima-voice-dialog{padding:16px}.kalima-voice-dialog h2{font-size:19px}}
