@@ -6,6 +6,7 @@ on:
     paths:
       - "dist/**"
       - "tests/example-quality.test.cjs"
+      - "tests/example-coverage.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -28,6 +29,9 @@ jobs:
 
       - name: Verify vocabulary example relevance
         run: node tests/example-quality.test.cjs
+
+      - name: Check example coverage across all 12 learning directions
+        run: node tests/example-coverage.test.cjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
