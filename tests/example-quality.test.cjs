@@ -12,7 +12,7 @@ function start(target='de',native='ar') {
     WORT_I18N:{add(){},t(input){return input;}}
   };
   vm.createContext(context);
-  for (const file of ['example-quality.js','content.js']) {
+  for (const file of ['example-fallback.js','example-quality.js','content.js']) {
     const source=fs.readFileSync(path.join(root,'dist',file),'utf8');
     vm.runInContext(source,context,{filename:file});
   }
@@ -51,7 +51,20 @@ const moment=de.WORT_CONTENT.normalize({
 assert.equal(moment.examples.length,1,'ordinary cards filter unrelated source examples');
 assert.equal(moment.examples[0].de,'Moment mal!','related source example is retained');
 const without=de.WORT_CONTENT.normalize({id:'sample-empty',german:'Moment',pos:'noun',arabic:'لحظة',examples:[{de:'Gute Nacht!',ar:'تصبح على خير!'}]});
-assert.equal(without.examples.length,0,'no fabricated examples for general vocabulary');
+assert.equal(without.examples.length,1,'every entry has at least one example or labelled fallback');
+assert.equal(without.examples[0].vocabularyNote,true,'generic fallback is explicitly not presented as contextual usage');
+assert.equal(without.examples[0].de.includes('„Moment“'),true,'fallback clearly names the word');
+const call = de.WORT_CONTENT.normalize({
+  id:'anrufen-test',german:'anrufen',lemma:'anrufen',pos:'verb',arabic:'يتصل هاتفيًا',
+  examples:[{de:'Haben Sie abgenommen?',ar:'هل فقدت الوزن؟'}]
+});
+assert.equal(call.examples.length,3,'anrufen has three authored contextual examples');
+assert.equal(call.examples.some(x=>x.de.includes('rufe')&&x.de.includes(' an.')),true,'anrufen separable example present');
+assert.equal(call.examples.every(x=>x.kalimaAuthored),true,'curated examples are clearly attributed');
+const approach=de.WORT_CONTENT.normalize({id:'naehern-test',german:'nähern',lemma:'nähern',pos:'verb',arabic:'يقترب',examples:[]});
+assert.equal(approach.examples.length,3,'nähern has three meaningful contextual examples');
+assert.equal(approach.examples[0].de,'Wir nähern uns dem Bahnhof.','nähern is used reflexively with dative');
+assert.equal(approach.examples[0].ar,'نحن نقترب من محطة القطار.','nähern contextual example has correct Arabic translation');
 const english=start('en','ar');
 const englishEntry=english.WORT_CONTENT.normalize({
   id:'en-1',pos:'noun',texts:{en:'book',ar:'كتاب'},
@@ -62,4 +75,14 @@ const englishEntry=english.WORT_CONTENT.normalize({
 });
 assert.equal(englishEntry.examples.length,1,'English lessons also filter unrelated examples');
 assert.equal(englishEntry.examples[0].de,'This book is new.','English relevant source sentence remains');
-console.log('PASS: verified examples and word normalization across German and English.');
+const noEnglishSource=english.WORT_CONTENT.normalize({id:'en-fallback',pos:'verb',texts:{en:'help',ar:'يساعد'},examples:[]});
+assert.equal(noEnglishSource.examples.length,1,'missing English example is handled');
+assert.equal(noEnglishSource.examples[0].de,'Today I am learning the word “help”.','English target sentence is grammatically correct');
+assert.equal(noEnglishSource.examples[0].ar,'أتعلّم اليوم كلمة «help».','Arabic explanation matches target sentence');
+const dutch=start('nl','ar').WORT_CONTENT.normalize({id:'nl-test',pos:'noun',texts:{nl:'huis',ar:'بيت'},examples:[]});
+assert.equal(dutch.examples[0].de,'Vandaag leer ik het woord ‘huis’.','Dutch fallback exists');
+const arabic=start('ar','en').WORT_CONTENT.normalize({id:'ar-test',pos:'noun',texts:{ar:'كتاب',en:'book'},examples:[]});
+assert.equal(arabic.examples[0].de,'أتعلّم اليوم كلمة «كتاب».','Arabic target fallback exists');
+assert.equal(arabic.examples[0].ar,'Today I am learning the word “كتاب”.','English native translation exists');
+
+console.log('PASS: correct source examples, genuine authored verbs, and labelled fallback for all target languages.');
