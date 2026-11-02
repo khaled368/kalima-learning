@@ -133,7 +133,14 @@
     state.identity=id;state.identityReady=true;state.session=session;state.user=user;
     if(result?.requiresReload){if(state.recovering)rememberRecovery(user);state.reloading=true;render();showDialog();location.reload();return {reloading:true};}
     if(cloud&&!cloudStarted){cloud.start();cloudStarted=true;}
-   }catch(error){state.transitionBusy=false;state.authFailure=true;state.mode='connection';state.error=t('تعذّر تجهيز بيانات الحساب. حاول مجددًا.');render();showDialog();return {error:true};}
+   }catch(error){
+    state.transitionBusy=false;state.authFailure=true;state.mode='connection';
+    state.error=t('تعذّر تجهيز بيانات الحساب. حاول مجددًا.');render();
+    // On auth/cloud errors, do not block learning or discard progress.
+    if(dialog?.open)showDialog();
+    finishReady();
+    return {error:true};
+   }
    state.transitionBusy=false;
   }else{state.session=session;state.user=user;}
   state.initialised=true;state.authFailure=false;
@@ -157,7 +164,12 @@
    const result=await client.auth.getSession();if(result.error)throw result.error;
    const settled=await queueAuth('INITIAL_SESSION',result.data?.session||null);
    if(!settled?.reloading&&!state.user&&recoveryUrlError()){state.mode='forgot';state.error=t('رابط الاستعادة غير صالح أو انتهت صلاحيته. اطلب رابطًا جديدًا.');render();showDialog();}
-  }catch(error){state.authFailure=true;state.mode='connection';state.error=errorText(error);render();showDialog();}
+  }catch(error){
+   state.authFailure=true;state.mode='connection';state.error=errorText(error);render();
+   // Safari may be unable to restore an old session, but local lessons still work.
+   if(dialog?.open)showDialog();
+   finishReady();
+  }
   finally{state.requestBusy=false;if(!state.reloading){updateBusy();if(state.authFailure&&dialog?.open)focusFirst();}}
  }
  async function submitForm(event){
