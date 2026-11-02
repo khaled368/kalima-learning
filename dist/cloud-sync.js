@@ -3,7 +3,7 @@
  'use strict';
  const PREFIX='wort-cloud-v1:', OWNER=PREFIX+'owner', PENDING=PREFIX+'pending', ANON='anonymous';
  const suffix='(?::(?:en|nl|ar))?';
- const patterns=[new RegExp('^wort-(?:learned|saved|today)'+suffix+'$'),new RegExp('^wort-learning-history-v1'+suffix+'$'),new RegExp('^wort-sentences-v1'+suffix+'$'),new RegExp('^wort-writing-level'+suffix+'$'),new RegExp('^wort-analytics-preferences'+suffix+'$'),/^wort-writing-v1:[a-zA-Z0-9_.:-]+$/,/^wort-assessment-v1(?::(?:ar|en|nl|de):(?:ar|en|nl|de))?$/,/^wort-(?:usage-v1|course-selection|card-view)$/];
+ const patterns=[new RegExp('^wort-(?:learned|saved|today)'+suffix+'$'),new RegExp('^wort-learning-history-v1'+suffix+'$'),new RegExp('^wort-review-mistakes-v1'+suffix+'$'),new RegExp('^wort-sentences-v1'+suffix+'$'),new RegExp('^wort-writing-level'+suffix+'$'),new RegExp('^wort-analytics-preferences'+suffix+'$'),/^wort-writing-v1:[a-zA-Z0-9_.:-]+$/,/^wort-assessment-v1(?::(?:ar|en|nl|de):(?:ar|en|nl|de))?$/,/^wort-(?:usage-v1|course-selection|card-view)$/];
  const allowed=key=>typeof key==='string'&&patterns.some(pattern=>pattern.test(key));
  const object=()=>Object.create(null);
  const parse=(value,fallback=null)=>{try{return JSON.parse(value)??fallback;}catch{return fallback;}};
@@ -13,7 +13,7 @@
  const same=(a,b)=>JSON.stringify(canonical(a))===JSON.stringify(canonical(b));
  function union(...arrays){const values=new Map();for(const array of arrays)for(const id of ids(array)){const k=String(id);if(!values.has(k)||typeof id==='number')values.set(k,id);}return [...values].sort(([a],[b])=>a.localeCompare(b)).map(([,id])=>id);}
  function day(value){if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;const [y,m,d]=value.split('-').map(Number),date=new Date(Date.UTC(y,m-1,d));return date.getUTCFullYear()===y&&date.getUTCMonth()===m-1&&date.getUTCDate()===d;}
- const type=key=>/^wort-learned(?::|$)/.test(key)?'learned':/^wort-saved(?::|$)/.test(key)?'saved':/^wort-learning-history-v1(?::|$)/.test(key)?'history':/^wort-sentences-v1(?::|$)/.test(key)?'sentences':key==='wort-usage-v1'?'usage':/^wort-today(?::|$)/.test(key)?'today':key.startsWith('wort-writing-v1:')?'draft':'scalar';
+ const type=key=>/^wort-learned(?::|$)/.test(key)?'learned':(/^wort-saved(?::|$)/.test(key)||/^wort-review-mistakes-v1(?::|$)/.test(key))?'saved':/^wort-learning-history-v1(?::|$)/.test(key)?'history':/^wort-sentences-v1(?::|$)/.test(key)?'sentences':key==='wort-usage-v1'?'usage':/^wort-today(?::|$)/.test(key)?'today':key.startsWith('wort-writing-v1:')?'draft':'scalar';
  function stamp(value={}){const n=Number.isSafeInteger(value.n)&&value.n>=0?value.n:0,actor=typeof value.actor==='string'?value.actor:'import',vector=object();for(const [k,v] of Object.entries(value.vector||{}))if(Number.isSafeInteger(v)&&v>=0)vector[k]=v;if(!Object.keys(vector).length)vector[actor]=n;return {n,actor,vector,...(value.deleted?{deleted:true}:{})};}
  function compare(a,b){a=stamp(a);b=stamp(b);return a.n-b.n||a.actor.localeCompare(b.actor);}
  function vectors(a,b){const out=object();for(const value of [a||{},b||{}])for(const [k,n] of Object.entries(value))out[k]=Math.max(out[k]||0,n);return out;}
