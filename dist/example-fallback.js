@@ -234,7 +234,7 @@
  const authoredNote={
   ar:'مثال سياقي من كتابة كلمة',
   en:'Contextual example written for Kalima',
-  nl:'Voorbeeldzin geschrieben voor Kalima',
+  nl:'Voorbeeldzin geschreven voor Kalima',
   de:'Anwendungsbeispiel von Kalima'
  };
  const sentence={
