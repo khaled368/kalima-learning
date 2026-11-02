@@ -167,6 +167,7 @@ function updateProgress() {
   $('#daily-goal-count').textContent = `${today.ids.length.toLocaleString(LOCALE)} / ${DAILY_GOAL.toLocaleString(LOCALE)}`;
   $('#daily-goal-status').textContent = today.ids.length >= DAILY_GOAL ? t("اكتمل الهدف \xB7 واصل بكلمة جديدة") : t("افتح كلمة جديدة وابدأ التعلّم");
   $('#daily-goal-button').classList.toggle('is-complete', today.ids.length >= DAILY_GOAL);
+   globalThis.WORT_DAILY_REMINDERS?.syncProgress(today.day,today.ids.length);
   $('#stats-learned').textContent = done.toLocaleString(LOCALE);
   $('#stats-today').textContent = today.ids.length.toLocaleString(LOCALE);
   $('#stats-saved').textContent = saved.size.toLocaleString(LOCALE);
