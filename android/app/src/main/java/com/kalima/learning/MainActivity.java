@@ -1,6 +1,9 @@
 package com.kalima.learning;
 
 import android.app.Activity;
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.content.SharedPreferences;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -46,6 +49,7 @@ public final class MainActivity extends Activity {
   private static final String HOST = "khaled368.github.io";
   private static final String BASE_PATH = "/kalima-learning";
   private static final String ASSET_ROOT = "kalima/";
+  private static final int REMINDER_REQUEST = 811;
   private WebView webView;
   private ProgressBar progress;
   private LinearLayout networkError;
@@ -118,6 +122,9 @@ public final class MainActivity extends Activity {
     // Minimal speech-only bridge. No filesystem, account or device-data methods.
     // External navigation never loads inside this WebView.
     webView.addJavascriptInterface(new KalimaSpeechBridge(), "KalimaAndroidTTS");
+    webView.addJavascriptInterface(new ReminderBridge(), "KalimaDailyReminder");
+    DailyReminderReceiver.channel(this);
+    DailyReminderReceiver.schedule(this);
     initializeSystemSpeech();
 
     // Keep the existing trusted HTTPS app origin and serve its complete UI
@@ -503,6 +510,47 @@ public final class MainActivity extends Activity {
         if (androidTts != null) androidTts.stop();
       });
     }
+  }
+
+  /** Restricted reminder bridge; only preferences and word counts are writable. */
+  public final class ReminderBridge {
+    @android.webkit.JavascriptInterface
+    public String getSettings(){
+      SharedPreferences p=DailyReminderReceiver.prefs(MainActivity.this);
+      return "{\"enabled\":"+p.getBoolean("enabled",false)+",\"hour\":"+p.getInt("hour",20)
+          +",\"minute\":"+p.getInt("minute",0)+",\"permission\":"
+          +DailyReminderReceiver.allowed(MainActivity.this)+"}";
+    }
+    @android.webkit.JavascriptInterface
+    public void configure(boolean enabled,int hour,int minute,String lang){
+      if(hour<0||hour>23||minute<0||minute>59)return;
+      runOnUiThread(()->{
+        DailyReminderReceiver.configure(MainActivity.this,enabled,hour,minute,lang);
+        if(enabled && !DailyReminderReceiver.allowed(MainActivity.this)
+            && android.os.Build.VERSION.SDK_INT>=33){
+          requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS},REMINDER_REQUEST);
+        } else sendReminderPermission(DailyReminderReceiver.allowed(MainActivity.this));
+      });
+    }
+    @android.webkit.JavascriptInterface
+    public void updateProgress(String day,int count,String lang){
+      DailyReminderReceiver.progress(MainActivity.this,day,count,lang);
+    }
+  }
+  private void sendReminderPermission(boolean granted){
+    if(webView!=null)webView.evaluateJavascript("window.dispatchEvent(new CustomEvent("
+       +"'kalima-reminder-permission',{detail:{granted:"+granted+"}}))",null);
+  }
+  @Override public void onRequestPermissionsResult(int requestCode,String[] permissions,int[] results){
+    super.onRequestPermissionsResult(requestCode,permissions,results);
+    if(requestCode!=REMINDER_REQUEST)return;
+    boolean granted=results.length>0&&results[0]==PackageManager.PERMISSION_GRANTED;
+    if(!granted){
+      SharedPreferences p=DailyReminderReceiver.prefs(this);
+      DailyReminderReceiver.configure(this,false,p.getInt("hour",20),p.getInt("minute",0),
+          p.getString("lang","ar"));
+    }
+    sendReminderPermission(granted);
   }
 
   @Override
