@@ -38,14 +38,20 @@
   const legacy=target==='de'&&typeof raw.german==='string';
   const term=text(terms[target])||(legacy?raw.german:text(raw.term||raw.word||raw.text));
   const meaning=text(terms[native])||text(extras[native])||(legacy&&native==='ar'?raw.arabic:'');
-  const examples=(raw.examples||[]).map((example,index)=>{
+  const lemma=text(raw.lemmas?.[target])||(legacy?raw.lemma:term);
+  const unverifiedExamples=(raw.examples||[]).map((example,index)=>{
    const values=example.texts||example.translations||{},translated=extra.examples?.[index]||{},translatedValues=translated.texts||translated;
    const de=text(values[target])||(legacy?text(example.de):text(example.text||example.target));
    const ar=text(values[native])||text(translatedValues[native])||(legacy&&native==='ar'?text(example.ar):'');
    return de&&ar?{...example,de,ar}:null;
   }).filter(Boolean);
+  // Reject source examples that do not contain this word or a verified form
+  // of it. The source data sometimes assigns unrelated Tatoeba sentences.
+  const examples=global.WORT_EXAMPLE_QUALITY.filter(
+    {lemma,term,german:term,pos:raw.pos},unverifiedExamples,target,native
+  );
   const grammar=raw.grammar?.[target]||raw.grammar||{};
-  return {...raw,id:raw.id,level:raw.level,german:term,arabic:meaning||i18n.t('لم تتوفر ترجمة لهذه الكلمة بعد.'),lemma:text(raw.lemmas?.[target])||(legacy?raw.lemma:term),article:text(raw.articles?.[target])||(legacy?raw.article:text(raw.article)),plural:text(raw.plurals?.[target])||(legacy?raw.plural:text(grammar.plural)),pos:raw.pos||'other',examples,grammar,targetLang:target,nativeLang:native,translationAvailable:Boolean(meaning)};
+  return {...raw,id:raw.id,level:raw.level,german:term,arabic:meaning||i18n.t('لم تتوفر ترجمة لهذه الكلمة بعد.'),lemma,article:text(raw.articles?.[target])||(legacy?raw.article:text(raw.article)),plural:text(raw.plurals?.[target])||(legacy?raw.plural:text(grammar.plural)),pos:raw.pos||'other',examples,grammar,targetLang:target,nativeLang:native,translationAvailable:Boolean(meaning)};
  }
  async function loadLevel(code,model=activeManifest){
   if(!model)model=await manifest();const level=model.levels.find(level=>level.code===code);if(!level)throw new Error(i18n.t('تعذّر تحميل محتوى المنهاج. حاول مرة أخرى.'));
