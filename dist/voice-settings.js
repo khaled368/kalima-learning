@@ -76,6 +76,7 @@
  close.addEventListener('click',()=>{audio.stop();dialog.close();});
  dialog.addEventListener('close',()=>{audio.stop();preview.disabled=false;});
  document.querySelectorAll('[data-voice-settings-open]').forEach(button=>{
+  button.textContent='🎙️ '+t.title;
   button.hidden=false;
   button.addEventListener('click',()=>{render();if(!dialog.open)dialog.showModal();});
  });
