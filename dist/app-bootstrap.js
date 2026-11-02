@@ -1,7 +1,7 @@
 /* Restore the signed-in workspace before the learning modules read local progress. */
 (function (global) {
   'use strict';
-  const scripts = ['feedback.js','history.js','usage.js','audio.js?v=20261101-tts-repair-v4','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','content.js','grammar.js','app.js?v=20261101-stable-loading','course-ui.js'];
+  const scripts = ['feedback.js','history.js','usage.js','audio.js?v=20261101-tts-repair-v4','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','example-quality.js?v=20261102-verified','content.js?v=20261102-verified','grammar.js','app.js?v=20261101-stable-loading','course-ui.js'];
   const messages = {
     ar: ['جارٍ تجهيز مكتبتك…','تعذّر فتح الموقع. أعد تحميل الصفحة.'],
     en: ['Preparing your library…','Could not open the app. Reload the page.'],
