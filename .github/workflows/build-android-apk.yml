@@ -48,6 +48,9 @@ jobs:
           python android/prepare_icons.py
           test -s android/app/src/main/res/drawable-nodpi/ic_kalima_logo_foreground.png
 
+      - name: Verify native daily reminder integration
+        run: node tests/daily-reminders.test.cjs
+
       - name: Build debug-signed APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
@@ -79,10 +82,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v7
+          TAG: android-preview-v8
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.7" --notes "Android v0.7: fixed repeated first-time speech preparation message; lessons and pronunciation remain embedded offline. Account sync requires internet. Sync your progress before replacing a prior debug APK." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.8" --notes "Android v0.8: configurable opt-in daily 20-word goal notification (20:00 default), only when goal is unfinished. Internet not needed for local reminders. Includes all offline learning content and pronunciation repairs. Sync progress before reinstalling." --prerelease
           fi
