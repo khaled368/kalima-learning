@@ -25,7 +25,7 @@ function run(target,native){
  const elements=Object.fromEntries(['#topics-grid','#topics-overview','#topics-detail','#topics-search',
  '#topics-page-title','#topics-detail-search','#topics-items','#topics-detail-caption',
  '#topics-detail-title','#topics-back','.topics-page-intro','.topics-home'].map(k=>[k,node()]));
- const tabs=['all','words','phrases'].map(view=>{const element=node();element.dataset={topicFilter:view};elements['[data-topic-filter="'+view+'"]']=element;return element;});
+ const tabs=['words','phrases'].map(view=>{const element=node();element.dataset={topicFilter:view};elements['[data-topic-filter="'+view+'"]']=element;return element;});
  const panel=node();
  panel.querySelector=s=>elements[s]||null;
  panel.querySelectorAll=s=>s==='[data-topic-filter]'?tabs:[];
@@ -65,6 +65,7 @@ function run(target,native){
  const firstText=elements['#topics-items'].innerHTML;
  assert.ok(firstText.includes(sample[target]),'target is visible in word list');
  assert.ok(firstText.includes(sample[native]),'native translation is visible in word list');
+ assert.doesNotMatch(firstText,/data-topic-say="phrases:/,'only words show by default');
  assert.ok(firstText.includes('lang="'+target+'"'),'target language tagged');
  assert.ok(firstText.includes('lang="'+native+'"'),'native language tagged');
  tap('[data-topic-say]',{dataset:{topicSay:'words:0'}});
@@ -72,9 +73,10 @@ function run(target,native){
  assert.equal(events[0].detail.lang,target,'speech locale is the TARGET language');
  assert.equal(events[0].detail.text,sample[target],'speech uses the TARGET word');
  const spokenPhrase=hospital.phrases[0][0];
+ tap('[data-topic-filter]',tabs[1]);
+ assert.match(elements['#topics-items'].innerHTML,/data-topic-say="phrases:/,'sentences render in their tab');
  tap('[data-topic-say]',{dataset:{topicSay:'phrases:0'}});
  assert.equal(events[1].detail.text,spokenPhrase,'speech uses target-language sentence');
- tap('[data-topic-filter]',tabs[2]);
  assert.doesNotMatch(elements['#topics-items'].innerHTML,new RegExp('data-topic-say="words:'),'sentence filter');
  elements['#topics-detail-search'].value=spokenPhrase;
  elements['#topics-detail-search'].listeners.input();
@@ -101,4 +103,7 @@ assert.ok(bootstrap.indexOf('topics-language-pack.js')<bootstrap.indexOf('topics
 assert.match(html,/id="top-topics-button"/,'category entry shortcut still exists');
 assert.match(html,/topics\.css\?v=/,'light/dark responsive styles retained');
 assert.doesNotMatch(html,/ألماني مع ترجمة عربية · اضغط «استمع» لسماع النطق/,'redundant intro remains removed');
+assert.doesNotMatch(html,/data-topic-filter="all"/,'third All filter removed');
+assert.match(html,/data-topic-filter="words" aria-pressed="true" class="active"/,'word tab selected by default');
+assert.match(html,/data-topic-filter="phrases"/,'sentences tab retained');
 console.log('PASS: 35 sections × (35 words + 20 contextual sentences) × 12 language pairs = '+checked+' translated displays; speech in each target language; return without search focus.');
