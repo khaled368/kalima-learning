@@ -101,7 +101,8 @@ assert.equal(elements['#topics-detail'].hidden,false,'opening a topic shows deta
 assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt\./,'hospital phrases are rendered');
 assert.match(elements['#topics-items'].innerHTML,/das Krankenhaus/,'hospital words are rendered');
 tap('[data-topic-filter]',filters[2]);
-assert.doesNotMatch(elements['#topics-items'].innerHTML,/das Krankenhaus/,'phrase tab hides word list');
+assert.doesNotMatch(elements['#topics-items'].innerHTML,/data-topic-say="words:/,'phrase tab hides word entry controls');
+assert.match(elements['#topics-items'].innerHTML,/data-topic-say="phrases:/,'phrase tab retains sentence entry controls');
 assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/,'phrase tab shows contextual phrases');
 const phraseButton={dataset:{topicSay:'phrases:0'}};
 tap('[data-topic-say]',phraseButton);
