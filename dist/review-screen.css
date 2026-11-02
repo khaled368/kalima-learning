@@ -30,3 +30,23 @@
  #training-dialog .quiz-options{gap:7px}
  #training-dialog .quiz-options>button{padding-inline:7px}
 }
+
+#training-panel .review-mistakes-section[hidden]{display:none!important}
+#training-panel .review-mistakes-section{margin:20px 0 15px;padding:15px;border:1px solid #a6c5d3;background:#eef8fa;border-radius:16px;color:#163e4f}
+#training-panel .review-mistakes-heading{display:flex;justify-content:space-between;align-items:center;gap:10px}
+#training-panel .review-mistakes-heading h2{font-size:20px;line-height:1.5;margin:0;color:inherit}
+#training-panel #review-mistakes-count{padding:4px 10px;border-radius:30px;background:#d3e8eb;color:#165c67;font-size:17px}
+#training-panel .review-mistakes-section>p{font-size:13px;line-height:1.7;margin:10px 0;color:#486879}
+#training-panel .review-mistakes-list{display:grid;gap:7px;margin-bottom:12px}
+#training-panel .review-mistake-row{display:flex;align-items:center;gap:7px;padding:5px 8px;border:1px solid #ccdee5;border-radius:11px;background:white}
+#training-panel .review-mistake-word{min-width:0;flex:1;display:grid;gap:3px;text-align:start;border:0;background:none;color:#153e50;padding:7px;font-weight:700;font-size:17px}
+#training-panel .review-mistake-word small{font-size:14px;font-weight:500;color:#516b78;overflow-wrap:anywhere}
+#training-panel .review-mistake-speak{flex:0 0 44px;border-radius:50%;border:1px solid #8ed4ce;background:#e9faf5;color:#116e72}
+#training-panel .review-mistake-speak svg{width:22px;height:22px}
+#training-panel #start-mistakes-review{width:100%;min-height:46px;font-size:16px}
+html[data-theme='dark'] #training-panel .review-mistakes-section{background:#102a3a;border-color:#527f91;color:#ebf9fa}
+html[data-theme='dark'] #training-panel #review-mistakes-count{background:#22495a;color:#e3f8f6}
+html[data-theme='dark'] #training-panel .review-mistakes-section>p{color:#c8d9df}
+html[data-theme='dark'] #training-panel .review-mistake-row{background:#183749;border-color:#477187}
+html[data-theme='dark'] #training-panel .review-mistake-word{color:#ebf9fb}
+html[data-theme='dark'] #training-panel .review-mistake-word small{color:#c9d9e0}
