@@ -30,7 +30,9 @@
   if(!match)return;
   try{bridge.configure(toggle.checked,Number(match[1]),Number(match[2]),native);}
   catch{return;}
-  refresh();
+  const current=settings();
+  note.textContent=toggle.checked?(current.permission?locale[3]:locale[4]):locale[2];
+  // The native bridge updates settings asynchronously and dispatches a refresh.
  }
  toggle.addEventListener('change',save);
  time.addEventListener('change',save);
