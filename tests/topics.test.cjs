@@ -149,8 +149,8 @@ for(const [id,phrase] of Object.entries(spotChecks)){
  assert.ok(category,'new category '+id+' exists');
  assert.ok(category.phrases.some(x=>x[0]===phrase),'relevant scenario sentence for '+id);
 }
-assert.match(loader,/topics-additional-a\\.js\\?v=/,'first new topic data bundle loaded');
-assert.match(loader,/topics-additional-b\\.js\\?v=/,'second new topic data bundle loaded');
+assert.match(loader,/topics-additional-a\.js\?v=/,'first new topic data bundle loaded');
+assert.match(loader,/topics-additional-b\.js\?v=/,'second new topic data bundle loaded');
 assert.ok(loader.indexOf('topics-data.js')<loader.indexOf('topics-additional-a.js') &&
  loader.indexOf('topics-additional-a.js')<loader.indexOf('topics-additional-b.js') &&
  loader.indexOf('topics-additional-b.js')<loader.indexOf('topics.js'),'new topics loaded before UI initialization');
