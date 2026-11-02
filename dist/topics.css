@@ -273,7 +273,7 @@ html[data-theme='dark'] body .topbar #top-topics-button:is(.active,[aria-current
 }
 #topics-panel .topics-entry-main strong{
   font-family:var(--latin,Arial,sans-serif);
-  font-size:clamp(16px,3.6vw,21px);
+  font-size:clamp(19px,4.3vw,25px);
   font-weight:750;
   line-height:1.5;
   letter-spacing:.01em;
@@ -282,7 +282,7 @@ html[data-theme='dark'] body .topbar #top-topics-button:is(.active,[aria-current
   overflow-wrap:anywhere;
 }
 #topics-panel .topics-entry-main > span {
-  font-size:clamp(14px,3.2vw,17px);
+  font-size:clamp(17px,3.8vw,21px);
   color:var(--topics-text);
   line-height:1.65;
   font-weight:550;
@@ -403,7 +403,7 @@ html[data-theme='dark'] #topics-panel .topics-audio-button.audio-playing{
   body .topbar .brand-name{font-size:18px;}
   body .topbar .top-actions{gap:3px;}
   body .topbar #top-topics-button{flex-basis:35px;width:35px;min-width:35px;}
-  #topics-panel .topics-entry-main strong{font-size:16px;}
+  #topics-panel .topics-entry-main strong{font-size:18px;}
 }
 @media(prefers-reduced-motion:reduce){
   #topics-panel .topics-tile:active{transform:none;}
