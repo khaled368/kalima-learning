@@ -23,6 +23,12 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.speech.tts.Voice;
@@ -39,6 +45,7 @@ public final class MainActivity extends Activity {
   private static final String HOME = "https://khaled368.github.io/kalima-learning/";
   private static final String HOST = "khaled368.github.io";
   private static final String BASE_PATH = "/kalima-learning";
+  private static final String ASSET_ROOT = "kalima/";
   private WebView webView;
   private ProgressBar progress;
   private LinearLayout networkError;
@@ -113,6 +120,8 @@ public final class MainActivity extends Activity {
     webView.addJavascriptInterface(new KalimaSpeechBridge(), "KalimaAndroidTTS");
     initializeSystemSpeech();
 
+    // Keep the existing trusted HTTPS app origin and serve its complete UI
+    // and learning content from inside the APK instead of the remote site.
     // Remote debugging is deliberately not enabled, even in this test APK,
     // because WebView may contain an authenticated learning account.
     webView.setWebChromeClient(new WebChromeClient() {
@@ -123,6 +132,13 @@ public final class MainActivity extends Activity {
       }
     });
     webView.setWebViewClient(new WebViewClient() {
+      @Override public WebResourceResponse shouldInterceptRequest(
+          WebView view, WebResourceRequest request) {
+        Uri uri = request.getUrl();
+        if (!isAppUrl(uri)) return null;
+        return loadBundledAsset(uri);
+      }
+
       @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
         Uri uri = request.getUrl();
         if (isAppUrl(uri)) return false;
@@ -167,6 +183,64 @@ public final class MainActivity extends Activity {
     String path = uri.getPath();
     return "https".equalsIgnoreCase(scheme) && HOST.equalsIgnoreCase(host)
         && path != null && (BASE_PATH.equals(path) || path.startsWith(BASE_PATH + "/"));
+  }
+
+  // Bundle the entire trusted app origin (page, scripts, styles, lesson JSON,
+  // and local speech resources). A missing file must not silently fall back
+  // to remote website code with a potentially different release version.
+  private WebResourceResponse loadBundledAsset(Uri uri) {
+    String path = uri.getPath();
+    if (path == null || !isAppUrl(uri)) return missingAsset();
+    String relative = path.substring(BASE_PATH.length());
+    if (relative.isEmpty() || "/".equals(relative)) relative = "/index.html";
+    if (!relative.startsWith("/") || relative.indexOf('\\') >= 0) return missingAsset();
+    relative = relative.substring(1);
+    for (String segment : relative.split("/", -1)) {
+      if (segment.isEmpty() || ".".equals(segment) || "..".equals(segment)) {
+        return missingAsset();
+      }
+    }
+    try {
+      InputStream content = getAssets().open(ASSET_ROOT + relative);
+      Map<String, String> headers = new HashMap<>();
+      headers.put("Cache-Control", "no-store");
+      headers.put("X-Content-Type-Options", "nosniff");
+      String mime = contentType(relative);
+      String encoding = mime.startsWith("text/")
+          || "application/javascript".equals(mime) || "application/json".equals(mime)
+              ? "UTF-8" : null;
+      return new WebResourceResponse(mime, encoding, 200, "OK", headers, content);
+    } catch (IOException error) {
+      return missingAsset();
+    }
+  }
+
+  private WebResourceResponse missingAsset() {
+    Map<String, String> headers = new HashMap<>();
+    headers.put("Cache-Control", "no-store");
+    return new WebResourceResponse("text/plain", "UTF-8", 404, "Not Found",
+        headers, new ByteArrayInputStream(
+            "Bundled Kalima resource not found".getBytes(StandardCharsets.UTF_8)));
+  }
+
+  private String contentType(String filename) {
+    String lower = filename.toLowerCase(Locale.ROOT);
+    if (lower.endsWith(".html")) return "text/html";
+    if (lower.endsWith(".css")) return "text/css";
+    if (lower.endsWith(".js") || lower.endsWith(".mjs")) return "application/javascript";
+    if (lower.endsWith(".json")) return "application/json";
+    if (lower.endsWith(".svg")) return "image/svg+xml";
+    if (lower.endsWith(".png")) return "image/png";
+    if (lower.endsWith(".jpg") || lower.endsWith(".jpeg")) return "image/jpeg";
+    if (lower.endsWith(".webp")) return "image/webp";
+    if (lower.endsWith(".gif")) return "image/gif";
+    if (lower.endsWith(".woff2")) return "font/woff2";
+    if (lower.endsWith(".woff")) return "font/woff";
+    if (lower.endsWith(".ttf")) return "font/ttf";
+    if (lower.endsWith(".mp3")) return "audio/mpeg";
+    if (lower.endsWith(".wav")) return "audio/wav";
+    if (lower.endsWith(".pdf")) return "application/pdf";
+    return "application/octet-stream";
   }
 
   private void openExternal(Uri uri) {

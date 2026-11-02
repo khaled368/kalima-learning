@@ -1,26 +1,40 @@
-# Kalima Android test APK
+# Kalima Android offline-first APK (v0.6)
 
-This is a small Java Android WebView wrapper around
-https://khaled368.github.io/kalima-learning/ .
+This installable Android APK contains the complete `dist/` application and
+learning curriculum, instead of loading the website from GitHub Pages on
+each launch. Android manages its launcher icon, back button, speech,
+app storage, and installation.
 
-* Purpose: test the existing Kalima website in an installable Android APK
-* Internet connection: required for the initial load and most features
-* Android support: API 26 (Android 8) or newer
-* Login: sign in with the existing Supabase account. WebView app storage is
-  separate from Safari/Chrome; cloud-synced progress follows the account.
-* App package: `com.kalima.learning`, version `0.5.0-test`
-* Source: `android/` (Gradle Android application, Java, no extra app libraries)
-* Security: HTTPS only; external links are opened in the phone browser.
-  JavaScript and DOM storage are enabled for the application.
+- Study content, 35 practical sections, A1–C1 curricula, themes, navigation
+  and the bundled speech engine are packaged offline.
+- Internet remains necessary for authentication, cloud syncing, account
+  verification and external links. Voice output also depends on installed
+  offline voice data when using Android TTS.
+- This is an **offline-packaged hybrid Android application**, not yet a
+  completely native reimplementation. The existing interface runs in a
+  WebView from secure, built-in APK assets, never the live webpage.
+- Keeps the original origin `https://khaled368.github.io/kalima-learning/`
+  through local request interception, preserving compatible in-app browser
+  storage and auth redirects. Supabase requests remain network requests.
+- Minimum Android version: Android 8 (API 26). App ID:
+  `com.kalima.learning`. Version `0.6.0-offline-test`.
 
-The GitHub Actions workflow `.github/workflows/build-android-apk.yml`
-compiles a debug-signed APK, uploads an Actions artifact, and publishes
-`Kalima-Android-Test.apk` in a public **pre-release** on GitHub.
+## Build
 
-v0.5 displays the original blue-purple Kalima book on the Android launcher, generated from `dist/assets/brand-book.png` as an adaptive launcher icon. The build runs `android/prepare_icons.py` to produce the PNG from the original logo. v0.4 fixes early speech taps, selects media audio output, retries a default voice and opens Android speech settings if German voice data is missing. v0.3 prioritizes higher-quality phone voices in Android TTS (instead of the bundled robotic speech), and also includes the v0.2 Arabic retry screen for network failures, safer external links,
-Android Back handling for open word dialogs and tabs, and disables WebView remote debugging.
+Run the GitHub workflow `Build Kalima Android test APK` manually or use
+`gradle -p android assembleDebug` after installing Android SDK 35. Gradle
+copies `dist/` to a generated Android assets folder on every build; it
+does not commit duplicate curriculum files. The workflow checks packaged
+HTML, topics and JSON, then publishes `Kalima-Android-Test.apk` in the
+`android-preview-v6` prerelease.
 
-The APK is for testing and is not a Google Play production release.
-Future builds use ephemeral debug keys, so when installing a newly built
-APK over an older one you may need to uninstall the previous test version.
-To retain progress, use the account sync and confirm it is complete first.
+Because files now ship inside the APK, **changes to lessons or design
+require a new APK** to reach existing installations. The workflow is
+triggered when `dist/` or `android/` changes. Updating GitHub Pages
+does not change installed copies of this offline-packaged app.
+
+This remains a testing APK signed with an ephemeral debug key. It may
+not install over another build signed with a different key. Sign in and
+confirm cloud progress sync before uninstalling an older test APK, as
+local storage is erased on uninstall. Production distribution requires a
+permanent release signing key and additional Android testing.

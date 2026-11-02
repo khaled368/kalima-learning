@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "android/**"
+      - "dist/**"
       - ".github/workflows/build-android-apk.yml"
   workflow_dispatch:
 
@@ -50,6 +51,17 @@ jobs:
       - name: Build debug-signed APK
         run: gradle -p android --no-daemon --stacktrace assembleDebug
 
+      - name: Verify embedded lesson assets
+        run: |
+          APK=android/app/build/outputs/apk/debug/app-debug.apk
+          unzip -Z1 "$APK" > /tmp/kalima-apk-entries.txt
+          grep -Fxq 'assets/kalima/index.html' /tmp/kalima-apk-entries.txt
+          grep -Fxq 'assets/kalima/data/manifest.json' /tmp/kalima-apk-entries.txt
+          grep -Fxq 'assets/kalima/topics.js' /tmp/kalima-apk-entries.txt
+          unzip -p "$APK" assets/kalima/index.html > /tmp/kalima-index.html
+          grep -q 'app-bootstrap.js' /tmp/kalima-index.html
+          echo "PASS: Complete Kalima lessons are packaged offline"
+
       - name: Name APK for installation
         run: |
           mkdir -p apks
@@ -67,10 +79,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v5
+          TAG: android-preview-v6
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Test APK v0.5" --notes "Android v0.5: official Kalima book logo is now the Android home-screen app icon. Includes v0.4 speech repairs. Internet required. Sync progress before uninstalling older debug APK." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.6" --notes "Android v0.6: full local learning content, all 35 practical sections, and offline initial loading. Account sync requires internet. Hybrid Android interface. Sync progress before uninstalling older debug APK." --prerelease
           fi

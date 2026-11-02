@@ -10,8 +10,8 @@ android {
     applicationId 'com.kalima.learning'
     minSdk 26
     targetSdk 34
-    versionCode 5
-    versionName '0.5.0-test'
+    versionCode 6
+    versionName '0.6.0-offline-test'
   }
 
   compileOptions {
@@ -24,4 +24,16 @@ android {
       debuggable true
     }
   }
+}
+
+// Copy the complete existing curriculum into the installable APK.
+def kalimaAssetsDir = file("$buildDir/generated/kalima-assets")
+def bundleKalimaContent = tasks.register('bundleKalimaContent', Copy) {
+  from file("../../dist")
+  into file("$kalimaAssetsDir/kalima")
+  exclude '**/.DS_Store'
+}
+android.sourceSets.main.assets.srcDir(kalimaAssetsDir)
+tasks.matching { it.name.startsWith('merge') && it.name.endsWith('Assets') }.configureEach {
+  dependsOn(bundleKalimaContent)
 }
