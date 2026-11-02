@@ -8,7 +8,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const audio=fs.readFileSync(path.join(__dirname,'..','dist','audio.js'),'utf8');
 const loader=fs.readFileSync(path.join(__dirname,'..','dist','app-bootstrap.js'),'utf8');
-assert.match(loader,/audio\.js\?v=20261102-safari-gesture-fix/,
+assert.match(loader,/audio\.js\?v=20261102-voice-quality/,
   'new version must bypass cached browser audio code');
 let inGesture=false;
 let voices=[];
@@ -57,6 +57,20 @@ async function speakFromClick(value){
  assert.equal(spoken.length,1,'no duplicate speaking after voices load');
  assert.equal(events.at(-1).state,'finished');
  const preferred={lang:'de-DE',name:'Natural German',default:true};
+ voices=[{lang:'en-US',name:'English'},preferred];
+ const natural={lang:'de-DE',name:'German Premium',voiceURI:'premium-1'};
+ voices=[{lang:'de-DE',name:'German Compact',voiceURI:'compact-1'},natural];
+ const options=sandbox.WORT_AUDIO.getVoiceOptions('de');
+ assert.equal(options[0].name,'German Premium','premium voices rank ahead of compact');
+ const chosen=options.find(option=>option.name==='German Compact');
+ const store=new Map();
+ sandbox.localStorage={getItem:key=>store.get(key)||null,setItem:(key,val)=>store.set(key,val)};
+ assert.equal(sandbox.WORT_AUDIO.setVoiceSettings('de',{voiceId:chosen.id,rate:1.1}),true);
+ assert.equal(sandbox.WORT_AUDIO.getVoiceSettings('de').rate,1.1);
+ const custom=await speakFromClick('Ich möchte Deutsch lernen');
+ assert.equal(custom.voice,voices[0],'selected browser voice takes precedence over automatic ranking');
+ assert.equal(custom.rate,1.1,'user-configured speaking speed is used');
+ assert.equal(sandbox.WORT_AUDIO.getVoiceOptions('de').length,2);
  voices=[{lang:'en-US',name:'English'},preferred];
  const second=await speakFromClick('der Arbeitsvertrag');
  assert.equal(second.voice,preferred,'preferred matching installed voice is still selected');
