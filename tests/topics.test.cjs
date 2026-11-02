@@ -1,0 +1,101 @@
+/* Kalima practical-topic regression tests. Run: node tests/topics.test.cjs */
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.join(__dirname,'..','dist');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const loader=fs.readFileSync(path.join(root,'app-bootstrap.js'),'utf8');
+const css=fs.readFileSync(path.join(root,'topics.css'),'utf8');
+function node(){
+ const callbacks={};
+ return {
+  innerHTML:'',textContent:'',value:'',hidden:false,dataset:{},attributes:{},
+  classList:{toggle(){},add(){},remove(){}},
+  listeners:callbacks,
+  addEventListener(name,fn){callbacks[name]=fn;},
+  setAttribute(name,value){this.attributes[name]=value;},
+  focus(){this.focused=true;}
+ };
+}
+const elements=Object.fromEntries([
+ '#topics-grid','#topics-overview','#topics-detail','#topics-search',
+ '#topics-detail-search','#topics-items','#topics-detail-caption',
+ '#topics-detail-title','#topics-back'
+].map(x=>[x,node()]));
+const filters=['all','words','phrases'].map(view=>{
+ const button=node();button.dataset.topicFilter=view;return button;
+});
+const panel=node();
+panel.querySelector=selector=>elements[selector]||null;
+panel.querySelectorAll=selector=>selector==='[data-topic-filter]'?filters:[];
+const heard=[];
+const document={
+ getElementById:id=>id==='topics-panel'?panel:null,
+ dispatchEvent:event=>heard.push(event)
+};
+const context={
+ document,window:{scrollTo(){}},
+ CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}}
+};
+vm.createContext(context);
+for(const file of ['topics-data.js','topics.js']){
+ const src=fs.readFileSync(path.join(root,file),'utf8');
+ vm.runInContext(src,context,{filename:file});
+}
+const categories=context.WORT_TOPICS_DATA;
+assert.equal(categories.length,7,'exactly seven requested practical categories');
+const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday'];
+assert.deepEqual(Array.from(categories,x=>x.id),expected,'category order');
+for(const cat of categories){
+ assert.equal(cat.words.length,12,cat.id+' must have 12 words');
+ assert.equal(cat.phrases.length,10,cat.id+' must have 10 contextual phrases');
+ for(const [kind,rows] of [['word',cat.words],['phrase',cat.phrases]]){
+  assert.equal(new Set(Array.from(rows,pair=>pair[0])).size,rows.length,'no duplicate German '+kind+' in '+cat.id);
+  for(const pair of rows){
+   assert.equal(pair.length,2,'complete bilingual entry: '+cat.id);
+   assert.ok(pair[0].trim()&&pair[1].trim(),'nonempty German and Arabic in '+cat.id);
+   assert.ok(/[\u0600-\u06ff]/u.test(pair[1]),'Arabic translation in '+cat.id);
+  }
+ }
+}
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="hospital"/,'hospital button rendered');
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="everyday"/,'life section rendered');
+assert.match(html,/<button[^>]+id="top-saved-button"[\s\S]*?<\/button><button[^>]+id="top-topics-button"/,'topics shortcut immediately beside saved star');
+assert.match(html,/<section id="topics-panel" class="panel" hidden/,'new panel is integrated with existing showPanel logic');
+assert.match(html,/<button[^>]+id="top-topics-button"[^>]+data-panel="topics"/,'header category button uses native panel navigation');
+assert.match(html,/topics\.css\?v=/,'new mobile and dark-mode stylesheet linked');
+assert.ok(loader.indexOf('topics-data.js')>=0&&loader.indexOf('topics.js')>loader.indexOf('topics-data.js'),'data loads before topics feature');
+assert.ok(loader.indexOf('app.js')>loader.indexOf('topics.js'),'category shortcut is mounted before app attaches click listeners');
+assert.match(css,/html\[data-theme='dark'\] #topics-panel/,'dark theme provided');
+assert.match(css,/@media\(max-width:390px\)/,'small phone adjustments provided');
+function tap(selector,object){
+ panel.listeners.click({target:{closest:test=>test===selector?object:null}});
+}
+tap('[data-topic-open]',{dataset:{topicOpen:'hospital'}});
+assert.equal(elements['#topics-overview'].hidden,true,'opening a topic hides main grid');
+assert.equal(elements['#topics-detail'].hidden,false,'opening a topic shows detail');
+assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt\./,'hospital phrases are rendered');
+assert.match(elements['#topics-items'].innerHTML,/das Krankenhaus/,'hospital words are rendered');
+tap('[data-topic-filter]',filters[2]);
+assert.doesNotMatch(elements['#topics-items'].innerHTML,/das Krankenhaus/,'phrase tab hides word list');
+assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/,'phrase tab shows contextual phrases');
+const phraseButton={dataset:{topicSay:'phrases:0'}};
+tap('[data-topic-say]',phraseButton);
+assert.equal(heard.length,1,'audio dispatch fired once');
+assert.equal(heard[0].type,'wort:speak','existing Kalima speech event is reused');
+assert.equal(heard[0].detail.lang,'de','German pronunciation explicitly requested');
+assert.equal(heard[0].detail.text,'Ich brauche einen Arzt.','correct phrase pronounced');
+elements['#topics-detail-search'].value='Allergie';
+elements['#topics-detail-search'].listeners.input();
+assert.match(elements['#topics-items'].innerHTML,/Penicillin/,'Arabic/German detail search works');
+assert.doesNotMatch(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/,'detail search removes unrelated entries');
+tap('#topics-back',{});
+assert.equal(elements['#topics-overview'].hidden,false,'back returns to categories');
+assert.equal(elements['#topics-detail'].hidden,true,'back closes details without affecting main app');
+elements['#topics-search'].value='Kindergarten';
+elements['#topics-search'].listeners.input();
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="kindergarten"/,'category search finds nursery');
+assert.doesNotMatch(elements['#topics-grid'].innerHTML,/data-topic-open="train"/,'category search filters other locations');
+console.log('PASS: seven practical sections, 154 bilingual entries, category navigation, search, phrase filtering, mobile styling and German audio integration.');
