@@ -1,0 +1,48 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const script=read('dist/review-mistakes.js');
+const app=read('dist/app.js'),html=read('dist/index.html'),bootstrap=read('dist/app-bootstrap.js'),cloud=read('dist/cloud-sync.js');
+function testContext(target='de',seed=null){
+ const data=new Map();
+ const key=target==='de'?'wort-review-mistakes-v1':'wort-review-mistakes-v1:'+target;
+ if(seed)data.set(key,JSON.stringify(seed));
+ const context={WORT_COURSE:{key(name){return target==='de'?name:name+':'+target;}},WORT_I18N:{add(){}},
+ localStorage:{getItem(key){return data.get(key)||null;},setItem(key,value){data.set(key,value);}}};
+ vm.runInNewContext(script,context);
+ return {api:context.WORT_REVIEW_MISTAKES,data};
+}
+const a=testContext();
+assert.equal(a.api.all().length,0);
+assert.equal(a.api.record('A1:7',false),true);
+assert.equal(a.api.has('A1:7'),true);
+assert.equal(a.api.record('A1:7',false),false,'one error never duplicates');
+assert.equal(a.api.record('A1:7',true),true,'correct answer on later retry removes the error');
+assert.equal(a.api.has('A1:7'),false);
+assert.equal(a.api.record('A1:7',true),false,'unflagged correct answer does not add an error');
+a.api.record('A1:7',false);
+assert.deepEqual(JSON.parse(a.data.get(a.api.key)),['A1:7'],'word persisted');
+const b=testContext('en');
+assert.equal(b.api.has('A1:7'),false,'mistakes isolated per learning target');
+const c=testContext('de',['A2:3','A2:3','A1:11']);
+assert.equal(c.api.all().length,2,'storage load deduplicates');
+c.data.set(c.api.key,JSON.stringify(['A1:9']));
+c.api.reload();
+assert.equal(c.api.has('A1:9'),true,'cross-tab / cloud updated storage is read');
+assert.equal(c.api.has('A2:3'),false);
+assert.match(html,/id="review-mistakes-section"/);
+assert.match(html,/id="review-mistakes-list"/);
+assert.match(html,/id="start-mistakes-review"/);
+assert.ok(bootstrap.indexOf('review-mistakes.js')>=0&&bootstrap.indexOf('review-mistakes.js')<bootstrap.indexOf('app.js'),'review persistence must initialise before main app');
+assert.match(app,/reviewMistakes\.record\(word\.id, correct\)/);
+assert.match(app,/reviewMistakes\.forget\(word\.id\)/,'unlearning removes obsolete error flag');
+assert.match(app,/type === 'mistakes'/);
+assert.match(app,/startSession\('mistakes', \$\('#training-level'\)\.value\)/);
+assert.match(app,/if \(event\.key === reviewMistakes\.key\)/);
+assert.match(cloud,/new RegExp\('\^wort-review-mistakes-v1'/,'cloud sync accepts new list');
+assert.match(cloud,/\^wort-review-mistakes-v1\(\?::\|\$\)/,'cloud merges per-word presence, including clearing old mistakes');
+console.log('PASS: review mistakes persist, deduplicate, sync across tabs, respect language targets, clear on later correct answers.');
