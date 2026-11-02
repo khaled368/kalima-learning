@@ -8,6 +8,7 @@ on:
       - "tests/example-quality.test.cjs"
       - "tests/example-coverage.test.cjs"
       - "tests/topics.test.cjs"
+      - "tests/topics-multilingual.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -36,6 +37,9 @@ jobs:
 
       - name: Verify practical vocabulary section navigation and audio
         run: node tests/topics.test.cjs
+
+      - name: Verify all 12 language directions in expanded topic sections
+        run: node tests/topics-multilingual.test.cjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
