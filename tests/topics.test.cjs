@@ -24,7 +24,7 @@ const elements=Object.fromEntries([
  '#topics-page-title','#topics-detail-search','#topics-items','#topics-detail-caption',
  '#topics-detail-title','#topics-back'
 ].map(x=>[x,node()]));
-const filters=['all','words','phrases'].map(view=>{
+const filters=['words','phrases'].map(view=>{
  const button=node();button.dataset.topicFilter=view;return button;
 });
 const panel=node();
@@ -72,6 +72,10 @@ for(const cat of categories){
   }
  }
 }
+assert.doesNotMatch(html,/data-topic-filter="all"/,'All filter is removed from the UI');
+assert.match(html,/data-topic-filter="words" aria-pressed="true" class="active"/,'Words tab starts selected');
+assert.match(html,/data-topic-filter="phrases" aria-pressed="false"/,'Sentences tab remains available');
+assert.match(css,/\.topics-filters\s*\{[^}]*grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/,'two equally sized filter buttons');
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="hospital"/,'hospital button rendered');
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="everyday"/,'life section rendered');
 for(const id of expected.slice(7)) assert.match(elements['#topics-grid'].innerHTML,new RegExp('data-topic-open="'+id+'"'),'new '+id+' section rendered');
@@ -98,9 +102,9 @@ function tap(selector,object){
 tap('[data-topic-open]',{dataset:{topicOpen:'hospital'}});
 assert.equal(elements['#topics-overview'].hidden,true,'opening a topic hides main grid');
 assert.equal(elements['#topics-detail'].hidden,false,'opening a topic shows detail');
-assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt\./,'hospital phrases are rendered');
-assert.match(elements['#topics-items'].innerHTML,/das Krankenhaus/,'hospital words are rendered');
-tap('[data-topic-filter]',filters[2]);
+assert.match(elements['#topics-items'].innerHTML,/das Krankenhaus/,'hospital words are rendered by default');
+assert.doesNotMatch(elements['#topics-items'].innerHTML,/data-topic-say="phrases:/,'sentences are hidden until selected');
+tap('[data-topic-filter]',filters[1]);
 assert.doesNotMatch(elements['#topics-items'].innerHTML,/data-topic-say="words:/,'phrase tab hides word entry controls');
 assert.match(elements['#topics-items'].innerHTML,/data-topic-say="phrases:/,'phrase tab retains sentence entry controls');
 assert.match(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/,'phrase tab shows contextual phrases');
@@ -132,10 +136,13 @@ for(const id of expected.slice(7)){
  tap('[data-topic-open]',{dataset:{topicOpen:id}});
  const category=categories.find(cat=>cat.id===id);
  assert.equal(elements['#topics-overview'].hidden,true,'opening '+id+' works');
- for(const [german,arabic] of [...category.words,...category.phrases]){
+ for(const [view,entries] of [['words',category.words],['phrases',category.phrases]]){
+  tap('[data-topic-filter]',filters[view==='words'?0:1]);
   const source=elements['#topics-items'].innerHTML;
-  assert.ok(source.includes(german.replace(/&/g,'&amp;')),'entry in '+id+': '+german);
-  assert.ok(source.includes(arabic),'Arabic translation in '+id+': '+german);
+  for(const [german,arabic] of entries){
+   assert.ok(source.includes(german.replace(/&/g,'&amp;')),'entry in '+id+': '+german);
+   assert.ok(source.includes(arabic),'Arabic translation in '+id+': '+german);
+  }
  }
  tap('#topics-back',{});
 }
