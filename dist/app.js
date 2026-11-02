@@ -491,10 +491,10 @@ function renderWord() {
   const examples = word.examples || [],
     hasExtraGrammar = word.pos !== 'verb' && Boolean(word.declensionStem || word.forms?.length || word.verbForms);
   if (wordTab === 'meaning') {
-    $('#word-content').innerHTML = uiHtml(`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3><button class="secondary" data-detail-examples>كل الأمثلة ←</button></div>${examples.length ? exampleHtml(examples[0]) : '<p class="source-note">لا يتوفر مثال موثّق لهذه الكلمة.</p>'}${hasExtraGrammar ? '' : degreeHtml(word)}${!hasExtraGrammar && word.plural ? `<p class="source-note">الجمع: <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(word.plural)}</b></p>` : ''}</section>${word.pos === 'verb' ? '<div id="inline-conjugation"></div>' : hasExtraGrammar ? grammarHtml(word) : ''}${word.note ? `<p class="source-note">${esc(t(word.note))}</p>` : ''}`);
+    $('#word-content').innerHTML = uiHtml(`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3>${examples.length ? '<button class="secondary" data-detail-examples>كل الأمثلة ←</button>' : ''}</div>${examples.length ? exampleHtml(examples[0]) : '<p class="source-note">لا يتوفر مثال مناسب مرتبط بهذه الكلمة في المصدر الحالي.</p>'}${hasExtraGrammar ? '' : degreeHtml(word)}${!hasExtraGrammar && word.plural ? `<p class="source-note">الجمع: <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(word.plural)}</b></p>` : ''}</section>${word.pos === 'verb' ? '<div id="inline-conjugation"></div>' : hasExtraGrammar ? grammarHtml(word) : ''}${word.note ? `<p class="source-note">${esc(t(word.note))}</p>` : ''}`);
     if (word.pos === 'verb') renderInlineVerb(word);
   } else if (wordTab === 'examples') {
-    $('#word-content').innerHTML = uiHtml(`<div class="section-heading"><h2>أمثلة على <b lang="${TARGET}">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length ? examples.map(exampleHtml).join('') : '<div class="empty">لا تتوفر أمثلة في المصدر الحالي لهذه الكلمة.</div>'}`);
+    $('#word-content').innerHTML = uiHtml(`<div class="section-heading"><h2>أمثلة على <b lang="${TARGET}">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length ? examples.map(exampleHtml).join('') : '<div class="empty">لا تتوفر أمثلة تطابق هذه الكلمة في المصدر الحالي.</div>'}`);
   }
   $('#word-content').scrollTop = 0;
 }
