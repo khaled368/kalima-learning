@@ -113,8 +113,8 @@
       [
         "der Kinderarzt",
         "طبيب الأطفال",
-        "the paediatrician",
-        "de kinderarts"
+        "the male paediatrician",
+        "de mannelijke kinderarts"
       ],
       [
         "die Kindergröße",
@@ -287,8 +287,8 @@
       [
         "der Zusammenbau",
         "تجميع الأثاث",
-        "the assembly",
-        "de montage"
+        "the furniture assembly",
+        "het in elkaar zetten"
       ],
       [
         "die Lieferzeit",
