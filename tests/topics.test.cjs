@@ -73,6 +73,14 @@ assert.ok(loader.indexOf('topics-data.js')>=0&&loader.indexOf('topics.js')>loade
 assert.ok(loader.indexOf('app.js')>loader.indexOf('topics.js'),'category shortcut is mounted before app attaches click listeners');
 assert.match(css,/html\[data-theme='dark'\] #topics-panel/,'dark theme provided');
 assert.match(css,/@media\(max-width:390px\)/,'small phone adjustments provided');
+assert.match(css,/#topics-panel \.topics-grid\s*\{[^}]*grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/,
+  'topic grid must have exactly five columns');
+assert.match(css,/@media\(max-width:700px\)\{[\s\S]*?#topics-panel \.topics-grid\s*\{\s*grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/,
+  'mobile grid also uses five columns');
+assert.match(css,/#topics-panel \.topics-tile\{[^}]*flex-direction:column;/,
+  'icons stack above topic names for narrow phone cards');
+assert.equal(categories.length/5,7,'35 topics occupy seven full rows of five');
+
 function tap(selector,object){
  panel.listeners.click({target:{closest:test=>test===selector?object:null}});
 }
