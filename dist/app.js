@@ -79,7 +79,8 @@ const storedSet = key => {
   return new Set(Array.isArray(value) ? value.filter(id => typeof id === 'number' || typeof id === 'string').map(id => typeof id === 'string' && /^\d+$/.test(id) && Number(id) < 90 ? Number(id) : id) : []);
 };
 const saved = storedSet(storageKey('wort-saved')),
-  learned = storedSet(storageKey('wort-learned'));
+  learned = storedSet(storageKey('wort-learned')),
+  reviewMistakes = WORT_REVIEW_MISTAKES;
 const day = WORT_HISTORY.dayKey();
 const oldToday = safeRead(storageKey('wort-today'), {});
 const today = {
@@ -356,6 +357,7 @@ function markCurrentWord() {
     // reverses learning. History and today's goal are reconciled in remember().
     cancelWordAdvance();
     learned.delete(word.id);
+    reviewMistakes.forget(word.id);
     remember();
     renderCards();
     if (panel === 'saved') renderSaved();
@@ -703,7 +705,33 @@ function updateReviewAvailability() {
   $('#review-empty-note').hidden = training > 0;
   $('.training-options').dataset.reviewAvailable = String(training > 0);
   document.querySelectorAll('[data-review-learned]').forEach(button => button.hidden = current === 0);
+  renderMistakeWords();
 }
+let mistakeRenderToken=0;
+async function renderMistakeWords(){
+ const code=$('#training-level').value||activeLevel;
+ const pending=reviewMistakes.all().filter(id=>learned.has(id)&&idLevel(id)===code);
+ const section=$('#review-mistakes-section'),count=$('#review-mistakes-count'),container=$('#review-mistakes-list');
+ const token=++mistakeRenderToken;
+ section.hidden=!pending.length;
+ count.textContent=pending.length.toLocaleString(LOCALE);
+ if(!pending.length){container.replaceChildren();return;}
+ if(!cache.has(code))container.textContent=t("جارٍ تحميل الكلمات الصعبة…");
+ try{
+  const words=await loadLevel(code);
+  if(token!==mistakeRenderToken||$('#training-level').value!==code)return;
+  const ids=new Set(reviewMistakes.all().filter(id=>learned.has(id)&&idLevel(id)===code).map(String));
+  const matches=words.filter(word=>ids.has(String(word.id)));
+  section.hidden=!matches.length;
+  count.textContent=matches.length.toLocaleString(LOCALE);
+  container.innerHTML=uiHtml(matches.map(word=>'<div class="review-mistake-row">'+
+   '<button type="button" class="review-mistake-word" data-open="'+esc(word.id)+'">'+
+   '<span lang="'+TARGET+'" dir="'+COURSE.dir(TARGET)+'">'+(word.article?articleHtml(word.article)+' ':'')+esc(word.german)+'</span>'+
+   '<small lang="'+NATIVE+'" dir="'+COURSE.dir(NATIVE)+'">'+esc(word.arabic)+'</small></button>'+
+   '<button type="button" class="icon-button review-mistake-speak" data-speak="'+esc(word.id)+'" aria-label="'+esc(t("استمع إلى الكلمة"))+'">'+SPEAKER_ICON+'</button></div>').join(''));
+ }catch{if(token===mistakeRenderToken)container.textContent=t("تعذّر تحميل الكلمات الصعبة.");}
+}
+
 function reviewLearned() {
   showPanel('training');
   $('#training-level').value = activeLevel;
@@ -805,16 +833,22 @@ async function startSession(type, code) {
     const allWords = await loadLevel(code);
     if (request !== reviewRequest || panel !== originPanel || originPanel === 'training' && $('#training-level').value !== code || originPanel === 'library' && activeLevel !== code) return;
     const pool = allWords.filter(word => learned.has(word.id));
+    if (type === 'mistakes' && !pool.some(word => reviewMistakes.has(word.id))) {
+      toast(t("لا توجد كلمات صعبة لمراجعتها."));
+      return;
+    }
     if (!pool.length) {
       toast(t("تعلّم كلمة في هذا المستوى أولًا لتظهر في المراجعة."));
       return;
     }
     session = {
-      type: 'review',
+      type,
       code,
       pool,
       allWords,
-      words: shuffled(pool).slice(0, 10),
+      words: type === 'mistakes'
+        ? shuffled(pool.filter(word => reviewMistakes.has(word.id))).slice(0, 10)
+        : [...shuffled(pool.filter(word => reviewMistakes.has(word.id))), ...shuffled(pool.filter(word => !reviewMistakes.has(word.id)))].slice(0, 10),
       index: 0,
       score: 0,
       answered: false
@@ -834,7 +868,7 @@ function renderSession() {
     $('#training-content').innerHTML = uiHtml(`<p class="eyebrow">مراجعة ${esc(s.code)}</p><h2 id="training-title">أكملت مراجعتك ✓</h2><div class="review-summary"><strong dir="ltr">${s.score} / ${s.words.length}</strong><p>إجابات صحيحة من الكلمات التي راجعتها</p></div><p class="review-summary-note">المراجعة تثبّت كلماتك المتعلّمة، ولا تضيف كلمات جديدة إلى تقدّمك.</p><div class="review-summary-actions"><button class="primary" id="session-again" type="button">مراجعة جديدة ↻</button><button class="secondary" id="session-finish" type="button">العودة للمراجعة</button></div>`);
     $('#session-again').onclick = () => {
       $('#training-dialog').close();
-      startSession('review', s.code);
+      startSession(s.type, s.code);
     };
     $('#session-finish').onclick = () => $('#training-dialog').close();
     return;
@@ -854,6 +888,7 @@ function renderSession() {
       if (s.options[Number(option.dataset.answer)].id === word.id) option.classList.add('correct');
     });
     if (correct) s.score++;else button.classList.add('incorrect');
+    if (reviewMistakes.record(word.id, correct)) renderMistakeWords();
     $('#training-content .feedback').textContent = correct ? t("\u2713 إجابة صحيحة") : t("المعنى الصحيح: ") + word.arabic;
     $('#session-next').hidden = false;
   });
@@ -959,6 +994,7 @@ document.body.addEventListener('click', e => {
 $('#training-level').onchange = updateReviewAvailability;
 $('#review-level').onclick = () => startSession('review', activeLevel);
 $('#start-review').onclick = () => startSession('review', $('#training-level').value);
+$('#start-mistakes-review').onclick = () => startSession('mistakes', $('#training-level').value);
 $('#training-close').onclick = () => {
   $('#training-dialog').close();
   reviewRequest++;
@@ -986,6 +1022,10 @@ setInterval(() => {
   }
 }, 1000);
 window.addEventListener('storage', event => {
+  if (event.key === reviewMistakes.key) {
+    reviewMistakes.reload();
+    renderMistakeWords();
+  }
   if (event.key === storageKey('wort-learned') || event.key === WORT_HISTORY.key) {
     for (const id of storedSet(storageKey('wort-learned'))) learned.add(id);
     WORT_HISTORY.sync([...learned]);
