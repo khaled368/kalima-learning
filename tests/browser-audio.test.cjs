@@ -8,6 +8,13 @@ const path=require('node:path');
 const vm=require('node:vm');
 const audio=fs.readFileSync(path.join(__dirname,'..','dist','audio.js'),'utf8');
 const loader=fs.readFileSync(path.join(__dirname,'..','dist','app-bootstrap.js'),'utf8');
+const html=fs.readFileSync(path.join(__dirname,'..','dist','index.html'),'utf8');
+const voiceUI=fs.readFileSync(path.join(__dirname,'..','dist','voice-settings.js'),'utf8');
+new vm.Script(voiceUI,{filename:'voice-settings.js'});
+assert.match(html,/id="kalima-voice-dialog"/,'speech settings dialog exists');
+assert.match(html,/data-voice-settings-open/,'pronunciation settings are reachable from lessons');
+assert.match(loader,/voice-settings\.js\?v=/,'voice settings are loaded after the sound engine');
+assert.ok(loader.indexOf('audio.js')<loader.indexOf('voice-settings.js'),'sound engine initializes before voice controls');
 assert.match(loader,/audio\.js\?v=20261102-voice-quality/,
   'new version must bypass cached browser audio code');
 let inGesture=false;
