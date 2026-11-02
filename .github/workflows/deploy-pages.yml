@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "dist/**"
+      - "tests/example-quality.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -24,6 +25,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Verify vocabulary example relevance
+        run: node tests/example-quality.test.cjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
