@@ -207,6 +207,897 @@
     ['Ich suche eine Wohnung zur Miete.','أبحث عن شقة للإيجار.'],
     ['Wie komme ich zum Rathaus?','كيف أصل إلى مبنى البلدية؟']
    ]
+  },
+  {
+    "id": "work",
+    "title": "في العمل",
+    "subtitle": "الدوام والراتب والإجازات",
+    "icon": "💼",
+    "tone": "blue",
+    "words": [
+      [
+        "der Arbeitsvertrag",
+        "عقد العمل"
+      ],
+      [
+        "die Lohnabrechnung",
+        "قسيمة الراتب"
+      ],
+      [
+        "der Dienstplan",
+        "جدول الدوام"
+      ],
+      [
+        "die Schicht",
+        "وردية العمل"
+      ],
+      [
+        "die Überstunden",
+        "الساعات الإضافية"
+      ],
+      [
+        "die Pause",
+        "الاستراحة"
+      ],
+      [
+        "der Urlaub",
+        "الإجازة"
+      ],
+      [
+        "der Krankenstand",
+        "الإجازة المرضية"
+      ],
+      [
+        "die Zeiterfassung",
+        "تسجيل ساعات العمل"
+      ],
+      [
+        "der Vorgesetzte",
+        "المسؤول في العمل"
+      ],
+      [
+        "die Kündigung",
+        "إنهاء عقد العمل"
+      ],
+      [
+        "der Stundenlohn",
+        "الأجر بالساعة"
+      ]
+    ],
+    "phrases": [
+      [
+        "Wann beginnt meine Schicht?",
+        "متى تبدأ ورديتي؟"
+      ],
+      [
+        "Können Sie mir bitte den Dienstplan schicken?",
+        "هل يمكنك إرسال جدول الدوام لي من فضلك؟"
+      ],
+      [
+        "Ich habe eine Frage zu meiner Lohnabrechnung.",
+        "لدي سؤال عن قسيمة راتبي."
+      ],
+      [
+        "Wie werden meine Überstunden bezahlt?",
+        "كيف تُدفع ساعاتي الإضافية؟"
+      ],
+      [
+        "Ich möchte Urlaub beantragen.",
+        "أريد تقديم طلب إجازة."
+      ],
+      [
+        "Ich bin krank und kann heute nicht arbeiten.",
+        "أنا مريض ولا أستطيع العمل اليوم."
+      ],
+      [
+        "Wo muss ich meine Arbeitszeit eintragen?",
+        "أين يجب أن أسجّل ساعات عملي؟"
+      ],
+      [
+        "Können Sie mir diese Aufgabe noch einmal erklären?",
+        "هل يمكنك شرح هذه المهمة لي مرة أخرى؟"
+      ],
+      [
+        "Wann habe ich Pause?",
+        "متى موعد استراحتي؟"
+      ],
+      [
+        "An wen kann ich mich bei Fragen wenden?",
+        "إلى من يمكنني التوجّه عند وجود أسئلة؟"
+      ]
+    ]
+  },
+  {
+    "id": "ams",
+    "title": "في AMS والدوائر",
+    "subtitle": "المساعدات والمواعيد والاستمارات",
+    "icon": "🏛️",
+    "tone": "violet",
+    "words": [
+      [
+        "das AMS",
+        "مكتب سوق العمل في النمسا"
+      ],
+      [
+        "das Arbeitslosengeld",
+        "إعانة البطالة"
+      ],
+      [
+        "die Notstandshilfe",
+        "مساعدة الطوارئ بعد إعانة البطالة"
+      ],
+      [
+        "die Arbeitslosmeldung",
+        "التسجيل كعاطل عن العمل"
+      ],
+      [
+        "der Antrag",
+        "الطلب الرسمي"
+      ],
+      [
+        "der Bescheid",
+        "القرار الإداري المكتوب"
+      ],
+      [
+        "der Termin",
+        "الموعد"
+      ],
+      [
+        "die Stellenvermittlung",
+        "التوسط لإيجاد وظيفة"
+      ],
+      [
+        "die Betreuungsvereinbarung",
+        "اتفاق المتابعة مع AMS"
+      ],
+      [
+        "die Unterlagen",
+        "المستندات"
+      ],
+      [
+        "die Meldebestätigung",
+        "إثبات تسجيل السكن"
+      ],
+      [
+        "das Formular",
+        "الاستمارة"
+      ]
+    ],
+    "phrases": [
+      [
+        "Ich möchte mich arbeitslos melden.",
+        "أريد تسجيل نفسي كعاطل عن العمل."
+      ],
+      [
+        "Ich habe einen Termin beim AMS.",
+        "لدي موعد في مكتب AMS."
+      ],
+      [
+        "Welche Unterlagen muss ich mitbringen?",
+        "ما المستندات التي يجب أن أحضرها؟"
+      ],
+      [
+        "Ich möchte meine neue Beschäftigung melden.",
+        "أريد إبلاغكم عن عملي الجديد."
+      ],
+      [
+        "Kann ich meinen Termin verschieben?",
+        "هل يمكنني تغيير موعدي؟"
+      ],
+      [
+        "Ich habe eine Frage zu meinem Arbeitslosengeld.",
+        "لدي سؤال عن إعانة البطالة الخاصة بي."
+      ],
+      [
+        "Ist mein Antrag vollständig?",
+        "هل طلبي مكتمل؟"
+      ],
+      [
+        "Ich habe einen Brief vom AMS bekommen.",
+        "وصلتني رسالة من AMS."
+      ],
+      [
+        "Können Sie mir den Bescheid erklären?",
+        "هل يمكنك شرح القرار الإداري لي؟"
+      ],
+      [
+        "Ich möchte einen Deutschkurs besuchen.",
+        "أريد الالتحاق بدورة لغة ألمانية."
+      ]
+    ]
+  },
+  {
+    "id": "pharmacy",
+    "title": "في الصيدلية",
+    "subtitle": "الوصفات والأدوية والاستفسارات",
+    "icon": "💊",
+    "tone": "rose",
+    "words": [
+      [
+        "die Apotheke",
+        "الصيدلية"
+      ],
+      [
+        "das Rezept",
+        "الوصفة الطبية"
+      ],
+      [
+        "das Medikament",
+        "الدواء"
+      ],
+      [
+        "die Tablette",
+        "القرص الدوائي"
+      ],
+      [
+        "die Salbe",
+        "المرهم"
+      ],
+      [
+        "die Tropfen",
+        "القطرات"
+      ],
+      [
+        "die Packungsbeilage",
+        "النشرة المرفقة بالدواء"
+      ],
+      [
+        "die Nebenwirkung",
+        "الأثر الجانبي"
+      ],
+      [
+        "die Dosierung",
+        "الجرعة"
+      ],
+      [
+        "das Pflaster",
+        "اللاصق الطبي"
+      ],
+      [
+        "der Hustensaft",
+        "شراب السعال"
+      ],
+      [
+        "die Allergie",
+        "الحساسية"
+      ]
+    ],
+    "phrases": [
+      [
+        "Ich möchte dieses Rezept einlösen.",
+        "أريد صرف هذه الوصفة الطبية."
+      ],
+      [
+        "Ist dieses Medikament rezeptpflichtig?",
+        "هل يتطلب هذا الدواء وصفة طبية؟"
+      ],
+      [
+        "Wie oft soll ich diese Tabletten einnehmen?",
+        "كم مرة يجب أن أتناول هذه الأقراص؟"
+      ],
+      [
+        "Soll ich das Medikament vor oder nach dem Essen einnehmen?",
+        "هل أتناول الدواء قبل الطعام أم بعده؟"
+      ],
+      [
+        "Hat dieses Medikament Nebenwirkungen?",
+        "هل لهذا الدواء آثار جانبية؟"
+      ],
+      [
+        "Ich habe eine Allergie gegen Penicillin.",
+        "لدي حساسية من البنسلين."
+      ],
+      [
+        "Gibt es dieses Medikament auch für Kinder?",
+        "هل يتوفر هذا الدواء للأطفال أيضًا؟"
+      ],
+      [
+        "Wie muss ich die Tropfen aufbewahren?",
+        "كيف يجب أن أحفظ القطرات؟"
+      ],
+      [
+        "Ich brauche ein Pflaster.",
+        "أحتاج إلى لاصق طبي."
+      ],
+      [
+        "Können Sie mir die Packungsbeilage erklären?",
+        "هل يمكنك شرح النشرة المرفقة بالدواء لي؟"
+      ]
+    ]
+  },
+  {
+    "id": "housing",
+    "title": "في السكن والإيجار",
+    "subtitle": "الشقة والعقد والفواتير والصيانة",
+    "icon": "🏠",
+    "tone": "green",
+    "words": [
+      [
+        "die Wohnung",
+        "الشقة"
+      ],
+      [
+        "die Miete",
+        "الإيجار"
+      ],
+      [
+        "der Mietvertrag",
+        "عقد الإيجار"
+      ],
+      [
+        "die Kaution",
+        "مبلغ التأمين على السكن"
+      ],
+      [
+        "die Betriebskosten",
+        "تكاليف تشغيل المبنى"
+      ],
+      [
+        "die Heizung",
+        "التدفئة"
+      ],
+      [
+        "der Strom",
+        "الكهرباء"
+      ],
+      [
+        "das Warmwasser",
+        "الماء الساخن"
+      ],
+      [
+        "der Vermieter",
+        "مالك العقار المؤجر"
+      ],
+      [
+        "die Hausverwaltung",
+        "إدارة العقار"
+      ],
+      [
+        "die Reparatur",
+        "التصليح"
+      ],
+      [
+        "die Wohnungsbesichtigung",
+        "معاينة الشقة"
+      ]
+    ],
+    "phrases": [
+      [
+        "Ist die Wohnung noch frei?",
+        "هل الشقة ما زالت متاحة؟"
+      ],
+      [
+        "Sind die Betriebskosten in der Miete enthalten?",
+        "هل تكاليف تشغيل المبنى مشمولة في الإيجار؟"
+      ],
+      [
+        "Wie hoch ist die Kaution?",
+        "كم مبلغ التأمين على السكن؟"
+      ],
+      [
+        "Wann kann ich die Wohnung besichtigen?",
+        "متى يمكنني معاينة الشقة؟"
+      ],
+      [
+        "Die Heizung funktioniert nicht.",
+        "التدفئة لا تعمل."
+      ],
+      [
+        "In der Küche ist der Abfluss verstopft.",
+        "أنبوب التصريف في المطبخ مسدود."
+      ],
+      [
+        "Kann ich den Mietvertrag per E-Mail bekommen?",
+        "هل يمكنني الحصول على عقد الإيجار عبر البريد الإلكتروني؟"
+      ],
+      [
+        "Wo darf ich mein Auto parken?",
+        "أين يُسمح لي بركن سيارتي؟"
+      ],
+      [
+        "Wann kommt der Handwerker?",
+        "متى سيأتي عامل الصيانة؟"
+      ],
+      [
+        "Ich möchte einen Schaden in der Wohnung melden.",
+        "أريد الإبلاغ عن ضرر في الشقة."
+      ]
+    ]
+  },
+  {
+    "id": "car",
+    "title": "في السيارة والورشة",
+    "subtitle": "الأعطال والتأمين والفحص الفني",
+    "icon": "🚗",
+    "tone": "indigo",
+    "words": [
+      [
+        "der Führerschein",
+        "رخصة القيادة"
+      ],
+      [
+        "der Zulassungsschein",
+        "شهادة تسجيل السيارة"
+      ],
+      [
+        "die Versicherung",
+        "التأمين"
+      ],
+      [
+        "die Tankstelle",
+        "محطة الوقود"
+      ],
+      [
+        "der Reifen",
+        "الإطار"
+      ],
+      [
+        "der Reifendruck",
+        "ضغط الهواء في الإطار"
+      ],
+      [
+        "der Motor",
+        "المحرّك"
+      ],
+      [
+        "die Panne",
+        "عطل السيارة على الطريق"
+      ],
+      [
+        "die Batterie",
+        "البطارية"
+      ],
+      [
+        "die Werkstatt",
+        "ورشة تصليح السيارات"
+      ],
+      [
+        "das Pickerl",
+        "ملصق الفحص الفني الدوري في النمسا"
+      ],
+      [
+        "das Motoröl",
+        "زيت المحرّك"
+      ]
+    ],
+    "phrases": [
+      [
+        "Mein Auto springt nicht an.",
+        "سيارتي لا تعمل عند محاولة تشغيلها."
+      ],
+      [
+        "Wo ist die nächste Tankstelle?",
+        "أين أقرب محطة وقود؟"
+      ],
+      [
+        "Ich habe einen platten Reifen.",
+        "لدي إطار فارغ من الهواء."
+      ],
+      [
+        "Können Sie die Batterie überprüfen?",
+        "هل يمكنك فحص البطارية؟"
+      ],
+      [
+        "Wann ist das Pickerl fällig?",
+        "متى يحين موعد الفحص الفني الدوري للسيارة؟"
+      ],
+      [
+        "Wie viel kostet die Reparatur?",
+        "كم تكلفة التصليح؟"
+      ],
+      [
+        "Die Motorkontrollleuchte leuchtet.",
+        "ضوء فحص المحرّك مضاء."
+      ],
+      [
+        "Ich brauche einen Termin in der Werkstatt.",
+        "أحتاج إلى موعد في ورشة التصليح."
+      ],
+      [
+        "Können Sie den Reifendruck prüfen?",
+        "هل يمكنك فحص ضغط الإطارات؟"
+      ],
+      [
+        "Mein Auto ist unterwegs liegen geblieben.",
+        "تعطلت سيارتي أثناء الطريق ولم تعد تسير."
+      ]
+    ]
+  },
+  {
+    "id": "bank",
+    "title": "في البنك",
+    "subtitle": "الحساب والتحويلات والمدفوعات",
+    "icon": "🏦",
+    "tone": "blue",
+    "words": [
+      [
+        "das Bankkonto",
+        "الحساب البنكي"
+      ],
+      [
+        "die Bankomatkarte",
+        "بطاقة الصراف الآلي في النمسا"
+      ],
+      [
+        "die Überweisung",
+        "التحويل البنكي"
+      ],
+      [
+        "die IBAN",
+        "رقم الحساب البنكي الدولي"
+      ],
+      [
+        "der Kontoauszug",
+        "كشف الحساب"
+      ],
+      [
+        "das Onlinebanking",
+        "الخدمات المصرفية عبر الإنترنت"
+      ],
+      [
+        "die Kontogebühr",
+        "رسوم الحساب البنكي"
+      ],
+      [
+        "die Abbuchung",
+        "الخصم من الحساب"
+      ],
+      [
+        "die Rückerstattung",
+        "استرداد المبلغ"
+      ],
+      [
+        "die Ratenzahlung",
+        "الدفع بالتقسيط"
+      ],
+      [
+        "der Dauerauftrag",
+        "أمر التحويل البنكي الدائم"
+      ],
+      [
+        "die Kreditkarte",
+        "بطاقة الائتمان"
+      ]
+    ],
+    "phrases": [
+      [
+        "Ich möchte ein Bankkonto eröffnen.",
+        "أريد فتح حساب بنكي."
+      ],
+      [
+        "Ich habe eine Frage zu einer Abbuchung.",
+        "لدي سؤال عن مبلغ خُصم من حسابي."
+      ],
+      [
+        "Ich glaube, dieser Betrag wurde zweimal abgebucht.",
+        "أعتقد أن هذا المبلغ خُصم مرتين."
+      ],
+      [
+        "Kann ich am Schalter eine Überweisung machen?",
+        "هل يمكنني إجراء تحويل بنكي عند الشباك؟"
+      ],
+      [
+        "Wie hoch sind die Kontogebühren?",
+        "كم تبلغ رسوم الحساب البنكي؟"
+      ],
+      [
+        "Ich möchte einen Dauerauftrag einrichten.",
+        "أريد إعداد أمر تحويل بنكي دائم."
+      ],
+      [
+        "Kann ich den Betrag in Raten bezahlen?",
+        "هل يمكنني دفع المبلغ على أقساط؟"
+      ],
+      [
+        "Meine Bankomatkarte funktioniert nicht.",
+        "بطاقتي البنكية لا تعمل."
+      ],
+      [
+        "Wie kann ich meine Karte sperren lassen?",
+        "كيف يمكنني طلب إيقاف بطاقتي البنكية؟"
+      ],
+      [
+        "Können Sie mir einen Kontoauszug ausdrucken?",
+        "هل يمكنك طباعة كشف حساب لي؟"
+      ]
+    ]
+  },
+  {
+    "id": "phone",
+    "title": "في الهاتف والاتصالات",
+    "subtitle": "الشريحة والاشتراك والإنترنت",
+    "icon": "📱",
+    "tone": "teal",
+    "words": [
+      [
+        "das Handy",
+        "الهاتف المحمول"
+      ],
+      [
+        "die SIM-Karte",
+        "شريحة الهاتف"
+      ],
+      [
+        "der Tarif",
+        "باقة الاشتراك"
+      ],
+      [
+        "der Vertrag",
+        "العقد"
+      ],
+      [
+        "das Guthaben",
+        "الرصيد"
+      ],
+      [
+        "die Rechnung",
+        "الفاتورة"
+      ],
+      [
+        "die Rufnummer",
+        "رقم الهاتف"
+      ],
+      [
+        "das Datenvolumen",
+        "حجم بيانات الإنترنت"
+      ],
+      [
+        "der Empfang",
+        "إشارة الشبكة"
+      ],
+      [
+        "die Mailbox",
+        "البريد الصوتي"
+      ],
+      [
+        "die Kündigung",
+        "إلغاء العقد"
+      ],
+      [
+        "die Netzabdeckung",
+        "تغطية الشبكة"
+      ]
+    ],
+    "phrases": [
+      [
+        "Ich möchte eine neue SIM-Karte kaufen.",
+        "أريد شراء شريحة هاتف جديدة."
+      ],
+      [
+        "Wie viel Datenvolumen ist im Tarif enthalten?",
+        "ما حجم بيانات الإنترنت المشمول في الباقة؟"
+      ],
+      [
+        "Wann endet mein Vertrag?",
+        "متى ينتهي عقدي؟"
+      ],
+      [
+        "Ich habe keinen Empfang.",
+        "ليست لدي إشارة شبكة."
+      ],
+      [
+        "Meine SIM-Karte funktioniert nicht.",
+        "شريحة هاتفي لا تعمل."
+      ],
+      [
+        "Wie kann ich mein Guthaben aufladen?",
+        "كيف يمكنني شحن رصيدي؟"
+      ],
+      [
+        "Ich möchte meine Rufnummer mitnehmen.",
+        "أريد الاحتفاظ برقم هاتفي عند الانتقال إلى شركة أخرى."
+      ],
+      [
+        "Warum ist meine Rechnung so hoch?",
+        "لماذا فاتورتي مرتفعة جدًا؟"
+      ],
+      [
+        "Gibt es einen günstigeren Tarif?",
+        "هل توجد باقة أرخص؟"
+      ],
+      [
+        "Können Sie mir helfen, das Handy einzurichten?",
+        "هل يمكنك مساعدتي في إعداد الهاتف؟"
+      ]
+    ]
+  },
+  {
+    "id": "restaurant",
+    "title": "في المطعم",
+    "subtitle": "الطلب والحساسية والدفع",
+    "icon": "🍽️",
+    "tone": "amber",
+    "words": [
+      [
+        "die Speisekarte",
+        "قائمة الطعام"
+      ],
+      [
+        "die Bestellung",
+        "الطلب"
+      ],
+      [
+        "das Gericht",
+        "الطبق"
+      ],
+      [
+        "das Tagesmenü",
+        "قائمة طعام اليوم"
+      ],
+      [
+        "die Rechnung",
+        "الفاتورة"
+      ],
+      [
+        "das Trinkgeld",
+        "البقشيش"
+      ],
+      [
+        "der Kellner",
+        "النادل"
+      ],
+      [
+        "die Kellnerin",
+        "النادلة"
+      ],
+      [
+        "die Reservierung",
+        "الحجز"
+      ],
+      [
+        "die Vorspeise",
+        "المقبلات"
+      ],
+      [
+        "die Hauptspeise",
+        "الطبق الرئيسي"
+      ],
+      [
+        "die Nachspeise",
+        "الحلوى بعد الطعام"
+      ]
+    ],
+    "phrases": [
+      [
+        "Haben Sie einen freien Tisch für vier Personen?",
+        "هل لديكم طاولة شاغرة لأربعة أشخاص؟"
+      ],
+      [
+        "Kann ich bitte die Speisekarte bekommen?",
+        "هل يمكنني الحصول على قائمة الطعام من فضلك؟"
+      ],
+      [
+        "Was empfehlen Sie heute?",
+        "بماذا تنصحون اليوم؟"
+      ],
+      [
+        "Ich möchte dieses Gericht bestellen.",
+        "أريد طلب هذا الطبق."
+      ],
+      [
+        "Ist dieses Gericht vegetarisch?",
+        "هل هذا الطبق نباتي؟"
+      ],
+      [
+        "Enthält dieses Gericht Nüsse?",
+        "هل يحتوي هذا الطبق على المكسرات؟"
+      ],
+      [
+        "Kann ich das ohne Zwiebeln bekommen?",
+        "هل يمكنني الحصول عليه دون بصل؟"
+      ],
+      [
+        "Könnten Sie uns bitte Wasser bringen?",
+        "هل يمكنكم إحضار ماء لنا من فضلكم؟"
+      ],
+      [
+        "Könnten wir bitte bezahlen?",
+        "هل يمكننا دفع الحساب من فضلكم؟"
+      ],
+      [
+        "Kann ich mit Karte bezahlen?",
+        "هل يمكنني الدفع بالبطاقة؟"
+      ]
+    ]
+  },
+  {
+    "id": "worksite",
+    "title": "في موقع العمل",
+    "subtitle": "الأدوات والسلامة والورديات",
+    "icon": "👷",
+    "tone": "green",
+    "words": [
+      [
+        "die Schutzbrille",
+        "النظارات الواقية"
+      ],
+      [
+        "die Arbeitshandschuhe",
+        "قفازات العمل"
+      ],
+      [
+        "die Sicherheitsschuhe",
+        "أحذية السلامة"
+      ],
+      [
+        "das Werkzeug",
+        "الأداة / أدوات العمل"
+      ],
+      [
+        "die Maschine",
+        "الآلة"
+      ],
+      [
+        "der Not-Aus-Schalter",
+        "زر الإيقاف الاضطراري"
+      ],
+      [
+        "die Schicht",
+        "وردية العمل"
+      ],
+      [
+        "die Montage",
+        "التركيب"
+      ],
+      [
+        "die Leiter",
+        "السلم"
+      ],
+      [
+        "die Palette",
+        "منصة نقل البضائع"
+      ],
+      [
+        "die Arbeitsanweisung",
+        "تعليمات العمل"
+      ],
+      [
+        "der Gehörschutz",
+        "واقي السمع"
+      ]
+    ],
+    "phrases": [
+      [
+        "Wo finde ich die Schutzbrille?",
+        "أين أجد النظارات الواقية؟"
+      ],
+      [
+        "Die Maschine funktioniert nicht richtig.",
+        "الآلة لا تعمل بشكل صحيح."
+      ],
+      [
+        "Bitte schalten Sie die Maschine aus.",
+        "يرجى إيقاف تشغيل الآلة."
+      ],
+      [
+        "Ich verstehe die Arbeitsanweisung nicht.",
+        "لا أفهم تعليمات العمل."
+      ],
+      [
+        "Muss ich heute Überstunden machen?",
+        "هل يجب أن أعمل ساعات إضافية اليوم؟"
+      ],
+      [
+        "Wann beginnt die nächste Schicht?",
+        "متى تبدأ الوردية التالية؟"
+      ],
+      [
+        "Wo ist der Not-Aus-Schalter?",
+        "أين يوجد زر الإيقاف الاضطراري؟"
+      ],
+      [
+        "Ich brauche neue Arbeitshandschuhe.",
+        "أحتاج إلى قفازات عمل جديدة."
+      ],
+      [
+        "Ist dieser Bereich gesperrt?",
+        "هل هذه المنطقة مغلقة وممنوع الدخول إليها؟"
+      ],
+      [
+        "Ich habe eine Frage zur Arbeitssicherheit.",
+        "لدي سؤال بخصوص السلامة المهنية."
+      ]
+    ]
   }
  ];
  global.WORT_TOPICS_DATA=Object.freeze(categories.map(entry=>Object.freeze({
