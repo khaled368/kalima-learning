@@ -2809,8 +2809,8 @@ global.WORT_TOPICS_TRANSLATIONS=Object.assign(global.WORT_TOPICS_TRANSLATIONS||{
       [
         "der Kinderarzt",
         "طبيب الأطفال",
-        "the paediatrician",
-        "de kinderarts"
+        "the male paediatrician",
+        "de mannelijke kinderarts"
       ],
       [
         "die Kindergröße",
@@ -2983,8 +2983,8 @@ global.WORT_TOPICS_TRANSLATIONS=Object.assign(global.WORT_TOPICS_TRANSLATIONS||{
       [
         "der Zusammenbau",
         "تجميع الأثاث",
-        "the assembly",
-        "de montage"
+        "the furniture assembly",
+        "het in elkaar zetten"
       ],
       [
         "die Lieferzeit",
