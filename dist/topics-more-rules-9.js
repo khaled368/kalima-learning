@@ -1,0 +1,1 @@
+(function(g){'use strict';g.WORT_TOPICS_RELATED_RULES=Object.assign(g.WORT_TOPICS_RELATED_RULES||{},{"weather":{"w":[["kindergarten","4,8,9,14"],["clothes","3,5,6,17,19"],["train","7,8,9"],["bus","10,15"],["heating","0,1,2,11,13,14"],["car","4,6,8"]],"p":[["train","3,7"],["bus","2,9"],["car","2,6"],["kindergarten","6"],["clothes","0"],["heating","4"]]}});})(globalThis);
