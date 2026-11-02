@@ -1,6 +1,7 @@
 /* Restore the signed-in workspace before the learning modules read local progress. */
 (function (global) {
   'use strict';
+  const SCRIPT_BUILD = '20261102-safari-resilience-v1';
   const scripts = ['feedback.js','history.js','review-mistakes.js?v=20261102-v1','usage.js','audio.js?v=20261102-voice-quality','voice-settings.js?v=20261102-voice-choices','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','example-curated-a1.js?v=20261102-a1-sentences','example-fallback.js?v=20261102-a1-sentences','example-quality.js?v=20261102-all-words','content.js?v=20261102-all-words','grammar.js','topics-data.js?v=20261102-expanded16','topics-additional-a.js?v=20261102-extra19','topics-additional-b.js?v=20261102-extra19','topics-language-pack.js?v=20261102-topic4-expanded-v2','topics-more-manual-a.js?v=20261102-more35','topics-more-manual-b.js?v=20261102-more35','topics-more-related.js?v=20261102-more35','topics.js?v=20261102-two-tabs','daily-reminders.js?v=20261102-daily-reminder','app.js?v=20261102-mistakes','course-ui.js'];
   const messages = {
     ar: ['جارٍ تجهيز مكتبتك…','تعذّر فتح الموقع. أعد تحميل الصفحة.'],
@@ -42,12 +43,22 @@
   main?.setAttribute('aria-busy','true');
   const load = source => new Promise((resolve,reject) => {
     const script = document.createElement('script');
-    script.src = source; script.async = false;
+    // Version every first-party module to prevent Safari mixing old/new scripts.
+    const url = new URL(source, location.href);
+    url.searchParams.set('kalimaBuild', SCRIPT_BUILD);
+    script.src = url.href; script.async = false;
     script.onload = resolve; script.onerror = () => reject(new Error('module-load'));
     document.body.append(script);
   });
   global.WORT_APP_READY = (async () => {
-    await global.WORT_ACCOUNT?.ready;
+    // Safely continue local learning if account startup never resolves.
+    // Auth and cloud sync remain active and may request a reload later.
+    if (global.WORT_ACCOUNT?.ready) {
+      await Promise.race([
+        Promise.resolve(global.WORT_ACCOUNT.ready).catch(() => null),
+        new Promise(resolve => setTimeout(resolve, 8000))
+      ]);
+    }
     for (const source of scripts) await load(source);
     // Loading the app script is not sufficient: its initial fetch of the
     // curriculum and A1 word list must also finish before the first paint.
