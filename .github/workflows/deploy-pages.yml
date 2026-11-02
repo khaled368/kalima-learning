@@ -13,6 +13,7 @@ on:
       - "tests/browser-audio.test.cjs"
       - "tests/example-audio-icon.test.cjs"
       - "tests/review-mistakes.test.cjs"
+      - "tests/safari-startup.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -38,6 +39,9 @@ jobs:
 
       - name: Check example coverage across all 12 learning directions
         run: node tests/example-coverage.test.cjs
+
+      - name: Verify Safari startup with stale cache or stalled account
+        run: node tests/safari-startup.test.cjs
 
       - name: Verify missed-word reviews
         run: node tests/review-mistakes.test.cjs
