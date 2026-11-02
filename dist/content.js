@@ -47,11 +47,12 @@
   }).filter(Boolean);
   // Reject source examples that do not contain this word or a verified form
   // of it. The source data sometimes assigns unrelated Tatoeba sentences.
+  const plural=text(raw.plurals?.[target])||(legacy?raw.plural:text(raw.grammar?.[target]?.plural||raw.grammar?.plural));
   const examples=global.WORT_EXAMPLE_QUALITY.filter(
-    {lemma,term,german:term,pos:raw.pos},unverifiedExamples,target,native
+    {lemma,term,german:term,pos:raw.pos,plural},unverifiedExamples,target,native
   );
   const grammar=raw.grammar?.[target]||raw.grammar||{};
-  return {...raw,id:raw.id,level:raw.level,german:term,arabic:meaning||i18n.t('لم تتوفر ترجمة لهذه الكلمة بعد.'),lemma,article:text(raw.articles?.[target])||(legacy?raw.article:text(raw.article)),plural:text(raw.plurals?.[target])||(legacy?raw.plural:text(grammar.plural)),pos:raw.pos||'other',examples,grammar,targetLang:target,nativeLang:native,translationAvailable:Boolean(meaning)};
+  return {...raw,id:raw.id,level:raw.level,german:term,arabic:meaning||i18n.t('لم تتوفر ترجمة لهذه الكلمة بعد.'),lemma,article:text(raw.articles?.[target])||(legacy?raw.article:text(raw.article)),plural:plural||text(grammar.plural),pos:raw.pos||'other',examples,grammar,targetLang:target,nativeLang:native,translationAvailable:Boolean(meaning)};
  }
  async function loadLevel(code,model=activeManifest){
   if(!model)model=await manifest();const level=model.levels.find(level=>level.code===code);if(!level)throw new Error(i18n.t('تعذّر تحميل محتوى المنهاج. حاول مرة أخرى.'));
