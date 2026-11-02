@@ -40,12 +40,22 @@ const context={
  CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}}
 };
 vm.createContext(context);
-for(const file of ['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics.js']){
+for(const file of ['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics-language-pack.js','topics.js']){
  const src=fs.readFileSync(path.join(root,file),'utf8');
  vm.runInContext(src,context,{filename:file});
 }
 const categories=context.WORT_TOPICS_DATA;
 assert.equal(categories.length,35,'sixteen original and nineteen newly selected practical-life categories');
+const expanded=context.WORT_TOPICS.catalog;
+assert.equal(expanded.length,35,'all 35 categories are available in the multilingual dashboard');
+assert.equal(expanded.reduce((sum,cat)=>sum+cat.words.length,0),700,'each category now contains 20 practical words');
+assert.equal(expanded.reduce((sum,cat)=>sum+cat.phrases.length,0),525,'each category now contains 15 contextual sentences');
+for(const category of expanded){
+ assert.equal(category.words.length,20,category.id+' expanded words');
+ assert.equal(category.phrases.length,15,category.id+' expanded sentences');
+ assert.ok(category.words.every(pair=>pair.length===2&&pair[0]&&pair[1]),category.id+' bilingual words');
+ assert.ok(category.phrases.every(pair=>pair.length===2&&pair[0]&&pair[1]),category.id+' bilingual sentences');
+}
 const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday','work','ams','pharmacy','housing','car','bank','phone','restaurant','worksite','post','interview','language-courses','dentist','emergency','police','ogk','finanzamt','residence','clothes','airport','taxi','family','neighbors','furniture','heating','gym','barber','weather'];
 assert.deepEqual(Array.from(categories,x=>x.id),expected,'original category order preserved; added sections follow');
 assert.equal(categories.reduce((sum,c)=>sum+c.words.length,0),420,'420 practical bilingual words');
@@ -165,6 +175,8 @@ for(const [id,phrase] of Object.entries(spotChecks)){
 }
 assert.match(loader,/topics-additional-a\.js\?v=/,'first new topic data bundle loaded');
 assert.match(loader,/topics-additional-b\.js\?v=/,'second new topic data bundle loaded');
+assert.ok(loader.indexOf('topics-language-pack.js')>loader.indexOf('topics-additional-b.js') &&
+ loader.indexOf('topics-language-pack.js')<loader.indexOf('topics.js'),'expanded translations loaded before topic UI');
 assert.ok(loader.indexOf('topics-data.js')<loader.indexOf('topics-additional-a.js') &&
  loader.indexOf('topics-additional-a.js')<loader.indexOf('topics-additional-b.js') &&
  loader.indexOf('topics-additional-b.js')<loader.indexOf('topics.js'),'new topics loaded before UI initialization');
@@ -176,4 +188,4 @@ const audioButton={dataset:{topicSay:'words:1'}};
 tap('[data-topic-say]',audioButton);
 assert.equal(heard.at(-1).detail.text,'das Paket','German speech for new post vocabulary works');
 tap('#topics-back',{});
-console.log('PASS: 35 practical sections, 770 bilingual entries, original navigation, 19 new topic scenarios, search, filters, light/dark CSS and German audio.');
+console.log('PASS: 35 practical sections, 1,225 aligned vocabulary and sentence entries, original navigation, search, filters, light/dark CSS and German audio.');
