@@ -7,6 +7,7 @@
  const library=global.WORT_TOPICS_DATA||[];
  const translations=global.WORT_TOPICS_TRANSLATIONS||{};
  const extras=global.WORT_TOPICS_EXTRA||{};
+ const further=global.WORT_TOPICS_MORE||{};
  const course=global.WORT_COURSE||{native:'ar',target:'de',dir:lang=>lang==='ar'?'rtl':'ltr'};
  const native=['ar','en','nl','de'].includes(course.native)?course.native:'ar';
  const target=['ar','en','nl','de'].includes(course.target)?course.target:'de';
@@ -37,7 +38,8 @@
  const catalog=library.map(category=>{
   const trans=translations[category.id];
   const added=extras[category.id];
-  if(!trans||!added)throw new Error('Missing multilingual topic: '+category.id);
+  const more=further[category.id];
+  if(!trans||!added||!more)throw new Error('Missing multilingual topic: '+category.id);
   const wordsEn=trans.wEn.split('|'),wordsNl=trans.wNl.split('|');
   const phrasesEn=trans.pEn.split('|'),phrasesNl=trans.pNl.split('|');
   if(wordsEn.length!==category.words.length||wordsNl.length!==category.words.length||
@@ -54,8 +56,8 @@
    if(all.some(entry=>!entry[target]||!entry[native]))throw new Error('Missing lesson translation: '+category.id);
    return all;
   }
-  const allWords=mapped(category.words,wordsEn,wordsNl,added.w);
-  const allPhrases=mapped(category.phrases,phrasesEn,phrasesNl,added.p);
+  const allWords=mapped(category.words,wordsEn,wordsNl,[...added.w,...more.w]);
+  const allPhrases=mapped(category.phrases,phrasesEn,phrasesNl,[...added.p,...more.p]);
   const nativeTitle=native==='ar'?category.title:trans.title[native==='en'?0:native==='nl'?1:2];
   return {
    id:category.id,tone:category.tone,icon:category.icon,
