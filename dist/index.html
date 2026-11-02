@@ -67,6 +67,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <link rel="stylesheet" href="daily-goal-illustration.css?v=20261102-daily-reminder">
 <link rel="stylesheet" href="buttons-gradient-plus.css?v=20261101-refs-v2">
 <link rel="stylesheet" href="topics.css?v=20261102-topics-two-tabs">
+<link rel="stylesheet" href="voice-settings.css?v=20261102-browser-voices">
 <script src="theme-switch.js?v=20261101-drag"></script>
 <script src="backend-config.js"></script>
 <script src="assets/vendor/supabase-2.118.0.js"></script>
@@ -109,7 +110,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 </section>
 <nav class="level-tabs" id="level-tabs" aria-label="أقسام المستويات" data-i18n-aria-label="أقسام المستويات"></nav>
 <section class="level-summary" aria-labelledby="level-title"><div class="section-heading"><div><p class="eyebrow" id="level-caption"></p><h2 id="level-title"></h2></div><span id="level-count"></span></div><p id="level-description" class="hero-subtitle"></p><div class="track level-progress" role="progressbar" aria-label="تقدم المستوى" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria-label="تقدم المستوى"><i id="level-bar"></i></div><div class="progress-label"><small id="level-learned"></small></div></section>
-<details class="library-controls"><summary aria-label="البحث والمراجعة والإعدادات" data-i18n-aria-label="البحث والمراجعة والإعدادات">⌕ <span data-i18n="بحث ومراجعة">بحث ومراجعة</span></summary><div class="library-study-actions"><button class="secondary" id="review-level" data-i18n="مراجعة الكلمات ↻">مراجعة الكلمات ↻</button></div>
+<details class="library-controls"><summary aria-label="البحث والمراجعة والإعدادات" data-i18n-aria-label="البحث والمراجعة والإعدادات">⌕ <span data-i18n="بحث ومراجعة">بحث ومراجعة</span></summary><div class="library-study-actions"><button class="secondary" id="review-level" data-i18n="مراجعة الكلمات ↻">مراجعة الكلمات ↻</button><button type="button" class="secondary kalima-voice-trigger" data-voice-settings-open hidden>🎙️ إعدادات النطق</button></div>
 <p class="library-learning-note"><span data-i18n="تظهر هنا الكلمات التي لم تتعلّمها بعد.">تظهر هنا الكلمات التي لم تتعلّمها بعد.</span> <button class="text-button" data-review-learned data-i18n="مراجعة الكلمات ←">مراجعة الكلمات ←</button></p><div class="toolbar"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث في كلمات هذا المستوى…" aria-label="ابحث في الكلمات غير المتعلّمة للمستوى" data-i18n-aria-label="ابحث في الكلمات غير المتعلّمة للمستوى" data-i18n-placeholder="ابحث في كلمات هذا المستوى…"></label><select id="pos-filter" class="filter-select" aria-label="نوع الكلمة" data-i18n-aria-label="نوع الكلمة"><option value="all" data-i18n="كل الكلمات">كل الكلمات</option><option value="noun" data-i18n="أسماء">أسماء</option><option value="verb" data-i18n="أفعال">أفعال</option><option value="adjective" data-i18n="صفات">صفات</option><option value="other" data-i18n="أخرى">أخرى</option></select></div>
 <div class="library-viewbar"><p id="results-count" class="eyebrow" aria-live="polite"></p><div class="view-switch" role="group" aria-label="طريقة عرض الكلمات" data-i18n-aria-label="طريقة عرض الكلمات"><button data-card-view="compact" aria-pressed="true" title="عرض مختصر" data-i18n-title="عرض مختصر">☷ <span data-i18n="مختصر">مختصر</span></button><button data-card-view="grid" aria-pressed="false" title="بطاقات" data-i18n-title="بطاقات">▦ <span data-i18n="بطاقات">بطاقات</span></button></div></div><button class="icon-button" id="open-sources" aria-label="مصادر المفردات" data-i18n-aria-label="مصادر المفردات">ⓘ</button></details><details id="vocabulary-disclosure" class="vocabulary-disclosure"><summary><h2 id="vocabulary-title" data-i18n="مفرداتك التالية">مفرداتك التالية</h2><svg class="vocabulary-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg></summary><div class="cards" id="cards"></div><button class="load-more secondary" id="load-more" hidden data-i18n="اعرض المزيد من البطاقات">اعرض المزيد من البطاقات</button><p class="source-note" id="level-note" data-i18n="تقسيم المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.">تقسيم المستويات تعليمي تقريبي، وليس قائمة امتحان رسمية.</p></details>
 </section>
@@ -139,6 +140,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
       <span class="topics-search-icon" aria-hidden="true">⌕</span>
       <input id="topics-detail-search" type="search" placeholder="ابحث بالألمانية أو العربية..." aria-label="البحث داخل القسم" autocomplete="off">
     </label>
+    <button type="button" class="secondary kalima-voice-trigger topics-voice-trigger" data-voice-settings-open hidden>🎙️ إعدادات النطق</button>
     <div id="topics-items" aria-live="polite"></div>
   </div>
 </section>
@@ -169,7 +171,23 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <dialog id="course-dialog" aria-labelledby="course-title" aria-describedby="course-intro course-progress-note"><form id="course-form"><div class="course-dialog-heading"><h2 id="course-title" data-i18n="اللغة الأم ولغة التعلّم">اللغة الأم ولغة التعلّم</h2><button id="course-close" type="button" aria-label="إغلاق اختيار المنهاج" data-i18n-aria-label="إغلاق اختيار المنهاج">×</button></div><p class="course-dialog-intro" id="course-intro" data-i18n="اختر لغتك الأم واللغة التي تريد تعلّمها.">اختر لغتك الأم واللغة التي تريد تعلّمها.</p><div class="course-fields"><label class="course-field" for="native-language"><span data-i18n="لغتي الأم">لغتي الأم</span><select id="native-language" name="native" required autofocus></select></label><button id="course-swap" type="button" aria-label="تبديل اللغتين" data-i18n-aria-label="تبديل اللغتين"><span aria-hidden="true">⇄</span><span class="course-swap-label" data-i18n="تبديل اللغتين">تبديل اللغتين</span></button><label class="course-field" for="target-language"><span data-i18n="أريد تعلّم">أريد تعلّم</span><select id="target-language" name="target" required></select></label></div><div class="course-preview"><small data-i18n="منهاجك الحالي">منهاجك الحالي</small><div class="course-pair" id="course-preview" aria-live="polite"></div></div><p class="course-progress-note" id="course-progress-note" data-i18n="التقدّم محفوظ لكل لغة تعلّم.">التقدّم محفوظ لكل لغة تعلّم.</p><p id="course-error" role="status" aria-live="polite"></p><button class="primary" id="course-apply" type="submit" data-i18n="ابدأ التعلّم">ابدأ التعلّم</button></form></dialog>
 <dialog id="training-dialog" class="training-dialog" aria-labelledby="training-title"><button class="dialog-close icon-button" aria-label="إغلاق المراجعة" id="training-close" data-i18n-aria-label="إغلاق المراجعة">×</button><div id="training-content"></div></dialog>
 <dialog id="sources-dialog" class="training-dialog" aria-labelledby="sources-title"><button class="dialog-close icon-button" aria-label="إغلاق" id="sources-close" data-i18n-aria-label="إغلاق">×</button><h2 id="sources-title" data-i18n="عن المفردات ومصادرها">عن المفردات ومصادرها</h2><div id="sources-content"></div></dialog>
+<dialog id="kalima-voice-dialog" class="kalima-voice-dialog" aria-labelledby="kalima-voice-heading">
+  <h2 id="kalima-voice-heading">إعدادات النطق</h2>
+  <label for="kalima-voice-select" id="kalima-voice-choice-label">اختر صوتًا</label>
+  <select id="kalima-voice-select"><option value="">صوت الجهاز التلقائي</option></select>
+  <label for="kalima-voice-rate" id="kalima-voice-rate-label">سرعة النطق</label>
+  <select id="kalima-voice-rate">
+    <option value="0.85">0.85×</option>
+    <option value="0.95">0.95×</option>
+    <option value="0.98">0.98×</option>
+    <option value="1">1×</option>
+    <option value="1.1">1.10×</option>
+  </select>
+  <label class="kalima-voice-fallback"><input id="kalima-voice-robotic" type="checkbox"><span id="kalima-voice-robotic-label">السماح بالصوت الآلي الاحتياطي</span></label>
+  <p id="kalima-voice-note" role="status"></p>
+  <div class="kalima-voice-actions"><button type="button" id="kalima-voice-preview" class="secondary">جرّب الصوت</button><button type="button" id="kalima-voice-close" class="secondary">إغلاق</button></div>
+</dialog>
 <div id="toast" role="status" hidden></div>
 <script src="account.js?v=20261101-appearance"></script>
-<script src="app-bootstrap.js?v=20261102-safari-tts"></script>
+<script src="app-bootstrap.js?v=20261102-browser-voices"></script>
 </body></html>
