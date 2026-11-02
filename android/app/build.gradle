@@ -10,8 +10,8 @@ android {
     applicationId 'com.kalima.learning'
     minSdk 26
     targetSdk 34
-    versionCode 10
-    versionName '0.10.0-offline-test'
+    versionCode 11
+    versionName '0.11.0-offline-test'
   }
 
   compileOptions {
