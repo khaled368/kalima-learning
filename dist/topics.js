@@ -14,10 +14,10 @@
  const direction=lang=>lang==='ar'?'rtl':'ltr';
  const locale=native==='ar'?'ar':native==='nl'?'nl-NL':native==='de'?'de-DE':'en';
  const ui={
-  ar:{heading:'أقسام الحياة اليومية',home:'العودة للمفردات ←',intro:'اختر الموقف الذي تحتاج إليه، وتعلّم الكلمات والجمل التي تساعدك على التحدث بثقة.',categorySearch:'ابحث عن قسم أو كلمة...',detailSearch:'ابحث بالكلمات أو الجمل...',open:'افتح قسم',all:'الكل',words:'الكلمات',phrases:'الجمل',wordTitle:'الكلمات الأساسية',phraseTitle:'جمل تحتاجها',back:'← جميع الأقسام',listen:'استمع',audio:'استمع إلى',wordsCount:'كلمة',phrasesCount:'جملة',summary:'كلمات وجمل مفيدة لهذا الموقف',empty:'لم أجد قسمًا مطابقًا للبحث. جرّب كلمة أخرى.',emptyDetail:'لا توجد كلمات أو جمل مطابقة. جرّب بحثًا آخر.'},
-  en:{heading:'Everyday situations',home:'Back to vocabulary ←',intro:'Choose a situation to practise helpful words and sentences.',categorySearch:'Search topics or words...',detailSearch:'Search words or sentences...',open:'Open',all:'All',words:'Words',phrases:'Sentences',wordTitle:'Useful words',phraseTitle:'Useful sentences',back:'← All topics',listen:'Listen',audio:'Listen to',wordsCount:'words',phrasesCount:'sentences',summary:'Useful words and sentences for this situation',empty:'No matching topic found. Try a different search.',emptyDetail:'No matching words or sentences. Try another search.'},
-  nl:{heading:'Dagelijkse situaties',home:'Terug naar woorden ←',intro:'Kies een situatie en oefen nuttige woorden en zinnen.',categorySearch:'Zoek onderwerpen of woorden...',detailSearch:'Zoek woorden of zinnen...',open:'Open',all:'Alles',words:'Woorden',phrases:'Zinnen',wordTitle:'Nuttige woorden',phraseTitle:'Nuttige zinnen',back:'← Alle onderwerpen',listen:'Luister',audio:'Luister naar',wordsCount:'woorden',phrasesCount:'zinnen',summary:'Nuttige woorden en zinnen voor deze situatie',empty:'Geen passend onderwerp gevonden. Probeer opnieuw.',emptyDetail:'Geen passende woorden of zinnen gevonden.'},
-  de:{heading:'Alltagssituationen',home:'Zurück zu den Vokabeln ←',intro:'Wähle eine Situation und übe nützliche Wörter und Sätze.',categorySearch:'Themen oder Wörter suchen...',detailSearch:'Wörter oder Sätze suchen...',open:'Öffne',all:'Alle',words:'Wörter',phrases:'Sätze',wordTitle:'Wichtige Wörter',phraseTitle:'Nützliche Sätze',back:'← Alle Themen',listen:'Anhören',audio:'Anhören:',wordsCount:'Wörter',phrasesCount:'Sätze',summary:'Nützliche Wörter und Sätze für diese Situation',empty:'Kein passendes Thema gefunden. Bitte anders suchen.',emptyDetail:'Keine passenden Wörter oder Sätze gefunden.'}
+  ar:{heading:'أقسام الحياة اليومية',home:'العودة للمفردات ←',intro:'اختر الموقف الذي تحتاج إليه، وتعلّم الكلمات والجمل التي تساعدك على التحدث بثقة.',categorySearch:'ابحث عن قسم أو كلمة...',detailSearch:'ابحث بالكلمات أو الجمل...',open:'افتح قسم',words:'الكلمات',phrases:'الجمل',wordTitle:'الكلمات الأساسية',phraseTitle:'جمل تحتاجها',back:'← جميع الأقسام',listen:'استمع',audio:'استمع إلى',wordsCount:'كلمة',phrasesCount:'جملة',summary:'كلمات وجمل مفيدة لهذا الموقف',empty:'لم أجد قسمًا مطابقًا للبحث. جرّب كلمة أخرى.',emptyDetail:'لا توجد كلمات أو جمل مطابقة. جرّب بحثًا آخر.'},
+  en:{heading:'Everyday situations',home:'Back to vocabulary ←',intro:'Choose a situation to practise helpful words and sentences.',categorySearch:'Search topics or words...',detailSearch:'Search words or sentences...',open:'Open',words:'Words',phrases:'Sentences',wordTitle:'Useful words',phraseTitle:'Useful sentences',back:'← All topics',listen:'Listen',audio:'Listen to',wordsCount:'words',phrasesCount:'sentences',summary:'Useful words and sentences for this situation',empty:'No matching topic found. Try a different search.',emptyDetail:'No matching words or sentences. Try another search.'},
+  nl:{heading:'Dagelijkse situaties',home:'Terug naar woorden ←',intro:'Kies een situatie en oefen nuttige woorden en zinnen.',categorySearch:'Zoek onderwerpen of woorden...',detailSearch:'Zoek woorden of zinnen...',open:'Open',words:'Woorden',phrases:'Zinnen',wordTitle:'Nuttige woorden',phraseTitle:'Nuttige zinnen',back:'← Alle onderwerpen',listen:'Luister',audio:'Luister naar',wordsCount:'woorden',phrasesCount:'zinnen',summary:'Nuttige woorden en zinnen voor deze situatie',empty:'Geen passend onderwerp gevonden. Probeer opnieuw.',emptyDetail:'Geen passende woorden of zinnen gevonden.'},
+  de:{heading:'Alltagssituationen',home:'Zurück zu den Vokabeln ←',intro:'Wähle eine Situation und übe nützliche Wörter und Sätze.',categorySearch:'Themen oder Wörter suchen...',detailSearch:'Wörter oder Sätze suchen...',open:'Öffne',words:'Wörter',phrases:'Sätze',wordTitle:'Wichtige Wörter',phraseTitle:'Nützliche Sätze',back:'← Alle Themen',listen:'Anhören',audio:'Anhören:',wordsCount:'Wörter',phrasesCount:'Sätze',summary:'Nützliche Wörter und Sätze für diese Situation',empty:'Kein passendes Thema gefunden. Bitte anders suchen.',emptyDetail:'Keine passenden Wörter oder Sätze gefunden.'}
  }[native];
  const panel=document.getElementById('topics-panel');
  if(!panel||!library.length)return;
@@ -29,7 +29,7 @@
  const content=panel.querySelector('#topics-items');
  const caption=panel.querySelector('#topics-detail-caption');
  const title=panel.querySelector('#topics-detail-title');
- let selected=null,view='all';
+ let selected=null,view='words';
  const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const normalize=value=>String(value??'').trim().toLocaleLowerCase('de-DE');
  const fmt=value=>Number(value||0).toLocaleString(locale);
@@ -78,7 +78,7 @@
  setText('.topics-home',ui.home);
  setText('.topics-page-intro',ui.intro);
  setText('#topics-back',ui.back);
- for(const key of ['all','words','phrases'])setText('[data-topic-filter="'+key+'"]',ui[key]);
+ for(const key of ['words','phrases'])setText('[data-topic-filter="'+key+'"]',ui[key]);
  if(search){search.placeholder=ui.categorySearch;search.setAttribute('aria-label',ui.categorySearch);}
  if(detailSearch){detailSearch.placeholder=ui.detailSearch;detailSearch.setAttribute('aria-label',ui.detailSearch);}
  const shortcut=document.getElementById('top-topics-button');
@@ -112,8 +112,8 @@
  function renderDetail(){
   if(!selected)return;
   const query=normalize(detailSearch.value);
-  const wordHtml=view==='phrases'?'':renderCollection(selected,'words',query);
-  const phraseHtml=view==='words'?'':renderCollection(selected,'phrases',query);
+  const wordHtml=view==='words'?renderCollection(selected,'words',query):'';
+  const phraseHtml=view==='phrases'?renderCollection(selected,'phrases',query):'';
   content.innerHTML=wordHtml+phraseHtml||'<p class="topics-empty">'+safe(ui.emptyDetail)+'</p>';
   panel.querySelectorAll('[data-topic-filter]').forEach(button=>{
    const pressed=button.dataset.topicFilter===view;
@@ -123,7 +123,7 @@
  }
  function openCategory(id){
   const item=catalog.find(x=>x.id===id);if(!item)return;
-  selected=item;view='all';detailSearch.value='';
+  selected=item;view='words';detailSearch.value='';
   title.textContent=item.icon+' '+item.title;
   caption.textContent=item.subtitle;
   overview.hidden=true;detail.hidden=false;
@@ -151,7 +151,7 @@
   if(open){openCategory(open.dataset.topicOpen);return;}
   if(element.closest('#topics-back')){closeCategory();return;}
   const filter=element.closest('[data-topic-filter]');
-  if(filter){view=filter.dataset.topicFilter;renderDetail();return;}
+  if(filter&&['words','phrases'].includes(filter.dataset.topicFilter)){view=filter.dataset.topicFilter;renderDetail();return;}
   const audio=element.closest('[data-topic-say]');
   if(audio&&selected){
    const [kind,indexText]=audio.dataset.topicSay.split(':');
