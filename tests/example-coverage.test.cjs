@@ -11,7 +11,7 @@ function read(p){return JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));}
 function contextFor(target,native){
   const env={WORT_COURSE:{target,native},WORT_I18N:{add(){},t(x){return x;}}};
   vm.createContext(env);
-  for(const file of ['example-fallback.js','example-quality.js','content.js']){
+  for(const file of ['example-curated-a1.js','example-fallback.js','example-quality.js','content.js']){
     vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),env,{filename:file});
   }
   return env;
