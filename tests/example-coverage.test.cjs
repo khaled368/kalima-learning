@@ -18,6 +18,7 @@ function contextFor(target,native){
 }
 const languages=['de','en','nl','ar'];
 let checked=0,missing=0,contextual=0,wordNotes=0,levelsChecked=0;
+const germanFallbackByPOS=Object.create(null),germanFallbackSamples=[];
 for(const target of languages){
   const manifest=read(target==='de'?'data/manifest.json':'data/courses/'+target+'/manifest.json');
   assert.equal(manifest.levels.length,5,'expected all A1–C1 sections');
@@ -43,7 +44,17 @@ for(const target of languages){
             assert.ok(example.de.includes(''+normalized.german),'vocabulary fallback must mention target word: '+label);
           }
         }
-        if(examples[0].vocabularyNote){wordNotes++;notes++;}
+        if(examples[0].vocabularyNote){
+          wordNotes++;notes++;
+          if(target==='de'&&native==='ar'){
+            const pos=String(normalized.pos||'other');
+            germanFallbackByPOS[pos]=(germanFallbackByPOS[pos]||0)+1;
+            if(germanFallbackSamples.length<130) germanFallbackSamples.push({
+              german:normalized.german,lemma:normalized.lemma,pos,
+              meaning:normalized.arabic.slice(0,70),level:level.code
+            });
+          }
+        }
         else contextual++;
         local++;
       }
@@ -53,5 +64,7 @@ for(const target of languages){
     console.log(target+' -> '+native+': '+local+' cards; '+notes+' explicitly labelled non-contextual word-learning fallbacks.');
   }
 }
+console.log('GERMAN_ARABIC_MISSING_CONTEXT_POS '+JSON.stringify(germanFallbackByPOS));
+console.log('GERMAN_ARABIC_MISSING_CONTEXT_SAMPLES '+JSON.stringify(germanFallbackSamples));
 assert.equal(missing,0);
 console.log('PASS: '+checked+' entries in '+levelsChecked+' language-level combinations have bilingual example text. Contextual/verified entries: '+contextual+'; labelled word-learning notes: '+wordNotes+'.');
