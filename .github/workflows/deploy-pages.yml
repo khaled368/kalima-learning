@@ -12,6 +12,7 @@ on:
       - "tests/daily-reminders.test.cjs"
       - "tests/browser-audio.test.cjs"
       - "tests/example-audio-icon.test.cjs"
+      - "tests/review-mistakes.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -37,6 +38,9 @@ jobs:
 
       - name: Check example coverage across all 12 learning directions
         run: node tests/example-coverage.test.cjs
+
+      - name: Verify missed-word reviews
+        run: node tests/review-mistakes.test.cjs
 
       - name: Verify example audio icon
         run: node tests/example-audio-icon.test.cjs
