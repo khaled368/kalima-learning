@@ -21,7 +21,7 @@ function node(){
 }
 const elements=Object.fromEntries([
  '#topics-grid','#topics-overview','#topics-detail','#topics-search',
- '#topics-detail-search','#topics-items','#topics-detail-caption',
+ '#topics-page-title','#topics-detail-search','#topics-items','#topics-detail-caption',
  '#topics-detail-title','#topics-back'
 ].map(x=>[x,node()]));
 const filters=['all','words','phrases'].map(view=>{
@@ -105,6 +105,11 @@ assert.doesNotMatch(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/
 tap('#topics-back',{});
 assert.equal(elements['#topics-overview'].hidden,false,'back returns to categories');
 assert.equal(elements['#topics-detail'].hidden,true,'back closes details without affecting main app');
+assert.equal(elements['#topics-page-title'].focused,true,'back focuses the category heading, not the search field');
+assert.equal(elements['#topics-search'].focused||false,false,'back must not open search/keyboard');
+assert.equal(elements['#topics-search'].value,'','back clears previous category search');
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="hospital"/,'back shows all categories');
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="weather"/,'back shows all categories, including last item');
 elements['#topics-search'].value='Kindergarten';
 elements['#topics-search'].listeners.input();
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="kindergarten"/,'category search finds nursery');
