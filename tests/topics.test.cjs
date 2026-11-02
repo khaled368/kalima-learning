@@ -45,9 +45,11 @@ for(const file of ['topics-data.js','topics.js']){
  vm.runInContext(src,context,{filename:file});
 }
 const categories=context.WORT_TOPICS_DATA;
-assert.equal(categories.length,7,'exactly seven requested practical categories');
-const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday'];
-assert.deepEqual(Array.from(categories,x=>x.id),expected,'category order');
+assert.equal(categories.length,16,'seven original and nine additional practical-life categories');
+const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday','work','ams','pharmacy','housing','car','bank','phone','restaurant','worksite'];
+assert.deepEqual(Array.from(categories,x=>x.id),expected,'original category order preserved; added sections follow');
+assert.equal(categories.reduce((sum,c)=>sum+c.words.length,0),192,'192 practical bilingual words');
+assert.equal(categories.reduce((sum,c)=>sum+c.phrases.length,0),160,'160 practical bilingual contextual phrases');
 for(const cat of categories){
  assert.equal(cat.words.length,12,cat.id+' must have 12 words');
  assert.equal(cat.phrases.length,10,cat.id+' must have 10 contextual phrases');
@@ -62,6 +64,7 @@ for(const cat of categories){
 }
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="hospital"/,'hospital button rendered');
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="everyday"/,'life section rendered');
+for(const id of expected.slice(7)) assert.match(elements['#topics-grid'].innerHTML,new RegExp('data-topic-open="'+id+'"'),'new '+id+' section rendered');
 assert.match(html,/<button[^>]+id="top-saved-button"[\s\S]*?<\/button><button[^>]+id="top-topics-button"/,'topics shortcut immediately beside saved star');
 assert.match(html,/<section id="topics-panel" class="panel" hidden/,'new panel is integrated with existing showPanel logic');
 assert.match(html,/<button[^>]+id="top-topics-button"[^>]+data-panel="topics"/,'header category button uses native panel navigation');
@@ -98,4 +101,25 @@ elements['#topics-search'].value='Kindergarten';
 elements['#topics-search'].listeners.input();
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="kindergarten"/,'category search finds nursery');
 assert.doesNotMatch(elements['#topics-grid'].innerHTML,/data-topic-open="train"/,'category search filters other locations');
-console.log('PASS: seven practical sections, 154 bilingual entries, category navigation, search, phrase filtering, mobile styling and German audio integration.');
+elements['#topics-search'].value='';
+elements['#topics-search'].listeners.input();
+for(const id of expected.slice(7)){
+ tap('[data-topic-open]',{dataset:{topicOpen:id}});
+ const category=categories.find(cat=>cat.id===id);
+ assert.equal(elements['#topics-overview'].hidden,true,'opening '+id+' works');
+ for(const [german,arabic] of [...category.words,...category.phrases]){
+  const source=elements['#topics-items'].innerHTML;
+  assert.ok(source.includes(german.replace(/&/g,'&amp;')),'entry in '+id+': '+german);
+  assert.ok(source.includes(arabic),'Arabic translation in '+id+': '+german);
+ }
+ tap('#topics-back',{});
+}
+tap('[data-topic-open]',{dataset:{topicOpen:'bank'}});
+elements['#topics-detail-search'].value='خصم';
+elements['#topics-detail-search'].listeners.input();
+assert.match(elements['#topics-items'].innerHTML,/Abbuchung/,'new bank section Arabic search matches');
+tap('#topics-back',{});
+elements['#topics-search'].value='Werkstatt';
+elements['#topics-search'].listeners.input();
+assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="car"/,'category search uses new car vocabulary');
+console.log('PASS: 16 practical sections, 352 bilingual entries, new category navigation, Arabic/German search, phrase filtering, mobile styling and audio integration.');
