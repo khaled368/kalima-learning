@@ -69,6 +69,7 @@ assert.match(html,/<button[^>]+id="top-saved-button"[\s\S]*?<\/button><button[^>
 assert.match(html,/<section id="topics-panel" class="panel" hidden/,'new panel is integrated with existing showPanel logic');
 assert.match(html,/<button[^>]+id="top-topics-button"[^>]+data-panel="topics"/,'header category button uses native panel navigation');
 assert.match(html,/topics\.css\?v=/,'new mobile and dark-mode stylesheet linked');
+assert.doesNotMatch(html,/ألماني مع ترجمة عربية · اضغط «استمع» لسماع النطق/,'redundant topic language note removed');
 assert.ok(loader.indexOf('topics-data.js')>=0&&loader.indexOf('topics.js')>loader.indexOf('topics-data.js'),'data loads before topics feature');
 assert.ok(loader.indexOf('app.js')>loader.indexOf('topics.js'),'category shortcut is mounted before app attaches click listeners');
 assert.match(css,/html\[data-theme='dark'\] #topics-panel/,'dark theme provided');
