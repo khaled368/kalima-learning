@@ -33,7 +33,7 @@ const sandbox={
  SpeechSynthesisUtterance,
  speechSynthesis:synthesizer,
  document:{addEventListener(){}},
- navigator:{},
+ navigator:{userAgent:'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0 like Mac OS X)'},
  dispatchEvent(event){events.push(event.detail);},
  CustomEvent:class{constructor(type,init){this.type=type;this.detail=init.detail;}},
  setTimeout,clearTimeout,setInterval,clearInterval
@@ -51,6 +51,8 @@ async function speakFromClick(value){
  return utterance;
 }
 (async()=>{
+ assert.equal(sandbox.WORT_AUDIO.getVoiceSettings('de').allowRobotic,false,
+  'do not silently use the robotic fallback on Safari iPhone');
  const first=await speakFromClick('das Krankenhaus');
  assert.equal(first.lang,'de-DE','locale works while getVoices is empty');
  assert.equal(first.voice,undefined,'browser chooses its native voice if list is loading');
@@ -74,7 +76,7 @@ async function speakFromClick(value){
  voices=[{lang:'en-US',name:'English'},preferred];
  const second=await speakFromClick('der Arbeitsvertrag');
  assert.equal(second.voice,preferred,'preferred matching installed voice is still selected');
- assert.equal(spoken.length,2);
+ assert.equal(spoken.length,3);
  assert.ok(cancellations>=2,'new audio request still cancels the previous speech');
  console.log('PASS: Safari speech starts synchronously within click, even with no voices loaded; locale and audio events retained.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
