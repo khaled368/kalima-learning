@@ -144,7 +144,10 @@
     if(target==='de'&&native==='ar'&&normalizeLemma(word,target)==='vorstellen') {
       return curated(word,target,native);
     }
-    return verified;
+    // Correct corpus sentences always take priority. For entries whose corpus
+    // examples are missing or mismatched, supply clearly attributed lessons.
+    if(verified.length)return verified;
+    return global.WORT_EXAMPLE_FALLBACK?.create(word,target,native)||[];
   }
   global.WORT_EXAMPLE_QUALITY=Object.freeze({relevant,filter});
 })(globalThis);
