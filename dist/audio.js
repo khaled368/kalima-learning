@@ -228,9 +228,14 @@
    },100);
   });
  }
- async function nativeSpeech(job){
-  if(!nativeAvailable())return false;
-  const voice=await waitForVoice(job.lang);if(!current(job))return false;
+ function nativeSpeech(job){
+  if(!nativeAvailable()||!current(job))return Promise.resolve(false);
+  // iOS/WebKit requires speechSynthesis.speak() in the original tap handler.
+  // Waiting for getVoices() (even an already-resolved Promise) postpones the
+  // call until after the gesture and can leave Safari completely silent.
+  // Select whatever voice is available *now* and let the OS resolve the
+  // requested utterance language when its voice list is not ready.
+  const voice=deviceVoice(job.lang);
   // getVoices() can be empty while the phone still has a default TTS voice.
   // Let the browser resolve utterance.lang in that case.
   job.engine='device';
