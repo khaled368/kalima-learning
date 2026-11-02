@@ -48,6 +48,9 @@ jobs:
           python android/prepare_icons.py
           test -s android/app/src/main/res/drawable-nodpi/ic_kalima_logo_foreground.png
 
+      - name: Verify example audio icon
+        run: node tests/example-audio-icon.test.cjs
+
       - name: Verify browser speech inside the packaged app
         run: node tests/browser-audio.test.cjs
 
@@ -85,10 +88,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v9
+          TAG: android-preview-v10
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.9" --notes "Android v0.9: moved daily 20-word reminder settings into My Account, preserving the chosen reminder time and enabled state. Offline study and voice choices remain included. Sync progress before replacing a prior debug-signed APK." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.10" --notes "Android v0.10: example pronunciation now uses a circular speaker icon matching main word audio. Speech function unchanged, offline lessons and daily reminders retained. Sync progress before replacing a prior debug-signed APK." --prerelease
           fi

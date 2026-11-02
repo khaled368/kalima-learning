@@ -342,7 +342,7 @@ html[data-theme='dark'] body :is(#open-sources,.reference-word-audio,[data-speak
   border-radius:50% !important;
 }
 body #word-dialog .word-content .example-card [data-example-speak] {
-  border-radius:12px !important;
+  border-radius:50% !important;
 }
 /* Clear keyboard focus and coherent icon tones on the selected pill. */
 body :is(.primary,.secondary,#course-apply,#review-level,#word-previous,#word-skip):focus-visible {
@@ -389,4 +389,35 @@ html[data-theme='dark'] #training-panel #start-review {
 body .primary :is(small,span,p),body .assessment-widget .primary :is(small,span,p) {
   color:inherit !important;
   opacity:1 !important;
+}
+
+/* Circular icon-only example speech: matches the main word's audio control. */
+body #word-dialog .word-content .example-card button.reference-example-audio{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  box-sizing:border-box;
+  width:44px;
+  min-width:44px;
+  height:44px;
+  min-height:44px;
+  flex:none;
+  padding:10px;
+  margin-top:12px;
+  border-radius:50% !important;
+  vertical-align:middle;
+  line-height:1;
+}
+body #word-dialog .word-content .example-card button.reference-example-audio svg{
+  display:block;
+  width:22px;
+  height:22px;
+  flex:none;
+}
+body #word-dialog .word-content .example-card button.reference-example-audio.audio-playing{
+  box-shadow:0 0 0 3px #3ebba34d !important;
+}
+body #word-dialog .word-content .example-card button.reference-example-audio:focus-visible{
+  outline:3px solid #5cb6db;
+  outline-offset:3px;
 }

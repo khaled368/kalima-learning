@@ -11,6 +11,7 @@ on:
       - "tests/topics-multilingual.test.cjs"
       - "tests/daily-reminders.test.cjs"
       - "tests/browser-audio.test.cjs"
+      - "tests/example-audio-icon.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -36,6 +37,9 @@ jobs:
 
       - name: Check example coverage across all 12 learning directions
         run: node tests/example-coverage.test.cjs
+
+      - name: Verify example audio icon
+        run: node tests/example-audio-icon.test.cjs
 
       - name: Verify Safari and browser speech user gestures
         run: node tests/browser-audio.test.cjs

@@ -49,3 +49,7 @@ It is omitted when this device has recorded 20 words learned on that date.
 Reminders survive reboots and timezone changes; Android may delay them for
 battery optimization. Learning completed only on a different device is not
 known to this phone until it syncs.
+
+## Example pronunciation v0.10
+
+Example sentences use a circular, accessible, icon-only speaker button matching the main word's control. Existing text-to-speech behavior remains unchanged. Rebuild the APK for updated offline content.

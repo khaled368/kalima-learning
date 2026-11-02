@@ -452,7 +452,7 @@ function openWord(word, recordVisit = true) {
   $('#word-dialog').scrollTop = 0;
 }
 function exampleHtml(example) {
-  return `<article class="example-card"><div class="example-de" data-content lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(example.de)}</div>${example.ar ? `<p class="example-ar" data-content lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${esc(example.ar)}</p>` : ''}<button class="secondary" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال">استمع إلى المثال ♬</button>${example.source ? `<p class="source-note">${example.generated ? t("مثال تعليمي مولَّد في المصدر \xB7 ") : ''}${example.sourceUrl ? `<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>` : esc(example.source)}${example.license ? ' · ' + esc(example.license) : ''}</p>` : ''}</article>`;
+  return `<article class="example-card"><div class="example-de" data-content lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(example.de)}</div>${example.ar ? `<p class="example-ar" data-content lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${esc(example.ar)}</p>` : ''}<button type="button" class="icon-button reference-example-audio" data-example-speak="${esc(example.de)}" aria-label="استمع إلى المثال" title="استمع إلى المثال">${SPEAKER_ICON}</button>${example.source ? `<p class="source-note">${example.generated ? t("مثال تعليمي مولَّد في المصدر \xB7 ") : ''}${example.sourceUrl ? `<a href="${esc(example.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(example.source)}</a>` : esc(example.source)}${example.license ? ' · ' + esc(example.license) : ''}</p>` : ''}</article>`;
 }
 function renderInlineVerb(word) {
   if (TARGET !== 'de') {
