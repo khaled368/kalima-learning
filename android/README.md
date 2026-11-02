@@ -1,4 +1,4 @@
-# Kalima Android offline-first APK (v0.7)
+# Kalima Android offline-first APK (v0.8)
 
 This installable Android APK contains the complete `dist/` application and
 learning curriculum, instead of loading the website from GitHub Pages on
@@ -17,7 +17,7 @@ app storage, and installation.
   through local request interception, preserving compatible in-app browser
   storage and auth redirects. Supabase requests remain network requests.
 - Minimum Android version: Android 8 (API 26). App ID:
-  `com.kalima.learning`. Version `0.7.0-offline-test`.
+  `com.kalima.learning`. Version `0.8.0-offline-test`.
 
 ## Build
 
@@ -26,7 +26,7 @@ Run the GitHub workflow `Build Kalima Android test APK` manually or use
 copies `dist/` to a generated Android assets folder on every build; it
 does not commit duplicate curriculum files. The workflow checks packaged
 HTML, topics and JSON, then publishes `Kalima-Android-Test.apk` in the
-`android-preview-v7` prerelease.
+`android-preview-v8` prerelease.
 
 Because files now ship inside the APK, **changes to lessons or design
 require a new APK** to reach existing installations. The workflow is
@@ -38,3 +38,14 @@ not install over another build signed with a different key. Sign in and
 confirm cloud progress sync before uninstalling an older test APK, as
 local storage is erased on uninstall. Production distribution requires a
 permanent release signing key and additional Android testing.
+
+## Android daily word-goal reminders
+
+The daily 20-word goal card has an optional reminder below it in the APK.
+It starts disabled; the learner enables it and chooses a local time (20:00
+by default). Android 13+ asks for notification permission when enabled.
+The inexact local alarm runs once each day, without internet or a push server.
+It is omitted when this device has recorded 20 words learned on that date.
+Reminders survive reboots and timezone changes; Android may delay them for
+battery optimization. Learning completed only on a different device is not
+known to this phone until it syncs.
