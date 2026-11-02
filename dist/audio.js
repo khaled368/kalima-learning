@@ -25,6 +25,34 @@
  let context=null,source=null,htmlAudio=null,htmlUrl=null,enginePromise=null,nativeUtterance=null;
  let active=null,sequence=0,phase={state:'idle',message:'',text:'',engine:null};
  const cache=new Map();let cacheBytes=0,previousSessionType=null;
+ const VOICE_PREFS_KEY='kalima-browser-voice-v1';
+ const appleBrowser=/(iPhone|iPad|iPod)/i.test(global.navigator?.userAgent||'') ||
+   (/Macintosh/i.test(global.navigator?.userAgent||'')&&(global.navigator?.maxTouchPoints||0)>1);
+ function readVoiceSettings(lang){
+  const defaults={voiceId:'',rate:0.98,allowRobotic:!appleBrowser};
+  try{
+   const data=JSON.parse(global.localStorage?.getItem(VOICE_PREFS_KEY)||'{}');
+   const entry=data?.[lang]||{};
+   return {
+    voiceId:typeof entry.voiceId==='string'?entry.voiceId:defaults.voiceId,
+    rate:Number.isFinite(entry.rate)&&entry.rate>=.7&&entry.rate<=1.25?entry.rate:defaults.rate,
+    allowRobotic:typeof entry.allowRobotic==='boolean'?entry.allowRobotic:defaults.allowRobotic
+   };
+  }catch{return defaults;}
+ }
+ function saveVoiceSettings(lang,changes){
+  if(!LANGUAGES[lang])return false;
+  const next={...readVoiceSettings(lang),...changes};
+  if(typeof next.voiceId!=='string'||next.voiceId.length>300 ||
+     !Number.isFinite(next.rate)||next.rate<.7||next.rate>1.25 ||
+     typeof next.allowRobotic!=='boolean')return false;
+  try{
+   const data=JSON.parse(global.localStorage?.getItem(VOICE_PREFS_KEY)||'{}')||{};
+   data[lang]=next;
+   global.localStorage?.setItem(VOICE_PREFS_KEY,JSON.stringify(data));
+   return true;
+  }catch{return false;}
+ }
  function releaseSession(){if(previousSessionType===null)return;try{if(global.navigator?.audioSession?.type==='playback')global.navigator.audioSession.type=previousSessionType;}catch{}previousSessionType=null;}
  const nativeAvailable=()=>typeof global.SpeechSynthesisUtterance==='function'&&Boolean(global.speechSynthesis);
  function current(job){return active===job&&job.id===sequence&&!job.done;}
@@ -211,12 +239,17 @@
    try{global.KalimaAndroidTTS.speak(job.text,job.lang,job.id);}catch{finish(false);}
   });
  }
+ function voiceId(voice){return String(voice.lang||'')+'|'+String(voice.voiceURI||'')+'|'+String(voice.name||'');}
+ function availableVoices(lang){
+  if(!nativeAvailable())return [];
+  try{return global.speechSynthesis.getVoices()
+    .filter(voice=>String(voice.lang||'').toLowerCase().split(/[-_]/)[0]===lang)
+    .sort((a,b)=>voiceRank(b,lang)-voiceRank(a,lang));
+  }catch{return [];}
+ }
  function deviceVoice(lang){
-  if(!nativeAvailable())return null;
-  try{
-   const voices=global.speechSynthesis.getVoices().filter(voice=>String(voice.lang).toLowerCase().split(/[-_]/)[0]===lang);
-   return voices.sort((a,b)=>voiceRank(b,lang)-voiceRank(a,lang))[0]||null;
-  }catch{return null;}
+  const list=availableVoices(lang),selected=readVoiceSettings(lang).voiceId;
+  return list.find(voice=>selected&&voiceId(voice)===selected)||list[0]||null;
  }
  function waitForVoice(lang){
   if(!nativeAvailable())return Promise.resolve(null);
@@ -236,13 +269,14 @@
   // Select whatever voice is available *now* and let the OS resolve the
   // requested utterance language when its voice list is not ready.
   const voice=deviceVoice(job.lang);
+  const preferences=readVoiceSettings(job.lang);
   // getVoices() can be empty while the phone still has a default TTS voice.
   // Let the browser resolve utterance.lang in that case.
   job.engine='device';
   return new Promise((resolve,reject)=>{
    let started=false,finished=false;const synth=global.speechSynthesis;
    const utterance=new SpeechSynthesisUtterance(job.text);nativeUtterance=utterance;
-   utterance.lang=voice?.lang||LANGUAGES[job.lang].locale;if(voice)utterance.voice=voice;utterance.rate=.94;utterance.pitch=1;utterance.volume=1;
+   utterance.lang=voice?.lang||LANGUAGES[job.lang].locale;if(voice)utterance.voice=voice;utterance.rate=preferences.rate;utterance.pitch=1;utterance.volume=1;
    const maxTime=setTimeout(()=>fail(),Math.min(90000,job.text.length*180+12000));
    const startTime=setTimeout(()=>{if(!started)fail();},6000);
    const keepAlive=setInterval(()=>{if(current(job)&&synth.paused)try{synth.resume();}catch{}},7000);
@@ -273,7 +307,8 @@
     if(!current(job))return;
     if(!played)played=await nativeSpeech(job);
     if(!current(job))return;
-    if(!played&&LANGUAGES[lang].voice&&options.engine!=='native'){
+    if(!played&&LANGUAGES[lang].voice&&options.engine!=='native'&&
+        (!nativeAvailable()||readVoiceSettings(lang).allowRobotic)){
      try{played=await localSpeech(job,ctx);}catch(error){localError=error;}
     }
     if(!current(job))return;
@@ -286,5 +321,16 @@
   return promise;
  }
  if(typeof document!=='undefined')document.addEventListener('visibilitychange',()=>{if(document.hidden){stop();if(context?.state==='running')context.suspend().catch(()=>{});}});
- global.WORT_AUDIO=Object.freeze({speak,stop,synthesize,prepare,get state(){return{...phase};},get supported(){return Boolean(androidAvailable()||global.AudioContext||global.webkitAudioContext||global.Audio||nativeAvailable());}});
+ global.WORT_AUDIO=Object.freeze({
+  speak,stop,synthesize,prepare,
+  getVoiceOptions(lang){return availableVoices(lang).map(voice=>({
+   id:voiceId(voice),name:String(voice.name||''),language:String(voice.lang||''),
+   enhanced:/enhanced|premium|neural|natural/i.test(String(voice.name||'')),
+   compact:/compact|basic|legacy/i.test(String(voice.name||''))
+  }));},
+  getVoiceSettings(lang){return readVoiceSettings(lang);},
+  setVoiceSettings(lang,changes){return saveVoiceSettings(lang,changes);},
+  get state(){return{...phase};},
+  get supported(){return Boolean(androidAvailable()||global.AudioContext||global.webkitAudioContext||global.Audio||nativeAvailable());}
+ });
 })(globalThis);
