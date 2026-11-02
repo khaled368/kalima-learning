@@ -40,16 +40,16 @@ const context={
  CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}}
 };
 vm.createContext(context);
-for(const file of ['topics-data.js','topics.js']){
+for(const file of ['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics.js']){
  const src=fs.readFileSync(path.join(root,file),'utf8');
  vm.runInContext(src,context,{filename:file});
 }
 const categories=context.WORT_TOPICS_DATA;
-assert.equal(categories.length,16,'seven original and nine additional practical-life categories');
-const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday','work','ams','pharmacy','housing','car','bank','phone','restaurant','worksite'];
+assert.equal(categories.length,35,'sixteen original and nineteen newly selected practical-life categories');
+const expected=['hospital','train','bus','kindergarten','school','supermarket','everyday','work','ams','pharmacy','housing','car','bank','phone','restaurant','worksite','post','interview','language-courses','dentist','emergency','police','ogk','finanzamt','residence','clothes','airport','taxi','family','neighbors','furniture','heating','gym','barber','weather'];
 assert.deepEqual(Array.from(categories,x=>x.id),expected,'original category order preserved; added sections follow');
-assert.equal(categories.reduce((sum,c)=>sum+c.words.length,0),192,'192 practical bilingual words');
-assert.equal(categories.reduce((sum,c)=>sum+c.phrases.length,0),160,'160 practical bilingual contextual phrases');
+assert.equal(categories.reduce((sum,c)=>sum+c.words.length,0),420,'420 practical bilingual words');
+assert.equal(categories.reduce((sum,c)=>sum+c.phrases.length,0),350,'350 practical bilingual contextual phrases');
 for(const cat of categories){
  assert.equal(cat.words.length,12,cat.id+' must have 12 words');
  assert.equal(cat.phrases.length,10,cat.id+' must have 10 contextual phrases');
@@ -122,4 +122,44 @@ tap('#topics-back',{});
 elements['#topics-search'].value='Werkstatt';
 elements['#topics-search'].listeners.input();
 assert.match(elements['#topics-grid'].innerHTML,/data-topic-open="car"/,'category search uses new car vocabulary');
-console.log('PASS: 16 practical sections, 352 bilingual entries, new category navigation, Arabic/German search, phrase filtering, mobile styling and audio integration.');
+// Verify every new section has a specific contextual expression, not a generic template.
+const spotChecks={
+  post:'Ich möchte dieses Paket verschicken.',
+  interview:'Wie hoch ist das Bruttogehalt?',
+  'language-courses':'Ich möchte mich für einen Deutschkurs anmelden.',
+  dentist:'Ich habe seit gestern Zahnschmerzen.',
+  emergency:'Rufen Sie bitte die Rettung!',
+  police:'Ich möchte einen Diebstahl melden.',
+  ogk:'Bin ich derzeit versichert?',
+  finanzamt:'Ich habe einen Steuerbescheid bekommen.',
+  residence:'Mein Dokument läuft bald ab.',
+  clothes:'Kann ich das anprobieren?',
+  airport:'Wo ist die Sicherheitskontrolle?',
+  taxi:'Wie viel kostet die Fahrt ungefähr?',
+  family:'Gibt es hier einen Wickelraum?',
+  neighbors:'Haben Sie zufällig mein Paket angenommen?',
+  furniture:'Ist die Lieferung im Preis enthalten?',
+  heating:'Die Heizung wird nicht warm.',
+  gym:'Gibt es Kurse für Anfänger?',
+  barber:'Wie viel kostet ein Haarschnitt?',
+  weather:'Morgen soll es regnen.'
+};
+for(const [id,phrase] of Object.entries(spotChecks)){
+ const category=categories.find(x=>x.id===id);
+ assert.ok(category,'new category '+id+' exists');
+ assert.ok(category.phrases.some(x=>x[0]===phrase),'relevant scenario sentence for '+id);
+}
+assert.match(loader,/topics-additional-a\\.js\\?v=/,'first new topic data bundle loaded');
+assert.match(loader,/topics-additional-b\\.js\\?v=/,'second new topic data bundle loaded');
+assert.ok(loader.indexOf('topics-data.js')<loader.indexOf('topics-additional-a.js') &&
+ loader.indexOf('topics-additional-a.js')<loader.indexOf('topics-additional-b.js') &&
+ loader.indexOf('topics-additional-b.js')<loader.indexOf('topics.js'),'new topics loaded before UI initialization');
+tap('#topics-back',{});
+elements['#topics-search'].value='';
+elements['#topics-search'].listeners.input();
+tap('[data-topic-open]',{dataset:{topicOpen:'post'}});
+const audioButton={dataset:{topicSay:'words:1'}};
+tap('[data-topic-say]',audioButton);
+assert.equal(heard.at(-1).detail.text,'das Paket','German speech for new post vocabulary works');
+tap('#topics-back',{});
+console.log('PASS: 35 practical sections, 770 bilingual entries, original navigation, 19 new topic scenarios, search, filters, light/dark CSS and German audio.');
