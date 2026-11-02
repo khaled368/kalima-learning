@@ -169,30 +169,3 @@ html[data-theme='dark'] #library-panel #daily-goal-button .daily-goal-check {
   #library-panel #daily-goal-button .daily-goal-copy > small {font-size:11px;}
   #library-panel #daily-goal-button .daily-goal-count {font-size:14px;}
 }
-
-
-/* Android notification preferences below today's goal (hidden on web). */
-#library-panel .daily-reminder-control[hidden]{display:none!important;}
-#library-panel .daily-reminder-control{
- display:flex;flex-wrap:wrap;gap:8px 13px;align-items:center;justify-content:space-between;
- margin:-2px 0 14px;padding:10px 13px;border-radius:13px;
- border:1px solid #99cfc5;background:#eefaf7;color:#115f5b;font-size:13px;line-height:1.6;
-}
-#library-panel .daily-reminder-toggle,#library-panel .daily-reminder-time{
- display:flex;align-items:center;gap:8px;font-weight:700;
-}
-#library-panel .daily-reminder-toggle input{width:20px;height:20px;accent-color:#087f78;}
-#library-panel .daily-reminder-time input{
- width:110px;min-height:39px;padding:5px 7px;border-radius:9px;
- border:1px solid #9ac7c2;background:white;color:#164555;direction:ltr;font:inherit;
-}
-#library-panel .daily-reminder-control p{
- margin:0;flex:1 0 100%;font-size:12px;line-height:1.6;color:#4a686d;
-}
-html[data-theme='dark'] #library-panel .daily-reminder-control{
- border-color:#43877e;background:#123240;color:#c9f4eb;
-}
-html[data-theme='dark'] #library-panel .daily-reminder-time input{
- border-color:#42747b;background:#173747;color:#e9f8fa;
-}
-html[data-theme='dark'] #library-panel .daily-reminder-control p{color:#bdd0d9;}

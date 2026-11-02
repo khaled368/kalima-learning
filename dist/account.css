@@ -53,3 +53,32 @@
 @media(prefers-reduced-motion:reduce){.account-loading::before{animation:none;border-color:#dfcffc}}
 
 #account-dialog button:not(:disabled):is(:active,.is-pressed){background:#bba7df!important;background-image:none!important;color:#25213b!important;border-color:#e4d8ff!important}
+
+/* Android-only word-goal reminder belongs in Account, not on the main lesson page. */
+#account-dialog .daily-reminder-control[hidden]{display:none!important}
+#account-dialog .daily-reminder-control{
+ display:grid;gap:11px;margin:15px 0 4px;padding:14px;
+ border:1px solid #666485;border-radius:14px;background:#1d2942;
+ color:#ece8fc;font-size:14px;line-height:1.6;
+}
+#account-dialog .daily-reminder-toggle,
+#account-dialog .daily-reminder-time{
+ display:flex;align-items:center;justify-content:space-between;gap:12px;
+ font-weight:700;min-width:0;
+}
+#account-dialog .daily-reminder-toggle input{
+ width:21px;height:21px;flex:none;accent-color:#69cdbb;cursor:pointer;
+}
+#account-dialog .daily-reminder-time input{
+ box-sizing:border-box;min-width:100px;max-width:140px;min-height:43px;
+ padding:6px 9px;direction:ltr;text-align:center;color-scheme:dark;
+ border:1px solid #777b9b;border-radius:10px;background:#101e33;
+ color:#f4f3ff;font:inherit;font-weight:600;
+}
+#account-dialog #daily-reminder-note{
+ margin:0;color:#bacbe0;font-size:12px;line-height:1.65;
+}
+@media(max-width:359px){
+ #account-dialog .daily-reminder-control{padding:10px;gap:9px}
+ #account-dialog .daily-reminder-time input{min-width:90px;max-width:110px}
+}

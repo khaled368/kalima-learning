@@ -224,7 +224,11 @@
   finally{state.requestBusy=false;if(!state.reloading){updateBusy();messages();if(completed)close();}}
  }
  function mount(){
-  dialog=document.createElement('dialog');dialog.id='account-dialog';dialog.setAttribute('aria-labelledby','account-title');dialog.innerHTML=`<div class="account-heading"><div><p class="account-kicker">${lockIcon}<span>${esc(t('حسابي'))}</span></p><h2 id="account-title">${esc(t('حسابي'))}</h2></div><button type="button" id="account-close" aria-label="${esc(t('إغلاق نافذة الحساب'))}">×</button></div><div id="account-body"></div><p id="account-error" role="alert"></p><p id="account-notice" role="status" aria-live="polite"></p>`;document.body.append(dialog);body=dialog.querySelector('#account-body');
+  dialog=document.createElement('dialog');dialog.id='account-dialog';dialog.setAttribute('aria-labelledby','account-title');dialog.innerHTML=`<div class="account-heading"><div><p class="account-kicker">${lockIcon}<span>${esc(t('حسابي'))}</span></p><h2 id="account-title">${esc(t('حسابي'))}</h2></div><button type="button" id="account-close" aria-label="${esc(t('إغلاق نافذة الحساب'))}">×</button></div><div id="account-body"></div><section id="daily-reminder-control" class="daily-reminder-control" hidden>
+  <label class="daily-reminder-toggle"><span id="daily-reminder-title">🔔 تذكير الهدف اليومي</span><input id="daily-reminder-enabled" type="checkbox"></label>
+  <label class="daily-reminder-time"><span id="daily-reminder-time-label">موعد التذكير</span><input id="daily-reminder-time" type="time" value="20:00"></label>
+  <p id="daily-reminder-note" role="status"></p>
+</section><p id="account-error" role="alert"></p><p id="account-notice" role="status" aria-live="polite"></p>`;document.body.append(dialog);body=dialog.querySelector('#account-body');
   // Move the existing real sun/moon switch out of the header and into Account.
   // Moving (rather than cloning) preserves its ID, click listener and saved state.
   const appearanceToggle=document.querySelector('#theme-toggle');

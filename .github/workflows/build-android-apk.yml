@@ -85,10 +85,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v8
+          TAG: android-preview-v9
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.8" --notes "Android v0.8: configurable opt-in daily 20-word goal notification (20:00 default), only when goal is unfinished. Internet not needed for local reminders. Includes all offline learning content and pronunciation repairs. Sync progress before reinstalling." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.9" --notes "Android v0.9: moved daily 20-word reminder settings into My Account, preserving the chosen reminder time and enabled state. Offline study and voice choices remain included. Sync progress before replacing a prior debug-signed APK." --prerelease
           fi
