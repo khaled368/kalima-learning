@@ -64,7 +64,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <link rel="stylesheet" href="navigation-reorder.css?v=20261101b">
 <link rel="stylesheet" href="grammar-contrast.css?v=20261101-case-names">
 <link rel="stylesheet" href="word-header-fix.css?v=20261101b">
-<link rel="stylesheet" href="daily-goal-illustration.css?v=20261101-compact-card">
+<link rel="stylesheet" href="daily-goal-illustration.css?v=20261102-daily-reminder">
 <link rel="stylesheet" href="buttons-gradient-plus.css?v=20261101-refs-v2">
 <link rel="stylesheet" href="topics.css?v=20261102-topics-two-tabs">
 <script src="theme-switch.js?v=20261101-drag"></script>
@@ -102,6 +102,11 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
   <span class="daily-goal-copy"><small id="daily-goal-status" data-i18n="تعلّم 20 كلمة جديدة">تعلّم 20 كلمة جديدة</small></span>
   <span class="daily-goal-progress"><span class="daily-goal-count" id="daily-goal-count" dir="ltr">0 / 20</span><span class="daily-goal-arrow" aria-hidden="true">←</span><span class="daily-goal-check" aria-hidden="true">✓</span></span>
 </button>
+<section id="daily-reminder-control" class="daily-reminder-control" hidden>
+  <label class="daily-reminder-toggle"><span id="daily-reminder-title">🔔 تذكير الهدف اليومي</span><input id="daily-reminder-enabled" type="checkbox"></label>
+  <label class="daily-reminder-time"><span id="daily-reminder-time-label">موعد التذكير</span><input id="daily-reminder-time" type="time" value="20:00"></label>
+  <p id="daily-reminder-note" role="status"></p>
+</section>
 <nav class="level-tabs" id="level-tabs" aria-label="أقسام المستويات" data-i18n-aria-label="أقسام المستويات"></nav>
 <section class="level-summary" aria-labelledby="level-title"><div class="section-heading"><div><p class="eyebrow" id="level-caption"></p><h2 id="level-title"></h2></div><span id="level-count"></span></div><p id="level-description" class="hero-subtitle"></p><div class="track level-progress" role="progressbar" aria-label="تقدم المستوى" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria-label="تقدم المستوى"><i id="level-bar"></i></div><div class="progress-label"><small id="level-learned"></small></div></section>
 <details class="library-controls"><summary aria-label="البحث والمراجعة والإعدادات" data-i18n-aria-label="البحث والمراجعة والإعدادات">⌕ <span data-i18n="بحث ومراجعة">بحث ومراجعة</span></summary><div class="library-study-actions"><button class="secondary" id="review-level" data-i18n="مراجعة الكلمات ↻">مراجعة الكلمات ↻</button></div>
@@ -166,5 +171,6 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <dialog id="sources-dialog" class="training-dialog" aria-labelledby="sources-title"><button class="dialog-close icon-button" aria-label="إغلاق" id="sources-close" data-i18n-aria-label="إغلاق">×</button><h2 id="sources-title" data-i18n="عن المفردات ومصادرها">عن المفردات ومصادرها</h2><div id="sources-content"></div></dialog>
 <div id="toast" role="status" hidden></div>
 <script src="account.js?v=20261101-appearance"></script>
-<script src="app-bootstrap.js?v=20261102-speech-toast-fix"></script>
+<script src="daily-reminders.js?v=20261102-daily-reminder"></script>
+<script src="app-bootstrap.js?v=20261102-daily-reminder"></script>
 </body></html>
