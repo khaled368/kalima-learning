@@ -48,6 +48,9 @@ jobs:
           python android/prepare_icons.py
           test -s android/app/src/main/res/drawable-nodpi/ic_kalima_logo_foreground.png
 
+      - name: Verify browser speech inside the packaged app
+        run: node tests/browser-audio.test.cjs
+
       - name: Verify native daily reminder integration
         run: node tests/daily-reminders.test.cjs
 
