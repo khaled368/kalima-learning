@@ -23,7 +23,7 @@
  for(const [n,lang] of ['en','nl','de'].entries())i18n.add({[lang]:Object.fromEntries(Object.entries(grammarNotes).map(([key,values])=>[key,values[n]]))});
  const files=new Map();let activeManifest=null,supplement=null;
  const text=value=>Array.isArray(value)?value.filter(Boolean).join('؛ '):typeof value==='string'?value.trim():'';
- async function json(path){if(files.has(path))return files.get(path);const pending=fetch(path).then(async response=>{if(!response.ok)throw new Error(i18n.t('تعذّر تحميل محتوى المنهاج. حاول مرة أخرى.'));return response.json()}).catch(error=>{files.delete(path);throw error});files.set(path,pending);return pending;}
+ async function json(path){if(files.has(path))return files.get(path);const pending=fetch(path,{cache:"no-cache"}).then(async response=>{if(!response.ok)throw new Error(i18n.t('تعذّر تحميل محتوى المنهاج. حاول مرة أخرى.'));return response.json()}).catch(error=>{files.delete(path);throw error});files.set(path,pending);return pending;}
  async function manifest(){
   const base=await json('data/manifest.json');
   const selected=target==='de'?base:await json('data/courses/'+target+'/manifest.json');
