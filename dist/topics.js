@@ -76,9 +76,16 @@
   if(!selected)return;
   selected=null;
   detail.hidden=true;overview.hidden=false;
+  // Return to ALL sections, not the search input (which opens the
+  // on-screen keyboard and makes the user think they entered search).
+  search.value='';
   renderGrid();
   window.scrollTo({top:0,behavior:'instant'});
-  search.focus({preventScroll:true});
+  const heading=panel.querySelector('#topics-page-title');
+  if(heading){
+   heading.setAttribute('tabindex','-1');
+   heading.focus({preventScroll:true});
+  }
  }
  search.addEventListener('input',renderGrid);
  detailSearch.addEventListener('input',renderDetail);
