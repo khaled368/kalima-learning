@@ -40,7 +40,7 @@ const context={
  CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}}
 };
 vm.createContext(context);
-for(const file of ['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics-language-pack.js','topics.js']){
+for(const file of ['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics-language-pack.js','topics-more-manual-a.js','topics-more-manual-b.js','topics-more-related.js','topics.js']){
  const src=fs.readFileSync(path.join(root,file),'utf8');
  vm.runInContext(src,context,{filename:file});
 }
@@ -48,11 +48,11 @@ const categories=context.WORT_TOPICS_DATA;
 assert.equal(categories.length,35,'sixteen original and nineteen newly selected practical-life categories');
 const expanded=context.WORT_TOPICS.catalog;
 assert.equal(expanded.length,35,'all 35 categories are available in the multilingual dashboard');
-assert.equal(expanded.reduce((sum,cat)=>sum+cat.words.length,0),700,'each category now contains 20 practical words');
-assert.equal(expanded.reduce((sum,cat)=>sum+cat.phrases.length,0),525,'each category now contains 15 contextual sentences');
+assert.equal(expanded.reduce((sum,cat)=>sum+cat.words.length,0),1225,'each category contains 35 practical words');
+assert.equal(expanded.reduce((sum,cat)=>sum+cat.phrases.length,0),700,'each category contains 20 contextual sentences');
 for(const category of expanded){
- assert.equal(category.words.length,20,category.id+' expanded words');
- assert.equal(category.phrases.length,15,category.id+' expanded sentences');
+ assert.equal(category.words.length,35,category.id+' expanded words');
+ assert.equal(category.phrases.length,20,category.id+' expanded sentences');
  assert.ok(category.words.every(pair=>pair.length===2&&pair[0]&&pair[1]),category.id+' bilingual words');
  assert.ok(category.phrases.every(pair=>pair.length===2&&pair[0]&&pair[1]),category.id+' bilingual sentences');
 }
@@ -188,4 +188,4 @@ const audioButton={dataset:{topicSay:'words:1'}};
 tap('[data-topic-say]',audioButton);
 assert.equal(heard.at(-1).detail.text,'das Paket','German speech for new post vocabulary works');
 tap('#topics-back',{});
-console.log('PASS: 35 practical sections, 1,225 aligned vocabulary and sentence entries, original navigation, search, filters, light/dark CSS and German audio.');
+console.log('PASS: 35 practical sections, 1,925 aligned vocabulary and sentence entries, original navigation, search, filters, light/dark CSS and German audio.');
