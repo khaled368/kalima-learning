@@ -12,7 +12,7 @@ function start(target='de',native='ar') {
     WORT_I18N:{add(){},t(input){return input;}}
   };
   vm.createContext(context);
-  for (const file of ['example-fallback.js','example-quality.js','content.js']) {
+  for (const file of ['example-curated-a1.js','example-fallback.js','example-quality.js','content.js']) {
     const source=fs.readFileSync(path.join(root,'dist',file),'utf8');
     vm.runInContext(source,context,{filename:file});
   }
@@ -54,6 +54,10 @@ const without=de.WORT_CONTENT.normalize({id:'sample-empty',german:'Moment',pos:'
 assert.equal(without.examples.length,1,'every entry has at least one example or labelled fallback');
 assert.equal(without.examples[0].vocabularyNote,true,'generic fallback is explicitly not presented as contextual usage');
 assert.equal(without.examples[0].de.includes('„Moment“'),true,'fallback clearly names the word');
+const daughter=de.WORT_CONTENT.normalize({id:'a1-daughter',german:'Tochter',lemma:'Tochter',pos:'noun',arabic:'ابنة',examples:[]});
+assert.equal(daughter.examples.length,1,'A1 missing nouns now receive a genuine contextual example');
+assert.equal(daughter.examples[0].de,'Meine Tochter geht heute zur Schule.','authored noun context is accurate');
+assert.equal(daughter.examples[0].ar,'تذهب ابنتي إلى المدرسة اليوم.','Arabic translation matches the noun sentence');
 const call = de.WORT_CONTENT.normalize({
   id:'anrufen-test',german:'anrufen',lemma:'anrufen',pos:'verb',arabic:'يتصل هاتفيًا',
   examples:[{de:'Haben Sie abgenommen?',ar:'هل فقدت الوزن؟'}]
