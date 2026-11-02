@@ -1,7 +1,7 @@
 /* Restore the signed-in workspace before the learning modules read local progress. */
 (function (global) {
   'use strict';
-  const scripts = ['feedback.js','history.js','usage.js','audio.js?v=20261101-tts-repair-v4','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','example-curated-a1.js?v=20261102-a1-sentences','example-fallback.js?v=20261102-a1-sentences','example-quality.js?v=20261102-all-words','content.js?v=20261102-all-words','grammar.js','topics-data.js?v=20261102-expanded16','topics-additional-a.js?v=20261102-extra19','topics-additional-b.js?v=20261102-extra19','topics-language-pack.js?v=20261102-topic4-expanded-v1','topics.js?v=20261102-topic4-expanded-v1','app.js?v=20261102-verified-examples','course-ui.js'];
+  const scripts = ['feedback.js','history.js','usage.js','audio.js?v=20261101-tts-repair-v4','analytics.js','verbs.js','lesson-courses.js','sentences.js','writing.js','journey-calendar.js','example-curated-a1.js?v=20261102-a1-sentences','example-fallback.js?v=20261102-a1-sentences','example-quality.js?v=20261102-all-words','content.js?v=20261102-all-words','grammar.js','topics-data.js?v=20261102-expanded16','topics-additional-a.js?v=20261102-extra19','topics-additional-b.js?v=20261102-extra19','topics-language-pack.js?v=20261102-topic4-expanded-v2','topics.js?v=20261102-topic4-expanded-v2','app.js?v=20261102-verified-examples','course-ui.js'];
   const messages = {
     ar: ['جارٍ تجهيز مكتبتك…','تعذّر فتح الموقع. أعد تحميل الصفحة.'],
     en: ['Preparing your library…','Could not open the app. Reload the page.'],
