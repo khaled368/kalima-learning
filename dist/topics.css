@@ -118,8 +118,10 @@ html[data-theme='dark'] body .topbar #top-topics-button:is(.active,[aria-current
 }
 #topics-panel .topics-grid {
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-auto-flow:row;
+  align-items:stretch;
+  gap:clamp(5px,1vw,12px);
 }
 #topics-panel .topics-tile {
   --tile-color:#2f7db2;--tile-soft:#e8f4ff;--tile-border:#b8d5ec;
@@ -373,8 +375,11 @@ html[data-theme='dark'] #topics-panel .topics-audio-button.audio-playing{
   color:#fff;background:linear-gradient(145deg,#16a28c,#0d716d);
 }
 @media(max-width:700px){
-  #topics-panel .topics-grid{grid-template-columns:1fr;}
-  #topics-panel .topics-tile{min-height:93px;grid-template-columns:43px minmax(0,1fr) 20px;}
+  /* Keep five complete columns even on phones; labels stack under icons. */
+  #topics-panel .topics-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;}
+  #topics-panel .topics-tile{min-height:112px;padding:8px 3px;gap:5px;}
+  #topics-panel .topics-tile-icon{width:31px;height:31px;font-size:20px;border-radius:9px;}
+  #topics-panel .topics-tile-body strong{font-size:10.5px;line-height:1.4;}
   #topics-panel .topics-page-heading{align-items:flex-start;}
 }
 @media(max-width:390px){
@@ -402,4 +407,83 @@ html[data-theme='dark'] #topics-panel .topics-audio-button.audio-playing{
 }
 @media(prefers-reduced-motion:reduce){
   #topics-panel .topics-tile:active{transform:none;}
+}
+
+/* Compact 5-across category dashboard: 35 sections appear in exactly 7 rows.
+   Icons sit above their labels, preserving full accessible text and actions.
+   Descriptions and item counts remain available inside each section. */
+#topics-panel .topics-grid{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  grid-auto-flow:row;
+  gap:clamp(5px,1vw,12px);
+}
+#topics-panel .topics-tile{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:7px;
+  min-height:133px;
+  padding:12px 6px;
+  text-align:center;
+  border-radius:15px;
+}
+#topics-panel .topics-tile-icon{
+  width:43px;height:43px;flex:0 0 43px;
+  font-size:26px;border-radius:12px;
+}
+#topics-panel .topics-tile-body{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  width:100%;
+  min-width:0;
+  gap:1px;
+}
+#topics-panel .topics-tile-body strong{
+  display:block;
+  max-width:100%;
+  color:var(--tile-color);
+  font-size:clamp(12px,1.5vw,15px);
+  line-height:1.45;
+  font-weight:800;
+  text-align:center;
+  overflow-wrap:anywhere;
+  word-break:normal;
+  white-space:normal;
+}
+#topics-panel .topics-tile-body small,
+#topics-panel .topics-tile-count,
+#topics-panel .topics-tile-chevron{display:none;}
+@media(max-width:700px){
+  #topics-panel .topics-grid{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:6px;
+  }
+  #topics-panel .topics-tile{
+    min-height:114px;
+    padding:9px 3px;
+    gap:6px;
+    border-radius:12px;
+  }
+  #topics-panel .topics-tile-icon{
+    width:33px;height:33px;flex-basis:33px;
+    font-size:21px;border-radius:9px;
+  }
+  #topics-panel .topics-tile-body strong{
+    font-size:11px;
+    line-height:1.4;
+  }
+}
+@media(max-width:390px){
+  #topics-panel .topics-grid{gap:5px;}
+  #topics-panel .topics-tile{min-height:112px;padding:7px 2px;gap:6px;border-radius:11px;}
+  #topics-panel .topics-tile-icon{width:30px;height:30px;flex-basis:30px;font-size:19px;}
+  #topics-panel .topics-tile-body strong{font-size:10px;line-height:1.4;}
+}
+@media(max-width:340px){
+  #topics-panel .topics-grid{gap:4px;}
+  #topics-panel .topics-tile{padding:7px 1px;min-height:113px;}
+  #topics-panel .topics-tile-body strong{font-size:9.5px;}
 }
