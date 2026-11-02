@@ -6,7 +6,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..','dist');
-const files=['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics-language-pack.js','topics.js'];
+const files=['topics-data.js','topics-additional-a.js','topics-additional-b.js','topics-language-pack.js','topics-more-manual-a.js','topics-more-manual-b.js','topics-more-related.js','topics.js'];
 const sources=files.map(f=>fs.readFileSync(path.join(root,f),'utf8'));
 const expectedLanguages=['ar','de','en','nl'];
 const sample={de:'das Krankenhaus',ar:'المستشفى',en:'the hospital',nl:'het ziekenhuis'};
@@ -42,10 +42,10 @@ function run(target,native){
  assert.equal(categories.length,35,'complete catalog: '+native+' -> '+target);
  assert.equal(new Set(categories.map(x=>x.id)).size,35,'unique category IDs');
  for(const category of categories){
-  assert.equal(category.words.length,20,category.id+' word count');
-  assert.equal(category.phrases.length,15,category.id+' sentence count');
-  assert.equal(new Set(category.words.map(x=>x[0])).size,20,'distinct words in '+category.id);
-  assert.equal(new Set(category.phrases.map(x=>x[0])).size,15,'distinct sentences in '+category.id);
+  assert.equal(category.words.length,35,category.id+' word count');
+  assert.equal(category.phrases.length,20,category.id+' sentence count');
+  assert.equal(new Set(category.words.map(x=>x[0])).size,35,'distinct words in '+category.id);
+  assert.equal(new Set(category.phrases.map(x=>x[0])).size,20,'distinct sentences in '+category.id);
   for(const rows of [category.words,category.phrases])for(const [first,second] of rows){
    assert.ok(typeof first==='string'&&first.trim(),'missing target-language translation: '+category.id);
    assert.ok(typeof second==='string'&&second.trim(),'missing native-language translation: '+category.id);
@@ -92,7 +92,7 @@ function run(target,native){
 for(const native of expectedLanguages)for(const target of expectedLanguages){
  if(native!==target)run(target,native);
 }
-assert.equal(checked,14700,'1,225 entries in each of 12 language pairs');
+assert.equal(checked,23100,'1,925 entries in each of 12 language pairs');
 assert.equal(spoken,24,'word and sentence speech checked in each pair');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const bootstrap=fs.readFileSync(path.join(root,'app-bootstrap.js'),'utf8');
@@ -101,4 +101,4 @@ assert.ok(bootstrap.indexOf('topics-language-pack.js')<bootstrap.indexOf('topics
 assert.match(html,/id="top-topics-button"/,'category entry shortcut still exists');
 assert.match(html,/topics\.css\?v=/,'light/dark responsive styles retained');
 assert.doesNotMatch(html,/ألماني مع ترجمة عربية · اضغط «استمع» لسماع النطق/,'redundant intro remains removed');
-console.log('PASS: 35 sections × (20 words + 15 contextual sentences) × 12 language pairs = '+checked+' translated displays; speech in each target language; return without search focus.');
+console.log('PASS: 35 sections × (35 words + 20 contextual sentences) × 12 language pairs = '+checked+' translated displays; speech in each target language; return without search focus.');
