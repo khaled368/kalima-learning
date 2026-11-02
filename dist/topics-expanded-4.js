@@ -93,10 +93,10 @@
         "de oppas"
       ],
       [
-        "die Geschwister",
-        "الإخوة والأخوات",
-        "siblings",
-        "de broers en zussen"
+        "der Geburtstag",
+        "عيد الميلاد",
+        "the birthday",
+        "de verjaardag"
       ],
       [
         "die Spielgruppe",
