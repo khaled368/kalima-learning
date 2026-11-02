@@ -53,3 +53,7 @@ known to this phone until it syncs.
 ## Example pronunciation v0.10
 
 Example sentences use a circular, accessible, icon-only speaker button matching the main word's control. Existing text-to-speech behavior remains unchanged. Rebuild the APK for updated offline content.
+
+## Missed-word review v0.11
+
+Incorrect quiz answers are stored per learning language in a dedicated Review list, with a focused retry button. Ordinary review sessions prioritize these words; answering correctly on a later attempt removes the flag. The learned count is unaffected. The list works offline and participates in per-word cloud sync.
