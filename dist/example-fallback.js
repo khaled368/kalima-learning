@@ -247,7 +247,9 @@
  const canonical=word=>clean(word.lemma||word.german||word.term||'').toLocaleLowerCase('de-DE').replace(/^sich\s+/,'');
  function curated(word,target,native){
   if(target!=='de'||native!=='ar')return [];
-  const pairs=authored[canonical(word)];
+  const key=canonical(word);
+  const extra=global.WORT_A1_AUTHORED_EXAMPLES?.[key];
+  const pairs=authored[key]||(extra?[extra]:null);
   return pairs?pairs.map(([de,ar])=>({de,ar,source:authoredNote.ar,kalimaAuthored:true})): [];
  }
  function create(word,target,native){
