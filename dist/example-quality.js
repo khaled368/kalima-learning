@@ -73,21 +73,37 @@
     // A bare 'stelle' without 'vor' never qualifies for 'vorstellen'.
     const particleIndices=spoken.flatMap((w,i)=>w===particle?[i]:[]);
     if (!particleIndices.length) return false;
-    return spoken.some((w,i)=>baseForms.has(w) && particleIndices.some(j=>Math.abs(i-j)<=12));
+    return spoken.some((w,i)=>baseForms.has(w) && particleIndices.some(j=>j>i && j-i<=12));
   }
-  function germanMatches(lemma, pos, sentence) {
+  const irregularComparatives={
+    gut:['besser','best'],
+    schlecht:['schlechter','schlechtest'],
+    groß:['größer','größt'],
+    hoch:['höher','höchst'],
+    viel:['mehr','meist'],
+    nah:['näher','nächst'],
+    gern:['lieber','liebst']
+  };
+  function germanMatches(lemma, pos, sentence, word) {
     const words=new Set(tokens(sentence));
     if (words.has(lemma)) return true;
     if (pos==='verb') return germanVerbMatches(lemma,sentence);
     if (lemma.length<3) return false;
     if (pos==='adjective') {
-      for (const ending of ['e','en','em','er','es','ere','eren','erer','eres','ste','sten','stem','ster','stes']) {
-        if (words.has(lemma+ending)) return true;
+      const stems=[lemma,...(irregularComparatives[lemma]||[])];
+      for (const stem of stems) {
+        if (words.has(stem)) return true;
+        for (const ending of ['e','en','em','er','es','ere','eren','erer','eres','ste','sten','stem','ster','stes']) {
+          if (words.has(stem+ending)) return true;
+        }
       }
       return false;
     }
     // Conservative noun inflections: exact lemma and normal case/plural suffixes.
     if (pos==='noun' || pos==='other') {
+      // Prefer the actual dictionary plural over a guessed inflection.
+      const plural=tokens(word?.plural).filter(x=>!['der','die','das'].includes(x)).at(-1);
+      if (plural && words.has(plural)) return true;
       for (const ending of ['e','n','en','s','es','er','ern']) if (words.has(lemma+ending)) return true;
     }
     return false;
@@ -110,7 +126,7 @@
   function relevant(word, sentence, language) {
     const lemma=normalizeLemma(word, language);
     if (!lemma || !sentence) return false;
-    return language==='de'?germanMatches(lemma,word.pos||'other',sentence):otherLanguageMatches(lemma,language,sentence);
+    return language==='de'?germanMatches(lemma,word.pos||'other',sentence,word):otherLanguageMatches(lemma,language,sentence);
   }
   function curated(word, language, native) {
     if (language!=='de'||native!=='ar') return [];
