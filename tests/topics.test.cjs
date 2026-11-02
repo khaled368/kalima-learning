@@ -7,6 +7,13 @@ const path=require('node:path');
 const root=path.join(__dirname,'..','dist');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const loader=fs.readFileSync(path.join(root,'app-bootstrap.js'),'utf8');
+const appScript=fs.readFileSync(path.join(root,'app.js'),'utf8');
+assert.doesNotMatch(appScript,/toast\(t\("جارٍ تجهيز النطق لأول مرة/,
+  'the misleading first-use speech message must not reappear on every audio tap');
+assert.match(appScript,/button\.setAttribute\('aria-busy', 'true'\)/,
+  'audio button retains accessible loading state while speech prepares');
+assert.match(loader,/app\.js\?v=20261102-speech-toast-fix/,
+  'the fixed speech module uses a new URL to invalidate older cached scripts');
 const css=fs.readFileSync(path.join(root,'topics.css'),'utf8');
 function node(){
  const callbacks={};

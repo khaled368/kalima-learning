@@ -1,4 +1,4 @@
-# Kalima Android offline-first APK (v0.6)
+# Kalima Android offline-first APK (v0.7)
 
 This installable Android APK contains the complete `dist/` application and
 learning curriculum, instead of loading the website from GitHub Pages on
@@ -17,7 +17,7 @@ app storage, and installation.
   through local request interception, preserving compatible in-app browser
   storage and auth redirects. Supabase requests remain network requests.
 - Minimum Android version: Android 8 (API 26). App ID:
-  `com.kalima.learning`. Version `0.6.0-offline-test`.
+  `com.kalima.learning`. Version `0.7.0-offline-test`.
 
 ## Build
 
@@ -26,7 +26,7 @@ Run the GitHub workflow `Build Kalima Android test APK` manually or use
 copies `dist/` to a generated Android assets folder on every build; it
 does not commit duplicate curriculum files. The workflow checks packaged
 HTML, topics and JSON, then publishes `Kalima-Android-Test.apk` in the
-`android-preview-v6` prerelease.
+`android-preview-v7` prerelease.
 
 Because files now ship inside the APK, **changes to lessons or design
 require a new APK** to reach existing installations. The workflow is

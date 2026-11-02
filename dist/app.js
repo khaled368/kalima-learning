@@ -392,7 +392,8 @@ function speak(text, button = null, lang = TARGET) {
     onStatus: event => {
       if (request !== audioRequest) return;
       const state = typeof event === 'string' ? event : event.state;
-      if (state === 'loading') toast(t("جارٍ تجهيز النطق لأول مرة\u2026"));
+      // Loading is already indicated by aria-busy on the tapped audio button.
+      // Do not show the "first time" toast on every playback request.
       if (state === 'playing' && button) button.classList.add('audio-playing');
     }
   });
