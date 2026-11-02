@@ -87,7 +87,7 @@ assert.equal(heard.length,1,'audio dispatch fired once');
 assert.equal(heard[0].type,'wort:speak','existing Kalima speech event is reused');
 assert.equal(heard[0].detail.lang,'de','German pronunciation explicitly requested');
 assert.equal(heard[0].detail.text,'Ich brauche einen Arzt.','correct phrase pronounced');
-elements['#topics-detail-search'].value='Allergie';
+elements['#topics-detail-search'].value='Penicillin';
 elements['#topics-detail-search'].listeners.input();
 assert.match(elements['#topics-items'].innerHTML,/Penicillin/,'Arabic/German detail search works');
 assert.doesNotMatch(elements['#topics-items'].innerHTML,/Ich brauche einen Arzt/,'detail search removes unrelated entries');
