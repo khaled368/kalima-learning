@@ -1,0 +1,47 @@
+name: Trim Kalima celebration music (remove first 4 seconds)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/trim-level-up-audio.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kalima-trim-level-up-audio
+  cancel-in-progress: false
+
+jobs:
+  trim:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Trim 4 seconds from original three-part audio
+        run: |
+          set -euo pipefail
+          source="dist/assets/level-up-celebration.mp3"
+          result="dist/assets/level-up-celebration-trimmed.mp3"
+          command -v ffmpeg
+          command -v ffprobe
+          ffmpeg -hide_banner -loglevel error -y -i "$source" -af "atrim=start=4,asetpts=PTS-STARTPTS" -c:a libmp3lame -q:a 2 "$result"
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 "$source"
+          ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 "$result"
+          test -s "$result"
+      - name: Commit cropped music to website assets
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/assets/level-up-celebration-trimmed.mp3
+          if git diff --cached --quiet; then
+            echo "Already trimmed; nothing new to commit."
+          else
+            git commit -m "Add level-up music with first four seconds precisely removed"
+            git push origin HEAD:main
+          fi
