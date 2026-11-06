@@ -15,6 +15,7 @@ on:
       - "tests/review-mistakes.test.cjs"
       - "tests/safari-startup.test.cjs"
       - "tests/rank-celebration.test.cjs"
+      - "tests/rank-evolution.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 

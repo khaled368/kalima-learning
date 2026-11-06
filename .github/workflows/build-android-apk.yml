@@ -6,6 +6,8 @@ on:
     paths:
       - "android/**"
       - "dist/**"
+      - "tests/rank-evolution.test.cjs"
+      - "tests/rank-celebration.test.cjs"
       - ".github/workflows/build-android-apk.yml"
   workflow_dispatch:
 
