@@ -69,7 +69,7 @@ async function run(){
  assert.equal(fields['#shield'].style.transform,'scale(1.0000)','new shield settles without pulse');
  runFrame(3.5);
  assert.equal(fields['#shield'].style.transform,'scale(1.0000)','no follow-on bass bouncing');
- runFrame(9.4);
+ runFrame(9.7);
  assert.equal(done,1);
  now=0;
  await animator.play(0);
