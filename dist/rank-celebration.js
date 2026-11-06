@@ -8,10 +8,10 @@
  const KEY=course.key('wort-rank-celebrations-v1');
  const SOUND_KEY='wort-rank-sound-enabled';
  const labels={
-  ar:{title:'ترقية جديدة!',rank:'حصلت على الدرع',words:'كلمة متعلّمة',next:'متابعة التعلّم',mute:'كتم صوت الاحتفال',unmute:'تشغيل صوت الاحتفال',close:'إغلاق الاحتفال'},
-  en:{title:'Rank up!',rank:'You earned the',words:'words learned',next:'Keep learning',mute:'Mute celebration sound',unmute:'Enable celebration sound',close:'Close celebration'},
-  de:{title:'Neuer Rang!',rank:'Du hast erhalten:',words:'Wörter gelernt',next:'Weiterlernen',mute:'Erfolgston stummschalten',unmute:'Erfolgston einschalten',close:'Jubel schließen'},
-  nl:{title:'Nieuw niveau!',rank:'Je hebt verdiend:',words:'woorden geleerd',next:'Verder leren',mute:'Feestgeluid dempen',unmute:'Feestgeluid inschakelen',close:'Feestvenster sluiten'}
+  ar:{title:'ترقية جديدة!',rank:'حصلت على الدرع',previewTitle:'معاينة الاحتفال',previewRank:'هكذا سيظهر درع الترقية',words:'كلمة متعلّمة',next:'متابعة التعلّم',mute:'كتم صوت الاحتفال',unmute:'تشغيل صوت الاحتفال',close:'إغلاق الاحتفال'},
+  en:{title:'Rank up!',rank:'You earned the',previewTitle:'Celebration preview',previewRank:'Your next rank-up shield',words:'words learned',next:'Keep learning',mute:'Mute celebration sound',unmute:'Enable celebration sound',close:'Close celebration'},
+  de:{title:'Neuer Rang!',rank:'Du hast erhalten:',previewTitle:'Feier-Vorschau',previewRank:'Dein nächstes Rang-Abzeichen',words:'Wörter gelernt',next:'Weiterlernen',mute:'Erfolgston stummschalten',unmute:'Erfolgston einschalten',close:'Jubel schließen'},
+  nl:{title:'Nieuw niveau!',rank:'Je hebt verdiend:',previewTitle:'Voorbeeld van de viering',previewRank:'Je volgende rangschild',words:'woorden geleerd',next:'Verder leren',mute:'Feestgeluid dempen',unmute:'Feestgeluid inschakelen',close:'Feestvenster sluiten'}
  };
  const t=labels[course.native]||labels.ar;
  const read=(key,fallback)=>{
@@ -98,14 +98,14 @@
   if(dialog?.open)dialog.close();
   active=null;
  }
- function show(shield){
+ function show(shield,preview=false){
   const root=mount();
   if(!root||typeof root.showModal!=='function')return;
   previousFocus=global.document.activeElement;
   if(root.open)root.close();
   active=shield;
-  root.querySelector('[data-rank-heading]').textContent=t.title;
-  root.querySelector('[data-rank-label]').textContent=t.rank;
+  root.querySelector('[data-rank-heading]').textContent=preview?t.previewTitle:t.title;
+  root.querySelector('[data-rank-label]').textContent=preview?t.previewRank:t.rank;
   root.querySelector('[data-rank-name]').textContent=shield.name;
   root.querySelector('[data-rank-count]').textContent=shield.threshold.toLocaleString(course.native||'ar')+' '+t.words;
   root.querySelector('[data-rank-close]').textContent=t.next;
@@ -118,6 +118,13 @@
   root.showModal();
   root.querySelector('[data-rank-close]').focus({preventScroll:true});
   timer=global.setTimeout(close,6500);
+ }
+ function preview(shield){
+  if(!shield||!Number.isFinite(shield.threshold)||!Number.isInteger(shield.index)||shield.index<0)return false;
+  // A preview never marks a shield as seen or modifies study progress.
+  fanfare();
+  show(shield,true);
+  return true;
  }
  function onLearn(before,after,shields){
   if(!Number.isFinite(before)||!Number.isFinite(after)||after<=before||!Array.isArray(shields))return null;
@@ -135,6 +142,6 @@
   return awarded;
  }
  global.WORT_RANK_CELEBRATION=Object.freeze({
-  onLearn,close,get seen(){return [...seen];},get soundOn(){return soundOn;}
+  onLearn,preview,close,get seen(){return [...seen];},get soundOn(){return soundOn;}
  });
 })(globalThis);
