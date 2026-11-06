@@ -12,3 +12,10 @@
 @keyframes spin-rays{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes spin-rays-reverse{to{transform:translate(-50%,-50%) rotate(-360deg)}}@keyframes spin-halo{to{transform:translate(-50%,-50%) rotate(360deg)}}@keyframes ambient-rotate{to{transform:rotate(360deg)}}@keyframes particle-burst{0%{opacity:1;transform:translate(0,0) scale(.1)}20%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(175deg) scale(.8)}}
 @media(max-width:480px){.app-shell{padding:12px 4px}.celebration{border-radius:4px;min-height:unset;aspect-ratio:9/16;box-shadow:none}.demo-settings{gap:6px}.score-panel{padding:10px 14px}.shield-zone{height:39%}.celebration-footer{font-size:11px}.rank-subtitle{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.atmosphere,.halo,.rays,.particle{animation:none!important}}
+
+
+.shield-zone .previous-shield{position:absolute;z-index:7;width:min(78%,292px);aspect-ratio:1;opacity:0;background:url('assets/kalima-shields.png') no-repeat;background-size:500% 200%;pointer-events:none;will-change:opacity,transform,filter}
+.shield-zone .evolution-flare{position:absolute;z-index:7;width:115%;aspect-ratio:1;border-radius:50%;pointer-events:none;background:repeating-conic-gradient(from -10deg,transparent 0 8deg,#fff4babb 10deg,transparent 14deg 24deg);-webkit-mask-image:radial-gradient(circle,transparent 0%,#000 33%,transparent 72%);mask-image:radial-gradient(circle,transparent 0%,#000 33%,transparent 72%);filter:blur(7px);opacity:calc(var(--evolution,0)*.9);transform:scale(calc(.73 + var(--evolution,0)*.34))}
+.shield-zone .shield-glow{transform:translate(-50%,-50%) scale(var(--glow-scale,1))}
+.celebration.is-evolving:not(.is-revealed) .halo{opacity:.45}
+.celebration.is-evolving:not(.is-revealed) .shield-glow{opacity:calc(var(--evolution,0)*.66)}

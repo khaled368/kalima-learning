@@ -51,6 +51,9 @@ jobs:
       - name: Verify rank promotion celebration and original fanfare
         run: node tests/rank-celebration.test.cjs
 
+      - name: Verify cinematic shield evolution and bass detection
+        run: node tests/rank-evolution.test.cjs
+
       - name: Verify missed-word reviews
         run: node tests/review-mistakes.test.cjs
 
@@ -94,10 +97,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v13
+          TAG: android-preview-v14
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.13" --notes "Android v0.13: cinematic 60fps rank-up with original ten shields revealed only after progress fills, separate progress and victory sounds, bass-reactive gold aura, built-in Android haptics, one-time awards, preview, offline lessons and daily reminders. Sync your progress before replacing an older test APK." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.14" --notes "Android v0.14: cinematic evolution from the original previous shield into the next after 100% progress, synchronized golden flare and powerful bass-responsive shield pulse; quiet ending, native vibration, all 10 original ranks, offline lessons and daily reminders. Sync progress before replacing the existing APK." --prerelease
           fi
