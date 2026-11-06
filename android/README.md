@@ -57,3 +57,16 @@ Example sentences use a circular, accessible, icon-only speaker button matching 
 ## Missed-word review v0.11
 
 Incorrect quiz answers are stored per learning language in a dedicated Review list, with a focused retry button. Ordinary review sessions prioritize these words; answering correctly on a later attempt removes the flag. The learned count is unaffected. The list works offline and participates in per-word cloud sync.
+
+## Rank-up celebration (v0.12)
+
+When the user taps “learned” and the total learned words crosses the next
+existing shield threshold (100, 250, 500, ...), the corresponding real Kalima
+shield animates on screen with confetti and a brief original six-tone fanfare
+created locally by Web Audio. This is **not** copyrighted Battlefield audio.
+The celebration appears once per shield on the device, is dismissible and
+closes after 6.5 seconds, and has a persistent sound toggle. No sound on
+first loading existing progress, login, or background synchronization.
+Reduced-motion preferences suppress animations. Every shield image comes
+from the existing Kalima sprite sheet. This does not imply CEFR A1–C1 levels
+were previously locked: all CEFR courses remain selectable.
