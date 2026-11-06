@@ -69,8 +69,8 @@ async function run(){
  assert.equal(fields['#shield'].style.transform,'scale(1.0000)','new shield settles without pulse');
  runFrame(3.5);
  assert.equal(fields['#shield'].style.transform,'scale(1.0000)','no follow-on bass bouncing');
- runFrame(9.7);
- assert.equal(done,1);
+ runFrame(animator.audioEnd+1);
+ assert.equal(done,1,'animation finishes after its scheduled celebration audio');
  now=0;
  await animator.play(0);
  assert.ok(fields['#previous-shield'].classList.contains('is-starter'),'first rank has a neutral shield to split');
