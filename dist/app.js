@@ -334,9 +334,13 @@ function toggleSave(word) {
 }
 function learnWord(word) {
   if (learned.has(word.id)) return;
+  const previousTotal = learned.size;
   learned.add(word.id);
   WORT_HISTORY.record(word);
   remember();
+  // This is called inside the real "learned" click for Safari audio permission.
+  // It celebrates only a newly crossed, manifest-defined shield milestone.
+  globalThis.WORT_RANK_CELEBRATION?.onLearn(previousTotal, learned.size, manifest?.shields);
   renderCards();
   if (panel === 'saved') renderSaved();
   toast(t("كلمة جديدة في رصيدك \u2728"));
