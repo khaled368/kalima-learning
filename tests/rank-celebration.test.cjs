@@ -10,10 +10,12 @@ const html=read('index.html'),css=read('rank-celebration.css'),app=read('app.js'
 new vm.Script(source);new vm.Script(engine);
 assert.match(html,/id="rank-celebration-dialog"/);
 for(const id of ['shield','score-number','progress-fill','progress-track','score-hint','rank-name','rank-subtitle'])assert.ok(html.includes('id="'+id+'"'));
-assert.match(html,/data-rank-sound/);assert.match(html,/data-rank-close/);assert.match(html,/id="rank-preview"/);
+assert.match(html,/data-rank-close/);
+assert.doesNotMatch(html,/data-rank-sound|id="rank-preview"/,'both rank controls are removed');
 assert.match(app,/WORT_RANK_CELEBRATION\?\.onLearn\(previousTotal, learned\.size, manifest\?\.shields\)/);
-assert.match(app,/'#rank-preview'\)\.onclick/);
+assert.doesNotMatch(app,/rank-preview/,'no preview click listener attached to a deleted button');
 assert.match(css,/is-revealed/);assert.match(css,/kalima-shields\.png/);
+assert.doesNotMatch(css,/rank-preview-action|\.rank-sound/,'deleted controls have no leftover styles');
 assert.match(css,/prefers-reduced-motion:reduce/);
 assert.ok(bootstrap.indexOf('level-up-engine.js')<bootstrap.indexOf('rank-celebration.js'));
 assert.ok(bootstrap.indexOf('rank-celebration.js')<bootstrap.indexOf('app.js'));
@@ -43,12 +45,12 @@ const native=fs.readFileSync(path.join(__dirname,'../android/app/src/main/java/c
 assert.match(androidManifest,/android\.permission\.VIBRATE/);
 assert.match(native,/class RankHapticsBridge/);
 assert.match(native,/new RankHapticsBridge\(\)/);
-const memory=new Map();
+const memory=new Map([['wort-rank-sound-enabled','false']]); // An older user's mute preference must not disable celebration audio.
 let opened=0,played=[],destroyed=0;
 function node(){
  return {textContent:'',title:'',attributes:{},style:{},addEventListener(type,fn){this['on'+type]=fn;},setAttribute(k,v){this.attributes[k]=v;},focus(){}};
 }
-const selectors=['[data-rank-close]','[data-rank-sound]','[data-rank-heading]','[data-rank-label]'];
+const selectors=['[data-rank-close]','[data-rank-heading]','[data-rank-label]'];
 const parts=Object.fromEntries(selectors.map(x=>[x,node()]));
 const dlg={
  open:false,classList:{add(){},remove(){}},
@@ -84,17 +86,17 @@ assert.equal(ceremony.onLearn(99,100,shields),null,'no duplicate reward');
 assert.equal(ceremony.onLearn(249,250,shields).name,'فضي');
 assert.equal(played[1].index,1);
 assert.equal(JSON.stringify(ceremony.seen),JSON.stringify([100,250]));
-parts['[data-rank-sound]'].onclick();
-assert.equal(ceremony.soundOn,false);
-assert.equal(memory.get('wort-rank-sound-enabled'),'false');
 assert.equal(ceremony.onLearn(499,500,shields).name,'ذهبي');
-assert.equal(played[2].opts.soundEnabled,false);
+assert.equal(played[2].opts.soundEnabled,true,'rank sound stays enabled without a mute button');
 assert.equal(ceremony.onLearn(500,499,shields),null);
-const before=JSON.stringify(ceremony.seen),count=opened;
-assert.equal(ceremony.preview({...shields[0],index:0}),true);
-assert.equal(opened,count+1);
-assert.equal(parts['[data-rank-heading]'].textContent,'معاينة الاحتفال');
-assert.equal(JSON.stringify(ceremony.seen),before,'preview never grants rank');
-assert.ok(destroyed>=2,'previous animation disposed on new opening');
+assert.equal(ceremony.preview,undefined,'manual rank preview removed');
+assert.equal(ceremony.soundOn,undefined,'no mute preference is exposed');
+assert.equal(opened,3,'only real level-ups open the ceremony');
+assert.equal(parts['[data-rank-heading]'].textContent,'ترقية جديدة!');
+assert.equal(dlg.open,true);
+parts['[data-rank-close]'].onclick();
+assert.equal(dlg.open,false,'the continue learning button still closes the ceremony');
+assert.ok(destroyed>=2,'closing and switching rank cleans up the earlier animation');
+assert.equal(JSON.stringify(ceremony.seen),JSON.stringify([100,250,500]));
 
-console.log('PASS: rank-up is connected to genuine learning, original shields, audio, and shatter preview.');
+console.log('PASS: rank-up stays automatic, sound plays, and mute and preview controls are removed.');
