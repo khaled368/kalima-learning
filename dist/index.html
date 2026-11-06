@@ -59,6 +59,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <link rel="stylesheet" href="account.css?v=20261102-reminder-in-account">
 <link rel="stylesheet" href="light-theme.css?v=20261101" data-kalima-light>
 <link rel="stylesheet" href="shields-layout.css?v=20261101b">
+<link rel="stylesheet" href="rank-celebration.css?v=20261106-rank1">
 <link rel="stylesheet" href="legibility.css?v=20261101d" data-kalima-light>
 <link rel="stylesheet" href="theme-switch.css?v=20261101-dragfix">
 <link rel="stylesheet" href="navigation-reorder.css?v=20261101b">
@@ -187,7 +188,22 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
   <p id="kalima-voice-note" role="status"></p>
   <div class="kalima-voice-actions"><button type="button" id="kalima-voice-preview" class="secondary">جرّب الصوت</button><button type="button" id="kalima-voice-close" class="secondary">إغلاق</button></div>
 </dialog>
+<dialog id="rank-celebration-dialog" aria-labelledby="rank-celebration-title" aria-describedby="rank-celebration-description">
+  <div class="rank-content">
+    <div class="rank-glow" aria-hidden="true"></div>
+    <div class="rank-particles" aria-hidden="true"></div>
+    <div class="rank-shield" role="img" aria-label="درع جديد"></div>
+    <h2 class="rank-heading" id="rank-celebration-title" data-rank-heading>ترقية جديدة!</h2>
+    <p class="rank-label" id="rank-celebration-description" data-rank-label>حصلت على الدرع</p>
+    <strong class="rank-name" data-rank-name></strong>
+    <p class="rank-count" data-rank-count></p>
+    <div class="rank-controls">
+      <button type="button" class="rank-primary" data-rank-close>متابعة التعلّم</button>
+      <button type="button" class="rank-sound" data-rank-sound aria-label="كتم صوت الاحتفال" aria-pressed="true">🔊</button>
+    </div>
+  </div>
+</dialog>
 <div id="toast" role="status" hidden></div>
 <script src="account.js?v=20261102-safari-resilience"></script>
-<script src="app-bootstrap.js?v=20261102-safari-resilience"></script>
+<script src="app-bootstrap.js?v=20261106-rank-celebration"></script>
 </body></html>
