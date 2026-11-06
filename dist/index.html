@@ -59,7 +59,7 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 <link rel="stylesheet" href="account.css?v=20261102-reminder-in-account">
 <link rel="stylesheet" href="light-theme.css?v=20261101" data-kalima-light>
 <link rel="stylesheet" href="shields-layout.css?v=20261101b">
-<link rel="stylesheet" href="rank-celebration.css?v=20261106-rank2">
+<link rel="stylesheet" href="rank-celebration.css?v=20261106-cinematic3">
 <link rel="stylesheet" href="legibility.css?v=20261101d" data-kalima-light>
 <link rel="stylesheet" href="theme-switch.css?v=20261101-dragfix">
 <link rel="stylesheet" href="navigation-reorder.css?v=20261101b">
@@ -190,14 +190,29 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
   <div class="kalima-voice-actions"><button type="button" id="kalima-voice-preview" class="secondary">جرّب الصوت</button><button type="button" id="kalima-voice-close" class="secondary">إغلاق</button></div>
 </dialog>
 <dialog id="rank-celebration-dialog" aria-labelledby="rank-celebration-title" aria-describedby="rank-celebration-description">
-  <div class="rank-content">
-    <div class="rank-glow" aria-hidden="true"></div>
-    <div class="rank-particles" aria-hidden="true"></div>
-    <div class="rank-shield" role="img" aria-label="درع جديد"></div>
-    <h2 class="rank-heading" id="rank-celebration-title" data-rank-heading>ترقية جديدة!</h2>
-    <p class="rank-label" id="rank-celebration-description" data-rank-label>حصلت على الدرع</p>
-    <strong class="rank-name" data-rank-name></strong>
-    <p class="rank-count" data-rank-count></p>
+  <div class="rank-content celebration" id="rank-cinematic">
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="rank-header">
+      <div class="rank-brand" aria-hidden="true">✦ كلمة · KALIMA ✦</div>
+      <h2 class="rank-heading" id="rank-celebration-title" data-rank-heading>ترقية جديدة!</h2>
+      <p class="rank-label" id="rank-celebration-description" data-rank-label>حصلت على الدرع</p>
+    </header>
+    <div class="shield-zone" aria-label="الدرع المكتسب">
+      <div class="rays rays-back" aria-hidden="true"></div>
+      <div class="rays rays-front" aria-hidden="true"></div>
+      <div class="halo halo-one" aria-hidden="true"></div>
+      <div class="halo halo-two" aria-hidden="true"></div>
+      <div class="shield-glow rank-glow" aria-hidden="true"></div>
+      <div class="shield rank-shield" id="shield" role="img" aria-label="الدرع الجديد"></div>
+      <div class="particles rank-particles" aria-hidden="true"></div>
+    </div>
+    <strong class="rank-name" id="rank-name" data-rank-name></strong>
+    <p class="rank-count" id="rank-subtitle" data-rank-count></p>
+    <section class="score-panel" aria-label="شريط تقدم الترقية">
+      <div class="score-topline"><span>مجموع النقاط</span><span class="score-number" id="score-number" dir="ltr">0 XP</span></div>
+      <div class="progress-track" id="progress-track" role="progressbar" aria-label="نسبة اكتمال الترقية" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill" id="progress-fill"></div></div>
+      <p class="score-hint" id="score-hint" aria-live="polite">جارٍ احتساب النقاط…</p>
+    </section>
     <div class="rank-controls">
       <button type="button" class="rank-primary" data-rank-close>متابعة التعلّم</button>
       <button type="button" class="rank-sound" data-rank-sound aria-label="كتم صوت الاحتفال" aria-pressed="true">🔊</button>
@@ -206,5 +221,5 @@ html[data-theme="dark"] #kalima-boot-screen p {color:#bdd4df}
 </dialog>
 <div id="toast" role="status" hidden></div>
 <script src="account.js?v=20261102-safari-resilience"></script>
-<script src="app-bootstrap.js?v=20261106-rank-preview"></script>
+<script src="app-bootstrap.js?v=20261106-cinematic3"></script>
 </body></html>

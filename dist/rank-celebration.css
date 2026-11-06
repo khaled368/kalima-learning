@@ -1,84 +1,138 @@
-/* Genuine Kalima rank achievement, with the existing shield sprite. */
+/* Kalima cinematic rank-up: full-screen feel, real 5x2 shield sprite, 60Hz RAF. */
 #badges-panel .rank-preview-action{display:flex;justify-content:center;margin:14px 0 18px}
 #badges-panel .rank-preview-action button{min-height:44px}
 #rank-celebration-dialog {
  box-sizing:border-box;position:fixed;inset:0;margin:auto;
- width:min(440px,calc(100vw - 32px));max-width:440px;
- max-height:calc(100dvh - 36px);overflow:auto;
- padding:22px 20px 24px;border-radius:26px;
- border:1px solid #d7bc77;
- background:radial-gradient(circle at 50% 12%,#2b4d6b 0%,#132a43 45%,#071a2c 100%);
- color:#fff8e6;text-align:center;
- box-shadow:0 18px 80px #001324a8;
- font-family:var(--font,'Noto Sans Arabic',sans-serif);
+ width:min(450px,calc(100vw - 18px));max-width:450px;
+ height:min(795px,calc(100dvh - 18px));max-height:calc(100dvh - 18px);
+ padding:0;border:1px solid #9d7738;border-radius:22px;
+ background:radial-gradient(ellipse at 50% 37%,#3b2a18 0%,#161719 44%,#080e17 77%,#03060a 100%);
+ color:#fff3da;overflow:hidden;text-align:center;
+ box-shadow:0 18px 90px #000b;font-family:var(--font,'Noto Sans Arabic',sans-serif);
 }
-#rank-celebration-dialog::backdrop{background:#010d1ed6;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
-#rank-celebration-dialog .rank-content{position:relative;display:grid;justify-items:center;gap:8px;isolation:isolate;min-height:310px}
-#rank-celebration-dialog .rank-glow{
- position:absolute;width:240px;height:240px;top:7px;left:50%;
- transform:translateX(-50%);
- background:radial-gradient(circle,#f4bd4f7d 0%,#e49b3027 42%,transparent 72%);
- z-index:-1;pointer-events:none;animation:rank-halo 1.8s ease-in-out infinite alternate
+#rank-celebration-dialog::backdrop{background:#01050de8;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+#rank-celebration-dialog .rank-content{
+ --shine:.1;position:relative;isolation:isolate;display:flex;flex-direction:column;
+ align-items:center;box-sizing:border-box;width:100%;height:100%;min-height:0;
+ padding:clamp(13px,3.5dvh,24px) 19px max(17px,env(safe-area-inset-bottom));
+ overflow:hidden;
 }
-#rank-celebration-dialog .rank-shield{
- width:170px;height:170px;flex:none;
- background-image:url('assets/kalima-shields.png');
- background-size:500% 200%;background-repeat:no-repeat;
- filter:drop-shadow(0 11px 19px #0006);
- animation:rank-arrive .68s cubic-bezier(.16,.9,.24,1.3) both;
+#rank-celebration-dialog .atmosphere{
+ pointer-events:none;position:absolute;inset:-25%;z-index:-1;
+ background:conic-gradient(from 0deg at 50% 45%,transparent,#dbab442b,transparent,#e7a34425,transparent,#ffcf6422,transparent);
+ filter:blur(32px);animation:kalima-atmosphere 20s linear infinite;
 }
-#rank-celebration-dialog .rank-heading{
- margin:6px 0 0;font-size:29px;line-height:1.4;
- color:#ffe4a0;text-shadow:0 2px 15px #f6b43f4c;
+#rank-celebration-dialog .rank-header{position:relative;z-index:4;flex:none}
+#rank-celebration-dialog .rank-brand{font-size:14px;font-weight:800;letter-spacing:1px;color:#e7c88d}
+#rank-celebration-dialog .rank-heading{font-size:clamp(23px,5vw,31px);line-height:1.45;margin:8px 0 0;color:#ffdf9a;text-shadow:0 0 25px #ffb94475}
+#rank-celebration-dialog .rank-label{font-size:14px;color:#e7cda2;margin:2px 0 0}
+#rank-celebration-dialog .shield-zone{
+ position:relative;isolation:isolate;display:grid;place-items:center;flex:1 1 auto;
+ width:100%;min-height:190px;max-height:375px;margin:4px 0;
 }
-#rank-celebration-dialog .rank-label{font-size:15px;color:#d6e3ed;margin:0}
-#rank-celebration-dialog .rank-name{font-size:26px;font-weight:800;color:#fff4c4;line-height:1.4}
-#rank-celebration-dialog .rank-count{font-size:15px;letter-spacing:.2px;margin:2px 0 8px;color:#cee4ed}
-#rank-celebration-dialog .rank-controls{display:flex;align-items:center;justify-content:center;gap:12px;width:100%}
+#rank-celebration-dialog .shield{
+ position:relative;z-index:6;flex:none;width:min(78%,286px);aspect-ratio:1;
+ background-image:url('assets/kalima-shields.png');background-size:500% 200%;
+ background-repeat:no-repeat;opacity:0;transform:scale(.1);
+ filter:drop-shadow(0 12px 19px #000);will-change:transform,opacity,filter;
+}
+#rank-celebration-dialog .rays{
+ pointer-events:none;position:absolute;z-index:1;top:50%;left:50%;width:114%;
+ aspect-ratio:1;opacity:0;transform:translate(-50%,-50%);
+ mix-blend-mode:screen;transition:opacity .4s ease;
+}
+#rank-celebration-dialog .rays-back{
+ background:repeating-conic-gradient(from -4deg,transparent 0 8deg,#ffe3a35a 10deg,transparent 14deg 21deg);
+ -webkit-mask-image:radial-gradient(circle,#000 8%,#000 53%,transparent 73%);
+ mask-image:radial-gradient(circle,#000 8%,#000 53%,transparent 73%);
+ filter:blur(8px);animation:kalima-rays 27s linear infinite;
+}
+#rank-celebration-dialog .rays-front{
+ background:repeating-conic-gradient(from 4deg,transparent 0 15deg,#ffd889a6 17deg,transparent 18deg 31deg);
+ -webkit-mask-image:radial-gradient(circle,transparent 0%,#000 32%,transparent 79%);
+ mask-image:radial-gradient(circle,transparent 0%,#000 32%,transparent 79%);
+ filter:blur(3px);animation:kalima-rays-reverse 30s linear infinite;
+}
+#rank-celebration-dialog .halo{
+ position:absolute;top:50%;left:50%;width:88%;aspect-ratio:1;border-radius:50%;
+ border:1px solid #e8bc5c77;box-shadow:0 0 35px #efb35d2e,inset 0 0 30px #dd9f4c21;
+ transform:translate(-50%,-50%);opacity:0;transition:opacity .4s;
+}
+#rank-celebration-dialog .halo-two{width:104%;border-style:dashed}
+#rank-celebration-dialog .shield-glow{
+ position:absolute;z-index:2;top:50%;left:50%;width:83%;aspect-ratio:1;
+ transform:translate(-50%,-50%);border-radius:50%;
+ background:radial-gradient(circle,#fff2c4 0%,#ffc44ab0 26%,transparent 69%);
+ filter:blur(27px);opacity:0;transition:opacity .45s;
+}
+#rank-celebration-dialog .particles{position:absolute;z-index:5;inset:0;pointer-events:none}
+#rank-celebration-dialog .particle{
+ position:absolute;top:50%;left:50%;width:4px;height:9px;border-radius:3px;
+ opacity:0;background:#ffe69e;box-shadow:0 0 12px #ffbf50;
+}
+#rank-celebration-dialog.is-revealed .rays{opacity:calc(.6 + var(--shine)*.33)}
+#rank-celebration-dialog.is-revealed .halo{opacity:.74}
+#rank-celebration-dialog.is-revealed .shield-glow{opacity:calc(.45 + var(--shine)*.35)}
+#rank-celebration-dialog.is-revealed .particle{animation:kalima-particle 1.35s ease-out var(--d) both}
+#rank-celebration-dialog .rank-name{
+ display:block;font-weight:900;font-size:clamp(20px,5vw,28px);line-height:1.35;
+ color:#ffe2a2;text-shadow:0 0 20px #ebb45173;opacity:0;transition:opacity .35s;
+}
+#rank-celebration-dialog .rank-count{
+ font-size:13px;line-height:1.4;color:#d8ba88;margin:3px 0 10px;opacity:0;transition:opacity .35s;
+}
+#rank-celebration-dialog.is-revealed .rank-name,#rank-celebration-dialog.is-revealed .rank-count{opacity:1}
+#rank-celebration-dialog .score-panel{
+ position:relative;z-index:5;box-sizing:border-box;width:100%;flex:none;
+ padding:13px 15px 10px;border:1px solid #ad833f99;border-radius:15px;
+ background:linear-gradient(130deg,#271c13eb,#081321ed);
+ box-shadow:inset 0 0 23px #8d733229,0 0 30px #a8752831;
+}
+#rank-celebration-dialog .score-topline{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:800;color:#ffdfae}
+#rank-celebration-dialog .score-number{font-size:20px;font-weight:900;letter-spacing:.6px;font-variant-numeric:tabular-nums}
+#rank-celebration-dialog .progress-track{
+ direction:ltr;height:18px;margin-top:9px;overflow:hidden;border:2px solid #a77a32;
+ border-radius:12px;background:#17212b;box-shadow:inset 0 0 10px #0009;
+}
+#rank-celebration-dialog .progress-fill{
+ width:0;height:100%;will-change:width;
+ background:repeating-linear-gradient(115deg,#ffcb62 0px,#ffecae 14px,#ca8c32 23px,#f5c65c 31px);
+ box-shadow:0 0 15px #ffde77;
+}
+#rank-celebration-dialog .score-hint{font-size:12px;color:#e3cba2;margin:7px 0 0;min-height:17px}
+#rank-celebration-dialog .rank-controls{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;margin-top:14px;flex:none}
 #rank-celebration-dialog .rank-primary{
- flex:1;max-width:230px;min-height:49px;border-radius:14px;
- background:linear-gradient(125deg,#dcb966,#ffdf91);color:#19354a;
- border:1px solid #f8e4b1;font-weight:800;font-size:17px;
- box-shadow:0 5px 20px #eab86133
+ flex:1;max-width:230px;min-height:47px;border-radius:13px;
+ border:1px solid #ffe3aa;background:linear-gradient(125deg,#ffe7b0,#d6a24c);
+ color:#291b09;font-size:16px;font-weight:900;box-shadow:0 5px 20px #dcaa4e44;
 }
 #rank-celebration-dialog .rank-sound{
- flex:0 0 49px;min-width:49px;min-height:49px;padding:0;
- display:grid;place-items:center;border-radius:13px;
- color:#f6e9d0;background:#24465e;border:1px solid #638199;font-size:23px
+ flex:0 0 47px;min-width:47px;min-height:47px;padding:0;border-radius:12px;
+ display:grid;place-items:center;color:#f8dfac;background:#2d251f;border:1px solid #a47f4b;font-size:21px;
 }
-#rank-celebration-dialog button:focus-visible{outline:3px solid #8de5df;outline-offset:3px}
-#rank-celebration-dialog .rank-particles{
- position:absolute;top:91px;left:50%;width:0;height:0;pointer-events:none;
+#rank-celebration-dialog button:focus-visible{outline:3px solid #fff1bb;outline-offset:3px}
+@keyframes kalima-rays{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes kalima-rays-reverse{to{transform:translate(-50%,-50%) rotate(-360deg)}}
+@keyframes kalima-atmosphere{to{transform:rotate(360deg)}}
+@keyframes kalima-particle{
+ 0%{opacity:1;transform:translate(0,0) scale(.1)}
+ 20%{opacity:1}
+ 100%{opacity:0;transform:translate(var(--dx),var(--dy)) rotate(175deg) scale(.8)}
 }
-#rank-celebration-dialog .rank-particle{
- position:absolute;left:0;top:0;width:7px;height:13px;border-radius:3px;
- background:#f8cc68;box-shadow:0 0 10px #ffd77b9c;
- animation:rank-burst 1.4s cubic-bezier(.24,.66,.41,1) var(--delay,0ms) both
+@media(max-height:625px){
+ #rank-celebration-dialog .rank-content{padding-top:8px;padding-bottom:8px}
+ #rank-celebration-dialog .rank-heading{font-size:21px}
+ #rank-celebration-dialog .shield-zone{min-height:145px}
+ #rank-celebration-dialog .score-panel{padding:9px 12px 7px}
+ #rank-celebration-dialog .rank-controls{margin-top:8px}
+ #rank-celebration-dialog .rank-count{margin-bottom:4px}
 }
-#rank-celebration-dialog .rank-particle:nth-child(3n){background:#6bdad5}
-#rank-celebration-dialog .rank-particle:nth-child(5n){background:#a999fa}
-@keyframes rank-arrive{
- from{transform:scale(.22) rotate(-22deg);opacity:0;filter:brightness(2)}
- 65%{transform:scale(1.13) rotate(4deg);opacity:1}
- to{transform:scale(1) rotate(0deg);opacity:1}
+@media(max-width:360px){
+ #rank-celebration-dialog .rank-content{padding-inline:11px}
+ #rank-celebration-dialog .shield-zone{min-height:165px}
+ #rank-celebration-dialog .rank-heading{font-size:23px}
 }
-@keyframes rank-burst{
- 0%{transform:translate(0,0) scale(.5) rotate(0);opacity:0}
- 15%{opacity:1}
- 90%{opacity:1}
- 100%{transform:translate(var(--x,0px),var(--y,0px)) scale(.8) rotate(220deg);opacity:0}
-}
-@keyframes rank-halo{from{opacity:.55;scale:.9}to{opacity:1;scale:1.1}}
-@media (prefers-reduced-motion:reduce){
- #rank-celebration-dialog *,#rank-celebration-dialog *::before,#rank-celebration-dialog *::after{
-  animation:none!important;transition:none!important
- }
- #rank-celebration-dialog .rank-particles{display:none}
-}
-#rank-celebration-dialog.rank-reduced-motion .rank-particles{display:none}
-@media(max-width:380px){
- #rank-celebration-dialog{padding:16px 13px 20px}
- #rank-celebration-dialog .rank-shield{width:140px;height:140px}
- #rank-celebration-dialog .rank-heading{font-size:25px}
- #rank-celebration-dialog .rank-name{font-size:23px}
+@media(prefers-reduced-motion:reduce){
+ #rank-celebration-dialog .atmosphere,#rank-celebration-dialog .rays,#rank-celebration-dialog .particle{animation:none!important}
+ #rank-celebration-dialog .rank-name,#rank-celebration-dialog .rank-count{transition:none}
 }
