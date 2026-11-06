@@ -14,6 +14,7 @@ on:
       - "tests/example-audio-icon.test.cjs"
       - "tests/review-mistakes.test.cjs"
       - "tests/safari-startup.test.cjs"
+      - "tests/rank-celebration.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -39,6 +40,9 @@ jobs:
 
       - name: Check example coverage across all 12 learning directions
         run: node tests/example-coverage.test.cjs
+
+      - name: Verify rank promotion celebration and original fanfare
+        run: node tests/rank-celebration.test.cjs
 
       - name: Verify Safari startup with stale cache or stalled account
         run: node tests/safari-startup.test.cjs
