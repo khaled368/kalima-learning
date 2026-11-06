@@ -67,7 +67,8 @@
    animation=new global.KalimaLevelUp.LevelUpCelebration(root,{
     ranks,progressSeconds:4.15,sprite:'assets/kalima-shields.png',
     progressSound:'assets/level-up-progress.mp3',
-    celebrationSound:'assets/level-up-celebration.mp3',
+    celebrationSound:'assets/level-up-celebration-trimmed.mp3',
+    celebrationStartFraction:0, // Already trimmed by four seconds.
     soundEnabled:soundOn
    });
    // Must begin from the user's learning/preview click to unlock browser audio.
