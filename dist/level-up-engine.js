@@ -120,7 +120,7 @@
       this.energyBaseline+=(energy-this.energyBaseline)*.045;
       const onset=clamp((transient-2.5)/29,0,1);
       const accent=clamp((energy-baseline*1.12-6)/54,0,1);
-      return {level:clamp((energy-9)/105,0,1),hit:Math.max(onset,accent*.76)};
+      return {level:clamp((energy-9)/105,0,1),hit:Math.max(onset,accent*.76*clamp(transient/12,0,1))};
     }
     async play(index=3){
       const shield=this.ranks[clamp(index,0,this.ranks.length-1)];
