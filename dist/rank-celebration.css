@@ -1,4 +1,6 @@
 /* Genuine Kalima rank achievement, with the existing shield sprite. */
+#badges-panel .rank-preview-action{display:flex;justify-content:center;margin:14px 0 18px}
+#badges-panel .rank-preview-action button{min-height:44px}
 #rank-celebration-dialog {
  box-sizing:border-box;position:fixed;inset:0;margin:auto;
  width:min(440px,calc(100vw - 32px));max-width:440px;
