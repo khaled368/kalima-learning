@@ -126,7 +126,8 @@
           if(!this.revealed){
             this.revealed=true;this.root.classList.add('is-revealed');
             this.hint.textContent='تم فتح الدرع '+shield.name;
-            global.navigator?.vibrate?.([65,45,135,50,135]);
+            if(global.KalimaHaptics?.pulse)global.KalimaHaptics.pulse();
+            else global.navigator?.vibrate?.([65,45,135,50,135]);
           }
           const since=t-this.duration;
           const fade=1-ease((since-3.6)/1.8); // Calm stable ending.

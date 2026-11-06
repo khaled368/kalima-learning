@@ -20,7 +20,13 @@ assert.ok(bootstrap.indexOf('rank-celebration.js')<bootstrap.indexOf('app.js'));
 assert.match(engine,/requestAnimationFrame/);assert.match(engine,/navigator\?\.vibrate/);
 assert.match(engine,/if\(p>=1\)/);assert.match(engine,/classList\.add\('is-revealed'\)/);
 assert.match(engine,/setSoundEnabled/);
+assert.match(engine,/KalimaHaptics\?\.pulse/);
 assert.match(source,/level-up-progress\.mp3/);assert.match(source,/level-up-celebration\.mp3/);
+const androidManifest=fs.readFileSync(path.join(__dirname,'../android/app/src/main/AndroidManifest.xml'),'utf8');
+const native=fs.readFileSync(path.join(__dirname,'../android/app/src/main/java/com/kalima/learning/MainActivity.java'),'utf8');
+assert.match(androidManifest,/android\.permission\.VIBRATE/);
+assert.match(native,/class RankHapticsBridge/);
+assert.match(native,/new RankHapticsBridge\(\)/);
 const memory=new Map();
 let opened=0,played=[],destroyed=0;
 function node(){
