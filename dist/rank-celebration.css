@@ -63,7 +63,8 @@
  position:absolute;z-index:2;top:50%;left:50%;width:83%;aspect-ratio:1;
  transform:translate(-50%,-50%);border-radius:50%;
  background:radial-gradient(circle,#fff2c4 0%,#ffc44ab0 26%,transparent 69%);
- filter:blur(27px);opacity:0;transition:opacity .45s;
+ filter:blur(27px);opacity:0;transform:translate(-50%,-50%) scale(var(--glow-scale,1));
+ transition:opacity .2s,transform .09s ease-out;
 }
 #rank-celebration-dialog .particles{position:absolute;z-index:5;inset:0;pointer-events:none}
 #rank-celebration-dialog .particle{
@@ -72,7 +73,7 @@
 }
 #rank-celebration-dialog.is-revealed .rays{opacity:calc(.6 + var(--shine)*.33)}
 #rank-celebration-dialog.is-revealed .halo{opacity:.74}
-#rank-celebration-dialog.is-revealed .shield-glow{opacity:calc(.45 + var(--shine)*.35)}
+#rank-celebration-dialog.is-revealed .shield-glow{opacity:calc(.45 + var(--shine)*.35 + var(--beat,0)*.15)}
 #rank-celebration-dialog.is-revealed .particle{animation:kalima-particle 1.35s ease-out var(--d) both}
 #rank-celebration-dialog .rank-name{
  display:block;font-weight:900;font-size:clamp(20px,5vw,28px);line-height:1.35;
