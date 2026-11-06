@@ -1,0 +1,12 @@
+[
+  {"id":1,"name":"برونزي","threshold":100},
+  {"id":2,"name":"فضي","threshold":250},
+  {"id":3,"name":"ذهبي","threshold":500},
+  {"id":4,"name":"نجمي","threshold":1000},
+  {"id":5,"name":"ماسي","threshold":2000},
+  {"id":6,"name":"ملكي","threshold":3500},
+  {"id":7,"name":"إمبراطوري","threshold":5000},
+  {"id":8,"name":"كريستالي","threshold":6500},
+  {"id":9,"name":"أسطوري","threshold":8000},
+  {"id":10,"name":"خالد","threshold":10000}
+]
