@@ -73,7 +73,7 @@
 }
 #rank-celebration-dialog.is-revealed .rays{opacity:calc(.6 + var(--shine)*.33)}
 #rank-celebration-dialog.is-revealed .halo{opacity:.74}
-#rank-celebration-dialog.is-revealed .shield-glow{opacity:calc(.45 + var(--shine)*.35 + var(--beat,0)*.15)}
+#rank-celebration-dialog.is-revealed .shield-glow{opacity:calc(.45 + var(--shine)*.35)}
 #rank-celebration-dialog.is-revealed .particle{animation:kalima-particle 1.35s ease-out var(--d) both}
 #rank-celebration-dialog .rank-name{
  display:block;font-weight:900;font-size:clamp(20px,5vw,28px);line-height:1.35;
@@ -158,3 +158,95 @@
 }
 #rank-celebration-dialog.is-evolving:not(.is-revealed) .halo{opacity:.45}
 #rank-celebration-dialog.is-evolving:not(.is-revealed) .shield-glow{opacity:calc(var(--evolution,0)*.66)}
+
+
+/* Shield shatter / emergence: eight original-sprite shards, zero bass pulses. */
+#rank-celebration-dialog .shield-fragments{
+ position:absolute;z-index:9;width:min(78%,286px);aspect-ratio:1;
+ pointer-events:none;opacity:0;transform:translateZ(0);
+}
+#rank-celebration-dialog .shield-shard{
+ display:block;position:absolute;inset:0;opacity:0;will-change:transform,opacity;
+}
+#rank-celebration-dialog .shield-shard-art{
+ display:block;position:absolute;inset:0;
+ background:url('assets/kalima-shields.png') no-repeat;
+ background-size:500% 200%;
+}
+#rank-celebration-dialog .shield-shard:nth-child(1){
+ clip-path:polygon(0 0,26% 0,30% 24%,25% 50%,0 50%);
+ --dx:-135px;--dy:-125px;--turn:-36deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(2){
+ clip-path:polygon(26% 0,50% 0,47% 28%,50% 50%,25% 50%,30% 24%);
+ --dx:-30px;--dy:-158px;--turn:26deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(3){
+ clip-path:polygon(50% 0,74% 0,72% 27%,77% 50%,50% 50%,47% 28%);
+ --dx:42px;--dy:-152px;--turn:-27deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(4){
+ clip-path:polygon(74% 0,100% 0,100% 50%,77% 50%,72% 27%);
+ --dx:143px;--dy:-117px;--turn:35deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(5){
+ clip-path:polygon(0 50%,25% 50%,27% 73%,25% 100%,0 100%);
+ --dx:-143px;--dy:111px;--turn:28deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(6){
+ clip-path:polygon(25% 50%,50% 50%,53% 73%,50% 100%,25% 100%,27% 73%);
+ --dx:-40px;--dy:155px;--turn:-32deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(7){
+ clip-path:polygon(50% 50%,77% 50%,72% 76%,75% 100%,50% 100%,53% 73%);
+ --dx:52px;--dy:148px;--turn:33deg
+}
+#rank-celebration-dialog .shield-shard:nth-child(8){
+ clip-path:polygon(77% 50%,100% 50%,100% 100%,75% 100%,72% 76%);
+ --dx:140px;--dy:115px;--turn:-29deg
+}
+#rank-celebration-dialog.is-ripping .shield-fragments{opacity:1}
+#rank-celebration-dialog.is-ripping .shield-shard{
+ animation:kalima-shield-shatter 1.2s cubic-bezier(.2,.65,.24,1) both;
+}
+#rank-celebration-dialog .tear-crack{
+ position:absolute;z-index:10;pointer-events:none;width:min(78%,286px);
+ aspect-ratio:1;opacity:0;
+ background:linear-gradient(90deg,transparent 40%,#fff9d0 50%,#ffac3b 58%,transparent 67%);
+ clip-path:polygon(45% 0,54% 17%,47% 35%,56% 48%,46% 67%,55% 84%,49% 100%,45% 100%,49% 82%,42% 67%,51% 48%,42% 35%,49% 17%,42% 0);
+ filter:drop-shadow(0 0 14px #ffe19b);
+}
+#rank-celebration-dialog.is-ripping .tear-crack{
+ animation:kalima-shield-crack .65s ease-out both;
+}
+#rank-celebration-dialog .previous-shield.is-starter,
+#rank-celebration-dialog .shield-fragments.is-starter .shield-shard-art{
+ background-image:radial-gradient(circle at 45% 25%,#9eabc0,#414e63 56%,#151c2d 92%)!important;
+ clip-path:polygon(50% 2%,94% 19%,87% 74%,50% 98%,13% 74%,6% 19%);
+}
+#rank-celebration-dialog .previous-shield.is-starter::after,
+#rank-celebration-dialog .shield-fragments.is-starter .shield-shard-art::after{
+ content:"✦";position:absolute;inset:0;display:grid;place-items:center;
+ color:#e6e6e5;font-size:clamp(55px,16vw,78px);text-shadow:0 2px 20px #ffffff55;
+}
+#rank-celebration-dialog .shield-glow{
+ transform:translate(-50%,-50%)!important;
+ transition:opacity .3s ease-out;
+}
+#rank-celebration-dialog.is-revealed .shield-glow{opacity:.6}
+@keyframes kalima-shield-shatter{
+ 0%{opacity:1;transform:translate3d(0,0,0) rotate(0deg) scale(1);filter:brightness(1)}
+ 16%{opacity:1;transform:translate3d(0,0,0) rotate(0deg) scale(1);filter:brightness(2.1)}
+ 42%{opacity:1;transform:translate3d(0,0,0) rotate(0deg) scale(1);filter:brightness(1.6)}
+ 100%{opacity:0;transform:translate3d(var(--dx),var(--dy),0) rotate(var(--turn)) scale(.65);filter:brightness(1.15)}
+}
+@keyframes kalima-shield-crack{
+ 0%{opacity:0;transform:scaleY(.15)}
+ 20%{opacity:1;transform:scaleY(1)}
+ 48%{opacity:.98;transform:scaleY(1.03)}
+ 100%{opacity:0;transform:scaleY(1.2)}
+}
+@media(prefers-reduced-motion:reduce){
+ #rank-celebration-dialog.is-ripping .shield-shard,
+ #rank-celebration-dialog.is-ripping .tear-crack{animation:none!important;opacity:0!important}
+}
