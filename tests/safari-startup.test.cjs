@@ -51,8 +51,9 @@ async function runStalledAccount(){
  assert.ok(classes.includes('kalima-boot-finished'),'boot must finish');
  assert.equal(main['aria-busy'],'false');
  assert.ok(scripts.length>25,'complete course modules loaded');
- assert.ok(scripts.every(src=>src.includes('kalimaBuild=20261102-safari-resilience-v1')),
-   'every module is versioned');
+ const buildVersion=code.match(/const SCRIPT_BUILD = '([^']+)'/)[1];
+ assert.ok(scripts.every(src=>src.includes('kalimaBuild='+buildVersion)),
+   'every module is versioned with the current bootstrap build');
  assert.ok(scripts.some(src=>src.includes('review-mistakes.js')),
    'current missed-word module retained');
 }
