@@ -123,6 +123,7 @@ public final class MainActivity extends Activity {
     // External navigation never loads inside this WebView.
     webView.addJavascriptInterface(new KalimaSpeechBridge(), "KalimaAndroidTTS");
     webView.addJavascriptInterface(new ReminderBridge(), "KalimaDailyReminder");
+    webView.addJavascriptInterface(new RankHapticsBridge(), "KalimaHaptics");
     DailyReminderReceiver.channel(this);
     DailyReminderReceiver.schedule(this);
     initializeSystemSpeech();
@@ -508,6 +509,20 @@ public final class MainActivity extends Activity {
         waitingSpeech = null;
         activeSpeechId = -1;
         if (androidTts != null) androidTts.stop();
+      });
+    }
+  }
+
+  /** One fixed, short vibration pattern for a real rank-up; no arbitrary timing input. */
+  public final class RankHapticsBridge {
+    @android.webkit.JavascriptInterface
+    public void pulse() {
+      runOnUiThread(() -> {
+        android.os.Vibrator motor = (android.os.Vibrator) getSystemService(VIBRATOR_SERVICE);
+        if (motor != null && motor.hasVibrator()) {
+          motor.vibrate(android.os.VibrationEffect.createWaveform(
+              new long[]{0, 65, 45, 135, 50, 135}, -1));
+        }
       });
     }
   }

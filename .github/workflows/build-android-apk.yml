@@ -94,10 +94,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v12
+          TAG: android-preview-v13
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.12" --notes "Android v0.12: original rank-up fanfare and animated shield celebration when learning crosses a real shield milestone. One-time rank rewards, accessible mute option, offline lessons, daily reminders and review mistakes. Sync progress before replacing older debug APKs." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.13" --notes "Android v0.13: cinematic 60fps rank-up with original ten shields revealed only after progress fills, separate progress and victory sounds, bass-reactive gold aura, built-in Android haptics, one-time awards, preview, offline lessons and daily reminders. Sync your progress before replacing an older test APK." --prerelease
           fi
