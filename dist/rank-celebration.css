@@ -137,3 +137,24 @@
  #rank-celebration-dialog .atmosphere,#rank-celebration-dialog .rays,#rank-celebration-dialog .particle{animation:none!important}
  #rank-celebration-dialog .rank-name,#rank-celebration-dialog .rank-count{transition:none}
 }
+
+
+/* Original previous rank transforms into the next after the bar reaches 100%. */
+#rank-celebration-dialog .previous-shield{
+ position:absolute;z-index:5;width:min(78%,286px);aspect-ratio:1;opacity:0;
+ background:url('assets/kalima-shields.png') no-repeat;background-size:500% 200%;
+ will-change:opacity,transform,filter;pointer-events:none
+}
+#rank-celebration-dialog .evolution-flare{
+ position:absolute;z-index:5;pointer-events:none;width:115%;aspect-ratio:1;
+ border-radius:50%;opacity:calc(var(--evolution,0)*.9);
+ background:repeating-conic-gradient(from -10deg,transparent 0 8deg,#fff7c7bb 10deg,transparent 14deg 24deg);
+ -webkit-mask-image:radial-gradient(circle,transparent 0%,#000 33%,transparent 72%);
+ mask-image:radial-gradient(circle,transparent 0%,#000 33%,transparent 72%);
+ filter:blur(7px);transform:scale(calc(.73 + var(--evolution,0)*.34))
+}
+#rank-celebration-dialog .shield-glow{
+ transform:translate(-50%,-50%) scale(var(--glow-scale,1));transition:opacity .2s,transform .08s ease-out
+}
+#rank-celebration-dialog.is-evolving:not(.is-revealed) .halo{opacity:.45}
+#rank-celebration-dialog.is-evolving:not(.is-revealed) .shield-glow{opacity:calc(var(--evolution,0)*.66)}

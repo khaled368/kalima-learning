@@ -31,6 +31,7 @@
       this.fill=this.root.querySelector('#progress-fill');
       this.track=this.root.querySelector('#progress-track');
       this.shield=this.root.querySelector('#shield');
+      this.previousShield=this.root.querySelector('#previous-shield');
       this.hint=this.root.querySelector('#score-hint');
       this.name=this.root.querySelector('#rank-name');
       this.subtitle=this.root.querySelector('#rank-subtitle');
@@ -39,6 +40,7 @@
       this.bass=0;this.beatPulse=0;this.lastBeatAt=-1;this.lastFrame=0;
       this.samples=null;this.previousSpectrum=null;this.energyBaseline=0;
       this.analyser=null;this.audioClock=null;this.runId=0;
+      this.transitionSeconds=0;this.evolving=false;
       this._makeParticles();
     }
     _makeParticles(){
@@ -72,7 +74,7 @@
       return {progress,celebration};
     }
     _scheduleAudio(buffers){
-      if(!buffers||!this.ctx){this.audioEnd=this.duration+7.8;return;}
+      if(!buffers||!this.ctx){this.audioEnd=this.duration+this.transitionSeconds+7.8;return;}
       const now=this.ctx.currentTime+.08;
       this.audioClock=now;
       const start=(buffer,when,limit=null,bass=false)=>{
@@ -92,8 +94,8 @@
         this.sources.push(source);
       };
       start(buffers.progress,now,this.duration,false);
-      start(buffers.celebration,now+this.duration,null,true);
-      this.audioEnd=this.duration+(buffers.celebration?.duration||7.8);
+      start(buffers.celebration,now+this.duration+this.transitionSeconds,null,true);
+      this.audioEnd=this.duration+this.transitionSeconds+(buffers.celebration?.duration||7.8);
     }
     _bassLevel(){
       if(!this.analyser||!this.samples)return {level:0,hit:0};
@@ -126,12 +128,17 @@
       const shield=this.ranks[clamp(index,0,this.ranks.length-1)];
       if(!shield)throw new Error('Invalid rank');
       this._stop();const ticket=this.runId;
-      this.revealed=false;this.analyser=null;this.bass=0;this.beatPulse=0;
+      this.revealed=false;this.evolving=false;this.analyser=null;this.bass=0;this.beatPulse=0;
       this.lastBeatAt=-1;this.lastFrame=0;this.audioClock=null;this.energyBaseline=0;
-      this.root.classList.remove('is-revealed');
+      this.transitionSeconds=this.previousShield&&index>0?.82:0;
+      this.root.classList.remove('is-revealed');this.root.classList.remove('is-evolving');
       this.root.style.setProperty('--shine','.1');
       this.root.style.setProperty('--beat','0');this.root.style.setProperty('--glow-scale','1');
+      this.root.style.setProperty('--evolution','0');
       this.shield.style.opacity='0';this.shield.style.transform='scale(.1)';
+      if(this.previousShield){this.previousShield.style.opacity='0';this.previousShield.style.transform='scale(.7)';
+        const prior=Math.max(0,index-1);
+        this.previousShield.style.backgroundPosition=(prior%5*25)+'% '+(prior<5?'0':'100%');}
       this.shield.style.backgroundPosition=(index%5*25)+'% '+(index<5?'0':'100%');
       this.shield.setAttribute('aria-label','درع '+shield.name+' الأصلي');
       this.name.textContent='الدرع '+shield.name;
@@ -153,35 +160,50 @@
         this.fill.style.width=(p*100)+'%';
         this.track.setAttribute('aria-valuenow',String(Math.floor(p*100)));
         if(p>=1){
-          if(!this.revealed){
-            this.revealed=true;this.root.classList.add('is-revealed');
-            this.hint.textContent='تم فتح الدرع '+shield.name;
-            if(global.KalimaHaptics?.pulse)global.KalimaHaptics.pulse();
-            else global.navigator?.vibrate?.([65,45,135,50,135]);
-          }
           const since=t-this.duration;
-          const dt=Math.min(.08,Math.max(0,since-this.lastFrame));
-          this.lastFrame=since;
-          const fade=1-ease((since-3.6)/1.8); // Calm ending.
-          const bass=this._bassLevel();
-          this.bass+=(bass.level-this.bass)*(bass.level>this.bass?.42:.13);
-          // Only real low-frequency transients trigger a fresh size pulse.
-          if(bass.level>.11&&bass.hit>.24&&since-this.lastBeatAt>.16){
-            this.beatPulse=Math.max(this.beatPulse,.52+.48*bass.hit);
-            this.lastBeatAt=since;
+          if(!this.evolving){
+            this.evolving=true;this.root.classList.add('is-evolving');
+            this.hint.textContent=this.transitionSeconds?'جارٍ تطوير الدرع…':'اكتملت الترقية!';
           }
-          this.beatPulse*=Math.exp(-Math.max(.008,dt)*7.2);
-          const beat=this.beatPulse*fade;
-          const impact=Math.exp(-since*9)*.22;
-          const pulse=beat*.52+this.bass*.07*fade+impact;
-          const arrival=ease(since/.42);
-          const scale=(.6+.4*arrival)*(1+pulse);
-          this.shield.style.opacity=String(arrival);
-          this.shield.style.transform='scale('+scale.toFixed(4)+')';
-          this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(19+105*beat+31*this.bass*fade+34*impact)+'px #ffca66)';
-          this.root.style.setProperty('--beat',beat.toFixed(3));
-          this.root.style.setProperty('--glow-scale',(1+beat*.27).toFixed(3));
-          this.root.style.setProperty('--shine',String(clamp(.26+beat*.78+this.bass*.15*fade+impact,0,1)));
+          // Previous shield is hidden until the progress bar is full.
+          if(this.previousShield&&this.transitionSeconds){
+            const stage=clamp(since/this.transitionSeconds,0,1);
+            const appear=ease(stage/.28);
+            const dissolve=ease((stage-.42)/.53);
+            this.previousShield.style.opacity=String(Math.max(0,appear*(1-dissolve)));
+            this.previousShield.style.transform='scale('+((.7+.3*appear)*(1-.42*dissolve)).toFixed(4)+') rotate('+Math.round(23*dissolve)+'deg)';
+            this.previousShield.style.filter='drop-shadow(0 0 '+Math.round(16+105*dissolve)+'px #ffd17d) brightness('+(1+1.7*dissolve).toFixed(2)+')';
+            this.root.style.setProperty('--evolution',String(clamp((stage-.38)/.6,0,1)));
+          }
+          if(since>=this.transitionSeconds){
+            if(!this.revealed){
+              this.revealed=true;this.root.classList.add('is-revealed');
+              this.hint.textContent='تم فتح الدرع '+shield.name;
+              if(global.KalimaHaptics?.pulse)global.KalimaHaptics.pulse();
+              else global.navigator?.vibrate?.([65,45,135,50,135]);
+            }
+            const unveiled=since-this.transitionSeconds;
+            const dt=Math.min(.08,Math.max(0,unveiled-this.lastFrame));
+            this.lastFrame=unveiled;
+            const fade=1-ease((unveiled-3.6)/1.8);
+            const bass=this._bassLevel();
+            this.bass+=(bass.level-this.bass)*(bass.level>this.bass?.42:.13);
+            if(bass.level>.11&&bass.hit>.24&&unveiled-this.lastBeatAt>.16){
+              this.beatPulse=Math.max(this.beatPulse,.52+.48*bass.hit);
+              this.lastBeatAt=unveiled;
+            }
+            this.beatPulse*=Math.exp(-Math.max(.008,dt)*7.2);
+            const beat=this.beatPulse*fade;
+            const impact=Math.exp(-unveiled*9)*.22;
+            const pulse=beat*.52+this.bass*.07*fade+impact;
+            const arrival=ease(unveiled/.42);
+            this.shield.style.opacity=String(arrival);
+            this.shield.style.transform='scale('+((.6+.4*arrival)*(1+pulse)).toFixed(4)+')';
+            this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(19+105*beat+31*this.bass*fade+34*impact)+'px #ffca66)';
+            this.root.style.setProperty('--beat',beat.toFixed(3));
+            this.root.style.setProperty('--glow-scale',(1+beat*.27).toFixed(3));
+            this.root.style.setProperty('--shine',String(clamp(.26+beat*.78+this.bass*.15*fade+impact,0,1)));
+          }
         }
         if(t<end+.25)this.raf=global.requestAnimationFrame(frame);
         else{

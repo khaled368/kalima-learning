@@ -21,6 +21,14 @@ assert.match(engine,/requestAnimationFrame/);assert.match(engine,/navigator\?\.v
 assert.match(engine,/if\(p>=1\)/);assert.match(engine,/classList\.add\('is-revealed'\)/);
 assert.match(engine,/setSoundEnabled/);
 assert.match(engine,/KalimaHaptics\?\.pulse/);
+assert.match(engine,/fftSize=2048/,'sufficient frequency resolution for bass');
+assert.match(engine,/const beat=this.beatPulse\*fade/,'shield reacts to real bass');
+assert.match(engine,/this\.previousShield\.style\.opacity/,'old shield is animated');
+assert.match(engine,/since>=this.transitionSeconds/,'new rank is delayed until transition');
+assert.match(engine,/now\+this\.duration\+this\.transitionSeconds/,'audio starts with new shield');
+assert.match(html,/id="previous-shield"/,'original previous shield exists');
+assert.match(css,/evolution-flare/,'gold evolution effect exists');
+
 assert.match(engine,/fftSize=2048/,'FFT resolves multiple low-frequency bins');
 assert.match(engine,/const beat=this.beatPulse\*fade/,'shield growth follows beat envelope');
 assert.match(engine,/this\.ctx\.currentTime-this\.audioClock/,'motion uses playback clock');
