@@ -47,7 +47,7 @@ jobs:
       - name: Verify Safari startup with stale cache or stalled account
         run: node tests/safari-startup.test.cjs
 
-      - name: Verify cinematic shield evolution and bass detection
+      - name: Verify old-shield tearing and stable new-shield reveal
         run: node tests/rank-evolution.test.cjs
 
       - name: Verify missed-word reviews

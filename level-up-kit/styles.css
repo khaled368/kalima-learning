@@ -18,3 +18,27 @@
 .shield-zone .shield-glow{transform:translate(-50%,-50%) scale(var(--glow-scale,1))}
 .celebration.is-evolving:not(.is-revealed) .halo{opacity:.45}
 .celebration.is-evolving:not(.is-revealed) .shield-glow{opacity:calc(var(--evolution,0)*.66)}
+
+
+/* Eight torn fragments use the same original 5x2 sprite as the old shield. */
+.shield-zone .shield-fragments{position:absolute;z-index:10;width:min(78%,292px);aspect-ratio:1;pointer-events:none;opacity:0}
+.shield-zone .shield-shard{position:absolute;inset:0;display:block;opacity:0;will-change:opacity,transform}
+.shield-zone .shield-shard-art{display:block;position:absolute;inset:0;background:url('assets/kalima-shields.png') no-repeat;background-size:500% 200%}
+.shield-zone .shield-shard:nth-child(1){clip-path:polygon(0 0,26% 0,30% 24%,25% 50%,0 50%);--dx:-135px;--dy:-125px;--turn:-36deg}
+.shield-zone .shield-shard:nth-child(2){clip-path:polygon(26% 0,50% 0,47% 28%,50% 50%,25% 50%,30% 24%);--dx:-30px;--dy:-158px;--turn:26deg}
+.shield-zone .shield-shard:nth-child(3){clip-path:polygon(50% 0,74% 0,72% 27%,77% 50%,50% 50%,47% 28%);--dx:42px;--dy:-152px;--turn:-27deg}
+.shield-zone .shield-shard:nth-child(4){clip-path:polygon(74% 0,100% 0,100% 50%,77% 50%,72% 27%);--dx:143px;--dy:-117px;--turn:35deg}
+.shield-zone .shield-shard:nth-child(5){clip-path:polygon(0 50%,25% 50%,27% 73%,25% 100%,0 100%);--dx:-143px;--dy:111px;--turn:28deg}
+.shield-zone .shield-shard:nth-child(6){clip-path:polygon(25% 50%,50% 50%,53% 73%,50% 100%,25% 100%,27% 73%);--dx:-40px;--dy:155px;--turn:-32deg}
+.shield-zone .shield-shard:nth-child(7){clip-path:polygon(50% 50%,77% 50%,72% 76%,75% 100%,50% 100%,53% 73%);--dx:52px;--dy:148px;--turn:33deg}
+.shield-zone .shield-shard:nth-child(8){clip-path:polygon(77% 50%,100% 50%,100% 100%,75% 100%,72% 76%);--dx:140px;--dy:115px;--turn:-29deg}
+.celebration.is-ripping .shield-fragments{opacity:1}
+.celebration.is-ripping .shield-shard{animation:kalima-shatter 1.2s cubic-bezier(.2,.65,.24,1) both}
+.shield-zone .tear-crack{position:absolute;z-index:11;pointer-events:none;width:min(78%,292px);aspect-ratio:1;opacity:0;background:linear-gradient(90deg,transparent 40%,#fff9d0 50%,#ffac3b 58%,transparent 67%);clip-path:polygon(45% 0,54% 17%,47% 35%,56% 48%,46% 67%,55% 84%,49% 100%,45% 100%,49% 82%,42% 67%,51% 48%,42% 35%,49% 17%,42% 0)}
+.celebration.is-ripping .tear-crack{animation:kalima-crack .65s ease-out both}
+.shield-zone .previous-shield.is-starter,.shield-zone .shield-fragments.is-starter .shield-shard-art{background-image:radial-gradient(circle at 45% 25%,#9eabc0,#414e63 56%,#151c2d 92%)!important;clip-path:polygon(50% 2%,94% 19%,87% 74%,50% 98%,13% 74%,6% 19%)}
+.shield-zone .previous-shield.is-starter::after,.shield-zone .shield-fragments.is-starter .shield-shard-art::after{content:"✦";position:absolute;inset:0;display:grid;place-items:center;color:#e6e6e5;font-size:72px}
+.shield-zone .shield-glow{transform:translate(-50%,-50%)!important;transition:opacity .3s}
+@keyframes kalima-shatter{0%{opacity:1;transform:translate3d(0,0,0) rotate(0deg) scale(1);filter:brightness(1)}16%{opacity:1;filter:brightness(2.1)}42%{opacity:1;filter:brightness(1.6)}100%{opacity:0;transform:translate3d(var(--dx),var(--dy),0) rotate(var(--turn)) scale(.65)}}
+@keyframes kalima-crack{0%{opacity:0;transform:scaleY(.15)}20%{opacity:1;transform:scaleY(1)}48%{opacity:.98}100%{opacity:0;transform:scaleY(1.2)}}
+@media(prefers-reduced-motion:reduce){.celebration.is-ripping .shield-shard,.celebration.is-ripping .tear-crack{animation:none!important;opacity:0!important}}

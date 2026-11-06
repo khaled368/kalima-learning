@@ -21,18 +21,16 @@ assert.match(engine,/requestAnimationFrame/);assert.match(engine,/navigator\?\.v
 assert.match(engine,/if\(p>=1\)/);assert.match(engine,/classList\.add\('is-revealed'\)/);
 assert.match(engine,/setSoundEnabled/);
 assert.match(engine,/KalimaHaptics\?\.pulse/);
-assert.match(engine,/fftSize=2048/,'sufficient frequency resolution for bass');
-assert.match(engine,/const beat=this.beatPulse\*fade/,'shield reacts to real bass');
-assert.match(engine,/this\.previousShield\.style\.opacity/,'old shield is animated');
-assert.match(engine,/since>=this.transitionSeconds/,'new rank is delayed until transition');
-assert.match(engine,/now\+this\.duration\+this\.transitionSeconds/,'audio starts with new shield');
-assert.match(html,/id="previous-shield"/,'original previous shield exists');
-assert.match(css,/evolution-flare/,'gold evolution effect exists');
-
-assert.match(engine,/fftSize=2048/,'FFT resolves multiple low-frequency bins');
-assert.match(engine,/const beat=this.beatPulse\*fade/,'shield growth follows beat envelope');
-assert.match(engine,/this\.ctx\.currentTime-this\.audioClock/,'motion uses playback clock');
-assert.match(css,/--glow-scale/,'golden aura also follows detected bass');
+assert.match(engine,/this\.previousShield\.style\.opacity='1'/,'old shield visible before 100%');
+assert.match(engine,/classList\.add\('is-evolving','is-ripping'\)/,'tear at completed bar');
+assert.match(engine,/since>=this\.revealDelay/,'new shield emerges during tear');
+assert.match(engine,/now\+this\.duration\+this\.revealDelay/,'victory audio synchronized');
+assert.match(html,/id="previous-shield"/);
+assert.match(html,/id="shield-fragments"/);
+assert.equal((html.match(/class="shield-shard"/g)||[]).length,8);
+assert.match(css,/kalima-shield-shatter/);
+assert.match(css,/kalima-shield-crack/);
+assert.doesNotMatch(engine,/beatPulse|_bassLevel|this\.bass|--beat/,'no bass-reactive pulsing');
 
 assert.match(source,/level-up-progress\.mp3/);assert.match(source,/level-up-celebration\.mp3/);
 const androidManifest=fs.readFileSync(path.join(__dirname,'../android/app/src/main/AndroidManifest.xml'),'utf8');
@@ -94,28 +92,4 @@ assert.equal(parts['[data-rank-heading]'].textContent,'معاينة الاحتف
 assert.equal(JSON.stringify(ceremony.seen),before,'preview never grants rank');
 assert.ok(destroyed>=2,'previous animation disposed on new opening');
 
-const bassNodes={
- '#score-number':{textContent:''},'#progress-fill':{style:{}},
- '#progress-track':{setAttribute(){}},'#shield':{style:{},setAttribute(){}},
- '#score-hint':{textContent:''},'#rank-name':{textContent:''},'#rank-subtitle':{textContent:''},
- '.particles':{childElementCount:1}
-};
-const host={querySelector:s=>bassNodes[s],style:{setProperty(){}},classList:{remove(){},add(){}}};
-const audioGlobal={document:{querySelector:()=>host},cancelAnimationFrame(){},requestAnimationFrame(){}};
-audioGlobal.globalThis=audioGlobal;
-vm.runInNewContext(engine,audioGlobal);
-const calc=new audioGlobal.KalimaLevelUp.LevelUpCelebration(host);
-const spectrum=new Uint8Array(1024);
-calc.ctx={sampleRate:48000};
-calc.analyser={fftSize:2048,getByteFrequencyData(dst){dst.set(spectrum);}};
-calc.samples=new Uint8Array(1024);
-assert.equal(calc._bassLevel().hit,0,'silence is not a beat');
-for(let i=3;i<=11;i++)spectrum[i]=170;
-const kick=calc._bassLevel();
-assert.ok(kick.level>.7,'low-frequency kick energy is measurable');
-assert.ok(kick.hit>.5,'real bass attack triggers the growth impulse');
-assert.ok(calc._bassLevel().hit<.25,'unchanging low note does not fake a beat');
-spectrum.fill(0);
-assert.equal(calc._bassLevel().level,0,'bass ends without persistent pulsing');
-
-console.log('PASS: cinematic rank-up is wired to real learning, ten original shields, separate audio and accessible preview.');
+console.log('PASS: rank-up is connected to genuine learning, original shields, audio, and shatter preview.');

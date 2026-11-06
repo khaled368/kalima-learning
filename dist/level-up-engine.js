@@ -32,15 +32,15 @@
       this.track=this.root.querySelector('#progress-track');
       this.shield=this.root.querySelector('#shield');
       this.previousShield=this.root.querySelector('#previous-shield');
+      this.fragments=this.root.querySelector('#shield-fragments');
+      this.shards=Array.from(this.root.querySelectorAll?.('.shield-shard')||[]);
       this.hint=this.root.querySelector('#score-hint');
       this.name=this.root.querySelector('#rank-name');
       this.subtitle=this.root.querySelector('#rank-subtitle');
       this.shield.style.backgroundImage='url('+JSON.stringify(this.sprite)+')';
       this.ctx=null;this.sources=[];this.raf=0;this.active=false;this.revealed=false;
-      this.bass=0;this.beatPulse=0;this.lastBeatAt=-1;this.lastFrame=0;
-      this.samples=null;this.previousSpectrum=null;this.energyBaseline=0;
-      this.analyser=null;this.audioClock=null;this.runId=0;
-      this.transitionSeconds=0;this.evolving=false;
+      this.audioClock=null;this.runId=0;this.transitionSeconds=1.25;
+      this.revealDelay=.36;this.reducedMotion=false;this.evolving=false;
       this._makeParticles();
     }
     _makeParticles(){
@@ -74,71 +74,57 @@
       return {progress,celebration};
     }
     _scheduleAudio(buffers){
-      if(!buffers||!this.ctx){this.audioEnd=this.duration+this.transitionSeconds+7.8;return;}
+      if(!buffers||!this.ctx){
+        this.audioEnd=this.duration+this.revealDelay+7.8;return;
+      }
       const now=this.ctx.currentTime+.08;
       this.audioClock=now;
-      const start=(buffer,when,limit=null,bass=false)=>{
+      const start=(buffer,when,limit=null)=>{
         if(!buffer)return;
-        const source=this.ctx.createBufferSource();source.buffer=buffer;
-        const gain=this.ctx.createGain();gain.gain.value=.85;
-        if(bass){
-          const analyser=this.ctx.createAnalyser();analyser.fftSize=2048;analyser.smoothingTimeConstant=.20;
-          source.connect(analyser);analyser.connect(gain);this.analyser=analyser;
-          this.samples=new Uint8Array(analyser.frequencyBinCount);
-          this.previousSpectrum=new Float32Array(analyser.frequencyBinCount);
-          this.energyBaseline=0;
-        }else source.connect(gain);
-        gain.connect(this.ctx.destination);
+        const source=this.ctx.createBufferSource();
+        source.buffer=buffer;
+        const gain=this.ctx.createGain();
+        gain.gain.value=.85;
+        source.connect(gain);gain.connect(this.ctx.destination);
         source.start(when);
         if(limit!==null)source.stop(when+Math.min(limit,buffer.duration));
         this.sources.push(source);
       };
-      start(buffers.progress,now,this.duration,false);
-      start(buffers.celebration,now+this.duration+this.transitionSeconds,null,true);
-      this.audioEnd=this.duration+this.transitionSeconds+(buffers.celebration?.duration||7.8);
-    }
-    _bassLevel(){
-      if(!this.analyser||!this.samples)return {level:0,hit:0};
-      this.analyser.getByteFrequencyData(this.samples);
-      // Several FFT bins from 45-300 Hz catch real kicks, not one narrow bin.
-      const step=this.ctx.sampleRate/this.analyser.fftSize;
-      const low=Math.max(1,Math.ceil(45/step));
-      const high=Math.min(this.samples.length-1,Math.floor(300/step));
-      if(high<low)return {level:0,hit:0};
-      if(!this.previousSpectrum||this.previousSpectrum.length!==this.samples.length)
-        this.previousSpectrum=new Float32Array(this.samples.length);
-      let volume=0,attack=0,weightTotal=0;
-      for(let i=low;i<=high;i++){
-        const weight=i*step<170?1:.65;
-        const v=this.samples[i];
-        volume+=v*weight;
-        attack+=Math.max(0,v-this.previousSpectrum[i])*weight;
-        weightTotal+=weight;
-        this.previousSpectrum[i]=v;
-      }
-      const energy=volume/Math.max(1,weightTotal);
-      const transient=attack/Math.max(1,weightTotal);
-      const baseline=this.energyBaseline||0;
-      this.energyBaseline+=(energy-this.energyBaseline)*.045;
-      const onset=clamp((transient-2.5)/29,0,1);
-      const accent=clamp((energy-baseline*1.12-6)/54,0,1);
-      return {level:clamp((energy-9)/105,0,1),hit:Math.max(onset,accent*.76*clamp(transient/12,0,1))};
+      start(buffers.progress,now,this.duration);
+      // Victory starts as the NEW shield emerges between the torn pieces.
+      start(buffers.celebration,now+this.duration+this.revealDelay);
+      this.audioEnd=this.duration+this.revealDelay+(buffers.celebration?.duration||7.8);
     }
     async play(index=3){
       const shield=this.ranks[clamp(index,0,this.ranks.length-1)];
       if(!shield)throw new Error('Invalid rank');
       this._stop();const ticket=this.runId;
-      this.revealed=false;this.evolving=false;this.analyser=null;this.bass=0;this.beatPulse=0;
-      this.lastBeatAt=-1;this.lastFrame=0;this.audioClock=null;this.energyBaseline=0;
-      this.transitionSeconds=this.previousShield&&index>0?.82:0;
-      this.root.classList.remove('is-revealed');this.root.classList.remove('is-evolving');
-      this.root.style.setProperty('--shine','.1');
-      this.root.style.setProperty('--beat','0');this.root.style.setProperty('--glow-scale','1');
+      this.reducedMotion=Boolean(global.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches);
+      this.revealDelay=this.reducedMotion?0:.36;
+      this.transitionSeconds=this.reducedMotion?0:1.25;
+      this.revealed=false;this.evolving=false;this.audioClock=null;
+      this.root.classList.remove('is-revealed','is-evolving','is-ripping');
+      this.root.style.setProperty('--shine','.08');
       this.root.style.setProperty('--evolution','0');
-      this.shield.style.opacity='0';this.shield.style.transform='scale(.1)';
-      if(this.previousShield){this.previousShield.style.opacity='0';this.previousShield.style.transform='scale(.7)';
-        const prior=Math.max(0,index-1);
-        this.previousShield.style.backgroundPosition=(prior%5*25)+'% '+(prior<5?'0':'100%');}
+      this.shield.style.opacity='0';
+      this.shield.style.transform='scale(.28)';
+      const starter=index===0, prior=Math.max(0,index-1);
+      const oldPosition=(prior%5*25)+'% '+(prior<5?'0':'100%');
+      if(this.previousShield){
+        this.previousShield.classList.toggle('is-starter',starter);
+        this.previousShield.style.backgroundImage=starter?'none':'url('+JSON.stringify(this.sprite)+')';
+        this.previousShield.style.backgroundPosition=oldPosition;
+        this.previousShield.style.opacity='1'; // Previous rank visible while score fills.
+        this.previousShield.style.transform='scale(1)';
+      }
+      this.fragments?.classList.toggle('is-starter',starter);
+      for(const shard of this.shards){
+        const art=shard.querySelector('.shield-shard-art');
+        if(art){
+          art.style.backgroundImage=starter?'none':'url('+JSON.stringify(this.sprite)+')';
+          art.style.backgroundPosition=oldPosition;
+        }
+      }
       this.shield.style.backgroundPosition=(index%5*25)+'% '+(index<5?'0':'100%');
       this.shield.setAttribute('aria-label','درع '+shield.name+' الأصلي');
       this.name.textContent='الدرع '+shield.name;
@@ -162,54 +148,38 @@
         if(p>=1){
           const since=t-this.duration;
           if(!this.evolving){
-            this.evolving=true;this.root.classList.add('is-evolving');
-            this.hint.textContent=this.transitionSeconds?'جارٍ تطوير الدرع…':'اكتملت الترقية!';
+            this.evolving=true;
+            this.root.classList.add('is-evolving','is-ripping');
+            if(this.previousShield)this.previousShield.style.opacity='0';
+            this.hint.textContent='الدرع السابق يتمزق…';
           }
-          // Previous shield is hidden until the progress bar is full.
-          if(this.previousShield&&this.transitionSeconds){
-            const stage=clamp(since/this.transitionSeconds,0,1);
-            const appear=ease(stage/.28);
-            const dissolve=ease((stage-.42)/.53);
-            this.previousShield.style.opacity=String(Math.max(0,appear*(1-dissolve)));
-            this.previousShield.style.transform='scale('+((.7+.3*appear)*(1-.42*dissolve)).toFixed(4)+') rotate('+Math.round(23*dissolve)+'deg)';
-            this.previousShield.style.filter='drop-shadow(0 0 '+Math.round(16+105*dissolve)+'px #ffd17d) brightness('+(1+1.7*dissolve).toFixed(2)+')';
-            this.root.style.setProperty('--evolution',String(clamp((stage-.38)/.6,0,1)));
-          }
-          if(since>=this.transitionSeconds){
+          // Shatter animation is time-based, not audio-amplitude-based.
+          const tear=clamp(since/Math.max(.01,this.transitionSeconds),0,1);
+          const burst=since<0?0:Math.sin(Math.PI*tear);
+          this.root.style.setProperty('--evolution',String(Math.max(0,burst).toFixed(3)));
+          if(since>=this.revealDelay){
             if(!this.revealed){
-              this.revealed=true;this.root.classList.add('is-revealed');
+              this.revealed=true;
+              this.root.classList.add('is-revealed');
               this.hint.textContent='تم فتح الدرع '+shield.name;
               if(global.KalimaHaptics?.pulse)global.KalimaHaptics.pulse();
               else global.navigator?.vibrate?.([65,45,135,50,135]);
             }
-            const unveiled=since-this.transitionSeconds;
-            const dt=Math.min(.08,Math.max(0,unveiled-this.lastFrame));
-            this.lastFrame=unveiled;
-            const fade=1-ease((unveiled-3.6)/1.8);
-            const bass=this._bassLevel();
-            this.bass+=(bass.level-this.bass)*(bass.level>this.bass?.42:.13);
-            if(bass.level>.11&&bass.hit>.24&&unveiled-this.lastBeatAt>.16){
-              this.beatPulse=Math.max(this.beatPulse,.52+.48*bass.hit);
-              this.lastBeatAt=unveiled;
-            }
-            this.beatPulse*=Math.exp(-Math.max(.008,dt)*7.2);
-            const beat=this.beatPulse*fade;
-            const impact=Math.exp(-unveiled*9)*.22;
-            const pulse=beat*.52+this.bass*.07*fade+impact;
-            const arrival=ease(unveiled/.42);
+            const unveiled=since-this.revealDelay;
+            // A single emergence: grows out of the broken rank, then holds still.
+            const arrival=ease(unveiled/(this.reducedMotion ? .01 : .78));
+            const scale=this.reducedMotion?1:(.28+.72*arrival+.075*Math.sin(Math.PI*arrival));
             this.shield.style.opacity=String(arrival);
-            this.shield.style.transform='scale('+((.6+.4*arrival)*(1+pulse)).toFixed(4)+')';
-            this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(19+105*beat+31*this.bass*fade+34*impact)+'px #ffca66)';
-            this.root.style.setProperty('--beat',beat.toFixed(3));
-            this.root.style.setProperty('--glow-scale',(1+beat*.27).toFixed(3));
-            this.root.style.setProperty('--shine',String(clamp(.26+beat*.78+this.bass*.15*fade+impact,0,1)));
+            this.shield.style.transform='scale('+scale.toFixed(4)+')';
+            this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(22+73*Math.exp(-unveiled*2.4))+'px #ffca66)';
+            this.root.style.setProperty('--shine',String((.33+.62*Math.exp(-unveiled*1.8)).toFixed(3)));
           }
         }
         if(t<end+.25)this.raf=global.requestAnimationFrame(frame);
         else{
           this.active=false;this.shield.style.opacity='1';this.shield.style.transform='scale(1)';
           this.root.style.setProperty('--shine','.32');
-          this.root.style.setProperty('--beat','0');this.root.style.setProperty('--glow-scale','1');
+          this.root.style.setProperty('--evolution','0');
           this.onFinish(shield);
         }
       };
@@ -219,7 +189,7 @@
       this.soundEnabled=Boolean(enabled);
       if(!this.soundEnabled){
         for(const node of this.sources)try{node.stop()}catch{}
-        this.sources=[];this.analyser=null;
+        this.sources=[];
       }
     }
     destroy(){this._stop();this.ctx?.close?.();this.ctx=null;}
