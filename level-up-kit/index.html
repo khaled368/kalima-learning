@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0e">
+  <title>Kalima Level-Up Kit — 10 Original Shields</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="level-up.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="demo-heading">
+      <p class="eyebrow">قالب مستقل للاستخدام في أي تطبيق</p>
+      <h1>احتفال الترقية · الدروع العشرة</h1>
+      <p>معاينة مباشرة باستخدام الصورة الأصلية لدروع «كلمة»، من دون تغيير التطبيق المنشور.</p>
+    </header>
+
+    <div class="demo-settings">
+      <label for="select-rank">اختر الدرع للمعاينة</label>
+      <select id="select-rank" aria-label="اختر أحد الدروع العشرة"></select>
+      <button type="button" id="start-preview" class="preview-button">▶ تشغيل احتفال الترقية</button>
+    </div>
+
+    <main class="celebration" id="celebration" aria-label="احتفال الترقية">
+      <div class="atmosphere"></div>
+      <div class="brand" aria-label="كلمة">
+        <div class="brand-icon" aria-hidden="true">◈</div>
+        <div class="brand-name">كلمة</div>
+        <div class="brand-latin">K A L I M A</div>
+      </div>
+      <h2 class="celebration-title" id="celebration-title">ترقية جديدة!</h2>
+
+      <section class="shield-zone" aria-label="الدرع المكتسب">
+        <div class="rays rays-back" aria-hidden="true"></div>
+        <div class="rays rays-front" aria-hidden="true"></div>
+        <div class="halo halo-one" aria-hidden="true"></div>
+        <div class="halo halo-two" aria-hidden="true"></div>
+        <div class="shield-glow" aria-hidden="true"></div>
+        <div class="shield" id="shield" role="img" aria-label="درع الترقية"></div>
+        <div class="particles" aria-hidden="true"></div>
+      </section>
+
+      <div class="rank-name" id="rank-name">الدرع النجمي</div>
+      <div class="rank-subtitle" id="rank-subtitle">1,000 كلمة متعلّمة</div>
+
+      <section class="score-panel" aria-label="شريط تقدم النقاط">
+        <div class="score-topline"><span>مجموع النقاط</span><span class="score-number" id="score-number" dir="ltr">0 XP</span></div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track" aria-label="نسبة التقدم">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="score-hint" id="score-hint" aria-live="polite">شريط التقدّم أولًا، ثم الدرع عند 100%</p>
+      </section>
+      <div class="celebration-footer">إنجاز جديد يستحق الاحتفال</div>
+    </main>
+    <p class="demo-note">الاهتزاز يعمل تلقائيًا على أجهزة أندرويد الداعمة، دون زر إضافي. في Safari على iPhone قد لا يكون مدعومًا.</p>
+  </div>
+</body>
+</html>
