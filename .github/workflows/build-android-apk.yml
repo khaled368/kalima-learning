@@ -48,6 +48,9 @@ jobs:
           python android/prepare_icons.py
           test -s android/app/src/main/res/drawable-nodpi/ic_kalima_logo_foreground.png
 
+      - name: Verify rank promotion celebration and original fanfare
+        run: node tests/rank-celebration.test.cjs
+
       - name: Verify missed-word reviews
         run: node tests/review-mistakes.test.cjs
 
@@ -91,10 +94,10 @@ jobs:
       - name: Publish test APK as GitHub pre-release
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: android-preview-v11
+          TAG: android-preview-v12
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" apks/Kalima-Android-Test.apk --clobber
           else
-            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.11" --notes "Android v0.11: incorrect review answers are saved to a dedicated mistakes list, prioritized in future reviews and cleared on a later correct answer. Offline lessons and daily reminders included. Sync progress before replacing debug-signed APKs." --prerelease
+            gh release create "$TAG" apks/Kalima-Android-Test.apk --target "$GITHUB_SHA" --title "Kalima Android - Offline Test APK v0.12" --notes "Android v0.12: original rank-up fanfare and animated shield celebration when learning crosses a real shield milestone. One-time rank rewards, accessible mute option, offline lessons, daily reminders and review mistakes. Sync progress before replacing older debug APKs." --prerelease
           fi
