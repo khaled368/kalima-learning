@@ -1,6 +1,4 @@
 /* Kalima cinematic rank-up: full-screen feel, real 5x2 shield sprite, 60Hz RAF. */
-#badges-panel .rank-preview-action{display:flex;justify-content:center;margin:14px 0 18px}
-#badges-panel .rank-preview-action button{min-height:44px}
 #rank-celebration-dialog {
  box-sizing:border-box;position:fixed;inset:0;margin:auto;
  width:min(450px,calc(100vw - 18px));max-width:450px;
@@ -103,13 +101,9 @@
 #rank-celebration-dialog .score-hint{font-size:12px;color:#e3cba2;margin:7px 0 0;min-height:17px}
 #rank-celebration-dialog .rank-controls{display:flex;align-items:center;justify-content:center;gap:11px;width:100%;margin-top:14px;flex:none}
 #rank-celebration-dialog .rank-primary{
- flex:1;max-width:230px;min-height:47px;border-radius:13px;
+ flex:1;max-width:280px;min-height:47px;border-radius:13px;
  border:1px solid #ffe3aa;background:linear-gradient(125deg,#ffe7b0,#d6a24c);
  color:#291b09;font-size:16px;font-weight:900;box-shadow:0 5px 20px #dcaa4e44;
-}
-#rank-celebration-dialog .rank-sound{
- flex:0 0 47px;min-width:47px;min-height:47px;padding:0;border-radius:12px;
- display:grid;place-items:center;color:#f8dfac;background:#2d251f;border:1px solid #a47f4b;font-size:21px;
 }
 #rank-celebration-dialog button:focus-visible{outline:3px solid #fff1bb;outline-offset:3px}
 @keyframes kalima-rays{to{transform:translate(-50%,-50%) rotate(360deg)}}

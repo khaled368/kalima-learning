@@ -999,11 +999,6 @@ $('#training-level').onchange = updateReviewAvailability;
 $('#review-level').onclick = () => startSession('review', activeLevel);
 $('#start-review').onclick = () => startSession('review', $('#training-level').value);
 $('#start-mistakes-review').onclick = () => startSession('mistakes', $('#training-level').value);
-$('#rank-preview').onclick = () => {
-  const shields = manifest?.shields || [];
-  const index = shields.length ? Math.min(shields.length - 1, ownedShields().length) : -1;
-  if (index >= 0) globalThis.WORT_RANK_CELEBRATION?.preview({ ...shields[index], index });
-};
 $('#training-close').onclick = () => {
   $('#training-dialog').close();
   reviewRequest++;
