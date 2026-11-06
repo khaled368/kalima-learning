@@ -12,7 +12,7 @@ assert.doesNotMatch(appScript,/toast\(t\("جارٍ تجهيز النطق لأو�
   'the misleading first-use speech message must not reappear on every audio tap');
 assert.match(appScript,/button\.setAttribute\('aria-busy', 'true'\)/,
   'audio button retains accessible loading state while speech prepares');
-assert.match(loader,/app\.js\?v=20261102-[a-z0-9-]+/,
+assert.match(loader,/app\.js\?v=\d{8}-[a-z0-9-]+/,
   'the current app module uses a versioned URL to invalidate older cached scripts');
 const css=fs.readFileSync(path.join(root,'topics.css'),'utf8');
 function node(){
