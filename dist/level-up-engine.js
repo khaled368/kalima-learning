@@ -36,7 +36,9 @@
       this.subtitle=this.root.querySelector('#rank-subtitle');
       this.shield.style.backgroundImage='url('+JSON.stringify(this.sprite)+')';
       this.ctx=null;this.sources=[];this.raf=0;this.active=false;this.revealed=false;
-      this.bass=0;this.samples=null;this.analyser=null;
+      this.bass=0;this.beatPulse=0;this.lastBeatAt=-1;this.lastFrame=0;
+      this.samples=null;this.previousSpectrum=null;this.energyBaseline=0;
+      this.analyser=null;this.audioClock=null;this.runId=0;
       this._makeParticles();
     }
     _makeParticles(){
@@ -50,7 +52,7 @@
       }
     }
     _stop(){
-      this.active=false;global.cancelAnimationFrame?.(this.raf);
+      this.active=false;this.runId++;global.cancelAnimationFrame?.(this.raf);
       for(const node of this.sources)try{node.stop()}catch{}
       this.sources=[];
     }
@@ -71,15 +73,18 @@
     }
     _scheduleAudio(buffers){
       if(!buffers||!this.ctx){this.audioEnd=this.duration+7.8;return;}
-      const now=this.ctx.currentTime+.06;
+      const now=this.ctx.currentTime+.08;
+      this.audioClock=now;
       const start=(buffer,when,limit=null,bass=false)=>{
         if(!buffer)return;
         const source=this.ctx.createBufferSource();source.buffer=buffer;
         const gain=this.ctx.createGain();gain.gain.value=.85;
         if(bass){
-          const analyser=this.ctx.createAnalyser();analyser.fftSize=1024;analyser.smoothingTimeConstant=.68;
+          const analyser=this.ctx.createAnalyser();analyser.fftSize=2048;analyser.smoothingTimeConstant=.20;
           source.connect(analyser);analyser.connect(gain);this.analyser=analyser;
           this.samples=new Uint8Array(analyser.frequencyBinCount);
+          this.previousSpectrum=new Float32Array(analyser.frequencyBinCount);
+          this.energyBaseline=0;
         }else source.connect(gain);
         gain.connect(this.ctx.destination);
         source.start(when);
@@ -91,18 +96,41 @@
       this.audioEnd=this.duration+(buffers.celebration?.duration||7.8);
     }
     _bassLevel(){
-      if(!this.analyser||!this.samples)return 0;
+      if(!this.analyser||!this.samples)return {level:0,hit:0};
       this.analyser.getByteFrequencyData(this.samples);
-      const limit=Math.max(2,Math.floor(160/(this.ctx.sampleRate/this.analyser.fftSize)));
-      let avg=0;for(let i=2;i<Math.min(limit,this.samples.length);i++)avg+=this.samples[i];
-      return clamp((avg/Math.max(1,limit-2)-35)/135,0,1);
+      // Several FFT bins from 45-300 Hz catch real kicks, not one narrow bin.
+      const step=this.ctx.sampleRate/this.analyser.fftSize;
+      const low=Math.max(1,Math.ceil(45/step));
+      const high=Math.min(this.samples.length-1,Math.floor(300/step));
+      if(high<low)return {level:0,hit:0};
+      if(!this.previousSpectrum||this.previousSpectrum.length!==this.samples.length)
+        this.previousSpectrum=new Float32Array(this.samples.length);
+      let volume=0,attack=0,weightTotal=0;
+      for(let i=low;i<=high;i++){
+        const weight=i*step<170?1:.65;
+        const v=this.samples[i];
+        volume+=v*weight;
+        attack+=Math.max(0,v-this.previousSpectrum[i])*weight;
+        weightTotal+=weight;
+        this.previousSpectrum[i]=v;
+      }
+      const energy=volume/Math.max(1,weightTotal);
+      const transient=attack/Math.max(1,weightTotal);
+      const baseline=this.energyBaseline||0;
+      this.energyBaseline+=(energy-this.energyBaseline)*.045;
+      const onset=clamp((transient-2.5)/29,0,1);
+      const accent=clamp((energy-baseline*1.12-6)/54,0,1);
+      return {level:clamp((energy-9)/105,0,1),hit:Math.max(onset,accent*.76)};
     }
     async play(index=3){
       const shield=this.ranks[clamp(index,0,this.ranks.length-1)];
       if(!shield)throw new Error('Invalid rank');
-      this._stop();this.revealed=false;this.analyser=null;this.bass=0;
+      this._stop();const ticket=this.runId;
+      this.revealed=false;this.analyser=null;this.bass=0;this.beatPulse=0;
+      this.lastBeatAt=-1;this.lastFrame=0;this.audioClock=null;this.energyBaseline=0;
       this.root.classList.remove('is-revealed');
       this.root.style.setProperty('--shine','.1');
+      this.root.style.setProperty('--beat','0');this.root.style.setProperty('--glow-scale','1');
       this.shield.style.opacity='0';this.shield.style.transform='scale(.1)';
       this.shield.style.backgroundPosition=(index%5*25)+'% '+(index<5?'0':'100%');
       this.shield.setAttribute('aria-label','درع '+shield.name+' الأصلي');
@@ -112,12 +140,14 @@
       this.track.setAttribute('aria-valuenow','0');
       this.hint.textContent='جارٍ احتساب النقاط…';
       const audio=await this._prepareAudio();
+      if(ticket!==this.runId)return;
       this._scheduleAudio(audio);
       const start=global.performance.now();this.active=true;
       const end=this.audioEnd||this.duration+7.8;
       const frame=()=>{
         if(!this.active)return;
-        const t=(global.performance.now()-start)/1000;
+        const t=Math.max(0,this.audioClock!==null&&this.ctx?.state==='running'
+          ?this.ctx.currentTime-this.audioClock:(global.performance.now()-start)/1000);
         const p=clamp(t/this.duration,0,1),value=Math.round(shield.threshold*ease(p));
         this.counter.textContent=value.toLocaleString('en-US')+' XP';
         this.fill.style.width=(p*100)+'%';
@@ -130,21 +160,35 @@
             else global.navigator?.vibrate?.([65,45,135,50,135]);
           }
           const since=t-this.duration;
-          const fade=1-ease((since-3.6)/1.8); // Calm stable ending.
-          this.bass+=(this._bassLevel()-this.bass)*.32;
-          const impact=Math.exp(-since*7)*.32;
-          const pulse=this.bass*.52*fade+impact;
+          const dt=Math.min(.08,Math.max(0,since-this.lastFrame));
+          this.lastFrame=since;
+          const fade=1-ease((since-3.6)/1.8); // Calm ending.
+          const bass=this._bassLevel();
+          this.bass+=(bass.level-this.bass)*(bass.level>this.bass?.42:.13);
+          // Only real low-frequency transients trigger a fresh size pulse.
+          if(bass.level>.11&&bass.hit>.24&&since-this.lastBeatAt>.16){
+            this.beatPulse=Math.max(this.beatPulse,.52+.48*bass.hit);
+            this.lastBeatAt=since;
+          }
+          this.beatPulse*=Math.exp(-Math.max(.008,dt)*7.2);
+          const beat=this.beatPulse*fade;
+          const impact=Math.exp(-since*9)*.22;
+          const pulse=beat*.52+this.bass*.07*fade+impact;
           const arrival=ease(since/.42);
-          const scale=(.65+.35*arrival)*(1+pulse);
+          const scale=(.6+.4*arrival)*(1+pulse);
           this.shield.style.opacity=String(arrival);
           this.shield.style.transform='scale('+scale.toFixed(4)+')';
-          this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(18+75*this.bass*fade+35*impact)+'px #ffca66)';
-          this.root.style.setProperty('--shine',String(clamp(.25+this.bass*.7+impact,0,1)));
+          this.shield.style.filter='drop-shadow(0 12px 19px #000) drop-shadow(0 0 '+Math.round(19+105*beat+31*this.bass*fade+34*impact)+'px #ffca66)';
+          this.root.style.setProperty('--beat',beat.toFixed(3));
+          this.root.style.setProperty('--glow-scale',(1+beat*.27).toFixed(3));
+          this.root.style.setProperty('--shine',String(clamp(.26+beat*.78+this.bass*.15*fade+impact,0,1)));
         }
         if(t<end+.25)this.raf=global.requestAnimationFrame(frame);
         else{
           this.active=false;this.shield.style.opacity='1';this.shield.style.transform='scale(1)';
-          this.root.style.setProperty('--shine','.32');this.onFinish(shield);
+          this.root.style.setProperty('--shine','.32');
+          this.root.style.setProperty('--beat','0');this.root.style.setProperty('--glow-scale','1');
+          this.onFinish(shield);
         }
       };
       this.raf=global.requestAnimationFrame(frame);
