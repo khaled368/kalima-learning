@@ -21,7 +21,11 @@ assert.match(engine,/requestAnimationFrame/);assert.match(engine,/navigator\?\.v
 assert.match(engine,/if\(p>=1\)/);assert.match(engine,/classList\.add\('is-revealed'\)/);
 assert.match(engine,/setSoundEnabled/);
 assert.match(engine,/KalimaHaptics\?\.pulse/);
-assert.match(engine,/this\.previousShield\.style\.opacity='1'/,'old shield visible before 100%');
+assert.match(engine,/this\.previousShield\.style\.opacity='0'/,'old shield is built from fragments, not shown fully');
+assert.match(engine,/classList\.add\('is-assembling'\)/,'old shield assembles with the XP bar');
+assert.match(engine,/this\._assemble\(p\)/,'pieces follow current progress');
+assert.match(engine,/this\._assemble\(1\)/,'all pieces fully assembled before tearing');
+assert.match(engine,/celebrationStartFraction/,'first music section is skipped');
 assert.match(engine,/classList\.add\('is-evolving','is-ripping'\)/,'tear at completed bar');
 assert.match(engine,/since>=this\.revealDelay/,'new shield emerges during tear');
 assert.match(engine,/now\+this\.duration\+this\.revealDelay/,'victory audio synchronized');
