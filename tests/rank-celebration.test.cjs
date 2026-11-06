@@ -36,7 +36,8 @@ assert.match(css,/kalima-shield-shatter/);
 assert.match(css,/kalima-shield-crack/);
 assert.doesNotMatch(engine,/beatPulse|_bassLevel|this\.bass|--beat/,'no bass-reactive pulsing');
 
-assert.match(source,/level-up-progress\.mp3/);assert.match(source,/level-up-celebration\.mp3/);
+assert.match(source,/level-up-progress\.mp3/);assert.match(source,/level-up-celebration-trimmed\.mp3/);
+assert.match(source,/celebrationStartFraction:0/,'do not skip already trimmed audio twice');
 const androidManifest=fs.readFileSync(path.join(__dirname,'../android/app/src/main/AndroidManifest.xml'),'utf8');
 const native=fs.readFileSync(path.join(__dirname,'../android/app/src/main/java/com/kalima/learning/MainActivity.java'),'utf8');
 assert.match(androidManifest,/android\.permission\.VIBRATE/);
