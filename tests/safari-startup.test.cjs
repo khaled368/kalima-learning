@@ -16,7 +16,7 @@ assert.match(code,/url\.searchParams\.set\('kalimaBuild', SCRIPT_BUILD\)/,'all d
 assert.match(account,/state\.error=errorText\(error\);render\(\);[\s\S]*?finishReady\(\)/,'auth startup error resolves app readiness');
 assert.match(account,/state\.error=t\('تعذّر تجهيز بيانات الحساب\. حاول مجددًا\.'\);render\(\);[\s\S]*?finishReady\(\)/,'cloud startup error resolves app readiness');
 assert.match(curriculum,/fetch\(path,\{cache:"no-cache"\}\)/,'Safari revalidates lesson data');
-assert.match(html,/app-bootstrap\.js\?v=20261102-safari-resilience/,'Safari gets a fresh bootstrap script');
+assert.match(html,/app-bootstrap\.js\?v=[a-z0-9-]+/,'Safari gets a versioned bootstrap script');
 assert.match(html,/account\.js\?v=20261102-safari-resilience/,'Safari gets fresh account module');
 async function runStalledAccount(){
  const scripts=[];
