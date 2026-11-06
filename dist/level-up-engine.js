@@ -167,7 +167,7 @@
             }
             const unveiled=since-this.revealDelay;
             // A single emergence: grows out of the broken rank, then holds still.
-            const arrival=ease(unveiled/(this.reducedMotion?.01:.78));
+            const arrival=ease(unveiled/(this.reducedMotion ? .01 : .78));
             const scale=this.reducedMotion?1:(.28+.72*arrival+.075*Math.sin(Math.PI*arrival));
             this.shield.style.opacity=String(arrival);
             this.shield.style.transform='scale('+scale.toFixed(4)+')';
@@ -189,7 +189,7 @@
       this.soundEnabled=Boolean(enabled);
       if(!this.soundEnabled){
         for(const node of this.sources)try{node.stop()}catch{}
-        this.sources=[];this.analyser=null;
+        this.sources=[];
       }
     }
     destroy(){this._stop();this.ctx?.close?.();this.ctx=null;}
