@@ -250,3 +250,9 @@
  #rank-celebration-dialog.is-ripping .shield-shard,
  #rank-celebration-dialog.is-ripping .tear-crack{animation:none!important;opacity:0!important}
 }
+
+
+/* The exact same eight original-sprite pieces assemble with score progress.
+   Inline progress transforms are cleared at 100%, allowing the shatter animation. */
+#rank-celebration-dialog.is-assembling .shield-fragments{opacity:1}
+#rank-celebration-dialog.is-assembling .shield-shard{opacity:0}

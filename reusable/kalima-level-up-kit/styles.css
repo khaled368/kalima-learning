@@ -43,3 +43,8 @@
 @keyframes kalima-shatter{0%{opacity:1;transform:translate3d(0,0,0) rotate(0deg) scale(1);filter:brightness(1)}16%{opacity:1;filter:brightness(2.1)}42%{opacity:1;filter:brightness(1.6)}100%{opacity:0;transform:translate3d(var(--dx),var(--dy),0) rotate(var(--turn)) scale(.65)}}
 @keyframes kalima-crack{0%{opacity:0;transform:scaleY(.15)}20%{opacity:1;transform:scaleY(1)}48%{opacity:.98}100%{opacity:0;transform:scaleY(1.2)}}
 @media(prefers-reduced-motion:reduce){.celebration.is-ripping .shield-shard,.celebration.is-ripping .tear-crack{animation:none!important;opacity:0!important}}
+
+
+/* Stepwise assembly uses each sprite fragment, synchronized to the XP bar. */
+.celebration.is-assembling .shield-fragments{opacity:1}
+.celebration.is-assembling .shield-shard{opacity:0}

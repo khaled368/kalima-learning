@@ -26,6 +26,8 @@
       this.progressSound=options.progressSound||'assets/progress.mp3';
       this.celebrationSound=options.celebrationSound||'assets/celebration.mp3';
       this.sprite=options.sprite||'assets/kalima-shields.png';
+      // Intro of the three-part celebration music is skipped; progress SFX stays intact.
+      this.celebrationStartFraction=clamp(Number(options.celebrationStartFraction??(1/3)),0,.9);
       this.onFinish=options.onFinish||(()=>{});
       this.counter=this.root.querySelector('#score-number');
       this.fill=this.root.querySelector('#progress-fill');
@@ -41,6 +43,7 @@
       this.ctx=null;this.sources=[];this.raf=0;this.active=false;this.revealed=false;
       this.audioClock=null;this.runId=0;this.transitionSeconds=1.25;
       this.revealDelay=.36;this.reducedMotion=false;this.evolving=false;
+      this._assemblyStarts=[[-135,-115,-34],[-30,-155,26],[48,-153,-26],[140,-115,34],[-139,118,31],[-39,157,-29],[48,153,29],[143,116,-31]];
       this._makeParticles();
     }
     _makeParticles(){
@@ -51,6 +54,20 @@
         const a=i*Math.PI*2/24;
         p.style.cssText='--dx:'+Math.round(Math.cos(a)*(115+i%5*19))+'px;--dy:'+Math.round(Math.sin(a)*(95+i%3*24))+'px;--d:'+(i%5*44)+'ms';
         host.appendChild(p);
+      }
+    }
+    _assemble(progress){
+      const n=this.shards.length;
+      if(!n)return;
+      // Each piece locks into place during its own eighth of the 0-100% bar.
+      for(let i=0;i<n;i++){
+        const k=ease(clamp(progress*n-i,0,1));
+        const [dx,dy,angle]=this._assemblyStarts[i]||[0,-100,0];
+        const shard=this.shards[i];
+        shard.style.opacity=String(k);
+        shard.style.transform='translate3d('+(dx*(1-k)).toFixed(1)+'px,'+
+          (dy*(1-k)).toFixed(1)+'px,0) rotate('+(angle*(1-k)).toFixed(1)+
+          'deg) scale('+(.64+.36*k).toFixed(4)+')';
       }
     }
     _stop(){
@@ -79,21 +96,25 @@
       }
       const now=this.ctx.currentTime+.08;
       this.audioClock=now;
-      const start=(buffer,when,limit=null)=>{
-        if(!buffer)return;
+      const start=(buffer,when,limit=null,offset=0)=>{
+        if(!buffer||!Number.isFinite(buffer.duration)||buffer.duration<=offset)return;
         const source=this.ctx.createBufferSource();
         source.buffer=buffer;
         const gain=this.ctx.createGain();
         gain.gain.value=.85;
         source.connect(gain);gain.connect(this.ctx.destination);
-        source.start(when);
-        if(limit!==null)source.stop(when+Math.min(limit,buffer.duration));
+        // Starting at an offset drops section one of the three-part music,
+        // without changing the original file or the progress-bar sound.
+        source.start(when,offset);
+        if(limit!==null)source.stop(when+Math.min(limit,buffer.duration-offset));
         this.sources.push(source);
       };
       start(buffers.progress,now,this.duration);
-      // Victory starts as the NEW shield emerges between the torn pieces.
-      start(buffers.celebration,now+this.duration+this.revealDelay);
-      this.audioEnd=this.duration+this.revealDelay+(buffers.celebration?.duration||7.8);
+      const celebrationOffset=buffers.celebration
+        ?buffers.celebration.duration*this.celebrationStartFraction:0;
+      start(buffers.celebration,now+this.duration+this.revealDelay,null,celebrationOffset);
+      this.audioEnd=this.duration+this.revealDelay+
+        (buffers.celebration?buffers.celebration.duration-celebrationOffset:7.8);
     }
     async play(index=3){
       const shield=this.ranks[clamp(index,0,this.ranks.length-1)];
@@ -104,6 +125,7 @@
       this.transitionSeconds=this.reducedMotion?0:1.25;
       this.revealed=false;this.evolving=false;this.audioClock=null;
       this.root.classList.remove('is-revealed','is-evolving','is-ripping');
+      this.root.classList.add('is-assembling');
       this.root.style.setProperty('--shine','.08');
       this.root.style.setProperty('--evolution','0');
       this.shield.style.opacity='0';
@@ -114,7 +136,7 @@
         this.previousShield.classList.toggle('is-starter',starter);
         this.previousShield.style.backgroundImage=starter?'none':'url('+JSON.stringify(this.sprite)+')';
         this.previousShield.style.backgroundPosition=oldPosition;
-        this.previousShield.style.opacity='1'; // Previous rank visible while score fills.
+        this.previousShield.style.opacity='0'; // Build its original sprite piece by piece instead.
         this.previousShield.style.transform='scale(1)';
       }
       this.fragments?.classList.toggle('is-starter',starter);
@@ -125,13 +147,14 @@
           art.style.backgroundPosition=oldPosition;
         }
       }
+      this._assemble(0);
       this.shield.style.backgroundPosition=(index%5*25)+'% '+(index<5?'0':'100%');
       this.shield.setAttribute('aria-label','درع '+shield.name+' الأصلي');
       this.name.textContent='الدرع '+shield.name;
       this.subtitle.textContent=Number(shield.threshold).toLocaleString('en-US')+' كلمة متعلّمة';
       this.counter.textContent='0 XP';this.fill.style.width='0%';
       this.track.setAttribute('aria-valuenow','0');
-      this.hint.textContent='جارٍ احتساب النقاط…';
+      this.hint.textContent='جارٍ تركيب الدرع السابق…';
       const audio=await this._prepareAudio();
       if(ticket!==this.runId)return;
       this._scheduleAudio(audio);
@@ -145,10 +168,14 @@
         this.counter.textContent=value.toLocaleString('en-US')+' XP';
         this.fill.style.width=(p*100)+'%';
         this.track.setAttribute('aria-valuenow',String(Math.floor(p*100)));
+        if(p<1)this._assemble(p);
         if(p>=1){
           const since=t-this.duration;
           if(!this.evolving){
             this.evolving=true;
+            this._assemble(1); // All eight pieces must be fully fitted before they break.
+            for(const shard of this.shards){shard.style.opacity='';shard.style.transform='';}
+            this.root.classList.remove('is-assembling');
             this.root.classList.add('is-evolving','is-ripping');
             if(this.previousShield)this.previousShield.style.opacity='0';
             this.hint.textContent='الدرع السابق يتمزق…';
