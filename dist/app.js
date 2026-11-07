@@ -499,7 +499,7 @@ function renderWord() {
   const examples = word.examples || [],
     hasExtraGrammar = word.pos !== 'verb' && Boolean(word.declensionStem || word.forms?.length || word.verbForms);
   if (wordTab === 'meaning') {
-    $('#word-content').innerHTML = uiHtml(`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3>${examples.length ? '<button class="secondary" data-detail-examples>كل الأمثلة ←</button>' : ''}</div>${examples.length ? exampleHtml(examples[0]) : '<p class="source-note">لا يتوفر مثال مناسب مرتبط بهذه الكلمة في المصدر الحالي.</p>'}${hasExtraGrammar ? '' : degreeHtml(word)}${!hasExtraGrammar && word.plural ? `<p class="source-note">الجمع: <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(word.plural)}</b></p>` : ''}</section>${word.pos === 'verb' ? '<div id="inline-conjugation"></div>' : hasExtraGrammar ? grammarHtml(word) : ''}${word.note ? `<p class="source-note">${esc(t(word.note))}</p>` : ''}`);
+    $('#word-content').innerHTML = uiHtml(`<section class="reference-meaning"><div class="section-heading"><h3>الكلمة في سياقها</h3>${examples.length ? '<button class="secondary" data-detail-examples>كل الأمثلة ←</button>' : ''}</div>${examples.length ? exampleHtml(examples[0]) : '<p class="source-note">لا يتوفر مثال مناسب مرتبط بهذه الكلمة في المصدر الحالي.</p>'}${hasExtraGrammar ? '' : degreeHtml(word)}${!hasExtraGrammar && word.plural ? `<p class="source-note">الجمع: <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(word.plural)}</b></p>` : ''}</section>${word.pos === 'verb' ? '<div id="inline-conjugation"></div>' : hasExtraGrammar || (TARGET === 'de' && word.pos === 'noun') ? grammarHtml(word) : ''}${word.note ? `<p class="source-note">${esc(t(word.note))}</p>` : ''}`);
     if (word.pos === 'verb') renderInlineVerb(word);
   } else if (wordTab === 'examples') {
     $('#word-content').innerHTML = uiHtml(`<div class="section-heading"><h2>أمثلة على <b lang="${TARGET}">${esc(word.german)}</b></h2><span>${examples.length} أمثلة</span></div>${examples.length ? examples.map(exampleHtml).join('') : '<div class="empty">لا تتوفر أمثلة تطابق هذه الكلمة في المصدر الحالي.</div>'}`);
@@ -519,11 +519,40 @@ const CASES = [
   ['Dativ', 'حالة المفعول غير المباشر'],
   ['Akkusativ', 'حالة المفعول المباشر']
 ];
+// Keep inflection arrays indexed as Nominativ, Genitiv, Dativ, Akkusativ;
+// display rows in learner order: Nominativ, Akkusativ, Dativ, Genitiv.
+const CASE_ORDER = [0, 3, 2, 1];
+const GENDERS_DE = [
+  ['Maskulin', 'gender-m'], ['Feminin', 'gender-f'],
+  ['Neutrum', 'gender-n'], ['Plural', 'gender-pl']
+];
+const DEFINITE_ARTICLES = [
+  ['der', 'die', 'das', 'die'],
+  ['des', 'der', 'des', 'der'],
+  ['dem', 'der', 'dem', 'den'],
+  ['den', 'die', 'das', 'die']
+];
+function nounCaseReference(word) {
+  const active = word.article === 'der' ? 0 : word.article === 'die' ? 1 : word.article === 'das' ? 2 : -1;
+  return `<section class="grammar-section noun-case-reference">
+    <h3>أدوات التعريف حسب الحالة الإعرابية</h3>
+    <p class="grammar-reference-note">جدول عام لأدوات التعريف (der / die / das)، وليس تصريف الكلمة نفسها.</p>
+    <div class="noun-case-scroll"><table class="noun-case-table" dir="ltr">
+    <thead><tr><th scope="col" aria-label="Kasus">Kasus</th>${GENDERS_DE.map(([name, color], index) =>
+      `<th scope="col" lang="de" class="${color}${index === active ? ' is-current' : ''}">${name}</th>`).join('')}</tr></thead>
+    <tbody>${CASE_ORDER.map(index => `<tr>
+      <th scope="row"><span lang="de">${CASES[index][0]}</span>${NATIVE === 'ar' ?
+      `<small>${CASES[index][1]}</small>` : ''}</th>
+      ${GENDERS_DE.map(([_, color], gender) =>
+       `<td class="${color}${gender === active ? ' is-current' : ''}" lang="de">${DEFINITE_ARTICLES[index][gender]}</td>`).join('')}
+    </tr>`).join('')}</tbody></table></div>
+    </section>`;
+}
 function adjectiveTables(word) {
   const stem = word.declensionStem;
-  const genders = [[t("المذكر"), 'gender-m'], [t("المؤنث"), 'gender-f'], [t("محايد"), 'gender-n'], [t("جمع"), 'gender-pl']];
+  const genders = GENDERS_DE;
   const sets = [[t("تصريف قوي \u2014 بدون أداة"), [['er', 'en', 'em', 'en'], ['e', 'er', 'er', 'e'], ['es', 'en', 'em', 'es'], ['e', 'er', 'en', 'e']], null], [t("تصريف ضعيف \u2014 مع أداة التعريف"), [['e', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['e', 'en', 'en', 'e'], ['en', 'en', 'en', 'en']], [['der', 'des', 'dem', 'den'], ['die', 'der', 'der', 'die'], ['das', 'des', 'dem', 'das'], ['die', 'der', 'den', 'die']]], [t("تصريف مختلط \u2014 مع أداة التنكير"), [['er', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['es', 'en', 'en', 'es'], ['en', 'en', 'en', 'en']], [['ein', 'eines', 'einem', 'einen'], ['eine', 'einer', 'einer', 'eine'], ['ein', 'eines', 'einem', 'ein'], ['keine', 'keiner', 'keinen', 'keine']]]];
-  return sets.map(([title, endings, articles]) => `<section class="grammar-section"><h3>${title}</h3><div class="grammar-grid">${genders.map(([label, color], gender) => `<div class="grammar-block ${color}"><h4>${label}</h4><table class="grammar-table"><tbody>${CASES.map(([name, explanation], index) => `<tr><th scope="row"><span class="grammar-case-name" lang="de" dir="ltr">${name}</span>${NATIVE === "ar" ? `<small class="grammar-case-help">${explanation}</small>` : ""}</th><td lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${articles ? esc(articles[gender][index]) + ' ' : ''}${esc(stem)}<span class="ending">${endings[gender][index]}</span></td></tr>`).join('')}</tbody></table></div>`).join('')}</div></section>`).join('') + `<section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3><div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div></section>`;
+  return sets.map(([title, endings, articles]) => `<section class="grammar-section"><h3>${title}</h3><div class="grammar-grid">${genders.map(([label, color], gender) => `<div class="grammar-block ${color}"><h4 lang="de" dir="ltr">${label}</h4><table class="grammar-table"><tbody>${CASE_ORDER.map(index => { const [name, explanation] = CASES[index]; return `<tr><th scope="row"><span class="grammar-case-name" lang="de" dir="ltr">${name}</span>${NATIVE === "ar" ? `<small class="grammar-case-help">${explanation}</small>` : ""}</th><td lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${articles ? esc(articles[gender][index]) + ' ' : ''}${esc(stem)}<span class="ending">${endings[gender][index]}</span></td></tr>`; }).join('')}</tbody></table></div>`).join('')}</div></section>`).join('') + `<section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3><div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div></section>`;
 }
 function addedLetters(base, text) {
   const a = Array.from(base.toLocaleLowerCase()),
@@ -611,7 +640,7 @@ function grammarHtml(word) {
   });
   if (word.pos === 'verb') return verbGrammarHtml(word);
   let html = `<section class="grammar-section"><h2>تصريفات <b lang="${TARGET}">${esc(word.german)}</b></h2>${degreeHtml(word)}`;
-  if (word.pos === 'noun') html += `<div class="example-card"><p>أداة الاسم: <b lang="${TARGET}">${word.article ? articleHtml(word.article) : '—'}</b></p>${word.plural ? `<p>الجمع: <b lang="${TARGET}">${esc(word.plural)}</b></p>` : ''}</div>`;
+  if (word.pos === 'noun') html += `<div class="example-card"><p>أداة الاسم: <b lang="${TARGET}">${word.article ? articleHtml(word.article) : '—'}</b></p>${word.plural ? `<p><span lang="de">Plural</span>: <b lang="${TARGET}">${esc(word.plural)}</b></p>` : ''}</div>${nounCaseReference(word)}`;
   if (word.verbForms) html += `<p class="source-note">الصيغ مع ضمير المفرد الغائب (هو / هي)، ما لم يُذكر الضمير داخل الصيغة.</p><div class="grammar-grid">${Object.entries(word.verbForms).map(([key, value]) => `<div class="grammar-block"><h4>${{
     present: 'Präsens',
     past: 'Präteritum',
@@ -620,7 +649,7 @@ function grammarHtml(word) {
   html += '</section>';
   if (word.pos === 'adjective' && word.declensionStem) html += adjectiveTables(word);
   if (word.forms?.length) html += `<section class="grammar-section"><h3>صيغ الكلمة من المصدر</h3><div class="grammar-grid">${word.forms.slice(0, 80).map(form => `<div class="grammar-block"><strong lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(form.form || form.text)}</strong><small dir="ltr">${esc((form.tags || []).join(' · '))}</small></div>`).join('')}</div></section>`;
-  if (!word.declensionStem && !word.forms?.length && !word.verbForms && !word.plural) html += '<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
+  if (word.pos !== 'noun' && !word.declensionStem && !word.forms?.length && !word.verbForms && !word.plural) html += '<p class="source-note">لا تتوفر تصريفات إضافية موثّقة في بيانات هذه الكلمة.</p>';
   return html;
 }
 function nextWord(options = {}) {

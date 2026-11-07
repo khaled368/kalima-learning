@@ -17,6 +17,7 @@ on:
       - "tests/rank-celebration.test.cjs"
       - "tests/rank-evolution.test.cjs"
       - "tests/verb-tense-labels.test.cjs"
+      - "tests/german-cases-genders.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -54,6 +55,9 @@ jobs:
 
       - name: Verify German tense labels on verb conjugation tabs
         run: node tests/verb-tense-labels.test.cjs
+
+      - name: Verify German noun case and gender labels
+        run: node tests/german-cases-genders.test.cjs
 
       - name: Verify missed-word reviews
         run: node tests/review-mistakes.test.cjs

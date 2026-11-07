@@ -623,3 +623,23 @@ button{transition:background-color .12s ease,color .12s ease,border-color .12s e
 [data-article="der"]{color:#82b3df!important}
 [data-article="die"]{color:#ef9ec4!important}
 [data-article="das"]{color:#c7beb0!important}
+
+
+/* German grammar reference: four cases x four genders, scrolls on narrow phones. */
+.noun-case-reference{margin-top:18px}
+.noun-case-reference .grammar-reference-note{font-size:12px;line-height:1.8;color:var(--muted);margin:6px 0 12px}
+.noun-case-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.noun-case-table{width:100%;min-width:390px;border-collapse:separate;border-spacing:0;direction:ltr;
+ font:500 14px/1.5 var(--reading-font,var(--latin));background:#101824;border:1px solid #354961;border-radius:12px;overflow:hidden}
+.noun-case-table th,.noun-case-table td{padding:11px 7px;text-align:center;border-bottom:1px solid #304257;white-space:nowrap}
+.noun-case-table th:first-child{text-align:left;padding-left:12px}
+.noun-case-table tbody tr:last-child th,.noun-case-table tbody tr:last-child td{border-bottom:0}
+.noun-case-table thead th{background:#202f42;color:#e5edf5;font-size:12px;font-weight:700}
+.noun-case-table tbody th{font-weight:700;color:#d9e6ef;font-size:13px}
+.noun-case-table tbody th small{display:block;font:400 10px/1.5 var(--font);color:#aebed0;margin-top:3px;white-space:normal;max-width:100px}
+.noun-case-table td{font-size:18px;color:#f0f2f4}
+.noun-case-table .is-current{background:#284355;box-shadow:inset 0 0 0 1px #5e8d98}
+.noun-case-table td.gender-m{color:#82b3df!important}
+.noun-case-table td.gender-f{color:#ef9ec4!important}
+.noun-case-table td.gender-n{color:#c7beb0!important}
+.noun-case-table td.gender-pl{color:#d3ac73!important}
