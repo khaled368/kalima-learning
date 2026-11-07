@@ -19,4 +19,32 @@ assert.match(app,/\['dem', 'der', 'dem', 'den'\]/);
 assert.match(app,/\['des', 'der', 'des', 'der'\]/);
 assert.match(css,/noun-case-scroll/,'table remains usable on small screens');
 assert.match(html,/german-cases-genders-v11/,'cache bust ships the change');
-console.log('PASS: case/gender German labels and correct definite-article matrix for noun/adjective grammar.');
+const vm=require('node:vm');
+const start=app.indexOf('const CASES = [');
+const end=app.indexOf('function addedLetters(',start);
+assert.ok(start>=0&&end>start);
+const selectors=app.slice(start,end);
+const t=word=>word;
+const context={t,NATIVE:'ar',TARGET:'de',COURSE:{dir:()=> 'ltr'},esc:value=>String(value)};
+const {nounCaseReference,adjectiveTables}=vm.runInNewContext(selectors+'\n({nounCaseReference,adjectiveTables})',context);
+const noun=nounCaseReference({article:'der'});
+assert.match(noun,/<th scope="col"[^>]*>Maskulin<\/th>/);
+assert.ok(noun.indexOf('Nominativ')<noun.indexOf('Akkusativ'));
+assert.ok(noun.indexOf('Akkusativ')<noun.indexOf('Dativ'));
+assert.ok(noun.indexOf('Dativ')<noun.indexOf('Genitiv'));
+for(const [name,articles] of [
+  ['Nominativ',['der','die','das','die']],
+  ['Akkusativ',['den','die','das','die']],
+  ['Dativ',['dem','der','dem','den']],
+  ['Genitiv',['des','der','des','der']]
+]){
+  const row=noun.split('<tr>').find(row=>row.includes(name));
+  assert.ok(row,'case rendered: '+name);
+  const found=[...row.matchAll(/<td[^>]*>(.*?)<\/td>/g)].map(match=>match[1]);
+  assert.deepEqual(found,articles,'correct articles in '+name);
+}
+const adjective=adjectiveTables({declensionStem:'klein',german:'klein'});
+assert.ok(adjective.includes('Maskulin')&&adjective.includes('Feminin')&&adjective.includes('Neutrum')&&adjective.includes('Plural'));
+const strong=adjective.split('<section class="grammar-section">')[1];
+assert.ok(strong.indexOf('Nominativ')<strong.indexOf('Akkusativ')&&strong.indexOf('Akkusativ')<strong.indexOf('Dativ')&&strong.indexOf('Dativ')<strong.indexOf('Genitiv'));
+console.log('PASS: case/gender German names and accurate noun/adjective cases, article grid, declension ordering.');
