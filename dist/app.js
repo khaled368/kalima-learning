@@ -552,8 +552,10 @@ function nounDeclensionForms(word){
    name==='Gedanke'?'Gedankens':name==='Frieden'?'Friedens':null;
  const explicitGenitive=String(word.grammar?.genitive||word.genitive||'').trim().replace(/^(?:des|der)\s+/i,'');
  // Strong endings are usable only for ordinary nouns; ambiguous forms stay blank.
- const regularGenitive=/(?:nis|us|ismus)$/i.test(name)||gender===0&&/e$/i.test(name)
-   ?null:name+(/(?:s|ß|x|z|tz|sch)$/i.test(name)||
+ const indeclinable=/ismus$/i.test(name)||['Status','Modus','Bonus','Zirkus','Fokus','Rhythmus','Kaktus'].includes(name);
+ const regularGenitive=indeclinable?name:gender===0&&/e$/i.test(name)?null:
+   /nis$/i.test(name)?name+'ses':
+   name+(/(?:s|ß|x|z|tz|sch)$/i.test(name)||
      ((name.match(/[aeiouäöü]+/gi)||[]).length===1&&!/(?:chen|lein)$/i.test(name))?'es':'s');
  const genitive=gender===1?name:explicitGenitive||knownGenitive||weak||regularGenitive;
  const dativePlural=plural?(/[ns]$/i.test(plural)?plural:plural+'n'):null;
