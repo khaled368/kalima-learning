@@ -26,7 +26,7 @@ assert.ok(start>=0&&end>start);
 const selectors=app.slice(start,end);
 const t=word=>word;
 const context={t,NATIVE:'ar',TARGET:'de',COURSE:{dir:()=> 'ltr'},esc:value=>String(value)};
-const {nounCaseReference,adjectiveTables}=vm.runInNewContext(selectors+'\n({nounCaseReference,adjectiveTables})',context);
+const {nounCaseReference,adjectiveTables,nounDeclensionForms}=vm.runInNewContext(selectors+'\n({nounCaseReference,adjectiveTables,nounDeclensionForms})',context);
 const noun=nounCaseReference({article:'der'});
 assert.match(noun,/<th scope="col"[^>]*>Maskulin<\/th>/);
 assert.ok(noun.indexOf('Nominativ')<noun.indexOf('Akkusativ'));
@@ -63,8 +63,7 @@ assert.match(css,/#word-dialog \.noun-case-table\{[^}]*min-width:0/,'four-gender
 assert.match(css,/#word-dialog \.noun-case-scroll\{[^}]*overflow-x:hidden/,'no horizontal article-table scroll');
 assert.match(app,/function nounDeclensionForms\(word\)/,'forms derive from noun itself');
 assert.match(app,/class="noun-forms-table"/,'the noun form table is displayed');
-const parsed=vm.runInNewContext(selectors+'\n({nounDeclensionForms})',context);
-const nouns=parsed.nounDeclensionForms;
+const nouns=nounDeclensionForms;
 assert.deepEqual(Array.from(nouns({article:'der',german:'Tisch',plural:'Tische'}).singular),['Tisch','Tisch','Tisch','Tisches']);
 assert.deepEqual(Array.from(nouns({article:'der',german:'Tisch',plural:'Tische'}).plural),['Tische','Tische','Tischen','Tische']);
 assert.deepEqual(Array.from(nouns({article:'die',german:'Frau',plural:'Frauen'}).singular),['Frau','Frau','Frau','Frau']);
