@@ -1,0 +1,22 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const dir=path.join(__dirname,'../dist');
+const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');
+const css=fs.readFileSync(path.join(dir,'styles.css'),'utf8');
+const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
+assert.match(app,/const CASE_ORDER = \[0, 3, 2, 1\]/,'display Nominativ/Akkusativ/Dativ/Genitiv while preserving inflection indexes');
+for (const label of ['Nominativ','Akkusativ','Dativ','Genitiv','Maskulin','Feminin','Neutrum','Plural'])
+ assert.ok(app.includes(label),'all German grammar labels are available: '+label);
+assert.match(app,/const genders = GENDERS_DE/,'adjective labels use German names');
+assert.match(app,/CASE_ORDER\.map\(index => \{ const \[name, explanation\] = CASES\[index\]/,'adjective rows use ordered case index');
+assert.match(app,/nounCaseReference\(word\)/,'noun overview has a case and gender reference');
+assert.match(app,/DEFINITE_ARTICLES\[index\]\[gender\]/,'reference articles indexed to correct case');
+assert.match(app,/\['der', 'die', 'das', 'die'\]/);
+assert.match(app,/\['den', 'die', 'das', 'die'\]/);
+assert.match(app,/\['dem', 'der', 'dem', 'den'\]/);
+assert.match(app,/\['des', 'der', 'des', 'der'\]/);
+assert.match(css,/noun-case-scroll/,'table remains usable on small screens');
+assert.match(html,/german-cases-genders-v11/,'cache bust ships the change');
+console.log('PASS: case/gender German labels and correct definite-article matrix for noun/adjective grammar.');
