@@ -599,11 +599,11 @@ function coloredVerbForm(entry, form, tense) {
 function verbGrammarHtml(word) {
   const entry = WORT_VERBS.lookup(word);
   if (!entry) return '<div class="empty">لم يُعثر على تصريف لهذا المدخل. جرّب البحث عن صيغة المصدر للفعل.</div>';
-  const tenses = [['present', t("المضارع")], ['preterite', t("الماضي البسيط")], ['perfect', t("الماضي المركّب")]];
+  const tenses = [['present', 'Präsens'], ['preterite', 'Präteritum'], ['perfect', 'Perfekt']];
   const pronouns = entry.pronouns || ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'];
   const labels = [t("أنا"), t("أنت"), t("هو / هي"), t("نحن"), t("أنتم"), t("هم / حضرتك")];
   const forms = entry[verbTense] || [];
-  return `<section class="verb-section"><div class="verb-base-heading"><h2>تصريف <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(entry.infinitive)}</b></h2>${word.german.toLocaleLowerCase() !== entry.infinitive.toLocaleLowerCase() ? `<p class="verb-note">الكلمة <b lang="${TARGET}">${esc(word.german)}</b> مرتبطة بالفعل الأصلي المعروض هنا.</p>` : ''}</div><div class="verb-tense-tabs" role="group" aria-label="زمن تصريف الفعل">${tenses.map(([key, label]) => `<button class="secondary" data-verb-tense="${key}" aria-pressed="${verbTense === key}">${label}</button>`).join('')}</div><p class="verb-legend">الأحرف المضافة أو المتغيّرة فقط ملوّنة. جذر الفعل والضمائر والأفعال المساعدة بلون عادي.</p><table class="verb-table" dir="ltr"><caption class="sr-only">${esc(tenses.find(t => t[0] === verbTense)[1])} · ${esc(entry.infinitive)}</caption><tbody>${forms.map((form, index) => `<tr><th scope="row" class="verb-pronoun"><span lang="${TARGET}">${esc(pronouns[index])}</span><span aria-hidden="true"> · </span><span lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${labels[index]}</span></th><td class="verb-form" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${coloredVerbForm(entry, form, verbTense)}</td></tr>`).join('')}</tbody></table>${(entry.notes || []).map(note => `<p class="verb-note">${esc(note)}</p>`).join('')}</section>`;
+  return `<section class="verb-section"><div class="verb-base-heading"><h2>تصريف <b lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(entry.infinitive)}</b></h2>${word.german.toLocaleLowerCase() !== entry.infinitive.toLocaleLowerCase() ? `<p class="verb-note">الكلمة <b lang="${TARGET}">${esc(word.german)}</b> مرتبطة بالفعل الأصلي المعروض هنا.</p>` : ''}</div><div class="verb-tense-tabs" role="group" aria-label="زمن تصريف الفعل">${tenses.map(([key, label]) => `<button class="secondary" lang="de" dir="ltr" data-verb-tense="${key}" aria-pressed="${verbTense === key}">${label}</button>`).join('')}</div><p class="verb-legend">الأحرف المضافة أو المتغيّرة فقط ملوّنة. جذر الفعل والضمائر والأفعال المساعدة بلون عادي.</p><table class="verb-table" dir="ltr"><caption class="sr-only">${esc(tenses.find(t => t[0] === verbTense)[1])} · ${esc(entry.infinitive)}</caption><tbody>${forms.map((form, index) => `<tr><th scope="row" class="verb-pronoun"><span lang="${TARGET}">${esc(pronouns[index])}</span><span aria-hidden="true"> · </span><span lang="${NATIVE}" dir="${COURSE.dir(NATIVE)}">${labels[index]}</span></th><td class="verb-form" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${coloredVerbForm(entry, form, verbTense)}</td></tr>`).join('')}</tbody></table>${(entry.notes || []).map(note => `<p class="verb-note">${esc(note)}</p>`).join('')}</section>`;
 }
 function grammarHtml(word) {
   if (TARGET !== 'de') return WORT_GRAMMAR.render(word, {
@@ -613,9 +613,9 @@ function grammarHtml(word) {
   let html = `<section class="grammar-section"><h2>تصريفات <b lang="${TARGET}">${esc(word.german)}</b></h2>${degreeHtml(word)}`;
   if (word.pos === 'noun') html += `<div class="example-card"><p>أداة الاسم: <b lang="${TARGET}">${word.article ? articleHtml(word.article) : '—'}</b></p>${word.plural ? `<p>الجمع: <b lang="${TARGET}">${esc(word.plural)}</b></p>` : ''}</div>`;
   if (word.verbForms) html += `<p class="source-note">الصيغ مع ضمير المفرد الغائب (هو / هي)، ما لم يُذكر الضمير داخل الصيغة.</p><div class="grammar-grid">${Object.entries(word.verbForms).map(([key, value]) => `<div class="grammar-block"><h4>${{
-    present: t("المضارع"),
-    past: t("الماضي البسيط"),
-    perfect: t("الماضي المركّب (Perfekt)")
+    present: 'Präsens',
+    past: 'Präteritum',
+    perfect: 'Perfekt'
   }[key] || esc(key)}</h4><p lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${esc(value)}</p></div>`).join('')}</div>`;
   html += '</section>';
   if (word.pos === 'adjective' && word.declensionStem) html += adjectiveTables(word);
