@@ -723,3 +723,42 @@ button{transition:background-color .12s ease,color .12s ease,border-color .12s e
 #word-dialog .noun-forms-table td.gender-f{color:#ef9ec4!important}
 #word-dialog .noun-forms-table td.gender-n{color:#c7beb0!important}
 #word-dialog .noun-forms-table td.gender-pl{color:#d3ac73!important}
+
+
+/* High-contrast noun article in both light and dark themes. The article
+   stays explicitly legible even when the surrounding page uses light colors. */
+#word-dialog .word-content .noun-summary-card{
+ background:#142f43;border:1px solid #42627b;border-radius:16px;
+ padding:16px 18px;margin:15px 0 18px;min-height:0;
+ color:#f0f7ff;box-shadow:0 3px 15px #06192b24;
+}
+#word-dialog .noun-article-line{
+ display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;
+ direction:rtl;gap:12px;margin:0;min-height:45px;line-height:1.5;
+}
+#word-dialog .noun-article-label{
+ color:#f0f7ff!important;font:750 19px/1.5 var(--reading-font,var(--font));
+ letter-spacing:0;opacity:1;text-shadow:0 1px 1px #0004;
+}
+#word-dialog .noun-article-value{
+ display:inline-flex;align-items:center;justify-content:center;min-width:63px;
+ padding:5px 13px;border-radius:11px;border:1.5px solid #89b7dc;
+ background:#edf6ff;font:850 23px/1.3 var(--reading-font,var(--latin));
+ direction:ltr;text-align:center;box-shadow:0 2px 7px #0002;
+}
+#word-dialog .noun-article-value [data-article="der"]{color:#15548e!important}
+#word-dialog .noun-article-value [data-article="die"]{color:#9e215b!important}
+#word-dialog .noun-article-value [data-article="das"]{color:#685632!important}
+#word-dialog .noun-plural-line{
+ display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;
+ gap:10px;direction:ltr;margin:13px 0 0;padding-top:10px;
+ border-top:1px solid #42627b;color:#e4edf7!important;
+ font:500 16px/1.55 var(--reading-font,var(--latin));
+}
+#word-dialog .noun-plural-line>span{font-weight:700;color:#c2d9e9!important}
+#word-dialog .noun-plural-line>b{font-size:18px;font-weight:700;color:#fff!important}
+@media(max-width:380px){
+ #word-dialog .word-content .noun-summary-card{padding:13px}
+ #word-dialog .noun-article-label{font-size:17px}
+ #word-dialog .noun-article-value{font-size:21px;min-width:58px}
+}

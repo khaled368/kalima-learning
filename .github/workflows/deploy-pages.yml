@@ -18,6 +18,7 @@ on:
       - "tests/rank-evolution.test.cjs"
       - "tests/verb-tense-labels.test.cjs"
       - "tests/german-cases-genders.test.cjs"
+      - "tests/noun-article-contrast.test.cjs"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -58,6 +59,9 @@ jobs:
 
       - name: Verify German noun case and gender labels
         run: node tests/german-cases-genders.test.cjs
+
+      - name: Verify noun article readability in light and dark themes
+        run: node tests/noun-article-contrast.test.cjs
 
       - name: Verify missed-word reviews
         run: node tests/review-mistakes.test.cjs

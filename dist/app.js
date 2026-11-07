@@ -708,7 +708,11 @@ function grammarHtml(word) {
   });
   if (word.pos === 'verb') return verbGrammarHtml(word);
   let html = `<section class="grammar-section"><h2>تصريفات <b lang="${TARGET}">${esc(word.german)}</b></h2>${degreeHtml(word)}`;
-  if (word.pos === 'noun') html += `<div class="example-card"><p>أداة الاسم: <b lang="${TARGET}">${word.article ? articleHtml(word.article) : '—'}</b></p>${word.plural ? `<p><span lang="de">Plural</span>: <b lang="${TARGET}">${esc(word.plural)}</b></p>` : ''}</div>${nounCaseReference(word)}`;
+  if (word.pos === 'noun') html += `<div class="example-card noun-summary-card">
+  <p class="noun-article-line"><span class="noun-article-label">أداة الاسم</span>
+  <b class="noun-article-value" lang="de" dir="ltr">${word.article ? articleHtml(word.article) : '—'}</b></p>
+  ${word.plural ? `<p class="noun-plural-line"><span lang="de" dir="ltr">Plural</span><b lang="de" dir="ltr">${esc(word.plural)}</b></p>` : ''}
+  </div>${nounCaseReference(word)}`;
   if (word.verbForms) html += `<p class="source-note">الصيغ مع ضمير المفرد الغائب (هو / هي)، ما لم يُذكر الضمير داخل الصيغة.</p><div class="grammar-grid">${Object.entries(word.verbForms).map(([key, value]) => `<div class="grammar-block"><h4>${{
     present: 'Präsens',
     past: 'Präteritum',
