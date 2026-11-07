@@ -532,21 +532,63 @@ const DEFINITE_ARTICLES = [
   ['dem', 'der', 'dem', 'den'],
   ['den', 'die', 'das', 'die']
 ];
+// Irregular nouns are handled explicitly. Unknown endings never use made-up forms.
+const WEAK_NOUNS=Object.freeze({
+ Mensch:'Menschen',Junge:'Jungen',Kollege:'Kollegen',Kunde:'Kunden',Student:'Studenten',
+ Patient:'Patienten',Präsident:'Präsidenten',Polizist:'Polizisten',Journalist:'Journalisten',
+ Tourist:'Touristen',Elefant:'Elefanten',Prinz:'Prinzen',Herr:'Herrn',Nachbar:'Nachbarn',
+ Löwe:'Löwen',Bär:'Bären',Bauer:'Bauern',Held:'Helden',Soldat:'Soldaten',
+ Pilot:'Piloten',Fotograf:'Fotografen',Architekt:'Architekten',Experte:'Experten',
+ Name:'Namen',Gedanke:'Gedanken',Wille:'Willen',Frieden:'Frieden',Buchstabe:'Buchstaben'
+});
+function nounDeclensionForms(word){
+ const name=String(word.german||'').trim();
+ const gender=word.article==='der'?0:word.article==='die'?1:word.article==='das'?2:-1;
+ const rawPlural=String(word.plural||'').trim().replace(/^die\s+/i,'');
+ const plural=/^(?:-|—|kein(?:e|en)?\s+Plural|ohne\s+Plural)$/i.test(rawPlural)?'':rawPlural;
+ if(!name||gender<0)return null;
+ const weak=gender===0?WEAK_NOUNS[name]:null;
+ const knownGenitive=name==='Name'?'Namens':name==='Wille'?'Willens':
+   name==='Gedanke'?'Gedankens':name==='Frieden'?'Friedens':null;
+ const explicitGenitive=String(word.grammar?.genitive||word.genitive||'').trim().replace(/^(?:des|der)\s+/i,'');
+ // Strong endings are usable only for ordinary nouns; ambiguous forms stay blank.
+ const regularGenitive=/(?:nis|us|ismus)$/i.test(name)||gender===0&&/e$/i.test(name)
+   ?null:name+(/(?:s|ß|x|z|tz|sch)$/i.test(name)||
+     ((name.match(/[aeiouäöü]+/gi)||[]).length===1&&!/(?:chen|lein)$/i.test(name))?'es':'s');
+ const genitive=gender===1?name:explicitGenitive||knownGenitive||weak||regularGenitive;
+ const dativePlural=plural?(/[ns]$/i.test(plural)?plural:plural+'n'):null;
+ return {gender,singular:[name,weak||name,weak||name,genitive],
+   plural:plural?[plural,plural,dativePlural,plural]:null};
+}
 function nounCaseReference(word) {
-  const active = word.article === 'der' ? 0 : word.article === 'die' ? 1 : word.article === 'das' ? 2 : -1;
-  return `<section class="grammar-section noun-case-reference">
-    <h3>أدوات التعريف حسب الحالة الإعرابية</h3>
-    <p class="grammar-reference-note">جدول عام لأدوات التعريف (der / die / das)، وليس تصريف الكلمة نفسها.</p>
-    <div class="noun-case-scroll"><table class="noun-case-table" dir="ltr">
-    <thead><tr><th scope="col" aria-label="Kasus">Kasus</th>${GENDERS_DE.map(([name, color], index) =>
-      `<th scope="col" lang="de" class="${color}${index === active ? ' is-current' : ''}">${name}</th>`).join('')}</tr></thead>
-    <tbody>${CASE_ORDER.map(index => `<tr>
-      <th scope="row"><span lang="de">${CASES[index][0]}</span>${NATIVE === 'ar' ?
-      `<small>${CASES[index][1]}</small>` : ''}</th>
-      ${GENDERS_DE.map(([_, color], gender) =>
-       `<td class="${color}${gender === active ? ' is-current' : ''}" lang="de">${DEFINITE_ARTICLES[index][gender]}</td>`).join('')}
-    </tr>`).join('')}</tbody></table></div>
-    </section>`;
+ const forms=nounDeclensionForms(word);
+ const active=forms?.gender??-1;
+ const name=String(word.german||'').trim();
+ const actual=forms?`<section class="grammar-section noun-word-declension">
+   <h3>تصريف الكلمة <b lang="de" dir="ltr">${esc(name)}</b></h3>
+   <table class="noun-forms-table" dir="ltr">
+     <thead><tr><th scope="col" lang="de">Kasus</th><th scope="col" lang="de">Singular</th><th scope="col" lang="de">Plural</th></tr></thead>
+     <tbody>${CASE_ORDER.map(index=>{
+       const singular=forms.singular[index];
+       const plural=forms.plural?.[index];
+       return `<tr><th scope="row" lang="de">${CASES[index][0]}</th>
+         <td lang="de" class="${GENDERS_DE[active][1]}">${singular?`<span class="case-article">${DEFINITE_ARTICLES[index][active]}</span> ${esc(singular)}`:'—'}</td>
+         <td lang="de" class="gender-pl">${plural?`<span class="case-article">${DEFINITE_ARTICLES[index][3]}</span> ${esc(plural)}`:'—'}</td></tr>`;
+     }).join('')}</tbody>
+   </table>
+   <p class="grammar-reference-note">— تعني عدم توفر صيغة مؤكدة؛ بعض الأسماء لها تصريفات شاذة.</p>
+ </section>`:'';
+ return `${actual}<section class="grammar-section noun-case-reference">
+   <h3>أدوات التعريف حسب الحالة الإعرابية</h3>
+   <div class="noun-case-scroll"><table class="noun-case-table" dir="ltr">
+   <thead><tr><th scope="col" lang="de">Kasus</th>${GENDERS_DE.map(([label,color],index)=>
+     `<th scope="col" lang="de" class="${color}${index===active?' is-current':''}">${label}</th>`).join('')}</tr></thead>
+   <tbody>${CASE_ORDER.map(index=>`<tr>
+      <th scope="row"><span lang="de">${CASES[index][0]}</span>${NATIVE==='ar'?`<small>${CASES[index][1]}</small>`:''}</th>
+      ${GENDERS_DE.map(([_,color],gender)=>
+        `<td lang="de" class="${color}${gender===active?' is-current':''}">${DEFINITE_ARTICLES[index][gender]}</td>`).join('')}
+   </tr>`).join('')}</tbody></table></div>
+ </section>`;
 }
 function adjectiveTables(word) {
   const stem = word.declensionStem;
