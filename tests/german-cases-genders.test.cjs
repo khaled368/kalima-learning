@@ -18,7 +18,7 @@ assert.match(app,/\['den', 'die', 'das', 'die'\]/);
 assert.match(app,/\['dem', 'der', 'dem', 'den'\]/);
 assert.match(app,/\['des', 'der', 'des', 'der'\]/);
 assert.match(css,/noun-case-scroll/,'table remains usable on small screens');
-assert.match(html,/compact-declension-v12/,'cache bust ships the compact matrices');
+assert.match(html,/grammar-green-fit-nouns-v13/,'cache bust ships the compact noun tables');
 const vm=require('node:vm');
 const start=app.indexOf('const CASES = [');
 const end=app.indexOf('function addedLetters(',start);
@@ -57,4 +57,26 @@ assert.match(adjective,/klein<\/span><span class="ending">er<\/span>/,'strong ma
 assert.match(adjective,/class="declension-article">der<\/span>/,'definite article appears in weak pattern');
 assert.match(css,/\.declension-table-scroll\{[^}]*overflow-x:auto/,'mobile can scroll sideways instead of growing vertically');
 assert.doesNotMatch(adjective,/class="grammar-block gender-/,'old stacked gender blocks removed');
+
+assert.match(css,/#word-dialog \.verb-tense-tabs button\[aria-pressed="true"\]\{[^}]*background:#42c579!important/,'selected verb tense turns bright green');
+assert.match(css,/#word-dialog \.noun-case-table\{[^}]*min-width:0/,'four-gender grid fits the viewport');
+assert.match(css,/#word-dialog \.noun-case-scroll\{[^}]*overflow-x:hidden/,'no horizontal article-table scroll');
+assert.match(app,/function nounDeclensionForms\(word\)/,'forms derive from noun itself');
+assert.match(app,/class="noun-forms-table"/,'the noun form table is displayed');
+const parsed=vm.runInNewContext(selectors+'\n({nounDeclensionForms})',context);
+const nouns=parsed.nounDeclensionForms;
+assert.deepEqual(Array.from(nouns({article:'der',german:'Tisch',plural:'Tische'}).singular),['Tisch','Tisch','Tisch','Tisches']);
+assert.deepEqual(Array.from(nouns({article:'der',german:'Tisch',plural:'Tische'}).plural),['Tische','Tische','Tischen','Tische']);
+assert.deepEqual(Array.from(nouns({article:'die',german:'Frau',plural:'Frauen'}).singular),['Frau','Frau','Frau','Frau']);
+assert.deepEqual(Array.from(nouns({article:'der',german:'Mensch',plural:'Menschen'}).singular),['Mensch','Menschen','Menschen','Menschen']);
+assert.deepEqual(Array.from(nouns({article:'der',german:'Name',plural:'Namen'}).singular),['Name','Namen','Namen','Namens']);
+assert.equal(nouns({article:'das',german:'Haus',plural:'Häuser'}).singular[3],'Hauses');
+assert.equal(nouns({article:'das',german:'Auto',plural:'Autos'}).plural[2],'Autos');
+const words=nounCaseReference({article:'der',german:'Tisch',plural:'Tische'});
+assert.match(words,/noun-forms-table/);
+assert.match(words,/des<\/span> Tisches/);
+assert.match(words,/den<\/span> Tischen/);
+assert.match(words,/noun-case-table/,'the articles reference is still present');
+assert.match(nounCaseReference({article:'das',german:'Wasser'}),/—/,'do not invent a missing plural');
+
 console.log('PASS: compact declension tables are horizontal, accessible, correct and only one opens initially.');
