@@ -9,8 +9,8 @@ const html=fs.readFileSync(path.join(dir,'index.html'),'utf8');
 assert.match(app,/const CASE_ORDER = \[0, 3, 2, 1\]/,'display Nominativ/Akkusativ/Dativ/Genitiv while preserving inflection indexes');
 for (const label of ['Nominativ','Akkusativ','Dativ','Genitiv','Maskulin','Feminin','Neutrum','Plural'])
  assert.ok(app.includes(label),'all German grammar labels are available: '+label);
-assert.match(app,/const genders = GENDERS_DE/,'adjective labels use German names');
-assert.match(app,/CASE_ORDER\.map\(index => \{ const \[name, explanation\] = CASES\[index\]/,'adjective rows use ordered case index');
+assert.match(app,/GENDERS_DE\.map/,'adjective labels use German column names');
+assert.match(app,/CASE_ORDER\.map\(caseIndex =>/,'adjective rows use ordered case index');
 assert.match(app,/nounCaseReference\(word\)/,'noun overview has a case and gender reference');
 assert.match(app,/DEFINITE_ARTICLES\[index\]\[gender\]/,'reference articles indexed to correct case');
 assert.match(app,/\['der', 'die', 'das', 'die'\]/);
@@ -18,7 +18,7 @@ assert.match(app,/\['den', 'die', 'das', 'die'\]/);
 assert.match(app,/\['dem', 'der', 'dem', 'den'\]/);
 assert.match(app,/\['des', 'der', 'des', 'der'\]/);
 assert.match(css,/noun-case-scroll/,'table remains usable on small screens');
-assert.match(html,/german-cases-genders-v11/,'cache bust ships the change');
+assert.match(html,/compact-declension-v12/,'cache bust ships the compact matrices');
 const vm=require('node:vm');
 const start=app.indexOf('const CASES = [');
 const end=app.indexOf('function addedLetters(',start);
@@ -44,7 +44,17 @@ for(const [name,articles] of [
   assert.deepEqual(found,articles,'correct articles in '+name);
 }
 const adjective=adjectiveTables({declensionStem:'klein',german:'klein'});
-assert.ok(adjective.includes('Maskulin')&&adjective.includes('Feminin')&&adjective.includes('Neutrum')&&adjective.includes('Plural'));
-const strong=adjective.split('<section class="grammar-section">')[1];
-assert.ok(strong.indexOf('Nominativ')<strong.indexOf('Akkusativ')&&strong.indexOf('Akkusativ')<strong.indexOf('Dativ')&&strong.indexOf('Dativ')<strong.indexOf('Genitiv'));
-console.log('PASS: case/gender German names and accurate noun/adjective cases, article grid, declension ordering.');
+assert.equal((adjective.match(/<details class="declension-set"/g)||[]).length,3,'only 3 collapsible compact sets');
+assert.equal((adjective.match(/<table class="declension-table"/g)||[]).length,3,'one horizontal matrix per declension set');
+assert.equal((adjective.match(/<details class="declension-set" open>/g)||[]).length,1,'only the strong declension table is open by default');
+for(const label of ['Maskulin','Feminin','Neutrum','Plural'])
+ assert.ok(adjective.includes(label),'gender as column heading: '+label);
+for(const set of adjective.split('<details class="declension-set"').slice(1)){
+ assert.ok(set.indexOf('Nominativ')<set.indexOf('Akkusativ')&&set.indexOf('Akkusativ')<set.indexOf('Dativ')&&set.indexOf('Dativ')<set.indexOf('Genitiv'),'case order remains correct');
+ assert.equal((set.match(/<tr>/g)||[]).length,5,'header plus four grammatical rows');
+}
+assert.match(adjective,/klein<\/span><span class="ending">er<\/span>/,'strong masculine nominative -er ending');
+assert.match(adjective,/class="declension-article">der<\/span>/,'definite article appears in weak pattern');
+assert.match(css,/\.declension-table-scroll\{[^}]*overflow-x:auto/,'mobile can scroll sideways instead of growing vertically');
+assert.doesNotMatch(adjective,/class="grammar-block gender-/,'old stacked gender blocks removed');
+console.log('PASS: compact declension tables are horizontal, accessible, correct and only one opens initially.');
