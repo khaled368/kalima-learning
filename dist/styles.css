@@ -643,3 +643,32 @@ button{transition:background-color .12s ease,color .12s ease,border-color .12s e
 .noun-case-table td.gender-f{color:#ef9ec4!important}
 .noun-case-table td.gender-n{color:#c7beb0!important}
 .noun-case-table td.gender-pl{color:#d3ac73!important}
+
+
+/* Compact declension matrices: 4 cases by 4 genders, not 12 vertical gender cards. */
+.declension-sets{display:grid;gap:8px;margin:14px 0 20px}
+.declension-set{background:#142335;border:1px solid #35475e;border-radius:12px;min-width:0;overflow:hidden}
+.declension-set[open]{border-color:#6284a7}
+.declension-set>summary{padding:12px 14px;min-height:47px;cursor:pointer;color:#e9edf5;font-size:14px;font-weight:700;line-height:1.5}
+.declension-set>summary:focus-visible{outline:2px solid #a2c8ed;outline-offset:-3px}
+.declension-set[open]>summary{border-bottom:1px solid #33475c}
+.declension-table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.declension-table-scroll:focus-visible{outline:2px solid #8cb7ee;outline-offset:-2px}
+.declension-table{direction:ltr;table-layout:auto;width:100%;min-width:505px;border-collapse:collapse;background:#111e2c;color:#e9f2fb;font:500 13px/1.4 var(--reading-font,var(--latin))}
+.declension-table th,.declension-table td{padding:10px 7px;text-align:center;vertical-align:middle;border-bottom:1px solid #2a3e50;white-space:nowrap}
+.declension-table tr:last-child th,.declension-table tr:last-child td{border-bottom:0}
+.declension-table thead th{background:#203247;font-size:12px;color:#dbe8f2;font-weight:700}
+.declension-table tbody th{color:#e0e7ef;font-weight:600;min-width:96px;text-align:left;padding-left:11px}
+.declension-table tbody th small{display:block;white-space:normal;font:400 10px/1.4 var(--font);color:#a7b9c8}
+.declension-table td{font-weight:500}
+.declension-table .declension-article{color:#b8c5d5}
+.declension-table td.gender-m .ending{color:#82b3df}
+.declension-table td.gender-f .ending{color:#ef9ec4}
+.declension-table td.gender-n .ending{color:#c7beb0}
+.declension-table td.gender-pl .ending{color:#d3ac73}
+.declension-table .ending{font-weight:750}
+@media (max-width:500px){
+ .declension-set>summary{font-size:13px}
+ .declension-table{min-width:485px;font-size:12.5px}
+ .declension-table th,.declension-table td{padding:9px 5px}
+}

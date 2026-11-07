@@ -550,9 +550,31 @@ function nounCaseReference(word) {
 }
 function adjectiveTables(word) {
   const stem = word.declensionStem;
-  const genders = GENDERS_DE;
   const sets = [[t("تصريف قوي \u2014 بدون أداة"), [['er', 'en', 'em', 'en'], ['e', 'er', 'er', 'e'], ['es', 'en', 'em', 'es'], ['e', 'er', 'en', 'e']], null], [t("تصريف ضعيف \u2014 مع أداة التعريف"), [['e', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['e', 'en', 'en', 'e'], ['en', 'en', 'en', 'en']], [['der', 'des', 'dem', 'den'], ['die', 'der', 'der', 'die'], ['das', 'des', 'dem', 'das'], ['die', 'der', 'den', 'die']]], [t("تصريف مختلط \u2014 مع أداة التنكير"), [['er', 'en', 'en', 'en'], ['e', 'en', 'en', 'e'], ['es', 'en', 'en', 'es'], ['en', 'en', 'en', 'en']], [['ein', 'eines', 'einem', 'einen'], ['eine', 'einer', 'einer', 'eine'], ['ein', 'eines', 'einem', 'ein'], ['keine', 'keiner', 'keinen', 'keine']]]];
-  return sets.map(([title, endings, articles]) => `<section class="grammar-section"><h3>${title}</h3><div class="grammar-grid">${genders.map(([label, color], gender) => `<div class="grammar-block ${color}"><h4 lang="de" dir="ltr">${label}</h4><table class="grammar-table"><tbody>${CASE_ORDER.map(index => { const [name, explanation] = CASES[index]; return `<tr><th scope="row"><span class="grammar-case-name" lang="de" dir="ltr">${name}</span>${NATIVE === "ar" ? `<small class="grammar-case-help">${explanation}</small>` : ""}</th><td lang="${TARGET}" dir="${COURSE.dir(TARGET)}">${articles ? esc(articles[gender][index]) + ' ' : ''}${esc(stem)}<span class="ending">${endings[gender][index]}</span></td></tr>`; }).join('')}</tbody></table></div>`).join('')}</div></section>`).join('') + `<section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3><div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div></section>`;
+  // Compact 4x4 matrices replace 12 stacked gender blocks.
+  // Expand one declension type at a time using native accessible details.
+  return `<div class="declension-sets">${sets.map(([title, endings, articles], setIndex) =>
+    `<details class="declension-set"${setIndex === 0 ? ' open' : ''}>
+      <summary>${title}</summary>
+      <div class="declension-table-scroll" role="region" aria-label="${title}" tabindex="0">
+        <table class="declension-table" dir="ltr">
+          <thead><tr><th scope="col" lang="de">Kasus</th>
+            ${GENDERS_DE.map(([label, color]) => `<th scope="col" lang="de" class="${color}">${label}</th>`).join('')}
+          </tr></thead>
+          <tbody>${CASE_ORDER.map(caseIndex => `<tr>
+            <th scope="row" lang="de"><span>${CASES[caseIndex][0]}</span>${NATIVE === 'ar' ?
+              `<small lang="ar" dir="rtl">${CASES[caseIndex][1]}</small>` : ''}</th>
+            ${GENDERS_DE.map(([_, color], gender) => `<td lang="de" class="${color}">
+              ${articles ? `<span class="declension-article">${esc(articles[gender][caseIndex])}</span> ` : ''}
+              <span class="declension-stem">${esc(stem)}</span><span class="ending">${endings[gender][caseIndex]}</span>
+              </td>`).join('')}
+          </tr>`).join('')}</tbody>
+        </table>
+      </div>
+    </details>`).join('')}</div>
+    <section class="grammar-section"><h3>مسند — بدون نهاية إعرابية</h3>
+      <div class="example-card" lang="${TARGET}" dir="${COURSE.dir(TARGET)}">er ist ${esc(word.german)} · sie ist ${esc(word.german)} · es ist ${esc(word.german)}<br>sie sind ${esc(word.german)}</div>
+    </section>`;
 }
 function addedLetters(base, text) {
   const a = Array.from(base.toLocaleLowerCase()),
