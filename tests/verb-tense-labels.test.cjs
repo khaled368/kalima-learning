@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const dist=path.resolve(__dirname,'../dist');
+const app=fs.readFileSync(path.join(dist,'app.js'),'utf8');
+const bootstrap=fs.readFileSync(path.join(dist,'app-bootstrap.js'),'utf8');
+const html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
+assert.match(app,/const tenses = \[\['present', 'Präsens'\], \['preterite', 'Präteritum'\], \['perfect', 'Perfekt'\]\]/);
+assert.match(app,/lang="de" dir="ltr" data-verb-tense/,'German labels stay left-to-right in Arabic UI');
+assert.match(app,/present: 'Präsens'/);
+assert.match(app,/past: 'Präteritum'/);
+assert.match(app,/perfect: 'Perfekt'/);
+assert.doesNotMatch(app,/\['present', t\("المضارع"\)\]/,'no Arabic label on conjugation tabs');
+assert.doesNotMatch(app,/past: t\("الماضي البسيط"\)/);
+assert.match(bootstrap,/app\.js\?v=20261107-verb-tenses-de-v10/);
+assert.match(html,/app-bootstrap\.js\?v=20261107-verb-tenses-de-v10/);
+console.log('PASS: German conjugation tabs use Präsens / Präteritum / Perfekt in the word detail screen.');
