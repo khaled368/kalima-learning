@@ -571,8 +571,10 @@ function nounCaseReference(word) {
    <table class="noun-forms-table" dir="ltr">
      <thead><tr><th scope="col" lang="de">Kasus</th><th scope="col" lang="de">Singular</th><th scope="col" lang="de">Plural</th></tr></thead>
      <tbody>${CASE_ORDER.map(index=>{
-       const singular=forms.singular[index];
-       const plural=forms.plural?.[index];
+       // CASE_ORDER maps case-table indices to the learner-facing noun-form order.
+       const nounIndex=CASE_ORDER[index];
+       const singular=forms.singular[nounIndex];
+       const plural=forms.plural?.[nounIndex];
        return `<tr><th scope="row" lang="de">${CASES[index][0]}</th>
          <td lang="de" class="${GENDERS_DE[active][1]}">${singular?`<span class="case-article">${DEFINITE_ARTICLES[index][active]}</span> ${esc(singular)}`:'—'}</td>
          <td lang="de" class="gender-pl">${plural?`<span class="case-article">${DEFINITE_ARTICLES[index][3]}</span> ${esc(plural)}`:'—'}</td></tr>`;
